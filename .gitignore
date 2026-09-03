@@ -1,0 +1,11 @@
+.DS_Store
+*.tmp
+*.swp
+~$*
+
+# Never commit confidential/internal source material or credentials.
+private/
+confidential/
+.env
+.env.*
+
