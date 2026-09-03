@@ -7,14 +7,15 @@ the official text and current status.
 
 | Topic | Authority | Instrument / source ID | Applicability question | Relevant provision | Evidence-backed requirement | Operational implication (analysis) | Status / effective date | SME confirmation |
 |---|---|---|---|---|---|---|---|---|
-| Personal information |  |  |  |  |  |  |  | Required |
+| **Data privacy / personal information** |  |  |  |  |  |  |  | Required |
+| **Model interpretability / explainability** |  |  |  |  |  |  |  | Required |
+| **Outsourcing / third parties** |  |  |  |  |  |  |  | Required |
 | Data security / important data |  |  |  |  |  |  |  | Required |
 | Cybersecurity / network operations |  |  |  |  |  |  |  | Required |
 | Generative-AI services |  |  |  |  |  |  |  | Required |
 | Securities/fund conduct |  |  |  |  |  |  |  | Required |
 | Records and auditability |  |  |  |  |  |  |  | Required |
 | Automated decisions / suitability |  |  |  |  |  |  |  | Required |
-| Outsourcing / third parties |  |  |  |  |  |  |  | Required |
 | Cross-border data / remote support |  |  |  |  |  |  |  | Required |
 | Intellectual property / open-source licensing |  |  |  |  |  |  |  | Required |
 
@@ -22,7 +23,7 @@ the official text and current status.
 
 | Control area | Question for authorized owner | Owner | Status | Decision/evidence reference |
 |---|---|---|---|---|
-| Model Risk Management | Does the proposed use meet the internal definition of a model, and what validation tier applies? | MRM | Open |  |
+| MRM (meaning and scope TBC) | What does “MRM” refer to in the mentor's target, which source set applies, and who is authorized to interpret it? | TBC | Open |  |
 | Information security | What environment, access, logging, vulnerability, and patch controls are mandatory? | InfoSec | Open |  |
 | Data classification | Which classifications may be used for prompts, retrieval, fine-tuning, logs, and evaluation? | Data owner / Privacy | Open |  |
 | Third-party risk | What review applies to model weights, vendor software, remote support, and telemetry? | TPRM / Procurement | Open |  |
@@ -41,4 +42,3 @@ the official text and current status.
 - Chinese original reviewed when controlling.
 - Authorized legal/compliance review requested before a recommendation is called
   compliant.
-

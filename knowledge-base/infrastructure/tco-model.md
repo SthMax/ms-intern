@@ -1,5 +1,8 @@
 # On-Premise Deployment and TCO Framework
 
+> **Later internship workstream:** retained as scaffolding for the two-month
+> primary/secondary objectives. It is not a Week 1–2 checkpoint deliverable.
+
 ## Capacity inputs to obtain first
 
 | Input | Unit | Low | Base | High | Source / owner |
@@ -15,8 +18,8 @@
 
 ## Cost model
 
-Use a three-year low/base/high scenario and show both total cost and cost per
-useful reviewed task.
+Use low/base/high scenarios over a horizon to be agreed with the mentor and show
+both total cost and cost per useful reviewed task.
 
 | Cost component | Upfront / recurring | Quantity driver | Unit cost source | Low | Base | High |
 |---|---|---|---|---:|---:|---:|
@@ -38,7 +41,7 @@ useful reviewed task.
 - `Annual IT energy (kWh) = average IT load (kW) × operating hours`
 - `Annual facility energy (kWh) = annual IT energy × PUE`
 - `Annual electricity cost = annual facility energy × tariff`
-- `Three-year TCO = capex + implementation + 3 × recurring annual cost + contingency`
+- `Horizon TCO = capex + implementation + (analysis years × recurring annual cost) + contingency`
 
 Avoid double-counting cooling if the facility tariff or chargeback already embeds
 it. Treat depreciation/accounting presentation separately from cash TCO.
@@ -53,4 +56,3 @@ it. Treat depreciation/accounting presentation separately from cash TCO.
 - How are access control, secrets, deletion, backup, monitoring, and incident
   response implemented?
 - Is remote vendor support possible, and what data/system access would it expose?
-

@@ -10,7 +10,7 @@ initiatives.
 
 ## Company database
 
-| Company | Chinese legal name | Asset-size value | Asset metric/scope | As-of date | Size source | Initiative/use case | Category | Stage | Technology/model/partner | Deployment evidence | Primary source ID | Evidence state | Notes |
+| Company | Chinese legal name | Asset-size value | Asset metric/scope | As-of date | Size source | Initiative/use case | Category | Stage | Technology/model/partner | Disclosed outcome | Primary source ID | Evidence state | Notes |
 |---|---|---:|---|---|---|---|---|---|---|---|---|---|---|
 
 Allowed category tags: `research`, `trading`, `risk`, `marketing/service`,
@@ -23,10 +23,10 @@ Allowed stage values: `announcement`, `research`, `proof of concept`, `pilot`,
 
 | Metric | Target | Current |
 |---|---:|---:|
-| Verified companies | 15 | 0 |
-| Reserve candidates | 5 | 0 |
-| Companies with verified size data | 15 | 0 |
-| Companies with a direct primary disclosure | 15 | 0 |
+| Verified companies | TBC—number missing from brief | 0 |
+| Reserve candidates | Maintain above confirmed minimum | 0 |
+| Companies with verified size data | Same as confirmed minimum | 0 |
+| Companies with a direct primary disclosure | Same as confirmed minimum | 0 |
 
 ## Interpretation guardrails
 
@@ -35,4 +35,3 @@ Allowed stage values: `announcement`, `research`, `proof of concept`, `pilot`,
 - A named model or partner should be recorded only when explicitly disclosed.
 - Never guess deployment topology from a product name.
 - Peer activity demonstrates market interest, not compliance approval or ROI.
-

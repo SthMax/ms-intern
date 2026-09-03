@@ -1,5 +1,8 @@
 # Pilot Use-Case Scorecard
 
+> **Later internship workstream:** retained as scaffolding for the two-month
+> secondary objectives. It is not a Week 1–2 checkpoint deliverable.
+
 ## Scoring method
 
 Score each factor from 1 (least favorable) to 5 (most favorable). For risks, 5
@@ -35,4 +38,3 @@ order execution and regulated client communications, provide citations or source
 spans, require human approval, record model/version/settings, and have a simple
 fallback to the existing workflow. This is a proposed design principle, not a
 statement of policy approval.
-

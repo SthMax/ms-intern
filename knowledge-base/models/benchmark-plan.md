@@ -1,5 +1,8 @@
 # Financial NLP Benchmark Plan
 
+> **Later internship workstream:** retained as scaffolding for the two-month
+> secondary objectives. It is not a Week 1–2 checkpoint deliverable.
+
 ## Decision goal
 
 Determine whether candidate models are sufficiently accurate, reproducible,
@@ -41,4 +44,3 @@ model cards, licenses, and deployment documentation.
 - Time split prevents look-ahead where relevant.
 - Annotation protocol and error analysis documented.
 - Dataset represents the intended Chinese financial language and document types.
-
