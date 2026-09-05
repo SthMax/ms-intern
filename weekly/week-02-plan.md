@@ -128,13 +128,29 @@ this document.
 
 | Phase 2 task | Input from Week 2 | Open question / evidence reference |
 |---|---|---|
-| Survey 5–8 open-source LLMs | Disclosed peer tasks, language needs, governance concerns | To populate |
-| Reference architecture | Source-backed data/privacy/outsourcing implications and COD questions | To populate |
-| One-model local GPU proof of concept | Candidate public/synthetic financial task and evaluation considerations | To populate |
-| Reusable financial NLP evaluation | Domain examples, failure risks, and evidence requirements | To populate |
+| Survey 5–8 open-source LLMs | Local research/RAG and transaction-parsing cases | FUND-007/011/013; choose models later against actual task requirements |
+| Reference architecture | Service audience, data boundaries, outsourcing roles, AMAC deployment distinctions | REG-001/003/005/010; obtain COD-specific inputs |
+| One-model local GPU proof of concept | Source-referenced financial text extraction/QA as candidate sample tasks | Peer evidence informs task design; no pilot selection or technical execution yet |
+| Reusable financial NLP evaluation | General/financial evaluation and API/local comparability in AMAC 9.1.2 | REG-010; outcome/source-fidelity testing remains to be designed in Phase 2 |
 
 ## Completion log
 
-Current status: plan derived; Week 2 research and presentation work not yet
-performed. Update this section with dates, links, coverage, unresolved items, and
-mentor feedback during the week.
+### 6 September 2026 — research started ahead of Monday
+
+- Read `RESEARCH_TOOLS.md` and used web/Exa discovery, original webpages, official
+  PDF extraction, and selected-page visual checks.
+- W2-01: six company notes, seven primary-source initiatives, six sourced AUM
+  observations, and ten additional candidates. Numerical target and comparable
+  public-fund AUM coverage remain open.
+- W2-02: twelve official law/regulatory/standard/MRM/research sources inspected;
+  initial synthesis covers privacy, interpretability, and outsourcing.
+- W2-03: thirty registered sources, comprising twenty-five primary and five
+  secondary/discovery candidates. All human checks remain pending.
+- W2-04: [first research brief](../presentation/phase-1-research-brief.md) prepared;
+  final slides and presentation review remain outstanding.
+- W2-05: source-backed Phase 2 questions are recorded in the regulatory synthesis;
+  mentor feedback is not yet available.
+
+See [the research log](research-log-2026-09-06.md) for checks, retrieval limitations,
+and next actions. These outputs are the initial batch, not completion of the
+entire Week 2 plan.
