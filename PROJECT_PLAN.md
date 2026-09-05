@@ -1,156 +1,112 @@
-# Project Plan
+# Project Plan — Final
 
-## 1. Scope hierarchy
+**Status:** Final — mentor-confirmed version supplied by the user on 6 September 2026.
 
-### Two-month internship: primary objective
+**Duration:** Two-month internship, organized into Weeks 1–8.
+
+**Authority:** This document supersedes earlier project plans and phase schedules.
+
+The confirmed brief is reproduced below with Markdown formatting normalized.
+Original wording, including the missing company-count number, is retained.
+Execution plans and wording questions are maintained separately in
+[the Week 2 plan](weekly/week-02-plan.md). The overview is supplied project
+context; its industry claims require research citations before use as findings.
+
+## 1. Project Overview
+
+The rapid advancement of LLM has opened transformative possibilities for the
+asset management industry. While global leaders such as BlackRock, Goldman Sachs
+and JPM have already proprietary LLMs into their research, compliance, and
+client-service workflows, Onshore mutual fund is still in the early stages of
+exploration. This project aims ti conduct a systematic feasibility study on
+locally deploying (on-premise) LLMs within MSIM China, complemented by a
+comprehensive survey of existing AI adoption cases across the industry.
+
+The project is designed for a summer quantitative intern and will produce a
+structured research report that provides actionable insights for our departments’
+technology roadmap.
+
+## 2. Project Objectives
+
+### Primary Objective
 
 Evaluate the technical, financial, and regulatory feasibility of deploying
-open-source or commercial LLMs on-premise within MSIM China/COD infrastructure,
-including model selection, hardware requirements, data security, and compliance
-with applicable Morgan Stanley internal requirements, CSRC guidance, and other
-applicable Chinese regulatory requirements.
+open-source or commercial LLMs on-premise with MSIM China/COD infrastructure,
+covering model selection, hardware requirements, data security and compliance
+with Morgan Stanley and CSRC guidelines.
 
-### Two-month internship: secondary objectives
+### Secondary Objective
 
-1. Survey AI/LLM adoption among top-tier Chinese fund houses, including disclosed
-   use cases, technology stacks/partners, maturity, and observed outcomes.
-2. Identify high-impact, low-risk quant-research pilot applications, including
-   earnings-call summarization, drafting assistance, financial-news sentiment,
-   model-building “vibe coding,” and automated compliance checking for “fund
-   outcomes” (the meaning of that phrase in the notes must be confirmed).
-3. Benchmark open-source LLMs on financial named-entity recognition, financial
-   question answering, and multi-document summarization.
-4. Estimate production-grade on-premise TCO, including GPU servers, electricity,
-   cooling, maintenance, and personnel.
+Conduct a landscape survey of AI/LLM adoption cases among China’s top tier fund
+houses, including specific use cases, technology stacks, and observed outcomes.
 
-### Week 1–2 checkpoint: presentation on 11 September 2026
+Identify high-impact, low risk pilot applications suitable for a quant research
+desk, such as earnings-call summarization, research report drafting assistance,
+sentiment analysis on financial news, model building vibe coding, and automated
+compliance checking for fund outcomes.
 
-The checkpoint covers only the two targets supplied by the mentor:
+Benchmark available open source LLMs on metrics relevant to financial NLP tasks,
+including named entity recognition, financial question answering, and
+multi-document summarization.
 
-1. Compile a structured database of **at least [number to be confirmed]** onshore
-   mutual fund companies with publicly disclosed AI/LLM initiatives, categorized
-   by asset size, use case (`research`, `trading`, `risk`, `marketing`,
-   `compliance`, and other clearly labelled categories), and technology partner.
-2. Summarize key regulatory texts/filings and MRM/CSRC guidance on AI use in
-   financial institutions, emphasizing data privacy, model
-   interpretability/governance, and outsourcing restrictions.
+Estimate total cost of ownership (TCO) for a production-grade on-premise
+deployment, including GPU server procurement, electricity, cooling, maintenance,
+and personnel costs.
 
-The checkpoint may show the full internship roadmap, but it must not imply that
-pilot selection, model benchmarking, architecture sizing, or TCO estimation were
-assigned for completion in Week 1–2.
+## 3. Scope of Work
 
-## 2. Week 1–2 deliverables
+### Phase 1: Week 1 / Week 2: Industry Research
 
-### A. Onshore fund-company database
+Compile a structured database of at least onshore mutual fund companies that
+have publicly disclosed AI/LLM initiatives, categorizing then by asset size, use
+case (research, trading, risk, marketing, compliance), and technology partner.
 
-- Required number of qualifying managers once the missing threshold is confirmed.
-- Asset-size value accompanied by metric/scope, as-of date, and source.
-- Each initiative tagged by use case, maturity, disclosed technology/model/partner,
-  and evidence strength.
-- At least one public primary source for every presentation-grade initiative.
-- Separate reserve/candidate list for weak, vague, or not-yet-verified disclosures.
-- Summary charts/tables that do not erase differences in AUM definitions or
-  initiative maturity.
+Summarize key regulatory filings and MRM/CSRC guidance on AI usage in financial
+institutions, with emphasis on data privacy, model interpretability, and
+outsourcing restrictions.
 
-### B. Regulatory and governance summary
+### Phase 2: Week 3 - Week 5: Technical Feasibility Assessment
 
-- Source register containing issuer, exact title, publication/effective/status
-  dates, official URL, relevant provision, scope, and caveat.
-- Thematic synthesis focused on privacy/data governance, interpretability/model
-  governance, and outsourcing/third-party restrictions.
-- Clear separation among binding law/rules, regulator guidance, consultation or
-  draft material, industry interpretation, and internal Morgan Stanley policy.
-- Applicability questions and operational implications explicitly labelled as
-  analysis, not quoted legal requirements.
-- MRM meaning, source set, and authorized internal owner confirmed rather than
-  inferred.
+Survey and compare 5-8 open-source LLMs with language proficiency, evaluating them
+on model size, inference speed, fine-tuning requirements, and community support.
 
-### C. Checkpoint presentation
+Design a reference architecture for on-premise deployment, covering hardware
+specifications (GPU Cluster, storage, networking), software stack (inference
+engine, vector database, orchestration), and network security considerations.
 
-- Concise main deck covering methods, company landscape, regulatory themes,
-  limitations, and next steps.
-- Evidence appendix with company-level entries and regulatory source matrix.
-- Claim-level source IDs and manually testable links.
-- No legal conclusion and no claim about undisclosed peer systems.
+Conduct a small-scale proof-of-concept: deploy one open-source model on a local
+GPU workstation, test inference latency, and run a sample financial NLP task.
 
-## 3. Proposed two-month sequence
+### Phase 3: Week 6 - Week 8: Cost-benefit Analysis & Recommendations
 
-This sequence is a planning proposal, not a restatement of mentor-assigned weekly
-targets. It should be adjusted after mentor feedback.
+Build a TCO model comparing on-premise deployment versus API-based consumption of
+commercial LLM services (such as OAI, anthropic, Deepseek etc) over a 3-year
+horizon, incorporating volume-based pricing, data egress fees, and security
+premiums.
 
-| Internship phase | Primary focus | Intended output |
-|---|---|---|
-| Weeks 1–2 | Peer landscape and regulatory/MRM/CSRC evidence | Structured database and checkpoint presentation |
-| Week 3 | Use-case analysis | Ranked pilot candidates with value, risk, and control requirements |
-| Week 4 | Model/deployment feasibility design | Open-source/commercial candidate screen, architecture options, security boundary, hardware-sizing assumptions |
-| Weeks 5–6 | Model selection and financial NLP benchmarking | Reproducible benchmark results and model shortlist |
-| Week 7 | Hardware sizing and financial feasibility | Low/base/high TCO using an agreed horizon and documented sensitivities |
-| Week 8 | Integrated assessment | Technical/financial/regulatory feasibility, recommendations, roadmap, and final report/deck |
+Identify 3-5 pilot project candidates with clear ROI metrics, prioritized by
+implementation complexity and regulatory risk.
 
-Workstreams may overlap when dependencies require it, but their final outputs
-remain aligned to the full two-month objectives.
+Produce a final research report with executive summary, methodology, findings
+and recommended next steps.
 
-## 4. Schedule to the Week 1–2 checkpoint
+## 4. Expected Outcomes
 
-| Date | Focus | Exit criterion |
-|---|---|---|
-| Fri 4 Sep | Correct scope, schemas, evidence protocol, candidate universe | Two-month objectives separated from checkpoint targets |
-| Mon 7 Sep | Discover company disclosures and authoritative regulatory corpus | Candidates/source records logged; primary sources prioritized |
-| Tue 8 Sep | Verify companies, initiatives, AUM definitions, and partners | Required company threshold progressing with weak entries quarantined |
-| Wed 9 Sep | Complete company verification and extract regulatory provisions | Database and evidence notes substantially complete |
-| Thu 10 Sep | Synthesize findings, build deck, perform citation/applicability audit | Every material claim traceable; uncertainty visible |
-| Fri 11 Sep | Final review and checkpoint presentation | Main deck and evidence appendix ready |
+Upon completion, the department will obtain:
 
-## 5. Week 1–2 research questions
+- A structured knowledge base of AI/LLM practices across onshore mutual fund
+  industry, enabling benchmarking and competitive intelligence.
+- A technical reference architecture with hardware and software specifications
+  for on-premise LLM deployment, tailored to the constraints of MSIMC/COD IT
+  environment.
+- A TCO comparison model that quantifies the financial trade-offs between
+  on-premise LLM deployment and cloud-based LLM consumption.
+- A prioritized pilot roadmap with 2-5 concrete project proposals, each with
+  estimated effort, cost, and expected impact.
+- A reusable evaluation framework for assessing future LLM models and
+  infrastructure options.
 
-### Peer landscape
+## Mentor Clarifications
 
-1. Which onshore mutual fund managers have made a concrete public AI/LLM
-   disclosure?
-2. What was disclosed: exploration, partnership, procurement, pilot, deployed
-   capability, or measured outcome?
-3. Which business function and technology partner/model were explicitly named?
-4. What asset-size measure is available, for what entity and date?
-5. What does each source establish, and what remains unknown?
-
-### Regulation and governance
-
-1. Which authoritative instruments potentially govern the intended institutional
-   use of AI/LLMs?
-2. What do the exact provisions say about data/privacy, model governance or
-   explainability, and outsourcing/third parties?
-3. What is binding, effective, sector-specific, or merely guidance/draft?
-4. What applicability questions require confirmation by Legal, Compliance,
-   Privacy, InfoSec, MRM, or Third-Party Risk?
-5. Which requirements come from internal Morgan Stanley policy and therefore
-   cannot be reconstructed from public sources?
-
-## 6. Inputs to confirm with the mentor
-
-- The missing minimum number of onshore fund companies.
-- The intended universe: all licensed onshore mutual fund managers or a defined
-  “top-tier” subset, and the preferred asset-size measure.
-- Whether “MRM” means Morgan Stanley Model Risk Management, generic model-risk
-  management, or a particular internal document set.
-- What “COD” denotes in this project and the infrastructure boundary it implies.
-- Whether the landscape includes broad AI initiatives or only LLM/generative-AI
-  initiatives, and what qualifies as a public disclosure.
-- Which internal policies may be consulted, summarized, or cited, and where those
-  notes are permitted to be stored.
-- Which instruments “regulatory filings” refers to, which authorities beyond CSRC
-  are in scope, and the research information cut-off date.
-- Presentation audience, duration, expected language, and appendix depth.
-- Whether 11 September is the formal end-of-Week-2 checkpoint.
-
-## 7. Later-stage decision frame
-
-The full internship should not assume that self-hosting is automatically the most
-compliant or economical answer. Later work will compare open-weight on-premise,
-approved dedicated commercial deployment, and narrower non-general-purpose
-approaches against confirmed internal and regulatory constraints.
-
-## 8. Definition of done for any finding
-
-A finding is usable only when its scope, date, provenance, evidence state, and
-limitations are recorded. Regulatory conclusions require review by an authorized
-legal/compliance stakeholder; this project is research, not legal advice.
+- COD infrastructure is the infrastructure used in MSIM.
+- MRM is model risk management.

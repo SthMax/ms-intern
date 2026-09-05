@@ -1,57 +1,64 @@
 # MSIM China On-Premise LLM Feasibility Study
 
-Local research workspace for an internship project evaluating the feasibility of
-on-premise LLM deployment for MSIM China/COD and surveying publicly disclosed
-AI/LLM initiatives among onshore mutual fund managers.
+Local research workspace for the two-month internship. The
+[final, mentor-confirmed project plan](PROJECT_PLAN.md) controls project scope.
+Derived schedules and templates must follow it.
 
-## Objective hierarchy
+## Confirmed phases
 
-The **primary and secondary objectives cover the full two-month internship**.
-They are not the deliverables for next Friday.
+| Phase | Timing | Deliverables |
+|---|---|---|
+| 1 — Industry research | Weeks 1–2 | Onshore fund-company AI/LLM database; regulatory and model risk management (MRM)/CSRC summary |
+| 2 — Technical feasibility | Weeks 3–5 | Survey of 5–8 open-source LLMs; on-premise reference architecture; one-model proof of concept on a local GPU workstation |
+| 3 — Cost-benefit and recommendations | Weeks 6–8 | Three-year on-premise versus commercial API TCO; 3–5 pilot candidates with ROI metrics; final report and roadmap with 2–5 concrete proposals |
 
-Across the internship, the project will evaluate technical, financial, and
-regulatory feasibility; survey peer adoption; identify suitable pilots; benchmark
-open-source models; and estimate production-grade on-premise TCO.
+COD is the infrastructure used in MSIM. MRM means model risk management.
+The confirmed plan also requires a reusable financial NLP evaluation framework
+covering named-entity recognition, financial question answering, and
+multi-document summarization.
 
-The immediate deliverable is the **Week 1–2 checkpoint presentation on Friday,
-11 September 2026**, limited to:
+## Current work: Week 2, 7–11 September 2026
 
-1. A structured database of the required number of onshore mutual fund companies
-   that have publicly disclosed AI/LLM initiatives, categorized by asset size,
-   use case, and technology partner. The number is missing from the supplied
-   brief and remains to be confirmed.
-2. A source-grounded summary of key regulatory texts/filings and MRM/CSRC
-   guidance, emphasizing data privacy, model interpretability/governance, and
-   outsourcing restrictions.
+The Friday, 11 September presentation covers Phase 1: the company landscape and
+regulatory/MRM/CSRC research, emphasizing data privacy, model interpretability,
+and outsourcing restrictions.
 
-Pilot selection, model benchmarking, infrastructure sizing, and TCO belong to
-later internship workstreams and should appear next Friday only as roadmap items,
-not as Week 1–2 deliverables or completed analysis.
+Use [the Week 2 execution plan](weekly/week-02-plan.md) for daily work,
+deliverables, acceptance criteria, and unresolved inputs. Use
+[the checkpoint outline](presentation/deck-outline.md) for presentation structure.
 
-See [PROJECT_PLAN.md](PROJECT_PLAN.md) for scope and schedule and
-[knowledge-base/README.md](knowledge-base/README.md) for the evidence workflow.
+The supplied final brief still omits the number after “at least” in the company
+target. Research can proceed; the count requirement remains unconfirmed.
+As of the 6 September repository review, the knowledge base contains templates
+and no verified external research findings.
 
-## Repository rules
+## Research and version control
 
-- This repository is local-only. Do not add a remote without explicit approval.
-- Use public information for the external landscape and public regulatory work.
-- Do not copy confidential Morgan Stanley documents, client information,
-  positions, research data, credentials, or personal data into this repository.
-- Internal MRM, security, architecture, procurement, and compliance requirements
-  must be supplied or confirmed by authorized Morgan Stanley stakeholders.
-- A factual claim is not presentation-ready until it has a source-register entry
-  and a manually verifiable citation.
+- Keep findings in the Markdown [knowledge base](knowledge-base/README.md), with
+  source IDs, direct links, and exact locations that a reviewer can check.
+- Keep supplied project context, verified source content, and researcher analysis
+  distinguishable. The final plan itself is not evidence of industry adoption.
+- Use public information for the landscape and public regulatory work. Handle
+  internal requirements according to the user's stated confidentiality constraints.
+- Do not store confidential internal documents, client/position data, credentials,
+  or personal data in this repository.
+- Internal MRM and other Morgan Stanley requirements require authorized internal
+  evidence; public guidance cannot establish unpublished firm policy.
+- Git is local-only. Do not add a remote or publish without the user's instruction.
 
-## Structure
+## Repository map
 
-```text
-knowledge-base/
-  companies/       Public AI/LLM initiative evidence
-  regulation/      Public rules and internal-policy questions
-  pilots/          Later internship: use-case risk/value assessment
-  models/          Later internship: financial NLP benchmark design
-  infrastructure/  Later internship: deployment architecture and TCO
-  templates/       Reusable evidence-note template
-presentation/      Slide storyline and later deck artifacts
-weekly/            Work log and checkpoints
-```
+| Location | Purpose |
+|---|---|
+| [PROJECT_PLAN.md](PROJECT_PLAN.md) | Final approved project brief and mentor clarifications |
+| [knowledge-base/README.md](knowledge-base/README.md) | Evidence workflow |
+| [Company index](knowledge-base/companies/index.md) | Phase 1 database, candidates, coverage |
+| [Regulatory index](knowledge-base/regulation/index.md) | Phase 1 provision map and MRM/internal questions |
+| [Model evaluation](knowledge-base/models/benchmark-plan.md) | Phase 2 survey and reusable benchmark framework |
+| [Proof-of-concept plan](knowledge-base/models/poc-plan.md) | Phase 2 local GPU execution record template |
+| [Reference architecture](knowledge-base/infrastructure/reference-architecture.md) | Phase 2 hardware/software/security specification template |
+| [TCO model](knowledge-base/infrastructure/tco-model.md) | Phase 3 three-year on-premise/API comparison |
+| [Pilot scorecard](knowledge-base/pilots/scorecard.md) | Phase 3 selection, ROI, and proposal template |
+| [Week 1 record](weekly/week-01.md) | Historical setup and corrections |
+| [Week 2 plan](weekly/week-02-plan.md) | Current execution plan |
+| [Repository alignment review](weekly/repo-alignment-review-2026-09-06.md) | Whole-repository review against the final brief |

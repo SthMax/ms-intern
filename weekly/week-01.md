@@ -1,48 +1,40 @@
-# Week 1–2 Checkpoint Work Log — through 11 September 2026
+# Week 1 Record — through 6 September 2026
 
-## Objectives
+Historical setup record. Current execution is tracked in
+[the Week 2 plan](week-02-plan.md); project scope is controlled by
+[the final project plan](../PROJECT_PLAN.md).
 
-- Build the required onshore fund-company AI/LLM database.
-- Produce the required regulatory/MRM/CSRC summary, centered on privacy,
-  interpretability/model governance, and outsourcing.
-- Turn those two outputs into a source-auditable checkpoint presentation.
+## Completed setup
 
-## Progress
+- [x] Initialize local-only Git version control.
+- [x] Create the Markdown knowledge base and source/evidence schemas.
+- [x] Correct the initial misunderstanding of the two-month objectives and
+  Week 1–2 presentation scope.
+- [x] Receive and adopt the final mentor-confirmed plan on 6 September.
+- [x] Record COD as the infrastructure used in MSIM and MRM as model risk
+  management.
+- [x] Review existing files against the confirmed three-phase schedule.
+- [x] Derive the Week 2 execution plan.
 
-- [x] Initialize local workspace structure.
-- [x] Define evidence states and source schema.
-- [x] Separate two-month objectives from Week 1–2 checkpoint targets.
-- [ ] Confirm manager inputs in `PROJECT_PLAN.md`.
-- [ ] Confirm the missing company-count threshold and universe/AUM definition.
-- [ ] Collect and verify public company disclosures and asset-size sources.
-- [ ] Reach the confirmed minimum number of presentation-grade companies.
-- [ ] Collect and verify public regulatory sources at provision level.
-- [ ] Confirm what “MRM” refers to and how internal policy may be handled.
-- [ ] Synthesize privacy, interpretability/governance, and outsourcing themes.
-- [ ] Draft and audit the Week 1–2 checkpoint presentation.
+## Research status at handoff
 
-## Decisions and assumptions
+No external research findings, verified company entries, regulatory evidence
+notes, benchmark results, or cost estimates were present at the 6 September
+review. Earlier template creation does not count as completed research.
 
-| Date | Item | Decision / assumption | Owner | Revisit by |
-|---|---|---|---|---|
-| 2026-09-04 | Company count omitted in brief | Do not invent a threshold; mark TBC until mentor confirms | Mentor | 2026-09-07 |
-| 2026-09-04 | Presentation scope | Cover only the company database and regulatory/MRM/CSRC summary | Confirmed by user | 2026-09-04 |
-| 2026-09-04 | Full objective horizon | Primary and secondary objectives span the two-month internship | Confirmed by user | 2026-09-04 |
-| 2026-09-04 | Detailed Weeks 3–8 sequence | Treat as a proposed roadmap, not a mentor-assigned schedule | Intern / mentor | After checkpoint feedback |
+Phase 1 company verification, regulatory synthesis, and the Friday presentation
+are carried forward to Week 2. The missing company-count threshold remains open.
 
-## Risks and blockers
+## Decisions and corrections
 
-| Risk | Impact | Mitigation / request | Status |
-|---|---|---|---|
-| Internal MRM/InfoSec requirements unavailable | Cannot conclude internal compliance | Keep separate question list; request authorized owners | Open |
-| Public disclosure uses vague AI language | Overstatement of peer maturity | Require direct source and maturity labels | Open |
-| Asset-size definitions differ | Invalid peer comparison | Capture metric, scope, date, and source | Open |
-| Company-count threshold missing | Cannot prove target completion | Confirm exact number with mentor | Open |
+| Date | Item | Record |
+|---|---|---|
+| 2026-09-04 | Scope correction | User clarified that primary/secondary objectives span two months; next-Friday presentation covers the Week 1–2 targets |
+| 2026-09-04 | Company count | Initial assistant assumption of 15 was removed; no threshold supplied |
+| 2026-09-06 | Final plan | User supplied the confirmed three-phase plan and requested its adoption as final |
+| 2026-09-06 | Phase schedule | Earlier proposed Weeks 3–8 sequence is superseded: technical assessment is Weeks 3–5; cost-benefit and recommendations are Weeks 6–8 |
+| 2026-09-06 | TCO | Three-year on-premise versus commercial API comparison is now confirmed |
+| 2026-09-06 | Terminology | COD and MRM meanings confirmed; specific infrastructure details and internal policy applicability are separate research inputs |
 
-## Daily notes
-
-### Friday, 4 September
-
-- Repository and research scaffolding created.
-- Scope corrected: next-Friday checkpoint is limited to the two Week 1–2 targets.
-- No external research findings recorded yet.
+See [the alignment review](repo-alignment-review-2026-09-06.md) for the file-level
+changes and remaining wording gaps.

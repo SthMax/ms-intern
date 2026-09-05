@@ -1,40 +1,77 @@
-# Pilot Use-Case Scorecard
+# Pilot Candidate Assessment and Proposal Roadmap
 
-> **Later internship workstream:** retained as scaffolding for the two-month
-> secondary objectives. It is not a Week 1–2 checkpoint deliverable.
+**Phase 3 — Weeks 6–8.** Derived from [the final project plan](../../PROJECT_PLAN.md).
+Status: assessment template; no pilots have been scored or recommended.
 
-## Scoring method
+Identify **3–5 pilot candidates** with clear ROI metrics, prioritized by
+implementation complexity and regulatory risk. Develop **2–5 concrete proposals**
+from the candidate set for the final roadmap. Each proposal needs estimated
+effort, cost, and expected impact. These are the two ranges in the confirmed brief.
 
-Score each factor from 1 (least favorable) to 5 (most favorable). For risks, 5
-means lower risk/easier control. Keep the raw evidence and assumptions beside the
-score; the number alone is not a finding.
+## Candidate set
+
+The following examples come from the brief and are starting points for assessment.
+
+| Use case | Business owner / workflow | Implementation complexity | Regulatory risk | Proposed ROI measure | Evidence / assumptions |
+|---|---|---|---|---|---|
+| Earnings-call summarization | | | | Reviewed minutes saved per transcript; factual error rate | |
+| Research drafting assistance | | | | Net drafting/review time saved; revision burden | |
+| Financial-news sentiment analysis | | | | Label quality and analyst time saved; downstream usefulness | |
+| Model-building coding assistance | | | | Accepted coding time saved after testing/review | |
+| Automated compliance checking for fund outcomes | | | | Reviewer time and detection quality | Exact meaning of “fund outcomes” remains to be specified |
+
+Phase 1 may record peer use cases; MSIM pilot prioritization belongs to Phase 3.
+Peer-reported benefits are evidence about the peer disclosure, not measured MSIM
+ROI.
+
+## Proposed supporting score
+
+Weights are a working assessment method, not mentor-mandated weights. Preserve
+complexity and regulatory risk as explicit fields even when using a total score.
+Scores run from 1 (least favorable) to 5 (most favorable); for risk/complexity,
+higher means lower risk or easier implementation.
 
 | Criterion | Weight | Question |
-|---|---:|---|
-| Business value | 20% | How much analyst time or decision quality could improve? |
-| Data safety | 20% | Can the pilot use public, synthetic, or low-sensitivity data? |
-| Failure containment | 15% | Is output advisory, reversible, and reviewed before use? |
-| Evaluation clarity | 15% | Can quality be measured against a defensible reference? |
-| Governance simplicity | 15% | Is the control/approval path comparatively clear? |
-| Technical feasibility | 10% | Can a small approved environment deliver adequate quality? |
-| Adoption fit | 5% | Does it fit an existing desk workflow with little disruption? |
+|---|---|---|
+| Business value | 20% | What measurable benefit could this workflow produce? |
+| Data safety | 20% | What data classifications and access requirements apply? |
+| Failure containment | 15% | Can errors be detected and corrected before impact? |
+| Evaluation clarity | 15% | Can usefulness and errors be measured reliably? |
+| Regulatory/governance risk | 15% | What requirements and unresolved applicability issues affect it? |
+| Implementation feasibility | 10% | What integration and infrastructure effort is needed? |
+| Adoption fit | 5% | How well does it fit the desk's workflow? |
 
-Weighted score = sum of `(score / 5) × weight`.
+Weighted score = sum of (score / 5) × weight. Explain any decision that overrides
+the numerical ranking.
 
-## Candidate comparison
+## Required proposal fields
 
-| Use case | Value | Data safety | Failure containment | Evaluation | Governance | Feasibility | Adoption | Weighted result | Key evidence / assumptions |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Earnings-call summarization from public transcripts |  |  |  |  |  |  |  |  |  |
-| Research drafting assistant |  |  |  |  |  |  |  |  |  |
-| Public financial-news sentiment |  |  |  |  |  |  |  |  |  |
-| Coding assistant for model development |  |  |  |  |  |  |  |  |  |
-| Compliance pre-check for fund materials/outputs |  |  |  |  |  |  |  |  |  |
+For each final proposal record:
 
-## Initial safety boundary to test
+- Workflow, user, input data, output, and human review.
+- Baseline process, measurement period, task volume, and current time/cost.
+- Proposed design and dependencies on model, architecture, and data access.
+- Implementation complexity and regulatory/MRM risks, with source references.
+- Estimated effort by role/person-days, elapsed duration, setup cost, and
+  recurring cost.
+- Expected impact, ROI metric, measurement method, and uncertainty.
+- Quality threshold, failure criteria, and conditions for continuing the pilot.
+- Priority, owner to be identified, and implementation sequence.
 
-A first pilot should preferably use public or synthetic inputs, remain outside
-order execution and regulated client communications, provide citations or source
-spans, require human approval, record model/version/settings, and have a simple
-fallback to the existing workflow. This is a proposed design principle, not a
-statement of policy approval.
+A proposed productivity calculation is:
+
+- Net hours saved = task count × (baseline minutes − assisted minutes −
+  incremental review/rework minutes) / 60.
+- Net quantified benefit = monetized benefit − incremental costs.
+- ROI = net quantified benefit / incremental costs over a stated period.
+
+Check that review/rework is not already included in assisted time. Capacity saved
+is not automatically cash saved. Connect cost assumptions to the
+[three-year TCO](../infrastructure/tco-model.md); any shorter pilot ROI period
+must be labelled separately.
+
+## Final report handoff
+
+Provide the 3–5-candidate comparison and prioritized 2–5-proposal roadmap to the
+final research report, alongside the executive summary, methodology, findings,
+and recommended next steps required by the brief.
