@@ -8,18 +8,22 @@ human_check_status: pending
 
 # E Fund / 易方达基金管理有限公司
 
-## Verified disclosure
+## Verified disclosures
 
-The original AMAC project case describes an operating integrated index-business
-platform using LLMs, deep learning, and the in-house LULU framework across
-marketing, research, investment, risk control, and trading. Its operating-reach
-figures include approximately 1,000 internal users and 300+ daily active users
-(PDF p. 7). Treat these as case-reported platform metrics, not measured LLM-only
-benefits. The underlying LLM model and commercial implementation partner are not
-named.
+The [E Fund deep dive](efund-llm-deep-dive.md) now follows multiple workstreams,
+with original passages and source-by-source limitations:
 
-Stage: operational platform reported in an association case. The PDF does not
-state a publication date; a date embedded in its URL is not used as one.
+| Workstream | Verified evidence | Source IDs |
+|---|---|---|
+| EFundGPT enterprise platform | Company-issued release confirms DeepSeek use in daily operations; AMAC-hosted company account reports 100+ AIGC applications | FUND-106; FUND-102 |
+| Internal model/Agent training | CIO's first-person institutional speech describes pretraining, LoRA and an internal Agent platform | FUND-103 |
+| Development/testing assistance | AMAC case explicitly places LLMs within a cloud-native development/testing process | FUND-101 |
+| Integrated index business | Operating LULU-based platform combines LLMs, deep learning and business systems | FUND-004 |
+| Earlier intelligent fund advisory | Historical NLP, machine learning and automated strategy checks documented in 2021; no LLM claim | FUND-100 |
+
+EFundGPT and the active-equity research platform also appear as separate named
+projects in the official 2023-award list (FUND-104). Awards establish project
+identity and recognition, not model validation or regulatory approval.
 
 ## Asset size
 
@@ -34,11 +38,23 @@ of model time versus a three-hour human standard. It is not a 78.5% score and is
 not a shared-hardware benchmark. Keep it as a candidate supporting example pending
 the original test disclosure; website ownership does not change reporter provenance.
 
+Further reporting gives DeepSeek V2/V3/R1 chronology, named research agents,
+operating volumes, and 2026 Tencent ima/WorkBuddy distribution. The deep dive
+preserves these as supplementary claims. A company-attributed ima article was
+read on Sina, but the linked original WeChat page could not be opened.
+
 ## Limits
 
 Company eligibility is supported by the official identity and public-fund
-project description. Model selection, hardware, causal ROI, and current service
-availability remain unverified. Human review pending.
+project description. The new company release verifies DeepSeek at family level;
+specific deployed checkpoints, GPU counts, inference engine, RAG configuration,
+retention and causal ROI remain unverified. No current rank is inferred from
+group AUM. Human review pending.
+
+Reviewer/method: Codex, 2026-09-06; original webpages, HTML provenance/date checks,
+PDF text extraction and complete relevant-page visual inspection. The
+[batch source register](research-batches/2026-09-06-efund-sources.md) records
+new source identities, dates, locators and access limits.
 
 ## Source trail
 

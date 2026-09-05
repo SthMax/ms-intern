@@ -97,7 +97,7 @@ regulatory instrument or legal requirement has already been verified.
 | Input | Status | How work proceeds |
 |---|---|---|
 | Minimum company count | Still missing in final brief | Collect and verify candidates; report actual count; seek mentor number without inventing it |
-| “Top tier” / asset-size measure | No formal cutoff or metric specified | Document selection basis; retain raw sourced AUM and compare only like-for-like entries |
+| “Top tier” / asset-size measure | User requested size-first research; working cohort is reported top-20 non-money public AUM at 2026 Q2, ETF feeders excluded | Preserve secondary ranking provenance and separate official company AUM; cohort choice is not the mentor's missing minimum |
 | AI versus LLM scope | Brief explicitly uses AI/LLM | Include concrete initiatives in either category and label the technology class |
 | MRM meaning | Confirmed: model risk management | Research relevant sources; identify applicable internal document/owner separately |
 | COD meaning | Confirmed: infrastructure used in MSIM | Carry actual hardware/network/security questions into Phase 2 |
@@ -154,3 +154,25 @@ this document.
 See [the research log](research-log-2026-09-06.md) for checks, retrieval limitations,
 and next actions. These outputs are the initial batch, not completion of the
 entire Week 2 plan.
+
+### 6 September 2026 — size-first expansion and E Fund deep dive
+
+The user prioritized large fund managers and authorized subagents. Research now
+starts with a sourced 20-manager universe and records a disposition for all 20.
+Fifteen have qualifying primary AI/LLM initiative evidence; five retain detailed
+secondary/unresolved records. Dacheng remains a supplementary prior case.
+
+Current catalogue: 21 dossiers, 16 primary-backed managers, 25 platform/workflow
+records and 101 registered sources (68 primary / 29 candidate / 4 unresolved).
+E Fund has a dedicated deep dive with chronology, named platforms, technical
+details, control/metric limitations and original source trails.
+
+- [Large-fund universe](../knowledge-base/companies/large-fund-universe-2026q2.md)
+- [E Fund deep dive](../knowledge-base/companies/efund-llm-deep-dive.md)
+- [Cross-manager synthesis](../knowledge-base/companies/large-fund-synthesis-2026-09-06.md)
+- [Current presentation brief](../presentation/large-fund-research-update.md)
+- [Research/review log](research-large-funds-2026-09-06.md)
+
+The broader legal-status sweep, human verification, comparable official AUM gaps
+and final presentation remain outstanding. No Phase 2 implementation or pilot
+ranking was performed in this fund-focused pass.

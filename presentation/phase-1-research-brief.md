@@ -1,5 +1,8 @@
 # Phase 1 Research Brief — First Batch, 6 September 2026
 
+Historical first-batch snapshot. Current coverage and the E Fund deep case are in
+[the large-fund research update](large-fund-research-update.md).
+
 Working input to [the Friday presentation](deck-outline.md).
 This is an initial research brief; presentation format and final coverage remain
 to be completed.

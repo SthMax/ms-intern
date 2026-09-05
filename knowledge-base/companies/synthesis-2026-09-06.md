@@ -1,5 +1,8 @@
 # Initial Company-Landscape Synthesis — 6 September 2026
 
+Historical first-batch snapshot. The current size-first findings are in
+[the expanded synthesis](large-fund-synthesis-2026-09-06.md).
+
 Scope: six fund managers, seven primary-source initiatives, ten further candidates.
 See [the database](index.md), [candidate queue](candidate-queue.md), and
 [master sources](../source-register.md). This is an initial convenience sample
