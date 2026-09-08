@@ -1,0 +1,151 @@
+[
+  {
+    "decision_id": "A1",
+    "kind": "nonarticle_sidebar",
+    "target": "knowledge-base/sources/FUND-108/original.md",
+    "scope": "从第181行“VIP课程推荐”起的页面侧栏/视频/股吧/导航块",
+    "reason": "不是对应基金AI文章正文；包含无关时事、市场推荐和互动文字",
+    "recommendation": "清理阅读副本的该块；保留文章正文及原始HTML",
+    "implemented": false
+  },
+  {
+    "decision_id": "A2",
+    "kind": "nonarticle_sidebar",
+    "target": "knowledge-base/sources/FUND-112/original.md",
+    "scope": "从第33行“VIP课程推荐”起的页面侧栏/视频/股吧/导航块",
+    "reason": "不是对应基金AI文章正文；包含无关时事、市场推荐和互动文字",
+    "recommendation": "清理阅读副本的该块；保留文章正文及原始HTML",
+    "implemented": false
+  },
+  {
+    "decision_id": "A3",
+    "kind": "nonarticle_sidebar",
+    "target": "knowledge-base/sources/FUND-203/original.md",
+    "scope": "从第69行“VIP课程推荐”起的页面侧栏/视频/股吧/导航块",
+    "reason": "不是对应基金AI文章正文；包含无关时事、市场推荐和互动文字",
+    "recommendation": "清理阅读副本的该块；保留文章正文及原始HTML",
+    "implemented": false
+  },
+  {
+    "decision_id": "A4",
+    "kind": "nonarticle_sidebar",
+    "target": "knowledge-base/sources/FUND-355/original.md",
+    "scope": "从第203行“VIP课程推荐”起的页面侧栏/视频/股吧/导航块",
+    "reason": "不是对应基金AI文章正文；包含无关时事、市场推荐和互动文字",
+    "recommendation": "清理阅读副本的该块；保留文章正文及原始HTML",
+    "implemented": false
+  },
+  {
+    "decision_id": "A5",
+    "kind": "nonarticle_sidebar",
+    "target": "knowledge-base/sources/FUND-358/original.md",
+    "scope": "从第55行“VIP课程推荐”起的页面侧栏/视频/股吧/导航块",
+    "reason": "不是对应基金AI文章正文；包含无关时事、市场推荐和互动文字",
+    "recommendation": "清理阅读副本的该块；保留文章正文及原始HTML",
+    "implemented": false
+  },
+  {
+    "decision_id": "A6",
+    "kind": "embedded_recommendation_links",
+    "targets": [
+      "knowledge-base/sources/FUND-110/original.md",
+      "knowledge-base/sources/FUND-251/original.md"
+    ],
+    "scope": "仅巴菲特、ETF净流入、侯维栋3条文末推荐",
+    "reason": "与基金AI/LLM项目无直接关系，未作为独立登记文章",
+    "recommendation": "可从主阅读副本隐藏/删除链接；原文章正文保留",
+    "implemented": false
+  },
+  {
+    "decision_id": "A7",
+    "kind": "wrong_page_capture",
+    "targets": [
+      "knowledge-base/sources/FUND-093/retrieval-response.md",
+      "knowledge-base/sources/FUND-093/retrieval-response.html"
+    ],
+    "scope": "误抓到的FX168新闻门户页，不是嘉实文章",
+    "reason": "页面包括黄金、特朗普、美伊冲突等新闻列表；正确主题已有FUND-317官网文章",
+    "recommendation": "可删除这两个错误响应文件；保留metadata/recovery或先迁移其取证链接，避免删除FUND-317",
+    "implemented": false
+  },
+  {
+    "decision_id": "A8",
+    "kind": "embedded_promotions",
+    "target": "knowledge-base/sources/FUND-359/original.md",
+    "scope": "原页附属内容中的4条推荐及公众号推广；原始PDF第4页",
+    "reason": "不是华泰柏瑞AI投研正文",
+    "recommendation": "可不纳入主阅读集；正文/风险提示/原PDF保留",
+    "implemented": false
+  },
+  {
+    "decision_id": "A9",
+    "kind": "app_store_recommendations",
+    "target": "knowledge-base/sources/FUND-221/original.md",
+    "scope": "第635行“你可能还喜欢”之后的其他App推荐",
+    "reason": "不证明现金宝AI功能或其他基金AI部署",
+    "recommendation": "清理阅读副本该块；保留8.97/8.98版本说明、提供者和日期",
+    "implemented": false
+  },
+  {
+    "decision_id": "C1",
+    "kind": "limited_relevance_registered_source",
+    "source_id": "FUND-162",
+    "title": "平安基金管理有限公司",
+    "target": "knowledge-base/sources/FUND-162/",
+    "reason": "主页/产品长列表；仅用于确认平安基金身份，没有本页可核对的AI实施或AUM信息。",
+    "recommendation": "保留简短身份凭证并移出主阅读集；若整项删除，先替换公司身份引用。",
+    "referencing_notes": [
+      "knowledge-base/source-register.md",
+      "knowledge-base/companies/COMP-017-pingan.md",
+      "knowledge-base/companies/research-batches/2026-09-06-huaan-pingan-sources.md"
+    ],
+    "implemented": false
+  },
+  {
+    "decision_id": "C2",
+    "kind": "limited_relevance_registered_source",
+    "source_id": "FUND-405",
+    "title": "国泰基金管理有限公司旗下部分基金2025年年度报告提示性公告",
+    "target": "knowledge-base/sources/FUND-405/",
+    "reason": "年度报告发布通知及294只基金清单；仅支持国泰公募管理人身份/经营活动。",
+    "recommendation": "可只保留第1页阅读摘要，附件名单不进主阅读集；整项删除会影响身份引用。",
+    "referencing_notes": [
+      "knowledge-base/source-register.md",
+      "knowledge-base/companies/COMP-015-guotai.md",
+      "knowledge-base/companies/index.md",
+      "knowledge-base/companies/research-batches/2026-09-06-root-large-funds-sources.md"
+    ],
+    "implemented": false
+  },
+  {
+    "decision_id": "C3",
+    "kind": "limited_relevance_registered_source",
+    "source_id": "FUND-357",
+    "title": "钱拓科技 · FDE金融AI服务商",
+    "target": "knowledge-base/sources/FUND-357/",
+    "reason": "供应商自述及中欧基金客户名录；未绑定具体项目、模型、时间或成效。",
+    "recommendation": "可移到供应商线索附录；不需要该线索时可整项删除，但要同步移除客户名单引用。",
+    "referencing_notes": [
+      "knowledge-base/source-register.md",
+      "knowledge-base/companies/COMP-020-china-europe.md",
+      "knowledge-base/companies/index.md",
+      "knowledge-base/companies/research-batches/2026-09-06-remaining-large-funds-sources.md"
+    ],
+    "implemented": false
+  },
+  {
+    "decision_id": "C4",
+    "kind": "limited_relevance_registered_source",
+    "source_id": "FUND-255",
+    "title": "强强联手！景顺长城量化团队携手清华大学研究碳中和",
+    "target": "knowledge-base/sources/FUND-255/",
+    "reason": "2021年ESG碳中和合作报道；正文确有NLP/文本图表识别抽取数据，属于历史NLP，不是生成式LLM部署。",
+    "recommendation": "若保留广义AI/NLP历史则保留；若只保留生成式LLM实施可移到历史附录或删除。",
+    "referencing_notes": [
+      "knowledge-base/source-register.md",
+      "knowledge-base/companies/COMP-014-invesco-great-wall.md",
+      "knowledge-base/companies/research-batches/2026-09-06-invesco-great-wall-sources.md"
+    ],
+    "implemented": false
+  }
+]

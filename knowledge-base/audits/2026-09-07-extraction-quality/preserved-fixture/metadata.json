@@ -1,0 +1,28 @@
+{
+  "source_url": "https://example.invalid/local-fixture",
+  "input_file": "/Users/sthmax/dev/git/ms-intern/knowledge-base/audits/2026-09-07-extraction-quality/synthetic-fixture.html",
+  "title": "研究证据质量测试",
+  "account_as_displayed": "示例基金公众号",
+  "author_strings_as_displayed": [
+    "曹雯璟"
+  ],
+  "published_as_displayed": "2026-05-31",
+  "provenance_strings": [
+    "以下文章来源于中国基金报，作者曹雯璟"
+  ],
+  "raw_sha256": "43b1c4251c878df25a774885dcd040979cb5409ebf71193318f5887bec9ebf9d",
+  "converter_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Offline use of installed WeChat HTML-to-Markdown parser; lossy noise cleaner and network downloader not invoked",
+  "article_selector": "#js_content",
+  "missing_paragraphs": [],
+  "images": [
+    {
+      "url": "https://example.invalid/chart.png",
+      "downloaded": false
+    }
+  ],
+  "text_check": "pass",
+  "human_check_status": "pending",
+  "network_used": false,
+  "limits": "Text check does not validate figure contents, table spans, article authenticity, or substantive claims. Remote image references are kept, not downloaded."
+}

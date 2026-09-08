@@ -1,0 +1,17 @@
+{
+  "status": "full_document_unrecovered_indexed_excerpt_only",
+  "browser": "Fresh internal-browser retry again redirected original PDF URL to homepage. Online-tender navigation did not reveal original document.",
+  "result": "Exact URL/title indexed with December2024 cover and procurement specifications, but direct/web-open/extractor/browser access yielded no35-page PDF. Indexed excerpts are discovery evidence only.",
+  "files": [
+    "indexed-discovery.md"
+  ],
+  "alternatives": [],
+  "source_id": "FUND-310",
+  "checked_at": "2026-09-07T02:53:16.193561+00:00",
+  "original_url": "https://www.phfund.com.cn/fs/uf/ke/file/20241223/20241223182720.pdf",
+  "original_title": "AI算力服务器采购项目招标文件",
+  "human_check_status": "pending",
+  "file_checksums": {
+    "indexed-discovery.md": "9d064e4bd54206f0e881e203da6cffbc25139191cb6f5a326d3e2db76d0320c9"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "link_id": "WX-005",
+  "related_source": "FUND-110",
+  "relationship": "unrelated_recommendation",
+  "expected_title": "重磅！巴菲特，出手！",
+  "requested_url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52",
+  "retrieved_at": "2026-09-07T06:33:07.466067+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HKZanmqjiNAn1HLQISj5wQM58xzOmBkuLsTHQqs-&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5MDEzNjQwMA%3D%3D%26mid%3D2656227321%26idx%3D1%26sn%3Da342b90feb23715ad1dbf57efb29bf52",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "054846801c661b7073d5869520c63236c4319882fc7ded17b95854c346d58aac",
+  "byte_count": 17761,
+  "extracted_title": "未命名文章",
+  "article_characters": 0,
+  "redirects": [
+    {
+      "status": 302,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52"
+    }
+  ],
+  "status": "unavailable",
+  "reason": "No substantive #js_content article container",
+  "response_text": "： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看"
+}

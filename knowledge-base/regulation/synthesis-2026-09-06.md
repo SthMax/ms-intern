@@ -1,5 +1,7 @@
 # Initial Regulatory / MRM Synthesis — 6 September 2026
 
+> 本页为研究者分析，不是来源原文或官方翻译。请通过下方 REG 笔记查阅原语言条文和本地原始文件；完整目录见[原始来源档案](../sources/README.md)。
+
 This synthesis organizes inspected provisions under the three assigned themes.
 [Source matrix](index.md) · [Master register](../source-register.md).
 

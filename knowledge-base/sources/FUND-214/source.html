@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="force-rendering" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="author" content="&#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;">
+    <meta name="keywords" content="&#x535A;&#x65F6;&#x57FA;&#x91D1;&#x8463;&#x4E8B;&#x957F;&#x5F20;&#x4E1C;&#xFF1A;&#x628A;&#x63E1;&#x201C;&#x5341;&#x4E94;&#x4E94;&#x201D;&#x8D22;&#x5BCC;&#x7BA1;&#x7406;&#x65B0;&#x8D8B;&#x52BF;&#xFF0C;&#x8FD0;&#x7528;AI&#x52A9;&#x529B;&#x9AD8;&#x8D28;&#x91CF;&#x53D1;&#x5C55;">
+    <meta name="description" content="&#x535A;&#x65F6;&#x57FA;&#x91D1;&#x8463;&#x4E8B;&#x957F;&#x5F20;&#x4E1C;&#xFF0C;&#x6700;&#x65B0;&#x53D1;&#x58F0;&#xFF01;">
+    <title>&#x535A;&#x65F6;&#x57FA;&#x91D1;&#x8463;&#x4E8B;&#x957F;&#x5F20;&#x4E1C;&#xFF1A;&#x628A;&#x63E1;&#x201C;&#x5341;&#x4E94;&#x4E94;&#x201D;&#x8D22;&#x5BCC;&#x7BA1;&#x7406;&#x65B0;&#x8D8B;&#x52BF;&#xFF0C;&#x8FD0;&#x7528;AI&#x52A9;&#x529B;&#x9AD8;&#x8D28;&#x91CF;&#x53D1;&#x5C55; &#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;</title>
+    <link href="/lib/element-ui/index.css" rel="stylesheet" />
+    <link href="/css/v4/layout.min.css?v=P3HD1GKBxiP6iedtYNWjE_oN1wBTr7L9ZLqiJ7B8ZhA" rel="stylesheet" />
+    <link href="/css/gray.min.css" rel="stylesheet" />
+    <link href="//cdn.chnfund.com/s/iconfont/font_5114877_odik0oqmiq.css" rel="stylesheet" />
+
+
+    <script type="text/javascript">
+        window.$cf = { cdn: 'https://cdn.chnfund.com' }
+    </script>
+    <script src="/lib/core-js/3.38.1/core-js.min.js?v=hjcPNNioB449BRZzXqlLrcK3dS0TXIEuGe79zpna4i0"></script>
+    <script src="/lib/jquery/dist/jquery.min.js?0.1&amp;v=_JqT3SQfawRcv_BIHPThkBvs0OEvtFFmqPF_lYI_Cxo"></script>
+    <!-- Import Vue 2 -->
+    <script src="/lib/vue/vue.min.js?v=PB1LDFSejenUqbr7EqtwtqGsdH0HKTuYxbJbZjKZmv0"></script>
+    <script src="/lib/element-ui/index.js?v=idPFXo-gPxd7HMOCSu3nyUss5BQ_ajD1TruW4g60K8I"></script>
+    <script src="/lib/axios/axios.min.js?v=nec3W3r9OG4DeHKjWvWqWOCJmGz-nl4seDl2Uo77Xy8"></script>
+    <script src="/lib/moment/moment.min.js?v=hFxSSWnt1bOvmqbYcY0p_pLo2-JblVIUqOBkoFqaUCc"></script>
+    <script src="/lib/moment/zh-cn.js?v=UxOFMqrXxXGvEM9rF6Z4VS6ann71AU0lD5evjcYa5uE"></script>
+    <script src="/js/pages/common.min.js?v=9-K3ydfm08E2HjjLxkpH6N3wvD_qTWvhkn6Haa_vUJM"></script>
+    <script>
+        window.AliyunCaptchaConfig = {
+            // 必填，验证码示例所属地区，支持中国内地（cn）、新加坡（sgp）
+            region: "cn",
+            // 必填，身份标。开通阿里云验证码2.0后，您可以在控制台概览页面的实例基本信息卡片区域，获取身份标
+            prefix: "rjdt1i",
+        };
+    </script>
+    <!--2.集成主JS-->
+    <script type="text/javascript" src="https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js"></script>
+
+    
+    <link href="/css/v4/pages/article-detail.min.css?v=n7iyWtZbrCDSDFO2cUzdy9zXnnFZOQzXii6qk-cU6M0" rel="stylesheet" />
+
+
+    <!--[if lte IE 9 ]> <link href="/css/v4/lte-ie9.min.css" rel="stylesheet" /> <![endif]-->
+    <!--[if IE 7 ]> <link href="/css/v2/pages/ie7.min.css" rel="stylesheet" /> <![endif]-->
+    
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?35849f3b9042e6cb270e09a0d9350982";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    
+</head>
+<body class="article-detail-body">
+    
+
+    
+<div class="header">    
+    <div class="top-wrapper">
+        <div class="top clearfix">
+            <div class="right">
+                <form class="search" method="get" action="/search/index" target="_blank">
+                    <input class="query" name="query" placeholder="请输入查询关键字"
+                           maxlength="30"
+                           autocomplete="off" />
+                    <button type="submit" log-action="点击搜索" class="imgWrapper"><img src="/image/common/search.png" /></button>
+                </form>
+                <ul>
+                    <li class="qrcode">
+                        <p>官方微信</p>
+                        <img class="qrcode-img" src="/image/qrcode/wx-cf-200x200.png" alt="官方微信" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方APP</p>
+                        <img class="qrcode-img" src="/image/qrcode/chnfund-app.png" alt="官方APP" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方视频号</p>
+                        <img class="qrcode-img" src="/image/qrcode/wxsph.jpg" alt="官方视频号" />
+                    </li>
+                    <li><a log-action="点击" log-content="电子报" href="/epaper">电子报</a></li>
+                    <li class="login-item-wrapper"><a log-action="点击" 
+                           log-content="登录" 
+                           id="btnLogin"
+                           href="javascript:void 0">登录</a>
+                        <i id="vipIcon" class="iconfont icon-VIP"></i>
+                        <a log-action="点击" 
+                           log-content="退出登录" 
+                           id="btnLogout"
+                           title="退出"
+                           style="display:none"
+                           href="javascript:void 0"><span>|</span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loginDialog" v-cloak>
+    <el-dialog title="登录" :visible.sync="visible" 
+        width="400px"         
+        :close-on-click-modal="false"
+        v-loading="submitting">
+
+        <img src="/image/logo.png" class="logo" />
+
+        <el-form :model="form" :rules="rules" ref="form" 
+            label-width="80px"
+            label-position="top">
+
+            <el-form-item prop="phone">
+                <el-input v-model="form.phone" placeholder="请输入手机号" maxlength="11" autocompleted />
+            </el-form-item>
+
+            <el-form-item prop="code" class="form-item-code">
+                <el-input v-model="form.code" placeholder="验证码" 
+                    class="sms-code"
+                    maxlength="6"
+                ></el-input>
+                <el-button type="primary"
+                           id="captcha-button"
+                           v-on:click="preSendCode"
+                           :disabled="countdown > 0 || submittingCaptcha" 
+                           class="btn-send-sms-code" 
+                           style="width:100%">
+                    {{ countdown > 0 ? countdown + 's' : '获取验证码' }}
+                </el-button>
+            </el-form-item>
+
+            <el-button type="primary" @click="submit" class="btn-login" :disabled="sendButtonDisabled">登录</el-button>
+        </el-form>
+    </el-dialog>
+</div>
+
+    <div class="logo">
+        <a href="/" class="imgWrapper">
+            <img src="/image/logo.png" />
+        </a>
+    </div>
+
+    <div class="slogan">
+        <div class="cn">
+            <p>洞察金融市场</p>
+            <p class="china-value">传播中国价值</p>
+        </div>
+        <p class="en">Global Perspective, China Value</p>
+    </div>
+
+        <div class="nav">
+            <section>
+                <div><a log-action="点击导航" log-content="首页" href="/">首页</a></div>
+                <div><a log-action="点击导航" log-content="资管" href="/financial">资管</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公募" href="/fund">公募</a></div>
+                <div><a log-action="点击导航" log-content="环球" href="/global">环球</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="闪讯" href="/sx">闪讯</a></div>
+                <div><a log-action="点击导航" log-content="电子报" href="/epaper">电子报</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="私募" href="/sm">私募</a></div>
+                <div><a log-action="点击导航" log-content="大湾区" href="/greater-bay-area">大湾区</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="券商" href="/security">券商</a></div>
+                <div><a log-action="点击导航" log-content="论坛" href="/forum">论坛</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="银行" href="/bank">银行</a></div>
+                <div><a log-action="点击导航" log-content="视频" href="/video">视频</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="市场" href="/market">市场</a></div>
+                <div><a log-action="点击导航" log-content="访谈" href="/interview">访谈</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公司" href="/company">公司</a></div>
+                <div><a log-action="点击导航" log-content="投教" href="/investment-education">投教</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="IPO" href="/ipo">IPO</a></div>
+                <div><a log-action="点击导航" log-content="Invest Insight" href="/ins">Invest Insight</a></div>
+            </section>
+        </div>
+</div>
+
+<script src="/js/v4/nav.min.js?v=AzFu_hRLnrubqZVGrrPVM4L1qytdsEYv8a_t7TRxP-Q"></script>
+
+    
+
+<div class="content-body">
+    <!-- 文章详情左栏 -->
+    <div class="left">
+        <h1 class="article-title">
+            &#x535A;&#x65F6;&#x57FA;&#x91D1;&#x8463;&#x4E8B;&#x957F;&#x5F20;&#x4E1C;&#xFF1A;&#x628A;&#x63E1;&#x201C;&#x5341;&#x4E94;&#x4E94;&#x201D;&#x8D22;&#x5BCC;&#x7BA1;&#x7406;&#x65B0;&#x8D8B;&#x52BF;&#xFF0C;&#x8FD0;&#x7528;AI&#x52A9;&#x529B;&#x9AD8;&#x8D28;&#x91CF;&#x53D1;&#x5C55;
+        </h1>
+        <div class="article-base-info">
+            <span class="publish-time">2026-05-31 13:53</span>
+            <div class="share">
+                <div class="wechat-share imgWrapper">
+                    <img src="/image/common/wechat.png" alt="微信分享" />
+                    <div id="qrcode"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="article-content">
+            <section style="text-align: center;margin-bottom: 0px;" nodeleaf=""><img class="rich_pages wxw-img" data-ratio="0.37890625" data-s="300,640" data-type="jpeg" data-w="1280" type="block" data-imgfileid="508893086" data-aistatus="1" src="https://cdn.chnfund.com/upload/article/wechat/2026/05/31/f21116e976e7c0dc7db80ee946b4980a9c68d12e.jpeg"/></section><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(0, 82, 255);">【导读】博时基金董事长张东：把握“十五五”财富管理新趋势，运用AI助力高质量发展</span></span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">中国基金报记者 方丽</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">5月29日，由中国基金报主办的第二届全球资产管理论坛暨2026机构投资者论坛在深圳隆重举行。会上，博时基金董事长张东发表主旨演讲，围绕“把握‘十五五’财富管理新趋势，运用AI助力高质量发展”主题，系统解读了“十五五”阶段公募行业的核心使命、财富管理转型大</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">趋势</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">、行业机遇与挑战，并详细分享了博时基金战略布局与AI技术赋能高质量发展的最新实践。</span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><br/></span></p><section style="text-align: center;" nodeleaf=""><img class="rich_pages wxw-img js_insertlocalimg" data-ratio="0.66640625" data-s="300,640" data-type="jpeg" data-w="1280" type="block" data-imgfileid="508894187" data-aistatus="1" src="https://cdn.chnfund.com/upload/article/wechat/2026/05/31/518dee4b9d0bd1a3797658d5fce2c122d6ef5031.jpeg"/></section><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">锚定金融强国建设</span></span></p><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">明确“十五五”公募三大</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">核心任务</span></span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">今年是</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">“十五五”开局之年</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">，也是证监会正式发布《推动公募基金行业高质量发展行动方案》落地一周年。在这一关键节点，公募行业正式迈入高质量发展的全新周期。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">在演讲中，</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">张东表示，从高质量发展到金融强国建设，高质量是发展的模式和路径，一流资管机构是发展的目标。相对于国际一流资管机构，我国资管公司的管理规模还偏小，财富管理的能力还不足，全球化的业务布局和定价能力还较弱，必须加快追赶。未来行业要坚持政治性、人民性，加快提升核心竞争力，通过高质量发展，做大做强，打造一流资管机构。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">在他看来，</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">“十五五”期间公募基金发展聚焦三大核心任务：一是服务新质生产力发展，提升权益资产的投资比例；二是提升投资者盈利体验，引导大众资金长期投资、价值投资；三是加快高水平对外开放，增强对全球资产的定价能力，提升对全球资本市场的影响力</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">。</span></span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">大势所趋</span></span></p><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">资管向财富管理转型成行业必然</span></span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">在“十五五”行业高质量发展的背景下，公募基金发展从资产管理向财富管理的转型发展，是必然趋势。张东从政策导向、市场环境、客户需求三大维度剖析了行业转型的底层逻辑。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">首先，从政策和监管要求来看，从中央金融工作会议精神到“十五五”对资本市场发展的规划，一系列政策明确了行业未来的总方向和大趋势。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">其次，从资产条件来看，无风险利率中枢下行，权益资产的中长期配置价值提升。在更大视野上，百年未有之大变局下的地缘政治环境更加复杂多变，全球各类资产波动加剧，必须从全球股、债、汇、商、另类资产、数字资产等多资产角度，更好地寻找新的收益来源，降低组合波动，才能满足客户财富保值增值的需求。同时，监管政策着力稳定市场，防止大起大落，推动长期资金入市，倡导价值投资、长期投资，资本市场改革制度红利进一步释放，市场行稳致远的机制日益完善。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">从客户需求来看，随着中国经济持续发展和人口结构变化，个人投资者对专业化、多元化的理财服务需求将稳步上升。“十五五”期间，整个财富管理行业，包括公募基金的需求预计保持较快增长。按照摩根士丹利预测，中国家庭居民的金融资产将在2030年达到440万亿元，2024</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">—</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">2030年的年复合增长率为7.6%。这些需求以稳健的理财替代、养老投资等为主，资产管理行业必须洞察趋势，对这类稳健增值的财富管理需求提供解决方案。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">机遇与挑战并存</span></span></p><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">重塑行业核心竞争力</span></span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">展望未来，公募行业正迎来多重战略机遇。张东表示，一是居民财富管理需求平稳增长，个人投资者对专业化、多元化的理财服务需求将稳步上升；二是海外资金配置中国比例提升，进一步提升财富管理的需求；三是宏观经济企稳大背景下，叠加科技创新持续突破，为行业财富管理打开新的战略空间。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">“我们预计，公募基金的增速将快于财富管理行业的平均水平，关键在于权益市场形成</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">‘</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">慢牛</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">’‘</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">长牛</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">’</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">。”</span></span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-weight: bold;">张东表示。</span></span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">从当前的宏观与产业格局来看，“慢牛”“长牛”有良好的基础。张东表示，从宏观层面看，“十五五”开局之年，中国经济呈现企稳回升的积极态势。消费领域温和复苏，房地产部门在政策托底与市场出清双重作用下，风险有序释放，部分核心城市成交量价边际改善。与此同时，新经济力量加速崛起，以高端制造、绿色能源、数字经济为代表的新质生产力动能持续增强，正在成为增长的主引擎。此外，人民币汇率在基本面支撑下稳中有升，国际资本对中国资产的配置意愿回暖。中美关系在高层沟通机制下保持总体稳定，外部环境的不确定性有所下降。这些积极变化共同构筑了资产管理和财富管理行业稳健运行的宏观底座。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">更大的亮点在于科技创新，资本市场上的投资机会蓬勃涌现，技术突破与国产替代形成双重驱动，科创赛道的景气度持续提升，这为行业发展打开了前所未有的战略空间。对于投资者而言，这意味着可配置的优质资产池正在快速扩容。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">关于挑战，张东认为可以概括为两个“亟须”：一是优秀文化亟须加快形成。高质量发展下，需要加快建设以“为投资者创造价值”为核心的信托文化，践行“五要五不”中国特色金融文化。二是核心能力亟须加快提升。资产管理能力方面，科创产业新技术路线多、变化快，投资波动大、难度大、盈利周期较长，且获取超额收益难度较高，对传统研究和定价提出挑战。资产配置能力方面，从单一资产到多资产，对资产的配置、团队和投研力量的整合，投顾服务与陪伴，从单一能力向复合能力飞跃，都提出更高的要求。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">对此，张东强调，行业必须适应新的趋势，加快转型，着力优化业务结构，重塑核心竞争力。</span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">“公募基金行业需加快投研一体建设，将公司不同行业、不同策略、不同资产的投研力量打通，为投资经理更好地突破自身认知边界和规模上限，围绕基准做出超额收益予以全面平台赋能。要加快投资、产品、服务、数智化一体的体系化建设，将投资力、服务力、产品力、科技力集成为敏捷、高效、强大的综合竞争力。要完善考核激励的配套机制，根据不同投资目标精准设置不同的考核方案，发挥好考核激励的指挥棒作用。”张东表示。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">践行“1+2+1”战略</span></span></p><p style="margin-bottom: 0px;text-align: center;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="color: rgb(2, 30, 170);font-weight: bold;">博时以AI赋能高质量发展</span></span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">演讲中，张东详细介绍了博时基金高质量发展实践与中长期战略布局。近年来，博时基金坚持以“科技投资”为抓手，多赛道、多策略协同投资格局逐渐形成，将投资能力转化为实实在在的投资者收益。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">数据显示，2025年博时基金为投资者创造基金利润超856亿元，投资者盈利数占比达96.38%，近三年均值为95.8%，投资者获得感持续提升。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">面向“十五五”，博时基金确立以打造“价值发现为基、投资者利益为本”的行业领先资产管理公司的战略目标，努力成为客户价值的创造者、投资价值的发现者、高质量发展的引领者和金融强国的建设者。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">围绕战略目标，博时基金采取一个文化、两种能力和一个平台的“1+2+1”战略。其中，“一个文化”指的是以“五要五不”为核心原则的中国特色金融文化。“两种能力”指的是资产的投资能力和配置能力。“一个平台”指的是以考核为抓手、以基准为核心，通过平台化建设赋能，加快投研一体建设，将公司不同行业、不同策略、不同资产的投研力量打通，为投资经理更好地突破自身认知边界和规模上限，围绕基准做出超额收益予以全面平台赋能，打造行业领先资产管理公司。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">更重要的是，伴随全球AI Agent智能体技术爆发，金融行业正式迈入智能化新时代，面对新</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">变化</span><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">，博时基金积极行动，早在2018年就已成立金融科技中心，开始人工智能算法研究和应用。2022年ChatGPT发布后，博时基金于2023年成立人工智能实验室，系统布局大模型前沿技术，将AI广泛应用于投研、营销、风控、运营及研发等全业务环节。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">今年4月初，博时基金人工智能实验室重磅推出自研成果——企业级智能服务平台“龙虾平台（内部命名BSBox）”，正式落地投入规模化应用，率先开启金融行业企业级AI Agent规模化落地的全新探索。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">张东介绍，从技术前瞻到落地赋能，博时基金走出了一条兼具安全性与实用性的发展路径。在安全方面，博时基金通过全自主研发、沙箱隔离、全链路审计、私有部署的算力和大模型等方式化解了智能体金融应用安全风险；在效益方面，无论是及时跟踪市场最新动态、整合内外部信息与投研成果，还是结合基金产品出具专业投资建议并自动发送至指定邮箱，BSBox高效承接各类个性化工作任务，实现分钟级全流程办结，显著提升业务运转效能。BSBox充分释放业务人员的创新动能，让场景挖掘、投研精进持续融入日常工作，实现业务数字化的范式升级。</span></p><p style="margin-bottom: 0px;"><span leaf=""><br/></span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;">展望未来，张东表示，博时基金将持续跟踪全球AI技术前沿，深化技术与投研、风控等核心业务的融合，以AI创新驱动金融服务提质增效，为“十五五”期间做好“数字金融”大文章添砖加瓦，助力公司高质量发展，力争为投资者创造更多价值。</span></p><p style="margin-bottom: 0px;"><span leaf="" style="color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><br/></span></p><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;color: rgba(0, 0, 0, 0.9);font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 17px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: 0.544px;orphans: 2;text-align: justify;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(255, 255, 255);text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;" data-pm-slice="0 0 []"><span leaf="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-size: 14px;color: rgb(136, 136, 136);">校对：乔伊</span></span></p><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;color: rgba(0, 0, 0, 0.9);font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 17px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: 0.544px;orphans: 2;text-align: justify;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(255, 255, 255);text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;"><span leaf="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-size: 14px;color: rgb(136, 136, 136);">制作：小茉</span></span></p><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;color: rgba(0, 0, 0, 0.9);font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 17px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: 0.544px;orphans: 2;text-align: justify;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(255, 255, 255);text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;"><span leaf="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;color: rgba(0, 0, 0, 0.9);font-size: 17px;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;line-height: 1.6;letter-spacing: 0.034em;font-style: normal;font-weight: normal;"><span textstyle="" style="font-size: 14px;color: rgb(136, 136, 136);">审核：木鱼</span></span></p><section style="margin-bottom: 0px;white-space: normal;outline: 0px;max-width: 100%;color: rgb(62, 62, 62);font-family: 微软雅黑;text-align: start;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><section style="outline: 0px;max-width: 100%;text-align: center;box-sizing: border-box !important;overflow-wrap: break-word !important;"><p style="margin-bottom: 8px;outline: 0px;text-align: center;"><span leaf=""><br/></span></p><p style="outline: 0px;text-align: center;"><a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.stcn.fundnews" imgurl="https://mmbiz.qpic.cn/mmbiz_jpg/7KcgpBE2JbpMUb7VNGEZ6P8VWvEJ4n77lhnKeMia9Y4rdf95QUcDPQScpuOmbH5AqFEqcnGTLYT2dg6jJ2yvwZg/640?wx_fmt=jpeg&amp;from=appmsg" linktype="image" tab="outerlink" target="_blank" data-linktype="1"><span class="js_jump_icon h5_image_link"></span></a></p></section></section><section data-id="105438" data-tools="135编辑器" data-chnfund-ad="1" style="margin-bottom: 0px;white-space: normal;"><section style="margin: 10px auto;padding-left: 10px;box-sizing: border-box;"><section style="border-width: 2px;border-style: solid;border-color: rgb(54, 96, 146);box-sizing: border-box;"><section style="margin-top: 10px;display: flex;justify-content: flex-start;align-items: center;"><section style="margin-right: -10px;margin-left: -10px;box-sizing: border-box;width: 25px;height: 10px;background-image: none;background-attachment: scroll;background-color: rgb(54, 96, 146);overflow: hidden;background-position: 0% 0%;background-repeat: repeat repeat;"><span leaf=""><br/></span></section><section data-brushtype="text" style="padding: 4px 1em;display: inline-block;border-width: 1px;border-style: solid;border-color: rgb(54, 96, 146);letter-spacing: 1.5px;color: rgb(54, 96, 146);box-sizing: border-box;"><span leaf="">版权声明</span></section></section><section style="padding: 1em;box-sizing: border-box;"><p style="text-align: center;"><span style="color: rgb(136, 136, 136);font-size: 14px;"><span leaf="">《中国基金报》对本平台所刊载的原创内容享有著作权，未经授权禁止转载，否则将追究法律责任。</span></span></p><p style="text-align: center;"><span leaf=""><br/></span></p><p style="text-align: center;"><span style="color: rgb(136, 136, 136);font-size: 14px;"><span leaf="">授权转载合作联系人：于先生（电话：0755-82468670）</span></span></p></section></section></section></section>
+        </div>
+
+
+        
+
+    </div>
+
+    <!-- 二维码 -->
+    <div class="right">
+                <a   class="imgWrapper">
+                    <img alt="APP" src="https://cdn.chnfund.com/upload/cfa/image/202511/03/20251103171139_4961.jpg"></img>
+                </a>
+    </div>
+</div>
+
+
+
+        <div class="footer">
+    <div class="box bottom-box clearfix">
+        <div class="bottom-item bottom-item-logo">
+            <a href="/" class="imgWrapper"><img src="/image/logo2.png" alt="中国基金报" /></a>
+        </div>
+
+        <div class="bottom-item bottom-item-nav">
+            <h4><a href="/"><span class="footer-llink-text">首页</span></a></h4>
+            <ul>
+                <li><a target="_blank" href="/about"><span class="footer-llink-text">关于我们</span></a></li>
+                <li><a target="_blank" href="/addus"><span class="footer-llink-text">加入我们</span></a></li>
+                <li><a target="_blank" href="/contactus"><span class="footer-llink-text">联系我们</span></a></li>
+                <li><a target="_blank" href="/copyright"><span class="footer-llink-text">版权声明</span></a></li>
+            </ul>
+        </div>
+        <div class="bottom-item bottom-item-cooperation">
+            <h4>合作伙伴</h4>
+            <div class="link-box">
+                <a log-action="点击合作伙伴" log-content="紫荆杂志社" href="https://zijing.com.cn/" target="_blank">紫荆杂志社</a>|
+                <a log-action="点击合作伙伴" log-content="凤凰网" href="http://www.ifeng.com/" target="_blank">凤凰网</a>|
+                <a log-action="点击合作伙伴" log-content="东方财富网" href="http://www.eastmoney.com/" target="_blank">东方财富网</a>|
+                <a log-action="点击合作伙伴" log-content="金融界" href="http://www.jrj.com.cn/" target="_blank">金融界</a>|
+                <a log-action="点击合作伙伴" log-content="中新经纬" href="http://www.jwview.com/" target="_blank">中新经纬</a>|
+                <a log-action="点击合作伙伴" log-content="每日经济新闻" href="http://www.nbd.com.cn/" target="_blank">每日经济新闻</a>|
+                <a log-action="点击合作伙伴" log-content="21世纪网" href="http://www.21jingji.com/" target="_blank">21世纪网</a>|
+                <a log-action="点击合作伙伴" log-content="财经网" href="http://www.caijing.com.cn/" target="_blank">财经网</a>|
+                <a log-action="点击合作伙伴" log-content="和讯网" href="http://www.hexun.com/" target="_blank">和讯网</a>|
+                <a log-action="点击合作伙伴" log-content="搜狐" href="http://www.sohu.com/" target="_blank">搜狐</a>|
+                <a log-action="点击合作伙伴" log-content="中金在线" href="http://www.cnfol.com/" target="_blank">中金在线</a>|
+                <a log-action="点击合作伙伴" log-content="一财网" href="http://www.yicai.com/" target="_blank">一财网</a>
+            </div>
+        </div>
+    </div>
+    <div class="box copyright">
+        <p>
+            Copyright © 2026 《中国基金报》社有限公司版权所有，未经许可不得转载使用，违者必究。
+        </p>
+        <section>
+            <section>
+                网站备案号： <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备14037591号</a>
+            </section>     
+            <section>网络视听许可证：1908317号</section>
+            <section>互联网新闻信息服务许可证：10120200011 </section>
+        </section>
+        <section>
+            <section>违法和不良信息举报电话：(0755) 83501616</section>
+            <section>邮箱：xingdapeng@chnfund.com</section>
+        </section>
+    </div>
+</div>
+
+    <input type="hidden" value="&#x535A;&#x65F6;&#x57FA;&#x91D1;&#x8463;&#x4E8B;&#x957F;&#x5F20;&#x4E1C;&#xFF1A;&#x628A;&#x63E1;&#x201C;&#x5341;&#x4E94;&#x4E94;&#x201D;&#x8D22;&#x5BCC;&#x7BA1;&#x7406;&#x65B0;&#x8D8B;&#x52BF;&#xFF0C;&#x8FD0;&#x7528;AI&#x52A9;&#x529B;&#x9AD8;&#x8D28;&#x91CF;&#x53D1;&#x5C55;" id="wxShareTitle" />
+    <input type="hidden" value="&#x535A;&#x65F6;&#x57FA;&#x91D1;&#x8463;&#x4E8B;&#x957F;&#x5F20;&#x4E1C;&#xFF0C;&#x6700;&#x65B0;&#x53D1;&#x58F0;&#xFF01;" id="wxShareDesc" />
+    <input type="hidden" id="wxShareUrl" />
+    <input type="hidden" id="wxShareImg" />
+
+    <!--[if IE 7]>
+    <script src="/js/pages/ie7_pseudo.min.js"></script>
+    <![endif]-->
+
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="/lib/wxextsignature.js?v=qywUW3BbDrfXM8meOjqbmoFlRhsfiHqQ8cspJ9pCmXY"></script>
+
+
+    <script src="/js/v4/log.min.js?v=QOIf51HEEYLlZ6cuZenMmY0Er7WF7pfkpqd01rPqbtc"></script>
+    <script>
+        initTrace('https://gw.chnfund.com/log-api/api/logs/single-log');
+    </script>
+
+    <script src="/js/v4/user.min.js?v=ZjF4Fyin_kunpXmbEElIU5NLAcaSY7ELdp3OCr6-em0"></script>
+    
+    <script src="/lib/qrcode/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), window.location.href);
+    </script>
+
+
+        <script>
+            var properties = {
+                pageName: '详情页',
+                title: "\u535A\u65F6\u57FA\u91D1\u8463\u4E8B\u957F\u5F20\u4E1C\uFF1A\u628A\u63E1\u201C\u5341\u4E94\u4E94\u201D\u8D22\u5BCC\u7BA1\u7406\u65B0\u8D8B\u52BF\uFF0C\u8FD0\u7528AI\u52A9\u529B\u9AD8\u8D28\u91CF\u53D1\u5C55",
+                targetId: "AR0510706e-d2be-f4c8-f7f4-3a218e3f33d9",
+                targetType: "news",
+            }
+
+            logPageView(properties);
+            bindClickLog({ pageName: '详情页' });
+        </script>
+
+    
+</body>
+</html>

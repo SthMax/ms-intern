@@ -1,0 +1,13 @@
+{
+  "source_id": "FUND-109",
+  "date": "2026-09-07",
+  "status": "wechat_original_retrieved",
+  "method": "Installed wechat-article-to-md-skill, live HTTP GET; no browser",
+  "original_url": "https://mp.weixin.qq.com/s/M6djG8U9YNCNlETZj2d1uA",
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "preservation_record": "../wechat-articles/WX-001/01_🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环/metadata.json",
+  "audit": "../../audits/2026-09-07-wechat-live/README.md",
+  "prior_recovery_record": "../../audits/2026-09-07-wechat-live/before-state/knowledge-base/sources/FUND-109/recovery.json",
+  "human_check_status": "pending"
+}

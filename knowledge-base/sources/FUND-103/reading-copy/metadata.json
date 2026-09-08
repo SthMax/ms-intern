@@ -1,0 +1,27 @@
+{
+  "source_url": "https://gifts.szu.edu.cn/info/1023/1364.htm",
+  "input_file": "/Users/sthmax/dev/git/ms-intern/knowledge-base/sources/FUND-103/source.html",
+  "title": "易方达基金首席信息官刘硕凌：大模型时代的智能投资之路-深圳香蜜湖国际金融科技研究院",
+  "account_as_displayed": null,
+  "author_strings_as_displayed": [],
+  "published_as_displayed": null,
+  "provenance_strings": [],
+  "raw_sha256": "d8332360c1e91a767134a02c8a6d1866ad7e858f847f908b10b02673f10dcf92",
+  "converter_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Offline use of installed WeChat HTML-to-Markdown parser; lossy noise cleaner and network downloader not invoked",
+  "article_selector": "#vsb_content .v_news_content",
+  "missing_paragraphs": [],
+  "images": [
+    {
+      "url": "https://gifts.szu.edu.cn/virtual_attach_file.vsb?afc=6UzN_sLN7boRvZUFNlYLz-4LmN8MNQ9kUNQ2n7VfLmnVo7-0gihFp2hmCIa0nkyYn1hVL1yiMzVfolnkMRQRnRvsL4lsMR7PLR9PM4r2U4rFMRN4LmvbnlrFLmn2UmUJv2bjo4OeosAxqkhXptQ0g47aLmL0LzLDMkbw62A8c&oid=2088761798&tid=1023&nid=1364&e=.png",
+      "downloaded": true,
+      "local_file": "images/image-01.png",
+      "sha256": "c42dfe9109b06aa96c0a14f56b89e0d976171918c75fb1f2d1a04072d9255260"
+    }
+  ],
+  "text_check": "pass",
+  "human_check_status": "pending",
+  "network_used": false,
+  "limits": "Text check does not validate image contents, table spans, authenticity or substantive claims; failed images remain explicitly listed.",
+  "image_fetch_scope": "Separate inbound download of images already referenced by saved Sina/SZU publications; no WeChat article request."
+}

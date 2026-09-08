@@ -1,0 +1,20 @@
+{
+  "source_id": "FUND-359",
+  "status": "user_pdf_original_recovered",
+  "checked_at": "2026-09-08T14:38:42.330371+00:00",
+  "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
+  "original_title": "华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河",
+  "files": [
+    "source.pdf",
+    "original.md",
+    "extracted-text.txt"
+  ],
+  "result": "User-provided 5-page browser print includes complete article body and risk notice; local import closes article-access gap. Retains narrative media source classification.",
+  "file_checksums": {
+    "source.pdf": "6e81dcca364e8f9d6993c11212b8f97c057702c49ac267ff9d05e254e54cfa0e",
+    "original.md": "3ca653b2b39309c8d69cdecabb04288942a1ed859b9f060d0ac1d24ddeeddcb3",
+    "extracted-text.txt": "5a6b81f7cefd7dbfd657985b3810fb31baceeeea013bdadbd449dec591c29350"
+  },
+  "prior_recovery_record": "../../audits/2026-09-08-huatai-pdf/before-recovery.json",
+  "human_check_status": "User supplied PDF; independent human verification not attested"
+}

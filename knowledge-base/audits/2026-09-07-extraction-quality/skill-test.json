@@ -1,0 +1,31 @@
+{
+  "network_used": false,
+  "skill": "/Users/sthmax/.codex/skills/wechat-article-to-md-skill",
+  "upstream_revision": "41f1ed58a9c74e8c61ffbe8f3290c0d13e5ff759",
+  "script_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "checks": {
+    "long_article_end_retained": true,
+    "numeric_qualifier_retained": true,
+    "modal_and_negation_retained": true,
+    "source_credit_retained": false,
+    "author_extracted_correctly": false,
+    "publication_date_metadata_present": false,
+    "missing_image_reference_retained": false,
+    "save_html_is_unmodified_original": false
+  },
+  "returned_author": "示例基金公众号",
+  "formatting_summary": {
+    "removed_duplicate_headings": 0,
+    "normalized_heading_levels": 0,
+    "fixed_invalid_links": 0,
+    "removed_missing_images": [
+      "missing-image.png"
+    ],
+    "removed_noise_lines": 1,
+    "trimmed_blank_lines": 0
+  },
+  "saved_challenge_title": "未命名文章",
+  "synthetic_input_characters": 20582,
+  "synthetic_output_characters": 20137,
+  "interpretation": "Synthetic/offline conversion test only; not live WeChat retrieval or a corpus-wide analysis validation."
+}

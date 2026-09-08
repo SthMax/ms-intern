@@ -1,5 +1,7 @@
 # Regulatory and Model Risk Management Evidence Map
 
+> 本页为研究者编制的索引和摘要，不是法规原文。各 REG 证据笔记已分别链接原始文件和原语言提取文本；完整目录见[原始来源档案](../sources/README.md)。英文分析不代替中文法规原文。
+
 **Phase 1 — Weeks 1–2.** Research batch dated **6 September 2026**.
 COD means the infrastructure used in MSIM; MRM means model risk management.
 

@@ -1,0 +1,19 @@
+{
+  "status": "browser_verified_excerpt_saved",
+  "browser": "Internal browser opened correct official company-profile page and displayed original Chinese profile/AUM text. tab_content_export unsupported.",
+  "result": "Saved exact DOM paragraph containing company identity and full dated AUM disclosure; this is a source fragment, not a complete offline webpage. Direct HTTP retry still returned challenge.",
+  "files": [
+    "browser-profile-fragment.html",
+    "browser-recovered.md"
+  ],
+  "alternatives": [],
+  "source_id": "FUND-302",
+  "checked_at": "2026-09-07T02:53:16.193561+00:00",
+  "original_url": "https://www.thfund.com.cn/about/company",
+  "original_title": "公司介绍",
+  "human_check_status": "pending",
+  "file_checksums": {
+    "browser-profile-fragment.html": "853dbd9560f1c35603f855d66b04d9e48e761b309103f6e656d2a9b71b07ee7e",
+    "browser-recovered.md": "dadb1ca33e8be27189db50987f0dcde94e0a8ca72f43abbb88a3fe3a0daa0537"
+  }
+}

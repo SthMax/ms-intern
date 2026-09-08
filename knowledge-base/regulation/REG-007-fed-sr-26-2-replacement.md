@@ -14,21 +14,46 @@ human_check_status: pending
 
 [Official letter](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm).
 
-## Verified source content
+## 原始来源存档与提取说明
 
-The letter dated 17 April 2026 says the revised interagency guidance supersedes
-and replaces SR 11-7 (2011) and SR 21-8 (2021). It describes greatest relevance
-to Federal Reserve-regulated banking organizations above USD 30 billion in
-assets. Check the opening applicability paragraph and “Supersedes” list.
+[原始文件](../sources/REG-007/source.html) · [完整原语言提取文本](../sources/REG-007/original.md) · [获取元数据与校验值](../sources/REG-007/metadata.json)
 
-## Project interpretation
+2026-09-07 重新获取的文件用于原文保全。以下逐字复制存档提取文本中的条文或段落，未翻译、未回译；代码块保留提取换行及格式标记。网页动态内容、PDF 图表、脚注和阅读顺序可能存在提取差异，以原始文件为准。本次原文保全不替代既有法律适用、现行状态或人工核验工作；先前的证据状态和核验限制保留。
+
+## 原文摘录 / Original-language excerpts
+
+### Date
+
+```text
+**SR 26-2**  
+**April 17, 2026**
+```
+
+### Applicability and opening paragraph
+
+```text
+**Applicability:** This letter is expected to be most relevant to banking organizations with over $30 billion in total assets regulated by the Federal Reserve.
+
+The Board of Governors of the Federal Reserve System, Office of the Comptroller of the Currency (OCC), and Federal Deposit Insurance Corporation (FDIC) (the "agencies") are issuing the attached *Revised Guidance on Model Risk Management*, which supersedes and replaces SR letter 11-7, *Guidance on Model Risk Management* (issued April 4, 2011) and SR letter 21-8, *Interagency Statement on Model Risk Management for Bank Systems Supporting Bank Secrecy Act/Anti-Money Laundering Compliance* (issued April 9, 2021). This revised guidance reflects supervisory experience and industry feedback accumulated over the past fifteen years, as well as significant advancements in modeling practices.
+```
+
+### Supersedes list
+
+```text
+Supersedes:
+
+- SR letter 11-7, "Guidance on Model Risk Management" (April 4, 2011).
+- SR letter 21-8, "Interagency Statement on Model Risk Management for Bank Systems Supporting Bank Secrecy Act/Anti-Money Laundering Compliance" (April 9, 2021).
+```
+
+## 研究者分析 / Project interpretation (not source text)
 
 SR 11-7 should be labelled historical when describing the current public US MRM
 reference. This letter is not a CSRC rule or a copy of Morgan Stanley internal
 policy. The attachment's generative-AI scope qualification is essential; see
 [REG-008](REG-008-fed-mrm-guidance-scope.md).
 
-## Verification limits
+## 既有核验记录与限制 / Prior verification limits
 
 Replacement verified directly; internal Morgan Stanley adoption and MSIM entity
 applicability are not established. Human check pending.

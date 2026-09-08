@@ -1,0 +1,30 @@
+{
+  "link_id": "WX-005",
+  "related_source": "FUND-110",
+  "relationship": "unrelated_recommendation",
+  "expected_title": "重磅！巴菲特，出手！",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52&scene=21#wechat_redirect",
+  "round_id": "paced-retry-070217",
+  "retrieved_at": "2026-09-07T07:02:17.139153+00:00",
+  "method": "Installed skill fetch_html; original supplied URL; sequential article GETs; 45-second pause after prior completion; no browser",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HHthnmqjPHEmi2QNGykqd8uMKyvXccMyMT9h3Mnw&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5MDEzNjQwMA%3D%3D%26mid%3D2656227321%26idx%3D1%26sn%3Da342b90feb23715ad1dbf57efb29bf52%26scene%3D21#wechat_redirect",
+  "response_file": "knowledge-base/audits/2026-09-07-wechat-live/paced-retry-070217/WX-005/retrieval-response.html",
+  "byte_count": 17777,
+  "sha256": "1885c5324c53176867339da26b236a927d938c941b8cfe465322b2a8f5405268",
+  "extracted_title": "未命名文章",
+  "body_characters": 0,
+  "redirects": [
+    {
+      "status": 302,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52&scene=21#wechat_redirect"
+    }
+  ],
+  "retry_after": null,
+  "content_type": "text/html; charset=UTF-8",
+  "status": "unavailable",
+  "reason": "WeChat CAPTCHA redirect; no substantive article container",
+  "rate_limit_confirmed": false
+}

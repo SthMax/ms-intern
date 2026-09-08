@@ -1,0 +1,55 @@
+{
+  "source_id": "FUND-251",
+  "issuer": "中国基金报 reporter 闫军",
+  "title": "公募基金AI部署走到哪一步了？20家头部公募AI部署全景调研",
+  "source_type": "Original media survey of managers",
+  "published": "2026-08-20 23:20",
+  "url": "https://www.chnfund.com/article/AR99eb77fa-e926-d40e-abb2-3a232d36f0d0",
+  "locator": "Introduction ima paragraph; first section paragraph naming 景顺长城",
+  "evidence_state": "candidate",
+  "caveat": "[Note](companies/COMP-014-invesco-great-wall.md); no original company response or verified ima account URL obtained",
+  "retrieved_at": "2026-09-07T02:01:51.139066+00:00",
+  "human_check_status": "pending",
+  "archive_status": "raw",
+  "verification_scope": "Retrieval and original-language preservation only; no new legal or outcome validation.",
+  "http_status": 200,
+  "final_url": "https://www.chnfund.com/article/AR99eb77fa-e926-d40e-abb2-3a232d36f0d0",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "sha256": "9bfeeee38c22143dc1723e77a727b0f0e603a65b2f175a3f6273e3b6f04550b3",
+  "byte_count": 52642,
+  "raw_file": "source.html",
+  "decoded_encoding": "utf-8",
+  "extraction_method": "Defuddle Markdown from archived HTML; no translation",
+  "text_language": "Chinese",
+  "extracted_characters": 6622,
+  "text_file": "original.md",
+  "archive_review_date": "2026-09-07",
+  "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
+  "extracted_text_sha256": "784fe2de96c74096987955c41cac280d55482ca9c1d4bfdb0d399facf84675e9",
+  "wechat_live_review": {
+    "date": "2026-09-07",
+    "link_ids": [
+      "WX-006",
+      "WX-007"
+    ],
+    "status": "excluded_unrelated_recommendations",
+    "audit": "../../audits/2026-09-07-wechat-live/README.md",
+    "relationship": "unrelated_recommended_articles; not the registered research source",
+    "latest_retry": {
+      "record": "../../audits/2026-09-07-wechat-live/paced-retry-070217/results.json",
+      "link_ids": [
+        "WX-006",
+        "WX-007"
+      ],
+      "status": "captcha_response_no_article",
+      "inter_request_pause_seconds": 45,
+      "rate_limit_evidence": "No HTTP 429 or Retry-After observed; rate limiting remains unconfirmed"
+    },
+    "retrieval_status_at_last_attempt": "captcha_response_no_article",
+    "followup_required": false,
+    "research_relevance": "None for this project: links appear in the article footer, not as evidence for the AI/LLM research claims",
+    "scope_review_date": "2026-09-08",
+    "scope_review": "../../audits/2026-09-08-wechat-scope/README.md"
+  }
+}

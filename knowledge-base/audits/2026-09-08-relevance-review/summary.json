@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-08",
+  "registered_sources_screened": 101,
+  "category_counts": {
+    "相关：AI/LLM应用或技术案例": 58,
+    "辅助：公司身份/规模/样本筛选": 15,
+    "待定：预期来源相关，原件不完整/错误响应": 3,
+    "相关：广义AI/NLP历史案例": 3,
+    "辅助：出处/日期/奖项证明": 7,
+    "辅助：供应商/产品线索": 2,
+    "辅助：AI岗位/人才能力线索": 1,
+    "相关：监管/MRM/标准解释": 12
+  },
+  "confirmed_nonarticle_sidebar_files": 5,
+  "deduplicated_long_sidebar_labels": 137,
+  "whole_source_decisions": [
+    "FUND-162",
+    "FUND-405",
+    "FUND-357",
+    "FUND-255"
+  ],
+  "weak_related_collection_chapters": 9,
+  "deletion_performed": false,
+  "existing_files_modified": false,
+  "limits": "Relevance audit of registration and saved text; no new retrieval or legal/technical revalidation. Linked sidebar destinations not opened."
+}

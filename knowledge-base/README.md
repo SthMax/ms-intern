@@ -1,8 +1,40 @@
 # Knowledge Base
 
+> 2026-09-08 微信入库完成：4篇相关研究文章现均已入库，华泰柏瑞由用户保存的5页PDF补齐；3条无关推荐继续排除。见[文章目录](sources/wechat-articles/README.md)及[华泰柏瑞核对报告](audits/2026-09-08-huatai-pdf/README.md)。
+
+提取质量与分析风险：[本次核查、微信Skill测试及更清晰的阅读副本](audits/2026-09-07-extraction-quality/README.md)。
+
+最新来源恢复：[内部浏览器与深搜复核结果](audits/2026-09-07-source-recovery/README.md)。
+
 This folder holds research findings and their evidence. Project scope is
 controlled by [the final project plan](../PROJECT_PLAN.md). Execution is tracked
 in [the Week 2 plan](../weekly/week-02-plan.md).
+
+## 原始来源与研究分析 / Original sources and analysis
+
+**来源按原语言保存：中文原文保留中文，英文原文保留英文。英文摘要、翻译和研究者分析均不能代替原始来源。**
+
+The [original-source archive](sources/README.md) holds downloaded source files,
+original-language text extractions and per-source retrieval metadata. The
+[7 September audit and complete change table](audits/2026-09-07-language-audit/changes.md)
+records every baseline file and registered source, including unavailable originals.
+
+- `sources/<source_id>/source.pdf` or `source.html`: downloaded original bytes;
+  HTTP compression may be decoded by curl. PDFs preserve figures and page layout.
+- `original.md`: mechanically extracted original-language text, never a back-translation.
+  It may lose layout, images, footnotes or dynamic content; the source file governs.
+- `metadata.json`: exact requested/final URLs, retrieval time, SHA-256, extraction
+  method, original evidence state, access/quality limits and pending human review.
+- `retrieval-response.*`: an error, challenge or wrong-page response, **not** an
+  archived original. A failed request does not disprove a prior disclosure.
+- Company dossiers, synthesis documents and plans are authored research. Their
+  labelled summaries and interpretations are separate from the linked originals.
+
+Source availability and provenance are separate. Archiving a media report or
+repost preserves that publication; it does not verify an inaccessible company
+original, establish a primary deployment claim, or complete legal-status review.
+English originals remain English. Do not manufacture Chinese “originals” by
+translating our earlier English notes.
 
 ## Phase ownership
 
@@ -52,7 +84,9 @@ an effective date or legal force from the publication date or document title.
 
 1. Log a candidate and its discovery source.
 2. Open the original source and check the exact claim and its context.
-3. Save an evidence note using [the template](templates/evidence-note.md), then
+3. Save the source file and original-language extraction under `sources/<source_id>/`;
+   record retrieval metadata and check that the cited passage survives extraction.
+   Save an evidence note using [the template](templates/evidence-note.md), then
    update the source register and relevant index.
 4. Record findings as research proceeds, so slides never become the only record.
 5. Keep source wording, interpretation, and open applicability questions explicit.
@@ -71,7 +105,9 @@ evidence.
 - Distinguish law/rules, regulator guidance, drafts, industry material, vendor
   claims, and internal requirements.
 - Verify instrument status and applicability separately.
-- Keep quotations short and exact; retain section/page pointers for manual review.
+- Preserve exact source wording and section/page pointers. Use selected original
+  passages in evidence notes and link the full archived original; summaries and
+  translations must be labelled as authored research.
 - Record AUM unit, metric, entity scope, date, and source. Compare compatible
   measurements and label gaps.
 - Distinguish announcement, pilot, and production use.

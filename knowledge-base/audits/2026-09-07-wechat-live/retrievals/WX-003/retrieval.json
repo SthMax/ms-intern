@@ -1,0 +1,27 @@
+{
+  "link_id": "WX-003",
+  "related_source": "FUND-359",
+  "relationship": "registered_original",
+  "expected_title": "华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河",
+  "requested_url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
+  "retrieved_at": "2026-09-07T06:32:33.187731+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HINanmqjabHGa4bZnExd8aWH-5HSfZHEsNUsy9ky&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMjM5MzMwNjM0MA%253D%253D%26idx%3D2%26mid%3D2651361688%26sn%3D465ee3d543763b18d8ee971802cc5fcb",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "8796b78ffed5527bd2b43b659dc6629eff5566b27170d82b1c67d5177f75391a",
+  "byte_count": 17765,
+  "extracted_title": "未命名文章",
+  "article_characters": 0,
+  "redirects": [
+    {
+      "status": 302,
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb"
+    }
+  ],
+  "status": "unavailable",
+  "reason": "No substantive #js_content article container",
+  "response_text": "： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看"
+}

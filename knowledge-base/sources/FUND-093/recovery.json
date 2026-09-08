@@ -1,0 +1,21 @@
+{
+  "status": "alternative_primary_available",
+  "browser": "Previous FX168 response redirected to generic portal; no exact article recovered.",
+  "result": "Harvest own-site article FUND-317 is obtained and archived. Title/event match; do not claim byte equality with lost FX168 repost.",
+  "files": [
+    "../FUND-317/original.md",
+    "../FUND-317/source.html"
+  ],
+  "alternatives": [
+    "https://www.jsfund.cn/main/a/20260617/484163.shtml"
+  ],
+  "source_id": "FUND-093",
+  "checked_at": "2026-09-07T02:53:16.193561+00:00",
+  "original_url": "https://news.fx168news.com/cooperate/2606/7462205.shtml",
+  "original_title": "亮相2026中国国际金融展 嘉实基金解构数字金融智能化跃迁",
+  "human_check_status": "pending",
+  "file_checksums": {
+    "../FUND-317/original.md": "1decb0bba8c3fb3bc8811ee1b22cc8835fcca50713f749ca85ed16213a4f51ec",
+    "../FUND-317/source.html": "ec202692de9de3d70113dd62b3d7e017a16a020b131f09f50a026e6ec1cf16ef"
+  }
+}

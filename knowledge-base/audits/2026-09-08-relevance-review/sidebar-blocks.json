@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "FUND-108",
+    "file": "knowledge-base/sources/FUND-108/original.md",
+    "start_line": 181,
+    "marker": "## VIP课程推荐",
+    "tail_characters": 14527,
+    "recommended_title_count": 42
+  },
+  {
+    "source_id": "FUND-112",
+    "file": "knowledge-base/sources/FUND-112/original.md",
+    "start_line": 33,
+    "marker": "## VIP课程推荐",
+    "tail_characters": 14569,
+    "recommended_title_count": 41
+  },
+  {
+    "source_id": "FUND-203",
+    "file": "knowledge-base/sources/FUND-203/original.md",
+    "start_line": 69,
+    "marker": "## VIP课程推荐",
+    "tail_characters": 14558,
+    "recommended_title_count": 41
+  },
+  {
+    "source_id": "FUND-355",
+    "file": "knowledge-base/sources/FUND-355/original.md",
+    "start_line": 203,
+    "marker": "## VIP课程推荐",
+    "tail_characters": 14479,
+    "recommended_title_count": 40
+  },
+  {
+    "source_id": "FUND-358",
+    "file": "knowledge-base/sources/FUND-358/original.md",
+    "start_line": 55,
+    "marker": "## VIP课程推荐",
+    "tail_characters": 14569,
+    "recommended_title_count": 41
+  }
+]

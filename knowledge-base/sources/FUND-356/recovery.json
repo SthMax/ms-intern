@@ -1,0 +1,13 @@
+{
+  "source_id": "FUND-356",
+  "date": "2026-09-07",
+  "status": "wechat_original_retrieved",
+  "method": "Installed wechat-article-to-md-skill, live HTTP GET; no browser",
+  "original_url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "preservation_record": "../wechat-articles/WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基/metadata.json",
+  "audit": "../../audits/2026-09-07-wechat-live/README.md",
+  "prior_recovery_record": "../../audits/2026-09-07-wechat-live/before-state/knowledge-base/sources/FUND-356/recovery.json",
+  "human_check_status": "pending"
+}

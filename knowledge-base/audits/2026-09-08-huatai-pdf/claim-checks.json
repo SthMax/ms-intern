@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Five-layer architecture",
+    "pdf_page": 1,
+    "locator": "整套架构分为五个层级",
+    "result": "present_and_visually_checked"
+  },
+  {
+    "claim": "Current text processing and coding assistance",
+    "pdf_page": 2,
+    "locator": "在研究端",
+    "result": "present_and_visually_checked"
+  },
+  {
+    "claim": "Hard risk rules versus human subjective-risk decisions",
+    "pdf_page": 2,
+    "locator": "最终由投研人员做出决策",
+    "result": "present_and_visually_checked"
+  },
+  {
+    "claim": "Future research-agent vision",
+    "pdf_page": 3,
+    "locator": "他描绘了未来投研智能体的落地图景",
+    "result": "present_and_visually_checked"
+  },
+  {
+    "claim": "Article conclusion absent from Sina block",
+    "pdf_page": 3,
+    "locator": "放眼长远",
+    "result": "present_and_visually_checked"
+  },
+  {
+    "claim": "Investor education risk notice absent from Sina block",
+    "pdf_page": 3,
+    "locator": "本材料仅为投资者教育，不构成任何投资建议",
+    "result": "present_and_visually_checked"
+  }
+]

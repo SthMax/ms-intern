@@ -1,0 +1,21 @@
+{
+  "status": "mirror_available_original_blocked",
+  "browser": "Internal browser rejected this exact WeChat URL under site-safety policy before navigation; no workaround attempted.",
+  "result": "Exact-title Sina mirror FUND-108 is available and archived. Searches of EFund/Tencent originals did not locate an independently accessible exact original; upstream provenance remains unresolved.",
+  "files": [
+    "../FUND-108/original.md",
+    "../FUND-108/source.html"
+  ],
+  "alternatives": [
+    "https://finance.sina.com.cn/money/fund/jjgsgd/2026-07-24/doc-iniixnhc1584122.shtml"
+  ],
+  "source_id": "FUND-109",
+  "checked_at": "2026-09-07T02:53:16.193561+00:00",
+  "original_url": "https://mp.weixin.qq.com/s/M6djG8U9YNCNlETZj2d1uA",
+  "original_title": "🧧易方达基金 × ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环 — title from mirror only",
+  "human_check_status": "pending",
+  "file_checksums": {
+    "../FUND-108/original.md": "37a06fd7a9c537b5c31117ad7f4fc5556a5e1df73fa778ba6b6b3fca2df35991",
+    "../FUND-108/source.html": "5a82492658ffc30aa83b9bad2c5640c347cf5e35f873f8c5e30f948bc6be4bb9"
+  }
+}

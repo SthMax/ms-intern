@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-09-07",
+  "registered_sources": 101,
+  "metadata_records": 101,
+  "raw_sources": 93,
+  "unavailable_originals": [
+    "FUND-093",
+    "FUND-109",
+    "FUND-302",
+    "FUND-310",
+    "FUND-314",
+    "FUND-315",
+    "FUND-356",
+    "FUND-359"
+  ],
+  "raw_hashes_checked": 93,
+  "extraction_hashes_checked": 93,
+  "regulatory_verbatim_excerpts_checked": 73,
+  "authored_note_local_links_checked": 2110,
+  "issues": [],
+  "human_check_status": "pending",
+  "limits": [
+    "Mechanical and agent review, not a full human review or legal-status audit",
+    "Raw HTML capture does not bundle all external resources; PDF text extraction does not preserve figure layout",
+    "Secondary/mirror provenance is not upgraded by archiving"
+  ],
+  "whitespace_check": "One intentional two-space Markdown hard break copied verbatim inside REG-007 source excerpt; no other git diff --check issues."
+}

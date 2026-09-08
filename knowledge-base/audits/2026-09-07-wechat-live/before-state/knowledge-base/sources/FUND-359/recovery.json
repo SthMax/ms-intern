@@ -1,0 +1,21 @@
+{
+  "status": "mirror_available_original_blocked",
+  "browser": "WeChat host blocked by site-safety policy on FUND-109; no same-host workaround attempted.",
+  "result": "Sina full article FUND-358 remains available with中国证券报-中证网 credit. Exact-title searches found copies, but no accessible first-publisher original; article content obtainable as attributed repost, original provenance gap remains.",
+  "files": [
+    "../FUND-358/original.md",
+    "../FUND-358/source.html"
+  ],
+  "alternatives": [
+    "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml"
+  ],
+  "source_id": "FUND-359",
+  "checked_at": "2026-09-07T02:53:16.193561+00:00",
+  "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
+  "original_title": "Linked source for 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河; destination title not retrieved",
+  "human_check_status": "pending",
+  "file_checksums": {
+    "../FUND-358/original.md": "e40f1d973dfed0d75231f961a13ae5fd68a9ebd055e11a70fa4158935e2a6a58",
+    "../FUND-358/source.html": "2c22e36e0394c53d8cfb2c30e3204ad29bc3b8469143c45feadcd7deecbac7a3"
+  }
+}

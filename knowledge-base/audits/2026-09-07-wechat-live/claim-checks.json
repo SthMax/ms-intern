@@ -1,0 +1,65 @@
+[
+  {
+    "source": "FUND-109",
+    "files": [
+      "knowledge-base/companies/efund-llm-deep-dive.md",
+      "knowledge-base/companies/COMP-002-efund.md"
+    ],
+    "claim": "Five named Skills and three newly announced library zones",
+    "result": "matches_source",
+    "locator": "Opening and sections 01–04",
+    "detail": "投教知识导航助手、易懂基金、季报导读、ETF查询、场外指数基金查询；基金盘点、直通投研为已有专区，不能把所有提到的专区都计为新增。"
+  },
+  {
+    "source": "FUND-109",
+    "files": [
+      "knowledge-base/companies/efund-llm-deep-dive.md",
+      "knowledge-base/source-register.md"
+    ],
+    "claim": "Installation and API Key path",
+    "result": "missing_in_sina_now_preserved_and_note_updated",
+    "locator": "Section 05, step 3",
+    "detail": "扫描二维码或指数直通车→AI Skills领取API Key；在管理页面复制提示词与Key；Sina缺失该文字。"
+  },
+  {
+    "source": "FUND-356",
+    "files": [
+      "knowledge-base/companies/COMP-020-china-europe.md",
+      "knowledge-base/source-register.md"
+    ],
+    "claim": "Attribution and 100+ Skills / approximately 60% / approximately 50%",
+    "result": "matches_source",
+    "locator": "Opening credit and 三化协同 / 数智化 paragraphs",
+    "detail": "内容转载自：中国基金报；超过100个Skill；信息检索效率提升约60%；五要素模型要素分析表整体编制效率提升约50%；数据来源中欧基金，截至2026/5。优化器约百倍速度提升是相邻独立案例，不能记为LLM效果。"
+  },
+  {
+    "source": "FUND-203",
+    "files": [
+      "knowledge-base/companies/COMP-007-southern.md",
+      "knowledge-base/source-register.md"
+    ],
+    "claim": "ETFirst mini-program and external-agent/API-Key configuration",
+    "result": "matches_source_provenance_updated",
+    "locator": "AI让指数投资更简单 / 体验维度",
+    "detail": "公众号为中国基金报；首趋E指首页或我的-ETFirst Skill入口，复制提示词给AI助手，再粘贴API Key完成认证；保留末尾AI内容基于历史模型推演、不预测未来表现及不构成投资建议的原文。"
+  },
+  {
+    "source": "FUND-359",
+    "files": [
+      "knowledge-base/companies/COMP-021-huatai-pinebridge.md"
+    ],
+    "claim": "Comparison with intended WeChat original",
+    "result": "not_checkable_original_unavailable",
+    "detail": "技能请求和规范化重试均返回验证页；未将FUND-358新浪转载视为已核对的微信原文。"
+  },
+  {
+    "source": "FUND-110 / FUND-251",
+    "files": [
+      "knowledge-base/sources/FUND-110/metadata.json",
+      "knowledge-base/sources/FUND-251/metadata.json"
+    ],
+    "claim": "Three recommendation targets are the registered source articles",
+    "result": "not_the_same_source",
+    "detail": "推荐链接标题与登记研究文不同。保留原研究源文件，只追加关联和失败获取记录。"
+  }
+]

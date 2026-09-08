@@ -1,0 +1,31 @@
+{
+  "link_id": "WX-004",
+  "related_source": "FUND-203",
+  "relationship": "upstream_source",
+  "expected_title": "拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态",
+  "requested_url": "https://mp.weixin.qq.com/s/ngg8Z6fcLq7oryyKwy4LGw",
+  "retrieved_at": "2026-09-07T06:32:33.620886+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/s/ngg8Z6fcLq7oryyKwy4LGw",
+  "content_type": "text/html; charset=UTF-8, text/html; charset=UTF-8",
+  "sha256": "0b5a8c2874538e28e76da52c559440fac2232ebac0fc369fb1bfdb1ee9d3e372",
+  "byte_count": 3289150,
+  "extracted_title": "拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态",
+  "article_characters": 2585,
+  "redirects": [],
+  "status": "retrieved",
+  "bundle": "knowledge-base/sources/wechat-articles/WX-004/01_拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态",
+  "markdown": "knowledge-base/sources/wechat-articles/WX-004/01_拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态/拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态.md",
+  "image_count": 7,
+  "format_summary": {
+    "removed_duplicate_headings": 1,
+    "normalized_heading_levels": 0,
+    "fixed_invalid_links": 0,
+    "removed_missing_images": [],
+    "removed_noise_lines": 1,
+    "trimmed_blank_lines": 0
+  }
+}

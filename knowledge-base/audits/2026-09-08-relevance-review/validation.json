@@ -1,0 +1,12 @@
+{
+  "unique_registered_sources": 101,
+  "sidebar_link_labels": 137,
+  "concrete_A_and_C_decisions": 13,
+  "new_markdown_local_links": "pass",
+  "broken_links": [],
+  "existing_file_preservation": {
+    "existing_files_checked": 617,
+    "modified_or_deleted": [],
+    "result": "pass"
+  }
+}

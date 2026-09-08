@@ -1,0 +1,27 @@
+{
+  "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml",
+  "input_file": "/Users/sthmax/dev/git/ms-intern/knowledge-base/sources/FUND-358/source.html",
+  "title": "华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河",
+  "account_as_displayed": null,
+  "author_strings_as_displayed": [],
+  "published_as_displayed": null,
+  "provenance_strings": [],
+  "raw_sha256": "2c22e36e0394c53d8cfb2c30e3204ad29bc3b8469143c45feadcd7deecbac7a3",
+  "converter_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Offline use of installed WeChat HTML-to-Markdown parser; lossy noise cleaner and network downloader not invoked",
+  "article_selector": "#artibody",
+  "missing_paragraphs": [],
+  "images": [
+    {
+      "url": "https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png",
+      "downloaded": true,
+      "local_file": "images/image-01.png",
+      "sha256": "62a9860d0811aff779524cfc9bef2564b4c5bea46146ef6444602c7c9843867b"
+    }
+  ],
+  "text_check": "pass",
+  "human_check_status": "pending",
+  "network_used": false,
+  "limits": "Text check does not validate image contents, table spans, authenticity or substantive claims; failed images remain explicitly listed.",
+  "image_fetch_scope": "Separate inbound download of images already referenced by saved Sina/SZU publications; no WeChat article request."
+}

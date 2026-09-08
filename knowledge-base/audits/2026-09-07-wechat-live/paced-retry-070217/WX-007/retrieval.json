@@ -1,0 +1,30 @@
+{
+  "link_id": "WX-007",
+  "related_source": "FUND-251",
+  "relationship": "unrelated_recommendation",
+  "expected_title": "受贿数额特别巨大！侯维栋，被公诉",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400443&idx=1&sn=b78c51f64886c5cbf7a4ca60fbfd6e50&scene=21#wechat_redirect",
+  "round_id": "paced-retry-070217",
+  "retrieved_at": "2026-09-07T07:03:48.055863+00:00",
+  "method": "Installed skill fetch_html; original supplied URL; sequential article GETs; 45-second pause after prior completion; no browser",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HNZhnmqjR3fdDEpcf2UzA0G7zdOH3ICW9BOpS7AU&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5MDEzNjQwMA%3D%3D%26mid%3D2656400443%26idx%3D1%26sn%3Db78c51f64886c5cbf7a4ca60fbfd6e50%26scene%3D21#wechat_redirect",
+  "response_file": "knowledge-base/audits/2026-09-07-wechat-live/paced-retry-070217/WX-007/retrieval-response.html",
+  "byte_count": 17776,
+  "sha256": "0aeafdaf56fcc023b3285b852604a7ea2dffaccb7b10978af14ef69d4406ccbe",
+  "extracted_title": "未命名文章",
+  "body_characters": 0,
+  "redirects": [
+    {
+      "status": 302,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400443&idx=1&sn=b78c51f64886c5cbf7a4ca60fbfd6e50&scene=21#wechat_redirect"
+    }
+  ],
+  "retry_after": null,
+  "content_type": "text/html; charset=UTF-8",
+  "status": "unavailable",
+  "reason": "WeChat CAPTCHA redirect; no substantive article container",
+  "rate_limit_confirmed": false
+}

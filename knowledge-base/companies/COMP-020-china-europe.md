@@ -8,6 +8,32 @@ human_check_status: pending
 
 # China Europe / 中欧基金管理有限公司
 
+> 阅读质量更新：新增保留图片的阅读副本及提取质量记录，见[核查报告](../audits/2026-09-07-extraction-quality/README.md)。原始文件和来源属性未替换。
+
+<!-- source-recovery-followup -->
+> 2026-09-07 微信实抓更新：FUND-356微信转载正文及9个图片资源已入库，开头明确“内容转载自：中国基金报”；HTML时间字段为2026-06-01 19:05:21（北京时间）。100多个Skill、信息检索效率约60%、要素表编制效率约50%及2026年5月数据截止口径均与笔记吻合。详见[核对报告](../audits/2026-09-07-wechat-live/README.md)。
+
+<!-- original-language-provenance:start -->
+> [!important] 原文与研究者分析分离
+> 本页保留的英文正文、分类及表格是研究者撰写的摘要、整理或分析，不是来源原文。请先阅读下方逐源链接中的原语言文本；中文来源保留中文，原本为英文的来源保留英文。本次未将英文摘要反译为所谓“中文原文”。
+> 来源的一手／转载／媒体／供应商属性及证据限制仍按原登记保留；保存原文不等于核实全部研究结论。人工核验仍待完成。
+
+## 原语言来源档案（逐源）
+
+档案中的 `original.md` 是机械提取文本；页面排版、表格和提取缺失以下载文件为准。无法确认正文的响应不作为原文提供，详见元数据。来源标题沿用登记表，仅作定位。
+
+| 来源 ID | 登记标题 | 原登记证据状态 | 原语言正文／下载文件／记录 |
+|---|---|---|---|
+| FUND-354 | 中欧基金AI投研助手荣获央行2024年度金融科技发展奖 | candidate | [原语言正文](../sources/FUND-354/original.md) · [下载文件](../sources/FUND-354/source.html) · [元数据与限制](../sources/FUND-354/metadata.json) · [登记网址](https://static.nfnews.com/content/202511/27/c11946239.html) |
+| FUND-355 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | candidate | [原语言正文](../sources/FUND-355/original.md) · [下载文件](../sources/FUND-355/source.html) · [元数据与限制](../sources/FUND-355/metadata.json) · [登记网址](https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml) |
+| FUND-356 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | candidate | 微信转载原文与图片已存档；中国基金报署名已核对 · [元数据与限制](../sources/FUND-356/metadata.json) · [登记网址](https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA) · [本次恢复记录](../sources/FUND-356/recovery.json) · [微信正文](../sources/FUND-356/original.md) · [原始HTML](../sources/FUND-356/source.html) |
+| FUND-357 | 钱拓科技 · FDE金融AI服务商 | verified-primary | [原语言正文](../sources/FUND-357/original.md) · [下载文件](../sources/FUND-357/source.html) · [元数据与限制](../sources/FUND-357/metadata.json) · [登记网址](https://www.aioai.cc/) |
+
+## 研究者摘要／分析（保留原有正文）
+
+**以下为研究者摘要/分析，不是原文。** 原有事实表述、引用定位、证据状态和局限一并保留，供对照原文复核。
+<!-- original-language-provenance:end -->
+
 ## Search disposition
 
 **Specific LLM applications are described in secondary material, but the opened
@@ -63,5 +89,5 @@ and human review remain outstanding.
 
 - **FUND-354** — [中欧基金AI投研助手荣获央行2024年度金融科技发展奖](https://static.nfnews.com/content/202511/27/c11946239.html), 南方+ / 大钱进, 2025-11-27; feature overview and three technical sections. Secondary reporting.
 - **FUND-355** — [中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基](https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml), 2026-06-01; 三化协同 section. Sina credits 中欧基金; underlying content is a media reprint.
-- **FUND-356** — [Linked 中欧基金 WeChat article](https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA), same title; displayed publication date not recovered in extraction; opening credit explicitly states reprinted from 中国基金报.
+- **FUND-356** — [Linked 中欧基金 WeChat article](https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA), same title; raw HTML ct = 2026-06-01 19:05:21 Asia/Shanghai; original retrieved 2026-09-07; opening credit explicitly states reprinted from 中国基金报.
 - **FUND-357** — [钱拓科技 · FDE金融AI服务商](https://www.aioai.cc/), undated live vendor homepage; opening client list and 客户 FAQ. Verified vendor statement only; specific fund-company AI initiative unresolved.

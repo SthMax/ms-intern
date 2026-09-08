@@ -1,0 +1,167 @@
+{
+  "date": "2026-09-07",
+  "records": [
+    {
+      "status": "alternative_primary_available",
+      "browser": "Previous FX168 response redirected to generic portal; no exact article recovered.",
+      "result": "Harvest own-site article FUND-317 is obtained and archived. Title/event match; do not claim byte equality with lost FX168 repost.",
+      "files": [
+        "../FUND-317/original.md",
+        "../FUND-317/source.html"
+      ],
+      "alternatives": [
+        "https://www.jsfund.cn/main/a/20260617/484163.shtml"
+      ],
+      "source_id": "FUND-093",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://news.fx168news.com/cooperate/2606/7462205.shtml",
+      "original_title": "亮相2026中国国际金融展 嘉实基金解构数字金融智能化跃迁",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "../FUND-317/original.md": "1decb0bba8c3fb3bc8811ee1b22cc8835fcca50713f749ca85ed16213a4f51ec",
+        "../FUND-317/source.html": "ec202692de9de3d70113dd62b3d7e017a16a020b131f09f50a026e6ec1cf16ef"
+      }
+    },
+    {
+      "status": "mirror_available_original_blocked",
+      "browser": "Internal browser rejected this exact WeChat URL under site-safety policy before navigation; no workaround attempted.",
+      "result": "Exact-title Sina mirror FUND-108 is available and archived. Searches of EFund/Tencent originals did not locate an independently accessible exact original; upstream provenance remains unresolved.",
+      "files": [
+        "../FUND-108/original.md",
+        "../FUND-108/source.html"
+      ],
+      "alternatives": [
+        "https://finance.sina.com.cn/money/fund/jjgsgd/2026-07-24/doc-iniixnhc1584122.shtml"
+      ],
+      "source_id": "FUND-109",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://mp.weixin.qq.com/s/M6djG8U9YNCNlETZj2d1uA",
+      "original_title": "🧧易方达基金 × ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环 — title from mirror only",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "../FUND-108/original.md": "37a06fd7a9c537b5c31117ad7f4fc5556a5e1df73fa778ba6b6b3fca2df35991",
+        "../FUND-108/source.html": "5a82492658ffc30aa83b9bad2c5640c347cf5e35f873f8c5e30f948bc6be4bb9"
+      }
+    },
+    {
+      "status": "browser_verified_excerpt_saved",
+      "browser": "Internal browser opened correct official company-profile page and displayed original Chinese profile/AUM text. tab_content_export unsupported.",
+      "result": "Saved exact DOM paragraph containing company identity and full dated AUM disclosure; this is a source fragment, not a complete offline webpage. Direct HTTP retry still returned challenge.",
+      "files": [
+        "browser-profile-fragment.html",
+        "browser-recovered.md"
+      ],
+      "alternatives": [],
+      "source_id": "FUND-302",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://www.thfund.com.cn/about/company",
+      "original_title": "公司介绍",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "browser-profile-fragment.html": "853dbd9560f1c35603f855d66b04d9e48e761b309103f6e656d2a9b71b07ee7e",
+        "browser-recovered.md": "dadb1ca33e8be27189db50987f0dcde94e0a8ca72f43abbb88a3fe3a0daa0537"
+      }
+    },
+    {
+      "status": "full_document_unrecovered_indexed_excerpt_only",
+      "browser": "Fresh internal-browser retry again redirected original PDF URL to homepage. Online-tender navigation did not reveal original document.",
+      "result": "Exact URL/title indexed with December2024 cover and procurement specifications, but direct/web-open/extractor/browser access yielded no35-page PDF. Indexed excerpts are discovery evidence only.",
+      "files": [
+        "indexed-discovery.md"
+      ],
+      "alternatives": [],
+      "source_id": "FUND-310",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://www.phfund.com.cn/fs/uf/ke/file/20241223/20241223182720.pdf",
+      "original_title": "AI算力服务器采购项目招标文件",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "indexed-discovery.md": "9d064e4bd54206f0e881e203da6cffbc25139191cb6f5a326d3e2db76d0320c9"
+      }
+    },
+    {
+      "status": "original_language_text_recovered_via_extractor",
+      "browser": "Prior internal-browser attempt ended ERR_CONNECTION_CLOSED; same failed tab remains. Direct raw fetch also failed.",
+      "result": "Exa returned original-language article text attributed to exact URL, including27May2026 date and allfive main sections. Raw publisher HTML not obtained; service freshness/completeness not independently guaranteed.",
+      "files": [
+        "extractor-recovered.md"
+      ],
+      "alternatives": [],
+      "source_id": "FUND-314",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://www.fintechinchina.com/viewpoints/9679",
+      "original_title": "【专访】工银瑞信CIO王建：2026金融大模型与智能体，从野蛮生长到合规落地、价值凸显",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "extractor-recovered.md": "c067503814d3342ddb60a5f06ad8992fd3fcdeb831fab3cf30b847d0ac9318ee"
+      }
+    },
+    {
+      "status": "original_language_text_recovered_via_extractor",
+      "browser": "Same publisher host had browser connection failure. Independently indexed Sina magazine copy opened in browser but displayed article不存在.",
+      "result": "Exa returned exact-URL original-language article with26March2026 date and中国金融电脑 source credit. Saved text; raw publisher page/printed issue not obtained. Rejected stale Sina copy.",
+      "files": [
+        "extractor-recovered.md",
+        "alternatives/china-financial-computer/retrieval-response.html",
+        "alternatives/china-financial-computer/retrieval-response.md"
+      ],
+      "alternatives": [
+        "https://cj.sina.com.cn/articles/view/5952915705/162d248f906702o6iu?froms=ggmp"
+      ],
+      "source_id": "FUND-315",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://fintechinchina.com/viewpoints/9251",
+      "original_title": "工银瑞信首席信息官王建：自立自强 数智融合 工银瑞信数智化发展回顾与展望",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "extractor-recovered.md": "10c9c3a31b7b6b1829460151668428691ae022fae34bad2d87129c3a5d5b53ec",
+        "alternatives/china-financial-computer/retrieval-response.html": "0e22808d6f0af9c1803a769ae6666b82e75d329c7bfcd317f8284bb03f3bbaa9",
+        "alternatives/china-financial-computer/retrieval-response.md": "c84434e17edf6d4268e29f7b80a1343fd5008ea310f9e9843c1a0a6534ab280b"
+      }
+    },
+    {
+      "status": "underlying_publisher_article_archived",
+      "browser": "WeChat host was blocked by site-safety policy on FUND-109; this other same-host URL was not attempted as a workaround.",
+      "result": "Downloaded China Fund News original publisher article,31May2026 19:24, reporter曹雯璟, same title/event and key paragraphs. It is independent of the inaccessible company-account WeChat wrapper. Source remains reporter-authored; no raw-content equality with inaccessible WeChat asserted.",
+      "files": [
+        "alternatives/china-fund-news/source.html",
+        "alternatives/china-fund-news/original.md",
+        "alternatives/china-fund-news/metadata.json"
+      ],
+      "alternatives": [
+        "https://www.chnfund.com/article/ARe1c18e92-d6cd-d705-6b09-3a218edf6149"
+      ],
+      "source_id": "FUND-356",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+      "original_title": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "alternatives/china-fund-news/source.html": "5b45d5d7691e3337eb2bb0d6baca3aa4d7636dc12641bc0dc99ea112b1bab6df",
+        "alternatives/china-fund-news/original.md": "b788cba8a3de9a4a5985ac7e3fdf95f040e128fef8f3f69a2f5b355b4711be01",
+        "alternatives/china-fund-news/metadata.json": "bd0840ebf6a05ff0fccc9396c081212ff7cfe874edda2837db94c07efd8d859d"
+      }
+    },
+    {
+      "status": "mirror_available_original_blocked",
+      "browser": "WeChat host blocked by site-safety policy on FUND-109; no same-host workaround attempted.",
+      "result": "Sina full article FUND-358 remains available with中国证券报-中证网 credit. Exact-title searches found copies, but no accessible first-publisher original; article content obtainable as attributed repost, original provenance gap remains.",
+      "files": [
+        "../FUND-358/original.md",
+        "../FUND-358/source.html"
+      ],
+      "alternatives": [
+        "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml"
+      ],
+      "source_id": "FUND-359",
+      "checked_at": "2026-09-07T02:53:16.193561+00:00",
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
+      "original_title": "Linked source for 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河; destination title not retrieved",
+      "human_check_status": "pending",
+      "file_checksums": {
+        "../FUND-358/original.md": "e40f1d973dfed0d75231f961a13ae5fd68a9ebd055e11a70fa4158935e2a6a58",
+        "../FUND-358/source.html": "2c22e36e0394c53d8cfb2c30e3204ad29bc3b8469143c45feadcd7deecbac7a3"
+      }
+    }
+  ]
+}

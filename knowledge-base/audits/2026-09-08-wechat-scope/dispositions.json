@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-08",
+  "in_scope": [
+    "WX-001",
+    "WX-002",
+    "WX-003",
+    "WX-004"
+  ],
+  "full_articles_archived": [
+    "WX-001",
+    "WX-002",
+    "WX-004"
+  ],
+  "pending_full_article": [
+    "WX-003"
+  ],
+  "excluded": [
+    "WX-005",
+    "WX-006",
+    "WX-007"
+  ],
+  "exclusion_reason": "unrelated footer recommendations",
+  "screenshot_partial": "../../sources/FUND-359/user-supplied/metadata.json"
+}

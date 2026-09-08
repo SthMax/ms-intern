@@ -1,0 +1,123 @@
+{
+  "link_id": "WX-004",
+  "related_source": "FUND-203",
+  "relationship": "upstream_source",
+  "expected_title": "拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态",
+  "requested_url": "https://mp.weixin.qq.com/s/ngg8Z6fcLq7oryyKwy4LGw",
+  "retrieved_at": "2026-09-07T06:32:33.620886+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/s/ngg8Z6fcLq7oryyKwy4LGw",
+  "content_type": "text/html; charset=UTF-8, text/html; charset=UTF-8",
+  "sha256": "0b5a8c2874538e28e76da52c559440fac2232ebac0fc369fb1bfdb1ee9d3e372",
+  "byte_count": 3289150,
+  "extracted_title": "拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态",
+  "article_characters": 2585,
+  "redirects": [],
+  "status": "retrieved",
+  "bundle": "knowledge-base/sources/wechat-articles/WX-004/01_拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态",
+  "markdown": "knowledge-base/sources/wechat-articles/WX-004/01_拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态/拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态.md",
+  "image_count": 7,
+  "format_summary": {
+    "removed_duplicate_headings": 1,
+    "normalized_heading_levels": 0,
+    "fixed_invalid_links": 0,
+    "removed_missing_images": [],
+    "removed_noise_lines": 1,
+    "trimmed_blank_lines": 0
+  },
+  "title": "拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态",
+  "account": "中国基金报",
+  "author": null,
+  "published": "2026-07-08T17:04:16+08:00",
+  "published_source": "raw HTML var ct epoch, converted to Asia/Shanghai; #publish_time is empty until JS renders",
+  "account_id": "gh_a4a87df43a4c",
+  "body_selector": "#js_content",
+  "raw_file": "raw-source.html",
+  "cleaned_html_file": "source.html",
+  "markdown_file": "拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态.md",
+  "provenance_strings": [],
+  "text_check": {
+    "full_text_equal_after_whitespace_and_markdown_normalization": true,
+    "source_characters": 2545,
+    "markdown_characters": 2545,
+    "missing_paragraphs": []
+  },
+  "images": [
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_gif/7KcgpBE2JbpIYoI2kjuURvG7Rt7FoGJjIqSfvgsTLWlAtiaCXVHh3R7ku7fpics45pxniaictyoNnmeUGic0Cuy08ag/640?wx_fmt=gif",
+      "local_file": "image_01.gif",
+      "role": "inline",
+      "downloaded": true,
+      "format": "GIF",
+      "width": 900,
+      "height": 66,
+      "sha256": "04fa57a1fc0e12117bb50337bd55bf9c99e5d2084ca9212e5ae3cf49d61b6c83"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_gif/7KcgpBE2JbpIYoI2kjuURvG7Rt7FoGJjwsq5aJAYESBiauP8eR7NXF6HGcqdQOStqiaSfdlF65oVQt1PIqyIqnEw/640?wx_fmt=gif",
+      "local_file": "image_02.gif",
+      "role": "inline",
+      "downloaded": true,
+      "format": "GIF",
+      "width": 900,
+      "height": 236,
+      "sha256": "23c642d4a07c87d11b83ca490d60b7ec55cf2f3e85ec087f91ce64c33981ff3c"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/tichC97aJiaD6BTA2AViauUJjFtJDVgwTXuVuBpUqrC1wvqI2X49Ba0WuMI2U3Y0BvfBpiaKovpqGwECuBYKG3qoxtHiaXsjReOKuhRzIwTic1vIw/640?wx_fmt=jpeg&from=appmsg",
+      "local_file": "image_03.jpg",
+      "role": "inline",
+      "downloaded": true,
+      "format": "JPEG",
+      "width": 1080,
+      "height": 2712,
+      "sha256": "8d724d97cc0d3338410ce9b7eecebef266b7a74f5e31fb8ca35f2058c3fe2ffc"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/tichC97aJiaD4VYLHeTBg4cuPibNTvRibgbHbx61xNmNHyHhU0d0NTaYF9Wn2icWCkTr3auXYdTXbC6cXvwDIcDzDJ2koPoEYiaUL3PjhfDI0eugI/640?wx_fmt=jpeg&from=appmsg",
+      "local_file": "image_04.jpg",
+      "role": "inline",
+      "downloaded": true,
+      "format": "JPEG",
+      "width": 1080,
+      "height": 2143,
+      "sha256": "00576cb6aa68869c9a276f6747c5ec169e3198f6a2d79f50a877bb9fd08da8ea"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/tichC97aJiaD7uUsUiaI8qhibItEyXVxz7Q14cZC3Sluf7mnY3DVq1VkJIricUXWckJBeWwQyvvZXYiaV1ib09dk9fYF3Z3ml66lmicfV2OXic4m2hFM/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_05.png",
+      "role": "inline",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 430,
+      "height": 430,
+      "sha256": "60b6bb0516707319166dc576a8c55ad73e2681a5606d70173e3807d249b341e7"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/7KcgpBE2JbotKmSGcrQkanHcTQuDGEVGQD5qWJPia0HfSP8DRDhDaZqmj6VHWWxmAPfrHAlRD3h1sMzzTvG2SjA/640?wx_fmt=jpeg",
+      "local_file": "image_06.jpg",
+      "role": "inline",
+      "downloaded": true,
+      "format": "JPEG",
+      "width": 1080,
+      "height": 1080,
+      "sha256": "b60476cc671413af88daffcb375e3aaa545ca1c26f8510f15c43b76b12462f92"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/7KcgpBE2JboYAgiaXd9nnria5pZrqibV9HhAOvEIXMgw4ZFBFYuXE7aZ1DZTEvNvWDdYHhNoh6YmTibYFWInNUDzGg/640?wx_fmt=png",
+      "local_file": "image_07.png",
+      "role": "inline",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 607,
+      "height": 25,
+      "sha256": "545aaa05d71d1454f69dc019cfd015d9aef7ae8df288ed006dedb1ec0d90c217"
+    }
+  ],
+  "svg_count": 0,
+  "svg_text_characters": 0,
+  "limits": "Original-language body text comparison only; SVG/animations retained in HTML but not reproduced in Markdown; human review pending; source disclosure is not measured deployment verification."
+}

@@ -1,0 +1,21 @@
+{
+  "source_id": "FUND-359",
+  "pdf_import_byte_identity": "pass",
+  "raw_sha256": "pass",
+  "original_markdown_hash": "pass",
+  "final_markdown_vs_pdf_lines": "pass",
+  "normalized_body_characters": 2446,
+  "all_five_pages_visually_checked": true,
+  "missing_local_links": [],
+  "master_records": 101,
+  "states": {
+    "verified-primary": 68,
+    "candidate": 31,
+    "unresolved": 2
+  },
+  "archived_registered_files": 96,
+  "changed_files_whitespace_check": "pass",
+  "related_wechat_full_archives": 4,
+  "remaining_related_wechat_fulltext_gaps": 0,
+  "excluded_recommendations": 3
+}

@@ -1,0 +1,31 @@
+{
+  "link_id": "WX-001",
+  "related_source": "FUND-109",
+  "relationship": "registered_original",
+  "expected_title": "易方达基金 × ima首发基金研选Skill",
+  "requested_url": "https://mp.weixin.qq.com/s/M6djG8U9YNCNlETZj2d1uA",
+  "retrieved_at": "2026-09-07T06:32:33.187778+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/s/M6djG8U9YNCNlETZj2d1uA",
+  "content_type": "text/html; charset=UTF-8, text/html; charset=UTF-8",
+  "sha256": "7cc016f1df0636b0425cc5be893c6df7d47a838d906604f2288b5a2992e53118",
+  "byte_count": 3539158,
+  "extracted_title": "🧧易方达基金 × ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环",
+  "article_characters": 3209,
+  "redirects": [],
+  "status": "retrieved",
+  "bundle": "knowledge-base/sources/wechat-articles/WX-001/01_🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环",
+  "markdown": "knowledge-base/sources/wechat-articles/WX-001/01_🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环/🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环.md",
+  "image_count": 37,
+  "format_summary": {
+    "removed_duplicate_headings": 1,
+    "normalized_heading_levels": 0,
+    "fixed_invalid_links": 0,
+    "removed_missing_images": [],
+    "removed_noise_lines": 1,
+    "trimmed_blank_lines": 0
+  }
+}

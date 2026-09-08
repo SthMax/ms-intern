@@ -1,0 +1,37 @@
+{
+  "articles": [
+    {
+      "link_id": "WX-001",
+      "raw_hash": "pass",
+      "canonical_raw": "pass",
+      "image_files_and_references": "pass",
+      "image_count": 42,
+      "final_markdown_normalized_text": "pass"
+    },
+    {
+      "link_id": "WX-002",
+      "raw_hash": "pass",
+      "canonical_raw": "pass",
+      "image_files_and_references": "pass",
+      "image_count": 9,
+      "final_markdown_normalized_text": "pass"
+    },
+    {
+      "link_id": "WX-004",
+      "raw_hash": "pass",
+      "canonical_raw": "supplemental",
+      "image_files_and_references": "pass",
+      "image_count": 7,
+      "final_markdown_normalized_text": "pass"
+    }
+  ],
+  "images_total": 58,
+  "markdown_files_checked": 20,
+  "missing_local_links": [],
+  "failed_link_count": 4,
+  "verdict": "pass",
+  "changed_paths_git_diff_check": {
+    "exit_code": 0,
+    "output": ""
+  }
+}

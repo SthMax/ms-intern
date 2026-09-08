@@ -17,19 +17,121 @@ human_check_status: pending
 
 Relevant location: Articles 2–3, 14, 21, 25, 43–45, 51, 64.
 
-## Verified source content
+## 原始来源存档与提取说明
 
-The official consolidated heading identifies the 2021 amendment. Articles 2–3
-include domestic public-fund managers. Article 14 requires documented internal
-review before relevant technology-enabled business. Article 21 distinguishes
-development/test from production security. Articles 43–45 retain institutional
-responsibility, require control of important systems, restrict independent vendor
-operation/daily security management subject to stated exceptions, and address
-review, reporting, exit planning, service/confidentiality agreements and oversight.
-Article 51 lists service-provider prohibitions, including business/customer-data
-handling and undisclosed onward delegation.
+[原始文件](../sources/REG-003/source.html) · [完整原语言提取文本](../sources/REG-003/original.md) · [获取元数据与校验值](../sources/REG-003/metadata.json)
 
-## Project interpretation
+2026-09-07 重新获取的文件用于原文保全。以下逐字复制存档提取文本中的条文或段落，未翻译、未回译；代码块保留提取换行及格式标记。网页动态内容、PDF 图表、脚注和阅读顺序可能存在提取差异，以原始文件为准。本次原文保全不替代既有法律适用、现行状态或人工核验工作；先前的证据状态和核验限制保留。
+
+## 原文摘录 / Original-language excerpts
+
+### 修订说明
+
+```text
+（2018年12月19日证监会令第152号公布 根据2021年1月15日证监会令第179号《关于修改、废止部分证券期货规章的决定》修订）
+```
+
+### 第二条（完整条文）
+
+```text
+第二条  证券基金经营机构借助信息技术手段从事证券基金业务活动，信息技术服务机构为证券基金业务活动提供信息技术服务，适用本办法。
+```
+
+### 第三条（完整条文）
+
+```text
+第三条  本办法所称证券基金经营机构，是指经中国证监会批准在境内设立的证券公司和管理公开募集基金的基金管理公司（以下简称基金管理公司）。
+
+    本办法所称信息技术服务机构，是指为证券基金业务活动提供信息技术服务的机构。信息技术服务的范围如下：
+
+（一）重要信息系统的开发、测试、集成及测评；
+
+（二）重要信息系统的运维及日常安全管理；
+
+（三）中国证监会规定的其他情形。
+
+以上机构统称证券基金经营与服务机构。
+```
+
+### 第十四条（完整条文）
+
+```text
+第十四条  证券基金经营机构借助信息技术手段从事证券基金业务活动前，应当开展内部审查，验证下列事项并建立存档记录：
+
+    （一）业务系统的流程设计、功能设置、参数配置和技术实现应当遵循业务合规的原则，不得违反法律法规及中国证监会的规定；
+
+（二）风险管理系统功能完备、权限清晰，能够与业务系统同步上线运行；
+
+（三）具备完善的信息安全防护措施，能够保障经营数据和客户信息的安全、完整；
+
+（四）具备符合要求的信息系统备份及运维管理能力，能够保障相关系统安全、平稳运行。
+```
+
+### 第二十一条（完整条文）
+
+```text
+第二十一条  证券基金经营机构应当建立独立于生产环境的专用开发测试环境，避免风险传导；开发测试环境使用未脱敏数据的，应当采取与生产环境同等的安全控制措施。
+
+    证券基金经营机构在生产环境开展重要信息系统技术或业务测试的，应对测试流程及结果进行审查。
+```
+
+### 第二十五条（完整条文）
+
+```text
+第二十五条  证券基金经营机构应当妥善保存信息系统开发、测试、上线、变更及运维过程中产生的文档，并根据业务开展情况以及信息系统的重要程度建立与监测工作相适应的日志留痕机制，确保满足应急处置和审计需要。
+```
+
+### 第四十三条（完整条文）
+
+```text
+第四十三条  证券基金经营机构借助信息技术手段从事证券基金业务活动的，可以委托信息技术服务机构提供产品或服务，但证券基金经营机构依法应当承担的责任不因委托而免除或减轻。
+
+证券基金经营机构应当清晰、准确、完整的掌握重要信息系统的技术架构、业务逻辑和操作流程等内容，确保重要信息系统运行始终处于自身控制范围。除法律法规及中国证监会另有规定外，不得将重要信息系统的运维、日常安全管理交由信息技术服务机构独立实施。
+```
+
+### 第四十四条（完整条文）
+
+```text
+第四十四条  证券基金经营机构委托信息技术服务机构提供服务，应当按照本办法第十四条的规定对信息技术服务机构及相关信息系统进行内部审查，并向中国证监会及其派出机构报送审查意见及相关资料。
+
+证券基金经营机构应当在选择信息技术服务机构之前，制定更换服务提供方的流程及预案，确保在特定情况下可更换服务提供方。
+```
+
+### 第四十五条（完整条文）
+
+```text
+第四十五条  证券基金经营机构应当与信息技术服务机构签订服务协议和保密协议，明确各方权利、义务和责任，约定质量考核标准、持续监控机制、异常处理机制、服务变更或者终止的处置流程以及现场服务人员保密要求等内容，并持续监督信息技术服务机构及相关人员落实服务协议和保密协议的情况。
+
+    证券基金经营机构应当参照本办法第三条在服务协议中列明委托信息技术服务机构提供的服务范围、服务方式、涉及信息系统及相关证券基金业务活动类型。
+```
+
+### 第五十一条（完整条文）
+
+```text
+第五十一条  信息技术服务机构为证券基金业务活动提供信息技术服务，不得有下列行为：
+
+    （一）参与证券基金经营机构向客户提供业务服务的任何环节或向投资者、社会公众等发布可能引发其从事证券基金业务误解的信息；
+
+    （二）截取、存储、转发和使用证券基金业务活动相关经营数据和客户信息；  
+
+    （三）在服务对象不知情的情况下，转委托第三方提供信息技术服务；
+
+    （四）提供的产品或服务相关功能、操作流程、系统权限及参数配置违反现行法律法规；
+
+    （五）无正当理由关闭系统接口或设置技术壁垒；
+
+    （六）向社会公开发布信息安全漏洞、信息系统压力测试结果等网络安全信息或泄露未公开信息；
+
+    （七）法律法规及中国证监会禁止的其他行为。
+```
+
+### 第六十四条（完整条文）
+
+```text
+第六十四条  本办法自2019年6月1日起实施。《证券投资基金销售机构通过第三方电子商务平台开展业务管理暂行规定》（证监会公告〔2013〕18号）同时废止。
+```
+
+## 研究者分析 / Project interpretation (not source text)
 
 A model supplier, IT service provider, hosting operator, and data processor may
 be different roles. Determine which defined services and systems are involved.
@@ -37,7 +139,7 @@ Do not reduce these provisions to either “all outsourcing is banned” or
 “on-premise hosting resolves outsourcing.” Check the Article 43 exceptions and
 Article 3 service definition with the actual architecture.
 
-## Verification
+## 既有核验记录 / Prior verification
 
 Original consolidated text and cited provisions inspected. Latest-status sweep
 and internal applicability confirmation remain open; human check pending.

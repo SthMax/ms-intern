@@ -1,0 +1,89 @@
+[
+  {
+    "link_id": "WX-001",
+    "mirror_source": "FUND-108",
+    "mirror_characters": 3040,
+    "wechat_characters": 3175,
+    "match_ratio": 0.9621882542236525,
+    "differences": [
+      {
+        "kind": "delete",
+        "mirror": "（来源：小易易方达基金）",
+        "wechat": ""
+      },
+      {
+        "kind": "insert",
+        "mirror": "",
+        "wechat": "1.扫描下方二维码或在“指数直通车”小程序首页点击“AISkills”功能按钮，进入“AISkills”页面，免费获取专属APIKey2.领取后点进我的APIKey管理页面，选择复制提示词&Key。"
+      },
+      {
+        "kind": "insert",
+        "mirror": "",
+        "wechat": "4)领取方式：中奖用户可以查看公众号后台发送的微信消息，并点击红包链接。用户成功领取红包后，可在\"微信零钱明细\"查看详情。易方达基金管理有限公司为获奖用户代缴个人所得税。("
+      },
+      {
+        "kind": "delete",
+        "mirror": "MACD金叉信号形成，这些股涨势不错！海量资讯、精准解读，尽在新浪财经APP",
+        "wechat": ""
+      }
+    ]
+  },
+  {
+    "link_id": "WX-002",
+    "mirror_source": "FUND-355",
+    "mirror_characters": 5252,
+    "wechat_characters": 5292,
+    "match_ratio": 0.9889984825493171,
+    "differences": [
+      {
+        "kind": "insert",
+        "mirror": "",
+        "wechat": "内容转载自：中国基金报"
+      },
+      {
+        "kind": "insert",
+        "mirror": "",
+        "wechat": "兑奖流程：中奖用户需自行点击链接，在相应页面输入口令，即可领取现金红包。"
+      },
+      {
+        "kind": "insert",
+        "mirror": "",
+        "wechat": "滑动查看完整风险提示"
+      },
+      {
+        "kind": "insert",
+        "mirror": "",
+        "wechat": "点亮“赞+推荐”"
+      },
+      {
+        "kind": "replace",
+        "mirror": "MACD金叉信号形成，这些股涨势不错！海量资讯、精准解读，尽在新浪财经APP",
+        "wechat": "抽10位朋友送8.8元红包"
+      }
+    ]
+  },
+  {
+    "link_id": "WX-004",
+    "mirror_source": "FUND-203",
+    "mirror_characters": 2420,
+    "wechat_characters": 2545,
+    "match_ratio": 0.9679758308157099,
+    "differences": [
+      {
+        "kind": "replace",
+        "mirror": "海量资讯、精准解读",
+        "wechat": "“中国基金报：报道基金关注的一切Chinafundnews长按识别二维码"
+      },
+      {
+        "kind": "replace",
+        "mirror": "尽",
+        "wechat": "关注中国基金报版权声明：《中国基金报》对本平台所刊载的原创内容享有著作权，未经授权禁止转载，否则将追究法律责任。授权转载合作联系人：于先生（电话：0755-82468670）万水千山总是情，点个“"
+      },
+      {
+        "kind": "replace",
+        "mirror": "新浪财经APP",
+        "wechat": "看”行不行！！！"
+      }
+    ]
+  }
+]

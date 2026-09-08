@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-07",
+  "recovery_records": 8,
+  "recovery_file_hashes_checked": 16,
+  "prior_raw_file_hashes_checked": 93,
+  "issues": [],
+  "human_check_status": "pending"
+}

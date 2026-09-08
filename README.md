@@ -51,6 +51,7 @@ and no verified external research findings.
 | Location | Purpose |
 |---|---|
 | [PROJECT_PLAN.md](PROJECT_PLAN.md) | Final approved project brief and mentor clarifications |
+| [Research tools](RESEARCH_TOOLS.md) | Tested MCP/tool inventory, research routing, and remaining setup gaps |
 | [knowledge-base/README.md](knowledge-base/README.md) | Evidence workflow |
 | [Company index](knowledge-base/companies/index.md) | Phase 1 database, candidates, coverage |
 | [Regulatory index](knowledge-base/regulation/index.md) | Phase 1 provision map and MRM/internal questions |

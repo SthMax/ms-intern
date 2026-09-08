@@ -1,0 +1,17 @@
+{
+  "status": "original_language_text_recovered_via_extractor",
+  "browser": "Prior internal-browser attempt ended ERR_CONNECTION_CLOSED; same failed tab remains. Direct raw fetch also failed.",
+  "result": "Exa returned original-language article text attributed to exact URL, including27May2026 date and allfive main sections. Raw publisher HTML not obtained; service freshness/completeness not independently guaranteed.",
+  "files": [
+    "extractor-recovered.md"
+  ],
+  "alternatives": [],
+  "source_id": "FUND-314",
+  "checked_at": "2026-09-07T02:53:16.193561+00:00",
+  "original_url": "https://www.fintechinchina.com/viewpoints/9679",
+  "original_title": "【专访】工银瑞信CIO王建：2026金融大模型与智能体，从野蛮生长到合规落地、价值凸显",
+  "human_check_status": "pending",
+  "file_checksums": {
+    "extractor-recovered.md": "c067503814d3342ddb60a5f06ad8992fd3fcdeb831fab3cf30b847d0ac9318ee"
+  }
+}

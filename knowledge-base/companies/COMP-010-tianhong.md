@@ -8,6 +8,26 @@ human_check_status: pending
 
 # Tianhong / 天弘基金管理有限公司
 
+<!-- original-language-provenance:start -->
+> [!important] 原文与研究者分析分离
+> 本页保留的英文正文、分类及表格是研究者撰写的摘要、整理或分析，不是来源原文。请先阅读下方逐源链接中的原语言文本；中文来源保留中文，原本为英文的来源保留英文。本次未将英文摘要反译为所谓“中文原文”。
+> 来源的一手／转载／媒体／供应商属性及证据限制仍按原登记保留；保存原文不等于核实全部研究结论。人工核验仍待完成。
+
+## 原语言来源档案（逐源）
+
+档案中的 `original.md` 是机械提取文本；页面排版、表格和提取缺失以下载文件为准。无法确认正文的响应不作为原文提供，详见元数据。来源标题沿用登记表，仅作定位。
+
+| 来源 ID | 登记标题 | 原登记证据状态 | 原语言正文／下载文件／记录 |
+|---|---|---|---|
+| FUND-300 | 『基金行业金融科技发展奖』天弘基金：基于大模型的 FinAgent 金融智能体系统 | verified-primary | [原语言正文](../sources/FUND-300/original.md) · [下载文件](../sources/FUND-300/source.pdf) · [元数据与限制](../sources/FUND-300/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf) |
+| FUND-301 | 行业动态 | verified-primary | [原语言正文](../sources/FUND-301/original.md) · [下载文件](../sources/FUND-301/source.html) · [元数据与限制](../sources/FUND-301/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/index_6.html) |
+| FUND-302 | 公司介绍 | unresolved | 浏览器已核实并保存原文片段（非整页） · [元数据与限制](../sources/FUND-302/metadata.json) · [登记网址](https://www.thfund.com.cn/about/company) · [本次恢复记录](../sources/FUND-302/recovery.json) |
+
+## 研究者摘要／分析（保留原有正文）
+
+**以下为研究者摘要/分析，不是原文。** 原有事实表述、引用定位、证据状态和局限一并保留，供对照原文复核。
+<!-- original-language-provenance:end -->
+
 ## Research conclusion
 
 Tianhong has a detailed original AMAC-hosted case for its **FinAgent financial
@@ -55,12 +75,16 @@ The named guardrails establish what the case says was designed. They do not
 prove that every output is faithful, that controls were independently tested,
 or that a regulator approved the deployment.
 
-## Asset-size evidence
+## Asset-size evidence — browser recovery, 7 September 2026
 
-The size-first research universe is maintained separately. A current,
-same-date public-fund-only AUM figure has not yet been verified in this note.
-The official profile is [公司介绍](https://www.thfund.com.cn/about/company);
-any broad company/subsidiary AUM must remain distinct from public-fund AUM.
+The official company profile was opened successfully in the internal browser.
+Its [original Chinese paragraph](../sources/FUND-302/browser-recovered.md) reports,
+as of **31 March 2026**, total AUM **12,258.54亿元**, public-fund AUM
+**12,048.15亿元**, and non-money public-fund AUM **4,348.45亿元**.
+The total explicitly includes special-account AUM **165.31亿元** and subsidiary
+Tianhong Innovation special-business AUM **45.08亿元**. These date/scope-specific
+figures do not replace the separate Q2 screening rank. The relevant DOM paragraph
+is saved; a full offline page export was unsupported. Human review is pending.
 
 ## Verification and source trail
 

@@ -1,0 +1,58 @@
+<!doctype html><html lang=""><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible><meta name=viewport content="width=device-width,initial-scale=1"><title>鹏华基金管理有限公司-官方网站-费率更低</title><link rel="shortcut icon" href=/favicon.ico><link href=/static/css/app.017d180375496440f39532f70a90dfb7.css rel=stylesheet></head><script>window.onload = function () {
+      function shouldShowUpgradeMessage() {
+        var userAgent = navigator.userAgent.toLowerCase()
+        var showUpgradeMessage = false
+
+        // 检测IE浏览器版本
+        if (/msie\s|trident\//.test(userAgent)) {
+          var ieMatch =
+            userAgent.match(/msie (\d+)\./) || userAgent.match(/rv:(\d+)\)/)
+          if (ieMatch && ieMatch[1]) {
+            var ieVersion = parseInt(ieMatch[1], 10)
+            if (ieVersion < 10) {
+              showUpgradeMessage = true
+            }
+          }
+        }
+
+        // 检测初代Edge浏览器
+        if (/edge\//.test(userAgent)) {
+          var edgeMatch = userAgent.match(/edge\/(\d+)/)
+          if (edgeMatch && edgeMatch[1]) {
+            var edgeVersion = parseInt(edgeMatch[1], 10)
+            if (edgeVersion < 79) {
+              showUpgradeMessage = true
+            }
+          }
+        }
+
+        return showUpgradeMessage
+      }
+
+      if (shouldShowUpgradeMessage()) {
+        // 浏览器版本低的提示页面
+        window.location.href =
+          'https://www.phfund.com.cn/oldBrowserWarning/index.html'
+        return
+      }
+
+      // 使用User-Agent字符串判断设备类型
+      const userAgent = navigator.userAgent
+      const isMobile = /iPhone|Android/i.test(userAgent)
+      const paths = ['/comTradSystem/login', '/comTradSystem/list', '/ESG']
+      const path = window.location.pathname
+      let pathInPaths = false
+      for (let i of paths) {
+        if (path.indexOf(i) > -1) {
+          pathInPaths = true
+          break
+        }
+      }
+      // if (isMobile && !pathInPaths) {
+      //   console.log('当前在手机端')
+      //   // 浏览器版本低的提示页面
+      //   window.location.href = 'https://aj.phfund.com.cn/AplusWallet/#/index'
+      // } else {
+      //   console.log('当前在PC端')
+      // }
+    }</script><body><div id=app></div><script type=text/javascript src=/static/js/manifest.e006b25ebcb19c6bebc6.js></script><script type=text/javascript src=/static/js/vendor.7df40da25b690bdbe2e5.js></script><script type=text/javascript src=/static/js/app.e7468626a39d90cc0f0d.js></script></body></html><style>body,html{width:100%;height:100%;margin:0;padding:0}</style>

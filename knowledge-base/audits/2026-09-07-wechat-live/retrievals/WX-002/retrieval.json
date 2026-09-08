@@ -1,0 +1,31 @@
+{
+  "link_id": "WX-002",
+  "related_source": "FUND-356",
+  "relationship": "registered_original",
+  "expected_title": "中欧基金窦玉明：AI赋能时代，“三化”协同夯实长期业绩根基",
+  "requested_url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+  "retrieved_at": "2026-09-07T06:32:33.187524+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+  "content_type": "text/html; charset=UTF-8, text/html; charset=UTF-8",
+  "sha256": "80a2c87d8e3aab777487d963d9c1a0bd627c86f4e5543ee58b5e6fab7673d28c",
+  "byte_count": 3367799,
+  "extracted_title": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+  "article_characters": 5297,
+  "redirects": [],
+  "status": "retrieved",
+  "bundle": "knowledge-base/sources/wechat-articles/WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+  "markdown": "knowledge-base/sources/wechat-articles/WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基/中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基.md",
+  "image_count": 5,
+  "format_summary": {
+    "removed_duplicate_headings": 1,
+    "normalized_heading_levels": 0,
+    "fixed_invalid_links": 0,
+    "removed_missing_images": [],
+    "removed_noise_lines": 1,
+    "trimmed_blank_lines": 0
+  }
+}

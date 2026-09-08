@@ -1,0 +1,55 @@
+{
+  "source_url": "https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml",
+  "input_file": "/Users/sthmax/dev/git/ms-intern/knowledge-base/sources/FUND-355/source.html",
+  "title": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+  "account_as_displayed": null,
+  "author_strings_as_displayed": [],
+  "published_as_displayed": null,
+  "provenance_strings": [
+    "近年来，中欧基金持续建设投研数据底座，并将人工智能、机器学习、生成式AI等技术引入投资研究场景。以最新开发的投研Agent为例，目前已集成超过100个Skill（技能模块），覆盖数据抓取、行业分析、财务建模、报告撰写等多个场景。数据显示，该系统已将投研信息检索效率提升约60%。 （数据来源：中欧基金，截至2026/5）",
+    "与此同时，中欧权益团队长期使用的“五要素模型”也实现了智能化升级。过去，每个投资标的入池都需要研究员手工填写要素分析表，不仅耗时，也容易出现遗漏。如今，投研Agent能够自动识别相关数据并完成结构化提取，大部分填表工作可由系统自动完成，使整体编制效率提升约50%。 （数据来源：中欧基金，截至2026/5）",
+    "据窦玉明介绍，在投资组合优化这一核心环节，中欧基金与上海交通大学智能计算研究院开展合作，引入新一代优化器技术。通过技术升级，量化投资组合优化速度提升约百倍，求解时间由过去的分钟级压缩至秒级。在他看来，这种提升不仅意味着效率提升，更意味着策略迭代速度加快、市场响应能力增强，以及服务投资者能力的持续提升。 （数据来源：中欧基金，截至2026/5）"
+  ],
+  "raw_sha256": "a811e4191d200ee8c34a6c6011e71f8972f530c7209c16972e291727aa265963",
+  "converter_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Offline use of installed WeChat HTML-to-Markdown parser; lossy noise cleaner and network downloader not invoked",
+  "article_selector": "#artibody",
+  "missing_paragraphs": [],
+  "images": [
+    {
+      "url": "https://n.sinaimg.cn/spider20260601/339/w678h461/20260601/4027-3852e7f168e12071be407497b4e59e05.png",
+      "downloaded": true,
+      "local_file": "images/image-01.png",
+      "sha256": "4bf6980490b1a69bc91821255d089381b0ca00a104599b8359bb14f1356427be"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260601/391/w977h214/20260601/435e-4be8bd6dde58a0b76a6861bcdc035ee9.png",
+      "downloaded": true,
+      "local_file": "images/image-02.png",
+      "sha256": "887b19e6abf3a5bff17554eca1737e4ee3f2d83744b26f17e2199f06fcf56d0d"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260601/492/w1080h212/20260601/eb19-52963b61b13e37375fccf94e734e8467.png",
+      "downloaded": true,
+      "local_file": "images/image-03.png",
+      "sha256": "89fffb46c6ba64aa285aa69c828c70574c81ab823dc86a0f13c4d5d7408f008f"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260601/720/w1080h440/20260601/67ca-8b07136c6c6a9f7337cc6c8e1d747567.jpg",
+      "downloaded": true,
+      "local_file": "images/image-04.jpg",
+      "sha256": "2885390210a22c8d3248ffc1fe74c49b804c7ba46d2a9bbfadd250f088e8f7bc"
+    },
+    {
+      "url": "https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png",
+      "downloaded": true,
+      "local_file": "images/image-05.png",
+      "sha256": "62a9860d0811aff779524cfc9bef2564b4c5bea46146ef6444602c7c9843867b"
+    }
+  ],
+  "text_check": "pass",
+  "human_check_status": "pending",
+  "network_used": false,
+  "limits": "Text check does not validate image contents, table spans, authenticity or substantive claims; failed images remain explicitly listed.",
+  "image_fetch_scope": "Separate inbound download of images already referenced by saved Sina/SZU publications; no WeChat article request."
+}

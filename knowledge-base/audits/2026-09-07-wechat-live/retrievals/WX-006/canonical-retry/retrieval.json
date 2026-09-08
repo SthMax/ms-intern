@@ -1,0 +1,27 @@
+{
+  "link_id": "WX-006",
+  "related_source": "FUND-251",
+  "relationship": "unrelated_recommendation",
+  "expected_title": "大跌日，“越跌越买”！股票ETF净流入超510亿，沪深300指数净流入居首",
+  "requested_url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400464&idx=1&sn=51c149921742d4593080d0fd9da1a022",
+  "retrieved_at": "2026-09-07T06:33:07.466115+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HKZanmqjmdaPyPbmd-xCNkr-t3ZO8WmRTpGHQ8ey&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5MDEzNjQwMA%3D%3D%26mid%3D2656400464%26idx%3D1%26sn%3D51c149921742d4593080d0fd9da1a022",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "96d1eb44b4fd5e7b57d11e4a89599a72433e24e87c7395178a4791dadb2ab010",
+  "byte_count": 17760,
+  "extracted_title": "未命名文章",
+  "article_characters": 0,
+  "redirects": [
+    {
+      "status": 302,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400464&idx=1&sn=51c149921742d4593080d0fd9da1a022"
+    }
+  ],
+  "status": "unavailable",
+  "reason": "No substantive #js_content article container",
+  "response_text": "： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看"
+}

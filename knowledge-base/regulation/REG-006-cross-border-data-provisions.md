@@ -17,23 +17,120 @@ human_check_status: pending
 
 Relevant location: Articles 2–8, 10–14; promulgation paragraph.
 
-## Verified source content
+## 原始来源存档与提取说明
 
-Articles 2–8 distinguish data types, qualifying exemptions, and transfer routes.
-Article 3 concerns specified cross-border activities without personal or important
-data. Article 10 preserves legally applicable notification, separate-consent and
-impact-assessment obligations when personal information is sent abroad. Article
-11 preserves security obligations. The promulgation paragraph and Article 14
-provide immediate commencement.
+[原始文件](../sources/REG-006/source.html) · [完整原语言提取文本](../sources/REG-006/original.md) · [获取元数据与校验值](../sources/REG-006/metadata.json)
 
-## Project interpretation
+2026-09-07 重新获取的文件用于原文保全。以下逐字复制存档提取文本中的条文或段落，未翻译、未回译；代码块保留提取换行及格式标记。网页动态内容、PDF 图表、脚注和阅读顺序可能存在提取差异，以原始文件为准。本次原文保全不替代既有法律适用、现行状态或人工核验工作；先前的证据状态和核验限制保留。
+
+## 原文摘录 / Original-language excerpts
+
+### 公布段落
+
+```text
+《促进和规范数据跨境流动规定》已经2023年11月28日国家互联网信息办公室2023年第26次室务会议审议通过，现予公布，自公布之日起施行。
+```
+
+### 第二条（完整条文）
+
+```text
+**第二条** 数据处理者应当按照相关规定识别、申报重要数据。未被相关部门、地区告知或者公开发布为重要数据的，数据处理者不需要作为重要数据申报数据出境安全评估。
+```
+
+### 第三条（完整条文）
+
+```text
+**第三条** 国际贸易、跨境运输、学术合作、跨国生产制造和市场营销等活动中收集和产生的数据向境外提供，不包含个人信息或者重要数据的，免予申报数据出境安全评估、订立个人信息出境标准合同、通过个人信息保护认证。
+```
+
+### 第四条（完整条文）
+
+```text
+**第四条** 数据处理者在境外收集和产生的个人信息传输至境内处理后向境外提供，处理过程中没有引入境内个人信息或者重要数据的，免予申报数据出境安全评估、订立个人信息出境标准合同、通过个人信息保护认证。
+```
+
+### 第五条（完整条文）
+
+```text
+**第五条** 数据处理者向境外提供个人信息，符合下列条件之一的，免予申报数据出境安全评估、订立个人信息出境标准合同、通过个人信息保护认证：
+
+（一）为订立、履行个人作为一方当事人的合同，如跨境购物、跨境寄递、跨境汇款、跨境支付、跨境开户、机票酒店预订、签证办理、考试服务等，确需向境外提供个人信息的；
+
+（二）按照依法制定的劳动规章制度和依法签订的集体合同实施跨境人力资源管理，确需向境外提供员工个人信息的；
+
+（三）紧急情况下为保护自然人的生命健康和财产安全，确需向境外提供个人信息的；
+
+（四）关键信息基础设施运营者以外的数据处理者自当年1月1日起累计向境外提供不满10万人个人信息（不含敏感个人信息）的。
+
+前款所称向境外提供的个人信息，不包括重要数据。
+```
+
+### 第六条（完整条文）
+
+```text
+**第六条** 自由贸易试验区在国家数据分类分级保护制度框架下，可以自行制定区内需要纳入数据出境安全评估、个人信息出境标准合同、个人信息保护认证管理范围的数据清单（以下简称负面清单），经省级网络安全和信息化委员会批准后，报国家网信部门、国家数据管理部门备案。
+
+自由贸易试验区内数据处理者向境外提供负面清单外的数据，可以免予申报数据出境安全评估、订立个人信息出境标准合同、通过个人信息保护认证。
+```
+
+### 第七条（完整条文）
+
+```text
+**第七条** 数据处理者向境外提供数据，符合下列条件之一的，应当通过所在地省级网信部门向国家网信部门申报数据出境安全评估：
+
+（一）关键信息基础设施运营者向境外提供个人信息或者重要数据；
+
+（二）关键信息基础设施运营者以外的数据处理者向境外提供重要数据，或者自当年1月1日起累计向境外提供100万人以上个人信息（不含敏感个人信息）或者1万人以上敏感个人信息。
+
+属于本规定第三条、第四条、第五条、第六条规定情形的，从其规定。
+```
+
+### 第八条（完整条文）
+
+```text
+**第八条** 关键信息基础设施运营者以外的数据处理者自当年1月1日起累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）或者不满1万人敏感个人信息的，应当依法与境外接收方订立个人信息出境标准合同或者通过个人信息保护认证。
+
+属于本规定第三条、第四条、第五条、第六条规定情形的，从其规定。
+```
+
+### 第十条（完整条文）
+
+```text
+**第十条** 数据处理者向境外提供个人信息的，应当按照法律、行政法规的规定履行告知、取得个人单独同意、进行个人信息保护影响评估等义务。
+```
+
+### 第十一条（完整条文）
+
+```text
+**第十一条** 数据处理者向境外提供数据的，应当遵守法律、法规的规定，履行数据安全保护义务，采取技术措施和其他必要措施，保障数据出境安全。发生或者可能发生数据安全事件的，应当采取补救措施，及时向省级以上网信部门和其他有关主管部门报告。
+```
+
+### 第十二条（完整条文）
+
+```text
+**第十二条** 各地网信部门应当加强对数据处理者数据出境活动的指导监督，健全完善数据出境安全评估制度，优化评估流程；强化事前事中事后全链条全领域监管，发现数据出境活动存在较大风险或者发生数据安全事件的，要求数据处理者进行整改，消除隐患；对拒不改正或者造成严重后果的，依法追究法律责任。
+```
+
+### 第十三条（完整条文）
+
+```text
+**第十三条** 2022年7月7日公布的《数据出境安全评估办法》（国家互联网信息办公室令第11号）、2023年2月22日公布的《个人信息出境标准合同办法》（国家互联网信息办公室令第13号）等相关规定与本规定不一致的，适用本规定。
+```
+
+### 第十四条（完整条文）
+
+```text
+**第十四条** 本规定自公布之日起施行。
+```
+
+## 研究者分析 / Project interpretation (not source text)
 
 A cloud/API option is not synonymous with a cross-border transfer: determine
 actual processing locations and remote access. Conversely, an on-premise model
 does not exclude outbound data flows. Test any exemption against its exact
 conditions; it is not general authorization to send internal research abroad.
 
-## Verification
+## 既有核验记录 / Prior verification
 
 Official Chinese text inspected. No quantitative threshold calculation has been
 performed for MSIM. Current-status sweep and human check remain pending.

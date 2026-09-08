@@ -1,0 +1,119 @@
+{
+  "source_url": "https://finance.sina.com.cn/money/fund/jjgsgd/2026-07-24/doc-iniixnhc1584122.shtml",
+  "input_file": "/Users/sthmax/dev/git/ms-intern/knowledge-base/sources/FUND-108/source.html",
+  "title": "🧧易方达基金 × ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环",
+  "account_as_displayed": null,
+  "author_strings_as_displayed": [],
+  "published_as_displayed": null,
+  "provenance_strings": [
+    "（来源：小易\n                易方达基金）"
+  ],
+  "raw_sha256": "5a82492658ffc30aa83b9bad2c5640c347cf5e35f873f8c5e30f948bc6be4bb9",
+  "converter_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Offline use of installed WeChat HTML-to-Markdown parser; lossy noise cleaner and network downloader not invoked",
+  "article_selector": "#artibody",
+  "missing_paragraphs": [],
+  "images": [
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/b500-03bea4aebe4d06d3950e0096baea8764.jpg",
+      "downloaded": true,
+      "local_file": "images/image-01.jpg",
+      "sha256": "38140d099a56cb7a717d30fd51ffc26dc46e58c154ccac0af2a88717228d59f9"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/18b4-c2c958308c113fd0ef9400c41973d5be.jpg",
+      "downloaded": true,
+      "local_file": "images/image-02.jpg",
+      "sha256": "71014eb5ed5bac6a73c9680700ed95455585386916f185ea80a08f09df900c30"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/942d-9d149f871c174197d5df966bf909230e.jpg",
+      "downloaded": true,
+      "local_file": "images/image-03.jpg",
+      "sha256": "f3af77285ec30395776e0286c9494007b545ef732ec384cbf007d2b7d5a36c38"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/a8fe-efd78a6f9fd72cb095f1cdcae64ee639.jpg",
+      "downloaded": true,
+      "local_file": "images/image-04.jpg",
+      "sha256": "389458ed18d5fad130bb03a00b37a3ea9eae874ffae9ad2ffece4580b17e73cf"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/5996-ceadbd996e0a9a0696ddea5fd1de95a6.jpg",
+      "downloaded": true,
+      "local_file": "images/image-05.jpg",
+      "sha256": "21ac1a7ade2904366c34d0e741b0fd528afa02c3b1afac7ec839744c8d329a32"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/84a9-2176bbc812485a901914fa8ef4dc9ee4.jpg",
+      "downloaded": true,
+      "local_file": "images/image-06.jpg",
+      "sha256": "bb958e9aaf33d65bec554c68ca33d56a57f737631dd2934acdfd90805f556c72"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/7fc7-d06637a7d64b961c1e57da8e6f660ff9.jpg",
+      "downloaded": true,
+      "local_file": "images/image-07.jpg",
+      "sha256": "8e1df377de651e666459e35f90913a98c7b5c28a0f861e58dc90f44bc76cd3a4"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/726/w640h86/20260724/fbf3-gif7a63cd225373f3397df49d112b6347b2.gif",
+      "downloaded": true,
+      "local_file": "images/image-08.gif",
+      "sha256": "134593d2d53ce6cc81f37faeb437c2d267a7ce207d1e788848d282b69a04d9cb"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/b2a4-609e6fa271ed8cf0371babc4c4e1482b.jpg",
+      "downloaded": true,
+      "local_file": "images/image-09.jpg",
+      "sha256": "dbfb778b9ec26e2141d9f1c753b453c448eb8ff9c1dadb3e77ebe53b79cc426d"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/bcb2-89a4ec87b66cc4a8bc0f3bf27f4db0bd.jpg",
+      "downloaded": true,
+      "local_file": "images/image-10.jpg",
+      "sha256": "ba55ebd51fbc5343dc970c7002c249dad405ad673a96acfab5258a9f88c4ad39"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/726/w640h86/20260724/fbf3-gif7a63cd225373f3397df49d112b6347b2.gif",
+      "downloaded": true,
+      "local_file": "images/image-11.gif",
+      "sha256": "134593d2d53ce6cc81f37faeb437c2d267a7ce207d1e788848d282b69a04d9cb"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/867e-b569d5248d14db300ae670809d63797a.jpg",
+      "downloaded": true,
+      "local_file": "images/image-12.jpg",
+      "sha256": "04f6993324b91c3c8bb109d6f68c9bc607ab8d846dd78c9b10cf592443fa0012"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/622/w1080h1142/20260724/d40a-4ec2007aed0dfa01f026abd910feaa91.jpg",
+      "downloaded": true,
+      "local_file": "images/image-13.jpg",
+      "sha256": "efea39843152aaf4afc46d58a8ca87464b1d47f5979a46c9435b6a34b41f9e8e"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/88/w1036h1452/20260724/da2a-da0f14f3201c2d373f6d958c626ab63d.png",
+      "downloaded": true,
+      "local_file": "images/image-14.png",
+      "sha256": "03766843263de30b7e1e459df2c1e84d5d65aa5ee7ba7cb9c2793262199488de"
+    },
+    {
+      "url": "https://n.sinaimg.cn/spider20260724/633/w1080h353/20260724/45dc-e56d7f4634a5d336205cb763e5586655.png",
+      "downloaded": true,
+      "local_file": "images/image-15.png",
+      "sha256": "8e054ff007ea27c9f540689dfa9dc5a299032cc01b07101646f688646d0dbb7a"
+    },
+    {
+      "url": "https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png",
+      "downloaded": true,
+      "local_file": "images/image-16.png",
+      "sha256": "62a9860d0811aff779524cfc9bef2564b4c5bea46146ef6444602c7c9843867b"
+    }
+  ],
+  "text_check": "pass",
+  "human_check_status": "pending",
+  "network_used": false,
+  "limits": "Text check does not validate image contents, table spans, authenticity or substantive claims; failed images remain explicitly listed.",
+  "image_fetch_scope": "Separate inbound download of images already referenced by saved Sina/SZU publications; no WeChat article request."
+}

@@ -1,0 +1,2125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/css/fonts/font.css">
+
+<script src="https://www.efunds.com.cn/js/device.js?57c00af9"></script>
+<script>
+  var frontAppContext = 'https://api.efunds.com.cn/xcowch/';
+  var siteID = "1";
+  var siteURL = "https://www.efunds.com.cn/";
+  var siteAlias= "";
+  var isPreview = false;
+  var url = window.location.href;
+  if(url.indexOf(frontAppContext) === 0){
+    var path=url.substring(frontAppContext.length);
+    if(path.indexOf('/preview/')===0||path.indexOf('preview/')===0){
+      isPreview=true;
+      siteURL = "https://api.efunds.com.cn/xcowch/preview/00_OWCH/";
+    }
+  }
+  
+    if(!isPreview) {
+      var deviceType = getDeviceType();
+      var currentLink = window.location.href;
+      if(deviceType == 'Pad') {
+        var padPrefix = 'https://www.efunds.com.cn/Html5/';
+        if(padPrefix && deviceType.toLowerCase != 'pc' && currentLink.indexOf(siteURL) >= 0) {
+          // window.location.href = currentLink.replace(siteURL, padPrefix);   // 临时注释，暂时不自动跳转
+        }
+      } else if(deviceType == 'Mobile') {
+        var mobilePrefix = 'https://www.efunds.com.cn/Mobile/';
+        if(!isMobileFilterPage() && mobilePrefix && deviceType.toLowerCase != 'pc' && currentLink.indexOf(siteURL) >= 0) {
+          window.location.href = currentLink.replace(siteURL, mobilePrefix);  // 临时注释，暂时不自动跳转
+        }
+      }
+    }
+  
+
+</script>
+
+<style media="print">
+  .noprint {
+    display: none;
+  }
+
+  .print-w {
+    width: 100%;
+  }
+
+  a:not(.print-a)::after {
+    content: '';
+  }
+</style>
+
+<!-- css -->
+<link
+  rel="shortcut icon"
+  href="https://www.efunds.com.cn/assets/images/favicon.ico"
+  type="image/x-icon"
+/>
+<link rel="icon" href="https://www.efunds.com.cn/assets/images/favicon.ico" type="image/x-icon" />
+<link rel="bookmark" href="https://www.efunds.com.cn/assets/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/css/bootstrap.css?8208894b" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/css/reset.css?0fb1abb7" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/css/normalize.css?112272e5" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/js/common/animate.min.css?c059415a" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/js/common/swiper/swiper.min.css?39d3f1a3" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/css/index.css?10782a1a" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/css/header.css?3129fdfb" />
+<link rel="stylesheet" href="https://www.efunds.com.cn/css/footer.css?ea9ef277" />
+
+<!--[if lte IE 8]>
+  <div class="low-version-box-selector">
+    <div class="low-version-box-header">
+      <span>温馨提示</span>
+    </div>
+    <div class="low-version-box-body">
+      <div class="low-version-box-text">
+        <p>
+          您正在使用的浏览器版本过低，为避免可能存在的安全隐患，
+        </p>
+        <p>
+          请尽快升级您的浏览器或者安装更安全的浏览器登录易方达网站。
+        </p>
+      </div>
+      <div class="low-version-boxes">
+        <ul class="low-version-box-ul row row-gutters-25">
+          <li class="col-xs-4">
+            <a
+              href="https://support.microsoft.com/zh-cn/windows/internet-explorer-%E4%B8%8B%E8%BD%BD-d49e1f0d-571c-9a7b-d97e-be248806ca70"
+              target="_blank"
+            >
+              <div class="low-version-box-li">
+                <div class="low-version-box-li-img">
+                  <img src="/assets/images/ie.png" alt="IE" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-xs-4">
+            <a
+              href="https://www.google.cn/intl/zh-CN/chrome/browser/desktop/"
+              target="_blank"
+            >
+              <div class="low-version-box-li">
+                <div class="low-version-box-li-img">
+                  <img src="/assets/images/chrome.png" alt="Chrome" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-xs-4">
+            <a href="http://www.firefox.com.cn" target="_blank">
+              <div class="low-version-box-li">
+                <div class="low-version-box-li-img">
+                  <img src="/assets/images/firfox.png" alt="Firefox" />
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<![endif]-->
+
+<script id="BrowserUpgradeTemplate" type="text/template">
+  <div class="low-version-box-selector">
+      <div class="low-version-box-header">
+        <span>温馨提示</span>
+        {{if showCloseBtn}}
+        <span class="low-version-close-btn"></span>
+        {{/if}}
+      </div>
+      <div class="low-version-box-body">
+        <div class="low-version-box-text">
+          <p>
+            您正在使用的浏览器版本过低，为避免可能存在的安全隐患，
+          </p>
+          <p>
+            请尽快升级您的浏览器或者安装更安全的浏览器登录易方达网站。
+          </p>
+        </div>
+        <div class="low-version-boxes">
+          <ul class="low-version-box-ul row row-gutters-25">
+            <li class="col-xs-4">
+              <a href="https://www.google.cn/intl/zh-CN/chrome/browser/desktop/" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="https://www.efunds.com.cn/assets/images/ie.png" alt="IE" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-4">
+              <a href="https://support.microsoft.com/zh-cn/windows/internet-explorer-%E4%B8%8B%E8%BD%BD-d49e1f0d-571c-9a7b-d97e-be248806ca70" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="https://www.efunds.com.cn/assets/images/chrome.png" alt="Chrome" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-4">
+              <a href="http://www.firefox.com.cn" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="https://www.efunds.com.cn/assets/images/firfox.png" alt="Firefox" />
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</script>
+
+<!-- js -->
+<script>
+  // 在线客服
+  var online_customer = 'https://aichat.efunds.com.cn/live800/chatClient/chatbox.jsp?companyID=8948&configID=3000025&enterurl=PC&live800_ud_mobilefrom=PC&sourceCode=1&chatfrom=PC';
+
+  function openLink(url) {
+    if (url) {
+      window.open(url);
+    }
+  }
+
+  function buyButtonClick(url, type, that) {
+    console.log('buyButtonClick', {
+      fund_short_name: $(that).attr("data-fundname"),
+      fund_code: $(that).attr("data-fundcode"),
+      fund_type: $(that).attr("data-fundtype"),
+      order_type: type
+    })
+    // 神策埋点
+    window.sensors && window.sensors.track('buyButtonClick', {
+      fund_short_name: $(that).attr("data-fundname"),
+      fund_code: $(that).attr("data-fundcode"),
+      fund_type: $(that).attr("data-fundtype"),
+      order_type: type
+    })
+    openLink(url);
+  }
+
+  // pageCount：分页数 pele： 当前页
+  function changePage(pele, pageCount, catalogID) {
+    if (pele == 0) {
+      return;
+    }
+    var re = /^[0-9]*[1-9][0-9]*$/;
+    if (re.test(pele)) {
+      pele = Number(pele);
+    } else {
+      return;
+    }
+    if (pageCount < pele) {
+      pele = pageCount;
+    } else if (pele <= 0) {
+      pele = 1;
+    }
+    var toPageUrl = '';
+    if (isPreview) {
+      toPageUrl = frontAppContext + "ui/preview/catalog/" + catalogID + "?platformID=pc&PageIndex=" + pele;
+    } else {
+      if (pele == 1) {
+        if (window.location.href.indexOf("catalog") != -1) {
+          toPageUrl = "index_1.shtml";
+        } else {
+          toPageUrl = "index.shtml";
+        }
+      } else if (pele > 1 && pele < 6) {
+        toPageUrl = "index_" + pele + ".shtml";
+      } else {
+
+        toPageUrl = frontAppContext + "catalog/" + catalogID + "/pc/index_" + pele + ".shtml";
+      }
+    }
+    window.location.href = toPageUrl;
+  }
+</script>
+<script src="https://www.efunds.com.cn/js/common/polyfill.min.js?c300565f"></script>
+<script src="https://www.efunds.com.cn/js/common/jquery/jquery-3.6.0.min.js?7c14a783"></script>
+<script src="https://www.efunds.com.cn/js/common/popper/popper.min.js?3e468512"></script>
+<script src="https://www.efunds.com.cn/js/common/art-template.min.js?13555d1a"></script>
+<script src="https://www.efunds.com.cn/js/art-template.imports.js?51218272"></script>
+<script src="https://www.efunds.com.cn/js/index.js?fff2611e"></script>
+<script src="https://www.efunds.com.cn/js/built-in-usage.js?160f303d"></script>
+<script src="https://www.efunds.com.cn/js/jquery-ajax-transport-xdomain.js?530422a8"></script>
+<script src="https://www.efunds.com.cn/js/WG1D5Km_jbs.js?bcd25ba0"></script>
+
+
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual'
+  }
+
+  if (isIE9) {
+    var lastPageCount = useBrowserPageCount()
+      // ie9 下在当前页面只显示一次
+    if (
+      lastPageCount === 1 &&
+      Date.now() - +localStorage.getItem('__E_Page_Count_Time__') > 1000
+    ) {
+      onDOMContentLoaded(function () {
+        var BrowserUpgradeTemplate = template('BrowserUpgradeTemplate')
+        var dialog = createElementFromTemplate(
+          BrowserUpgradeTemplate({
+            showCloseBtn: true
+          }),
+          true
+        )
+        document.body.appendChild(dialog)
+
+        useEventListener(document, 'click', '.low-version-close-btn', function (
+          _,
+          target
+        ) {
+          var dialog = target.closest('.low-version-box-selector')
+          dialog && dialog.remove()
+        })
+      })
+    }
+  }
+
+  onDOMContentLoaded(function () {
+    initAttributeTooltip({
+      placement: 'bottom',
+      enterDelay: 64,
+      leaveDelay: 150,
+      transitionName: 'slide-fade',
+      triggerClassName: 'is-popover-toggle',
+      popperOptions: {
+        modifiers: {
+          offset: {
+            offset: '-5, 0'
+          },
+          gpu: {
+            enabled: false
+          },
+          preventOverflow: {
+            boundariesElement: 'viewport',
+            padding: 25,
+            priority: ['right', 'left']
+          },
+          arrow: {
+            element: '[x-arrow]'
+          }
+        }
+      }
+    })
+  })
+
+  onDOMContentLoaded(mesureToTopButton)
+  useEventListener(window, 'scroll', mesureToTopButton)
+  useEventListener(document, 'click', '#TO_TOP_BUTTON', scrollToTop)
+
+  function mesureToTopButton () {
+    var button = document.querySelector('#TO_TOP_BUTTON')
+    if (!button) return
+
+    var scrollTop = getScrollTop()
+    if (scrollTop >= 1000) {
+      addClassIfNeed(button, 'is-to-top-show')
+    } else {
+      removeClass(button, 'is-to-top-show')
+    }
+  }
+
+  function scrollToTop () {
+    frameScrollTo(0, {
+      global: true,
+      duration: 300
+    })
+  }
+
+  function recordCurrentOrganization (type) {
+    var prevType = getCacheOrganization()
+    var isOrganization = type === 1 || type === 'organization'
+    var curType = isOrganization ? 'organization' : 'personal'
+    if (prevType !== curType) {
+      localStorage.setItem('__E_CURRENT_ORGANIZATION__', curType)
+      localStorage.setItem('__E_RECORD_TIME__', Date.now())
+    }
+  }
+
+  function getCacheOrganization () {
+    return localStorage.getItem('__E_CURRENT_ORGANIZATION__')
+  }
+
+  function cleanCacheOrganization () {
+    return localStorage.removeItem('__E_CURRENT_ORGANIZATION__')
+    return localStorage.removeItem('__E_RECORD_TIME__')
+  }
+
+  function mesureCacheOrganization () {
+    var lastRecordTime = localStorage.getItem('__E_RECORD_TIME__')
+    if (!lastRecordTime) return
+
+    var lastDate = new Date(+lastRecordTime)
+    if (Date.now() - lastDate.getTime() >= 30 * 24 * 60 * 60 * 1000) {
+      cleanCacheOrganization()
+    }
+  }
+  //点击欢迎页清空缓存回到引导页
+  function rebackUrl() {
+      localStorage.removeItem('__E_CURRENT_ORGANIZATION__')
+      window.location.href = 'https://www.efunds.com.cn/'
+  }
+</script>
+
+<script>
+  onDOMContentLoaded(function () {
+    var innerCode = window.currentCatalogInnerCode
+    if (innerCode != null) {
+      var menuItems = querySelectorArray('.e-header-menu__item')
+      for (var i = 0; i < menuItems.length; i++) {
+        var id = menuItems[i].id
+        if (id && innerCode.startsWith(id)) {
+          addClassIfNeed(menuItems[i], 'is-active')
+          return
+        }
+      }
+    }
+  })
+</script>
+<!--[if lt IE 10]><script src="/js/respond.src.js"></script><![endif]-->
+
+    <title>DeepSeek能“替代”投顾？一场专业测试引发思考 - 投顾理念 - 易方达基金管理有限公司</title>
+    <meta name="keywords" content="易方达基金管理有限公司，易方达基金，易方达基金手机版，易方达基金官方网站，易方达基金公司官网，易方达，易方达基金官网，易方达基金网上交易，e钱包app下载" />
+    <meta name="description" content="&#32;&#32;&#32;" />
+
+    <link rel="stylesheet" href="/css/pure-article.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    
+<header id="header" class="e-header grd__element__class grd">
+  <div class="e-header__wrapper">
+    <div class="e-header__nav">
+      <div class="e-header-alink">
+        <nav class="e-header-alink__left e-nav">
+          <ul class="e-nav__list is-separate">
+            <li class="e-nav__item">
+              <a href="https://www.efundcf.com.cn" target="_blank">
+                易方达财富
+              </a>
+            </li>
+            <li class="e-nav__item">
+              <a href="http://www.efundamc.com.cn" target="_blank">
+                易方达资管
+              </a>
+            </li>
+            <li class="e-nav__item">
+              <a href="http://www.efunds.com.hk/index/index/lsc.html" target="_blank">
+                易方达香港
+              </a>
+            </li>
+            
+              <li class="e-nav__item">
+                <a href="https://www.efundpe.com.cn" target="_blank">
+                  易方达资本
+                </a>
+              </li>
+            
+            <li class="e-nav__item">
+              <a href="https://edu.efunds.com.cn/" target="_blank">
+                投教基地
+              </a>
+            </li>
+            <li class="e-nav__item">
+              <a href="https://www.etf.com.cn" target="_blank">
+                指数直通车
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="e-header-alink__right e-nav">
+          <ul class="e-nav__list is-separate">
+            <li class="e-nav__item"
+                data-etooltip="nav-hover-qrofficial"
+                data-flip="false"
+                data-placement="bottom"
+                data-leave-delay="100"
+                data-offset="0, 5">
+              <a href="javascript:;" style="display: inline;">
+                关注我们
+              </a>
+            </li>
+            <li class="e-nav__item"
+                data-etooltip="nav-hover-qrservice"
+                data-flip="false"
+                data-placement="bottom"
+                data-leave-delay="100"
+                data-offset="0, 5">
+              <a
+                href="https://aichat.efunds.com.cn/live800/chatClient/chatbox.jsp?companyID=8948&amp;configID=3000025&amp;enterurl=PC&amp;live800_ud_mobilefrom=PC&amp;sourceCode=1&amp;chatfrom=PC"
+                target="_blank"
+                style="display: inline;"
+                data-place="顶部"
+                class="call-custom"
+              >
+                <i class="e-icon-customer-service"></i> 联系客服
+              </a>
+            </li>
+            <li class="e-nav__item">
+              <strong class="e-color--primary">
+                400-881-8088
+              </strong>
+            </li>
+            <li
+              class="e-nav__item nav-hover-scroll"
+              data-etooltip="nav-hover-qrcode"
+              data-flip="false"
+              data-placement="bottom"
+              data-leave-delay="100"
+              data-offset="0, 5"
+            >
+            
+              <a
+                class="nav-hover-item"
+                href="https://www.efunds.com.cn/lm/grd/eqb/"
+              >
+                <i class="e-icon-phone"></i> e钱包
+              </a>
+              <a
+                class="nav-hover-item nav-hover-active"
+                href="https://www.efunds.com.cn/lm/grd/eqb/"
+              >
+                <i class="e-icon-phone-active"></i> e钱包
+              </a>
+            
+            </li>
+            <li class="e-nav__item jump">
+              <div class="language">
+                <div class="english">
+                  <a href="https://www.efunds.com.cn/en/"><i class="e-icon-earch"></i> English</a>
+                </div>
+                <div class="china">
+                    <a href="https://www.efunds.com.cn/index.shtml">中文</a>
+                  <a href="https://www.efunds.com.cn/en/"> English</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="e-header-content">
+      <div class="e-header-content__left">
+        <a class="e-logo" href="https://www.efunds.com.cn/index.shtml" title="e-funds">
+          <img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2026/08/07/134660.png" title="易方达基金管理有限公司" alt="易方达" />
+        </a>
+      </div>
+      <div class="e-header-content__right noprint">
+        <nav class="e-header-user">
+          <ul class="e-header-user__list">
+            <li class="e-header-user__item">
+                <a onclick="rebackUrl()" style="cursor:pointer;">欢迎页</a>
+            </li>
+            <li class="e-header-user__item is-active">
+              <a href="https://www.efunds.com.cn/index.shtml">
+                个人投资者
+              </a>
+            </li>
+            <li class="e-header-user__item">
+              
+                <a href="https://www.efunds.com.cn/lm/jgd-sy/">
+                  机构投资者
+                </a>
+              
+            </li>
+          </ul>
+          <button
+            class="e-header-user__login btn btn-primary"
+            onclick="openLink('https://e.efunds.com.cn/')"
+          >
+            <i
+              class="e-icon-user-light"
+              style="transform: translateY(2px);"
+            ></i>
+            登录
+          </button>
+          <div class="e-icon-search show-global-search-btn"></div>
+          <div class="btn-placeholder"></div>
+          <div class="global-search-inner" style="display: none;">
+            <input type="text" placeholder="请输入关键词检索基金/基金经理/投资明细/公告">
+            <div class="e-icon-search icon-placeholder"></div>
+            <button class="global-search-btn">搜索</button>
+          </div>
+          <div class="search-result-wrap" style="display: none;"></div>
+        </nav>
+        <nav class="e-header-menu">
+          <ul class="e-header-menu__list">
+            <li class="e-header-menu__item" id="-1">
+              <a href="https://www.efunds.com.cn/index.shtml">
+                <span> 首页 </span>
+              </a>
+            </li>
+            <li class="e-header-menu__item">
+              <a
+                href="https://e.efunds.com.cn/"
+                target="_blank"
+                data-etooltip="account"
+                data-offset="40, -5"
+                data-flip="false"
+              >
+                <span> 我的账户 </span>
+              </a>
+            </li>
+            
+              
+              <li class="e-header-menu__item" id="006169000004">
+                <a
+                  href="https://www.efunds.com.cn/lm/qxjj/jjjl/"
+                  data-etooltip="fundManager"
+                  data-offset="40, -5"
+                  data-flip="false"
+                >
+                  <span> 基金经理 </span>
+                </a>
+              </li>
+            
+            
+              
+              <li class="e-header-menu__item" id="006169000010">
+                <a
+                  href="https://www.efunds.com.cn/lm/jjcp/"
+                  data-etooltip="fundProducts"
+                  data-offset="40, -5"
+                  data-flip="false"
+                >
+                  <span> 基金产品 </span>
+                </a>
+              </li>
+            
+            
+              
+              <li class="e-header-menu__item" id="006169000007">
+                <a
+                  href="https://www.efunds.com.cn/lm/zszqsy/"
+                  data-etooltip="indexCategory"
+                  data-offset="40, -5"
+                  data-flip="false"
+                >
+                  <span> 指数专区 </span>
+                </a>
+              </li>
+            
+            
+              
+              <li class="e-header-menu__item" id="006169000008">
+                <a
+                  href="https://www.efunds.com.cn/lm/fofzq/"
+                  data-etooltip="FOF"
+                  data-offset="40, -5"
+                  data-flip="false"
+                >
+                  <span> FOF </span>
+                </a>
+              </li>
+            
+            <!--个人养老金-->
+            
+              <li class="e-header-menu__item" id="006169000014">
+                <a
+                        href="https://www.efunds.com.cn/lm/grd/grylj/"
+                        data-etooltip="personalPension"
+                        data-offset="40, -5"
+                        data-flip="false"
+                >
+                  <span>个人养老金</span>
+                </a>
+              </li>
+            
+            <!--个人养老金-->
+            <!--投资顾问-->
+            
+              <li class="e-header-menu__item" id="006169000003">
+                <a
+                  href="https://www.efunds.com.cn/lm/jjtg/"
+                  data-etooltip="investmentAdvisor"
+                  data-offset="40, -5"
+                  data-flip="false"
+                >
+                  <span>投资顾问</span>
+                </a>
+              </li>
+            
+            <!--投资顾问-->
+            
+              <li class="e-header-menu__item" id="006169000001">
+                <a
+                  href="https://www.efunds.com.cn/lm/xxpl/"
+                  data-etooltip="informationDisclosure"
+                  data-offset="40, -5"
+                  data-flip="false"
+                >
+                  <span>信息披露</span>
+                </a>
+              </li>
+            
+            
+              <li class="e-header-menu__item" id="006169000006">
+                <a
+                  href="https://www.efunds.com.cn/lm/gywm/"
+                  data-etooltip="aboutUs"
+                  data-offset="40, -5"
+                  data-flip="false"
+                >
+                  <span>关于我们</span>
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div
+  class="nav-hover-popover e-tooltip-hidden"
+  data-etooltip-name="nav-hover-qrcode"
+>
+  <div class="nav-hover-popover__wrapper">
+    <ul class="nav-hover-popover__list">
+      <li>
+        <div class="nav-hover-popover__imageBox">
+          <img src="https://www.efunds.com.cn/assets/images/qrcode_xcx.png" />
+        </div>
+        <p>
+          <b class="e-color--danger">
+            e钱包
+          </b>
+        </p>
+        <p>
+          易方达财富APP
+        </p>
+      </li>
+      <li>
+        <div class="nav-hover-popover__imageBox">
+          <img src="https://www.efunds.com.cn/assets/images/qrcode_wechat.png" alt="易方达微理财" />
+        </div>
+        <p>
+          <b class="e-color--primary">
+            易方达财富微理财
+          </b>
+        </p>
+        <p>
+          易方达财富服务号
+        </p>
+      </li>
+    </ul>
+  </div>
+  <span x-arrow></span>
+</div>
+<div
+        class="nav-hover-popover e-tooltip-hidden"
+        data-etooltip-name="nav-hover-qrservice"
+>
+  <div class="nav-hover-popover__wrapper">
+    <ul class="nav-hover-popover__list">
+      <li>
+        <div class="nav-hover-popover__imageBox">
+          <img src="https://www.efunds.com.cn/assets/images/qr-service.png" alt="易方达易服务" />
+        </div>
+        <p>
+          <b class="e-color--primary">
+            易方达易服务
+          </b>
+        </p>
+        <p>
+          官方小程序
+        </p>
+      </li>
+    </ul>
+  </div>
+  <span x-arrow></span>
+</div>
+
+<div class="nav-hover-popover e-tooltip-hidden" data-etooltip-name="nav-hover-qrofficial">
+  <div class="nav-hover-popover__wrapper">
+    <ul class="nav-hover-popover__list">
+      <li>
+        <div class="nav-hover-popover__imageBox">
+          <img src="https://www.efunds.com.cn/assets/images/qr-official.jpg" />
+        </div>
+        <p>
+          <b class="e-color--primary">
+            易方达基金
+          </b>
+        </p>
+        <p>
+          官方微信公众号
+        </p>
+      </li>
+    </ul>
+  </div>
+  <span x-arrow></span>
+</div>
+<!-- 我的账户 -->
+<div
+  class="e-header-popover noprint"
+  data-etooltip-name="account"
+  style="display: none;"
+  data-name="我的账户"
+>
+  <div class="e-header-popover__wrapper">
+    <div class="e-header-popover__tabsPanel">
+      <a
+        class="e-header-popover__tabItem"
+        href="https://e.efunds.com.cn/"
+        target="_blank"
+      >
+        <span>
+          查询
+        </span>
+      </a>
+      <a
+        class="e-header-popover__tabItem"
+        href="https://e.efunds.com.cn/registration/mobileauths?form"
+        target="_blank"
+      >
+        <span>
+          开户
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- /我的账户 -->
+
+<!-- 基金经理 -->
+<div
+  class="e-header-popover noprint"
+  data-etooltip-name="fundManager"
+  style="display: none;"
+  data-name="基金经理"
+>
+  <div class="e-header-popover__wrapper">
+    <div class="e-header-popover__tabsPanel">
+      <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/qxjj/jjjl/">
+        <span>
+          基金经理索引
+        </span>
+      </a>
+      
+        
+      
+      <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/ysp/">
+        <span>
+          投资观点
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- /基金经理 -->
+
+<!-- 基金产品 -->
+<div
+  class="e-header-popover noprint"
+  data-etooltip-name="fundProducts"
+  style="display: none;"
+  data-name="基金产品"
+>
+  <div class="e-header-popover__wrapper">
+    <div class="e-header-popover__tabsPanel is-ol">
+      <div class="e-header-popover__tabsTitle">
+        基金产品筛选
+      </div>
+      
+        
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=03"
+          >
+            <span>
+              主动股票(含偏股混合)
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=07"
+          >
+            <span>
+              被动股票指数
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=02"
+          >
+            <span>
+              混合资产
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=01"
+          >
+            <span>
+              一级、二级债基
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=06"
+          >
+            <span>
+              纯债
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=04"
+          >
+            <span>
+              现金管理
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=09"
+          >
+            <span>
+              FOF
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=08"
+          >
+            <span>
+              量化
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=10"
+          >
+            <span>
+              商品
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=11"
+          >
+            <span>
+              REITs
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=05"
+          >
+            <span>
+              QDII
+            </span>
+          </a>
+          <a
+            class="e-header-popover__tabItem"
+            href="https://www.efunds.com.cn/lm/jjcp/?type=20"
+          >
+            <span>
+              互认基金
+            </span>
+          </a>
+      
+    </div>
+  </div>
+</div>
+<!-- /基金产品 -->
+<!-- 指数专区 -->
+<div
+  class="e-header-popover is-has-content noprint"
+  data-etooltip-name="indexCategory"
+  style="display: none;"
+  data-name="指数专区"
+>
+  <div class="e-header-popover__wrapper">
+    <div class="e-header-popover__content">
+       
+      	<img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2024/03/29/108418.jpg" style="margin-bottom:0;" onerror="this.src='/assets/images/header_image_zszq_1117.jpg';this.onerror=null;" />
+        <h2 style="font-weight: normal;color:#000;">指数通</h2>
+        <p>指数投资易方达</p>
+      
+    </div>
+    <div class="e-header-popover__tabsPanel">
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/zszqsy/#index-news">
+          <span>
+            了解指数投资
+          </span>
+        </a>
+      
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/zszqsy/#important-etf">
+          <span>
+            聚焦产品
+          </span>
+        </a>
+      
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/zszqsy/#product-list">
+          <span>
+            全部产品
+          </span>
+        </a>
+      
+      <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/zszqsy/#view-point">
+        <span>
+          投资观点
+        </span>
+      </a>
+      
+        
+      
+    </div>
+  </div>
+</div>
+<!-- /指数专区 -->
+
+<!-- FOF -->
+<div
+  class="e-header-popover is-has-content noprint"
+  data-etooltip-name="FOF"
+  style="display: none;"
+  data-name="FOF"
+>
+  <div class="e-header-popover__wrapper">
+    
+    <div class="e-header-popover__content">
+      <img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2024/03/29/108413.jpg" alt="" onerror="this.src='/assets/images/header_image_fof_1117.jpg';this.onerror=null;" />
+      <h2>
+          FOF
+      </h2>
+      <p>让基金投资更简单</p>
+    </div>
+    
+    <div class="e-header-popover__tabsPanel">
+      <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/fofzq/#product">
+        <span>
+          FOF 产品
+        </span>
+      </a>
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/fofzq/fofzx/">
+          <span>
+            基中基FOF资讯
+          </span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+<!-- /FOF -->
+<!--个人养老金-->
+<div
+  class="e-header-popover is-has-content noprint"
+  data-etooltip-name="personalPension"
+  style="display: none;"
+  data-name="个人养老金"
+>
+  <div class="e-header-popover__wrapper">
+    
+      <div class="e-header-popover__content">
+        <img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2024/03/29/108417_260x195.jpg" alt="" />
+        <h2>
+          个人养老金
+        </h2>
+        <p>养老金投资管理专家</p>
+      </div>
+      <div class="e-header-popover__tabsPanel">
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/grd/grylj/#yylxkt">
+          <span>
+            
+              养老资讯
+              
+          </span>
+        </a>
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/grd/grylj/#zsjj">
+          <span>
+            指数基金
+          </span>
+        </a>
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/grd/grylj/#ylmbjj">
+          <span>
+            养老目标基金
+          </span>
+        </a>
+        <div class="e-header-popover__tabItem">
+          <a href="https://www.efunds.com.cn/lm/grd/grylj/#yfdyyl">
+            易方达易养老
+          </a>
+        </div>
+      </div>
+    
+  </div>
+</div>
+<!--/个人养老金-->
+<!-- 投资顾问 -->
+<div
+  class="e-header-popover is-has-content noprint"
+  data-etooltip-name="investmentAdvisor"
+  style="display: none;"
+  data-name="投资顾问"
+>
+  <div class="e-header-popover__wrapper">
+    
+      <div class="e-header-popover__content">
+        <img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2022/03/22/2633_260x195.jpg" alt="" />
+        <h2>
+          投资顾问
+        </h2>
+        <p>坚持客户利益第一</p>
+      </div>
+      <div class="e-header-popover__tabsPanel">
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/jjtg/#ljwm">
+          <span>
+            业务介绍
+          </span>
+        </a>
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/jjtg/#jyrk">
+          <span>
+            交易入口
+          </span>
+        </a>
+        <div class="e-header-popover__tabItem">
+          <a href="https://www.efunds.com.cn/lm/jjtg/#tgcl">
+            投顾策略
+          </a>
+        </div>
+        
+            
+                
+        
+
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/jjtg/#ylpb">
+          <span>
+            
+              观点·资讯
+            
+          </span>
+        </a>
+
+      </div>
+    
+  </div>
+</div>
+<!-- /投资顾问 -->
+
+<!-- 信息披露 -->
+<div
+  class="e-header-popover noprint"
+  data-etooltip-name="informationDisclosure"
+  style="display: none;"
+  data-name="信息披露"
+>
+  <div class="e-header-popover__wrapper">
+    <div class="e-header-popover__tabsPanel">
+      
+        
+      
+      
+        <a
+          class="e-header-popover__tabItem"
+          href="https://www.efunds.com.cn/lm/xxpl/?innercode=006169000001000003"
+        >
+          <span>
+            法律文件
+          </span>
+        </a>
+      
+      
+        <a
+          class="e-header-popover__tabItem"
+          href="https://www.efunds.com.cn/lm/xxpl/?innercode=006169000001000001"
+        >
+          <span>
+            定期报告
+          </span>
+        </a>
+      
+      
+        <a
+          class="e-header-popover__tabItem"
+          href="https://www.efunds.com.cn/lm/xxpl/?innercode=006169000001000002"
+        >
+          <span>
+            临时公告
+          </span>
+        </a>
+      
+      
+        <a
+          class="e-header-popover__tabItem"
+          href="https://www.efunds.com.cn/lm/xxpl/?innercode=006169000001000005"
+        >
+          <span>
+            澄清公告与说明
+          </span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+<!-- /信息披露 -->
+
+<!-- 关于我们 -->
+<div
+  class="e-header-popover is-has-content noprint"
+  data-etooltip-name="aboutUs"
+  style="display: none;"
+  data-name="关于我们"
+>
+  <div class="e-header-popover__wrapper">
+    <div class="e-header-popover__content">
+      
+        <img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2021/11/06/1095.png" alt="" />
+      
+      <h2>
+        易方达
+      </h2>
+      <p>我们执着于在长跑中胜出</p>
+    </div>
+    <div class="e-header-popover__tabsPanel">
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/gywm/js/">
+          <span>
+            公司概况
+          </span>
+        </a>
+      
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/gywm/qywh/">
+          <span>
+            企业文化
+          </span>
+        </a>
+      
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/gywm/zrtz/">
+          <span>
+            责任投资
+          </span>
+        </a>
+      
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/gywm/ry/">
+          <span>
+            所获荣誉
+          </span>
+        </a>
+      
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/efundcharityfoundation/index/">
+          <span>
+            公益基金会
+          </span>
+        </a>
+      
+      
+        <a
+          class="e-header-popover__tabItem"
+          href="http://job.efunds.com.cn/"
+          target="_blank"
+        >
+          <span>
+            加入我们
+          </span>
+        </a>
+      
+      
+        <a class="e-header-popover__tabItem" href="https://www.efunds.com.cn/lm/gywm/lxwm/">
+          <span>
+            联系我们
+          </span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+<!-- /关于我们 -->
+
+<div class="e-float-panel noprint">
+  <div class="e-float-panel__wrapper">
+    <div
+      class="e-float-panel__box"
+      data-etooltip="qrcode_tooltip"
+      data-placement="left"
+      data-offset="0, 5"
+      data-enter-delay="0"
+      data-leave-delay="100"
+      data-transition-name=""
+    >
+      <i class="e-icon-qrcode"></i>
+      <div
+        class="e-qrcode-tooltip"
+        data-etooltip-name="qrcode_tooltip"
+        style="display: none;"
+      >
+        <div class="e-qrcode-tooltip__wrapper flex-wrap">
+          <ul class="e-qrcode-tooltip__list">
+            <li>
+              <div class="e-qrcode-tooltip__imageBox">
+                <img src="https://www.efunds.com.cn/assets/images/qr-official.jpg" />
+              </div>
+              <p>
+                官方微信公众号
+              </p>
+              <p>
+                易方达基金
+              </p>
+            </li>
+            <li>
+              <div class="e-qrcode-tooltip__imageBox">
+                <img src="https://www.efunds.com.cn/assets/images/qr-service.jpg" />
+              </div>
+              <p>
+                官方微信服务号
+              </p>
+              <p>
+                易方达易服务
+              </p>
+            </li>
+            <li>
+              <div class="e-qrcode-tooltip__imageBox">
+                <img src="https://www.efunds.com.cn/assets/images/wechat-code.jpg" />
+              </div>
+              <p>
+                微信小程序
+              </p>
+              <p>
+                指数直通车
+              </p>
+            </li>
+            <li>
+              <div class="e-qrcode-tooltip__imageBox">
+                <img src="https://www.efunds.com.cn/assets/images/qrcode_xcx.png" />
+              </div>
+              <p>
+                易方达财富APP
+              </p>
+              <p>
+                e钱包
+              </p>
+            </li>
+            <li>
+              <div class="e-qrcode-tooltip__imageBox">
+                <img src="https://www.efunds.com.cn/assets/images/qrcode_wechat.png" />
+              </div>
+              <p>
+                易方达财富服务号
+              </p>
+              <p>
+                易方达财富微理财
+              </p>
+            </li>
+          </ul>
+        </div>
+        <span x-arrow></span>
+      </div>
+    </div>
+    <div class="e-float-panel__box"
+         data-etooltip="qrservice_tooltip"
+         data-placement="left"
+         data-offset="0, 5"
+         data-enter-delay="0"
+         data-leave-delay="100"
+         data-transition-name="">
+        <i class="e-icon-information"></i>
+      <div
+        class="e-qrcode-tooltip"
+        data-etooltip-name="qrservice_tooltip"
+        style="display: none;"
+      >
+        <div class="e-qrcode-tooltip__wrapper">
+          <ul class="e-qrcode-tooltip__list">
+            <li>
+              <div class="e-qrcode-tooltip__imageBox">
+                <img src="https://www.efunds.com.cn/assets/images/qr-service.png" />
+              </div>
+              <p>
+                官方小程序
+              </p>
+              <p>
+                易方达易服务
+              </p>
+            </li>
+          </ul>
+        </div>
+        <span x-arrow></span>
+      </div>
+    </div>
+    <div class="e-float-panel__box">
+      <a href="mailto:service@efunds.com.cn">
+        <i class="e-icon-email"></i>
+        <div class="e-float-panel__popup">
+          <i class="e-icon-email mr-1" style="transform: translateY(4px);"></i>
+          service@efunds.com.cn
+        </div>
+      </a>
+    </div>
+    <div id="TO_TOP_BUTTON" class="e-float-panel__box">
+      <i class="e-icon-to-top"></i>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $("body").on("click",".e-header-menu__item a",function () {
+    console.log('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .is-active').text().trim()+'_首页',
+      first_tab_name: $(this).text().trim(),
+      second_tab_name: "",
+    })
+    // 神策埋点
+    window.sensors && window.sensors.track('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .is-active').text().trim()+'_首页',
+      first_tab_name: $(this).text().trim(),
+      second_tab_name: "",
+    })
+  })
+  $("body").on("click",".e-header-popover a",function () {
+    console.log('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .is-active').text().trim()+'_首页',
+      first_tab_name: $('.e-header-popover.is-show').attr('data-name'),
+      second_tab_name: $(this).text().trim(),
+    })
+    // 神策埋点
+    window.sensors && window.sensors.track('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .is-active').text().trim()+'_首页',
+      first_tab_name: $('.e-header-popover.is-show').attr('data-name'),
+      second_tab_name: $(this).text().trim(),
+    })
+  })
+  $('.call-custom').click(function() {
+    console.log('contactCusSerButtonClick', {
+      place_name: $(this).attr('data-place'),
+      current_page: document.title,
+    })
+    // 神策埋点
+    window.sensors && window.sensors.track('contactCusSerButtonClick', {
+      place_name: $(this).attr('data-place'),
+      current_page: document.title,
+    })
+  })
+</script>
+
+<script id="GlobalTipsTemplate1" type="text/html">
+  <div>
+    <div>
+      {{each data item}}
+        <div>
+          <div class="GlobalTipsTemplate-title">
+            {{item.name}}
+            <span class="GlobalTipsTemplate-link" data-type="{{item.type}}">查看全部></span>
+          </div>
+          <div class="GlobalTipsTemplate-main">
+            <ul>
+              {{each item.data $data}}
+                {{if item.type == 'fundInfo'}}
+                  {{set linkName = $data.fundName}}
+                {{else if item.type == 'fundHeavyHold'}}
+                  {{set linkName = "基金：" + $data.fundShortName + "&nbsp;&nbsp;&nbsp;&nbsp;资产：" + $data.name}}
+                {{else if item.type == 'fundManager'}}
+                  {{set linkName = $data.managerName}}
+                {{else if item.type == 'investment'}}
+                  {{set linkName = $data.title}}
+                {{else}}
+                  {{set linkName = $data.title}}
+                {{/if}}
+              <li class="GlobalTipsTemplate-content"><a href="{{$data.url}}" target="_blank">{{linkName}}</a></li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <button class="GlobalTipsTemplate-btn">查看全部</button>
+  </div>
+</script>
+
+<script>
+$(function() {
+  $('.grd .show-global-search-btn').on('click', function() {
+    if($('.grd .global-search-inner').is(':visible')) {
+      $('.grd .search-result-wrap').hide(60, 'swing')
+    }
+
+    $('.grd .global-search-inner').toggle(60, 'swing')
+    $(this).toggleClass('e-icon-close shadow-bottom')
+  })
+
+  var map = {
+    "fundInfo": "基金产品",
+    // "fundHeavyHold": "基金重仓股",
+    // "fundManager": "基金经理",
+    "notice": "信息披露",
+    "investment": "投资观点",
+    "article": "易方达动态"
+   }
+
+  var searchTypes = Object.keys(map)
+  var timer = null;
+
+  var searchInput = document.querySelector('.grd .global-search-inner input')
+  $(searchInput).on('input', function() {
+    clearTimeout(timer)
+    timer = setTimeout(function() {
+      searchAll1()
+    }, 1000)
+  })
+  $(searchInput).on('blur', function() {
+    window.setTimeout(function() {
+      $('.grd .search-result-wrap').slideUp()
+    }, 200)
+  })
+
+  var lastQueryValue = ''
+  function searchAll1(){
+      var searchText = searchInput.value.trim();
+      var pageSize = 3;
+      if (searchText && searchText != lastQueryValue) {
+        lastQueryValue = searchText;
+        $.post(
+              frontAppContext + 'front/textsearch',
+              {
+                siteID: siteID,
+                pageSize: pageSize,
+                pageIndex: 1,
+                query: encodeURIComponent(lastQueryValue),
+              },
+              function (result) {
+                var data = result.data
+                  var TipsTemplate = template('GlobalTipsTemplate1')
+                  var filledResult = []
+                  for(type in data) {
+                    if(Number(data[type].total) && searchTypes.includes(type)) {
+                      // filledResult.push({...data[type], name: map[type], type: type})
+                        filledResult.push(Object.assign({}, data[type], { name: map[type], type: type }));
+                    }
+                  }
+                  $('.grd .search-result-wrap').show()
+                  $('.grd .search-result-wrap').html(transcodingToHTML(TipsTemplate({data:filledResult.slice(0, 3)})))
+              }
+        )
+      }
+  }
+  $('.grd .global-search-btn').on('click', function(e) {
+    window.location.href = "https://www.efunds.com.cn/fund/text_search.shtml?" + 'query=' + searchInput.value
+  })
+
+  $(document).on('click', '.grd .GlobalTipsTemplate-link', function() {
+    var type = $(this).attr('data-type')
+    window.location.href = "https://www.efunds.com.cn/fund/text_search.shtml?" + 'type=' + type + '&query=' + searchInput.value
+  })
+
+  $(document).on('click', '.grd .GlobalTipsTemplate-btn', function() {
+    $('.grd .global-search-btn').click()
+  })
+  $('.grd .global-search-inner input').on('keyup', function(e) {
+    if(e.keyCode == 13) $('.grd .global-search-btn').click()
+  })
+    /*中英文网站切换 */
+    $(' header .language').hover(function () {
+        $(this).parents('.jump').toggleClass('on')
+        $(this).children('.china').slideToggle()
+    })
+})
+</script>
+
+    <div class="e-content">
+      <section class="e-detail-banner">
+        <div class="e-detail-banner__wrapper">
+          <div class="e-detail-banner__container">
+            <div class="e-detail-banner__header">
+              <div class="e-breadcrumbs">
+                <a href='/index.shtml'>首页</a><span style='color:#ccc;padding:0 5px;'>/</span><a href='/lm/jjtg/'>投资顾问</a><span style='color:#ccc;padding:0 5px;'>/</span><a href='/lm/jjtg/ylpb/'>观点·资讯</a>
+              </div>
+            </div>
+            <div class="e-detail-banner__content">
+              <div
+                class="e-detail-banner__title print-title"
+                style="font-size: 28px;font-weight: 500;"
+              >
+                <span >DeepSeek能“替代”投顾？一场专业测试引发思考</span>
+                <p></p>
+              </div>
+            </div>
+            <div class="e-detail-banner__bottom">
+              <span class="drawTime" data-drawTime="2025-02-24">
+                时间：2025-02-24
+              </span>
+              <span>
+                来源：新华财经
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="e-container">
+        <div class="e-article print-w">
+          <div class="e-article__wrapper">
+            <div class="e-article__title">
+              <div class="pull-left noprint ">
+                
+              </div>
+              <div class="pull-right noprint">
+                <div class="e-fontsize-select">
+                  <i class="e-icon-font-size"></i>
+                  字号
+                  <ul>
+                    <li data-type="small">小</li>
+                    <li data-type="normal" class="is-active">中</li>
+                    <li data-type="large">大</li>
+                  </ul>
+                </div>
+                <button
+                  id="printButton"
+                  class="e-button e-button--primary e-button--text ml-4"
+                >
+                  <i class="e-icon-print"></i>
+                  打印
+                </button>
+              </div>
+            </div>
+            <div class="e-article__content" data-role="article-container">
+              <section style="font-size: 16px;color: rgb(62, 62, 62);" class=""><section style=""><section style="line-height: 0;"><section style="vertical-align: middle;display: inline-block;line-height: 0;" class=""></section></section></section><section style="margin-left: 8px;margin-right: 8px;"><section style=""><section style="letter-spacing: 1px;line-height: 1.8;"><section style="font-size: 16px;color: rgb(62, 62, 62);"><section style=""><section style="text-align: unset;letter-spacing: 0.578px;"><section style="font-size: 16px;color: #3e3e3e;" class=""><section><section style="text-align: unset;letter-spacing: 1px;" class=""><p><br/></p></section></section><section style="font-size: 16px;color: #3e3e3e;"><section style=";transform-style: flat;transform: perspective(0px);-webkit-transform: perspective(0px);-moz-transform: perspective(0px);-o-transform: perspective(0px);"><section style=";display: flex;flex-flow: row;text-align: left;justify-content: flex-start;margin: 10px 0% -11px;transform: translate3d(18px, 0px, 0px) rotateX(180deg);-webkit-transform: translate3d(18px, 0px, 0px) rotateX(180deg);-moz-transform: translate3d(18px, 0px, 0px) rotateX(180deg);-o-transform: translate3d(18px, 0px, 0px) rotateX(180deg);"><section style="display: inline-block;vertical-align: top;width: 18px;line-height: 0;height: auto;flex: 0 0 auto;align-self: flex-start;box-sizing:border-box;"><section style="text-align: center;"><section style="display: inline-block;width: 12px;height: 12px;vertical-align: top;overflow: hidden;background-color: #236ebd;border-width: 0px;border-radius: 98px;border-style: none;border-color: #3e3e3e;box-sizing:border-box;"><svg viewbox="0 0 1 1" style="float:left;line-height:0;width:0;vertical-align:top;box-sizing:border-box;" xml:space="default"></svg></section></section><section style="text-align: center;margin-top: -5px;margin-right: 0%;margin-left: 0%;transform: translate3d(-1px, 0px, 0px);-webkit-transform: translate3d(-1px, 0px, 0px);-moz-transform: translate3d(-1px, 0px, 0px);-o-transform: translate3d(-1px, 0px, 0px);"><section style="display: inline-block;width: 10px;height: 12px;vertical-align: top;overflow: hidden;background-color: rgba(255, 255, 255, 0);border-style: none none solid solid;border-width: 0px 0px 3px 3px;border-radius: 0px 0px 0px 75px;border-color: #3e3e3e #3e3e3e #236ebd #236ebd;box-sizing:border-box;"><svg viewbox="0 0 1 1" style="float:left;line-height:0;width:0;vertical-align:top;box-sizing:border-box;" xml:space="default"></svg></section></section></section><section style="display: inline-block;vertical-align: top;width: 18px;line-height: 0;height: auto;flex: 0 0 auto;align-self: flex-start;box-sizing:border-box;"><section style="text-align: center;"><section style="display: inline-block;width: 12px;height: 12px;vertical-align: top;overflow: hidden;background-color: #236ebd;border-width: 0px;border-radius: 98px;border-style: none;border-color: #3e3e3e;box-sizing:border-box;"><svg viewbox="0 0 1 1" style="float:left;line-height:0;width:0;vertical-align:top;box-sizing:border-box;" xml:space="default"></svg></section></section><section style="text-align: center;margin-top: -5px;margin-right: 0%;margin-left: 0%;transform: translate3d(-1px, 0px, 0px);-webkit-transform: translate3d(-1px, 0px, 0px);-moz-transform: translate3d(-1px, 0px, 0px);-o-transform: translate3d(-1px, 0px, 0px);"><section style="display: inline-block;width: 10px;height: 12px;vertical-align: top;overflow: hidden;background-color: rgba(255, 255, 255, 0);border-style: none none solid solid;border-width: 0px 0px 3px 3px;border-radius: 0px 0px 0px 75px;border-color: #3e3e3e #3e3e3e #236ebd #236ebd;box-sizing:border-box;"><svg viewbox="0 0 1 1" style="float:left;line-height:0;width:0;vertical-align:top;box-sizing:border-box;" xml:space="default"></svg></section></section></section></section></section><section style="margin-right: 0%;margin-bottom: 10px;margin-left: 0%;text-align: left;justify-content: flex-start;display: flex;flex-flow: row;"><section style="display: inline-block;width: 100%;vertical-align: top;background-color: #f0f9ff;padding-top: 41px;padding-right: 33px;padding-left: 33px;align-self: flex-start;flex: 0 0 auto;max-width:100% !important;box-sizing:border-box;" class=""><section style="text-align: justify;letter-spacing: 1px;line-height: 1.8;" class=""><p style="text-indent: 2.125em;">
+													记者获悉，易方达基金投顾团队利用AI大模型进行了一次试验，即让本地部署的DeepSeek-R1参与了一场专业的顾问知识“考试”。DeepSeek最终得分78.5分，显示出不错的综合素质。那么，这是否意味着DeepSeek未来能“替代”基金投资顾问？</p></section><section style="margin: 20px 0% 19px;"><section style="width: 100%;height: 5px;background-color: #ffffff;max-width:100% !important;box-sizing:border-box;"><svg viewbox="0 0 1 1" style="float:left;line-height:0;width:0;vertical-align:top;box-sizing:border-box;" xml:space="default"></svg></section></section></section></section></section><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;"><br/></p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									新华财经北京2月24日电（记者闫鹏）日前，DeepSeek再次引发“AI热”，有的投资者开始尝试向DeepSeek寻求投资建议。这不禁引人思考：AI的兴起是否对当前方兴未艾的投顾业务产生冲击？未来AI可能代替投顾人员成为普通人的投资好帮手？</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									新华财经记者获悉，易方达基金投顾团队利用AI大模型进行了一次试验，即让本地部署的DeepSeek-R1参与了一场专业的顾问知识“考试”。DeepSeek最终得分78.5分，显示出不错的综合素质。那么，这是否意味着DeepSeek未来能“替代”基金投资顾问？</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;"><strong style="outline: none;-webkit-tap-highlight-color: transparent;">DeepSeek投顾专业水平测试78.5分</strong></p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									易方达基金投顾团队此次用于测试DeepSeek的题目，包括200道客观题（选择题、判断题）、10道主观题（简答题），满分为120分。结果显示，DeepSeek对客观知识、简单逻辑题的回答正确率较高，选择题得分66.5分；但对于需要基于经验和案例分析等较为复杂的题目，回答正确率不及预期，问答题仅得12分。</p><p style="text-align:center;outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;"><img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2025/03/27/124780_700x700.png?r=1743062852979" title="222.png" alt="222.png"/></p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									最终DeepSeek以78.5分的总分“交卷”。从成绩样本库看，无论是“应届”还是“有经验”的投顾人员，如果未经培训，在DeepSeek面前几无胜算；如果经过系统培训，可与DeepSeek掰掰手腕，而经过系统培训的“经验”人士，得分则可以超越DeepSeek。值得注意的是，在同样题量下，DeepSeek“答卷”耗时4小时，而人工顾问标准用时为3小时。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									如今，基金投资顾问业务试点已满五年。该业务区别于传统的基金销售，强调买方立场和顾问服务，可以代理客户作出投资决策，这对顾问人员的综合素质提出了更高要求——不仅要懂投资，更要懂投资者。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									在本次测试中，将选择题按题目类型划分后发现，DeepSeek对原油、保险保单、转债、养老金等专业性较强的题目，以及宏观、投资、资产配置、合规等涉及知识面较广的题目回答较好，但对于FOF、信托、基金（REITs）等行业性较强的题目回答较差。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									新华财经了解到，在回答正确的题目中，DeepSeek回答质量超过出题人预期的题目数量占比为8%；但也有13%的题目，出题者认为应该能答对，但DeepSeek却回答错误，其中包括较为简单的多选题。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									据易方达基金投顾团队观察，DeepSeek的答题水平相当于经过培训后专业投顾人员的中上水平，对客观题特别是侧重知识记忆的题目回答优秀，显示出其强大的信息检索、归纳总结、计算推理能力。但DeepSeek也存在对复杂问题思考时间过长、多次作答不一致的情况，且由于对特定领域了解不足，DeepSeek对探索性、创新性业务领域难以给出启发性答案。此外，DeepSeek作答对数据信息来源依赖较大，由于无法分辨特定行业或方向的真实形态，容易受误导性信息影响掉入陷阱。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;"><strong style="outline: none;-webkit-tap-highlight-color: transparent;">对顾问是“替代”还是“强化”？</strong></p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									本次DeepSeek的投顾水平测试在业内也引起关注，新华财经采访了业内机构，他们的看法基本一致，普遍认为AI能替代知识搬运型的投顾服务，但对于需要深度理解客户行为、精准识别客户需求的进阶顾问服务或难以胜任。AI并非投顾的“替代者”，而是服务升级的“催化剂”。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									百年保险资管董事长、“木爷说”主理人杨峻认为，以DeepSeek为代表的AI技术出现，对大部分投顾机构来说实现了“技术平权”，有助于提升服务效率，降低服务成本，使得高质量、低成本的投顾服务成为可能。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									“DeepSeek本地部署后，有望推动财富管理行业从‘货架式’产品销售向‘问诊式’买方投顾升级。”杨峻表示，通过实时动态交互，模拟真实投资场景进行沉浸式提问与反馈校准，实现高效、深度的顾问服务，更精准挖掘客户的真实风险承受能力与投资需求，在此基础上为客户做账户资产配置的效率和效果将大幅提升。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									“以DeepSeek为代表的AI工具暂时无法完全替代基金投顾在辅导客户资产配置过程中发挥的作用，但AI能更好赋能投顾提升KYC、KYP，及两者匹配方面的数据分析能力，并支持投顾更高效地对客展业。”陆基金总经理陈祎彬说。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									广发基金投顾业务负责人认为，AI与投顾服务并非简单替代或强化关系，长远来看，AI是对生产力和生产关系的重塑。AI可有效重构生产力工具，在数据处理维度较人工效率提升千倍，在服务广度维度可覆盖百万级长尾客户，在服务成本方面极大压缩传统模式成本。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									实际上，在人工智能浪潮驱动下，财富管理行业智能化转型早已下加速键，投顾机构之前多有在投决投研、客户咨询、策略制定等环节借助技术赋能“智能投顾”。在DeepSeek横空出世后，多家财富管理机构先后宣布接入DeepSeek-R1，致力于为客户带来更智能、更专业的财富管理服务体验。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									盈米基金认为，AI与投顾是协同发展、互相促进的关系。从实践效果来看，以且慢平台的“AI小顾”为例，目前投顾服务场景覆盖率超过70%，累计处理超过45 万次投资答疑，服务达成率超90%，这些数据均证明AI技术在提升投顾服务效能方面的巨大潜力。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;"><strong style="outline: none;-webkit-tap-highlight-color: transparent;">“信任”关系构建是投顾立足之本</strong></p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									易方达基金投顾顾问团队主管朱昱铭认为，二级市场是由人以及人和人的交易所组成的，除了宏观经济、行业政策、企业经营基本面、资金面等客观数据外，投资领域往往还折射着人性以及由此带来的不确定性，客观的数据及研究成果也无法和最终的投资结果一一映射。从这个角度来说，只要人们还在投资，投资顾问就无法被替代。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									“从服务客户的角度来说，DeepSeek等工具可以发挥信息整合、专业咨询等功能，但人与人之间的温度，以及基于专业服务和持续陪伴所带来的信任，不是冷冰冰的机器所能替代的。”朱昱铭说。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									一位沪上公募基金人士表示，投资顾问实际上在处理人与人的关系，人天然在情感共情、情绪沟通等方面是有优势的。因此作为专业的投资顾问，要更加注重情感陪伴价值，同时在业务领域要继续保持专业，还要学会善用AI，让AI更好赋能投资顾问。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									“信任作为人工服务核心壁垒无法被AI取代。”　广发基金投顾业务负责人认为，投顾业务核心壁垒为建立不可替代的“信任三角”，从“可信性、可靠性、亲密性”三个维度持续构造顾问与投资者的长期信任关系，而AI在现阶段仍无法替代人工在这三个维度的关键价值。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									陈祎彬认为，在AI能更好支持投顾专业性的当下，客户关系与信任越来越成为投顾的立足之本。在与客户建立长期稳定的信任基础上，深入挖掘出客户的真实投资需求，风险承受能力和个性化要求，再提供针对性的投资方案，并在过程中更注重与客户的情感沟通和互动，将投资陪伴与心灵安抚有机结合，将是投顾能更好适应AI社会的努力方向。</p><p style="outline: none;-webkit-tap-highlight-color: transparent;margin-bottom: 0.5em;border-width: 0px;border-style: initial;border-color: initial;list-style: none;text-indent: 2em;">
+									“从长期来看，AI将于人工服务形成‘机器智能+人类智慧’的服务共生体。AI承担标准化工作，人工服务聚焦高附加值服务。”上述广发基金投顾业务负责人说，行业的未来取决于如何平衡技术效率与人性化服务，科技赋能与人文关怀将共同助力提升投资者的综合盈利体验。</p><section><section style="text-align: unset;letter-spacing: 1px;"><br/></section></section><section><section style="text-align: left;"><svg viewbox="0 0 1 1" style="float:left;line-height:0;width:0;vertical-align:top;box-sizing:border-box;" xml:space="default"></svg></section></section></section><p><br/></p><p style="text-align:right;"><span style="font-size: 12px;">文章转载自：新华财经</span><br/></p><p><span style="background-color: #FFFFFF; color: #878787; font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 12px; letter-spacing: 0.5px;">风险提示：</span></p></section></section></section><p style="-webkit-tap-highlight-color: transparent;margin-bottom: 0px;outline: 0px;color: rgb(135, 135, 135);font-size: 12px;letter-spacing: 0.5px;background-color: rgb(255, 255, 255);font-family:&quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;"><strong style="-webkit-tap-highlight-color: transparent;outline: 0px;">基金有风险，投资须谨慎。</strong>本资料不构成本公司任何业务的宣传推介材料或保证，也不作为任何法律文件。易方达基金不对投资者的投资收益状况或本金不受损失作出任何承诺，投资风险由投资者自行承担，投资者参与基金投资顾问服务存在无法获得收益甚至本金亏损的风险。基金投资顾问服务的过往业绩不预示其未来表现，为其他投资者创造的收益并不构成业绩表现的保证。</p></section></section></section></section>
+            </div>
+          </div>
+        </div>
+        <div class="e-recommend noprint" style="padding-bottom: 60px;">
+          <div class="e-recommend__wrapper">
+            <div class="e-recommend__title">
+              <span>
+                相关推荐
+              </span>
+              <div class="e-recommend__title-suffix">
+                <a href="/lm/jjtg/ylpb/">更多></a>
+              </div>
+            </div>
+            <ul class="e-recommend__list row">
+              
+                
+                  <li class="col-xs-3">
+                    <a
+                      href="/c/799/799812.shtml"
+                      class="e-recommend-card"
+                      target="_blank"
+                    >
+                      <div class="e-recommend-card__wrapper">
+                        <div class="e-recommend-card__image">
+                          <img
+                            src="https://cdn.efunds.com.cn/owch/upload/resources/image/2026/05/08/131803_260x195.jpg"
+                            onerror="this.src='/assets/images/picture404-0.png';this.onerror=null;"
+                          />
+                        </div>
+                        <div class="e-recommend-card__content">
+                          <p >
+                            追求极致的利益一致——易方达财富对话美国资深财富顾问
+                          </p>
+                          <div>
+                            2026-05-05
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="col-xs-3">
+                    <a
+                      href="/c/799/799793.shtml"
+                      class="e-recommend-card"
+                      target="_blank"
+                    >
+                      <div class="e-recommend-card__wrapper">
+                        <div class="e-recommend-card__image">
+                          <img
+                            src="https://cdn.efunds.com.cn/owch/upload/resources/image/2026/05/08/131795_260x195.jpg"
+                            onerror="this.src='/assets/images/picture404-0.png';this.onerror=null;"
+                          />
+                        </div>
+                        <div class="e-recommend-card__content">
+                          <p >
+                            向买方进发&#32;|&#32;基金公司“反向拜访”财富机构&#32;买方投顾生态话语权重构
+                          </p>
+                          <div>
+                            2026-04-28
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="col-xs-3">
+                    <a
+                      href="/c/799/799815.shtml"
+                      class="e-recommend-card"
+                      target="_blank"
+                    >
+                      <div class="e-recommend-card__wrapper">
+                        <div class="e-recommend-card__image">
+                          <img
+                            src="https://cdn.efunds.com.cn/owch/upload/resources/image/2026/05/08/131804_260x195.jpg"
+                            onerror="this.src='/assets/images/picture404-0.png';this.onerror=null;"
+                          />
+                        </div>
+                        <div class="e-recommend-card__content">
+                          <p >
+                            两个月近30家机构密集到访&#32;易方达财富助力市场构建良好生态
+                          </p>
+                          <div>
+                            2026-04-27
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="col-xs-3">
+                    <a
+                      href="/c/793/793605.shtml"
+                      class="e-recommend-card"
+                      target="_blank"
+                    >
+                      <div class="e-recommend-card__wrapper">
+                        <div class="e-recommend-card__image">
+                          <img
+                            src="https://cdn.efunds.com.cn/owch/upload/resources/image/2026/03/19/130959_260x195.jpg"
+                            onerror="this.src='/assets/images/picture404-0.png';this.onerror=null;"
+                          />
+                        </div>
+                        <div class="e-recommend-card__content">
+                          <p >
+                            易方达财富全国首场投顾活动举办&#32;“买方立场”获投资者深度认同
+                          </p>
+                          <div>
+                            2026-03-16
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    
+
+<footer id="footer" class="e-footer noprint grd__element__class">
+  <div class="e-footer__wrapper">
+    <div class="e-footer__container">
+      <div class="e-footer__hard-columns">
+        <div class="row" style="height: 400px;display: flex;align-items: center;">
+          <div class="col-xs-2">
+            <img
+              src="https://www.efunds.com.cn/assets/images/logo_light.png"
+              title="易方达"
+              alt="易方达"
+            />
+          </div>
+
+          <div class="col-xs-6">
+            <div class="e-footer-information">
+              <ul>
+                <li>
+                  <div class="e-footer-information__box">
+                    <h3>
+                      服务热线:
+                    </h3>
+                    <p>
+                      400-881-8088
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="e-footer-information__box">
+                    <h3>
+                      客服邮箱:
+                    </h3>
+                    <p>
+                      <a href="mailto:service@efunds.com.cn" style="border-bottom: 2px solid currentColor;">
+                        service@efunds.com.cn
+                      </a>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div style="color: #A3B5CF;">
+                    服务时间：交易日8:30至22:00，非交易日8:30至17:30
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="e-footer-promotes">
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img
+                    src="https://www.efunds.com.cn/assets/images/qr-official.jpg"
+                  />
+                </div>
+                <p>
+                  官方微信公众号
+                </p>
+                <p>
+                  易方达基金
+                </p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img
+                    src="https://www.efunds.com.cn/assets/images/qr-service.jpg"
+                  />
+                </div>
+                <p>
+                  官方微信服务号
+                </p>
+                <p>
+                  易方达易服务
+                </p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img
+                    src="https://www.efunds.com.cn/assets/images/wechat-code.jpg"
+                  />
+                </div>
+                <p>
+                  微信小程序
+                </p>
+                <p>
+                  指数直通车
+                </p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img
+                    src="https://www.efunds.com.cn/assets/images/qrcode_xcx.png"
+                  />
+                </div>
+                <p>
+                  易方达财富 APP
+                </p>
+                <p>
+                  e钱包
+                </p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img
+                    src="https://www.efunds.com.cn/assets/images/qr-code_wechat.png"
+                    title="易方达微理财"
+                    alt="易方达微理财"
+                  />
+                </div>
+                <p>
+                  易方达财富服务号
+                </p>
+                <p>
+                  易方达财富微理财
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="e-footer__bottom">
+      <div class="e-footer__alink">
+        <ul class="e-footer__links">
+          
+            
+              
+                
+                <li class="e-footer__link ">
+                  
+                    <a href="https://www.efunds.com.cn/c/388/388235.shtml" target="_blank"> 投资者须知 </a>
+                  
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link ">
+                  
+                  
+                    <a href="https://www.efunds.com.cn/lm/tzzjy/tzzsdx/"> 投资者适当性 </a>
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link ">
+                  
+                    <a href="https://www.efunds.com.cn/lm/tzzjy/khyszc/" target="_blank"> 客户隐私政策 </a>
+                  
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link ">
+                  
+                    <a href="https://www.efunds.com.cn/c/386/386595.shtml" target="_blank"> 风险揭示书 </a>
+                  
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link ">
+                  
+                  
+                    <a href="https://www.efunds.com.cn/lm/tzzjy/fxqzl/"> 反洗钱专栏 </a>
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link ">
+                  
+                    <a href="https://www.efunds.com.cn/lm/tzzjy/yjclts/" target="_blank"> 应急处理提示 </a>
+                  
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link ">
+                  
+                  
+                    <a href="https://www.efunds.com.cn/lm/grd/xsjgcx/"> 销售机构查询 </a>
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link zzcx_hide">
+                  
+                  
+                    <a href="https://www.efunds.com.cn/lm/gywm/js/wjzs/"> 资质查询与信息公示 </a>
+                  
+                </li>
+              
+              
+                
+                <li class="e-footer__link ">
+                  
+                  
+                    <a href="https://www.efunds.com.cn/lm/grd/wzdt/"> 网站地图 </a>
+                  
+                </li>
+              
+          
+          
+            <li class="e-footer__link"><a href="https://www.efunds.com.cn/lm/tdymdlm/ffzqhdffzl/">非法证券活动防范专栏</a></li>
+          
+        </ul>
+        <ul class="e-footer__links">
+          <li class="e-footer__link">
+            <a href="https://www.efundcf.com.cn" target="_blank"> 易方达财富 </a>
+          </li>
+          <li class="e-footer__link">
+            <a href="http://www.efundamc.com.cn" target="_blank"> 易方达资管 </a>
+          </li>
+          <li class="e-footer__link">
+            <a href="http://www.efunds.com.hk/index/index/lsc.html" target="_blank"> 易方达香港 </a>
+          </li>
+          
+            <li class="e-footer__link">
+              <a href="https://www.efundpe.com.cn" target="_blank"> 易方达资本 </a>
+            </li>
+          
+          <li class="e-footer__link">
+            <a href="https://edu.efunds.com.cn/" target="_blank"> 投教基地 </a>
+          </li>
+          <li class="e-footer__link">
+            <a href="https://www.etf.com.cn" target="_blank"> 指数直通车 </a>
+          </li>
+        </ul>
+        <ul class="e-footer__links">
+          <li class="e-footer__link" style="font-size: 12px;">
+            <div style="font-size: 12px;"> 易方达基金管理有限公司 版权所有 </div>
+          </li>
+          <li class="e-footer__link" style="font-size: 12px;">
+            <a style="font-size: 12px;"> 本网站已支持IPv6 </a>
+          </li>
+        </ul>
+        <ul class="e-footer__links">
+          <li class="e-footer__link">
+            <div style="font-size: 12px;">
+              <img src="https://www.efunds.com.cn/assets/images/beian_logo.png" style="width: 16px;object-fit: contain;vertical-align: sub;" />
+              <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44010602012967" rel="noreferrer" target="_blank"> 粤公网安备44010602012967 </a>
+              <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备05013165号</a>
+            </div>
+          </li>
+        </ul>
+        <div class="e-footer__imageBox">
+          <div>
+            <img
+              src="https://www.efunds.com.cn/assets/images/copyright_icon_1.png"
+              title="易方达"
+              alt="易方达"
+            />
+          </div>
+          <div>
+            <img
+              src="https://www.efunds.com.cn/assets/images/copyright_icon_2.png"
+              title="易方达"
+              alt="易方达"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <script type="text/javascript" charset="utf-8" src="https://cdn.efunds.com.cn/eufs/common/sensorsdata.min.js"></script>
+<script charset='UTF-8' src="https://www.efunds.com.cn/js/shencestat.js"></script>
+  
+
+</footer>
+
+    <script>
+      var currentCatalogInnerCode = '006169000003000002000001'
+    </script>
+
+    <script src="/js/built-in-article.js"></script>
+
+    <script>
+      ;(function () {
+        var articleContainer = document.querySelector('.e-article')
+
+        var select = document.querySelector('.e-fontsize-select')
+        var clickAway
+        useEventListener(select, 'click', function (e) {
+          console.log('inforInteraction', {
+            content_type: $('.e-breadcrumbs a')[1].text.trim(),
+            content_name: $('.e-detail-banner__content').text().trim(),
+            action_type: '字号'
+          })
+          // 神策埋点
+          window.sensors && window.sensors.track('inforInteraction', {
+            content_type: $('.e-breadcrumbs a')[1].text.trim(),
+            content_name: $('.e-detail-banner__content').text().trim(),
+            action_type: '字号'
+          })
+          var target = e.target
+          var isOpen = hasClass(select, 'is-open')
+          if (!isOpen) {
+            addClass(select, 'is-open')
+
+            clickAway = useClickAway(function () {
+              removeClass(select, 'is-open')
+              clickAway && clickAway()
+            }, select)
+            return
+          }
+
+          var li = target.closest('li[data-type]')
+          if (li && !hasClass(li, 'is-active')) {
+            toggleSiblingsClass(li, 'li', 'is-active')
+            // 兼容低版本浏览器
+            setFontSize(li.getAttribute('data-type'))
+
+            var customEvent = new CustomEvent('article-font-size-change', {
+              detail: {
+                type: li.getAttribute('data-type')
+              }
+            })
+            document.dispatchEvent(customEvent)
+
+            clickAway && clickAway()
+            removeClass(select, 'is-open')
+            return
+          }
+
+          removeClass(select, 'is-open')
+        })
+
+        useEventListener('#printButton', 'click', function () {
+          console.log('inforInteraction', {
+            content_type: $('.e-breadcrumbs a')[1].text.trim(),
+            content_name: $('.e-detail-banner__content').text().trim(),
+            action_type: '打印'
+          })
+          // 神策埋点
+          window.sensors && window.sensors.track('inforInteraction', {
+            content_type: $('.e-breadcrumbs a')[1].text.trim(),
+            content_name: $('.e-detail-banner__content').text().trim(),
+            action_type: '打印'
+          })
+          window.print()
+        })
+
+        function setFontSize (type) {
+          if (type) {
+            removeClass(articleContainer, ['is-large-size', 'is-small-size'])
+            addClass(articleContainer, 'is-' + type + '-size')
+          }
+        }
+      })()
+    </script>
+  
+<script src="https://api.efunds.com.cn/xcowch/stat/front/stat.js" type="text/javascript"></script>
+<script>
+if(window._zcms_stat)_zcms_stat("SiteID=1&CatalogInnerCode=006169000003000002000001&Type=Article&LeafID=757438&Dest=https://api.efunds.com.cn/xcowch/front/stat/dealer");
+</script>
+
+<!-- CostTime=173,PublishDate=2026-08-07 17:33:08 -->
+
+<script src="https://api.efunds.com.cn/xcowch/recommend/js/fingerprint.js" type="text/javascript"></script>
+
+<script src="https://api.efunds.com.cn/xcowch/recommend/js/recommendstat.js" type="text/javascript"></script>
+<script>
+if(window._zcms_recommendstat)_zcms_recommendstat("SiteID=1&ContentID=757438&RecommendType=Content&Dest=https://api.efunds.com.cn/xcowch/front/recommends/dealer");
+</script>
+</body>
+</html>

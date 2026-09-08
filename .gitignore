@@ -9,3 +9,6 @@ confidential/
 .env
 .env.*
 
+
+# Local research tool dependencies
+.venv-research/

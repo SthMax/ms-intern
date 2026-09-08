@@ -1,0 +1,41 @@
+[
+  {
+    "source_id": "FUND-102",
+    "narrow_check": "Original PDF contains specified wording; not independent validation of reported outcome",
+    "needles": [
+      "100多项AIGC"
+    ],
+    "pdf_pages": [
+      8
+    ]
+  },
+  {
+    "source_id": "FUND-200",
+    "narrow_check": "Original PDF contains specified wording; not independent validation of reported outcome",
+    "needles": [
+      "日均操作耗时降低40%"
+    ],
+    "pdf_pages": [
+      8
+    ]
+  },
+  {
+    "source_id": "FUND-308",
+    "narrow_check": "Original PDF contains specified wording; not independent validation of reported outcome",
+    "needles": [
+      "采纳率达到91%"
+    ],
+    "pdf_pages": [
+      6
+    ]
+  },
+  {
+    "source_id": "FUND-103",
+    "checks": {
+      "EFundGPT": true,
+      "LoRA": true,
+      "future_qualifier": true
+    },
+    "narrow_check": "Original wording retained, including uncertainty on future staffing; not a realized headcount-saving measurement"
+  }
+]

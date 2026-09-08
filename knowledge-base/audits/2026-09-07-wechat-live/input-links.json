@@ -1,0 +1,51 @@
+[
+  {
+    "link_id": "WX-001",
+    "related_source": "FUND-109",
+    "relationship": "registered_original",
+    "expected_title": "易方达基金 × ima首发基金研选Skill",
+    "url": "https://mp.weixin.qq.com/s/M6djG8U9YNCNlETZj2d1uA"
+  },
+  {
+    "link_id": "WX-002",
+    "related_source": "FUND-356",
+    "relationship": "registered_original",
+    "expected_title": "中欧基金窦玉明：AI赋能时代，“三化”协同夯实长期业绩根基",
+    "url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA"
+  },
+  {
+    "link_id": "WX-003",
+    "related_source": "FUND-359",
+    "relationship": "registered_original",
+    "expected_title": "华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb"
+  },
+  {
+    "link_id": "WX-004",
+    "related_source": "FUND-203",
+    "relationship": "upstream_source",
+    "expected_title": "拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态",
+    "url": "https://mp.weixin.qq.com/s/ngg8Z6fcLq7oryyKwy4LGw"
+  },
+  {
+    "link_id": "WX-005",
+    "related_source": "FUND-110",
+    "relationship": "unrelated_recommendation",
+    "expected_title": "重磅！巴菲特，出手！",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52&scene=21#wechat_redirect"
+  },
+  {
+    "link_id": "WX-006",
+    "related_source": "FUND-251",
+    "relationship": "unrelated_recommendation",
+    "expected_title": "大跌日，“越跌越买”！股票ETF净流入超510亿，沪深300指数净流入居首",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400464&idx=1&sn=51c149921742d4593080d0fd9da1a022&scene=21#wechat_redirect"
+  },
+  {
+    "link_id": "WX-007",
+    "related_source": "FUND-251",
+    "relationship": "unrelated_recommendation",
+    "expected_title": "受贿数额特别巨大！侯维栋，被公诉",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400443&idx=1&sn=b78c51f64886c5cbf7a4ca60fbfd6e50&scene=21#wechat_redirect"
+  }
+]

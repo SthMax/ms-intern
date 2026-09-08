@@ -1,0 +1,1868 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+<meta charset="UTF-8" />
+<meta
+  name="viewport"
+  content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no"
+/>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" href="/Html5/css/fonts/font.css">
+
+<style media="print">
+  .noprint {
+    display: none;
+  }
+
+  .print-w {
+    width: 100%;
+  }
+
+  a:not(.print-a)::after {
+    content: '';
+  }
+</style>
+<style>
+  .e-pagination .e-pagination-quick-jumper,
+  .e-pagination .e-pagination-size-options {
+    display: none !important;
+  }
+  /* 滚动条 */
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb,
+  :hover::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
+    border-radius: 100px;
+  }
+
+  ::-webkit-scrollbar-thumb,
+  :hover::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b1b1;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-track:hover {
+    background-color: inherit;
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  }
+
+  html {
+    overflow-y: scroll;
+  }
+
+  :root {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  :root body {
+    position: absolute;
+  }
+
+  body {
+    width: 100vw;
+    overflow: hidden;
+  }
+  /* 线 */
+  .line_on{
+    border-bottom: none !important;
+    display: flex;
+  }
+  .line_on .yellow_c{
+    border-bottom: 2px solid #ffc819;
+  }
+  .line_on .blue_c{
+    border-bottom: 2px solid #1eb9e1;
+    flex: 1;
+  }
+  .line_on >span::after{
+    content: none !important;
+  }
+</style>
+<link
+  rel="shortcut icon"
+  href="/Html5/assets/images/favicon.ico"
+  type="image/x-icon"
+/>
+<link rel="icon" href="/Html5/assets/images/favicon.ico" type="image/x-icon" />
+<link rel="bookmark" href="/Html5/assets/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/Html5/css/bootstrap.css?8208894b" />
+<link rel="stylesheet" href="/Html5/css/reset.css?feee8ff3" />
+<link rel="stylesheet" href="/Html5/css/normalize.css?112272e5" />
+<link
+  rel="stylesheet"
+  href="/Html5/js/common/animate.min.css?c059415a"
+/>
+<link
+  rel="stylesheet"
+  href="/Html5/js/common/swiper/swiper.min.css?83fb2724"
+/>
+<link rel="stylesheet" href="/Html5/css/index.css?3d24d624" />
+<!-- h5 适配 -->
+<link rel="stylesheet" href="/Html5/css/index.h5.css?943b775d" />
+<link rel="stylesheet" href="/Html5/css/header.h5.css?c198470f" />
+<link rel="stylesheet" href="/Html5/css/footer.h5.css?b5e098ea" />
+<script id="BrowserUpgradeTemplate" type="text/template">
+  <div class="low-version-box-selector">
+      <div class="low-version-box-header">
+        <span>温馨提示</span>
+        {{if showCloseBtn}}
+        <span class="low-version-close-btn"></span>
+        {{/if}}
+      </div>
+      <div class="low-version-box-body">
+        <div class="low-version-box-text">
+          <p>
+            您正在使用的浏览器版本过低，为避免可能存在的安全隐患，
+          </p>
+          <p>
+            请尽快升级您的浏览器或者安装更安全的浏览器登录易方达网站。
+          </p>
+        </div>
+        <div class="low-version-boxes">
+          <ul class="low-version-box-ul row row-gutters-25">
+            <li class="col-xs-4">
+              <a href="https://www.google.cn/intl/zh-CN/chrome/browser/desktop/" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="/Html5/assets/images/ie.png" alt="IE" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-4">
+              <a href="https://support.microsoft.com/zh-cn/windows/internet-explorer-%E4%B8%8B%E8%BD%BD-d49e1f0d-571c-9a7b-d97e-be248806ca70" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="/Html5/assets/images/chrome.png" alt="Chrome" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-4">
+              <a href="http://www.firefox.com.cn" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="/Html5/assets/images/firfox.png" alt="Firefox" />
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</script>
+
+<script id="BrowserUpgradeTemplate" type="text/template">
+  <div class="low-version-box-selector">
+      <div class="low-version-box-header">
+        <span>温馨提示</span>
+        {{if showCloseBtn}}
+        <span class="low-version-close-btn"></span>
+        {{/if}}
+      </div>
+      <div class="low-version-box-body">
+        <div class="low-version-box-text">
+          <p>
+            您正在使用的浏览器版本过低，为避免可能存在的安全隐患，
+          </p>
+          <p>
+            请尽快升级您的浏览器或者安装更安全的浏览器登录易方达网站。
+          </p>
+        </div>
+        <div class="low-version-boxes">
+          <ul class="low-version-box-ul row row-gutters-25">
+            <li class="col-xs-4">
+              <a href="https://www.google.cn/intl/zh-CN/chrome/browser/desktop/" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="/Html5/assets/images/ie.png" alt="IE" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-4">
+              <a href="https://support.microsoft.com/zh-cn/windows/internet-explorer-%E4%B8%8B%E8%BD%BD-d49e1f0d-571c-9a7b-d97e-be248806ca70" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="/Html5/assets/images/chrome.png" alt="Chrome" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-4">
+              <a href="http://www.firefox.com.cn" target="_blank">
+                <div class="low-version-box-li">
+                  <div class="low-version-box-li-img">
+                    <img src="/Html5/assets/images/firfox.png" alt="Firefox" />
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</script>
+
+<script id="EFundAppDownloadTipsTemplate" type="text/template">
+  <div class="e-app-dt">
+    <div class="e-app-dt-container">
+      <div class="e-app-dt-left">
+        <div class="e-app-dt-close-btn">
+          叉
+        </div>
+      </div>
+      <div class="e-app-dt-center">
+        <div class="e-app-dt-info">
+          <div class="e-app-dt-info__icon">
+            图
+          </div>
+          <div class="e-app-dt-info__content">
+            <h3>e钱包</h3>
+            <div>易方达财富APP</div>
+          </div>
+        </div>
+      </div>
+      <div class="e-app-dt-right">
+        <div class="e-app-dt-download-btn">立即下载</div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<!-- js -->
+<script>
+   var frontAppContext = 'https://api.efunds.com.cn/xcowch/';
+  var officalTestPrefix = '/';
+  var siteID = "1";
+  var platformID = "Html5";
+  var siteURL = "https://www.efunds.com.cn/Html5/";
+  var siteAlias= "";
+  var isPreview = false;
+  var url = window.location.href;
+  if(url.indexOf(frontAppContext) === 0){
+    var path=url.substring(frontAppContext.length);
+    if(path.indexOf('/preview/')===0||path.indexOf('preview/')===0){
+      isPreview=true;
+      siteURL = "https://api.efunds.com.cn/xcowch/preview/00_OWCH/";
+    }
+  }
+
+  // 在线客服
+  var online_customer = 'https://aichat.efunds.com.cn/live800/chatClient/chatbox.jsp?companyID=8948&configID=3000025&enterurl=PC&live800_ud_mobilefrom=PC&sourceCode=1&chatfrom=PC';
+
+  function openLink(url) {
+    if (url) {
+      window.open(url);
+    }
+  }
+   function buyButtonClick(url, type, that) {
+     console.log('buyButtonClick', {
+       fund_short_name: $(that).attr("data-fundname"),
+       fund_code: $(that).attr("data-fundcode"),
+       fund_type: $(that).attr("data-fundtype"),
+       order_type: type
+     })
+     // 神策埋点
+     window.sensors && window.sensors.track('buyButtonClick', {
+       fund_short_name: $(that).attr("data-fundname"),
+       fund_code: $(that).attr("data-fundcode"),
+       fund_type: $(that).attr("data-fundtype"),
+       order_type: type
+     })
+     openLink(url);
+   }
+  // pageCount：分页数 pele： 当前页
+  function changePage(pele, pageCount, catalogID) {
+    if (pele == 0) {
+      return;
+    }
+    var re = /^[0-9]*[1-9][0-9]*$/;
+    if (re.test(pele)) {
+      pele = Number(pele);
+    } else {
+      return;
+    }
+    if (pageCount < pele) {
+      pele = pageCount;
+    } else if (pele <= 0) {
+      pele = 1;
+    }
+    var toPageUrl = '';
+    if (isPreview) {
+      toPageUrl = frontAppContext + "ui/preview/catalog/" + catalogID + "?platformID=pc&PageIndex=" + pele;
+    } else {
+      if (pele == 1) {
+        if (window.location.href.indexOf("catalog") != -1) {
+          toPageUrl = "index_1.shtml";
+        } else {
+          toPageUrl = "index.shtml";
+        }
+      } else if (pele > 1 && pele < 6) {
+        toPageUrl = "index_" + pele + ".shtml";
+      } else {
+
+        toPageUrl = frontAppContext + "catalog/" + catalogID + "/pc/index_" + pele + ".shtml";
+      }
+    }
+    window.location.href = toPageUrl;
+  }
+</script>
+<script src="/Html5/js/common/polyfill.min.js?c300565f"></script>
+<script src="/Html5/js/common/jquery/jquery-3.6.0.min.js?7c14a783"></script>
+<script src="/Html5/js/common/popper/popper.min.js?3e468512"></script>
+<script src="/Html5/js/common/art-template.min.js?13555d1a"></script>
+<script src="/Html5/js/art-template.imports.js?945a28a4"></script>
+<script src="/Html5/js/index.js?acf87b5e"></script>
+<script src="/Html5/js/built-in-usage.js?4682cb97"></script>
+<script src="/Html5/js/jquery-ajax-transport-xdomain.js?530422a8"></script>
+<script src="/Html5/js/WG1D5Km_jbs.js?bcd25ba0"></script>
+<script src="/Html5/js/device.js?57c00af9"></script>
+<script>
+  
+    if(!isPreview) {
+      var deviceType = getDeviceType();
+      var currentLink = window.location.href;
+      if(deviceType == 'Mobile') {
+        var mobilePrefix = 'https://www.efunds.com.cn/Mobile/';
+        if(!isMobileFilterPage() && mobilePrefix && deviceType.toLowerCase != 'html5' && currentLink.indexOf(siteURL) >= 0) {
+          window.location.href = currentLink.replace(siteURL, mobilePrefix);
+        }
+      } else if(deviceType == 'PC') {
+        var pcPrefix = 'https://www.efunds.com.cn/';
+        if(pcPrefix && deviceType.toLowerCase != 'html5' && currentLink.indexOf(siteURL) >= 0) {
+          window.location.href = currentLink.replace(siteURL, pcPrefix);
+        }
+      }
+    }
+  
+</script>
+
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual'
+  }
+
+  if (isIE9) {
+    var lastPageCount = useBrowserPageCount()
+    // ie9 下在当前页面只显示一次
+    if (
+      lastPageCount === 1 &&
+      Date.now() - +localStorage.getItem('__E_Page_Count_Time__') > 1000
+    ) {
+      onDOMContentLoaded(function () {
+        var BrowserUpgradeTemplate = template('BrowserUpgradeTemplate')
+        var dialog = createElementFromTemplate(
+          BrowserUpgradeTemplate({
+            showCloseBtn: true
+          }),
+          true
+        )
+        document.body.appendChild(dialog)
+
+        useEventListener(
+          document,
+          'click',
+          '.low-version-close-btn',
+          function (_, target) {
+            var dialog = target.closest('.low-version-box-selector')
+            dialog && dialog.remove()
+          }
+        )
+      })
+    }
+  }
+
+  onDOMContentLoaded(function () {
+    initAttributeTooltip({
+      placement: 'bottom',
+      enterDelay: 64,
+      leaveDelay: 150,
+      transitionName: 'slide-fade',
+      triggerClassName: 'is-popover-toggle',
+      popperOptions: {
+        modifiers: {
+          offset: {
+            offset: '-5, 0'
+          },
+          gpu: {
+            enabled: false
+          },
+          preventOverflow: {
+            boundariesElement: 'viewport',
+            padding: 25,
+            priority: ['right', 'left']
+          },
+          arrow: {
+            element: '[x-arrow]'
+          }
+        }
+      }
+    })
+  })
+
+  onDOMContentLoaded(mesureToTopButton)
+  useEventListener(window, 'scroll', mesureToTopButton)
+  useEventListener(document, 'click', '#TO_TOP_BUTTON', scrollToTop)
+
+  function mesureToTopButton() {
+    var button = document.querySelector('#TO_TOP_BUTTON')
+    if (!button) return
+
+    var scrollTop = getScrollTop()
+    if (scrollTop >= 1000) {
+      addClassIfNeed(button, 'is-to-top-show')
+    } else {
+      removeClass(button, 'is-to-top-show')
+    }
+  }
+
+  function scrollToTop() {
+    frameScrollTo(0, {
+      global: true,
+      duration: 300
+    })
+  }
+
+  function recordCurrentOrganization(type) {
+    var prevType = getCacheOrganization()
+    var isOrganization = type === 1 || type === 'organization'
+    var curType = isOrganization ? 'organization' : 'personal'
+    if (prevType !== curType) {
+      localStorage.setItem('__E_CURRENT_ORGANIZATION__', curType)
+      localStorage.setItem('__E_RECORD_TIME__', Date.now())
+    }
+  }
+
+  function getCacheOrganization() {
+    return localStorage.getItem('__E_CURRENT_ORGANIZATION__')
+  }
+
+  function cleanCacheOrganization() {
+    return localStorage.removeItem('__E_CURRENT_ORGANIZATION__')
+    return localStorage.removeItem('__E_RECORD_TIME__')
+  }
+
+  function mesureCacheOrganization() {
+    var lastRecordTime = localStorage.getItem('__E_RECORD_TIME__')
+    if (!lastRecordTime) return
+
+    var lastDate = new Date(+lastRecordTime)
+    if (Date.now() - lastDate.getTime() >= 30 * 24 * 60 * 60 * 1000) {
+      cleanCacheOrganization()
+    }
+  }
+  //点击欢迎页清空缓存回到引导页
+  function rebackUrl() {
+    localStorage.removeItem('__E_CURRENT_ORGANIZATION__')
+    window.location.href = 'https://www.efunds.com.cn/Html5/'
+  }
+
+  function showArticleHeader(title) {
+    const header = document.getElementById('header')
+    if (header) {
+      addClassIfNeed(header, 'show-title')
+      Array.from(header.querySelectorAll('.e-header-title')).forEach((elm) => {
+        elm.innerHTML = title
+      })
+    }
+  }
+</script>
+
+<script>
+  onDOMContentLoaded(function () {
+    var innerCode = window.currentCatalogInnerCode
+    if (innerCode != null) {
+      var menuItems = querySelectorArray('.e-header-menu__item')
+      for (var i = 0; i < menuItems.length; i++) {
+        var id = menuItems[i].id
+        if (id && innerCode.startsWith(id)) {
+          addClassIfNeed(menuItems[i], 'is-active')
+          return
+        }
+      }
+    }
+  })
+</script>
+
+<script>
+  onDOMContentLoaded(function () {
+    useEventListener(
+      document,
+      'click',
+      '#hamburgerBtn',
+      handleHamburgerBtnClick
+    )
+    useEventListener(
+      document,
+      'click',
+      '#screenCloseBtn',
+      handleScreenCloseBtnClick
+    )
+    useEventListener(
+      document,
+      'click',
+      '#headerScreen',
+      handleScreenCloseBtnClick,
+      { self: true }
+    )
+
+    function handleHamburgerBtnClick() {
+      toggleHeaderScreenVisible()
+    }
+
+    function handleScreenCloseBtnClick() {
+      toggleHeaderScreenVisible(false)
+    }
+
+    var showClass = 'is-show'
+
+    function toggleHeaderScreenVisible(visible) {
+      var headerScreen = document.getElementById('headerScreen')
+      var hamburgerBtn = document.getElementById('hamburgerBtn')
+
+      var nextVisible =
+        visible !== undefined ? visible : !hasClass(headerScreen, showClass)
+      if (nextVisible) {
+        addClassIfNeed(headerScreen, showClass)
+        addClassIfNeed(hamburgerBtn, 'is-active')
+      } else {
+        removeClass(headerScreen, showClass)
+        removeClass(hamburgerBtn, 'is-active')
+      }
+    }
+  })
+</script>
+
+<!-- Header collapse -->
+<script>
+  onDOMContentLoaded(function () {
+    $(document)
+      .on('hide.bs.collapse', function (event) {
+        $(event.target).parent('.e-header-menu-item').addClass('collapsed')
+      })
+      .on('show.bs.collapse', function (event) {
+        $(event.target).parent('.e-header-menu-item').removeClass('collapsed')
+      })
+  })
+</script>
+
+  <title>关于我们-易方达基金管理有限公司</title>
+  <meta name="keywords" content="易方达基金管理有限公司，易方达基金，易方达基金手机版，易方达基金官方网站，易方达基金公司官网，易方达，易方达基金官网，易方达基金网上交易，e钱包app下载" />
+  <meta name="description" content="易方达基金成立于2001年，通过专业化的运作，依托于资本市场，为境内外客户提供资产管理解决方案，实现长期可持续的投资回报。" />
+  <link rel="stylesheet" href="/Html5/css/about-us-gather.css" />
+  <link rel="stylesheet" href="/Html5/css/about-us-gather-h5.css" />
+</head>
+<style>
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+</style>
+
+<body>
+  <!-- 头部 -->
+  
+    
+  
+  
+  
+      
+
+<header id="header" class="e-header grd__element__class">
+  <div class="e-header-wrapper">
+    <div class="e-header-content">
+      <div class="e-header-content__left">
+        <a
+          class="e-header-logo"
+          href="https://www.efunds.com.cn/Html5/index.shtml"
+          title="e-funds"
+        >
+          <img
+            src="https://cdn.efunds.com.cn/owch/upload/resources/image/2026/08/07/134660.png"
+            title="易方达基金管理有限公司"
+            alt="易方达"
+          />
+        </a>
+      </div>
+      <div class="e-header-content__content">
+        <div class="e-header-title">暂无标题</div>
+      </div>
+      <div class="e-header-content__right noprint">
+        <div class="e-header-search e-header-search--grd">
+          <a></a>
+        </div>
+        <button id="hamburgerBtn" class="e-hamburger">
+          <span class="e-hamburger-container">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="headerScreen" class="e-header-screen">
+    <div class="e-header-screen-container">
+      <div class="e-header-screen__header">
+        <div>
+          <a
+            class="e-header-screen-logo"
+            href="https://www.efunds.com.cn/Html5/index.shtml"
+            title="e-funds"
+          >
+            <img
+              src="https://cdn.efunds.com.cn/owch/upload/resources/image/2026/08/07/134660.png"
+              title="易方达基金管理有限公司"
+              alt="易方达"
+            />
+          </a>
+        </div>
+        <div>
+          <div class="e-header-title">暂无标题</div>
+        </div>
+        <div style="display: flex; align-items: center">
+          <div class="e-header-search e-header-search--grd">
+            <a></a>
+          </div>
+          <button id="screenCloseBtn" class="e-header-screen-close-btn">
+            <span class="e-header-screen-close-btn__container">
+              <span class="top"></span>
+              <span class="bottom"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="e-header-screen__content">
+        <div class="e-header-menu">
+          <ul class="e-header-menu-list">
+            <li class="e-header-menu-item not-collapse" id="-1">
+              <div class="e-header-menu__title">
+                <a href="https://www.efunds.com.cn/Html5/index.shtml"> 首页 </a>
+              </div>
+            </li>
+
+            <li class="e-header-menu-item collapsed">
+              <div
+                class="e-header-menu__title"
+                data-toggle="collapse"
+                data-target="#header_c_account"
+              >
+                <a href="https://e.efunds.com.cn/"> 我的账户 </a>
+              </div>
+
+              <ul id="header_c_account" class="e-header-menu-sub-list collapse">
+                <li class="e-header-menu-sub-item">
+                  <div class="e-header-menu__title">
+                    <a href="https://e.efunds.com.cn/" target="_blank"> 查询 </a>
+                  </div>
+                </li>
+                <li class="e-header-menu-sub-item">
+                  <div class="e-header-menu__title">
+                    <a
+                      href="https://e.efunds.com.cn/registration/mobileauths?form"
+                      target="_blank"
+                    >
+                      开户
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            
+              
+              <li
+                class="e-header-menu-item collapsed"
+                id="006169000004"
+              >
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_fundManager"
+                >
+                  <a href="/Html5/lm/qxjj/jjjl/"> 基金经理 </a>
+                </div>
+
+                <ul
+                  id="header_c_fundManager"
+                  class="e-header-menu-sub-list collapse"
+                >
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/qxjj/jjjl/"> 基金经理索引 </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        
+                      
+                      <a href="/Html5/lm/ysp/"> 投资观点 </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            
+
+            
+              
+              <li
+                class="e-header-menu-item collapsed single-collapsed"
+                id="006169000010"
+              >
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_fundProducts"
+                >
+                  <a href="/Html5/lm/jjcp/"> 基金产品 </a>
+                </div>
+              </li>
+            
+            
+              
+              <li class="e-header-menu-item collapsed" id="006169000007">
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_indexProducts"
+                >
+                  <a href="/Html5/lm/zszqsy/"> 指数专区 </a>
+                </div>
+                
+                <ul id="header_c_indexProducts" class="e-header-menu-sub-list collapse">
+                  
+                    <li class="e-header-menu-sub-item">
+                      <div class="e-header-menu__title">
+                        <a href="/Html5/lm/zszqsy/#index-news"> 了解指数投资 </a>
+                      </div>
+                    </li>
+                  
+                  
+                    <li class="e-header-menu-sub-item">
+                      <div class="e-header-menu__title">
+                        <a href="/Html5/lm/zszqsy/#important-etf"> 聚焦产品 </a>
+                      </div>
+                    </li>
+                  
+                  
+                    <li class="e-header-menu-sub-item">
+                      <div class="e-header-menu__title">
+                        <a href="/Html5/lm/zszqsy/#product-list"> 全部产品 </a>
+                      </div>
+                    </li>
+                  
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/zszqsy/#view-point"> 投资观点 </a>
+                    </div>
+                  </li>
+                  
+                    
+                  
+                </ul>
+              </li>
+            
+            
+              
+              <li
+                class="e-header-menu-item collapsed"
+                id="006169000008"
+              >
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_FOF"
+                >
+                  <a href="/Html5/lm/fofzq/"> FOF </a>
+                </div>
+
+                <ul id="header_c_FOF" class="e-header-menu-sub-list collapse">
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/fofzq/#product"> FOF 产品 </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="/Html5/lm/fofzq/fofzx/"> 基中基FOF资讯 </a>
+                      
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            
+            <!--个人养老金-->
+            
+              
+              <li
+                class="e-header-menu-item collapsed"
+                id="006169000014"
+              >
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_personalPension"
+                >
+                  <a href="/Html5/lm/grd/grylj/"> 个人养老金 </a>
+                </div>
+
+                <ul
+                  id="header_c_personalPension"
+                  class="e-header-menu-sub-list collapse"
+                >
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/grd/grylj/#yylxkt">
+                        
+                        养老资讯
+                         </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/grd/grylj/#zsjj"> 指数基金 </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/grd/grylj/#ylmbjj"> 养老目标基金 </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/grd/grylj/#yfdyyl"> 易方达易养老 </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            
+
+            <!--基金投顾-->
+            
+              
+              <li
+                class="e-header-menu-item collapsed"
+                id="006169000003"
+              >
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_investmentAdvisor"
+                >
+                  <a href="/Html5/lm/jjtg/"> 投资顾问 </a>
+                </div>
+
+                <ul
+                  id="header_c_investmentAdvisor"
+                  class="e-header-menu-sub-list collapse"
+                >
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/jjtg/#ljwm"> 业务介绍 </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/jjtg/#jyrk"> 交易入口 </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/jjtg/#tgcl"> 投顾策略 </a>
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      <a href="/Html5/lm/jjtg/#ylpb"> 投顾陪伴 </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            
+
+            
+              
+              <li
+                class="e-header-menu-item collapsed"
+                id="006169000001"
+              >
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_informationDisclosure"
+                >
+                  <a href="/Html5/lm/xxpl/"> 信息披露 </a>
+                </div>
+
+                <ul
+                  id="header_c_informationDisclosure"
+                  class="e-header-menu-sub-list collapse"
+                >
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a
+                          href="/Html5/lm/xxpl/?innercode=006169000001000003"
+                        >
+                          法律文件
+                        </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a
+                          href="/Html5/lm/xxpl/?innercode=006169000001000001"
+                        >
+                          定期报告
+                        </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a
+                          href="/Html5/lm/xxpl/?innercode=006169000001000002"
+                        >
+                          临时公告
+                        </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a
+                          href="/Html5/lm/xxpl/?innercode=006169000001000001"
+                        >
+                          定期报告
+                        </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a
+                          href="/Html5/lm/xxpl/?innercode=006169000001000005"
+                        >
+                          澄清公告与说明
+                        </a>
+                      
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            
+
+            
+              <li
+                class="e-header-menu-item collapsed"
+                id="006169000006"
+              >
+                <div
+                  class="e-header-menu__title"
+                  data-toggle="collapse"
+                  data-target="#header_c_aboutus"
+                >
+                  <a href="/Html5/lm/gywm/"> 关于我们 </a>
+                </div>
+
+                <ul
+                  id="header_c_aboutus"
+                  class="e-header-menu-sub-list collapse"
+                >
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="/Html5/lm/gywm/js/"> 公司概况 </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="/Html5/lm/gywm/qywh/"> 企业文化 </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="/Html5/lm/gywm/zrtz/">  责任投资 </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="/Html5/lm/gywm/ry/"> 所获荣誉 </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="/Html5/lm/efundcharityfoundation/index/"> 公益基金会 </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="http://job.efunds.com.cn/" target="_blank"> 加入我们 </a>
+                      
+                    </div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title">
+                      
+                        <a href="/Html5/lm/gywm/lxwm/"> 联系我们 </a>
+                      
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            
+            
+              <li class="e-header-menu-item collapsed" id="006139">
+                <div class="e-header-menu__title" data-toggle="collapse" data-target="#header_c_language">
+                  <a href="https://www.efunds.com.cn/en/"><i class="icon_earch"></i>English</a>
+                </div>
+                <ul id="header_c_language" class="e-header-menu-sub-list collapse">
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title"><a href="https://www.efunds.com.cn/Html5/index.shtml"> 中文</a></div>
+                  </li>
+                  <li class="e-header-menu-sub-item">
+                    <div class="e-header-menu__title"><a href="https://www.efunds.com.cn/en/">English </a> <span class="sprite-g"></span></div>
+                  </li>
+                </ul>
+              </li>
+            
+          </ul>
+        </div>
+
+        <ul class="e-header-links">
+          <li class="e-header-link">
+            <a href="https://www.efundcf.com.cn" target="_blank"> 易方达财富 </a>
+          </li>
+          <li class="e-header-link">
+            <a href="http://www.efundamc.com.cn" target="_blank"> 易方达资管 </a>
+          </li>
+          <li class="e-header-link">
+            <a href="http://www.efunds.com.hk/index/index/lsc.html" target="_blank"> 易方达香港 </a>
+          </li>
+          
+            <li class="e-header-link">
+              <a href="https://www.efundpe.com.cn" target="_blank"> 易方达资本 </a>
+            </li>
+          
+          <li class="e-header-link">
+            <a href="https://edu.efunds.com.cn/" target="_blank"> 投教基地 </a>
+          </li>
+          <li class="e-header-link">
+            <a href="https://www.etf.com.cn" target="_blank"> 指数直通车 </a>
+          </li>
+        </ul>
+
+        <div class="e-header-organization-btns">
+          <div class="e-header-organization-btn">
+            <a href="https://www.efunds.com.cn/Html5/index.shtml"> 个人投资者 </a>
+          </div>
+          <div class="e-header-organization-btn organization">
+            
+              <a href="/Html5/lm/jgd-sy/"> 机构投资者 </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="search-popup-fullScreen--header" class="search-popup-fullScreen">
+    <div class="search-bar__wrap">
+      <div class="back-btn"></div>
+      <div class="search-bar">
+        <input type="text" />
+        <div class="clear-input"></div>
+      </div>
+      <button>搜索</button>
+    </div>
+    <div class="history__wrap">
+      <div class="title">
+        <span>历史搜索</span>
+        <img src="/Html5/assets/images/icons/delete.png" alt="" />
+      </div>
+      <div class="history__list"></div>
+    </div>
+  </div>
+</header>
+<script language="javascript">
+  $('.e-header-search--grd').on('click', function() {
+    window.location.href = "https://www.efunds.com.cn/Html5/fund/text_search.shtml"
+  })
+</script>
+<script>
+  $("body").on("click",".e-header-menu__title a",function () {
+    console.log('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .e-header-menu-item:not(.collapsed) div a').text().trim()+'_首页',
+      first_tab_name: $(this).text().trim(),
+      second_tab_name: "",
+    })
+    // 神策埋点
+    window.sensors && window.sensors.track('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .e-header-menu-item:not(.collapsed) div a').text().trim()+'_首页',
+      first_tab_name: $(this).text().trim(),
+      second_tab_name: "",
+    })
+  })
+  $("body").on("click",".e-header-menu-sub-item a",function () {
+    console.log('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .e-header-menu-item:not(.collapsed) div a').text().trim()+'_首页',
+      first_tab_name: $('.e-header-user__list .e-header-menu-item:not(.collapsed) div a').text().trim(),
+      second_tab_name: $(this).text().trim(),
+    })
+    // 神策埋点
+    window.sensors && window.sensors.track('topGuideTabButtonClick', {
+      page_name: $('.e-header-user__list .e-header-menu-item:not(.collapsed) div a').text().trim()+'_首页',
+      first_tab_name: $('.e-header-user__list .e-header-menu-item:not(.collapsed) div a').text().trim(),
+      second_tab_name: $(this).text().trim(),
+    })
+  })
+</script>
+
+  
+  <div class="e-content">
+    <section class="e-detail-banner is-big">
+      <div class="e-detail-banner__wrapper"
+        style="background-image: url('/Html5/assets/images/abou_us_gather_img/beijing_1.jpg');">
+        <div class="e-detail-banner__container">
+          <div class="e-detail-banner__header">
+            <div class="e-breadcrumbs">
+              
+              
+                <a href='/Html5/'>首页</a><span style='color:#ccc;padding:0 5px;'>/</span><a href='/Html5/lm/gywm/'>关于我们</a>
+              
+            </div>
+          </div>
+          <div class="e-detail-banner__content">
+            <div class="e-detail-banner__title">
+              <div class="img_title">
+                <div class="title_1">易方达</div>
+                <div class="title_2">我们执着于在长跑中胜出 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="e-tabs">
+      <div class="e-tabs__placeholder"></div>
+      <div class="e-tabs__wrapper">
+        <div class="e-tabs__list">
+          
+            <div class="e-tabs__tab is-active" data-anchor="survey">
+              <div class="e-tabs__tab-inner">
+                公司概况
+              </div>
+            </div>
+          
+          
+            <div class="e-tabs__tab" data-anchor="culture">
+              <div class="e-tabs__tab-inner">
+                企业文化
+              </div>
+            </div>
+          
+          
+            <div class="e-tabs__tab" data-anchor="investments">
+              <div class="e-tabs__tab-inner">
+                责任投资
+              </div>
+            </div>
+          
+          
+            <div class="e-tabs__tab" data-anchor="honor">
+              <div class="e-tabs__tab-inner">
+                所获荣誉
+              </div>
+            </div>
+          
+          
+            <div class="e-tabs__tab" data-anchor="welfare">
+              <div class="e-tabs__tab-inner">
+                公益基金会
+              </div>
+            </div>
+          
+          
+            <div class="e-tabs__tab" data-anchor="join">
+              <div class="e-tabs__tab-inner">
+                加入我们
+              </div>
+            </div>
+          
+          
+            <div class="e-tabs__tab" data-anchor="contact">
+              <div class="e-tabs__tab-inner">
+                联系我们
+              </div>
+            </div>
+          
+          <div class="e-tabs__bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <main style="overflow-x: hidden;">
+      <!-- 公司概况111 -->
+      <div class="e-container">
+        <div class="survey section_box" data-anchor-name="survey" data-id="section_survey">
+          <div class="row survey_box">
+            
+              <div class="title ">公司概况</div>
+              
+                <div class="survey_txts col-xs-6">
+                  <div class="e-gradient-title txt_title line_on">
+                    <span class="e-color--primary yellow_c">
+                      易方达基金管理有限公司
+                    </span>
+                    <span class="blue_c"></span>
+                  </div>
+                  <div class="txt">
+                    易方达基金是一家综合性资产管理公司。公司成立于2001年，依托资本市场，通过专业化运作，为境内外各类投资者提供综合性资产管理解决方案。公司坚守客户利益至上原则，致力于做值得各方长期托付的、负责任的世界级综合性资产管理公司。截至2026年6月底，易方达基金及下属机构资产管理规模超4.3万亿元，服务广大个人投资者及社保基金、企业年金和职业年金、银行、保险公司，境外央行、主权基金及养老金等机构投资者。
+公司秉承规范、稳健、开放的经营理念，以资产管理和财富管理双轮驱动，持续推进实施平台型、数智化、全球化发展战略，不断提高服务实体经济与国家战略、服务资本市场改革发展、服务居民财富管理需求的能力，努力打造一流投资机构，以自身高质量发展服务经济社会高质量发展。
+                  </div>
+                  
+                  
+                    <a href="/Html5/lm/gywm/js/">了解公司更多概况</a>
+                  
+                </div>
+                <div class="img col-xs-6">
+                  <img src="https://cdn.efunds.com.cn/owch/upload/resources/image/2021/12/30/2358.png"
+                    onerror="this.src='/Html5/assets/images/picture404-0.png';this.onerror=null;" alt="" />
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- 企业文化 -->
+      <div class="container culture">
+        <div class="e-container">
+          <div class="culture_care_w">
+            <div class=" culture_care">
+              <div class="culture_care_box section_box" data-anchor-name="culture" data-id="section_culture">
+                <div class="e-gradient-title txt_title line_on">
+                  
+                    
+
+                    <span class="e-color--primary yellow_c">
+                      企业文化
+                    </span>
+                    <span class="blue_c"></span>
+                  
+
+                </div>
+                
+                  <div class="txt">
+                    易方达基金自成立以来，始终高度重视企业文化建设，坚持合规为先，诚信立足，稳健经营，致力于通过市场化、专业化的运作，为客户、为社会创造价值，在自身企业文化中深深地植入了“合规、诚信、专业、稳健”的行业文化要素，并在实践中不断完善和发展企业文化的内涵，积极打造公司长期稳健发展的软实力。目前，已形成一系列包括公司使命、愿景、核心价值观、企业精神、品牌信念、经营理念、管理理念和投资理念在内的企业文化理念体系，并始终严格遵循、积极践行。
+                  </div>
+                  
+                  
+                    <a href="/Html5/lm/gywm/qywh/">了解更多企业文化</a>
+                  
+                
+              </div>
+            </div>
+            <div class=" culture_care_right">
+              <span>持信</span>
+              <span>抱朴</span>
+              <span>存谐</span>
+              <span>笃进</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 责任投资 -->
+      <div class="e-container">
+        <div class="investments section_box" data-anchor-name="investments" data-id="section_investment">
+          <div class=" investment">
+            
+              <div class=" investment_box ">
+                <div class="e-gradient-title txt_title line_on">
+                  <span class="e-color--primary yellow_c">
+                    责任投资
+                  </span>
+                  <span class="blue_c"></span>
+                </div>
+                
+                  <div class="txt"> 易方达积极推动在投资决策和流程中充分考虑环境、社会和治理（ESG）等可持续发展相关因素，坚持做负责任的机构投资者。 </div>
+                  
+                  
+                    <a href="/Html5/lm/gywm/zrtz/">了解责任投资</a>
+                  
+                
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- 所获荣誉 -->
+      <div class=" honor section_box" data-anchor-name="honor" data-id="section_honor">
+        
+          <div class="honor_box_txt">
+            <div style="margin: 0 auto;">
+              <div class="txt_title">
+                所获荣誉
+              </div>
+              
+                <div class="txt">
+                  凭借稳定优异的投资业绩，易方达屡获行业权威机构的肯定，是获奖最多的基金公司之一。
+                </div>
+              
+            </div>
+          </div>
+          <div class="honor_box_cara row ">
+            <ul class="company">
+              
+                
+                  <li class=" col-xs-3 col-ip-6">
+                    <div class="company_s">
+                      <div class="company_jiangxiang">
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_left.png" alt="">
+                        <span> 金牛奖 </span>
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_right.png" alt="">
+                      </div>
+                      <div class="name">金牛基金管理公司</div>
+                      <div class="txt">
+                        <div class="txt_1">
+                          易方达基金管理有限公司
+                          
+                          
+                        </div>
+                        <div class="txt_2"> 中国证券报 / <em> 2023-12-28</em></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class=" col-xs-3 col-ip-6">
+                    <div class="company_s">
+                      <div class="company_jiangxiang">
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_left.png" alt="">
+                        <span> 晨星奖 </span>
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_right.png" alt="">
+                      </div>
+                      <div class="name">晨星（中国）2022年度积极配置型基金</div>
+                      <div class="txt">
+                        <div class="txt_1">
+                          
+                          易方达新经济灵活配置混合型证券投资基金
+                          
+                        </div>
+                        <div class="txt_2"> 晨星（中国）研究中心 / <em> 2022-03-30</em></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class=" col-xs-3 col-ip-6">
+                    <div class="company_s">
+                      <div class="company_jiangxiang">
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_left.png" alt="">
+                        <span> 金基金奖 </span>
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_right.png" alt="">
+                      </div>
+                      <div class="name">金基金·TOP公司奖</div>
+                      <div class="txt">
+                        <div class="txt_1">
+                          易方达基金管理有限公司
+                          
+                          
+                        </div>
+                        <div class="txt_2"> 上海证券报 / <em> 2023-08-17</em></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class=" col-xs-3 col-ip-6">
+                    <div class="company_s">
+                      <div class="company_jiangxiang">
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_left.png" alt="">
+                        <span> 明星基金奖 </span>
+                        <img class="jx_img" src="/Html5/assets/images/fundDetail/award_right.png" alt="">
+                      </div>
+                      <div class="name">2022年度十大明星基金公司</div>
+                      <div class="txt">
+                        <div class="txt_1">
+                          易方达基金管理有限公司
+                          
+                          
+                        </div>
+                        <div class="txt_2"> 证券时报 / <em> 2023-06-07</em></div>
+                      </div>
+                    </div>
+                  </li>
+              
+            </ul>
+          </div>
+          
+          
+            <a href="/Html5/lm/gywm/ry/">查看更多荣誉</a>
+          
+        
+      </div>
+
+      <!-- 公益活动 -->
+      <div class=" welfare section_box" data-anchor-name="welfare" data-id="section_welfare">
+        <div class="welfare_box">
+          <div class=" welfare_care">
+            
+              <div class="welfare_care_box">
+                <div class="e-gradient-title txt_title line_on">
+
+                  <span class="e-color--primary yellow_c">
+                    公益基金会
+                  </span>
+                  <span class="blue_c"></span>
+                </div>
+                
+
+
+                  <div class="title"></div>
+                  <div class="txt">
+                    
+                  </div>
+                  
+                  
+                    <a href="/Html5/lm/efundcharityfoundation/index/">了解基金会</a>
+                  
+                
+
+              </div>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 加入我们 -->
+      <div class="e-container">
+        <div class="join section_box" data-anchor-name="join" data-id="section_join">
+          
+            
+            <div class="join_img" >
+              <a href="http://job.efunds.com.cn/" target="_blank">加入我们</a>
+            </div>
+          
+        </div>
+      </div>
+      <!-- 联系我们 -->
+      <div class="row  contact  section_box" data-anchor-name="contact" data-id="contact">
+        <div class="e-container">
+          <div class="contact_box" style="padding: 0px;">
+            
+              <div class="contact_box_title">
+                联系我们
+              </div>
+            
+            <div class="box_s">
+              
+
+                
+                  <div class="lianxi col-xs-6">
+                    <div class="lianxi_s">
+                      <span>服务热线：</span>
+                      <span>400-881-8088</span>
+                    </div>
+                  </div>
+                  <div class="lianxi col-xs-6">
+                    <div class="lianxi_s">
+                      <span>办公地址：</span>
+                      <span> 广东省广州市天河区珠江西路21号52层；广东省广州市天河区珠江东路30号42层；广东省珠海市横琴新区荣粤道188号6层</span>
+                    </div>
+                  </div>
+                  <div class="lianxi col-xs-6">
+                    <div class="lianxi_s">
+                      <span>电子邮箱：</span>
+                      <span> service@efunds.com.cn</span>
+                    </div>
+                  </div>
+                  <div class="lianxi col-xs-6">
+                    <div class="lianxi_s">
+                      <span>邮政编码：</span>
+                      <span> 510627；510623；519031</span>
+                    </div>
+                  </div>
+              
+            </div>
+            
+            
+              
+                <a href="/Html5/lm/gywm/lxwm/" class="lianxi_more">更多联系方式</a>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <div style="display:none">
+    <p>
+      <a href="mailto:efundsJob@efunds.com.cn" style="border-bottom: 2px solid currentColor;">  招聘邮箱：efundsJob@efunds.com.cn  </a>
+    </p>
+    <p>
+      <a href="mailto:efundsService@efunds.com.cn" style="border-bottom: 2px solid currentColor;"> 客服邮箱：efundsService@efunds.com.cn  </a>
+    </p>
+    <p>
+      <a href="mailto:efundsHR@efunds.com.cn" style="border-bottom: 2px solid currentColor;"> 人力资源：efundsHR@efunds.com.cn  </a>
+    </p>
+    <p>
+      <a href="mailto:efundsIT@efunds.com.cn" style="border-bottom: 2px solid currentColor;"> 信息技术支持：efundsIT@efunds.com.cn  </a>
+    </p>
+  </div>
+
+  <!-- 底部 -->
+  
+  
+      
+
+<footer id="footer" class="e-footer noprint grd__element__class">
+  <div class="e-footer__wrapper">
+    <div class="e-footer__container">
+      <div class="e-footer__hard-columns">
+        <div class="ipad-row">
+          <div class="ipad-col-4">
+            <div class="e-footer-icon">
+              <img
+                src="/Html5/assets/images/logo_light.png"
+                title="易方达"
+                alt="易方达"
+              />
+            </div>
+          </div>
+
+          <div class="ipad-col-10">
+            <div class="e-footer-information">
+              <ul>
+                <li>
+                  <div class="e-footer-information__box">
+                    <h3>服务热线:</h3>
+                    <p>400-881-8088</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="e-footer-information__box">
+                    <h3>客服邮箱:</h3>
+                    <p>
+                      <a
+                        href="mailto:service@efunds.com.cn"
+                        style="border-bottom: 2px solid currentColor"
+                      >
+                        service@efunds.com.cn
+                      </a>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div style="color: #a3b5cf">
+                    服务时间：交易日8:30至22:00，非交易日8:30至17:30
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ipad-col-10">
+            <div class="e-footer-promotes">
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img src="/Html5/assets/images/qr-official.jpg" />
+                </div>
+                <p>官方微信公众号</p>
+                <p>易方达基金</p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img src="/Html5/assets/images/qr-service.jpg" />
+                </div>
+                <p>官方微信服务号</p>
+                <p>易方达易服务</p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img src="/Html5/assets/images/wechat-code.jpg" />
+                </div>
+                <p>微信小程序</p>
+                <p>指数直通车</p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img src="/Html5/assets/images/qrcode_xcx.png" />
+                </div>
+                <p>易方达财富 APP</p>
+                <p>e钱包</p>
+              </div>
+              <div class="e-footer-promote">
+                <div class="e-footer-promote__image">
+                  <img src="/Html5/assets/images/qr-code_wechat.png" />
+                </div>
+                <p>易方达财富服务号</p>
+                <p>易方达财富微理财</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="e-footer__bottom">
+      <div class="e-footer__alink">
+        <div class="e-footer__links-container">
+          <ul class="e-footer__links">
+            
+              
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                      <a href="https://www.efunds.com.cn/c/388/388235.shtml" target="_blank"> 投资者须知 </a>
+                    
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                    
+                      <a href="https://www.efunds.com.cn/lm/tzzjy/tzzsdx/"> 投资者适当性 </a>
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                      <a href="https://www.efunds.com.cn/lm/tzzjy/khyszc/" target="_blank"> 客户隐私政策 </a>
+                    
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                      <a href="https://www.efunds.com.cn/c/386/386595.shtml" target="_blank"> 风险揭示书 </a>
+                    
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                    
+                      <a href="https://www.efunds.com.cn/lm/tzzjy/fxqzl/"> 反洗钱专栏 </a>
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                      <a href="https://www.efunds.com.cn/lm/tzzjy/yjclts/" target="_blank"> 应急处理提示 </a>
+                    
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                    
+                      <a href="https://www.efunds.com.cn/lm/grd/xsjgcx/"> 销售机构查询 </a>
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link zzcx_hide">
+                    
+                    
+                      <a href="https://www.efunds.com.cn/lm/gywm/js/wjzs/"> 资质查询与信息公示 </a>
+                    
+                  </li>
+                
+                
+                  
+                  <li class="e-footer__link ">
+                    
+                    
+                      <a href="https://www.efunds.com.cn/lm/grd/wzdt/"> 网站地图 </a>
+                    
+                  </li>
+                
+            
+            
+              <li class="e-footer__link"><a href="/Html5/lm/tdymdlm/ffzqhdffzl/">非法证券活动防范专栏</a></li>
+            
+          </ul>
+          <ul class="e-footer__links">
+            <li class="e-footer__link">
+              <a href="https://www.efundcf.com.cn" target="_blank"> 易方达财富 </a>
+            </li>
+            <li class="e-footer__link">
+              <a href="http://www.efundamc.com.cn" target="_blank"> 易方达资管 </a>
+            </li>
+            <li class="e-footer__link">
+              <a href="http://www.efunds.com.hk/index/index/lsc.html" target="_blank"> 易方达香港 </a>
+            </li>
+            
+              <li class="e-footer__link">
+                <a href="https://www.efundpe.com.cn" target="_blank"> 易方达资本 </a>
+              </li>
+            
+            <li class="e-footer__link">
+              <a href="https://edu.efunds.com.cn/" target="_blank"> 投教基地 </a>
+            </li>
+            <li class="e-footer__link">
+              <a href="https://www.etf.com.cn" target="_blank"> 指数直通车 </a>
+            </li>
+          </ul>
+          <ul class="e-footer__links small">
+            <li class="e-footer__link">
+              <div>
+                易方达基金管理有限公司 版权所有
+              </div>
+            </li>
+            <li class="e-footer__link">
+              <a> 本网站已支持IPv6 </a>
+            </li>
+          </ul>
+          <ul class="e-footer__links small">
+            <li class="e-footer__link">
+              <img src="/Html5/assets/images/beian_logo.png" style="width: calc(32 / 1536 * 100vw);object-fit: contain;vertical-align: text-bottom;" />
+              <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44010602012967" rel="noreferrer" target="_blank"> 粤公网安备44010602012967 </a>
+              <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备05013165号</a>
+            </li>
+          </ul>
+        </div>
+        <div class="e-footer__imageBox">
+          <div>
+            <img
+              src="/Html5/assets/images/copyright_icon_1.png"
+              title="易方达"
+              alt="易方达"
+            />
+          </div>
+          <div>
+            <img
+              src="/Html5/assets/images/copyright_icon_2.png"
+              title="易方达"
+              alt="易方达"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/Html5/js/common/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+   <script type="text/javascript" charset="utf-8" src="https://cdn.efunds.com.cn/eufs/common/sensorsdata.min.js"></script>
+<script charset='UTF-8' src="https://www.efunds.com.cn/js/shencestat.js"></script> 
+</footer>
+
+  
+
+  <script src="/Html5/js/common/bootstrap-3.4.1/js/bootstrap.min.js?5dfed85d"></script>
+  <script src="/Html5/js/about-us-gather.js?21e6c986"></script>
+  <script>
+    var currentCatalogInnerCode = "006169000006";
+
+    // >>> tab 浮动
+    var tabs = document.querySelector('.e-tabs')
+
+    var animating = false
+    new EAffix('.e-tabs__wrapper', window, {
+        onChange: function (status) {
+            if (!animating) {
+                ETabs.updateBarPosition(
+                    tabs.querySelector('.e-tabs__tab.is-active')
+                )
+            }
+        }
+    }, 0)
+    // >>> 锚点
+    var scrollAnchor = useScrollAnchor(
+        '[data-anchor-name]',
+        100,
+        window,
+        function (anchor) {
+            if (anchor && !animating) {
+                var anchorName = anchor.getAttribute('data-anchor-name')
+                var tab = document.querySelector(
+                    '[data-anchor="' + anchorName + '"]'
+                )
+                if (tab) {
+                    ETabs.setActiveTab(tab, true)
+                }
+            }
+        }
+    )
+
+    // 监听 Tab 变动
+    ETabs.onActiveChange(tabs, function (tab) {
+        var anchorName = tab.getAttribute('data-anchor')
+        var anchor = document.querySelector(
+            '[data-anchor-name="' + anchorName + '"]'
+        )
+        if (anchor) {
+            animating = true
+            frameScrollTo(anchor, {
+                duration: 400,
+                global: true,
+                onDone: function () {
+                    animating = false
+                }
+            })
+        }
+    })
+
+    //资质查询只在关于我们子栏目页面显示
+    var alias = 'gywm'
+    if(alias == 'jgd-sy_gywm' || alias =='gywm'){
+        $('.zzcx_hide').removeClass('zzcx_hide');
+    }
+  </script>
+
+
+<script src="https://api.efunds.com.cn/xcowch/stat/front/stat.js" type="text/javascript"></script>
+<script>
+if(window._zcms_stat)_zcms_stat("SiteID=1&CatalogInnerCode=006169000006&Type=null&Dest=https://api.efunds.com.cn/xcowch/front/stat/dealer");
+</script>
+
+<!-- CostTime=145,PublishDate=2026-09-07 08:55:04 -->
+</body>
+
+</html>

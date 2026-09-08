@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>大成基金管理有限公司</title>
+<link rel="shortcut icon" href="/ws/images/favicon.ico">
+
+<link rel="stylesheet" href="/ws/css/swiper.min.css">
+<link rel="stylesheet" href="/ws/css/style.css">
+<link rel="stylesheet" href="/ws/css/scrollBar.css">
+<script type="text/javascript" src="/ws/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/ws/js/jquery-migrate-3.3.2.min.js"></script>
+<script type="text/javascript"  src="/ws/js/swiper.min.js"></script>
+<script type="text/javascript"  src="/ws/js/scrollBar.js"></script>
+<script type="text/javascript" src="/ws/js/jquery.SuperSlide.2.1.3.js"></script>
+<script src="/ws/js/sensorsdata.min.js"></script>
+<script type="text/javascript">
+	var sensors = window['sensorsDataAnalytic201505'];
+	sensors.init({
+  		server_url: 'https://appsensors.dcfund.com.cn:4430/sa?project=default',// 数据接收地址
+		is_track_single_page:true, // 单页面配置，默认开启，若页面中有锚点设计，需要将该配置删除，否则触发锚点会多触发 $pageview 事件
+		use_client_time:true, 
+  		send_type:'beacon',
+		heatmap: {
+			//是否开启点击图，default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭。
+			clickmap:'not_collect',
+			//是否开启触达图，not_collect 表示关闭，不会自动采集 $WebStay 事件，可以设置 'default' 表示开启。
+			scroll_notice_map:'not_collect'
+		}   
+	});
+	// 注册公共属性
+	sensors.registerPage({
+		platform_name: "大成基金",
+		data_source: "web"
+	});
+	sensors.quick('autoTrack');
+</script>
+<script type="text/javascript" src="/plugins/layer/scripts/laydate.js"></script>
+</head>
+<body>
+<!--引入头部模板 start-->
+<div id="headerContent">
+<div  id="main_include_header">
+		<div id="home_head" class="header home_header animate">
+			<div class="header_top animate">
+				<div class="header_topwrap clearfix">
+					<div class="left fl">
+						<a href="https://www.dcfund.com.hk/cn/" target="_blank" class="animate" style="display:none;"><em class="animate"></em>大成国际</a>
+						<a href="http://www.dcicm.com.cn/" class="animate" target='_blank' style="display:none;"><em class="animate"></em>大成创新资本</a>
+						<span>400-888-5558</span>
+					</div>
+					<div class="right fr">
+						<!--<a href="https://www.dcfund.com.cn/dcjj" class="animate" target='_blank'><i class="animate"></i>返回旧版官网</a>-->
+						<a href="https://etrading.dcfund.com.cn/#/" class="animate" target='_blank'><i class="animate"></i>登录/开户</a>
+						<a href="/main/customerservice/servicehall/index.shtml" class="animate"><i class="animate" target='_blank'></i>自助服务</a>
+						<!--<a href="javascript:void(0);" class="animate"><i class="animate" target='_blank'></i>手机理财</a>-->
+						<!--<a href="javascript:void(0);" class="animate"><i class="animate" target='_blank'></i>站点地图</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="header_cont animate  clearfix">
+				<div class="logo"><a class="animate" href="javascript:void(0);"></a></div>
+				<div class="header_search fl">
+					<div class="top_search_wrap">
+						<div class="top_search_select" style="display: none;">
+							<div class="value" style="display: none;"><span>产品</span><i class="arrow"></i></div>
+							<div class="sc_layer" style="display: none;">
+								<a class="active" href="javascript:void(0);">产品</a>
+								<a href="javascript:void(0);">资讯</a>
+								<a href="javascript:void(0);">公告</a>
+								<a href="javascript:void(0);">经理</a>
+							</div>
+						</div>
+						<div class="top_search">
+							<input class="t1" type="text" id="head_key_word" placeholder="请输入关键词" />
+							<a class="btn" id="head_search" href="javascript:void(0);"><i></i></a>
+							<div class="query_ly01" style="display: none;">
+								<ul>
+									<li>111111</li>
+									<li>22222</li>
+									<li>33333</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_login fr">
+					<a target="_blank" href="https://etrading.dcfund.com.cn/#/" class="btn animate"><i></i>登录</a>
+				</div>
+				<div class="header_w_link fr">
+					<a target="_blank" href="https://etrading.dcfund.com.cn/etrading/fromSite.action?business=trade" class="btn animate">交易<i class="arrow"></i></a>
+					<div class="header_w_layer">
+						<a target="_blank" href="https://etrading.dcfund.com.cn/#/fund-company-sso?redirect=%2Fhome">账户资产</a>
+						<a target="_blank" href="https://etrading.dcfund.com.cn/#/fund-company-sso?redirect=%2Fcurrencyfund%2Fcurrencycharge">充值钱柜</a>
+						<a target="_blank" href="https://etrading.dcfund.com.cn/#/fund-company-sso?redirect=%2Fgfund%2Fglist">基金定投</a>
+						<a target="_blank" href="https://etrading.dcfund.com.cn/#/fund-company-sso?redirect=%2Ftraderecord">交易记录</a>
+						<a target="_blank" href="https://etrading.dcfund.com.cn/#/fund-company-sso?redirect=%2FacctManager%3FactiveIndex%3D4-1">银行卡</a>
+					</div>
+				</div>
+				<div class="header_nav fr">
+										<ul class="nav_list clearfix">
+					<!--一级-->
+						<li route="2|3"><a class="animate"   href="/main/home/index.shtml">首页<i class="animate"></i></a>
+						<li route="2|5"><a class="animate"   href="/main/fund/index.shtml">旗下基金<i class="animate"></i></a>
+						<div class="nav_subbox">
+							<ul class="nav_sublist">
+								<!--二级-->
+								<li route="2|5|122"><a  href="/main/fund/index.shtml?jjlx=%E8%82%A1%E7%A5%A8%E5%9E%8B">股票型</a></li>
+								<li route="2|5|123"><a  href="/main/fund/index.shtml?jjlx=%E6%B7%B7%E5%90%88%E5%9E%8B">混合型</a></li>
+								<li route="2|5|124"><a  href="/main/fund/index.shtml?jjlx=%E8%B4%A7%E5%B8%81%E5%9E%8B">货币型</a></li>
+								<li route="2|5|125"><a  href="/main/fund/index.shtml?jjlx=%E5%80%BA%E5%88%B8%E5%9E%8B">债券型</a></li>
+								<li route="2|5|126"><a  href="/main/fund/index.shtml?jjlx=%E6%8C%87%E6%95%B0%E5%9E%8B">指数型</a></li>
+								<li route="2|5|127"><a  href="/main/fund/index.shtml?jjlx=QDII">QDII</a></li>
+							</ul>
+						</div>
+						<li route="2|6"><a class="animate"   href="/main/financial/index.shtml">稳健理财<i class="animate"></i></a>
+						<div class="nav_subbox">
+							<ul class="nav_sublist">
+								<!--二级-->
+								<li route="2|6|128"><a  href="/main/fund/productdetail/index.shtml?product_code=008686">7天</a></li>
+								<li route="2|6|129"><a  href="/main/fund/productdetail/index.shtml?product_code=090021">30天</a></li>
+								<li route="2|6|130"><a  href="/main/fund/productdetail/index.shtml?product_code=013790">60天</a></li>
+								<li route="2|6|131"><a  href="/main/fund/productdetail/index.shtml?product_code=013399">90天</a></li>
+							</ul>
+						</div>
+						<li route="2|7"><a class="animate"   href="/main/pensions/index.shtml">养老投资<i class="animate"></i></a>
+						<li route="2|10"><a class="animate"   href="/main/aboutus/companyintro/companyprofile/index.shtml">关于大成<i class="animate"></i></a>
+						<div class="nav_subbox">
+							<ul class="nav_sublist">
+								<!--二级-->
+								<li route="2|10|48"><a  href="/main/aboutus/companyintro/companyprofile/index.shtml">公司介绍</a></li>
+								<li route="2|10|49"><a  href="/main/aboutus/investmentresearch/index.shtml">投研能力</a></li>
+								<li route="2|10|50"><a  href="/main/aboutus/information/index.shtml">信息披露</a></li>
+								<li route="2|10|52"><a  href="/main/aboutus/sustainable/index.shtml">可持续投资</a></li>
+								<li route="2|10|51"><a  href="/main/aboutus/publicwelfare/index.shtml">大成公益</a></li>
+								<li route="2|10|113"><a  href="https://dachengjj.zhiye.com/">加入我们</a></li>
+								<li route="2|10|53"><a  href="/main/aboutus/contactus/index.shtml">联系我们</a></li>
+							</ul>
+						</div>
+						<li route="2|9"><a class="animate"   href="/main/customerservice/servicehall/index.shtml">客户服务<i class="animate"></i></a>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+<!--引入头部模板 end-->    
+<div class="section" id="main_article_article">
+	<div class="local_address">
+		        <div class="wrapfix">
+            当前位置：<a href="/main/home/index.shtml">大成基金</a><em>></em><a  href="/main/aboutus/companyintro/companyprofile/index.shtml" >关于大成</a><em>></em><a  href="/main/aboutus/companyintro/companyprofile/index.shtml" >公司介绍</a><em>></em><span>公司简介</span>
+        </div>
+
+	</div>
+	<div class="page_cont">
+		<div class="wrapfix">
+			<div class="pg_banner">
+				<div class="window"><img src="/ws/images/pg_banner09.png" /></div>
+				<a style="display:none;" class="play_btn01" href="javascript:void(0);"></a>
+			</div>
+			<div class="pro_tabwrap mt10">
+				<ul class="pro_tabnav">
+										<li  class="act" ><a   href="/main/aboutus/companyintro/companyprofile/index.shtml">公司简介</a></li>
+					<li ><a   href="/main/aboutus/companyintro/memorabilia/index.shtml">公司大事记</a></li>
+					<li ><a   href="/main/aboutus/companyintro/companyhonors/index.shtml">公司荣誉</a></li>
+					<li ><a   href="/main/aboutus/companyintro/scopebusiness/index.shtml">业务范围</a></li>
+					<li ><a   href="/main/aboutus/companyintro/corporateculture/index.shtml">企业文化</a></li>
+
+				</ul>
+			</div>
+			<div class="pro_tabcont">
+				
+											<div class="pro_tabcont"><div class="fm_cm_module"><div class="fund_pgtit"><h3>大成基金概况</h3></div><div class="cp_modbox01 clearfix"><div class="row_01"><div class="cp_intro_txt"><p>大成基金管理有限公司成立于1999年</p><p>注册资本2亿元人民币</p><p>是中国首批“老十家”基金公司之一</p><p>总部位于广东深圳</p></div></div><div class="row_02"><ul class="cp_intro_list list-paddingleft-2"><li><img src="/ws/images/cp_intro_ic01.png"/><p>历经20余年稳健发展，大成基金形成了以长期投资能力为核心的竞争优势，全面覆盖各类投资领域，综合实力不断提升。截至2025年底，公司管理资产总规模超过7000亿元，其中管理公募资产规模超4600亿元。</p></li><li><img src="/ws/images/cp_intro_ic02.png"/><p>公司业务资质齐全，全面覆盖公募基金、机构投资、海外投资、财富管理、养老金管理等业务。</p></li><li><img src="/ws/images/cp_intro_ic03.png"/><p>公司投研实力雄厚，投资业绩长期优异。2025年，公司荣膺“金牛基金管理公司”大奖，并荣获“主动权益投资金牛基金公司”、“长期回报金牛奖”2项公司级金牛奖及5项产品金牛奖。近三年累获12项金牛奖、4项金基金奖、2项明星基金奖和1项晨星提名奖。</p></li><li><img src="/ws/images/cp_intro_ic04.png"/><p>截至2025年底，公司累计服务客户总数超5000万人。</p></li></ul></div></div></div><div class="fm_cm_module"><div class="fund_pgtit"><h3>完善的公司治理</h3></div><div class="cp_modbox02 clearfix"><div class="pic"><img src="/ws/images/cp_img01.png"/></div><div class="cont"><ul class="cp_zllist list-paddingleft-2"><li><span class="tit">底蕴深厚</span><p>1999年成立，首批获准设立的“老十家”基金公司</p></li><li><span class="tit">股权稳定</span><p>9年内股东结构未发生重大变化</p></li><li><span class="tit">运作规范</span><p>“三会一层”架构健全，职责明确</p></li></ul></div></div></div><div class="fm_cm_module"><div class="fund_pgtit"><h3>多元的产品矩阵</h3></div><div class="detail_txt"><img src="/ws/images/cp_img03.png"/></div></div><div class="fm_cm_module"><div class="fund_pgtit"><h3>部分合作机构</h3></div><ul class="cp_hzlist clearfix list-paddingleft-2"><li><a class="item" target="_blank" href="https://www.abchina.com/cn/"><img src="/ws/images/dc_hz_logo20.png"/></a></li><li><a class="item" target="_blank" href="https://www.boc.cn/"><img src="/ws/images/dc_hz_logo02.png"/></a></li><li><a class="item" target="_blank" href="http://www.icbc.com.cn/"><img src="/ws/images/dc_hz_logo01.png"/></a></li><li><a class="item" target="_blank" href="http://www.bankcomm.com/BankCommSite/default.shtml"><img src="/ws/images/dc_hz_logo19.png"/></a></li><li><a class="item" target="_blank" href="https://www.psbc.com/cn/"><img src="/ws/images/dc_hz_logo23.png"/></a></li><li><a class="item" target="_blank" href="http://cmbchina.com/"><img src="/ws/images/dc_hz_logo03.png"/></a></li><li><a class="item" target="_blank" href="http://www.cebbank.com/"><img src="/ws/images/dc_hz_logo13.png"/></a></li><li><a class="item" target="_blank" href="https://www.htsc.com.cn/"><img src="/ws/images/dc_hz_logo07.png"/></a></li><li><a class="item" target="_blank" href="http://www.citics.com/newsite/"><img src="/ws/images/dc_hz_logo24.png"/></a></li><li><a class="item" target="_blank" href="https://www.gf.com.cn/"><img src="/ws/images/dc_hz_logo15.png"/></a></li><li><a class="item" target="_blank" href="https://www.csc108.com/"><img src="/ws/images/dc_hz_logo04.png"/></a></li><li><a class="item" target="_blank" href="https://www.cmschina.com/index.html"><img src="/ws/images/dc_hz_logo05.png"/></a></li><li><a class="item" target="_blank" href="http://www.ebscn.com/index/"><img src="/ws/images/dc_hz_logo14.png"/></a></li><li><a class="item" target="_blank" href="https://www.hx168.com.cn/main/index/index.shtml"><img src="/ws/images/dc_hz_logo16.png"/></a></li><li><a class="item" target="_blank" href="https://www.antgroup.com/"><img src="/ws/images/dc_hz_logo12.png"/></a></li><li><a class="item" target="_blank" href="https://fund.eastmoney.com/"><img src="/ws/images/dc_hz_logo10.png"/></a></li><li><a class="item" target="_blank" href="https://www.tencentwm.com/"><img src="/ws/images/dc_hz_logo09.png"/></a></li><li><a class="item" target="_blank" href="https://danjuanfunds.com/"><img src="/ws/images/dc_hz_logo22.png"/></a></li><li><a class="item" target="_blank" href="https://www.jiyufund.com.cn/"><img src="/ws/images/dc_hz_logo18.png"/></a></li><li><a class="item" target="_blank" href="https://yingmi.com/"><img src="/ws/images/dc_hz_logo06.png"/></a></li><li><a class="item" target="_blank" href="https://www.hcfunds.com/"><img src="/ws/images/dc_hz_logo17.png"/></a></li></ul></div></div>
+
+				
+			</div>
+		</div>
+			</div>
+</div>
+<!--底部模块start-->
+<div class="footer_wrap" id="main_include_footer">
+	<div class="footer">
+		<div class="right qr-code">
+		   <div class="qr-code-list">
+						<div class="qr-code-item left">
+				<div class="qr-code-head">
+					<img src="/ws/images/foot_ic01.png" alt="">大成APP
+				</div>
+					<div class="qr-code-cont">
+						<img src="/plat_files/upload/png_upload/20260116/202601161768545220021.png" alt="">
+					</div>
+				</div>
+			<div class="qr-code-item left">
+				<div class="qr-code-head">
+					<img src="/ws/images/foot_ic01.png" alt="">官方微信
+				</div>
+					<div class="qr-code-cont">
+						<img src="/plat_files/upload/png_upload/20221103/202211031667441458761.jpg" alt="">
+					</div>
+				</div>
+			<div class="qr-code-item left">
+				<div class="qr-code-head">
+					<img src="/ws/images/foot_ic01.png" alt="">大成小爱-抖音
+				</div>
+					<div class="qr-code-cont">
+						<img src="/plat_files/upload/png_upload/20240927/202409271727417545052.png" alt="">
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		<div class="footer-nav">
+			<div class="footer-item right">
+				<div class="footer-title">客服热线：</div>
+				<div class="footer-tel">400-888-5558</div>
+				<div class="work-desc">
+					<span>周一至周五8:30-17:00 (法定节假日除外)</span>
+					<span>客服邮箱：callcenter@dcfund.com.cn</span>
+				</div>
+			</div>
+			<div class="footer-item left">
+				<p class="footer-title">快捷服务通道</p>
+								<ul class="footer-list">
+					<li>
+						<a href="/main/home/personnel/bondtraders/index.shtml">
+						人员公示
+						</a>
+					</li>    	                    
+					<li>
+						<a href="/main/customerservice/servicehall/index.shtml">
+						常见问题
+						</a>
+					</li>    	                    
+					<li>
+						<a href="/main/customerservice/servicehall/businessguide/accountopening/index.shtml">
+						业务指南
+						</a>
+					</li>    	                    
+				</ul>
+				<ul class="footer-list">
+					<li>
+						<a href="/main/home/privacy/privacyterms/index.shtml">
+						隐私条款
+						</a>
+					</li>    	                    
+					<li>
+						<a href="/main/customerservice/servicehall/download/index.shtml">
+						下载表格
+						</a>
+					</li>    	                    
+					<li>
+						<a href="/main/home/investoreduc/aml/index.shtml">
+						反洗钱专栏
+						</a>
+					</li>    	                    
+				</ul>
+				<ul class="footer-list">
+					<li>
+						<a href="/main/home/privacy/disclaimers/index.shtml">
+						免责声明
+						</a>
+					</li>    	                    
+					<li>
+						<a href="/main/aboutus/contactus/index.shtml">
+						联系客服
+						</a>
+					</li>    	                    
+					<li>
+						<a href="/main/home/investoreduc/noticetoInvestors/index.shtml">
+						投资者教育
+						</a>
+					</li>    	                    
+				</ul>
+				<ul class="footer-list">
+					<li>
+						<a href="/main/home/privacy/riskstatement/index.shtml">
+						风险提示
+						</a>
+					</li>    	                    
+					<li>
+						<a href="/main/fast/bqxx/index.shtml"  target="_blank">
+						补券信息查询
+						</a>
+					</li>    	                    
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom-bg">
+		<div class="footer-bottom">
+			<div class="footer-bot-nav">
+				 <a href="/main/home/privacy/disclaimers/index.shtml">
+			 免责声明
+			 </a>  	   
+			 <a href="/main/home/privacy/riskstatement/index.shtml">
+			 风险提示
+			 </a>  	   
+			 <a href="/main/home/privacy/privacyterms/index.shtml">
+			 隐私条款
+			 </a>  	   
+	
+			</div>
+			<div class="jsfund_cofig">
+				<span>大成基金管理有限公司 版权所有</span>
+				<span class="ipv6_span">IPv6</span>
+				<span title="公司地址：广东省深圳市南山区海德三道1236号大成基金总部大厦5层、27-33层">公司地址：广东省深圳市南山区海德三道1236号大成基金总部大厦5层、27-33层</span>
+				
+				<span><img src="/ws/images/ts_01.png" style="width: 25px;height: 25px;"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502010408" target="_blank">粤公网安备44030502010408号</a></span>
+				<span><img src="/ws/images/ts_02.png" style="width: 25px;height: 25px;"/><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">粤ICP备06012659号</a></span>
+			</div>
+		</div>
+	</div>
+	
+	<!--特殊代码块配置start-->	
+								 <input    id="_etf_special_newsjs"  value="511691|516611|560520"   style="display:none">  </input> 	   
+						 <input    id="_specFeeFw"  value=""   style="display:none">  </input> 	   
+						 <input    id="_specFeeGl"  value="017282|022973|022927"   style="display:none">  </input> 	   
+						 <input    id="_etf_special_dxjg"  value="159923"   style="display:none">  </input> 	   
+						 <input    id="_etf_fund_multi_market_cashlist"  value="159923_A59923"   style="display:none">  </input> 	   
+						 <input    id="_wddtprod"  value="000834|yieldrate3y|近三年收益,519300|yieldrate|成立以来,090010|yieldrate|成立以来"   style="display:none">  </input> 	   
+						 <input    id="_etf_fund_shenzhen"  value="159513|159642|159980|159740|159906|159923|159932|159943|159833|159595|159542|159303|A59923|159358|159395|159216|159235|159242|159298|159113|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_etf_fund_shanghai"  value="515520|516610|510440|560520|511690|516611"   style="display:none">  </input> 	   
+						 <input    id="_yjbc"  value="019363"   style="display:none">  </input> 	   
+						 <input    id="_marketdes"  value="159833"   style="display:none">  </input> 	   
+						 <input    id="_etf_f_cash_list"  value="515521|516611|560520|511691"   style="display:none">  </input> 	   
+						 <input    id="_etf_buyratio_list"  value="159513|159642|159980|159740|159906|159943|159932|159923|159595|159542|159303|A59923|159358|159395|159216|159235|159242|159298|159113|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_etf_cash_list"  value="159513|159642|159980|159740|159906|159943|159932|159923|159595|159542|159303|A59923|159358|159395|159216|159235|159242|159298|159113|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_etf_marketno_list"  value="159642|159595|159542|A59923|159358|159235|159113|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_etf_yj_rate_list"  value="515521|516611|560520|511691"   style="display:none">  </input> 	   
+						 <input    id="_etf_recordnum_list"  value="159642|159595|159542|159303|A59923|159358|159235|159113|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_etf_gold_list"  value="511691|515521|510441|516611|560520"   style="display:none">  </input> 	   
+						 <input    id="_etf_daily_list"  value="159513|159642|159980|159740|159906|159923|159932|159943|159833|159595|159542|159303|A59923|159358|159395|159216|159235|159242|159298|159113|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_specFee"  value="017282|022973|022927"   style="display:none">  </input> 	   
+						 <input    id="_bqxx"  value="516610|159642|159595|560520|159542|159358|159235|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_etfssqd"  value="159513|159906|159923|159943|515520|159642|511690|159980|516610|159740|159833|159932|510440|159595|560520|159542|159303|A59923|159358|159395|159216|159235|159242|159298|159113|159155|159013|159027|159048|159045|159059|159058"   style="display:none">  </input> 	   
+						 <input    id="_hundredFund"  value="511690"   style="display:none">  </input> 	   
+						 <input    id="_millionFund"  value="519898|519899"   style="display:none">  </input> 	   
+						 <input    id="_product_code"  value="000726"   style="display:none">  </input> 	   
+	
+<!--特殊代码块配置end-->		
+	
+</div>
+<!--底部模块end-->
+<!-- 浮动按钮  start-->
+<!-- 浮动按钮  -->
+<div class="float_link">
+	<ul>
+		<li class="s1">
+			<a class="f_code_link" href="javascript:void(0);"><i></i></a>
+			<div class="f_code_ly">
+				<div class="pic"><img src="/ws/images/float_codeimg.png" /></div>
+				<p>扫码下载APP</p>
+			</div>
+		</li>
+		<li>
+			<a class="f_online_cs" href="http://aics.dcfund.com.cn:8082/OnlineCustomer_DCJJ/?code=DC"><i></i></a>
+		</li>
+		<li>
+			<a style="display: none;" id="back-top" class="f_top_back" href="javascript:void(0);"><i></i></a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+	$(".f_online_cs").click(function(){
+		sensors.track('online_service', {
+			source_page:window.location.href
+		});
+	});
+</script>
+<!-- 浮动按钮  end--> 
+<script type="text/javascript">
+    //定义头部滚动方法
+    $.fn.headFun = function(){
+        if($(window).scrollTop()>50){
+            $('.header').addClass('inner');
+        }else{
+            $('.header').removeClass('inner');
+        }
+        if($(window).scrollTop()>400){
+            $('.header').addClass('fixed');
+        }else{
+            $('.header').removeClass('fixed');
+        }
+    }
+    $(document).ready(function(){    
+        
+        $.fn.headFun(); 
+        
+        $(window).scroll(function(){
+            $.fn.headFun(); 
+        });
+        
+        $(window).bind("scroll",function(){
+            var top_H = ($(window).height())/2;
+            
+            /*返回顶部按钮显示隐藏*/
+            if($(window).scrollTop()>= top_H){
+                $("#back-top").fadeIn();
+            }else {
+                $("#back-top").fadeOut();
+            }
+        
+        });
+        
+        /*返回顶部*/
+        $("#back-top").click(function() {
+             $('body,html').animate({
+                 scrollTop: '0'
+             }, 800);
+             return false; //防止默认事件行为
+         })
+        
+        /*h5导航*/
+        $(".h5_icon_nav").click(function(){
+            $(".nav_pagelayer").fadeIn(300);
+            $("html").css({"overflow": "hidden"})
+        })
+        $(".h5_icon_close").click(function(){
+            $(".nav_pagelayer").fadeOut(300);
+            $("html").css({"overflow": "auto"})
+            
+        })
+    })
+
+</script>
+<script>
+    //项目主体页面 pageCode:页面路径编码,jsonParam:参数，isLoad:是否每次都加载
+    var _defaultPage = {
+        "pageCode": "main/article/article",
+        "jsonParam": {"catalog_id":55,"page_code":"main/article/article"},
+        "isLoad": false
+    };
+</script>
+<input type="hidden" id="_route" value="2|10|48|55"/>
+
+<script type="text/javascript" src="/ws/scripts/version.js"></script>
+<script type="text/javascript" src="/ws/scripts/thinkiveJs.min.js"></script>                
+</body>
+</html>

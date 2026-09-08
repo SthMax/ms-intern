@@ -1,0 +1,145 @@
+{
+  "link_id": "WX-002",
+  "related_source": "FUND-356",
+  "relationship": "registered_original",
+  "expected_title": "中欧基金窦玉明：AI赋能时代，“三化”协同夯实长期业绩根基",
+  "requested_url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+  "retrieved_at": "2026-09-07T06:32:33.187524+00:00",
+  "skill_sha256": "a81e3ac15b7a5b5e48a846b3ccf16fb260aaaec782205d2ce37d49eb24f4b50f",
+  "method": "Installed WeChatArticlePipeline.fetch_html; ordinary HTTP GET with skill defaults",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+  "content_type": "text/html; charset=UTF-8, text/html; charset=UTF-8",
+  "sha256": "80a2c87d8e3aab777487d963d9c1a0bd627c86f4e5543ee58b5e6fab7673d28c",
+  "byte_count": 3367799,
+  "extracted_title": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+  "article_characters": 5297,
+  "redirects": [],
+  "status": "retrieved",
+  "bundle": "knowledge-base/sources/wechat-articles/WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+  "markdown": "knowledge-base/sources/wechat-articles/WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基/中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基.md",
+  "image_count": 9,
+  "format_summary": {
+    "removed_duplicate_headings": 1,
+    "normalized_heading_levels": 0,
+    "fixed_invalid_links": 0,
+    "removed_missing_images": [],
+    "removed_noise_lines": 1,
+    "trimmed_blank_lines": 0
+  },
+  "title": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+  "account": "中欧基金",
+  "author": null,
+  "published": "2026-06-01T19:05:21+08:00",
+  "published_source": "raw HTML var ct epoch, converted to Asia/Shanghai; #publish_time is empty until JS renders",
+  "account_id": "gh_4edea9cfc977",
+  "body_selector": "#js_content",
+  "raw_file": "raw-source.html",
+  "cleaned_html_file": "source.html",
+  "markdown_file": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基.md",
+  "provenance_strings": [
+    "内容转载自：中国基金报"
+  ],
+  "text_check": {
+    "full_text_equal_after_whitespace_and_markdown_normalization": true,
+    "source_characters": 5292,
+    "markdown_characters": 5292,
+    "missing_paragraphs": []
+  },
+  "images": [
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/pIVDu9S5SnOepscLWDu5ewOR3aguvEgvsoszA9KMziau4mH4mD9Ug8HJxLCVEKBTibnboSAjibKTIBCPBHLIP4qb2gzNHAWX6cgcA5HaUmtPX0/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_01.png",
+      "role": "inline",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 678,
+      "height": 461,
+      "sha256": "4bf6980490b1a69bc91821255d089381b0ca00a104599b8359bb14f1356427be"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/pIVDu9S5SnOIGq9picXlhmgIZLZZoIxK8rBBWWiasCNyWEzlnEzktTYLgAelyz9qNPCJtozvh06uEpXRbibbzj0vbpQFyUbxAHPial53tTNtvZE/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_02.png",
+      "role": "inline",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 977,
+      "height": 214,
+      "sha256": "887b19e6abf3a5bff17554eca1737e4ee3f2d83744b26f17e2199f06fcf56d0d"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/pIVDu9S5SnOXJAhBXOozw4WoM1YeKpMDAyBGG3EFiateNHQEpZtJFicR0zzx8jNKQvQsplVoxsInALsBzOr4dXu1gSicUr3oBUibomL0hJEcG6o/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_03.png",
+      "role": "inline",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 1080,
+      "height": 212,
+      "sha256": "89fffb46c6ba64aa285aa69c828c70574c81ab823dc86a0f13c4d5d7408f008f"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_gif/pIVDu9S5SnNm3px1YBmFBkqbktcBQoxAqhmicXB4GHdTrFuOSQXhiaabSicCVcIgT7DGMeErPe4Sia0dwhd8qMXXSneyqA8VkJU3Vo3iabraQP8o/640?wx_fmt=gif&from=appmsg",
+      "local_file": "image_04.gif",
+      "role": "inline",
+      "downloaded": true,
+      "format": "GIF",
+      "width": 300,
+      "height": 222,
+      "sha256": "109ad95499032d3d9d8a1868b410f31bcb1be74a64f859dcc7c3f11783f9f98c"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/pIVDu9S5SnPvIpJneAQjrgj9aaSQicpAx2btPHricZIfeng32lyNOBkzDW2IeR11ZpFaZkicHrdDk51z7WSII8kibYNaCo2QWhkdecuWBAjhuno/640?wx_fmt=jpeg&from=appmsg",
+      "local_file": "image_05.jpg",
+      "role": "inline",
+      "downloaded": true,
+      "format": "JPEG",
+      "width": 1080,
+      "height": 440,
+      "sha256": "2885390210a22c8d3248ffc1fe74c49b804c7ba46d2a9bbfadd250f088e8f7bc"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/pIVDu9S5SnMrCiaIRIXYoWg1R8Lwr5FkYMjF8J5AyiclF4QJGRevQ7CtFic8LyaEJU3j1AP6HnfUHAnv16xXxgyWTM5icRgoLgCoAusVp6kraUA/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_06.png",
+      "role": "background",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 1080,
+      "height": 608,
+      "sha256": "f6efacb4b58f9ccde1feb0f22b630b2b8b5590d75dafcdeeba2dd971c50ec908"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/pIVDu9S5SnOrfspBmUQia3RS79Fdgq3Cdy6bN3T4IoAPxUicbz29gx1jganSEKicdTjlhuyfB2tiapBqianQjU6kaxJQic5QroOy4icA6sDJAB1ldo/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_07.png",
+      "role": "background",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 1080,
+      "height": 608,
+      "sha256": "f6efacb4b58f9ccde1feb0f22b630b2b8b5590d75dafcdeeba2dd971c50ec908"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/pIVDu9S5SnN6kibG8VtCp6yiaq5ezt6cbiaicNKxAfDK1S26ljQicibt3DkuzopsUSIlakPTuTrGkJ9EyAWlAd5a1HOlWGTTId3ZmoUlM529esjzE/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_08.png",
+      "role": "background",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 1080,
+      "height": 608,
+      "sha256": "f6efacb4b58f9ccde1feb0f22b630b2b8b5590d75dafcdeeba2dd971c50ec908"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/pIVDu9S5SnPABhZmZz7I3fNwWC3Exm6nvATFncDGia9nibUGdMn3y4mPsZMjBJibSibJhH7ucJPRL0NDqibHvPo9PYT8GN6sTX8teXmibgkibzSEHw/640?wx_fmt=png&from=appmsg",
+      "local_file": "image_09.png",
+      "role": "background",
+      "downloaded": true,
+      "format": "PNG",
+      "width": 1080,
+      "height": 608,
+      "sha256": "f6efacb4b58f9ccde1feb0f22b630b2b8b5590d75dafcdeeba2dd971c50ec908"
+    }
+  ],
+  "svg_count": 13,
+  "svg_text_characters": 0,
+  "limits": "Original-language body text comparison only; SVG/animations retained in HTML but not reproduced in Markdown; human review pending; source disclosure is not measured deployment verification."
+}

@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="force-rendering" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="author" content="&#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;">
+    <meta name="keywords" content="AI&#x667A;&#x80FD;&#x4F53;&#x843D;&#x5730;&#xFF01;&#x6C47;&#x6DFB;&#x5BCC;&#x76F4;&#x9500;&#x5E73;&#x53F0;&#x7387;&#x5148;&#x63A5;&#x5165;DeepSeek">
+    <meta name="description" content="&#x6570;&#x5B57;&#x5316;&#x6D6A;&#x6F6E;&#x4E4B;&#x4E0B;&#xFF0C;&#x91D1;&#x878D;&#x9886;&#x57DF;&#x6B63;&#x4E0D;&#x65AD;&#x89C1;&#x8BC1;&#x7740;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x4E0E;&#x4E1A;&#x52A1;&#x6DF1;&#x5EA6;&#x878D;&#x5408;&#x6240;&#x5E26;&#x6765;&#x7684;&#x521B;&#x65B0;&#x4E0E;&#x7A81;&#x7834;&#x3002;&#x7EE7;&#x6B64;&#x524D;&#x7387;&#x5148;&#x5B9E;&#x73B0;DeepSeek&#x7684;&#x672C;&#x5730;&#x5316;&#x90E8;&#x7F72;&#x4E4B;&#x540E;&#xFF0C;&#x6C47;&#x6DFB;&#x5BCC;&#x57FA;&#x91D1;&#x4ECA;&#x65E5;&#x53C8;&#x6210;&#x529F;&#x4E0A;&#x7EBF;&#x201C;DeepSeekin&#x73B0;&#x91D1;&#x5B9D;&#x201D;&#x670D;&#x52A1;&#x3002;&#x5229;&#x7528;DeepSeekR1&#x5927;&#x6A21;&#x578B;&#x5F3A;&#x5927;&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x548C;&#x63A8;&#x7406;&#x80FD;&#x529B;&#xFF0C;&#x6C47;&#x6DFB;&#x5BCC;&#x7387;&#x5148;&#x5B9E;&#x73B0;&#x4E86;AIAgent&#x667A;&#x80FD;&#x4F53;&#x7684;&#x843D;&#x5730;&#xFF0C;&#x5728;&#x8FDB;&#x4E00;&#x6B65;&#x63A8;&#x52A8;&#x81EA;">
+    <title>AI&#x667A;&#x80FD;&#x4F53;&#x843D;&#x5730;&#xFF01;&#x6C47;&#x6DFB;&#x5BCC;&#x76F4;&#x9500;&#x5E73;&#x53F0;&#x7387;&#x5148;&#x63A5;&#x5165;DeepSeek &#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;</title>
+    <link href="/lib/element-ui/index.css" rel="stylesheet" />
+    <link href="/css/v4/layout.min.css?v=P3HD1GKBxiP6iedtYNWjE_oN1wBTr7L9ZLqiJ7B8ZhA" rel="stylesheet" />
+    <link href="/css/gray.min.css" rel="stylesheet" />
+    <link href="//cdn.chnfund.com/s/iconfont/font_5114877_odik0oqmiq.css" rel="stylesheet" />
+
+
+    <script type="text/javascript">
+        window.$cf = { cdn: 'https://cdn.chnfund.com' }
+    </script>
+    <script src="/lib/core-js/3.38.1/core-js.min.js?v=hjcPNNioB449BRZzXqlLrcK3dS0TXIEuGe79zpna4i0"></script>
+    <script src="/lib/jquery/dist/jquery.min.js?0.1&amp;v=_JqT3SQfawRcv_BIHPThkBvs0OEvtFFmqPF_lYI_Cxo"></script>
+    <!-- Import Vue 2 -->
+    <script src="/lib/vue/vue.min.js?v=PB1LDFSejenUqbr7EqtwtqGsdH0HKTuYxbJbZjKZmv0"></script>
+    <script src="/lib/element-ui/index.js?v=idPFXo-gPxd7HMOCSu3nyUss5BQ_ajD1TruW4g60K8I"></script>
+    <script src="/lib/axios/axios.min.js?v=nec3W3r9OG4DeHKjWvWqWOCJmGz-nl4seDl2Uo77Xy8"></script>
+    <script src="/lib/moment/moment.min.js?v=hFxSSWnt1bOvmqbYcY0p_pLo2-JblVIUqOBkoFqaUCc"></script>
+    <script src="/lib/moment/zh-cn.js?v=UxOFMqrXxXGvEM9rF6Z4VS6ann71AU0lD5evjcYa5uE"></script>
+    <script src="/js/pages/common.min.js?v=9-K3ydfm08E2HjjLxkpH6N3wvD_qTWvhkn6Haa_vUJM"></script>
+    <script>
+        window.AliyunCaptchaConfig = {
+            // 必填，验证码示例所属地区，支持中国内地（cn）、新加坡（sgp）
+            region: "cn",
+            // 必填，身份标。开通阿里云验证码2.0后，您可以在控制台概览页面的实例基本信息卡片区域，获取身份标
+            prefix: "rjdt1i",
+        };
+    </script>
+    <!--2.集成主JS-->
+    <script type="text/javascript" src="https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js"></script>
+
+    
+    <link href="/css/v4/pages/article-detail.min.css?v=n7iyWtZbrCDSDFO2cUzdy9zXnnFZOQzXii6qk-cU6M0" rel="stylesheet" />
+
+
+    <!--[if lte IE 9 ]> <link href="/css/v4/lte-ie9.min.css" rel="stylesheet" /> <![endif]-->
+    <!--[if IE 7 ]> <link href="/css/v2/pages/ie7.min.css" rel="stylesheet" /> <![endif]-->
+    
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?35849f3b9042e6cb270e09a0d9350982";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    
+</head>
+<body class="article-detail-body">
+    
+
+    
+<div class="header">    
+    <div class="top-wrapper">
+        <div class="top clearfix">
+            <div class="right">
+                <form class="search" method="get" action="/search/index" target="_blank">
+                    <input class="query" name="query" placeholder="请输入查询关键字"
+                           maxlength="30"
+                           autocomplete="off" />
+                    <button type="submit" log-action="点击搜索" class="imgWrapper"><img src="/image/common/search.png" /></button>
+                </form>
+                <ul>
+                    <li class="qrcode">
+                        <p>官方微信</p>
+                        <img class="qrcode-img" src="/image/qrcode/wx-cf-200x200.png" alt="官方微信" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方APP</p>
+                        <img class="qrcode-img" src="/image/qrcode/chnfund-app.png" alt="官方APP" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方视频号</p>
+                        <img class="qrcode-img" src="/image/qrcode/wxsph.jpg" alt="官方视频号" />
+                    </li>
+                    <li><a log-action="点击" log-content="电子报" href="/epaper">电子报</a></li>
+                    <li class="login-item-wrapper"><a log-action="点击" 
+                           log-content="登录" 
+                           id="btnLogin"
+                           href="javascript:void 0">登录</a>
+                        <i id="vipIcon" class="iconfont icon-VIP"></i>
+                        <a log-action="点击" 
+                           log-content="退出登录" 
+                           id="btnLogout"
+                           title="退出"
+                           style="display:none"
+                           href="javascript:void 0"><span>|</span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loginDialog" v-cloak>
+    <el-dialog title="登录" :visible.sync="visible" 
+        width="400px"         
+        :close-on-click-modal="false"
+        v-loading="submitting">
+
+        <img src="/image/logo.png" class="logo" />
+
+        <el-form :model="form" :rules="rules" ref="form" 
+            label-width="80px"
+            label-position="top">
+
+            <el-form-item prop="phone">
+                <el-input v-model="form.phone" placeholder="请输入手机号" maxlength="11" autocompleted />
+            </el-form-item>
+
+            <el-form-item prop="code" class="form-item-code">
+                <el-input v-model="form.code" placeholder="验证码" 
+                    class="sms-code"
+                    maxlength="6"
+                ></el-input>
+                <el-button type="primary"
+                           id="captcha-button"
+                           v-on:click="preSendCode"
+                           :disabled="countdown > 0 || submittingCaptcha" 
+                           class="btn-send-sms-code" 
+                           style="width:100%">
+                    {{ countdown > 0 ? countdown + 's' : '获取验证码' }}
+                </el-button>
+            </el-form-item>
+
+            <el-button type="primary" @click="submit" class="btn-login" :disabled="sendButtonDisabled">登录</el-button>
+        </el-form>
+    </el-dialog>
+</div>
+
+    <div class="logo">
+        <a href="/" class="imgWrapper">
+            <img src="/image/logo.png" />
+        </a>
+    </div>
+
+    <div class="slogan">
+        <div class="cn">
+            <p>洞察金融市场</p>
+            <p class="china-value">传播中国价值</p>
+        </div>
+        <p class="en">Global Perspective, China Value</p>
+    </div>
+
+        <div class="nav">
+            <section>
+                <div><a log-action="点击导航" log-content="首页" href="/">首页</a></div>
+                <div><a log-action="点击导航" log-content="资管" href="/financial">资管</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公募" href="/fund">公募</a></div>
+                <div><a log-action="点击导航" log-content="环球" href="/global">环球</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="闪讯" href="/sx">闪讯</a></div>
+                <div><a log-action="点击导航" log-content="电子报" href="/epaper">电子报</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="私募" href="/sm">私募</a></div>
+                <div><a log-action="点击导航" log-content="大湾区" href="/greater-bay-area">大湾区</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="券商" href="/security">券商</a></div>
+                <div><a log-action="点击导航" log-content="论坛" href="/forum">论坛</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="银行" href="/bank">银行</a></div>
+                <div><a log-action="点击导航" log-content="视频" href="/video">视频</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="市场" href="/market">市场</a></div>
+                <div><a log-action="点击导航" log-content="访谈" href="/interview">访谈</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公司" href="/company">公司</a></div>
+                <div><a log-action="点击导航" log-content="投教" href="/investment-education">投教</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="IPO" href="/ipo">IPO</a></div>
+                <div><a log-action="点击导航" log-content="Invest Insight" href="/ins">Invest Insight</a></div>
+            </section>
+        </div>
+</div>
+
+<script src="/js/v4/nav.min.js?v=AzFu_hRLnrubqZVGrrPVM4L1qytdsEYv8a_t7TRxP-Q"></script>
+
+    
+
+<div class="content-body">
+    <!-- 文章详情左栏 -->
+    <div class="left">
+        <h1 class="article-title">
+            AI&#x667A;&#x80FD;&#x4F53;&#x843D;&#x5730;&#xFF01;&#x6C47;&#x6DFB;&#x5BCC;&#x76F4;&#x9500;&#x5E73;&#x53F0;&#x7387;&#x5148;&#x63A5;&#x5165;DeepSeek
+        </h1>
+        <div class="article-base-info">
+                <span class="article-source">来源：&#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;</span>
+            <span class="publish-time">2025-03-11 09:00</span>
+            <div class="share">
+                <div class="wechat-share imgWrapper">
+                    <img src="/image/common/wechat.png" alt="微信分享" />
+                    <div id="qrcode"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p style="text-align: center;margin-bottom: 0px;"><br/></p><p style="letter-spacing: 0.578px;white-space: normal;">数字化浪潮之下，金融领域正不断见证着人工智能与业务深度融合所带来的创新与突破。继此前率先实现DeepSeek的本地化部署之后，汇添富基金今日又成功上线“DeepSeek in 现金宝”服务。</p><p style="letter-spacing: 0.578px;white-space: normal;">利用DeepSeek R1大模型强大的数据处理和推理能力，汇添富率先实现了AI Agent智能体的落地，在进一步推动自身互联网金融业务从“产品”向“服务产品化”转型的同时，也为基金行业通过技术创新和服务升级，努力实现“科技向善”，书写好“普惠金融”、“科技金融”大文章，提供了全新探索路径。</p><p style="letter-spacing: 0.578px;white-space: normal;text-align: center;"><strong><span style="color: rgb(0, 122, 170);">让“专业”变得“有趣”</span></strong></p><p style="letter-spacing: 0.578px;white-space: normal;">今天起，现金宝App用户可以通过一种便捷的交互方式，丝滑进入AI的世界：只需要下载或更新到现金宝App最新版本，登录进入首页“下拉”操作后，即可进入“DeepSeek in 现金宝”界面。据了解，该项目主要涵盖以下核心功能：</p><p style="letter-spacing: 0.578px;white-space: normal;">基金报告智能总结：基金报告往往内容繁杂、专业术语众多，普通投资者难以快速准确把握关键信息。AI能够迅速将冗长的报告内容转化为通俗易懂、语言精炼的文字，让投资者轻松了解基金的运作情况、投资策略及业绩表现等核心要点，大大降低了信息获取的门槛与时间成本。</p><p style="letter-spacing: 0.578px;white-space: normal;">基金报告对比分析：市场行情瞬息万变，投资者需要及时掌握基金持仓和市场动态的变化。该Agent可分析对比最近两期基金报告，清晰呈现最新市场、投资策略和持仓变化情况，为投资者提供有价值的参考依据，助力其做出更明智的投资决策。</p><p style="letter-spacing: 0.578px;white-space: normal;">基金报告趣味改写：专业的报告观点经过 AI 趣味改写后，以更具风格和吸引力的语言呈现；大模型生成的内容还可由基金经理实时“原声”朗读，拉近投资者与基金经理的距离，满足用户趣味性需求，使得投资信息的获取变得更加轻松有趣，提升用户对专业投资知识的理解。</p><p style="letter-spacing: 0.578px;white-space: normal;">除此以外，项目正在内测DeepSeek聊天对话功能，未来现金宝用户可使用满血版DeepSeek R1的自由对话功能，体验DeepSeek基于深度推理的快速回答。该功能计划在完成相关验证流程后正式推出。</p><p style="letter-spacing: 0.578px;white-space: normal;text-align: center;"><strong><span style="color: rgb(0, 122, 170);">从“交易”走向“服务”</span></strong></p><p style="letter-spacing: 0.578px;white-space: normal;">随着市场竞争加剧、客户需求多元化以及技术革新加速，单一的产品供给模式已难以满足用户对“体验感”与“获得感”的期待。汇添富基金总经理张晖多次强调，要以服务的产品化为抓手，为客户提供标准化的解决方案和产品化服务模式。在业内人士看来，“DeepSeek in 现金宝”功能的上线，不仅是汇添富基金在公募基金领域对生成式人工智能结合实际业务场景的首次落地化应用，更标志着汇添富互联网金融业务从“产品”向“服务产品化”的转型，又迈出了重要一步。</p><p style="letter-spacing: 0.578px;white-space: normal;">该人士表示，借助人工智能技术，“DeepSeek in现金宝”项目将传统的金融产品和信息融入智能化服务陪伴，从“交易”走向“服务”的转型路径清晰可见。</p><p style="letter-spacing: 0.578px;white-space: normal;">而从更加宏观的维度看，上述分析人士认为，该项目充分利用人工智能技术的数据处理与分析能力，深度挖掘金融数据背后的价值，实现金融服务的智能化与个性化。通过对基金数据的快速分析与解读，推动金融服务从传统模式向数字化、智能化模式转变，有助于提升金融行业的服务质效；另一方面，该项目将复杂的专业金融知识转化为简单易懂、便捷可得的服务形式，使广大普通投资者能够以极低的成本，平等地获取高质量的金融信息与服务，这有助于让更多人共享金融发展成果，真正实现金融服务的普及化与大众化。</p><p style="letter-spacing: 0.578px;white-space: normal;">“从这个意义上看，该项目也是基金行业进一步书写好‘科技金融’、普惠金融’大文章的全新例证。”该人士表示。</p><p style="letter-spacing: 0.578px;white-space: normal;text-align: center;"><strong><span style="color: rgb(0, 122, 170);">以“热忱”探索“未来”</span></strong></p><p style="letter-spacing: 0.578px;white-space: normal;">据了解，汇添富基金在人工智能领域的布局和发展呈现出显著的多元化战略和技术深度应用的特征。公司内部成立了AI项目专项组，该项目作为公司数字化转型的核心战略，获得了公司层面强有力的资源倾斜与技术攻坚支持，强大的算力为后续AI赋能业务夯实了基础。</p><p style="letter-spacing: 0.578px;white-space: normal;">2024年公司完成了阿里通义千问系列模型的私有化部署；2025年2月，公司又率先完成了国产DeepSeek系列开源大模型的私有化部署，包括满血版671B版本，形成了跨平台的AI能力矩阵。</p><p style="letter-spacing: 0.578px;white-space: normal;">汇添富基金不断探索大模型与业务的融合，尝试将人工智能服务应用于投资研究、产品销售、风控合规、客户服务等核心业务场景，不断驱动业务创新和客户服务升级。</p><p style="letter-spacing: 0.578px;white-space: normal;">以互联网金融总部为例，据相关业务部门负责人介绍，汇添富快速组建并成立了代号为“DeepFund”的AI团队，利用AI大模型全面提升运营效率和用户体验，推动业务的智能化发展，为投资者提供更有温度的“智慧金融”服务，力争实现“服务标准化”（从客户目标出发，将投资顾问服务产品化）、“体验个性化”（服务全面升级，精准满足客户需求，达成&quot;千人千面&quot;的陪伴服务）和“流程自动化”（AI智能体完成从需求洞察到方案执行的工作流自动化闭环）的目标。值得一提的是，本次“DeepSeek in 现金宝”项目的上线，也是DeepFund团队在人工智能融合金融业务方向上的一次初步探索。</p><p style="letter-spacing: 0.578px;white-space: normal;">该负责人表示，人工智能技术在金融领域的应用与创新将会不断深化，汇添富将以客户为中心，持续探索和拓展人工智能应用场景，通过技术引进、场景适配与战略协同，构建覆盖“数据-模型-应用”的全链条AI能力，为客户带来更优质的金融体验。</p><p style="letter-spacing: 0.578px;white-space: normal;"><span style="color: rgb(136, 136, 136);font-size: 14px;">风险提示：基金有风险，投资需谨慎。文章涉及的观点和判断仅代表我们对当前时点的看法，基于市场环境的不确定性和多变性，所涉观点和判断后续可能发生调整或变化。本文仅用于沟通交流之目的，不构成任何投资建议。（CIS）</span></p><p style="text-align: center;margin-bottom: 0px;"><span style="background-color: rgb(255, 255, 255);font-family: system-ui, -apple-system, &quot;system-ui&quot;, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;color: rgb(62, 62, 62);font-size: var(--articleFontsize);"></span></p><section style="margin-bottom: 0px;white-space: normal;outline: 0px;max-width: 100%;color: rgb(62, 62, 62);font-family: 微软雅黑;text-align: start;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><section style="outline: 0px;max-width: 100%;text-align: center;box-sizing: border-box !important;overflow-wrap: break-word !important;"><p style="outline: 0px;text-align: center;"><a target="_blank" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.stcn.fundnews" textvalue="‍‍" linktype="text" imgurl="" tab="outerlink" data-linktype="1"></a></p></section></section><p style="display: none;"><mp-style-type data-value="3"></mp-style-type></p>
+        </div>
+
+
+        
+    <!-- 相关文章 -->
+    <div class="relate-articles">
+        <h2><span>相关推荐</span></h2>
+        <div class="article-list">
+                <a class="item" href="/article/ARac5658df-c40d-5fa8-3397-3a238252d06e" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x57FA;&#x91D1;&#x5927;&#x4E8B;&#x4EF6;|&#x516C;&#x52DF;&#x57FA;&#x91D1;&#x534A;&#x5E74;&#x8D5A;&#x4E86;1.73&#x4E07;&#x4EBF;&#x5143;&#xFF01;&#x65B0;&#x7684;&#x4E00;&#x6279;&#x79D1;&#x521B;&#x503A;&#x6307;&#x6570;&#x57FA;&#x91D1;&#x6765;&#x4E86;&#xFF01;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/05/a08375daca4cfd740f9d7d71b4aed9819890aca4.png"></img>
+                    </div>
+                    <p class="title">&#x57FA;&#x91D1;&#x5927;&#x4E8B;&#x4EF6;|&#x516C;&#x52DF;&#x57FA;&#x91D1;&#x534A;&#x5E74;&#x8D5A;&#x4E86;1.73&#x4E07;&#x4EBF;&#x5143;&#xFF01;&#x65B0;&#x7684;&#x4E00;&#x6279;&#x79D1;&#x521B;&#x503A;&#x6307;&#x6570;&#x57FA;&#x91D1;&#x6765;&#x4E86;&#xFF01;</p>
+                </a>
+                <a class="item" href="/article/AR1d82924f-51de-feae-8f04-3a237f58c186" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x5206;&#x5316;&#x7684;&#x4E00;&#x665A;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/05/55b80abf5ac3c8640283c4db85dbefe9ad44fade.png"></img>
+                    </div>
+                    <p class="title">&#x5206;&#x5316;&#x7684;&#x4E00;&#x665A;</p>
+                </a>
+                <a class="item" href="/article/ARb59f3db3-e261-02b0-14fb-3a237ec4eca1" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x52A0;&#x606F;&#x9884;&#x671F;&#x53C8;&#x53D8;&#x4E86;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/04/3afde616a68851926000831db13c7afb30f9845a.png"></img>
+                    </div>
+                    <p class="title">&#x52A0;&#x606F;&#x9884;&#x671F;&#x53C8;&#x53D8;&#x4E86;</p>
+                </a>
+                <a class="item" href="/article/AR92f9a521-8622-6cd3-4a67-3a237da66072" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x9AD8;&#x5F00;&#x4F4E;&#x8D70;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/04/4223c6317ccf9027c81c06ec7301d884b84ec3d2.png"></img>
+                    </div>
+                    <p class="title">&#x9AD8;&#x5F00;&#x4F4E;&#x8D70;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;</p>
+                </a>
+                <a class="item" href="/article/AR609cf3f0-e646-40f2-7372-3a237d867e63" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x5012;&#x8BA1;&#x65F6;&#xFF01;&#x91CD;&#x78C5;&#x6D3B;&#x52A8;&#xFF0C;&#x5C31;&#x5728;&#x4E0B;&#x5468;" src="https://cdn.chnfund.com/upload/media/picture/2026/09/04/933C6E6FD95446C9BB3644ACE4F88691.jpg"></img>
+                    </div>
+                    <p class="title">&#x5012;&#x8BA1;&#x65F6;&#xFF01;&#x91CD;&#x78C5;&#x6D3B;&#x52A8;&#xFF0C;&#x5C31;&#x5728;&#x4E0B;&#x5468;</p>
+                </a>
+                <a class="item" href="/article/ARd7709472-6554-192e-e8b4-3a237c217354" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x4ECE;&#x201C;&#x57FA;&#x91D1;&#x7ECF;&#x7406;&#x201D;&#x5230;&#x201C;&#x5E73;&#x53F0;&#x80FD;&#x529B;&#x201D;&#xFF1A;&#x6301;&#x6709;&#x4EBA;&#x7684;&#x4FE1;&#x4EFB;&#x8FC1;&#x79FB;&#x4E4B;&#x65C5;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/04/1b17edf1720d52aa696eb12b6cb490fbd8abee57.png"></img>
+                    </div>
+                    <p class="title">&#x4ECE;&#x201C;&#x57FA;&#x91D1;&#x7ECF;&#x7406;&#x201D;&#x5230;&#x201C;&#x5E73;&#x53F0;&#x80FD;&#x529B;&#x201D;&#xFF1A;&#x6301;&#x6709;&#x4EBA;&#x7684;&#x4FE1;&#x4EFB;&#x8FC1;&#x79FB;&#x4E4B;&#x65C5;</p>
+                </a>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 二维码 -->
+    <div class="right">
+                <a   class="imgWrapper">
+                    <img alt="APP" src="https://cdn.chnfund.com/upload/cfa/image/202511/03/20251103171139_4961.jpg"></img>
+                </a>
+    </div>
+</div>
+
+
+
+        <div class="footer">
+    <div class="box bottom-box clearfix">
+        <div class="bottom-item bottom-item-logo">
+            <a href="/" class="imgWrapper"><img src="/image/logo2.png" alt="中国基金报" /></a>
+        </div>
+
+        <div class="bottom-item bottom-item-nav">
+            <h4><a href="/"><span class="footer-llink-text">首页</span></a></h4>
+            <ul>
+                <li><a target="_blank" href="/about"><span class="footer-llink-text">关于我们</span></a></li>
+                <li><a target="_blank" href="/addus"><span class="footer-llink-text">加入我们</span></a></li>
+                <li><a target="_blank" href="/contactus"><span class="footer-llink-text">联系我们</span></a></li>
+                <li><a target="_blank" href="/copyright"><span class="footer-llink-text">版权声明</span></a></li>
+            </ul>
+        </div>
+        <div class="bottom-item bottom-item-cooperation">
+            <h4>合作伙伴</h4>
+            <div class="link-box">
+                <a log-action="点击合作伙伴" log-content="紫荆杂志社" href="https://zijing.com.cn/" target="_blank">紫荆杂志社</a>|
+                <a log-action="点击合作伙伴" log-content="凤凰网" href="http://www.ifeng.com/" target="_blank">凤凰网</a>|
+                <a log-action="点击合作伙伴" log-content="东方财富网" href="http://www.eastmoney.com/" target="_blank">东方财富网</a>|
+                <a log-action="点击合作伙伴" log-content="金融界" href="http://www.jrj.com.cn/" target="_blank">金融界</a>|
+                <a log-action="点击合作伙伴" log-content="中新经纬" href="http://www.jwview.com/" target="_blank">中新经纬</a>|
+                <a log-action="点击合作伙伴" log-content="每日经济新闻" href="http://www.nbd.com.cn/" target="_blank">每日经济新闻</a>|
+                <a log-action="点击合作伙伴" log-content="21世纪网" href="http://www.21jingji.com/" target="_blank">21世纪网</a>|
+                <a log-action="点击合作伙伴" log-content="财经网" href="http://www.caijing.com.cn/" target="_blank">财经网</a>|
+                <a log-action="点击合作伙伴" log-content="和讯网" href="http://www.hexun.com/" target="_blank">和讯网</a>|
+                <a log-action="点击合作伙伴" log-content="搜狐" href="http://www.sohu.com/" target="_blank">搜狐</a>|
+                <a log-action="点击合作伙伴" log-content="中金在线" href="http://www.cnfol.com/" target="_blank">中金在线</a>|
+                <a log-action="点击合作伙伴" log-content="一财网" href="http://www.yicai.com/" target="_blank">一财网</a>
+            </div>
+        </div>
+    </div>
+    <div class="box copyright">
+        <p>
+            Copyright © 2026 《中国基金报》社有限公司版权所有，未经许可不得转载使用，违者必究。
+        </p>
+        <section>
+            <section>
+                网站备案号： <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备14037591号</a>
+            </section>     
+            <section>网络视听许可证：1908317号</section>
+            <section>互联网新闻信息服务许可证：10120200011 </section>
+        </section>
+        <section>
+            <section>违法和不良信息举报电话：(0755) 83501616</section>
+            <section>邮箱：xingdapeng@chnfund.com</section>
+        </section>
+    </div>
+</div>
+
+    <input type="hidden" value="AI&#x667A;&#x80FD;&#x4F53;&#x843D;&#x5730;&#xFF01;&#x6C47;&#x6DFB;&#x5BCC;&#x76F4;&#x9500;&#x5E73;&#x53F0;&#x7387;&#x5148;&#x63A5;&#x5165;DeepSeek" id="wxShareTitle" />
+    <input type="hidden" value="&#x6570;&#x5B57;&#x5316;&#x6D6A;&#x6F6E;&#x4E4B;&#x4E0B;&#xFF0C;&#x91D1;&#x878D;&#x9886;&#x57DF;&#x6B63;&#x4E0D;&#x65AD;&#x89C1;&#x8BC1;&#x7740;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x4E0E;&#x4E1A;&#x52A1;&#x6DF1;&#x5EA6;&#x878D;&#x5408;&#x6240;&#x5E26;&#x6765;&#x7684;&#x521B;&#x65B0;&#x4E0E;&#x7A81;&#x7834;&#x3002;&#x7EE7;&#x6B64;&#x524D;&#x7387;&#x5148;&#x5B9E;&#x73B0;DeepSeek&#x7684;&#x672C;&#x5730;&#x5316;&#x90E8;&#x7F72;&#x4E4B;&#x540E;&#xFF0C;&#x6C47;&#x6DFB;&#x5BCC;&#x57FA;&#x91D1;&#x4ECA;&#x65E5;&#x53C8;&#x6210;&#x529F;&#x4E0A;&#x7EBF;&#x201C;DeepSeekin&#x73B0;&#x91D1;&#x5B9D;&#x201D;&#x670D;&#x52A1;&#x3002;&#x5229;&#x7528;DeepSeekR1&#x5927;&#x6A21;&#x578B;&#x5F3A;&#x5927;&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x548C;&#x63A8;&#x7406;&#x80FD;&#x529B;&#xFF0C;&#x6C47;&#x6DFB;&#x5BCC;&#x7387;&#x5148;&#x5B9E;&#x73B0;&#x4E86;AIAgent&#x667A;&#x80FD;&#x4F53;&#x7684;&#x843D;&#x5730;&#xFF0C;&#x5728;&#x8FDB;&#x4E00;&#x6B65;&#x63A8;&#x52A8;&#x81EA;" id="wxShareDesc" />
+    <input type="hidden" id="wxShareUrl" />
+    <input type="hidden" id="wxShareImg" />
+
+    <!--[if IE 7]>
+    <script src="/js/pages/ie7_pseudo.min.js"></script>
+    <![endif]-->
+
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="/lib/wxextsignature.js?v=qywUW3BbDrfXM8meOjqbmoFlRhsfiHqQ8cspJ9pCmXY"></script>
+
+
+    <script src="/js/v4/log.min.js?v=QOIf51HEEYLlZ6cuZenMmY0Er7WF7pfkpqd01rPqbtc"></script>
+    <script>
+        initTrace('https://gw.chnfund.com/log-api/api/logs/single-log');
+    </script>
+
+    <script src="/js/v4/user.min.js?v=ZjF4Fyin_kunpXmbEElIU5NLAcaSY7ELdp3OCr6-em0"></script>
+    
+    <script src="/lib/qrcode/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), window.location.href);
+    </script>
+
+
+        <script>
+            var properties = {
+                pageName: '详情页',
+                title: "AI\u667A\u80FD\u4F53\u843D\u5730\uFF01\u6C47\u6DFB\u5BCC\u76F4\u9500\u5E73\u53F0\u7387\u5148\u63A5\u5165DeepSeek",
+                targetId: "AR3358889b-f3d5-0c09-2763-3a1894ea2603",
+                targetType: "news",
+            }
+
+            logPageView(properties);
+            bindClickLog({ pageName: '详情页' });
+        </script>
+
+    
+</body>
+</html>

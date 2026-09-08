@@ -1,0 +1,1627 @@
+{
+  "date": "2026-09-07",
+  "counts": {
+    "raw": 93,
+    "not verifiable": 8
+  },
+  "scope": "Original-language preservation/access, not full claim revalidation",
+  "sources": [
+    {
+      "source_id": "REG-001",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-001",
+      "original_url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-001/metadata.json",
+        "knowledge-base/sources/REG-001/original.md",
+        "knowledge-base/sources/REG-001/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-002",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-002",
+      "original_url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-002/metadata.json",
+        "knowledge-base/sources/REG-002/original.md",
+        "knowledge-base/sources/REG-002/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-003",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-003",
+      "original_url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-003/metadata.json",
+        "knowledge-base/sources/REG-003/original.md",
+        "knowledge-base/sources/REG-003/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-004",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-004",
+      "original_url": "https://www.cac.gov.cn/2024-09/30/c_1729384452307680.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-004/metadata.json",
+        "knowledge-base/sources/REG-004/original.md",
+        "knowledge-base/sources/REG-004/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-005",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-005",
+      "original_url": "https://www.csrc.gov.cn/csrc/c101953/c7202800/7202800/files/%E9%99%84%E4%BB%B61%EF%BC%9A%E8%AF%81%E5%88%B8%E6%9C%9F%E8%B4%A7%E4%B8%9A%E7%BD%91%E7%BB%9C%E5%92%8C%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-005/metadata.json",
+        "knowledge-base/sources/REG-005/original.md",
+        "knowledge-base/sources/REG-005/source.pdf"
+      ]
+    },
+    {
+      "source_id": "REG-006",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-006",
+      "original_url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-006/metadata.json",
+        "knowledge-base/sources/REG-006/original.md",
+        "knowledge-base/sources/REG-006/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-007",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "English",
+      "archive_dir": "knowledge-base/sources/REG-007",
+      "original_url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-007/metadata.json",
+        "knowledge-base/sources/REG-007/original.md",
+        "knowledge-base/sources/REG-007/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-008",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "English",
+      "archive_dir": "knowledge-base/sources/REG-008",
+      "original_url": "https://www.federalreserve.gov/frrs/guidance/supervisory-guidance-on-model-risk-management.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-008/metadata.json",
+        "knowledge-base/sources/REG-008/original.md",
+        "knowledge-base/sources/REG-008/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-009",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-009",
+      "original_url": "https://www.amac.org.cn/xwfb/xhyw/202604/t20260403_27458.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-009/metadata.json",
+        "knowledge-base/sources/REG-009/original.md",
+        "knowledge-base/sources/REG-009/source.html"
+      ]
+    },
+    {
+      "source_id": "REG-010",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-010",
+      "original_url": "https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "Some pages have little/no text; inspect original PDF for images, charts, tables and scans.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-010/metadata.json",
+        "knowledge-base/sources/REG-010/original.md",
+        "knowledge-base/sources/REG-010/source.pdf"
+      ]
+    },
+    {
+      "source_id": "REG-011",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-011",
+      "original_url": "https://www.amac.org.cn/hyyj/sy/202604/P020260408624258724685.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-011/metadata.json",
+        "knowledge-base/sources/REG-011/original.md",
+        "knowledge-base/sources/REG-011/source.pdf"
+      ]
+    },
+    {
+      "source_id": "REG-012",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/REG-012",
+      "original_url": "https://www.cnipa.gov.cn/art/2019/7/29/art_104_67809.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/REG-012/metadata.json",
+        "knowledge-base/sources/REG-012/original.md",
+        "knowledge-base/sources/REG-012/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-001",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-001",
+      "original_url": "https://www.chinaamc.com/upload/resources/file/2025/12/31/442744.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-001/metadata.json",
+        "knowledge-base/sources/FUND-001/original.md",
+        "knowledge-base/sources/FUND-001/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-002",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-002",
+      "original_url": "https://www.chinaamc.com/c/2026-02-05/926147.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-002/metadata.json",
+        "knowledge-base/sources/FUND-002/original.md",
+        "knowledge-base/sources/FUND-002/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-003",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-003",
+      "original_url": "https://www.chinaamc.com/jgb/gyhx/gsgl/",
+      "archive_status": "raw",
+      "provenance_and_limits": "Current capture: 2025 year-end total including subsidiaries >RMB3.2tn. Prior 2025Q2 >RMB3tn observation lacks a preserved historical snapshot and is not reverified here.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-003/metadata.json",
+        "knowledge-base/sources/FUND-003/original.md",
+        "knowledge-base/sources/FUND-003/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-004",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-004",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337819827722.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-004/metadata.json",
+        "knowledge-base/sources/FUND-004/original.md",
+        "knowledge-base/sources/FUND-004/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-005",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-005",
+      "original_url": "https://www.efunds.com.cn/Html5/lm/gywm/",
+      "archive_status": "raw",
+      "provenance_and_limits": "Current capture: 2026June-end EFund and subordinate institutions >RMB4.3tn. Prior 2025YE >RMB4.1tn observation lacks a preserved historical snapshot and is not reverified here.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-005/metadata.json",
+        "knowledge-base/sources/FUND-005/original.md",
+        "knowledge-base/sources/FUND-005/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-006",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-006",
+      "original_url": "https://www.efunds.com.cn/c/757/757438.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-006/metadata.json",
+        "knowledge-base/sources/FUND-006/original.md",
+        "knowledge-base/sources/FUND-006/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-007",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-007",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-007/metadata.json",
+        "knowledge-base/sources/FUND-007/original.md",
+        "knowledge-base/sources/FUND-007/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-008",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-008",
+      "original_url": "https://www.fullgoal.com.cn/main/AboutFuguo/InvestResearch/index.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-008/metadata.json",
+        "knowledge-base/sources/FUND-008/original.md",
+        "knowledge-base/sources/FUND-008/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-009",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-009",
+      "original_url": "https://cdnwww.gffunds.com.cn/gfjjnew/jjgg/lsgg/202603/W020260327646002876113.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-009/metadata.json",
+        "knowledge-base/sources/FUND-009/original.md",
+        "knowledge-base/sources/FUND-009/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-010",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-010",
+      "original_url": "https://www.gffunds.com.cn/gywm/gsjj/",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-010/metadata.json",
+        "knowledge-base/sources/FUND-010/original.md",
+        "knowledge-base/sources/FUND-010/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-011",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-011",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-011/metadata.json",
+        "knowledge-base/sources/FUND-011/original.md",
+        "knowledge-base/sources/FUND-011/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-012",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-012",
+      "original_url": "https://www.xqfunds.com/gywm/index.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-012/metadata.json",
+        "knowledge-base/sources/FUND-012/original.md",
+        "knowledge-base/sources/FUND-012/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-013",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-013",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337853082516.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-013/metadata.json",
+        "knowledge-base/sources/FUND-013/original.md",
+        "knowledge-base/sources/FUND-013/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-014",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-014",
+      "original_url": "https://www.dcfund.com.cn/main/aboutus/companyintro/companyprofile/index.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-014/metadata.json",
+        "knowledge-base/sources/FUND-014/original.md",
+        "knowledge-base/sources/FUND-014/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-090",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-090",
+      "original_url": "https://www.chnfund.com/article/ARb3b8504a-126c-79fa-d5a0-3a17f32955bc",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-090/metadata.json",
+        "knowledge-base/sources/FUND-090/original.md",
+        "knowledge-base/sources/FUND-090/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-091",
+      "before_category": "not verifiable",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-091",
+      "original_url": "https://fund.10jqka.com.cn/20260902/c679539875.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-091/metadata.json",
+        "knowledge-base/sources/FUND-091/original.md",
+        "knowledge-base/sources/FUND-091/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-092",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-092",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202606/P020260601532859626532.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-092/metadata.json",
+        "knowledge-base/sources/FUND-092/original.md",
+        "knowledge-base/sources/FUND-092/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-093",
+      "before_category": "not verifiable",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-093",
+      "original_url": "https://news.fx168news.com/cooperate/2606/7462205.shtml",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "Registered article redirects to generic FX168 news portal; expected Harvest article absent",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-093/metadata.json",
+        "knowledge-base/sources/FUND-093/retrieval-response.html",
+        "knowledge-base/sources/FUND-093/retrieval-response.md"
+      ]
+    },
+    {
+      "source_id": "FUND-100",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-100",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202112/t20211215_19257.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-100/metadata.json",
+        "knowledge-base/sources/FUND-100/original.md",
+        "knowledge-base/sources/FUND-100/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-101",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-101",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-101/metadata.json",
+        "knowledge-base/sources/FUND-101/original.md",
+        "knowledge-base/sources/FUND-101/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-102",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-102",
+      "original_url": "https://www.amac.org.cn/hydj/djdt/202601/P020260113409049382586.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-102/metadata.json",
+        "knowledge-base/sources/FUND-102/original.md",
+        "knowledge-base/sources/FUND-102/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-103",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-103",
+      "original_url": "https://gifts.szu.edu.cn/info/1023/1364.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-103/full-visible-text.txt",
+        "knowledge-base/sources/FUND-103/metadata.json",
+        "knowledge-base/sources/FUND-103/original.md",
+        "knowledge-base/sources/FUND-103/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-104",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-104",
+      "original_url": "https://www.pbc.gov.cn/rmyh/105208/2025080818581381391/2024101814242772094.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-104/metadata.json",
+        "knowledge-base/sources/FUND-104/original.md",
+        "knowledge-base/sources/FUND-104/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-105",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-105",
+      "original_url": "https://www.amac.org.cn/fwdt/wyb/rygl/hxpx/hxpxzdjtz/pxtz/mspxtz/202411/t20241111_26153.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-105/metadata.json",
+        "knowledge-base/sources/FUND-105/original.md",
+        "knowledge-base/sources/FUND-105/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-106",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "English",
+      "archive_dir": "knowledge-base/sources/FUND-106",
+      "original_url": "https://www.prnewswire.com/news-releases/e-fund-harnessing-ai-trends-in-china-to-drive-innovation-and-enhance-etf-offerings-302402953.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-106/metadata.json",
+        "knowledge-base/sources/FUND-106/original.md",
+        "knowledge-base/sources/FUND-106/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-107",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-107",
+      "original_url": "https://cloud.tencent.com.cn/product/workbuddy-enterprise",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-107/full-visible-text.txt",
+        "knowledge-base/sources/FUND-107/metadata.json",
+        "knowledge-base/sources/FUND-107/original.md",
+        "knowledge-base/sources/FUND-107/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-108",
+      "before_category": "not verifiable",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-108",
+      "original_url": "https://finance.sina.com.cn/money/fund/jjgsgd/2026-07-24/doc-iniixnhc1584122.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据; 所链上游微信原文未获取，转载原始链仍有缺口",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-108/metadata.json",
+        "knowledge-base/sources/FUND-108/original.md",
+        "knowledge-base/sources/FUND-108/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-109",
+      "before_category": "not verifiable",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-109",
+      "original_url": "https://mp.weixin.qq.com/s/M6djG8U9YNCNlETZj2d1uA",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "Challenge/error text: 环境异常",
+      "evidence_state_unchanged": "unresolved",
+      "files": [
+        "knowledge-base/sources/FUND-109/metadata.json",
+        "knowledge-base/sources/FUND-109/retrieval-response.html",
+        "knowledge-base/sources/FUND-109/retrieval-response.txt"
+      ]
+    },
+    {
+      "source_id": "FUND-110",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-110",
+      "original_url": "https://www.chnfund.com/article/AR82dfae38-b1c3-70f9-0929-3a181b418f27",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-110/metadata.json",
+        "knowledge-base/sources/FUND-110/original.md",
+        "knowledge-base/sources/FUND-110/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-111",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-111",
+      "original_url": "https://paper.cnstock.com/html/2025-09/16/content_2122123.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-111/metadata.json",
+        "knowledge-base/sources/FUND-111/original.md",
+        "knowledge-base/sources/FUND-111/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-112",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-112",
+      "original_url": "https://finance.sina.com.cn/money/fund/jjh/2026-09-03/doc-iniqpzps1080425.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-112/metadata.json",
+        "knowledge-base/sources/FUND-112/original.md",
+        "knowledge-base/sources/FUND-112/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-150",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-150",
+      "original_url": "https://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "Some pages have little/no text; inspect original PDF for images, charts, tables and scans.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-150/metadata.json",
+        "knowledge-base/sources/FUND-150/original.md",
+        "knowledge-base/sources/FUND-150/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-151",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-151",
+      "original_url": "https://www.ccf.org.cn/Focus/2025-10-11/849374.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-151/metadata.json",
+        "knowledge-base/sources/FUND-151/original.md",
+        "knowledge-base/sources/FUND-151/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-152",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-152",
+      "original_url": "https://www.cs.com.cn/tzjj/jjdt/202502/t20250214_6474446.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-152/metadata.json",
+        "knowledge-base/sources/FUND-152/original.md",
+        "knowledge-base/sources/FUND-152/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-160",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-160",
+      "original_url": "https://www.cs.com.cn/ssgs/gsxl/202602/t20260206_6537131.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-160/metadata.json",
+        "knowledge-base/sources/FUND-160/original.md",
+        "knowledge-base/sources/FUND-160/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-161",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-161",
+      "original_url": "https://www.chnfund.com/article/ARae630e7e-72d1-f00a-3da7-3a218b519b1b",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-161/metadata.json",
+        "knowledge-base/sources/FUND-161/original.md",
+        "knowledge-base/sources/FUND-161/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-162",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-162",
+      "original_url": "https://fund.pingan.com/",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-162/full-visible-text.txt",
+        "knowledge-base/sources/FUND-162/metadata.json",
+        "knowledge-base/sources/FUND-162/original.md",
+        "knowledge-base/sources/FUND-162/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-200",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-200",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-200/metadata.json",
+        "knowledge-base/sources/FUND-200/original.md",
+        "knowledge-base/sources/FUND-200/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-201",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-201",
+      "original_url": "https://wap.southernfund.com/mweb/agreement/xieyi_register_v2.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-201/metadata.json",
+        "knowledge-base/sources/FUND-201/original.md",
+        "knowledge-base/sources/FUND-201/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-202",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-202",
+      "original_url": "https://app.cnstock.com/zzb/zgzqb/html/2026-03/31/nw.D110000zgzqb_20260331_1-B071.htm",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-202/metadata.json",
+        "knowledge-base/sources/FUND-202/original.md",
+        "knowledge-base/sources/FUND-202/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-203",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-203",
+      "original_url": "https://finance.sina.com.cn/wm/2026-07-08/doc-inihatty8088729.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-203/metadata.json",
+        "knowledge-base/sources/FUND-203/original.md",
+        "knowledge-base/sources/FUND-203/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-210",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-210",
+      "original_url": "https://www.cs.com.cn/tzjj/jjdt/202503/t20250309_6478371.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-210/metadata.json",
+        "knowledge-base/sources/FUND-210/original.md",
+        "knowledge-base/sources/FUND-210/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-211",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-211",
+      "original_url": "https://www.bosera.com/column/infoDetail.do?classid=00020002000200020003&infoid=2974324",
+      "archive_status": "raw",
+      "provenance_and_limits": "Embedded base64 image moved to local image asset for readability; original HTML unchanged.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-211/embedded-image-1.jpg",
+        "knowledge-base/sources/FUND-211/metadata.json",
+        "knowledge-base/sources/FUND-211/original.md",
+        "knowledge-base/sources/FUND-211/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-212",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-212",
+      "original_url": "https://www.cmhk.com/main/xwzx/jtjx/content/1842100685282906114_1842100685295489025.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-212/metadata.json",
+        "knowledge-base/sources/FUND-212/original.md",
+        "knowledge-base/sources/FUND-212/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-213",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-213",
+      "original_url": "https://www.bosera.com/column/index.do?classid=00020002000200010001",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-213/metadata.json",
+        "knowledge-base/sources/FUND-213/original.md",
+        "knowledge-base/sources/FUND-213/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-214",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-214",
+      "original_url": "https://www.chnfund.com/article/AR0510706e-d2be-f4c8-f7f4-3a218e3f33d9",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-214/metadata.json",
+        "knowledge-base/sources/FUND-214/original.md",
+        "knowledge-base/sources/FUND-214/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-220",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-220",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-220/metadata.json",
+        "knowledge-base/sources/FUND-220/original.md",
+        "knowledge-base/sources/FUND-220/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-221",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-221",
+      "original_url": "https://apps.apple.com/cn/app/%E6%B1%87%E6%B7%BB%E5%AF%8C%E7%8E%B0%E9%87%91%E5%AE%9D-%E6%B1%87%E6%B7%BB%E5%AF%8C%E5%9F%BA%E9%87%91%E6%89%93%E9%80%A0%E7%9A%84%E6%8A%95%E8%B5%84%E5%B9%B3%E5%8F%B0/id1061838086",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-221/full-visible-text.txt",
+        "knowledge-base/sources/FUND-221/metadata.json",
+        "knowledge-base/sources/FUND-221/original.md",
+        "knowledge-base/sources/FUND-221/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-222",
+      "before_category": "not verifiable",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-222",
+      "original_url": "https://finance.sina.cn/2026-03-25/detail-inhsffcq0897979.d.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据; 属于转载；首发来源／日期仍未确认",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-222/metadata.json",
+        "knowledge-base/sources/FUND-222/original.md",
+        "knowledge-base/sources/FUND-222/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-223",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-223",
+      "original_url": "https://www.chnfund.com/article/AR3358889b-f3d5-0c09-2763-3a1894ea2603",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-223/metadata.json",
+        "knowledge-base/sources/FUND-223/original.md",
+        "knowledge-base/sources/FUND-223/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-224",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-224",
+      "original_url": "https://www.99fund.com/main/gywm/gsjs/index.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-224/metadata.json",
+        "knowledge-base/sources/FUND-224/original.md",
+        "knowledge-base/sources/FUND-224/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-225",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "English",
+      "archive_dir": "knowledge-base/sources/FUND-225",
+      "original_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032703598.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "English source; some Chinese corporate-name glyphs are malformed in PDF extraction. Consult original PDF for these names.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-225/metadata.json",
+        "knowledge-base/sources/FUND-225/original.md",
+        "knowledge-base/sources/FUND-225/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-250",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-250",
+      "original_url": "https://www.igwfmc.com/main/zxzx/gsxw/a/20250902/1074917.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-250/metadata.json",
+        "knowledge-base/sources/FUND-250/original.md",
+        "knowledge-base/sources/FUND-250/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-251",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-251",
+      "original_url": "https://www.chnfund.com/article/AR99eb77fa-e926-d40e-abb2-3a232d36f0d0",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-251/metadata.json",
+        "knowledge-base/sources/FUND-251/original.md",
+        "knowledge-base/sources/FUND-251/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-252",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-252",
+      "original_url": "https://www.igwfmc.com/main/about/about-1.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-252/metadata.json",
+        "knowledge-base/sources/FUND-252/original.md",
+        "knowledge-base/sources/FUND-252/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-253",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-253",
+      "original_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-21/703e3a93-598f-4f64-9b5a-e0793436dbe1.PDF",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-253/metadata.json",
+        "knowledge-base/sources/FUND-253/original.md",
+        "knowledge-base/sources/FUND-253/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-254",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-254",
+      "original_url": "https://www.cls.cn/detail/2237261",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-254/metadata.json",
+        "knowledge-base/sources/FUND-254/original.md",
+        "knowledge-base/sources/FUND-254/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-255",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-255",
+      "original_url": "https://www.igwfmc.com/main/zxzx/gsxw/a/20211112/1050295.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-255/metadata.json",
+        "knowledge-base/sources/FUND-255/original.md",
+        "knowledge-base/sources/FUND-255/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-300",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-300",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-300/metadata.json",
+        "knowledge-base/sources/FUND-300/original.md",
+        "knowledge-base/sources/FUND-300/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-301",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-301",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/index_6.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-301/metadata.json",
+        "knowledge-base/sources/FUND-301/original.md",
+        "knowledge-base/sources/FUND-301/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-302",
+      "before_category": "not verifiable",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-302",
+      "original_url": "https://www.thfund.com.cn/about/company",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "HTTP 200 anti-bot challenge (var arg1), not company-profile content",
+      "evidence_state_unchanged": "unresolved",
+      "files": [
+        "knowledge-base/sources/FUND-302/metadata.json",
+        "knowledge-base/sources/FUND-302/retrieval-response.html",
+        "knowledge-base/sources/FUND-302/retrieval-response.txt"
+      ]
+    },
+    {
+      "source_id": "FUND-304",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-304",
+      "original_url": "https://www.jsfund.cn/ueditor/jsp/upload/file/20260331/1774939300245008932.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "Some pages have little/no text; inspect original PDF for images, charts, tables and scans.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-304/metadata.json",
+        "knowledge-base/sources/FUND-304/original.md",
+        "knowledge-base/sources/FUND-304/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-305",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-305",
+      "original_url": "https://www.jsfund.cn/main/AboutHarvest/KnowJiashi/index.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-305/metadata.json",
+        "knowledge-base/sources/FUND-305/original.md",
+        "knowledge-base/sources/FUND-305/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-306",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-306",
+      "original_url": "https://www.jsfund.cn/main/AboutHarvest/JoinUs/index.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-306/metadata.json",
+        "knowledge-base/sources/FUND-306/original.md",
+        "knowledge-base/sources/FUND-306/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-307",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-307",
+      "original_url": "https://www.jsfund.cn/main/a/20260316/484107.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-307/metadata.json",
+        "knowledge-base/sources/FUND-307/original.md",
+        "knowledge-base/sources/FUND-307/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-308",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-308",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-308/metadata.json",
+        "knowledge-base/sources/FUND-308/original.md",
+        "knowledge-base/sources/FUND-308/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-309",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-309",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/index_3.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-309/metadata.json",
+        "knowledge-base/sources/FUND-309/original.md",
+        "knowledge-base/sources/FUND-309/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-310",
+      "before_category": "not verifiable",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-310",
+      "original_url": "https://www.phfund.com.cn/fs/uf/ke/file/20241223/20241223182720.pdf",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "Registered PDF redirects to Penghua homepage; browser independently confirmed homepage rather than cited PDF",
+      "evidence_state_unchanged": "unresolved",
+      "files": [
+        "knowledge-base/sources/FUND-310/metadata.json",
+        "knowledge-base/sources/FUND-310/retrieval-response.html",
+        "knowledge-base/sources/FUND-310/retrieval-response.txt"
+      ]
+    },
+    {
+      "source_id": "FUND-312",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-312",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-312/metadata.json",
+        "knowledge-base/sources/FUND-312/original.md",
+        "knowledge-base/sources/FUND-312/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-313",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-313",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/index_5.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-313/metadata.json",
+        "knowledge-base/sources/FUND-313/original.md",
+        "knowledge-base/sources/FUND-313/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-314",
+      "before_category": "translated",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-314",
+      "original_url": "https://www.fintechinchina.com/viewpoints/9679",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fintechinchina.com:443",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-314/metadata.json"
+      ]
+    },
+    {
+      "source_id": "FUND-315",
+      "before_category": "not verifiable",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-315",
+      "original_url": "https://fintechinchina.com/viewpoints/9251",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to fintechinchina.com:443",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-315/metadata.json"
+      ]
+    },
+    {
+      "source_id": "FUND-316",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-316",
+      "original_url": "https://static.cninfo.com.cn/finalpage/2024-03-25/1219392176.PDF",
+      "archive_status": "raw",
+      "provenance_and_limits": "Some pages have little/no text; inspect original PDF for images, charts, tables and scans.",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-316/metadata.json",
+        "knowledge-base/sources/FUND-316/original.md",
+        "knowledge-base/sources/FUND-316/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-317",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-317",
+      "original_url": "https://www.jsfund.cn/main/a/20260617/484163.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-317/metadata.json",
+        "knowledge-base/sources/FUND-317/original.md",
+        "knowledge-base/sources/FUND-317/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-350",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-350",
+      "original_url": "https://m.21jingji.com/article/20250305/4afe229674c12f385cee84f64f3debc8.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-350/metadata.json",
+        "knowledge-base/sources/FUND-350/original.md",
+        "knowledge-base/sources/FUND-350/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-351",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-351",
+      "original_url": "https://fund.10jqka.com.cn/20251111/c672391490.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-351/metadata.json",
+        "knowledge-base/sources/FUND-351/original.md",
+        "knowledge-base/sources/FUND-351/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-352",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-352",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-352/metadata.json",
+        "knowledge-base/sources/FUND-352/original.md",
+        "knowledge-base/sources/FUND-352/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-353",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-353",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/index.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-353/metadata.json",
+        "knowledge-base/sources/FUND-353/original.md",
+        "knowledge-base/sources/FUND-353/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-354",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-354",
+      "original_url": "https://static.nfnews.com/content/202511/27/c11946239.html",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-354/metadata.json",
+        "knowledge-base/sources/FUND-354/original.md",
+        "knowledge-base/sources/FUND-354/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-355",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-355",
+      "original_url": "https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据; 所链上游微信原文未获取，转载原始链仍有缺口",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-355/metadata.json",
+        "knowledge-base/sources/FUND-355/original.md",
+        "knowledge-base/sources/FUND-355/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-356",
+      "before_category": "translated",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-356",
+      "original_url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "Challenge/error text: 环境异常",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-356/metadata.json",
+        "knowledge-base/sources/FUND-356/retrieval-response.html",
+        "knowledge-base/sources/FUND-356/retrieval-response.txt"
+      ]
+    },
+    {
+      "source_id": "FUND-357",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-357",
+      "original_url": "https://www.aioai.cc/",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-357/metadata.json",
+        "knowledge-base/sources/FUND-357/original.md",
+        "knowledge-base/sources/FUND-357/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-358",
+      "before_category": "not verifiable",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-358",
+      "original_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据; 所链上游微信原文未获取，转载原始链仍有缺口",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-358/metadata.json",
+        "knowledge-base/sources/FUND-358/original.md",
+        "knowledge-base/sources/FUND-358/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-359",
+      "before_category": "not verifiable",
+      "after_category": "not verifiable",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-359",
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
+      "archive_status": "not_verifiable",
+      "provenance_and_limits": "Challenge/error text: 环境异常",
+      "evidence_state_unchanged": "unresolved",
+      "files": [
+        "knowledge-base/sources/FUND-359/metadata.json",
+        "knowledge-base/sources/FUND-359/retrieval-response.html",
+        "knowledge-base/sources/FUND-359/retrieval-response.txt"
+      ]
+    },
+    {
+      "source_id": "FUND-400",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-400",
+      "original_url": "https://www.cls.cn/detail/2432695",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记为候选／二手材料；保存该页面不升级部署证据",
+      "evidence_state_unchanged": "candidate",
+      "files": [
+        "knowledge-base/sources/FUND-400/metadata.json",
+        "knowledge-base/sources/FUND-400/original.md",
+        "knowledge-base/sources/FUND-400/source.html"
+      ]
+    },
+    {
+      "source_id": "FUND-401",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-401",
+      "original_url": "https://www.amac.org.cn/sjtj/datastatistics/assetmanagementdata/smzg_ywpm/202411/P020241106606145403776.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-401/metadata.json",
+        "knowledge-base/sources/FUND-401/original.md",
+        "knowledge-base/sources/FUND-401/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-402",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-402",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202602/P020260202337823336223.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-402/metadata.json",
+        "knowledge-base/sources/FUND-402/original.md",
+        "knowledge-base/sources/FUND-402/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-403",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-403",
+      "original_url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337808791393.pdf",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-403/metadata.json",
+        "knowledge-base/sources/FUND-403/original.md",
+        "knowledge-base/sources/FUND-403/source.pdf"
+      ]
+    },
+    {
+      "source_id": "FUND-405",
+      "before_category": "translated",
+      "after_category": "raw",
+      "original_language": "Chinese",
+      "archive_dir": "knowledge-base/sources/FUND-405",
+      "original_url": "https://st.gtfund.com/GSGG/2026/03/30/828175006116.PDF",
+      "archive_status": "raw",
+      "provenance_and_limits": "原登记来源类型和核验范围保留；人工核验待完成",
+      "evidence_state_unchanged": "verified-primary",
+      "files": [
+        "knowledge-base/sources/FUND-405/metadata.json",
+        "knowledge-base/sources/FUND-405/original.md",
+        "knowledge-base/sources/FUND-405/source.pdf"
+      ]
+    }
+  ]
+}

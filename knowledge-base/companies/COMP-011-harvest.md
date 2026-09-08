@@ -8,6 +8,31 @@ human_check_status: pending
 
 # Harvest / 嘉实基金管理有限公司
 
+<!-- source-recovery-followup -->
+> 2026-09-07 后续恢复：FUND-093原FX168链接仍失效；FUND-317嘉实官网同题文章已获取，可作为该事件的直接公司来源。 详见[恢复报告](../audits/2026-09-07-source-recovery/README.md)。
+
+<!-- original-language-provenance:start -->
+> [!important] 原文与研究者分析分离
+> 本页保留的英文正文、分类及表格是研究者撰写的摘要、整理或分析，不是来源原文。请先阅读下方逐源链接中的原语言文本；中文来源保留中文，原本为英文的来源保留英文。本次未将英文摘要反译为所谓“中文原文”。
+> 来源的一手／转载／媒体／供应商属性及证据限制仍按原登记保留；保存原文不等于核实全部研究结论。人工核验仍待完成。
+
+## 原语言来源档案（逐源）
+
+档案中的 `original.md` 是机械提取文本；页面排版、表格和提取缺失以下载文件为准。无法确认正文的响应不作为原文提供，详见元数据。来源标题沿用登记表，仅作定位。
+
+| 来源 ID | 登记标题 | 原登记证据状态 | 原语言正文／下载文件／记录 |
+|---|---|---|---|
+| FUND-304 | 嘉实基金2025可持续投资报告 | verified-primary | [原语言正文](../sources/FUND-304/original.md) · [下载文件](../sources/FUND-304/source.pdf) · [元数据与限制](../sources/FUND-304/metadata.json) · [登记网址](https://www.jsfund.cn/ueditor/jsp/upload/file/20260331/1774939300245008932.pdf) |
+| FUND-305 | 认识嘉实 | verified-primary | [原语言正文](../sources/FUND-305/original.md) · [下载文件](../sources/FUND-305/source.html) · [元数据与限制](../sources/FUND-305/metadata.json) · [登记网址](https://www.jsfund.cn/main/AboutHarvest/KnowJiashi/index.shtml) |
+| FUND-306 | 加入我们—嘉实招聘 | verified-primary | [原语言正文](../sources/FUND-306/original.md) · [下载文件](../sources/FUND-306/source.html) · [元数据与限制](../sources/FUND-306/metadata.json) · [登记网址](https://www.jsfund.cn/main/AboutHarvest/JoinUs/index.shtml) |
+| FUND-307 | 从春山可望到E路生花，嘉实基金第二届超级指数节成功举办 | verified-primary | [原语言正文](../sources/FUND-307/original.md) · [下载文件](../sources/FUND-307/source.html) · [元数据与限制](../sources/FUND-307/metadata.json) · [登记网址](https://www.jsfund.cn/main/a/20260316/484107.shtml) |
+| FUND-317 | 亮相2026中国国际金融展，嘉实基金解构数字金融智能化跃迁 | verified-primary | [原语言正文](../sources/FUND-317/original.md) · [下载文件](../sources/FUND-317/source.html) · [元数据与限制](../sources/FUND-317/metadata.json) · [登记网址](https://www.jsfund.cn/main/a/20260617/484163.shtml) |
+
+## 研究者摘要／分析（保留原有正文）
+
+**以下为研究者摘要/分析，不是原文。** 原有事实表述、引用定位、证据状态和局限一并保留，供对照原文复核。
+<!-- original-language-provenance:end -->
+
 ## Research conclusion
 
 Harvest's official **2025 sustainable-investment report** verifies an operational

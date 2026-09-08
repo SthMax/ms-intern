@@ -8,6 +8,27 @@ human_check_status: pending
 
 # Southern Asset Management / 南方基金管理股份有限公司
 
+<!-- original-language-provenance:start -->
+> [!important] 原文与研究者分析分离
+> 本页保留的英文正文、分类及表格是研究者撰写的摘要、整理或分析，不是来源原文。请先阅读下方逐源链接中的原语言文本；中文来源保留中文，原本为英文的来源保留英文。本次未将英文摘要反译为所谓“中文原文”。
+> 来源的一手／转载／媒体／供应商属性及证据限制仍按原登记保留；保存原文不等于核实全部研究结论。人工核验仍待完成。
+
+## 原语言来源档案（逐源）
+
+档案中的 `original.md` 是机械提取文本；页面排版、表格和提取缺失以下载文件为准。无法确认正文的响应不作为原文提供，详见元数据。来源标题沿用登记表，仅作定位。
+
+| 来源 ID | 登记标题 | 原登记证据状态 | 原语言正文／下载文件／记录 |
+|---|---|---|---|
+| FUND-200 | 『基金行业金融科技获奖成果宣传活动』南方基金：基于多智能体协同的交易助理 | verified-primary | [原语言正文](../sources/FUND-200/original.md) · [下载文件](../sources/FUND-200/source.pdf) · [元数据与限制](../sources/FUND-200/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf) |
+| FUND-201 | 南方基金电子直销用户服务协议 | verified-primary | [原语言正文](../sources/FUND-201/original.md) · [下载文件](../sources/FUND-201/source.html) · [元数据与限制](../sources/FUND-201/metadata.json) · [登记网址](https://wap.southernfund.com/mweb/agreement/xieyi_register_v2.html) |
+| FUND-202 | 华泰证券股份有限公司 | verified-primary | [原语言正文](../sources/FUND-202/original.md) · [下载文件](../sources/FUND-202/source.html) · [元数据与限制](../sources/FUND-202/metadata.json) · [登记网址](https://app.cnstock.com/zzb/zgzqb/html/2026-03/31/nw.D110000zgzqb_20260331_1-B071.htm) |
+| FUND-203 | 拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态 | candidate | [原语言正文](../sources/FUND-203/original.md) · [下载文件](../sources/FUND-203/source.html) · [元数据与限制](../sources/FUND-203/metadata.json) · [登记网址](https://finance.sina.com.cn/wm/2026-07-08/doc-inihatty8088729.shtml) · [微信原刊及核对](../sources/wechat-articles/README.md) |
+
+## 研究者摘要／分析（保留原有正文）
+
+**以下为研究者摘要/分析，不是原文。** 原有事实表述、引用定位、证据状态和局限一并保留，供对照原文复核。
+<!-- original-language-provenance:end -->
+
 ## Verified initiatives
 
 ### Multi-agent trading assistant: 小喃同学
@@ -65,8 +86,10 @@ asset-management AUM.
 
 **FUND-203** describes ETFirst Skill within the 首趋E指 mini-program, with
 natural-language ETF/index queries and an external-assistant/API-key connection.
-An original Southern disclosure or public product documentation has not yet been
-located. This is a candidate for follow-up, not evidence that confidential desk
+Its source link has now been archived from the 中国基金报 WeChat account
+(2026-07-08 17:04:16 Asia/Shanghai, HTML ct). The three-step configuration and
+AI-content risk notice match the Sina body. An original Southern-authored
+disclosure or public product documentation has not yet been located. This is a candidate for follow-up, not evidence that confidential desk
 data can safely be sent to an external assistant.
 
 ## Source trail and review
@@ -74,7 +97,7 @@ data can safely be sent to an external assistant.
 - **FUND-200** — [『基金行业金融科技获奖成果宣传活动』南方基金：基于多智能体协同的交易助理](https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf). Original company case, AMAC host. [AMAC listing](https://www.amac.org.cn/xwfb/hydt/index_3.html) dates it 2026-01-23; PDF revision date not stated. All 11 pages extracted; complete physical pp. 5–8 visually inspected, including Figures 1–2, permissions and reported efficiencies. The PDF skill was used for visual checks.
 - **FUND-201** — [南方基金电子直销用户服务协议](https://wap.southernfund.com/mweb/agreement/xieyi_register_v2.html). Undated official terms, III.1–2 and III.5. Direct live HTML inspected: Exa's extracted copy omitted the AI section, so the narrower extraction was not relied upon.
 - **FUND-202** — [华泰证券股份有限公司](https://app.cnstock.com/zzb/zgzqb/html/2026-03/31/nw.D110000zgzqb_20260331_1-B071.htm). Annual-report-summary disclosure, 中国证券报 B071, 2026-03-31; second section, investment-management business, paragraph naming 南方基金. The summary is signed 2026-03-30. Exact AUM paragraph and annual reporting period checked in direct HTML.
-- **FUND-203** — [拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态](https://finance.sina.com.cn/wm/2026-07-08/doc-inihatty8088729.shtml). 2026-07-08 media-distribution lead; original-source provenance unresolved.
+- **FUND-203** — [拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态](https://finance.sina.com.cn/wm/2026-07-08/doc-inihatty8088729.shtml). 2026-07-08 media-distribution lead; upstream 中国基金报 WeChat original now archived and compared in the [WeChat archive](../sources/wechat-articles/README.md). Publisher recovery does not make it a Southern-authored deployment record.
 
 Two other working AMAC copies linked from the same listing,
 [copy A](https://www.amac.org.cn/xwfb/hydt/202605/P020260507641128700604.pdf) and

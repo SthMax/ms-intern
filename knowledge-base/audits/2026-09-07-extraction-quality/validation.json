@@ -1,0 +1,27 @@
+{
+  "reading_copies": {
+    "FUND-103": {
+      "text_check": "pass",
+      "images_saved": 1,
+      "images_expected": 1
+    },
+    "FUND-108": {
+      "text_check": "pass",
+      "images_saved": 16,
+      "images_expected": 16
+    },
+    "FUND-355": {
+      "text_check": "pass",
+      "images_saved": 5,
+      "images_expected": 5
+    },
+    "FUND-358": {
+      "text_check": "pass",
+      "images_saved": 1,
+      "images_expected": 1
+    }
+  },
+  "raw_archives_unchanged": true,
+  "issues": [],
+  "saved_challenge_rejected_without_network": true
+}

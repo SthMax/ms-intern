@@ -1,0 +1,53 @@
+{
+  "source_id": "FUND-110",
+  "issuer": "China Fund News; reporters 方丽、陆慧婧、张燕北",
+  "title": "易方达基金等巨头纷纷出手，DeepSeek重塑金融科技新格局",
+  "source_type": "Original newspaper reporting",
+  "published": "2025-02-15 18:04; page publish-time field checked",
+  "url": "https://www.chnfund.com/article/AR82dfae38-b1c3-70f9-0929-3a181b418f27",
+  "locator": "易方达基金完成DeepSeek私有化部署",
+  "evidence_state": "candidate",
+  "caveat": "[Note](companies/efund-llm-deep-dive.md); exact dates/checkpoints need original confirmation",
+  "retrieved_at": "2026-09-07T02:01:45.501799+00:00",
+  "human_check_status": "pending",
+  "archive_status": "raw",
+  "verification_scope": "Retrieval and original-language preservation only; no new legal or outcome validation.",
+  "http_status": 200,
+  "final_url": "https://www.chnfund.com/article/AR82dfae38-b1c3-70f9-0929-3a181b418f27",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "sha256": "2d9f4e267427767d95075daec68982c8bd757b63dccf8ea9ff7e3eb7c94e0a4f",
+  "byte_count": 40525,
+  "raw_file": "source.html",
+  "decoded_encoding": "utf-8",
+  "extraction_method": "Defuddle Markdown from archived HTML; no translation",
+  "text_language": "Chinese",
+  "extracted_characters": 4319,
+  "text_file": "original.md",
+  "archive_review_date": "2026-09-07",
+  "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
+  "extracted_text_sha256": "26f0c5753aef559dc0d682605abcea91200fba243cbfc6c5ef081860a9772ab7",
+  "wechat_live_review": {
+    "date": "2026-09-07",
+    "link_ids": [
+      "WX-005"
+    ],
+    "status": "excluded_unrelated_recommendations",
+    "audit": "../../audits/2026-09-07-wechat-live/README.md",
+    "relationship": "unrelated_recommended_articles; not the registered research source",
+    "latest_retry": {
+      "record": "../../audits/2026-09-07-wechat-live/paced-retry-070217/results.json",
+      "link_ids": [
+        "WX-005"
+      ],
+      "status": "captcha_response_no_article",
+      "inter_request_pause_seconds": 45,
+      "rate_limit_evidence": "No HTTP 429 or Retry-After observed; rate limiting remains unconfirmed"
+    },
+    "retrieval_status_at_last_attempt": "captcha_response_no_article",
+    "followup_required": false,
+    "research_relevance": "None for this project: links appear in the article footer, not as evidence for the AI/LLM research claims",
+    "scope_review_date": "2026-09-08",
+    "scope_review": "../../audits/2026-09-08-wechat-scope/README.md"
+  }
+}

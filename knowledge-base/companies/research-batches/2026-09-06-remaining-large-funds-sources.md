@@ -1,5 +1,32 @@
 # Remaining large-manager cohort: evidence dispositions
 
+<!-- original-language-provenance:start -->
+> [!important] 原文与研究者分析分离
+> 本页保留的英文正文、分类及表格是研究者撰写的摘要、整理或分析，不是来源原文。请先阅读下方逐源链接中的原语言文本；中文来源保留中文，原本为英文的来源保留英文。本次未将英文摘要反译为所谓“中文原文”。
+> 来源的一手／转载／媒体／供应商属性及证据限制仍按原登记保留；保存原文不等于核实全部研究结论。人工核验仍待完成。
+
+## 原语言来源档案（逐源）
+
+档案中的 `original.md` 是机械提取文本；页面排版、表格和提取缺失以下载文件为准。无法确认正文的响应不作为原文提供，详见元数据。来源标题沿用登记表，仅作定位。
+
+| 来源 ID | 登记标题 | 原登记证据状态 | 原语言正文／下载文件／记录 |
+|---|---|---|---|
+| FUND-350 | 基金公司鏖战AI | candidate | [原语言正文](../../sources/FUND-350/original.md) · [下载文件](../../sources/FUND-350/source.html) · [元数据与限制](../../sources/FUND-350/metadata.json) · [登记网址](https://m.21jingji.com/article/20250305/4afe229674c12f385cee84f64f3debc8.html) |
+| FUND-351 | 招商基金：深入推进数字金融建设，全面拥抱数智化转型 | candidate | [原语言正文](../../sources/FUND-351/original.md) · [下载文件](../../sources/FUND-351/source.html) · [元数据与限制](../../sources/FUND-351/metadata.json) · [登记网址](https://fund.10jqka.com.cn/20251111/c672391490.shtml) |
+| FUND-352 | AI筑牢邮件安全防线 永赢基金以大模型守护金融数字资产 | verified-primary | [原语言正文](../../sources/FUND-352/original.md) · [下载文件](../../sources/FUND-352/source.pdf) · [元数据与限制](../../sources/FUND-352/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf) |
+| FUND-353 | 行业动态 | verified-primary | [原语言正文](../../sources/FUND-353/original.md) · [下载文件](../../sources/FUND-353/source.html) · [元数据与限制](../../sources/FUND-353/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/index.html) |
+| FUND-354 | 中欧基金AI投研助手荣获央行2024年度金融科技发展奖 | candidate | [原语言正文](../../sources/FUND-354/original.md) · [下载文件](../../sources/FUND-354/source.html) · [元数据与限制](../../sources/FUND-354/metadata.json) · [登记网址](https://static.nfnews.com/content/202511/27/c11946239.html) |
+| FUND-355 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | candidate | [原语言正文](../../sources/FUND-355/original.md) · [下载文件](../../sources/FUND-355/source.html) · [元数据与限制](../../sources/FUND-355/metadata.json) · [登记网址](https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml) |
+| FUND-356 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | candidate | 微信转载原文与图片已存档；中国基金报署名已核对 · [元数据与限制](../../sources/FUND-356/metadata.json) · [登记网址](https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA) · [本次恢复记录](../../sources/FUND-356/recovery.json) · [微信正文](../../sources/FUND-356/original.md) · [原始HTML](../../sources/FUND-356/source.html) |
+| FUND-357 | 钱拓科技 · FDE金融AI服务商 | verified-primary | [原语言正文](../../sources/FUND-357/original.md) · [下载文件](../../sources/FUND-357/source.html) · [元数据与限制](../../sources/FUND-357/metadata.json) · [登记网址](https://www.aioai.cc/) |
+| FUND-358 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | [原语言正文](../../sources/FUND-358/original.md) · [下载文件](../../sources/FUND-358/source.html) · [元数据与限制](../../sources/FUND-358/metadata.json) · [登记网址](https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml) |
+| FUND-359 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | 用户保存的微信PDF全文已入库 · [元数据与限制](../../sources/FUND-359/metadata.json) · [登记网址](https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb) · [本次恢复记录](../../sources/FUND-359/recovery.json) · [PDF原件](../../sources/FUND-359/source.pdf) · [中文正文](../../sources/FUND-359/original.md) |
+
+## 研究者摘要／分析（保留原有正文）
+
+**以下为研究者摘要/分析，不是原文。** 原有事实表述、引用定位、证据状态和局限一并保留，供对照原文复核。
+<!-- original-language-provenance:end -->
+
 Cut-off and access date: **6 September 2026, Asia/Shanghai**. Researcher: Codex
 subagent. Human review: pending throughout. This focused pass records every
 assigned manager even where primary deployment evidence is still missing.
@@ -25,10 +52,10 @@ These are the same 13 fields as the master register. Rebase note links from
 | FUND-353 | Company landscape | AMAC | 行业动态 | Official index | Live page; linked entry 2026-07-01 | Publication locator only | [Original](https://www.amac.org.cn/xwfb/hydt/index.html) | 2026-09-06 | 永赢基金邮件安全 linked row | Date associated with exact FUND-352 PDF | verified-primary | [Maxwealth](../COMP-019-maxwealth.md); pagination may change |
 | FUND-354 | Company landscape | 南方+ / 大钱进 | 中欧基金AI投研助手荣获央行2024年度金融科技发展奖 | Secondary report | 2025-11-27 | Company-origin case/award source pending | [Report](https://static.nfnews.com/content/202511/27/c11946239.html) | 2026-09-06 | Application overview; three technical subsections | Reported research-form assistant, financial fine-tuning, API integration and agent decomposition | candidate | [China Europe](../COMP-020-china-europe.md); no primary deployment/award confirmation claimed |
 | FUND-355 | Company landscape | Sina; credit 中欧基金; underlying 中国基金报 report | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | Company-account/media reprint chain | 2026-06-01 | Secondary company-attributed statements | [Sina copy](https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml) | 2026-09-06 | Source link; 三化协同 section | 100+ Skills and approximately 60% / 50% efficiency claims, attributed as of 2026-05 | candidate | [China Europe](../COMP-020-china-europe.md); measures not independently validated; not promoted because of source label |
-| FUND-356 | Company landscape / provenance | 中欧基金 WeChat; content credited 中国基金报 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | Official-account reprint of media narrative | Date not recovered in extraction | Explicitly marked 内容转载自：中国基金报 | [Company-account copy](https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA) | 2026-09-06 | Opening source credit and 三化协同 section | Provenance trace for FUND-355; same underlying story, not independent confirmation | candidate | [China Europe](../COMP-020-china-europe.md); original-account host does not convert reportage into a primary case |
+| FUND-356 | Company landscape / provenance | 中欧基金 WeChat; content credited 中国基金报 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | Official-account reprint of media narrative | 2026-06-01T19:05:21+08:00 (HTML ct) | Explicitly marked 内容转载自：中国基金报 | [Company-account copy](https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA) | 2026-09-07 | Opening source credit and 三化协同 section | Provenance trace for FUND-355; same underlying story, not independent confirmation | candidate | [China Europe](../COMP-020-china-europe.md); original-account host does not convert reportage into a primary case · [本次恢复记录](../../sources/FUND-356/recovery.json) · [微信正文](../../sources/FUND-356/original.md) · [原始HTML](../../sources/FUND-356/source.html) |
 | FUND-357 | Company landscape / vendor lead | 上海钱拓网络技术有限公司 | 钱拓科技 · FDE金融AI服务商 | Original vendor homepage | Undated live page | Vendor-client-list statement only | [Original vendor page](https://www.aioai.cc/) | 2026-09-06 | Opening client list; 钱拓服务过哪些金融机构 FAQ | Vendor names 中欧基金 among clients served | verified-primary | [China Europe](../COMP-020-china-europe.md); does not specify a fund AI project, product, dates or outcomes; excluded from initiative counts |
 | FUND-358 | Company landscape | 中国证券报-中证网; Sina reprint | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | Narrative media report, not first-person transcript | 2026-09-03 | Current described uses and future agent vision separated | [Reprint](https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml) | 2026-09-06 | 全链路系统; 人机协同; 投研智能体 sections | Reported text extraction, coding support and risk-information workflow; future autonomous research agent | candidate | [Huatai-PineBridge](../COMP-021-huatai-pinebridge.md); no verified model/hosting/ROI details |
-| FUND-359 | Company landscape / provenance | 中国证券报-中证网 WeChat source linked by Sina | Linked source for 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河; destination title not retrieved | Intended original newspaper-account article | Not verified | Direct retrieval failed | [Linked source](https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb) | 2026-09-06 | Exact link in FUND-358 source credit | Provenance follow-up only | unresolved | [Huatai-PineBridge](../COMP-021-huatai-pinebridge.md); body not used |
+| FUND-359 | Company landscape / provenance | 中国证券报微信公众号; user-supplied print PDF | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | Original newspaper-account report; user-supplied browser print | 2026-09-03 18:36 (PDF p. 1) | Complete user PDF imported; media provenance checked | [Linked source](https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb) | 2026-09-08 | PDF pp. 1–3; three sections, conclusion and risk notice | Current research/risk workflows and future research-agent vision; narrative reporting | candidate | [Huatai-PineBridge](../COMP-021-huatai-pinebridge.md); PDF body compared with Sina and company note; not primary company deployment evidence · [本次恢复记录](../../sources/FUND-359/recovery.json) · [PDF原件](../../sources/FUND-359/source.pdf) · [中文正文](../../sources/FUND-359/original.md) |
 
 ## Proposed verified initiative row
 

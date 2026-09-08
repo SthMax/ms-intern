@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="force-rendering" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="author" content="&#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;">
+    <meta name="keywords" content="&#x6613;&#x65B9;&#x8FBE;&#x57FA;&#x91D1;&#x7B49;&#x5DE8;&#x5934;&#x7EB7;&#x7EB7;&#x51FA;&#x624B;&#xFF0C;DeepSeek&#x91CD;&#x5851;&#x91D1;&#x878D;&#x79D1;&#x6280;&#x65B0;&#x683C;&#x5C40;">
+    <meta name="description" content="&#x4E1A;&#x5185;&#x4EBA;&#x58EB;&#x6307;&#x51FA;&#xFF0C;DeepSeek&#x7684;&#x63A8;&#x7406;&#x80FD;&#x529B;&#x548C;&#x8F83;&#x4F4E;&#x7684;&#x7B97;&#x529B;&#x9700;&#x6C42;&#x4F7F;&#x5176;&#x5728;&#x91D1;&#x878D;&#x9886;&#x57DF;&#x7684;&#x5E94;&#x7528;&#x524D;&#x666F;&#x5E7F;&#x9614;&#xFF0C;&#x80FD;&#x591F;&#x4E3A;&#x57FA;&#x91D1;&#x516C;&#x53F8;&#x5E26;&#x6765;&#x66F4;&#x9AD8;&#x7684;&#x8FD0;&#x8425;&#x6548;&#x7387;&#x548C;&#x521B;&#x65B0;&#x52A8;&#x529B;&#x3002;&#x968F;&#x7740;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x57FA;&#x91D1;&#x516C;&#x53F8;&#x52A0;&#x5165;&#x5E03;&#x5C40;&#xFF0C;DeepSeek&#x6709;&#x671B;&#x91CD;&#x5851;&#x516C;&#x52DF;&#x57FA;&#x91D1;&#x884C;&#x4E1A;&#x7684;&#x751F;&#x6001;&#xFF0C;&#x5F00;&#x542F;&#x667A;&#x80FD;&#x6295;&#x7814;&#x7684;&#x65B0;&#x7EAA;&#x5143;&#x3002;">
+    <title>&#x6613;&#x65B9;&#x8FBE;&#x57FA;&#x91D1;&#x7B49;&#x5DE8;&#x5934;&#x7EB7;&#x7EB7;&#x51FA;&#x624B;&#xFF0C;DeepSeek&#x91CD;&#x5851;&#x91D1;&#x878D;&#x79D1;&#x6280;&#x65B0;&#x683C;&#x5C40; &#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;</title>
+    <link href="/lib/element-ui/index.css" rel="stylesheet" />
+    <link href="/css/v4/layout.min.css?v=P3HD1GKBxiP6iedtYNWjE_oN1wBTr7L9ZLqiJ7B8ZhA" rel="stylesheet" />
+    <link href="/css/gray.min.css" rel="stylesheet" />
+    <link href="//cdn.chnfund.com/s/iconfont/font_5114877_odik0oqmiq.css" rel="stylesheet" />
+
+
+    <script type="text/javascript">
+        window.$cf = { cdn: 'https://cdn.chnfund.com' }
+    </script>
+    <script src="/lib/core-js/3.38.1/core-js.min.js?v=hjcPNNioB449BRZzXqlLrcK3dS0TXIEuGe79zpna4i0"></script>
+    <script src="/lib/jquery/dist/jquery.min.js?0.1&amp;v=_JqT3SQfawRcv_BIHPThkBvs0OEvtFFmqPF_lYI_Cxo"></script>
+    <!-- Import Vue 2 -->
+    <script src="/lib/vue/vue.min.js?v=PB1LDFSejenUqbr7EqtwtqGsdH0HKTuYxbJbZjKZmv0"></script>
+    <script src="/lib/element-ui/index.js?v=idPFXo-gPxd7HMOCSu3nyUss5BQ_ajD1TruW4g60K8I"></script>
+    <script src="/lib/axios/axios.min.js?v=nec3W3r9OG4DeHKjWvWqWOCJmGz-nl4seDl2Uo77Xy8"></script>
+    <script src="/lib/moment/moment.min.js?v=hFxSSWnt1bOvmqbYcY0p_pLo2-JblVIUqOBkoFqaUCc"></script>
+    <script src="/lib/moment/zh-cn.js?v=UxOFMqrXxXGvEM9rF6Z4VS6ann71AU0lD5evjcYa5uE"></script>
+    <script src="/js/pages/common.min.js?v=9-K3ydfm08E2HjjLxkpH6N3wvD_qTWvhkn6Haa_vUJM"></script>
+    <script>
+        window.AliyunCaptchaConfig = {
+            // 必填，验证码示例所属地区，支持中国内地（cn）、新加坡（sgp）
+            region: "cn",
+            // 必填，身份标。开通阿里云验证码2.0后，您可以在控制台概览页面的实例基本信息卡片区域，获取身份标
+            prefix: "rjdt1i",
+        };
+    </script>
+    <!--2.集成主JS-->
+    <script type="text/javascript" src="https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js"></script>
+
+    
+    <link href="/css/v4/pages/article-detail.min.css?v=n7iyWtZbrCDSDFO2cUzdy9zXnnFZOQzXii6qk-cU6M0" rel="stylesheet" />
+
+
+    <!--[if lte IE 9 ]> <link href="/css/v4/lte-ie9.min.css" rel="stylesheet" /> <![endif]-->
+    <!--[if IE 7 ]> <link href="/css/v2/pages/ie7.min.css" rel="stylesheet" /> <![endif]-->
+    
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?35849f3b9042e6cb270e09a0d9350982";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    
+</head>
+<body class="article-detail-body">
+    
+
+    
+<div class="header">    
+    <div class="top-wrapper">
+        <div class="top clearfix">
+            <div class="right">
+                <form class="search" method="get" action="/search/index" target="_blank">
+                    <input class="query" name="query" placeholder="请输入查询关键字"
+                           maxlength="30"
+                           autocomplete="off" />
+                    <button type="submit" log-action="点击搜索" class="imgWrapper"><img src="/image/common/search.png" /></button>
+                </form>
+                <ul>
+                    <li class="qrcode">
+                        <p>官方微信</p>
+                        <img class="qrcode-img" src="/image/qrcode/wx-cf-200x200.png" alt="官方微信" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方APP</p>
+                        <img class="qrcode-img" src="/image/qrcode/chnfund-app.png" alt="官方APP" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方视频号</p>
+                        <img class="qrcode-img" src="/image/qrcode/wxsph.jpg" alt="官方视频号" />
+                    </li>
+                    <li><a log-action="点击" log-content="电子报" href="/epaper">电子报</a></li>
+                    <li class="login-item-wrapper"><a log-action="点击" 
+                           log-content="登录" 
+                           id="btnLogin"
+                           href="javascript:void 0">登录</a>
+                        <i id="vipIcon" class="iconfont icon-VIP"></i>
+                        <a log-action="点击" 
+                           log-content="退出登录" 
+                           id="btnLogout"
+                           title="退出"
+                           style="display:none"
+                           href="javascript:void 0"><span>|</span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loginDialog" v-cloak>
+    <el-dialog title="登录" :visible.sync="visible" 
+        width="400px"         
+        :close-on-click-modal="false"
+        v-loading="submitting">
+
+        <img src="/image/logo.png" class="logo" />
+
+        <el-form :model="form" :rules="rules" ref="form" 
+            label-width="80px"
+            label-position="top">
+
+            <el-form-item prop="phone">
+                <el-input v-model="form.phone" placeholder="请输入手机号" maxlength="11" autocompleted />
+            </el-form-item>
+
+            <el-form-item prop="code" class="form-item-code">
+                <el-input v-model="form.code" placeholder="验证码" 
+                    class="sms-code"
+                    maxlength="6"
+                ></el-input>
+                <el-button type="primary"
+                           id="captcha-button"
+                           v-on:click="preSendCode"
+                           :disabled="countdown > 0 || submittingCaptcha" 
+                           class="btn-send-sms-code" 
+                           style="width:100%">
+                    {{ countdown > 0 ? countdown + 's' : '获取验证码' }}
+                </el-button>
+            </el-form-item>
+
+            <el-button type="primary" @click="submit" class="btn-login" :disabled="sendButtonDisabled">登录</el-button>
+        </el-form>
+    </el-dialog>
+</div>
+
+    <div class="logo">
+        <a href="/" class="imgWrapper">
+            <img src="/image/logo.png" />
+        </a>
+    </div>
+
+    <div class="slogan">
+        <div class="cn">
+            <p>洞察金融市场</p>
+            <p class="china-value">传播中国价值</p>
+        </div>
+        <p class="en">Global Perspective, China Value</p>
+    </div>
+
+        <div class="nav">
+            <section>
+                <div><a log-action="点击导航" log-content="首页" href="/">首页</a></div>
+                <div><a log-action="点击导航" log-content="资管" href="/financial">资管</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公募" href="/fund">公募</a></div>
+                <div><a log-action="点击导航" log-content="环球" href="/global">环球</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="闪讯" href="/sx">闪讯</a></div>
+                <div><a log-action="点击导航" log-content="电子报" href="/epaper">电子报</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="私募" href="/sm">私募</a></div>
+                <div><a log-action="点击导航" log-content="大湾区" href="/greater-bay-area">大湾区</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="券商" href="/security">券商</a></div>
+                <div><a log-action="点击导航" log-content="论坛" href="/forum">论坛</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="银行" href="/bank">银行</a></div>
+                <div><a log-action="点击导航" log-content="视频" href="/video">视频</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="市场" href="/market">市场</a></div>
+                <div><a log-action="点击导航" log-content="访谈" href="/interview">访谈</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公司" href="/company">公司</a></div>
+                <div><a log-action="点击导航" log-content="投教" href="/investment-education">投教</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="IPO" href="/ipo">IPO</a></div>
+                <div><a log-action="点击导航" log-content="Invest Insight" href="/ins">Invest Insight</a></div>
+            </section>
+        </div>
+</div>
+
+<script src="/js/v4/nav.min.js?v=AzFu_hRLnrubqZVGrrPVM4L1qytdsEYv8a_t7TRxP-Q"></script>
+
+    
+
+<div class="content-body">
+    <!-- 文章详情左栏 -->
+    <div class="left">
+        <h1 class="article-title">
+            &#x6613;&#x65B9;&#x8FBE;&#x57FA;&#x91D1;&#x7B49;&#x5DE8;&#x5934;&#x7EB7;&#x7EB7;&#x51FA;&#x624B;&#xFF0C;DeepSeek&#x91CD;&#x5851;&#x91D1;&#x878D;&#x79D1;&#x6280;&#x65B0;&#x683C;&#x5C40;
+        </h1>
+        <div class="article-base-info">
+                <span class="article-source">来源：&#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;</span>
+            <span class="publish-time">2025-02-15 18:04</span>
+            <div class="share">
+                <div class="wechat-share imgWrapper">
+                    <img src="/image/common/wechat.png" alt="微信分享" />
+                    <div id="qrcode"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p style="text-align: center;margin-bottom: 0px;"><img class="rich_pages wxw-img" data-backh="152" data-backw="578" data-cropselx1="0" data-cropselx2="578" data-cropsely1="0" data-cropsely2="152" data-galleryid="" data-imgfileid="508743273" data-ratio="0.425" data-src="" data-type="gif" data-w="1080" style="width: 578px;height: 246px;" src="/upload/article/wechat/2025/02/15/3485ce7cb3f7adfc9b0195fabbd9838d4b1d4a56.png"/></p><p style="letter-spacing: 0.578px;white-space: normal;"><span style="color: rgb(0, 82, 255);">【导读】易方达基金等巨头纷纷出手，DeepSeek重塑金融科技新格局</span></p><p style="letter-spacing: 0.578px;white-space: normal;">中国基金报记者&nbsp;方丽&nbsp;陆慧婧&nbsp;张燕北</p><p style="letter-spacing: 0.578px;white-space: normal;">在金融科技浪潮的推动下，人工智能正引领基金行业的科技布局。</p><p style="letter-spacing: 0.578px;white-space: normal;">近期，DeepSeek热度持续攀升，吸引了众多基金公司的目光。近日，<strong>易方达基金宣布，完成DeepSeek全参数版本模型在内部的私有化部署</strong>，华安、天弘、平安、创金合信、浦银安盛、鹏扬、上银、同泰等十余家基金公司也在纷纷加速布局DeepSeek，掀起新一轮金融科技“卡位战”。</p><p style="letter-spacing: 0.578px;white-space: normal;">这些基金公司不仅完成了DeepSeek系列开源模型的本地化部署，还积极探索其在投资研究、客户服务、风险管控、产品销售等核心业务场景中的应用。</p><p style="letter-spacing: 0.578px;white-space: normal;">业内人士指出，DeepSeek的推理能力和较低的算力需求使其在金融领域的应用前景广阔，能够为基金公司带来更高的运营效率和创新动力。随着越来越多的基金公司加入布局，DeepSeek有望重塑公募基金行业的生态，开启智能投研的新纪元。</p><p style="letter-spacing: 0.578px;white-space: normal;text-align: center;"><span style="color: rgb(2, 30, 170);"><strong>易方达基金完成DeepSeek私有化部署</strong></span></p><p style="letter-spacing: 0.578px;white-space: normal;">DeepSeek横空出世，掀起生成式AI全球投资热潮，多家基金公司近日也竞相出手，接入DeepSeek。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>易方达基金</strong>近日表示，公司于2024年5月开始接入DeepSeek的V2版本SaaS模型服务。随着DeepSeek在2024年12月发布V3模型、2025年1月发布R1模型，公司也迅速在当月底完成了全参数版本模型在内部的私有化部署。<strong>同时，还借鉴DeepSeek在大模型合成数据和知识蒸馏方面的优秀经验，对自研的金融专业大模型EFundGPT进行了大版本升级优化。</strong></p><p style="letter-spacing: 0.578px;white-space: normal;">在私有化部署DeepSeek之前，易方达基金就基于自研的金融专业大模型EFundGPT在辅助投资研究、辅助文案生成、辅助编程、日常会议纪要、辅助数据查询、智能交易等多个场景进行了应用落地，并且取得了显著的效率效果提升。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>易方达基金还表示，DeepSeek系列模型的开源发布，对基金行业数智化转型有很大的推动作用，可助力行业机构运用相关技术提升金融服务质效，进一步夯实数字金融发展基础，做好数字金融这篇大文章。</strong></p><p style="letter-spacing: 0.578px;white-space: normal;">比如，基金行业对于信息保密要求较高，随着DeepSeek系列模型的开源，基金公司能够方便获取到最先进的、可私有化的大模型，这势必会对内部场景的智能化水平有很大的提升。</p><p style="letter-spacing: 0.578px;white-space: normal;">对于DeepSeek未来的应用前景，<span style="letter-spacing: 0.578px;">易方达基金表示，</span>公司将聚焦于应用强推理模型结合内部业务数据，通过大小模型协作和知识蒸馏，提升垂域任务效果。同时将力争降低推理部署成本，即时为客户提供更普惠、更智能、更专业的资产管理综合服务。</p><p style="letter-spacing: 0.578px;white-space: normal;">与此同时，公司将继续探索AI驱动的服务能力全面升级，聚焦大规模、多模态技术方向，提升AIGC技术能力，推动AIGC与投研、风控、市场、客服、投顾、办公等各个业务条线、各类场景深度融合，打造企业级人工智能应用生态。</p><p style="letter-spacing: 0.578px;white-space: normal;text-align: center;"><span style="color: rgb(2, 30, 170);"><strong>DeepSeek成为基金公司竞逐的“香饽饽”</strong></span></p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>完成DeepSeek开源模型本地化部署，正成为开年以来基金公司金融科技部门的首要任务。</strong></p><p style="letter-spacing: 0.578px;white-space: normal;">据了解，<strong>华安基金</strong>于2023年底正式启动“华安基金灵思AI平台”建设项目，将大模型技术赋能智能办公、客户服务、合规风控等业务环节，进而有效提升服务效能。该平台在上海金融科技产业联盟举办的“2024年上海人工智能大模型金融领域示范场景评选”中获得“优秀奖”。<strong>在DeepSeek R1发布后，华安基金迅速完成了DeepSeek本地模型私有化部署及API接入，并完成了DeepSeek模型和“华安灵思AI平台”的结合。</strong></p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>天弘基金</strong>目前对DeepSeek的相关技术做全面跟进，例如对其模型测试业务效果、利用其训练天弘基金自己的大模型、开发强化学习路径等，部分探索已有进展。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>平安基金</strong>已完成了DeepSeek-R1的本地化部署，并正在积极进行各领域应用研究探索，以提升公司在投资研究、营销客服、风控合规、运营管理、产品研发、办公管理等方面的效能。</p><p style="letter-spacing: 0.578px;white-space: normal;">DeepSeekR1出来后，<strong>创金合信基金</strong>第一时间分析了其对现有AI应用架构方案的影响，包括RAG和Agent等技术模块，评估DeepSeek R1对现有方案的优化点，以及优化的必要性。同时，DeepSeek R1强大的推理能力，使得RAG方案的回答更加全面和准确，更多的知识类场景被激活。待评估和验证后，公司会再给出具体的执行计划。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>鹏扬基金</strong>IT部负责人告诉记者，鹏扬基金已启动DeepSeek系列模型的本地化部署规划，目前正针对其蒸馏版本（轻量化模型）进行多维度评估，包括推理效率、任务适配性及综合性能等。目标是在满足合规风控要求及合理成本下筛选出符合业务需求的轻量级模型方案。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>浦银安盛基金</strong>目前私有化部署了包括DeepSeek、Qwen、ChatGLM在内的多个模型并向全体员工开放使用。在应用场景规划上，<strong>以业务需求、实际效果、安全合规为首要考虑因素</strong>，优先在非核心流程试点，积累经验后再向关键业务渗透。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>上银基金</strong>表示，公司正在探索DeepSeek私有化部署及应用工作。已在部分电脑终端完成私有化部署，针对DeepSeek/Qwen2.5-coder模型在代码辅助生成、校验和性能优化方面进行应用探索。同时，也对基于本地知识库+DeepSeek R1的智能知识库应用进行实验和探索。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>同泰基金</strong>也已完成轻量级的DeepSeek开源模型的私有化部署，当前正在验证其在投资研究、合规风控及产品销售等业务场景的落地应用，后续将根据适合公司的落地场景部署更高级别的模型，开展正式推广使用。</p><section style="letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;text-align: center;"><span style="color: rgb(2, 30, 170);"><strong>使用体验良好</strong></span></section><p style="letter-spacing: 0.578px;white-space: normal;text-align: center;"><span style="color: rgb(2, 30, 170);"><strong>仍有优化空间</strong></span></p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>从实际应用来看，多家基金公司通过引入DeepSeek系列开源模型，在多个业务场景中实现了效率与效果的双提升。</strong></p><p style="letter-spacing: 0.578px;white-space: normal;">比如，华安基金表示，通过私有化部署 DeepSeek系列模型，在日常办公、机构销售、合规风控、投资研究、智能问答和知识库问答等多个场景下，提升了服务的性能和稳定性；在办公效率、业务创新、信息披露准确性、投研数据体系搭建以及问答准确率等方面均有显著提升。</p><p style="letter-spacing: 0.578px;white-space: normal;">“公司基于Coze智能体平台开发的营销材料合规审核系统，引入DeepSeek模型升级后，规则识别精度大幅提升，自动审核准确率从85%以上提高到95%以上。”鹏扬基金IT部负责人说。</p><p style="letter-spacing: 0.578px;white-space: normal;">尽管DeepSeek系列开源模型优势明显，但在实际应用中并非十全十美，仍面临诸多需要攻克的难点。</p><p style="letter-spacing: 0.578px;white-space: normal;">平安基金指出，模型目前主要针对文本语言类信息推理，多模态应用存在短板。如何高效获取语音、社交媒体信息、系统数据库、行业资讯等多模态信息，构建企业知识库并与DeepSeek有效衔接，成为关键技术研究方向。此外，提升模型的垂直化能力，使其能专注于特定领域，也是未来需突破的重点。</p><p style="letter-spacing: 0.578px;white-space: normal;">创金合信基金认为，在准确性要求高、逻辑密集、效果优先的场景中，采用或替换成R1模型是明确选择；而对于响应速度要求高的场景，则需具体分析评估，谨慎决策。</p><p style="letter-spacing: 0.578px;white-space: normal;">同泰基金在应用过程中发现，实现互联网最新信息的增强搜索、本地知识库的搭建和应用，需要一定的配置和部署能力。探索适用于公司现状的最佳部署实践也尚需时日。</p><p style="letter-spacing: 0.578px;white-space: normal;">上银基金提到，DeepSeek的应用给算力、数据隐私与安全带来较大挑战，期待行业基础设施机构能推出基于行业云的服务平台，降低使用门槛，助力AI在资管行业的广泛应用。</p><p style="letter-spacing: 0.578px;white-space: normal;">综合来看，基金公司在享受DeepSeek系列开源模型带来便利的同时，也在积极探索应对其应用难点的方法，以更好地发挥其价值。</p><section style="letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;text-align: center;"><span style="color: rgb(2, 30, 170);"><strong>全生产链效率提升</strong></span></section><p style="letter-spacing: 0.578px;white-space: normal;text-align: center;"><span style="color: rgb(2, 30, 170);"><strong>促进行业生态质变</strong></span></p><p style="letter-spacing: 0.578px;white-space: normal;">伴随着越来越多的基金公司牵手DeepSeek，未来整个行业全生产链效率都将得到提升。</p><p style="letter-spacing: 0.578px;white-space: normal;">“基金行业有大量的工作是对语言类进行分析和研究，DeepSeek刚好在这方面提供了强大的辅助支持能力。引入DeepSeek将帮助基金行业<span style="letter-spacing: 0.578px;">极大地</span>提升整体的工作效能，说是一个巨大的变革也不为过，将对行业整体的工作模式带来深远的影响。”平安基金表示。</p><p style="letter-spacing: 0.578px;white-space: normal;">创金合信基金也表示，预计DeepSeek将进一步推进基金行业AI应有场景的广度和深度，从而可能对行业产生深远的影响。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>一是全业务链的效率提升。</strong>在投研领域，模型可快速处理海量金融数据，精准识别市场趋势与风险信号，为投资组合优化提供实时决策支持；在交易层面，结合算法交易系统能实现策略动态调整，捕捉市场机会的效率提升可达量级；在运营管理端则通过自动化处理报告生成、数据录入等重复性工作，释放人力资源近30%。DeepSeek以较低算力资源实现高确定性推理效果，使AI应用场景的稳定性提升50%以上。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>二是重构客户服务与产品体系等。</strong>模型驱动的“超个性化服务”成为可能：通过分析客户行为数据，可生成千人千面的投资建议，大大提升投顾服务效率和体验，包括提高客户需求洞察准确率，改善产品匹配度，从而直接提升客户留存率。</p><p style="letter-spacing: 0.578px;white-space: normal;"><strong>三是促进行业生态质变。</strong>第一是成本革命。API调用成本和模型训练费用均将大大降低，使中小基金公司具备与大机构同台竞技的技术基础。第二是创新加速。开源架构允许机构定制专属AI工具，有同行验证显示产品开发周期缩短60%，策略迭代频率提升3倍。第三是生态重构。开源模型将打破技术垄断，越来越多的公募基金完成私有化部署，行业正形成“基础模型共享+场景应用差异化”的新格局。</p><p style="letter-spacing: 0.578px;white-space: normal;">不过，创金合信基金也表示，实现这些深远影响仍然需要较长的时间，包括基础算力需要不断提升和完善、AI人才团队需要持续建设、思维习惯需要适应性改变等。</p><section style="margin-bottom: 0px;letter-spacing: 0.578px;white-space: normal;-webkit-tap-highlight-color: transparent;outline: 0px;font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;background-color: rgb(255, 255, 255);"><span style="color: rgb(136, 136, 136);font-size: 14px;-webkit-tap-highlight-color: transparent;outline: 0px;">编辑：江右</span></section><section style="margin-bottom: 0px;letter-spacing: 0.578px;white-space: normal;-webkit-tap-highlight-color: transparent;outline: 0px;font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;background-color: rgb(255, 255, 255);"><span style="-webkit-tap-highlight-color: transparent;outline: 0px;color: rgb(136, 136, 136);font-size: 14px;">校对：乔伊</span></section><section style="margin-bottom: 0px;letter-spacing: 0.578px;white-space: normal;-webkit-tap-highlight-color: transparent;outline: 0px;font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;background-color: rgb(255, 255, 255);"><span style="-webkit-tap-highlight-color: transparent;outline: 0px;color: rgb(136, 136, 136);font-size: 14px;">制作：舰长</span></section><section style="margin-bottom: 0px;letter-spacing: 0.578px;white-space: normal;-webkit-tap-highlight-color: transparent;outline: 0px;font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;background-color: rgb(255, 255, 255);"><span style="-webkit-tap-highlight-color: transparent;outline: 0px;color: rgb(136, 136, 136);font-size: 14px;">审核：许闻</span></section><section style="margin-bottom: 0px;white-space: normal;outline: 0px;max-width: 100%;color: rgb(62, 62, 62);font-family: 微软雅黑;text-align: start;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><section style="outline: 0px;max-width: 100%;text-align: center;box-sizing: border-box !important;overflow-wrap: break-word !important;"><p style="outline: 0px;text-align: center;"><a target="_blank" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.stcn.fundnews" textvalue="‍‍" linktype="text" imgurl="" tab="outerlink" data-linktype="1"></a></p></section></section><section data-id="105438" data-tools="135编辑器" data-chnfund-ad="1" style="margin-bottom: 0px;white-space: normal;"><section style="margin: 10px auto;padding-left: 10px;box-sizing: border-box;"><section style="border-width: 2px;border-style: solid;border-color: rgb(54, 96, 146);box-sizing: border-box;"><section style="margin-top: 10px;display: flex;justify-content: flex-start;align-items: center;"><section style="margin-right: -10px;margin-left: -10px;box-sizing: border-box;width: 25px;height: 10px;background-image: none;background-attachment: scroll;background-color: rgb(54, 96, 146);overflow: hidden;background-position: 0% 0%;background-repeat: repeat repeat;"><br/></section><section data-brushtype="text" style="padding: 4px 1em;display: inline-block;border-width: 1px;border-style: solid;border-color: rgb(54, 96, 146);letter-spacing: 1.5px;color: rgb(54, 96, 146);box-sizing: border-box;">版权声明</section></section><section style="padding: 1em;box-sizing: border-box;"><p style="text-align: center;"><span style="color: rgb(136, 136, 136);font-size: 14px;">《中国基金报》对本平台所刊载的原创内容享有著作权，未经授权禁止转载，否则将追究法律责任。</span></p><p style="text-align: center;"><br/></p><p style="text-align: center;"><span style="color: rgb(136, 136, 136);font-size: 14px;">授权转载合作联系人：于先生（电话：0755-82468670）</span></p></section></section></section></section><p style="margin-bottom: 0px;"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52&scene=21#wechat_redirect" textvalue="重磅！巴菲特，出手！" linktype="text" imgurl="" imgdata="null" data-itemshowtype="0" tab="innerlink" data-linktype="2">重磅！巴菲特，出手！</a><br/></p><p style="display: none;"><mp-style-type data-value="3"></mp-style-type></p>
+        </div>
+
+
+        
+    <!-- 相关文章 -->
+    <div class="relate-articles">
+        <h2><span>相关推荐</span></h2>
+        <div class="article-list">
+                <a class="item" href="/article/ARac5658df-c40d-5fa8-3397-3a238252d06e" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x57FA;&#x91D1;&#x5927;&#x4E8B;&#x4EF6;|&#x516C;&#x52DF;&#x57FA;&#x91D1;&#x534A;&#x5E74;&#x8D5A;&#x4E86;1.73&#x4E07;&#x4EBF;&#x5143;&#xFF01;&#x65B0;&#x7684;&#x4E00;&#x6279;&#x79D1;&#x521B;&#x503A;&#x6307;&#x6570;&#x57FA;&#x91D1;&#x6765;&#x4E86;&#xFF01;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/05/a08375daca4cfd740f9d7d71b4aed9819890aca4.png"></img>
+                    </div>
+                    <p class="title">&#x57FA;&#x91D1;&#x5927;&#x4E8B;&#x4EF6;|&#x516C;&#x52DF;&#x57FA;&#x91D1;&#x534A;&#x5E74;&#x8D5A;&#x4E86;1.73&#x4E07;&#x4EBF;&#x5143;&#xFF01;&#x65B0;&#x7684;&#x4E00;&#x6279;&#x79D1;&#x521B;&#x503A;&#x6307;&#x6570;&#x57FA;&#x91D1;&#x6765;&#x4E86;&#xFF01;</p>
+                </a>
+                <a class="item" href="/article/AR1d82924f-51de-feae-8f04-3a237f58c186" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x5206;&#x5316;&#x7684;&#x4E00;&#x665A;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/05/55b80abf5ac3c8640283c4db85dbefe9ad44fade.png"></img>
+                    </div>
+                    <p class="title">&#x5206;&#x5316;&#x7684;&#x4E00;&#x665A;</p>
+                </a>
+                <a class="item" href="/article/ARb59f3db3-e261-02b0-14fb-3a237ec4eca1" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x52A0;&#x606F;&#x9884;&#x671F;&#x53C8;&#x53D8;&#x4E86;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/04/3afde616a68851926000831db13c7afb30f9845a.png"></img>
+                    </div>
+                    <p class="title">&#x52A0;&#x606F;&#x9884;&#x671F;&#x53C8;&#x53D8;&#x4E86;</p>
+                </a>
+                <a class="item" href="/article/AR92f9a521-8622-6cd3-4a67-3a237da66072" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x9AD8;&#x5F00;&#x4F4E;&#x8D70;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/04/4223c6317ccf9027c81c06ec7301d884b84ec3d2.png"></img>
+                    </div>
+                    <p class="title">&#x9AD8;&#x5F00;&#x4F4E;&#x8D70;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;</p>
+                </a>
+                <a class="item" href="/article/AR609cf3f0-e646-40f2-7372-3a237d867e63" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x5012;&#x8BA1;&#x65F6;&#xFF01;&#x91CD;&#x78C5;&#x6D3B;&#x52A8;&#xFF0C;&#x5C31;&#x5728;&#x4E0B;&#x5468;" src="https://cdn.chnfund.com/upload/media/picture/2026/09/04/933C6E6FD95446C9BB3644ACE4F88691.jpg"></img>
+                    </div>
+                    <p class="title">&#x5012;&#x8BA1;&#x65F6;&#xFF01;&#x91CD;&#x78C5;&#x6D3B;&#x52A8;&#xFF0C;&#x5C31;&#x5728;&#x4E0B;&#x5468;</p>
+                </a>
+                <a class="item" href="/article/ARd7709472-6554-192e-e8b4-3a237c217354" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x4ECE;&#x201C;&#x57FA;&#x91D1;&#x7ECF;&#x7406;&#x201D;&#x5230;&#x201C;&#x5E73;&#x53F0;&#x80FD;&#x529B;&#x201D;&#xFF1A;&#x6301;&#x6709;&#x4EBA;&#x7684;&#x4FE1;&#x4EFB;&#x8FC1;&#x79FB;&#x4E4B;&#x65C5;" src="https://cdn.chnfund.com/upload/article/wechat/2026/09/04/1b17edf1720d52aa696eb12b6cb490fbd8abee57.png"></img>
+                    </div>
+                    <p class="title">&#x4ECE;&#x201C;&#x57FA;&#x91D1;&#x7ECF;&#x7406;&#x201D;&#x5230;&#x201C;&#x5E73;&#x53F0;&#x80FD;&#x529B;&#x201D;&#xFF1A;&#x6301;&#x6709;&#x4EBA;&#x7684;&#x4FE1;&#x4EFB;&#x8FC1;&#x79FB;&#x4E4B;&#x65C5;</p>
+                </a>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 二维码 -->
+    <div class="right">
+                <a   class="imgWrapper">
+                    <img alt="APP" src="https://cdn.chnfund.com/upload/cfa/image/202511/03/20251103171139_4961.jpg"></img>
+                </a>
+    </div>
+</div>
+
+
+
+        <div class="footer">
+    <div class="box bottom-box clearfix">
+        <div class="bottom-item bottom-item-logo">
+            <a href="/" class="imgWrapper"><img src="/image/logo2.png" alt="中国基金报" /></a>
+        </div>
+
+        <div class="bottom-item bottom-item-nav">
+            <h4><a href="/"><span class="footer-llink-text">首页</span></a></h4>
+            <ul>
+                <li><a target="_blank" href="/about"><span class="footer-llink-text">关于我们</span></a></li>
+                <li><a target="_blank" href="/addus"><span class="footer-llink-text">加入我们</span></a></li>
+                <li><a target="_blank" href="/contactus"><span class="footer-llink-text">联系我们</span></a></li>
+                <li><a target="_blank" href="/copyright"><span class="footer-llink-text">版权声明</span></a></li>
+            </ul>
+        </div>
+        <div class="bottom-item bottom-item-cooperation">
+            <h4>合作伙伴</h4>
+            <div class="link-box">
+                <a log-action="点击合作伙伴" log-content="紫荆杂志社" href="https://zijing.com.cn/" target="_blank">紫荆杂志社</a>|
+                <a log-action="点击合作伙伴" log-content="凤凰网" href="http://www.ifeng.com/" target="_blank">凤凰网</a>|
+                <a log-action="点击合作伙伴" log-content="东方财富网" href="http://www.eastmoney.com/" target="_blank">东方财富网</a>|
+                <a log-action="点击合作伙伴" log-content="金融界" href="http://www.jrj.com.cn/" target="_blank">金融界</a>|
+                <a log-action="点击合作伙伴" log-content="中新经纬" href="http://www.jwview.com/" target="_blank">中新经纬</a>|
+                <a log-action="点击合作伙伴" log-content="每日经济新闻" href="http://www.nbd.com.cn/" target="_blank">每日经济新闻</a>|
+                <a log-action="点击合作伙伴" log-content="21世纪网" href="http://www.21jingji.com/" target="_blank">21世纪网</a>|
+                <a log-action="点击合作伙伴" log-content="财经网" href="http://www.caijing.com.cn/" target="_blank">财经网</a>|
+                <a log-action="点击合作伙伴" log-content="和讯网" href="http://www.hexun.com/" target="_blank">和讯网</a>|
+                <a log-action="点击合作伙伴" log-content="搜狐" href="http://www.sohu.com/" target="_blank">搜狐</a>|
+                <a log-action="点击合作伙伴" log-content="中金在线" href="http://www.cnfol.com/" target="_blank">中金在线</a>|
+                <a log-action="点击合作伙伴" log-content="一财网" href="http://www.yicai.com/" target="_blank">一财网</a>
+            </div>
+        </div>
+    </div>
+    <div class="box copyright">
+        <p>
+            Copyright © 2026 《中国基金报》社有限公司版权所有，未经许可不得转载使用，违者必究。
+        </p>
+        <section>
+            <section>
+                网站备案号： <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备14037591号</a>
+            </section>     
+            <section>网络视听许可证：1908317号</section>
+            <section>互联网新闻信息服务许可证：10120200011 </section>
+        </section>
+        <section>
+            <section>违法和不良信息举报电话：(0755) 83501616</section>
+            <section>邮箱：xingdapeng@chnfund.com</section>
+        </section>
+    </div>
+</div>
+
+    <input type="hidden" value="&#x6613;&#x65B9;&#x8FBE;&#x57FA;&#x91D1;&#x7B49;&#x5DE8;&#x5934;&#x7EB7;&#x7EB7;&#x51FA;&#x624B;&#xFF0C;DeepSeek&#x91CD;&#x5851;&#x91D1;&#x878D;&#x79D1;&#x6280;&#x65B0;&#x683C;&#x5C40;" id="wxShareTitle" />
+    <input type="hidden" value="&#x4E1A;&#x5185;&#x4EBA;&#x58EB;&#x6307;&#x51FA;&#xFF0C;DeepSeek&#x7684;&#x63A8;&#x7406;&#x80FD;&#x529B;&#x548C;&#x8F83;&#x4F4E;&#x7684;&#x7B97;&#x529B;&#x9700;&#x6C42;&#x4F7F;&#x5176;&#x5728;&#x91D1;&#x878D;&#x9886;&#x57DF;&#x7684;&#x5E94;&#x7528;&#x524D;&#x666F;&#x5E7F;&#x9614;&#xFF0C;&#x80FD;&#x591F;&#x4E3A;&#x57FA;&#x91D1;&#x516C;&#x53F8;&#x5E26;&#x6765;&#x66F4;&#x9AD8;&#x7684;&#x8FD0;&#x8425;&#x6548;&#x7387;&#x548C;&#x521B;&#x65B0;&#x52A8;&#x529B;&#x3002;&#x968F;&#x7740;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x57FA;&#x91D1;&#x516C;&#x53F8;&#x52A0;&#x5165;&#x5E03;&#x5C40;&#xFF0C;DeepSeek&#x6709;&#x671B;&#x91CD;&#x5851;&#x516C;&#x52DF;&#x57FA;&#x91D1;&#x884C;&#x4E1A;&#x7684;&#x751F;&#x6001;&#xFF0C;&#x5F00;&#x542F;&#x667A;&#x80FD;&#x6295;&#x7814;&#x7684;&#x65B0;&#x7EAA;&#x5143;&#x3002;" id="wxShareDesc" />
+    <input type="hidden" id="wxShareUrl" />
+    <input type="hidden" id="wxShareImg" />
+
+    <!--[if IE 7]>
+    <script src="/js/pages/ie7_pseudo.min.js"></script>
+    <![endif]-->
+
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="/lib/wxextsignature.js?v=qywUW3BbDrfXM8meOjqbmoFlRhsfiHqQ8cspJ9pCmXY"></script>
+
+
+    <script src="/js/v4/log.min.js?v=QOIf51HEEYLlZ6cuZenMmY0Er7WF7pfkpqd01rPqbtc"></script>
+    <script>
+        initTrace('https://gw.chnfund.com/log-api/api/logs/single-log');
+    </script>
+
+    <script src="/js/v4/user.min.js?v=ZjF4Fyin_kunpXmbEElIU5NLAcaSY7ELdp3OCr6-em0"></script>
+    
+    <script src="/lib/qrcode/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), window.location.href);
+    </script>
+
+
+        <script>
+            var properties = {
+                pageName: '详情页',
+                title: "\u6613\u65B9\u8FBE\u57FA\u91D1\u7B49\u5DE8\u5934\u7EB7\u7EB7\u51FA\u624B\uFF0CDeepSeek\u91CD\u5851\u91D1\u878D\u79D1\u6280\u65B0\u683C\u5C40",
+                targetId: "AR82dfae38-b1c3-70f9-0929-3a181b418f27",
+                targetType: "news",
+            }
+
+            logPageView(properties);
+            bindClickLog({ pageName: '详情页' });
+        </script>
+
+    
+</body>
+</html>
