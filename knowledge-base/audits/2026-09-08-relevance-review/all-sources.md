@@ -21,7 +21,7 @@
 | FUND-090 | 多家公募完成DeepSeek-R1版本的私有化部署 应用于多个核心业务场景 | 相关：AI/LLM应用或技术案例 | Candidate discovery only; underlying disclosures still needed | [查看](../../sources/FUND-090/original.md) |
 | FUND-091 | AI重构公募行业：从投研到运营，一场全链条的效率革命 | 相关：AI/LLM应用或技术案例 | Southern candidate lead; not verified adoption | [查看](../../sources/FUND-091/original.md) |
 | FUND-092 | 毫秒级响应背后：解码基金行业的“科技进化论” | 相关：AI/LLM应用或技术案例 | Yinhua candidate lead; official host does not change reporter provenance | [查看](../../sources/FUND-092/original.md) |
-| FUND-093 | 亮相2026中国国际金融展 嘉实基金解构数字金融智能化跃迁 | 待定：预期来源相关，原件不完整/错误响应 | Harvest candidate lead; concrete internal AI application still needs verification | [查看](../../sources/FUND-093/retrieval-response.md) |
+| FUND-093 | 亮相2026中国国际金融展 嘉实基金解构数字金融智能化跃迁 | 待定：预期来源相关，原件不完整/错误响应 | Harvest candidate lead; concrete internal AI application still needs verification | [查看](../../sources/FUND-093/metadata.json) |
 | FUND-100 | 【实践案例】基金投顾业务实践案例分享——易方达基金投顾智能管理项目 | 相关：广义AI/NLP历史案例 | NLP/ML, strategy checking, historical operating metrics | [查看](../../sources/FUND-100/original.md) |
 | FUND-101 | 『基金行业金融科技获奖成果宣传活动』易方达基金：全栈云平台及云原生应用管理体系建设与实践 | 相关：AI/LLM应用或技术案例 | LLM development/testing assistance and cloud-process stack | [查看](../../sources/FUND-101/original.md) |
 | FUND-102 | 易方达基金：把牢党建引领“方向舵” 以高质量党建领航高质量发展 | 相关：AI/LLM应用或技术案例 | 100+ AIGC applications on EFundGPT | [查看](../../sources/FUND-102/original.md) |

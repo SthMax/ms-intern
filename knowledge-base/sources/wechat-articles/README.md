@@ -11,7 +11,7 @@
 | WX-001 — 易方达基金 × ima首发基金研选Skill | FUND-109 | 已入库；42个图片资源；全文比对通过 | [正文与图片](WX-001/01_🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环/🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环.md) · [原始HTML](WX-001/01_🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环/raw-source.html) · [核对记录](WX-001/01_🧧易方达基金_×_ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环/metadata.json) |
 | WX-002 — 中欧基金窦玉明：AI赋能时代，“三化”协同夯实长期业绩根基 | FUND-356 | 已入库；9个图片资源；全文比对通过 | [正文与图片](WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基/中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基.md) · [原始HTML](WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基/raw-source.html) · [核对记录](WX-002/01_中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基/metadata.json) |
 | WX-003 — 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | FUND-359 | 已入库；用户PDF共5页；正文及风险提示已核对 | [PDF原件](../FUND-359/source.pdf) · [中文正文](../FUND-359/original.md) · [元数据](../FUND-359/metadata.json) |
-| WX-004 — 拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态 | FUND-203 | 已入库；7个图片资源；全文比对通过 | [正文与图片](WX-004/01_拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态/拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态.md) · [原始HTML](WX-004/01_拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态/raw-source.html) · [核对记录](WX-004/01_拥抱AI，南方基金ETFirst_Skill重塑指数投资服务生态/metadata.json) |
+| WX-004 — 拥抱AI，南方基金ETFirst Skill重塑指数投资服务生态 | FUND-203 | 主档已统一为中国基金报微信原刊 | [中文正文](../FUND-203/original.md) · [原刊HTML](../FUND-203/source.html) · [来源链](../FUND-203/metadata.json) |
 
 ## 已排除的文末推荐
 
@@ -25,4 +25,4 @@
 
 WX编号仅标识链接清单，不是新增FUND来源。FUND-110仍指《易方达基金等巨头纷纷出手，DeepSeek重塑金融科技新格局》；FUND-251仍指《公募基金AI部署走到哪一步了？20家头部公募AI部署全景调研》。它们与文末推荐文章是不同的文章。
 
-FUND-109、FUND-356的规范入口为各自source.html / original.md；FUND-203保留新浪登记页面，并关联中国基金报微信原刊。文章包内raw-source.html是原始响应，source.html是本地阅读副本。历史失败响应不作为原文。
+FUND-109、FUND-356的规范入口为各自source.html / original.md；FUND-203主阅读已统一为中国基金报微信原刊；旧新浪HTML仅作来源记录。文章包内raw-source.html是原始响应，source.html是本地阅读副本。历史失败响应不作为原文。

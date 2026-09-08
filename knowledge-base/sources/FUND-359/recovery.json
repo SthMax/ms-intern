@@ -12,9 +12,11 @@
   "result": "User-provided 5-page browser print includes complete article body and risk notice; local import closes article-access gap. Retains narrative media source classification.",
   "file_checksums": {
     "source.pdf": "6e81dcca364e8f9d6993c11212b8f97c057702c49ac267ff9d05e254e54cfa0e",
-    "original.md": "3ca653b2b39309c8d69cdecabb04288942a1ed859b9f060d0ac1d24ddeeddcb3",
+    "original.md": "d2b8f99fa2abe7422f487fc4aad36a02724462ff79202587b803260311092a19",
     "extracted-text.txt": "5a6b81f7cefd7dbfd657985b3810fb31baceeeea013bdadbd449dec591c29350"
   },
   "prior_recovery_record": "../../audits/2026-09-08-huatai-pdf/before-recovery.json",
-  "human_check_status": "User supplied PDF; independent human verification not attested"
+  "human_check_status": "User supplied PDF; independent human verification not attested",
+  "reading_cleanup": "Promotional appendix removed; article/conclusion/risk text preserved; full PDF unchanged",
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
 }

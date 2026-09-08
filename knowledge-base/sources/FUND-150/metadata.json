@@ -24,12 +24,24 @@
     1,
     213
   ],
-  "extraction_method": "pypdf page-by-page; no OCR or translation",
+  "extraction_method": "Verbatim selection of baseline PDF extraction pages 23–28; complete original PDF retained",
   "extraction_limit": "Some pages have little/no text; inspect original PDF for images, charts, tables and scans.",
   "text_language": "Chinese",
-  "extracted_characters": 118953,
+  "extracted_characters": 3959,
   "text_file": "original.md",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "f9a0792e4a69511bb13a153586e2de441fc0642d631e0db9ad874e96ad6e137c"
+  "extracted_text_sha256": "a46b98caa9d702c724f537d9844f5843164ef8cc45bf31f739fded7ff9e25a70",
+  "text_kind": "page_excerpt",
+  "selected_pdf_pages": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "original_total_extraction_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08"
 }

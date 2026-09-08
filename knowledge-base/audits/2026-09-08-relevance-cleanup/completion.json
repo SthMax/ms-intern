@@ -1,0 +1,132 @@
+[
+  {
+    "item": "A1",
+    "status": "completed",
+    "method": "canonical reader consolidation"
+  },
+  {
+    "item": "A2",
+    "status": "completed",
+    "method": "targeted removal with source preservation"
+  },
+  {
+    "item": "A3",
+    "status": "completed",
+    "method": "canonical reader consolidation"
+  },
+  {
+    "item": "A4",
+    "status": "completed",
+    "method": "canonical reader consolidation"
+  },
+  {
+    "item": "A5",
+    "status": "completed",
+    "method": "canonical reader consolidation"
+  },
+  {
+    "item": "A6",
+    "status": "completed",
+    "method": "targeted removal with source preservation"
+  },
+  {
+    "item": "A7",
+    "status": "completed",
+    "method": "targeted removal with source preservation"
+  },
+  {
+    "item": "A8",
+    "status": "completed",
+    "method": "targeted removal with source preservation"
+  },
+  {
+    "item": "A9",
+    "status": "completed",
+    "method": "targeted removal with source preservation"
+  },
+  {
+    "item": "B1",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B2",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B3",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B4",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B5",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B6",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B7",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B8",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "B9",
+    "status": "completed",
+    "method": "excluded from main excerpt; full original PDF preserved"
+  },
+  {
+    "item": "C1",
+    "status": "completed",
+    "method": "supporting excerpt"
+  },
+  {
+    "item": "C2",
+    "status": "completed",
+    "method": "supporting excerpt"
+  },
+  {
+    "item": "C3",
+    "status": "completed",
+    "method": "moved to reference appendix"
+  },
+  {
+    "item": "C4",
+    "status": "completed",
+    "method": "moved to reference appendix"
+  },
+  {
+    "item": "D1",
+    "status": "completed",
+    "method": "canonicalized reading path; URLs and original publication bytes retained"
+  },
+  {
+    "item": "D2",
+    "status": "completed",
+    "method": "canonicalized reading path; URLs and original publication bytes retained"
+  },
+  {
+    "item": "D3",
+    "status": "completed",
+    "method": "canonicalized reading path; URLs and original publication bytes retained"
+  },
+  {
+    "item": "D4",
+    "status": "completed",
+    "method": "canonicalized reading path; URLs and original publication bytes retained"
+  }
+]

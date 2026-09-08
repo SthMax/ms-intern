@@ -1,0 +1,22 @@
+{
+  "checked_files": [
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/README.md",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/changed-files.json",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/collection-counts.json",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/completion.json",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/operations.json",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/reading-size-comparison.json",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/review-findings.json",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/review_cleanup.py",
+    "knowledge-base/audits/2026-09-08-relevance-cleanup/verification.json",
+    "knowledge-base/reading-index.json",
+    "knowledge-base/reference/FUND-255.md",
+    "knowledge-base/reference/FUND-357.md",
+    "knowledge-base/reference/README.md",
+    "knowledge-base/reference/ccf-financial-cases.md",
+    "knowledge-base/sources/FUND-093/original.md"
+  ],
+  "trailing_whitespace": [],
+  "json_parse": "pass",
+  "result": "pass"
+}

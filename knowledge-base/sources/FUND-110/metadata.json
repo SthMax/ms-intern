@@ -20,13 +20,13 @@
   "byte_count": 40525,
   "raw_file": "source.html",
   "decoded_encoding": "utf-8",
-  "extraction_method": "Defuddle Markdown from archived HTML; no translation",
+  "extraction_method": "Original-language extraction with the specifically reviewed unrelated recommendation links removed; raw HTML unchanged",
   "text_language": "Chinese",
-  "extracted_characters": 4319,
+  "extracted_characters": 4856,
   "text_file": "original.md",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "26f0c5753aef559dc0d682605abcea91200fba243cbfc6c5ef081860a9772ab7",
+  "extracted_text_sha256": "cd23040307cd6aa6d79ee8fc8e57587799395401c173ef4fe63e536cae34e65e",
   "wechat_live_review": {
     "date": "2026-09-07",
     "link_ids": [
@@ -49,5 +49,7 @@
     "research_relevance": "None for this project: links appear in the article footer, not as evidence for the AI/LLM research claims",
     "scope_review_date": "2026-09-08",
     "scope_review": "../../audits/2026-09-08-wechat-scope/README.md"
-  }
+  },
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08"
 }

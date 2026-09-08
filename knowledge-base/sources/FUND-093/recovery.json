@@ -17,5 +17,14 @@
   "file_checksums": {
     "../FUND-317/original.md": "1decb0bba8c3fb3bc8811ee1b22cc8835fcca50713f749ca85ed16213a4f51ec",
     "../FUND-317/source.html": "ec202692de9de3d70113dd62b3d7e017a16a020b131f09f50a026e6ec1cf16ef"
+  },
+  "cleanup": {
+    "date": "2026-09-08",
+    "removed_wrong_capture_files": [
+      "knowledge-base/sources/FUND-093/retrieval-response.md",
+      "knowledge-base/sources/FUND-093/retrieval-response.html"
+    ],
+    "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+    "canonical_reading": "../FUND-317/original.md"
   }
 }

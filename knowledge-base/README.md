@@ -1,5 +1,7 @@
 # Knowledge Base
 
+> 2026-09-08 阅读集已清理：[默认阅读索引](reading-index.json)列出93个主阅读记录；4个辅助记录见[辅助目录](reference/README.md)，4个旧来源入口仅保留来源链。全文检索优先按索引的reading_path执行，避免重新摄入原始网页侧栏或历史审计备份。详见[清理前后审查](audits/2026-09-08-relevance-cleanup/README.md)。
+
 > 2026-09-08 微信入库完成：4篇相关研究文章现均已入库，华泰柏瑞由用户保存的5页PDF补齐；3条无关推荐继续排除。见[文章目录](sources/wechat-articles/README.md)及[华泰柏瑞核对报告](audits/2026-09-08-huatai-pdf/README.md)。
 
 提取质量与分析风险：[本次核查、微信Skill测试及更清晰的阅读副本](audits/2026-09-07-extraction-quality/README.md)。

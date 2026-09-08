@@ -21,11 +21,18 @@
   "raw_file": "source.pdf",
   "page_count": 9,
   "empty_text_pages": [],
-  "extraction_method": "pypdf page-by-page; no OCR or translation",
+  "extraction_method": "Verbatim page-1 selection of existing PDF extraction; complete nine-page source PDF retained",
   "text_language": "Chinese",
-  "extracted_characters": 8398,
+  "extracted_characters": 1203,
   "text_file": "original.md",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "095f69bf284ea11621c19d194ad784b6b02d4a286bf082bc662304c5d0c80cd4"
+  "extracted_text_sha256": "02589df69c695fab84ac8f624c90a07c56822bc163f01600356f705e6a00e6d2",
+  "collection_role": "supporting",
+  "text_kind": "page_excerpt",
+  "selected_pdf_pages": [
+    1
+  ],
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08"
 }

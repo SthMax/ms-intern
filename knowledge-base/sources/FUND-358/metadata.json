@@ -20,13 +20,13 @@
   "byte_count": 101201,
   "raw_file": "source.html",
   "decoded_encoding": "utf-8",
-  "extraction_method": "Defuddle Markdown from archived HTML; no translation",
+  "extraction_method": "Canonical-source redirect; Sina original bytes and provenance retained",
   "text_language": "Chinese",
-  "extracted_characters": 16728,
+  "extracted_characters": 324,
   "text_file": "original.md",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "e40f1d973dfed0d75231f961a13ae5fd68a9ebd055e11a70fa4158935e2a6a58",
+  "extracted_text_sha256": "4ad6ce31ef4917151caafc8bd48a57807ed2c7155c521d93457bdae5168505f8",
   "reading_copy": "reading-copy/reading.md",
   "reading_copy_metadata": "reading-copy/metadata.json",
   "reading_copy_status": "mechanical paragraph-text check passed; images preserved; human review pending",
@@ -37,5 +37,11 @@
     "comparison": "../../audits/2026-09-08-huatai-pdf/comparison.json",
     "finding": "Common narrative matches; Sina omits last concluding paragraph and full risk notice",
     "independent_corroboration": false
-  }
+  },
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08",
+  "collection_role": "redirect",
+  "text_kind": "canonical_source_redirect",
+  "canonical_source_id": "FUND-359",
+  "canonical_text": "../FUND-359/original.md"
 }

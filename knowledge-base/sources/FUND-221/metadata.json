@@ -20,12 +20,14 @@
   "byte_count": 564715,
   "raw_file": "source.html",
   "decoded_encoding": "utf-8",
-  "extraction_method": "HTML visible-text extraction including navigation; Defuddle omitted source content",
+  "extraction_method": "App Store source text excluding other-app recommendations; version notes/provider/date retained",
   "text_language": "Chinese",
-  "extracted_characters": 11195,
+  "extracted_characters": 8949,
   "text_file": "original.md",
   "full_visible_text_file": "full-visible-text.txt",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "de49b9d9e0c69b0e268decd4953c2e898910b21b6c4b1c7b09774d1d0107c4dd"
+  "extracted_text_sha256": "541854c25fc88ac1a08a7a801611d694a5a1601fbb9c2aa730b98a989b512cff",
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08"
 }

@@ -16,17 +16,37 @@
   "final_url": "https://www.fx168news.com/info",
   "content_type": "text/html; charset=utf-8",
   "curl_exit": 0,
-  "sha256": "6e9740fee0d469b45b65b6e392b329363f6a4b12d9e7c266d5fa71dd5ad111c5",
-  "byte_count": 81300,
   "decoded_encoding": "utf-8",
-  "extraction_method": "Defuddle Markdown from archived HTML; no translation",
-  "text_language": "Chinese",
-  "extracted_characters": 3223,
+  "extraction_method": "Source locator redirect; no article text fabricated",
+  "text_language": "Chinese (source locator only)",
+  "extracted_characters": 243,
   "failure": "Registered article redirects to generic FX168 news portal; expected Harvest article absent",
-  "response_file": "retrieval-response.html",
+  "response_file": null,
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
   "recovery_record": "recovery.json",
-  "recovery_status": "alternative_primary_available",
-  "recovery_date": "2026-09-07"
+  "recovery_status": "alternative_primary_available_wrong_capture_removed",
+  "recovery_date": "2026-09-07",
+  "collection_role": "redirect",
+  "canonical_source_id": "FUND-317",
+  "canonical_text": "../FUND-317/original.md",
+  "text_file": "original.md",
+  "text_kind": "source_locator_redirect",
+  "removed_responses": [
+    {
+      "path": "knowledge-base/sources/FUND-093/retrieval-response.md",
+      "sha256": "bec775b935ca452904ff6469caa4f8b01036b27ce6c40fd18594ccfe71affc1d",
+      "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+    },
+    {
+      "path": "knowledge-base/sources/FUND-093/retrieval-response.html",
+      "sha256": "6e9740fee0d469b45b65b6e392b329363f6a4b12d9e7c266d5fa71dd5ad111c5",
+      "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+    }
+  ],
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08",
+  "extracted_text_sha256": "4b2b39bcf8a343079c9693722c24787f414cf6ea10b4611543ac1eeefceee166",
+  "prior_response_sha256": "6e9740fee0d469b45b65b6e392b329363f6a4b12d9e7c266d5fa71dd5ad111c5",
+  "prior_response_byte_count": 81300
 }

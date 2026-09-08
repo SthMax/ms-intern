@@ -115,5 +115,3 @@ DeepSeekR1出来后， **创金合信基金** 第一时间分析了其对现有A
 《中国基金报》对本平台所刊载的原创内容享有著作权，未经授权禁止转载，否则将追究法律责任。
 
 授权转载合作联系人：于先生（电话：0755-82468670）
-
-[重磅！巴菲特，出手！](https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52&scene=21#wechat_redirect)

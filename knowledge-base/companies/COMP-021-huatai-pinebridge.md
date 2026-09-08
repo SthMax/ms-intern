@@ -24,7 +24,7 @@ human_check_status: pending
 
 | 来源 ID | 登记标题 | 原登记证据状态 | 原语言正文／下载文件／记录 |
 |---|---|---|---|
-| FUND-358 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | [原语言正文](../sources/FUND-358/original.md) · [下载文件](../sources/FUND-358/source.html) · [元数据与限制](../sources/FUND-358/metadata.json) · [登记网址](https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml) |
+| FUND-358 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | [原语言正文](../sources/FUND-359/original.md) · [下载文件](../sources/FUND-358/source.html) · [元数据与限制](../sources/FUND-358/metadata.json) · [登记网址](https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml)；阅读已归并到FUND-359，本ID仅保留来源链 |
 | FUND-359 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | 用户保存的微信PDF全文已入库 · [元数据与限制](../sources/FUND-359/metadata.json) · [登记网址](https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb) · [本次恢复记录](../sources/FUND-359/recovery.json) · [PDF原件](../sources/FUND-359/source.pdf) · [中文正文](../sources/FUND-359/original.md) |
 
 ## 研究者摘要／分析（保留原有正文）

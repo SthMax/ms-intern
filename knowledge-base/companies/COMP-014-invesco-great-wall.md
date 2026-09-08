@@ -25,7 +25,7 @@ human_check_status: pending
 | FUND-252 | 公司概况 | verified-primary | [原语言正文](../sources/FUND-252/original.md) · [下载文件](../sources/FUND-252/source.html) · [元数据与限制](../sources/FUND-252/metadata.json) · [登记网址](https://www.igwfmc.com/main/about/about-1.html) |
 | FUND-253 | 长城证券股份有限公司2025年年度报告 | verified-primary | [原语言正文](../sources/FUND-253/original.md) · [下载文件](../sources/FUND-253/source.pdf) · [元数据与限制](../sources/FUND-253/metadata.json) · [登记网址](https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-21/703e3a93-598f-4f64-9b5a-e0793436dbe1.PDF) |
 | FUND-254 | 以AI融入指增业务，多家公募发力布局，各有哪些解锁动作？ | candidate | [原语言正文](../sources/FUND-254/original.md) · [下载文件](../sources/FUND-254/source.html) · [元数据与限制](../sources/FUND-254/metadata.json) · [登记网址](https://www.cls.cn/detail/2237261) |
-| FUND-255 | 强强联手！景顺长城量化团队携手清华大学研究碳中和 | candidate | [原语言正文](../sources/FUND-255/original.md) · [下载文件](../sources/FUND-255/source.html) · [元数据与限制](../sources/FUND-255/metadata.json) · [登记网址](https://www.igwfmc.com/main/zxzx/gsxw/a/20211112/1050295.html) |
+| FUND-255 | 强强联手！景顺长城量化团队携手清华大学研究碳中和 | candidate | [原语言正文](../sources/FUND-255/original.md) · [下载文件](../sources/FUND-255/source.html) · [元数据与限制](../sources/FUND-255/metadata.json) · [登记网址](https://www.igwfmc.com/main/zxzx/gsxw/a/20211112/1050295.html)；辅助阅读，不进入主阅读集 |
 
 ## 研究者摘要／分析（保留原有正文）
 
@@ -55,7 +55,8 @@ evidence about this company.
 | 2025-09-02, FUND-250 | Active-equity research uses external AI for data processing, minutes and industry knowledge management; quant applications include financial/return forecasts and factor/style allocation. | This is an **official-site repost of 上海证券报记者何漪**, not an original technical report. It names no deployed model, vendor or measured result. |
 | 2025-12-23, FUND-254 | CLS says locally deployed DeepSeek assists coding and unstructured-information processing, alongside broader AI use in quant workflows. | Named source/primary case, checkpoints, workflows actually in production and attributable improvements. Broad AI investment or trading functions must not all be assigned to the LLM. |
 | 2026-08-20, FUND-251 | China Fund News attributes LLM, OCR, embedding, reranking and speech-model deployments to the company, alongside public Skills, MCP services and knowledge bases. Its introduction also mentions Tencent ima knowledge services. | Original IT disclosure, public verified ima identity/link, implementation specification and partner relationship. This is a newer lead, not a closed primary-source trail. |
-| 2021-11-12, FUND-255 | An older company-site repost describes NLP/text/chart recognition to extract ESG data from annual reports, CSR disclosures, regulatory notices and news. | Original NLP implementation documentation; the page credits 中国基金报. This is broader NLP, not evidence of a generative LLM. |
+
+The [historical ESG/NLP lead](../reference/FUND-255.md) is kept in the reference appendix.
 
 None of these reviewed adoption passages provides an independently evaluated
 latency, accuracy, human-time saving, deployment cost or incremental investment
@@ -106,7 +107,6 @@ own ima deployment.
 - **FUND-252** — [公司概况](https://www.igwfmc.com/main/about/about-1.html), undated official profile; establishment/shareholding paragraph and business-isolation note. Primary identity evidence only.
 - **FUND-253** — [长城证券股份有限公司2025年年度报告](https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-21/703e3a93-598f-4f64-9b5a-e0793436dbe1.PDF), issuer filing; [issuer listing](https://www.cgws.com/cczq/tzzgx/dqbg/cwbg/) dated 2026-04-21. Physical PDF p. 23, printed p. 22, section 4 参控股公司业务. Complete relevant page text and image inspected using the PDF skill.
 - **FUND-254** — [以AI融入指增业务，多家公募发力布局，各有哪些解锁动作？](https://www.cls.cn/detail/2237261), 财联社记者李迪, 2025-12-23 10:37; 量化指数增强领域卷起AI技术, paragraph beginning 据悉，景顺长城量化团队.
-- **FUND-255** — [强强联手！景顺长城量化团队携手清华大学研究碳中和](https://www.igwfmc.com/main/zxzx/gsxw/a/20211112/1050295.html), company-site repost, source 中国基金报, 2021-11-12; ESG research-group/database paragraph. Historical NLP lead only.
 
 Review: agent inspected live original URLs, dates/source lines and cited
 passages on 6 September 2026. Human checks are pending. Primary identity and AUM

@@ -22,7 +22,7 @@ human_check_status: pending
 |---|---|---|---|
 | FUND-160 | 平安基金发布“AI青蚨”：破解数据“沉睡”困局 构建智能投研新范式 | candidate | [原语言正文](../sources/FUND-160/original.md) · [下载文件](../sources/FUND-160/source.html) · [元数据与限制](../sources/FUND-160/metadata.json) · [登记网址](https://www.cs.com.cn/ssgs/gsxl/202602/t20260206_6537131.html) |
 | FUND-161 | AI重塑资管业！从千人千面到“价值深耕”，四大机构最新研判 | candidate | [原语言正文](../sources/FUND-161/original.md) · [下载文件](../sources/FUND-161/source.html) · [元数据与限制](../sources/FUND-161/metadata.json) · [登记网址](https://www.chnfund.com/article/ARae630e7e-72d1-f00a-3da7-3a218b519b1b) |
-| FUND-162 | 平安基金管理有限公司 | verified-primary | [原语言正文](../sources/FUND-162/original.md) · [下载文件](../sources/FUND-162/source.html) · [元数据与限制](../sources/FUND-162/metadata.json) · [登记网址](https://fund.pingan.com/) |
+| FUND-162 | 平安基金管理有限公司 | verified-primary | [原语言正文](../sources/FUND-162/original.md) · [下载文件](../sources/FUND-162/source.html) · [元数据与限制](../sources/FUND-162/metadata.json) · [登记网址](https://fund.pingan.com/)；辅助阅读，不进入主阅读集 |
 
 ## 研究者摘要／分析（保留原有正文）
 

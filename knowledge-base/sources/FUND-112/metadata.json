@@ -20,11 +20,13 @@
   "byte_count": 97110,
   "raw_file": "source.html",
   "decoded_encoding": "utf-8",
-  "extraction_method": "Defuddle Markdown from archived HTML; no translation",
+  "extraction_method": "Original-language reading text; confirmed Sina sidebar and promotional trailer removed; raw HTML preserved",
   "text_language": "Chinese",
-  "extracted_characters": 15466,
+  "extracted_characters": 1447,
   "text_file": "original.md",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "184439ef2f4f462bd53fe8d1d5cf8decf17cf1f432c777cf10289cd741a915ab"
+  "extracted_text_sha256": "58e8a3d1b67a54b686d87be9aa559a5dfd47b4c039ae01d54300a0ef3251c63f",
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08"
 }

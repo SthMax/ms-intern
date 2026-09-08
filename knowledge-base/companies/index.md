@@ -1,5 +1,7 @@
 # Onshore Fund Manager AI/LLM Landscape
 
+> 来源阅读已按主阅读、辅助和来源链索引分组，见[默认阅读索引](../reading-index.json)。表中的来源ID仍保留出处，不代表独立实施案例。
+
 <!-- original-language-provenance:start -->
 > [!important] 原文与研究者分析分离
 > 本页保留的英文正文、分类及表格是研究者撰写的摘要、整理或分析，不是来源原文。请先阅读下方逐源链接中的原语言文本；中文来源保留中文，原本为英文的来源保留英文。本次未将英文摘要反译为所谓“中文原文”。
@@ -73,16 +75,16 @@
 | FUND-352 | AI筑牢邮件安全防线 永赢基金以大模型守护金融数字资产 | verified-primary | [原语言正文](../sources/FUND-352/original.md) · [下载文件](../sources/FUND-352/source.pdf) · [元数据与限制](../sources/FUND-352/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf) |
 | FUND-353 | 行业动态 | verified-primary | [原语言正文](../sources/FUND-353/original.md) · [下载文件](../sources/FUND-353/source.html) · [元数据与限制](../sources/FUND-353/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/index.html) |
 | FUND-354 | 中欧基金AI投研助手荣获央行2024年度金融科技发展奖 | candidate | [原语言正文](../sources/FUND-354/original.md) · [下载文件](../sources/FUND-354/source.html) · [元数据与限制](../sources/FUND-354/metadata.json) · [登记网址](https://static.nfnews.com/content/202511/27/c11946239.html) |
-| FUND-355 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | candidate | [原语言正文](../sources/FUND-355/original.md) · [下载文件](../sources/FUND-355/source.html) · [元数据与限制](../sources/FUND-355/metadata.json) · [登记网址](https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml) |
+| FUND-355 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | candidate | [原语言正文](../sources/FUND-356/original.md) · [下载文件](../sources/FUND-355/source.html) · [元数据与限制](../sources/FUND-355/metadata.json) · [登记网址](https://finance.sina.com.cn/money/fund/jjgsgd/2026-06-01/doc-inhzxewi5116401.shtml)；阅读已归并到FUND-356，本ID仅保留来源链 |
 | FUND-356 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | candidate | 微信转载原文与图片已存档；中国基金报署名已核对 · [元数据与限制](../sources/FUND-356/metadata.json) · [登记网址](https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA) · [本次恢复记录](../sources/FUND-356/recovery.json) · [微信正文](../sources/FUND-356/original.md) · [原始HTML](../sources/FUND-356/source.html) |
-| FUND-357 | 钱拓科技 · FDE金融AI服务商 | verified-primary | [原语言正文](../sources/FUND-357/original.md) · [下载文件](../sources/FUND-357/source.html) · [元数据与限制](../sources/FUND-357/metadata.json) · [登记网址](https://www.aioai.cc/) |
-| FUND-358 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | [原语言正文](../sources/FUND-358/original.md) · [下载文件](../sources/FUND-358/source.html) · [元数据与限制](../sources/FUND-358/metadata.json) · [登记网址](https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml) |
+| FUND-357 | 钱拓科技 · FDE金融AI服务商 | verified-primary | [原语言正文](../sources/FUND-357/original.md) · [下载文件](../sources/FUND-357/source.html) · [元数据与限制](../sources/FUND-357/metadata.json) · [登记网址](https://www.aioai.cc/)；辅助阅读，不进入主阅读集 |
+| FUND-358 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | [原语言正文](../sources/FUND-359/original.md) · [下载文件](../sources/FUND-358/source.html) · [元数据与限制](../sources/FUND-358/metadata.json) · [登记网址](https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpzpu2013685.shtml)；阅读已归并到FUND-359，本ID仅保留来源链 |
 | FUND-359 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | candidate | 用户保存的微信PDF全文已入库 · [元数据与限制](../sources/FUND-359/metadata.json) · [登记网址](https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb) · [本次恢复记录](../sources/FUND-359/recovery.json) · [PDF原件](../sources/FUND-359/source.pdf) · [中文正文](../sources/FUND-359/original.md) |
 | FUND-400 | 公募非货规模最新座次出炉，万亿公募增至3家，中段座次重排 | candidate | [原语言正文](../sources/FUND-400/original.md) · [下载文件](../sources/FUND-400/source.html) · [元数据与限制](../sources/FUND-400/metadata.json) · [登记网址](https://www.cls.cn/detail/2432695) |
 | FUND-401 | 基金管理机构非货币公募基金月均规模（20家）（2024年三季度） | verified-primary | [原语言正文](../sources/FUND-401/original.md) · [下载文件](../sources/FUND-401/source.pdf) · [元数据与限制](../sources/FUND-401/metadata.json) · [登记网址](https://www.amac.org.cn/sjtj/datastatistics/assetmanagementdata/smzg_ywpm/202411/P020241106606145403776.pdf) |
 | FUND-402 | 『基金行业金融科技获奖成果宣传活动』华夏基金：飞翼固收一体化智能平台 | verified-primary | [原语言正文](../sources/FUND-402/original.md) · [下载文件](../sources/FUND-402/source.pdf) · [元数据与限制](../sources/FUND-402/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/202602/P020260202337823336223.pdf) |
 | FUND-403 | 『基金行业金融科技获奖成果宣传活动』国泰基金：基金组合管理平台建设 | verified-primary | [原语言正文](../sources/FUND-403/original.md) · [下载文件](../sources/FUND-403/source.pdf) · [元数据与限制](../sources/FUND-403/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/202601/P020260202337808791393.pdf) |
-| FUND-405 | 国泰基金管理有限公司旗下部分基金2025年年度报告提示性公告 | verified-primary | [原语言正文](../sources/FUND-405/original.md) · [下载文件](../sources/FUND-405/source.pdf) · [元数据与限制](../sources/FUND-405/metadata.json) · [登记网址](https://st.gtfund.com/GSGG/2026/03/30/828175006116.PDF) |
+| FUND-405 | 国泰基金管理有限公司旗下部分基金2025年年度报告提示性公告 | verified-primary | [原语言正文](../sources/FUND-405/original.md) · [下载文件](../sources/FUND-405/source.pdf) · [元数据与限制](../sources/FUND-405/metadata.json) · [登记网址](https://st.gtfund.com/GSGG/2026/03/30/828175006116.PDF)；辅助阅读，不进入主阅读集 |
 
 ## 研究者摘要／分析（保留原有正文）
 

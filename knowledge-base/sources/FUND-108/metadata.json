@@ -20,13 +20,13 @@
   "byte_count": 121262,
   "raw_file": "source.html",
   "decoded_encoding": "utf-8",
-  "extraction_method": "Defuddle Markdown from archived HTML; no translation",
+  "extraction_method": "Canonical-source redirect; Sina original bytes and provenance retained",
   "text_language": "Chinese",
-  "extracted_characters": 19443,
+  "extracted_characters": 348,
   "text_file": "original.md",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "37a06fd7a9c537b5c31117ad7f4fc5556a5e1df73fa778ba6b6b3fca2df35991",
+  "extracted_text_sha256": "63347400ef2e89e5fec7efbc2e469ac5df86236ab34e64c4e1082b6f47ba881c",
   "reading_copy": "reading-copy/reading.md",
   "reading_copy_metadata": "reading-copy/metadata.json",
   "reading_copy_status": "mechanical paragraph-text check passed; images preserved; human review pending",
@@ -36,5 +36,11 @@
     "status": "retrieved_and_compared",
     "comparison_record": "../../audits/2026-09-07-wechat-live/mirror-comparison.json",
     "same_publication_chain": true
-  }
+  },
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08",
+  "collection_role": "redirect",
+  "text_kind": "canonical_source_redirect",
+  "canonical_source_id": "FUND-109",
+  "canonical_text": "../FUND-109/original.md"
 }

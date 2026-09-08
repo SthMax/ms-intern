@@ -1,0 +1,8 @@
+{
+  "before_default_source_readers": 99,
+  "before_reading_bytes": 3740491,
+  "after_main_available_readers": 92,
+  "after_main_reading_bytes": 2988790,
+  "reduction_percent": 20.1,
+  "interpretation": "Compares previous registered source text copies with new main reading paths; supporting readings and provenance retained separately. Not a disk-space saving measure."
+}

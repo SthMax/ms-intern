@@ -1,0 +1,190 @@
+{
+  "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "operations": [
+    {
+      "group": "A",
+      "source_id": "FUND-108",
+      "operation": "remove confirmed Sina sidebar/promo trailer",
+      "before_characters": 20192,
+      "after_characters": 5494
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-112",
+      "operation": "remove confirmed Sina sidebar/promo trailer",
+      "before_characters": 16203,
+      "after_characters": 1447
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-203",
+      "operation": "remove confirmed Sina sidebar/promo trailer",
+      "before_characters": 17961,
+      "after_characters": 3311
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-355",
+      "operation": "remove confirmed Sina sidebar/promo trailer",
+      "before_characters": 21091,
+      "after_characters": 6441
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-358",
+      "operation": "remove confirmed Sina sidebar/promo trailer",
+      "before_characters": 17420,
+      "after_characters": 2759
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-110",
+      "operation": "remove unrelated footer links",
+      "removed_lines": [
+        "[重磅！巴菲特，出手！](https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656227321&idx=1&sn=a342b90feb23715ad1dbf57efb29bf52&scene=21#wechat_redirect)"
+      ]
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-251",
+      "operation": "remove unrelated footer links",
+      "removed_lines": [
+        "[大跌日，“越跌越买”！股票ETF净流入超510亿，沪深300指数净流入居首](https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400464&idx=1&sn=51c149921742d4593080d0fd9da1a022&scene=21#wechat_redirect)",
+        "[受贿数额特别巨大！侯维栋，被公诉](https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400443&idx=1&sn=b78c51f64886c5cbf7a4ca60fbfd6e50&scene=21#wechat_redirect)"
+      ]
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-359",
+      "operation": "remove promotional appendix only"
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-221",
+      "operation": "remove other-app recommendations"
+    },
+    {
+      "group": "A",
+      "source_id": "FUND-093",
+      "operation": "delete wrong portal response files; retain provenance and alternate-source locator",
+      "files": [
+        {
+          "path": "knowledge-base/sources/FUND-093/retrieval-response.md",
+          "sha256": "bec775b935ca452904ff6469caa4f8b01036b27ce6c40fd18594ccfe71affc1d",
+          "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+        },
+        {
+          "path": "knowledge-base/sources/FUND-093/retrieval-response.html",
+          "sha256": "6e9740fee0d469b45b65b6e392b329363f6a4b12d9e7c266d5fa71dd5ad111c5",
+          "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+        },
+        {
+          "path": "knowledge-base/sources/FUND-162/full-visible-text.txt",
+          "sha256": "7872ebe243726a77716c2c3c80ac2502bee3703f88b1da95fd0567ce45ccb208",
+          "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+        }
+      ]
+    },
+    {
+      "group": "B",
+      "source_id": "FUND-150",
+      "operation": "main text narrowed to Huaan pp.23–28; two finance analogues moved to reference; complete PDF preserved",
+      "main_pages": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "reference_pages": [
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        171,
+        172,
+        173,
+        174,
+        175
+      ]
+    },
+    {
+      "group": "C1",
+      "source_id": "FUND-162",
+      "operation": "identity excerpt; duplicate full-visible text removed; raw HTML preserved"
+    },
+    {
+      "group": "C2",
+      "source_id": "FUND-405",
+      "operation": "page 1 excerpt; complete original PDF retained"
+    },
+    {
+      "group": "C3",
+      "source_id": "FUND-357",
+      "operation": "move readable text to reference; stable ID/raw source preserved"
+    },
+    {
+      "group": "C4",
+      "source_id": "FUND-255",
+      "operation": "move readable text to reference; stable ID/raw source preserved"
+    },
+    {
+      "group": "D",
+      "source_id": "FUND-108",
+      "operation": "canonicalize duplicate reader",
+      "canonical_source_id": "FUND-109"
+    },
+    {
+      "group": "D",
+      "source_id": "FUND-355",
+      "operation": "canonicalize duplicate reader",
+      "canonical_source_id": "FUND-356"
+    },
+    {
+      "group": "D",
+      "source_id": "FUND-358",
+      "operation": "canonicalize duplicate reader",
+      "canonical_source_id": "FUND-359"
+    },
+    {
+      "group": "D",
+      "source_id": "FUND-203",
+      "operation": "promote already archived WeChat original; preserve Sina raw under source.sina.html"
+    }
+  ],
+  "removed_files": [
+    {
+      "path": "knowledge-base/sources/FUND-093/retrieval-response.md",
+      "sha256": "bec775b935ca452904ff6469caa4f8b01036b27ce6c40fd18594ccfe71affc1d",
+      "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+    },
+    {
+      "path": "knowledge-base/sources/FUND-093/retrieval-response.html",
+      "sha256": "6e9740fee0d469b45b65b6e392b329363f6a4b12d9e7c266d5fa71dd5ad111c5",
+      "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+    },
+    {
+      "path": "knowledge-base/sources/FUND-162/full-visible-text.txt",
+      "sha256": "7872ebe243726a77716c2c3c80ac2502bee3703f88b1da95fd0567ce45ccb208",
+      "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+    }
+  ],
+  "intended_collection_roles": {
+    "redirect": [
+      "FUND-093",
+      "FUND-108",
+      "FUND-355",
+      "FUND-358"
+    ],
+    "supporting": [
+      "FUND-162",
+      "FUND-405",
+      "FUND-357",
+      "FUND-255"
+    ]
+  }
+}

@@ -20,12 +20,34 @@
   "byte_count": 688723,
   "raw_file": "source.html",
   "decoded_encoding": "utf-8",
-  "extraction_method": "HTML visible-text extraction including navigation; Defuddle omitted source content",
+  "extraction_method": "Exact saved HTML title and selected visible navigation labels; large product listing omitted from reading text",
   "text_language": "Chinese",
-  "extracted_characters": 244282,
+  "extracted_characters": 199,
   "text_file": "original.md",
   "full_visible_text_file": "full-visible-text.txt",
   "archive_review_date": "2026-09-07",
   "agent_archive_review": "Checked downloaded type, text accessibility and source identity; substantive claim/legal-status review not repeated in full.",
-  "extracted_text_sha256": "21096e0c9c63ad71d176413855eac86f9401dfbf1344b968491a9a80bc43436b"
+  "extracted_text_sha256": "8afbc545471781ce27784fc1f21b706e9efa59a0b7de6daea08defff15c04d3b",
+  "collection_role": "supporting",
+  "text_kind": "identity_excerpt",
+  "excerpt_values": {
+    "html_title": "平安基金管理有限公司",
+    "visible_labels": [
+      "基金产品",
+      "股票型",
+      "混合型",
+      "债券型",
+      "货币型",
+      "指数型"
+    ]
+  },
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "cleanup_date": "2026-09-08",
+  "removed_derived_exports": [
+    {
+      "path": "knowledge-base/sources/FUND-162/full-visible-text.txt",
+      "sha256": "7872ebe243726a77716c2c3c80ac2502bee3703f88b1da95fd0567ce45ccb208",
+      "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
+    }
+  ]
 }

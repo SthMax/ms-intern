@@ -128,9 +128,7 @@ AI大模型在资管行业深度渗透后，合规与安全挑战日益凸显。
 
 注：本文封面图由AI生成
 
-[大跌日，“越跌越买”！股票ETF净流入超510亿，沪深300指数净流入居首](https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400464&idx=1&sn=51c149921742d4593080d0fd9da1a022&scene=21#wechat_redirect)
 
-[受贿数额特别巨大！侯维栋，被公诉](https://mp.weixin.qq.com/s?__biz=MzA5MDEzNjQwMA==&mid=2656400443&idx=1&sn=b78c51f64886c5cbf7a4ca60fbfd6e50&scene=21#wechat_redirect)
 
 版权声明
 

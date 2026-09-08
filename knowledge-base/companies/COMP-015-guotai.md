@@ -23,7 +23,7 @@ human_check_status: pending
 | FUND-400 | 公募非货规模最新座次出炉，万亿公募增至3家，中段座次重排 | candidate | [原语言正文](../sources/FUND-400/original.md) · [下载文件](../sources/FUND-400/source.html) · [元数据与限制](../sources/FUND-400/metadata.json) · [登记网址](https://www.cls.cn/detail/2432695) |
 | FUND-401 | 基金管理机构非货币公募基金月均规模（20家）（2024年三季度） | verified-primary | [原语言正文](../sources/FUND-401/original.md) · [下载文件](../sources/FUND-401/source.pdf) · [元数据与限制](../sources/FUND-401/metadata.json) · [登记网址](https://www.amac.org.cn/sjtj/datastatistics/assetmanagementdata/smzg_ywpm/202411/P020241106606145403776.pdf) |
 | FUND-403 | 『基金行业金融科技获奖成果宣传活动』国泰基金：基金组合管理平台建设 | verified-primary | [原语言正文](../sources/FUND-403/original.md) · [下载文件](../sources/FUND-403/source.pdf) · [元数据与限制](../sources/FUND-403/metadata.json) · [登记网址](https://www.amac.org.cn/xwfb/hydt/202601/P020260202337808791393.pdf) |
-| FUND-405 | 国泰基金管理有限公司旗下部分基金2025年年度报告提示性公告 | verified-primary | [原语言正文](../sources/FUND-405/original.md) · [下载文件](../sources/FUND-405/source.pdf) · [元数据与限制](../sources/FUND-405/metadata.json) · [登记网址](https://st.gtfund.com/GSGG/2026/03/30/828175006116.PDF) |
+| FUND-405 | 国泰基金管理有限公司旗下部分基金2025年年度报告提示性公告 | verified-primary | [原语言正文](../sources/FUND-405/original.md) · [下载文件](../sources/FUND-405/source.pdf) · [元数据与限制](../sources/FUND-405/metadata.json) · [登记网址](https://st.gtfund.com/GSGG/2026/03/30/828175006116.PDF)；辅助阅读，不进入主阅读集 |
 
 ## 研究者摘要／分析（保留原有正文）
 

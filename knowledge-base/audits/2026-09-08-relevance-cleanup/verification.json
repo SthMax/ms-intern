@@ -1,0 +1,157 @@
+{
+  "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
+  "result": "pass",
+  "checks": [
+    {
+      "check": "Only the three approved disposable files were deleted",
+      "pass": true,
+      "details": [
+        "knowledge-base/sources/FUND-093/retrieval-response.html",
+        "knowledge-base/sources/FUND-093/retrieval-response.md",
+        "knowledge-base/sources/FUND-162/full-visible-text.txt"
+      ]
+    },
+    {
+      "check": "All existing source PDFs, HTML and images preserved byte-for-byte, allowing the documented Sina rename",
+      "pass": true,
+      "details": {
+        "checked": 197,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "A2 Buddy body and full risk warning unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "FUND-110 only specifically approved recommendation lines removed",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "FUND-251 only specifically approved recommendation lines removed",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Huatai entire article, final paragraph and risk warning unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CashPlus version history, provider and date unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "FUND-109 canonical full reading unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "FUND-356 canonical full reading unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Southern canonical raw HTML matches the archived WeChat bytes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Southern canonical reading preserves all WeChat text",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CCF main excerpt is exactly Huaan pages 23–28 with no loss of page text",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Two retained financial technical analogues match their original pages",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Nine reviewed nonfinancial CCF chapter titles absent from the main excerpt",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Guotai page 1, date, 294 count and risk notice preserved",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Ping An identity excerpt values grounded in unchanged HTML",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "FUND-255 full source text preserved in supporting reference",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "FUND-357 full source text preserved in supporting reference",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "Untargeted source readers, regulation, model, architecture and pilot notes unchanged",
+      "pass": true,
+      "details": {
+        "checked": 101,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Reading roles are 93 main / 4 supporting / 4 redirects; unique 101 IDs",
+      "pass": true,
+      "details": {
+        "main": 93,
+        "redirect": 4,
+        "supporting": 4
+      }
+    },
+    {
+      "check": "All declared reading/metadata paths exist or are explicitly unavailable",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "All source evidence states unchanged",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "All changed reading text/reference hashes correct",
+      "pass": true,
+      "details": {
+        "new_mismatches": [],
+        "preexisting_untouched_mismatches": []
+      }
+    },
+    {
+      "check": "Master register IDs and evidence states unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "No new broken relative file links",
+      "pass": true,
+      "details": {
+        "new": [],
+        "baseline_existing_count": 2057,
+        "current_existing_count": 2056
+      }
+    },
+    {
+      "check": "Authored/derived diff whitespace check; byte-preserved raw HTML checked by hashes",
+      "pass": true,
+      "details": ""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "issue": "Two historical audit links still referenced the removed FUND-162 full-visible-text.txt",
+    "resolution": "Redirected those links to metadata documenting removal and baseline hash."
+  },
+  {
+    "issue": "Raw WeChat HTML contains original trailing whitespace",
+    "resolution": "Preserved original bytes; source-file hash checks cover it. Whitespace lint applies to authored/derived files, excluding that byte-preserved HTML."
+  }
+]

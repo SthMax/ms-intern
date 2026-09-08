@@ -23,5 +23,9 @@
   "human_check_status": "pending",
   "network_used": false,
   "limits": "Text check does not validate image contents, table spans, authenticity or substantive claims; failed images remain explicitly listed.",
-  "image_fetch_scope": "Separate inbound download of images already referenced by saved Sina/SZU publications; no WeChat article request."
+  "image_fetch_scope": "Separate inbound download of images already referenced by saved Sina/SZU publications; no WeChat article request.",
+  "reading_status": "redirected_to_canonical",
+  "canonical_text": "../../FUND-359/original.md",
+  "reading_sha256": "6f2e2d9b328b762bad8aadbed37916a84f13cd0f346d2e999d1cd46030c082fb",
+  "cleanup_baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad"
 }
