@@ -1,0 +1,18 @@
+{
+  "pdf_sha256": "fe1ccc71281700ddc8849e094e9889b7c9b5272dd7803b0b8efdc3bdf88d838b",
+  "physical_pages": 24,
+  "numbered_pages": 23,
+  "source_entries": 49,
+  "uri_links": 49,
+  "all_source_urls_present": true,
+  "all_manifest_hashes_match": true,
+  "chinese_text_searchable": true,
+  "all_chart_company_labels_present": true,
+  "figures": 9,
+  "numbered_tables": 15,
+  "overfull_or_missing_glyph_warnings": false,
+  "model_api_backtest_executed": false,
+  "all_pages_visually_reviewed": true,
+  "final_visual_renderer": "PDFium, cross-checked against Poppler and pdfplumber",
+  "duplicate_page_anchors": false
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "rank": 1,
+    "company": "易方达",
+    "aum_cny_100m": 17029.86,
+    "company_id": "COMP-002",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 2,
+    "company": "华夏",
+    "aum_cny_100m": 11987.79,
+    "company_id": "COMP-001",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 3,
+    "company": "广发",
+    "aum_cny_100m": 10355.25,
+    "company_id": "COMP-004",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 4,
+    "company": "富国",
+    "aum_cny_100m": 9889.56,
+    "company_id": "COMP-003",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 5,
+    "company": "南方",
+    "aum_cny_100m": 7856.35,
+    "company_id": "COMP-007",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 6,
+    "company": "汇添富",
+    "aum_cny_100m": 7719.67,
+    "company_id": "COMP-009",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 7,
+    "company": "景顺长城",
+    "aum_cny_100m": 7465.45,
+    "company_id": "COMP-014",
+    "primary_ai_llm_evidence": false
+  },
+  {
+    "rank": 8,
+    "company": "嘉实",
+    "aum_cny_100m": 6911.96,
+    "company_id": "COMP-011",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 9,
+    "company": "博时",
+    "aum_cny_100m": 6386.18,
+    "company_id": "COMP-008",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 10,
+    "company": "鹏华",
+    "aum_cny_100m": 6366.21,
+    "company_id": "COMP-012",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 11,
+    "company": "招商",
+    "aum_cny_100m": 6276.62,
+    "company_id": "COMP-018",
+    "primary_ai_llm_evidence": false
+  },
+  {
+    "rank": 12,
+    "company": "国泰",
+    "aum_cny_100m": 6238.11,
+    "company_id": "COMP-015",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 13,
+    "company": "永赢",
+    "aum_cny_100m": 5332.53,
+    "company_id": "COMP-019",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 14,
+    "company": "工银瑞信",
+    "aum_cny_100m": 5006.18,
+    "company_id": "COMP-013",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 15,
+    "company": "天弘",
+    "aum_cny_100m": 4824.03,
+    "company_id": "COMP-010",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 16,
+    "company": "中欧",
+    "aum_cny_100m": 4687.7,
+    "company_id": "COMP-020",
+    "primary_ai_llm_evidence": false
+  },
+  {
+    "rank": 17,
+    "company": "华安",
+    "aum_cny_100m": 4632.07,
+    "company_id": "COMP-016",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 18,
+    "company": "华泰柏瑞",
+    "aum_cny_100m": 4459.62,
+    "company_id": "COMP-021",
+    "primary_ai_llm_evidence": false
+  },
+  {
+    "rank": 19,
+    "company": "兴证全球",
+    "aum_cny_100m": 3751.87,
+    "company_id": "COMP-005",
+    "primary_ai_llm_evidence": true
+  },
+  {
+    "rank": 20,
+    "company": "平安",
+    "aum_cny_100m": 3447.69,
+    "company_id": "COMP-017",
+    "primary_ai_llm_evidence": false
+  }
+]

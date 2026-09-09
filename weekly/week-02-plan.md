@@ -98,11 +98,11 @@ regulatory instrument or legal requirement has already been verified.
 |---|---|---|
 | Minimum company count | Still missing in final brief | Collect and verify candidates; report actual count; seek mentor number without inventing it |
 | “Top tier” / asset-size measure | User requested size-first research; working cohort is reported top-20 non-money public AUM at 2026 Q2, ETF feeders excluded | Preserve secondary ranking provenance and separate official company AUM; cohort choice is not the mentor's missing minimum |
-| AI versus LLM scope | User now prioritizes 2026 fund-manager LLM cases in factor generation/iteration, text-derived quant signals and research agents calling data/code/backtests | Local deployment is a preference, not a case prerequisite; API-based frameworks qualify. Keep model serving separate from agent/framework assessment; no traditional-ML substitution or old-model tutorial expansion |
+| AI versus LLM scope | Four report themes confirmed: research reasoning, controlled data querying, knowledge/compliance, and LLM-assisted quant; quant covers factor generation/iteration, text signals and research tools | Local deployment is a preference, not a case prerequisite; API-based frameworks qualify. Keep model serving separate from agent/framework assessment; no traditional-ML substitution or old-model tutorial expansion |
 | MRM meaning | Confirmed: model risk management | Research relevant sources; identify applicable internal document/owner separately |
 | COD meaning | Confirmed: infrastructure used in MSIM | Carry actual hardware/network/security questions into Phase 2 |
 | Internal policy availability | Not supplied in repository | Continue public-source review and list internal applicability questions without reproducing restricted text |
-| Presentation audience/time/language/format | Mentor and quant-department colleagues confirmed; time/language/format not yet specified | Prioritize technical workflow, evidence limits and implications for a decoupled local-LLM feasibility study |
+| Presentation audience/time/language/format | Mentor and quant-department colleagues; user requested LaTeX report rendered to PDF on 9 Sep; Chinese working draft | Report saved under reports; live presentation time and final delivery review remain open |
 | Research cut-off | Working proposal: 10 Sep, 17:00 | Log source dates and any subsequent material corrections |
 | Model language proficiency and “fund outcomes” | Wording needs later operational detail | Carry to Phases 2/3; neither prevents Phase 1 research |
 
@@ -176,3 +176,11 @@ details, control/metric limitations and original source trails.
 The broader legal-status sweep, human verification, comparable official AUM gaps
 and final presentation remain outstanding. No Phase 2 implementation or pilot
 ranking was performed in this fund-focused pass.
+
+### 9 September 2026 — Phase 1 LaTeX report
+
+- Preserved the research baseline in commit `e51e4c9` before report authoring.
+- Re-read the mentor-confirmed project plan and produced a [Phase 1 report](../reports/phase1-llm-industry-2026-09-09/README.md) with LaTeX source, PDF, charts, company tables and a source manifest.
+- W2-04: report draft prepared in the format requested by the user; mentor review, rehearsal and live presentation remain outstanding. This does not certify completion of those activities.
+- W2-05: report translates all four themes into Phase 2 task/evaluation candidates and lists missing COD, internal-policy, data and cost inputs. No model deployment, benchmark or TCO calculation was performed.
+- W2-01/02/03 remain source-based research, with independent human review and the mentor's missing numeric company target still open. The report distinguishes 20 core managers plus one supplementary dossier, source quality, LLM relevance and workflow completeness.

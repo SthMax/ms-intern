@@ -1,0 +1,22 @@
+{
+  "research_cutoff": "2026-09-09",
+  "git_baseline": "e51e4c9b93bd03c17f869c2f10027fa8061f9eae",
+  "phase": "Phase 1, Weeks 1-2",
+  "scope": "four workflow themes; LLM-assisted quant has three agreed subthemes; industry research, not deployment/ROI certification",
+  "source_records": 125,
+  "source_states": {
+    "verified-primary": 88,
+    "candidate": 35,
+    "unresolved": 2
+  },
+  "reading_roles": {
+    "main": 112,
+    "redirect": 4,
+    "supporting": 9
+  },
+  "original_cohort_managers": 20,
+  "original_dossiers_with_supplement": 21,
+  "primary_ai_llm_original_cohort": 15,
+  "primary_ai_llm_original_dossiers": 16,
+  "original_platform_workflow_records": 25
+}

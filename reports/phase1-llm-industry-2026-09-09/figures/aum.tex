@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{axis}[xbar,width=15.8cm,height=13.8cm,xmin=0,xmax=19500,
+ytick={1,...,20},yticklabels={易方达,华夏,广发,富国,南方,汇添富,景顺长城,嘉实,博时,鹏华,招商,国泰,永赢,工银瑞信,天弘,中欧,华安,华泰柏瑞,兴证全球,平安},y dir=reverse,
+ymin=0.25,ymax=20.75,bar width=9pt,axis x line*=bottom,axis y line*=left,y axis line style={draw=none},
+xtick={0,5000,10000,15000},scaled x ticks=false,xticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep={,}},
+xmajorgrids=true,grid style={linegray},tick style={draw=none},
+xlabel={2026年二季度末非货公募规模（亿元人民币）},
+tick label style={font=\small},label style={font=\small},
+nodes near coords,point meta=x,nodes near coords style={font=\scriptsize,anchor=west,/pgf/number format/fixed,/pgf/number format/precision=0,/pgf/number format/1000 sep={,}}]
+\addplot[fill=teal,draw=none] coordinates {(17029.86,1) (11987.79,2) (10355.25,3) (9889.56,4) (7856.35,5) (7719.67,6) (7465.45,7) (6911.96,8) (6386.18,9) (6366.21,10) (6276.62,11) (6238.11,12) (5332.53,13) (5006.18,14) (4824.03,15) (4687.7,16) (4632.07,17) (4459.62,18) (3751.87,19) (3447.69,20)};
+\end{axis}
+\end{tikzpicture}

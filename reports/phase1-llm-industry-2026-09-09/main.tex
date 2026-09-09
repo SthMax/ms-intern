@@ -1,0 +1,509 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper,fontset=none]{ctexart}
+\input{preamble}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\thispagestyle{empty}\setlength{\parindent}{0pt}
+\vspace*{12mm}
+{\sffamily\large\color{teal}MSIM CHINA · INTERNSHIP RESEARCH\par}
+\vspace{12mm}
+{\Huge\bfseries\color{navy}基金公司 LLM 应用\\[6pt]与本地部署前期研究\par}
+\vspace{8mm}
+{\Large\color{muted}Phase 1 行业实践、证据边界与治理要求\par}
+\vspace{13mm}
+\noindent\textcolor{teal}{\rule{\linewidth}{2pt}}
+\vspace{8mm}
+\noindent\begin{tabularx}{\linewidth}{@{}P{28mm}Y@{}}
+研究方向 & 投研推理 / 受控数据查询 / 知识问答与合规审核 / LLM-assisted quant\\
+研究对象 & 中国公募基金为主；海外资管与公开研究框架作技术对照\\
+汇报对象 & Mentor 与量化部门同事\\
+资料截止日 & 2026年9月9日\\
+阶段依据 & 2026年9月6日确认的 \texttt{PROJECT\_PLAN.md}\\
+研究基线 & Git \texttt{e51e4c9}；本报告未进行模型部署或回测复现\\
+\end{tabularx}
+\vfill
+\begin{takeaway}
+\textbf{核心判断}\quad 国内案例足以说明LLM正在进入投研与业务流程，但公开可复现程度不均。易方达的深入材料最集中；南方提供了另一条达到4分的具体工作流。量化章节需把基金实践与公开框架并列研究，分别说明其证据范围。
+\end{takeaway}
+\vspace{8mm}
+{\small\color{muted}研究报告 v1.0 · 中文讨论稿\par}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+
+\section*{执行摘要}
+\addcontentsline{toc}{section}{执行摘要}
+\textbf{可以写出一份有实质内容的Phase 1报告，但尚不能据公开资料确认国内基金拥有可供完整复制的5分LLM量化系统。} 本报告按project plan完成行业样本、应用场景、技术及合作方的归纳，并总结数据隐私、可解释性/MRM和外包边界。后续的本地GPU部署、5–8个模型比较和三年TCO测算仍需实施。
+
+易方达仍是知识库中\textbf{深入技术材料最集中的公司}：除平台与产品披露外，还有联合论文、补充Prompt、公开查询客户端及2026学术任务。这个结论反映本次取得的材料，不能推导为其行业实际项目数最多。材料之间也存在重叠，联合研究、产品接口与公司生产系统不能合并计数。\src{FUND-004}\src{FUND-109}\src{FUND-113}\src{FUND-114}\src{FUND-115}\src{FUND-119}
+
+\begin{table}[H]\centering\small
+\caption{四个方向的主案例安排与材料判断}
+\noindent\begin{tabularx}{\linewidth}{@{}P{25mm}P{33mm}Y@{}}\toprule
+方向 & 主案例与对照 & 可用于汇报的结论\\\midrule
+投研推理 & 富国、天弘；易方达MENTOR补充 & 前两者2026披露约3分。MENTOR方法约4分，但为2025论文，保留历史标签。\\
+受控数据查询 & 南方；易方达Index-Hub & 南方NL2SQL子流程约4分。易方达有公开客户端，但不能据此称内部服务端已开源。\\
+知识与合规 & 鹏华、汇添富 & 2026公司案例约3分，能说明数据、Prompt和规则如何协作；缺完整规则/Prompt和独立评测。\\
+LLM辅助量化 & 国内基金 + Man Group + QuantaAlpha & 国内完整闭环4/5分未确认；Man接近4分但仍有缺口；QuantaAlpha为5分候选，属于外部研究框架，未独立复现。\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{报告的深度来自具体机制和缺口，而非提高评分。} 南方展示了从意图、选表、SQL生成到权限与执行检查的链条；富国与鹏华能定位LLM进入业务的位置；Man Group提供如何生成并否定研究想法的机构案例；QuantaAlpha补上Prompt、代码、因子约束与回测迭代细节。\src{FUND-200}\src{FUND-007}\src{FUND-308}\src{FUND-323}\src{EXT-QA}\src{EXT-QC}
+
+\textbf{治理上，本地部署只是数据流与技术责任的一项选择。} 是否触发面向公众服务、个人信息、出境或外包要求，需要按实际用户、数据、工具与供应商角色判断。2026年的Fed MRM文件也不能替代MSIM内部政策。进入Phase 2前，应由内部负责人明确用例分级、COD资源与数据使用边界。
+
+\clearpage
+\tableofcontents
+\vfill
+\begin{boundary}[阅读方法]
+正文评分描述\textbf{公开材料的完整程度}，不评价公司能力、模型收益或生产成熟度。编号引用可点击跳到来源目录；目录中的“原始出处”可打开官网、原刊或固定代码版本。详细原件路径和哈希保存在随报告提供的\texttt{data/source-manifest.json}。
+\end{boundary}
+\clearpage
+
+\section{项目要求与当前阶段}
+\subsection{本报告交付什么}
+Project plan把实习分为三个阶段。当前Phase 1的核心是建立结构化行业数据库，并总结隐私、可解释性及外包方面的监管/MRM要求。本报告把知识库转换为可供mentor审阅和量化部门讨论的阶段成果。
+
+\begin{table}[H]\small\caption{项目要求与本报告的对应关系}
+\noindent\begin{tabularx}{\linewidth}{@{}P{35mm}Y P{29mm}@{}}\toprule
+确认的要求 & 本报告响应 & 当前状态\\\midrule
+按公司资产规模、用例和技术合作方分类 & 第3节及公司表；20家同口径规模样本，加大成补充档案 & 数据库及公开证据已整理\\
+隐私、模型解释/MRM、外包要求 & 第9节按法律层级、触发条件和内部待确认事实梳理 & 公开文献复核；非内部审批\\
+比较5–8个开放模型；本地部署一个模型 & 第8、10节定义可迁移接口和评价设计 & Phase 2待执行\\
+三年TCO；3–5个候选试点及ROI & 第10节给出进入成本与收益分析所需输入 & Phase 3待测算\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=7mm]
+\node[flowwide,fill=teal!10,draw=teal,text width=43mm](p1){\textbf{Weeks 1–2}\par 行业与治理研究\par \textcolor{teal}{本报告所在阶段}};
+\node[flowwide,right=of p1,text width=43mm](p2){\textbf{Weeks 3–5}\par 模型比较、架构\par 本地GPU原型};
+\node[flowwide,right=of p2,text width=43mm](p3){\textbf{Weeks 6–8}\par 三年TCO、ROI\par 试点排序与最终报告};
+\draw[arr](p1)--(p2);\draw[arr](p2)--(p3);
+\end{tikzpicture}
+\caption{按mentor确认计划重绘的阶段安排；箭头表示后续工作依赖。}
+\end{figure}
+
+\subsection{边界与尚未取得的输入}
+计划中“at least … onshore mutual fund companies”没有给出最低数量，本报告沿用现有20家核心样本，不补写一个未经确认的验收数字。计划正文的试点数为3–5，Expected Outcomes为2–5；本阶段仅形成候选，不将数量差异视为已经决定的实施范围。
+
+本报告尚未取得MSIM的内部MRM/生成式AI政策、COD硬件规格、网络与软件准入清单、数据授权或内部成本单价。因此，不能给出“可上线”“已满足集团制度”“本地优于API”或具体ROI的最终结论。此前行业材料中的量化结果也不替代本项目实测。
+
+\begin{takeaway}
+\textbf{本阶段可以支持的决策：} 四个方向值得如何选材、哪些公开机制可以转为原型设计、哪些证据与内部事实必须在下一阶段补齐。
+\end{takeaway}
+\clearpage
+
+\section{研究方法与证据口径}
+\subsection{公司样本、来源和年份}
+核心样本来自2026年二季度末非货公募规模前20家公司；大成作为已有深入案例补充。规模排名用于筛选可比样本，来自财联社对行业数据的报道，未重建底层数据。海外资管、基金销售机构与高校框架分别列为对照，不混入国内公司数量。\src{FUND-400}
+
+研究优先使用基金公司原始材料、协会发布的公司案例、官方论文/补充材料和作者代码，其次使用有明确公司归属的媒体采访。2026年指可核对的\textbf{公开披露或发表年份}，并不表示系统在2026年才上线。PDF未写日期时，用可核验的发布目录日期并保留限制；无日期文档和代码快照不据URL月份或最新修改日改写为2026新项目。
+
+\begin{table}[H]\small\caption{知识库快照与本报告的计数边界（基线e51e4c9）}
+\noindent\begin{tabularx}{\linewidth}{@{}P{42mm}P{21mm}Y@{}}\toprule
+统计项 & 数量 & 含义与限制\\\midrule
+来源记录 & 125 & 来源ID数量，非独立项目数；含法规、研究与补充资料\\
+一手来源 / 候选 / 未解决 & 88 / 35 / 2 & 归档来源状态；“一手”不等于效果已验证\\
+主要 / 支持 / 跳转记录 & 112 / 9 / 4 & 阅读索引角色，与来源质量是两个不同维度\\
+核心公司 / 含补充公司 & 20 / 21 & 海外机构和外部框架另列\\
+有一手AI或LLM证据 & 15/20；16/21 & 含较早及非LLM的AI材料，不能改称LLM生产部署率\\
+历史平台及工作流条目 & 25 & 可能是同一平台组件；不能加总为25套独立系统\\\bottomrule
+\end{tabularx}
+\end{table}
+\smallnote{统计来自知识库reading-index、公司index及规模样本；机器可读快照见data/report-manifest.json。}
+
+\subsection{评分只针对指定流程}
+\noindent\begin{tabularx}{\linewidth}{@{}P{12mm}Y@{}}\toprule
+分数 & 用户定义及本报告执行口径\\\midrule
+5 & 完整可复制的工作流，有详细技术细节、代码、成果与展望；代码和实验可核验后才确认。\\
+4 & 完整可复制的工作流，有详细技术细节，没有代码；限定到材料实际覆盖的流程。\\
+3 & 不完整工作流，有部分技术细节，以及场景和使用情况。\\
+2 & 不完整工作流，没有实质技术细节，但有场景和使用情况。\\
+1 & 只有概括介绍。\\\bottomrule
+\end{tabularx}
+
+\textbf{“5分候选”是待确认状态，不是已确认5分。} 论文、代码和实验齐备可成为候选，但还需核对依赖、数据、许可、隐藏步骤和可运行性。本文没有执行模型/API、生成因子或回测；公司宣称的效果均按原始口径呈现，不能视为独立验证。
+\clearpage
+
+\section{行业样本：规模、场景、技术与合作方}
+\subsection{统一规模口径}
+\begin{figure}[H]\centering
+\input{figures/aum}
+\caption{核心20家公司规模。口径为2026年二季度末非货币公募基金规模，剔除ETF联接基金；数值标签取整，原始两位小数见后表。}
+\end{figure}
+\source{财联社2026-07-21报道，\src{FUND-400}。这是用于样本筛选的二手统计，不与公司官网含子公司、专户或年金的总管理规模混用，也不与2024年月均规模直接计算增长。}
+\clearpage
+\subsection{公司一览}
+以下表格保留广义AI/LLM行业数据库的范围；四方向主案例另作更严格的LLM筛选。\textbf{“一手缺口”仅表示已取得材料的不足}；不表示该公司没有相应系统。技术栈中出现模型家族、硬件或工具，也不自动证明技术服务商及其合同职责。
+\input{landscape}
+\clearpage
+
+\section{案例选择：减少对易方达的依赖}
+\textbf{其他公司足以承担多数章节，但达到4分的公开技术材料仍少。} 本报告不把21家公司旧评分表直接当作“2026 LLM排名”：旧表包含跨年份AI、NLP及平台材料，经过严格LLM筛选后需要逐流程重新判断。
+\begin{table}[H]\small\caption{主案例材料矩阵；评分是本报告研究判断}
+\noindent\begin{tabularx}{\linewidth}{@{}P{28mm}P{17mm}P{20mm}Y@{}}\toprule
+案例 & 披露年份 & 材料分 & 定位及尚缺的关键证据\\\midrule
+富国智能投研 & 2026 & 3 & 有LLM处理链；缺Prompt、阈值、独立任务评测。\\
+天弘FinAgent & 2026 & 3 & 有平台分层、工具与财务分析拆解；缺完整任务轨迹和接口。\\
+南方交易助理 & 2026 & \textbf{4，查询} & NL2SQL链条与控制细节较完整；未公开完整代码。\\
+鹏华业务智能体 & 2026 & 3 & 有Prompt/RAG治理及审核统计；缺规则、标签和独立效果验证。\\
+汇添富风险平台 & 2026 & 3 & 有LLM、规则和工程栈；难以隔离LLM本身贡献。\\
+易方达MENTOR & \textbf{2025} & \textbf{4，方法} & 论文与完整补充Prompt；无官方项目代码，全量数据受限。\\
+易方达Index-Hub & 无日期快照 & 不合并评分 & 可审查公开客户端；内部Agent和服务端实现未开源。\\
+易方达联合任务 & 2026 & 5未确认 & 学术基线可读；隐藏评测、数据条件及最终成果存在缺口。\\
+Man AlphaTrend & 2026 & 3，接近4 & 有闭环与实验讨论；节点Prompt、工具、数据、代码未完整公开。\\
+QuantaAlpha & 2026 & \textbf{5候选} & 论文、代码、配置及实验；外部框架，待独立运行及许可确认。\\\bottomrule
+\end{tabularx}
+\end{table}
+\source{\src{FUND-007}\src{FUND-300}\src{FUND-200}\src{FUND-308}\src{FUND-220}\src{FUND-113}\src{FUND-114}\src{FUND-115}\src{FUND-119}\src{FUND-323}\src{EXT-QA}\src{EXT-QC}。}
+
+\subsection{易方达材料为何显得更多}
+其不同来源分别覆盖平台、产品、研究论文和客户端实现，适合从不同层面交叉阅读。但公司参与论文、比赛或开源客户端，不能证明该方法已经用于基金实盘；同一平台多篇文章也不能按文章数增加项目数量。\src{FUND-004}\src{FUND-109}\src{FUND-115}\src{FUND-119}
+
+因此，报告采用“\textbf{每个方向一个主机制，辅以其他公司对照}”的安排：易方达保留MENTOR与Index-Hub两个有技术辨识度的补充，不承担全部四个方向。严格限定为2026时，MENTOR退出主材料，投研推理由富国、天弘承担，技术深度随之如实降为约3分。
+\clearpage
+
+\section{方向一：投研推理}
+\subsection{富国：先筛选证据，再组织观点}
+富国的协会案例披露，系统对报告与分析标的的相关性进行评分和阈值筛选，按分析方向生成摘要，再汇总市场观点。另有基于本地大模型的RAG：组织数据与业务知识，进行切片、关键词和时间处理，写入向量库后由不同意图的Agent处理问题，并保留来源与超出范围时的回答限制。\src{FUND-007}（PDF第8–9页）
+
+\begin{figure}[H]\centering
+\flowfive{报告 / 标的\\分析任务}{相关性评分\\阈值筛选}{按方向摘要\\组织证据}{综合观点\\输出来源}{语气检查\\业务复核}
+\caption{依据富国公开案例抽象的观点生成链。图为研究者重绘，不代表公司完整系统架构；最后的业务复核是本项目建议。}
+\end{figure}
+
+\noindent\begin{tabularx}{\linewidth}{@{}P{29mm}Y@{}}\toprule
+可学习机制 & 对本项目的意义\\\midrule
+先相关性筛选，再摘要汇总 & 把检索错误与推理错误分开定位；避免模型从无关文本“补全”结论。\\
+按业务意图组织Agent & 允许不同任务使用不同证据与输出模板，不必先构建自主长链Agent。\\
+本地模型结合RAG & 提供本地路线的行业参考，但未公开完整模型、检索参数和可直接部署配置。\\
+保留时间与来源 & 为观点截止日、引用核验和回溯准备基础；仍需检测未来信息。\\\bottomrule
+\end{tabularx}
+
+原文也提到从舆情提取政策敏感度因子、利用LLM辅助评价因子表现，属于本报告量化方向。神经网络因子生成等相邻模块则不能全部计入LLM。公司报告的时间节省涉及整套流程，缺少任务构成和独立对照，不能转成MSIM的预期ROI。\src{FUND-007}
+
+\subsection{天弘：把推理落实为可检查的任务拆解}
+天弘FinAgent案例披露MaaS“Think”、模型服务“THAI”、RAG“弘思3.0”和“智搜2.0”等分层能力，并接入Wind、同花顺及MCP工具。净利润分析可拆成收入、成本与费用，再进一步追踪销量、价格、原材料及渠道等驱动因素。\src{FUND-300}（PDF第4–7页）
+
+这种拆解比“自动生成研究报告”更适合作为原型需求：每个节点应明确数据源、单位、期间和计算公式，LLM负责提取与组织，数值工具负责计算。公开资料仍缺少节点Prompt、接口定义、失败重试和完整输出样本，因此评为3分，不能称已公开量化回测Agent。
+\clearpage
+
+\subsection{易方达联合MENTOR：作为历史技术补充}
+MENTOR为\textbf{2025年}联合研究，作者包含易方达及高校研究者。论文与官方补充材料提供了多Agent事件预测、行业排序和反馈更新机制，有比2026公司案例更具体的Prompt与实验描述。本报告保留它用于解释方法，不把它包装为2026新项目。\src{FUND-113}\src{FUND-114}
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=6mm]
+\node[flow](a){本周新闻\\事件与叙事};
+\node[flow,right=of a](b){预测下周事件\\形成行业排序};
+\node[flow,right=of b](c){冻结预测\\进入真实下一周};
+\node[flow,right=of c](d){观察实际结果\\教师反馈};
+\node[flow,right=of d](e){更新文本策略\\下一轮推理};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\draw[darr](e.south)--++(0,-.6)-|(b.south);
+\end{tikzpicture}
+\caption{MENTOR的时间序列反馈机制抽象。冻结预测的控制标记由本报告强调，用于防止把事后结果混入当期预测。}
+\end{figure}
+
+\textbf{更新的是自然语言策略或Prompt，而非自动训练模型权重。} 将TextGrad式文本反馈称为“本地模型在线训练”会误导部署需求。教师评价、市场预测和最终交易策略也属于不同对象，不能把叙事合理性直接当成因子收益。
+
+\begin{table}[H]\small\caption{从MENTOR可以迁移与仍需补充的内容}
+\noindent\begin{tabularx}{\linewidth}{@{}P{31mm}Y Y@{}}\toprule
+环节 & 已公开，可用于设计 & 本项目仍需验证\\\midrule
+输入与时间 & 新闻、事件及按周迭代方式 & 新闻发布时间、可用时间和历史修订；防止事后信息\\
+推理与反馈 & Agent角色、官方补充Prompt、文本策略更新 & 本地模型的指令遵循、稳定性与失败回退\\
+实验 & 论文中的实验设计及报告结果 & 数据获取权、完整样本、交易约束和独立再现\\
+工程 & 可从论文重建方法流程 & 无官方完整项目代码；全量数据不能假定可公开下载\\\bottomrule
+\end{tabularx}
+\end{table}
+\source{论文第5–9、13–14页及官方补充材料第1–5页，\src{FUND-113}\src{FUND-114}。}
+
+\begin{takeaway}[对量化部门的讨论价值]
+可把投研推理的最小任务定义为“给定截止日的多篇材料，形成可追溯的驱动因素及反证”，再比较人工、普通RAG和分步推理。方向预测、行业排序和实盘收益分别评价；公开论文不能替代本部门样本检验。
+\end{takeaway}
+\clearpage
+\section{方向二：受控数据查询}
+\subsection{南方：达到4分的是具体NL2SQL子流程}
+南方交易助理公开了意图与参数提取、任务拆解和分发，再调用API、SQL、RAG或Python执行器的协同机制。对NL2SQL而言，表名、业务描述、字段注释等元数据先帮助选表，生成器结合单表、连接与聚合模板产出SQL，后续再进行权限、语法、执行计划及分页等检查。\src{FUND-200}（PDF第4–8页）
+
+\begin{figure}[H]\centering
+\flowfive{问题与身份\\意图 / 参数}{候选表及字段\\业务元数据}{生成SQL\\模板与约束}{权限 / 语法\\执行计划检查}{受控执行\\统计与解释}
+\caption{依据南方案例重绘的查询子流程。模型提出查询，由权限与执行控制决定可执行范围。}
+\end{figure}
+
+\begin{table}[H]\small\caption{南方披露的具体机制及可迁移性}
+\noindent\begin{tabularx}{\linewidth}{@{}P{30mm}Y Y@{}}\toprule
+机制 & 原始材料 & 对本项目的可检查要求\\\midrule
+表与字段选择 & 业务元数据、字段注释、SQL模板 & 固定schema；核验表、日期、单位和聚合口径\\
+工具分发 & API/SQL/RAG/Python执行器 & 每类工具有明确输入输出；模型不能获得任意系统权限\\
+身份及环境 & 角色、终端、网络组合控制；高风险路径二次确认等 & 服务端权限继承；不能只依赖Prompt中的“禁止访问”\\
+检索 & Top-5、关键词与向量融合等 & 已披露Top-5不代表所有配置齐备；融合权重和索引仍待定\\
+结果解释 & 统计、图形与自然语言输出 & 保存实际SQL、结果版本和数据截止日，以便复核\\\bottomrule
+\end{tabularx}
+\end{table}
+
+这里的4分意味着公开资料足以重建该\textbf{受控查询流程的机制}，并非可直接连接南方内部库；运行模型、完整工程配置、数据接口和代码未公开。也不能把4分外推成“LLM已自主完成因子研究、交易与回测”。公司称日常操作时间减少约40\%，未披露可重复的测量协议，不作为本项目收益基线。\src{FUND-200}
+
+\subsection{易方达Index-Hub：可读代码集中在客户端}
+固定版本的Index-Hub提供公开查询客户端、接口目录及使用约束，官方帮助文档给出查询示例。这适合研究工具契约和错误处理，但不等于易方达内部模型、Agent调度和数据服务端已开源。所取版本部分ETF/开放式基金包缺少配置文件，实时行情描述亦有待核对，未实际调用验证。\src{FUND-115}\src{FUND-116}
+
+\begin{takeaway}
+优先可迁移的是\textbf{结构化工具调用 + 确定性校验 + 可追溯结果}。本地模型和API模型都可以接同一个只读工具接口，其质量差异应在下一阶段用相同任务评价。
+\end{takeaway}
+\clearpage
+
+\section{方向三：知识问答与合规审核}
+\subsection{鹏华：从知识与Prompt治理进入具体审核任务}
+鹏华公开案例包括私有图像、语音、对话模型，Prompt版本、调试、评测和发布机制，RAG知识处理，以及PSG API网关。投研助手对资讯进行解析、提取、标签化并组织个股摘要；营销材料审核则使用7类、71条规则。\src{FUND-308}（PDF第3–6页）
+
+\begin{figure}[H]\centering
+\flowfive{材料与版本\\授权知识库}{解析 / 检索\\定位规则依据}{规则 + LLM\\识别疑点}{位置 / 原因\\修改建议}{人工复核\\修订与留痕}
+\caption{据鹏华与汇添富案例归纳的研究者参考流程；不是任一公司的完整复刻。人工复核与记录要求作为本项目设计建议。}
+\end{figure}
+
+鹏华报告了1,266份文档、约6万次检测、989条建议和91\%采纳率等运行统计。这些数字支持“系统有实际使用”的判断，但\textbf{采纳率不能当作准确率}：没有金标准违规标签、漏检统计和业务样本构成，就不能计算敏感度或证明合规风险下降。完整规则、Prompt与评价集未公开，因此评为3分。\src{FUND-308}
+
+\subsection{汇添富：把LLM与确定性风险规则分开看}
+汇添富案例披露从托管风险邮件提取信息，以及规则/条款问答；架构图含DeepSeek-R1、QianWen、FastAPI等技术，也有Flink、Doris及规则平台。权限、审批、规则版本和追踪机制属于整套系统能力。规则数量压缩或平台效率指标不能全部归因于LLM。\src{FUND-220}（PDF第5–11页，图2位于第7页）
+
+\begin{table}[H]\small\caption{知识与合规原型应分别验证的对象（本报告建议）}
+\noindent\begin{tabularx}{\linewidth}{@{}P{26mm}Y Y@{}}\toprule
+对象 & 合适的评价方式 & 需要的证据\\\midrule
+知识检索 & 召回、引用定位、权限泄漏测试 & 带文档/页码/时点的标注问题，含无答案及冲突样本\\
+审核判断 & 按规则类别的精确率、召回率及严重漏检率 & 人工复核标签，明确样本单位与争议裁决\\
+修改建议 & 是否保留事实、数字和原意 & 原文与建议逐条对照；不能只统计用户接受\\
+流程价值 & 人工复核用时和返工量 & 同类任务对照，包含复核成本和错误修复\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{takeaway}
+对内部量化研究，较容易迁移的是“\textbf{有依据的知识回答与材料检查}”。涉及对外营销或客户推荐时，应另行判断金融业务、内容审核与服务规则，不能沿用内部只读问答的结论。
+\end{takeaway}
+\clearpage
+
+\section{方向四：LLM-assisted quant与部署解耦}
+\subsection{2026国内基金：三条链路分别找证据}
+本方向限定为：(1)LLM生成、筛选和迭代因子；(2)从公告、研报、新闻提取量化信号；(3)研究Agent调用数据、代码与回测工具。LLM必须承担可定位的语义或程序生成工作；传统机器学习可以作为下游工具，但不能单独构成LLM案例。
+
+\begin{table}[H]\small\caption{国内量化相关材料：做到哪一步，尚缺什么}
+\noindent\begin{tabularx}{\linewidth}{@{}P{22mm}P{20mm}Y P{38mm}@{}}\toprule
+公司 & 范围 / 分数 & 明确披露 & 尚不能推出\\\midrule
+富国 & (2)及(1)评价\newline 3 & LLM提取政策敏感度因子，辅助评价因子绩效 & 全部神经网络因子由LLM生成；存在独立LLM增益评测\\
+广发 & (2) / 2 & 从非结构化数据挖掘另类因子 & 文本schema、模型、Prompt及完整回测已公开\\
+华泰柏瑞 & (2) / 3 & 公告、纪要、舆情结构化并融合量化信号 & 自主数据、代码、回测Agent已经落地；原文属展望\\
+博时BSBox & (3)部分 / 3 & 数据源、内部库、Skills、容器与审计环境 & 已公开完整因子研究轨迹或自主回测闭环\\
+中欧 / 招商 & (3)部分 / 3 & 数据抓取、财务建模、写作或研究工作流 & Skills数量等于独立量化系统数量或已验证策略\\
+南方 & (3)查询 / 4 & 数据工具调用及NL2SQL的受控子流程 & 整套因子挖掘或量化交易达到4分\\
+易方达联合任务 & (2)(3) / 待确认 & NLPCC 2026新闻与行情输入、ETF决策及回测基线代码 & 这是公司实盘策略，或正式最终成果已验证\\\bottomrule
+\end{tabularx}
+\end{table}
+\source{\src{FUND-007}\src{FUND-251}\src{FUND-359}\src{FUND-215}\src{FUND-356}\src{FUND-200}\src{FUND-119}。}
+
+\subsection{研究基线和实盘应用必须分列}
+易方达参与的NLPCC 2026任务有Prompt、数据加载、客户端和标准化回测流程，可以用于研究工具接口。它仍是学术任务：部分数据采用学术非商业条件，有隐藏评测，正式最终成果在本轮未完成核验。因此，本报告不将其认定为公司生产级5分材料。\src{FUND-119}
+
+\begin{boundary}[本轮检索的实质结论]
+国内基金有明确LLM量化实践，但\textbf{尚未新确认一条完整4/5分的LLM因子挖掘生产工作流}。这描述公开证据的可得性，不能据此评价未披露的内部能力。传统ML、旧ChatGLM2项目及单纯市场宣传不用于填补该缺口。
+\end{boundary}
+\clearpage
+
+\subsection{Man Group：研究Agent也应该能够否定想法}
+Man AHL于2026年2月11日发表AlphaTrend研究，公开的流程从输入想法开始，生成候选信号、实现、连接市场数据进行回测、与基准比较，最后形成研究结论。机构原始文章比一般应用介绍更适合量化部门讨论。\src{FUND-323}
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=5mm]
+\node[flow](a){研究想法\\生成候选};
+\node[flow,right=of a](b){程序实现\\信号构造};
+\node[flow,right=of b](c){回测工具\\市场数据};
+\node[flow,right=of c](d){基准比较\\分析回测};
+\node[flow,right=of d](e){综合结论\\接受 / 否定};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\node[draw=gold!45,fill=gold!7,rounded corners,align=center,font=\small,below=10mm of c,text width=115mm](t){分别输入预期较好、预期较差及开放性想法；观察系统能否发现改进、拒绝弱方案和识别不稳定结果};
+\draw[darr](t.north)--(c.south);
+\end{tikzpicture}
+\caption{按Man原文流程与实验组织重绘。未使用原品牌图；实现细节仍以原文为准。}
+\end{figure}
+
+文章比较不同研究想法及GPT-5、Claude 4.0 Sonnet生成方案的差异。其价值在于展示\textbf{Agent如何参与科学检验}，而不仅是生成看似合理的策略叙述。历史模拟使用特定历史截止日和数据，不是2026实盘收益，也不等于本文已重跑实验。\src{FUND-323}
+
+\begin{table}[H]\small\caption{AlphaTrend的可用机制与4分缺口}
+\noindent\begin{tabularx}{\linewidth}{@{}P{28mm}Y Y@{}}\toprule
+维度 & 已披露 & 完整复制尚需\\\midrule
+研究流程 & 从想法、实现、回测到结论的连续链路 & 各节点完整Prompt及Agent状态\\
+检验设计 & 好/坏/开放性想法；模型差异与基准讨论 & 统一实验预算、重复次数、筛选规则与全部失败尝试\\
+工具 & 市场数据与回测/基准分析节点 & 专有接口、代码、数据和运行配置\\
+时间因果 & 历史模拟说明 & 对局部极值等需未来确认的信号，明确可交易时点和延迟\\\bottomrule
+\end{tabularx}
+\end{table}
+
+材料\textbf{接近4分，严格确认仍为3分}。我们不能用自己的补写代码把公司的披露反记成4或5分。Two Sigma在2026年7月提出把LLM生成文本作为特征研究输入，但未披露完整流程与实验，约2分，适合作行业背景。\src{FUND-324}
+\clearpage
+
+\subsection{QuantaAlpha：2026公开框架补上因子迭代细节}
+QuantaAlpha由高校及研究团队提出，归档论文为2026年版本，作者代码已固定到提交\texttt{b7ceb27b1001}。本报告将其定位为\textbf{外部技术参考和5分候选}，不计入基金公司部署。论文和代码提供了经济假设、因子生成、约束、回测反馈及演化步骤。\src{EXT-QA}\src{EXT-QC}
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=5mm]
+\node[flow](a){经济假设\\语义描述};
+\node[flow,right=of a](b){表达式 / AST\\生成代码};
+\node[flow,right=of b](c){一致性检查\\复杂度 / 冗余};
+\node[flow,right=of c](d){执行与回测\\评价反馈};
+\node[flow,right=of d](e){轨迹变异 / 交叉\\更新因子池};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\draw[darr](e.south)--++(0,-.7)-|(a.south);
+\end{tikzpicture}
+\caption{QuantaAlpha公开机制的抽象。迭代复用的是研究轨迹及候选因子；不代表市场反馈保证有效。}
+\end{figure}
+
+\textbf{LLM负责提出、表达和核对因子，确定性程序负责执行和评价。} 因此，下游使用LightGBM或传统回测器仍属于本项目范围。论文比较约150个因子组成的池及统一下游模型，不宜将组合收益解读为某个生成因子的独立收益。\src{EXT-QA}
+
+\begin{table}[H]\small\caption{从公开框架进入复现前的核验重点}
+\noindent\begin{tabularx}{\linewidth}{@{}P{26mm}Y@{}}\toprule
+关注点 & 已见事实与后续处理\\\midrule
+时间划分 & 论文训练期2016–2020、验证期2021、测试期2022–2025；需复核数据可用时间、预训练污染及反复使用测试集的风险。\\
+语义一致性 & LLM检查假设、表达式和代码是否一致；仍需独立语义样本和数值测试，不能让生成者自评成为唯一依据。\\
+因子版本 & 回测配置\texttt{use\_llm\_for\_incompatible=true}可调用LLM改写不兼容因子；复现应记录改写并重新验证，冻结最终版本。\\
+模型接口 & 模型名与API端点可配置；替换本地服务还需检查工具协议、结构化输出、上下文及Embedding端点。\\
+公开与许可 & 已归档30个选取代码文件；未运行。README有MIT徽章，但快照未见独立LICENSE，不能据徽章完成许可判断。\\\bottomrule
+\end{tabularx}
+\end{table}
+
+本轮未复现作者的IC、收益或回撤，不以其结果为本项目收益目标。更有价值的迁移对象是\textbf{因子定义与代码一致性、约束检验、完整失败记录、回测反馈和版本冻结}。AlphaQT-Bench的执行、因果、语义及结构检查可作下一阶段评价参考；其原实验通过API调用，毫秒耗时是生成程序的运行时间，不能当作本地LLM推理速度。\src{EXT-AB}
+\clearpage
+
+\subsection{部署端与研究框架分开评价}
+用户的实习目标是本地部署LLM并利用其能力完成工作。行业中的API框架仍可提供工具与评价机制；本地替换是否有效，需要在同一数据、任务及工具条件下比较。下图为本项目建议，\textbf{不是已部署架构，也不是COD硬件方案}。
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=8mm]
+\node[flowwide,text width=133mm,minimum height=14mm](tasks){\textbf{四类业务任务}\par 投研推理 \quad 受控查询 \quad 知识 / 合规 \quad LLM辅助量化};
+\node[flowwide,below=of tasks,text width=133mm,minimum height=15mm](agent){\textbf{固定框架、数据与评价}\par Prompt / schema / 工作流状态 / 版本 / 失败轨迹};
+\node[flowwide,below=of agent,text width=57mm,xshift=-38mm](local){\textbf{本地模型服务}\par 推理引擎、GPU与模型权重};
+\node[flowwide,below=of agent,text width=57mm,xshift=38mm](api){\textbf{经允许的API模型}\par 服务端点、版本与请求预算};
+\node[flowwide,below=of local,text width=133mm,xshift=38mm,minimum height=16mm](tool){\textbf{独立受控工具层}\par 权限检索 / 只读SQL / 沙箱代码 / 冻结回测 / 审计记录};
+\draw[arr](tasks)--(agent);\draw[arr](agent.south)--++(0,-.35)-|(local.north);\draw[arr](agent.south)--++(0,-.35)-|(api.north);
+\draw[arr](local.south)--++(0,-.35)-|(tool.north);\draw[arr](api.south)--++(0,-.35)-|(tool.north);
+\end{tikzpicture}
+\caption{为Phase 2设计的解耦比较框架。工具访问应由服务端控制，不能只依赖LLM的文字承诺。}
+\end{figure}
+
+\noindent\begin{tabularx}{\linewidth}{@{}P{28mm}Y@{}}\toprule
+要分别回答的问题 & 合适的衡量对象\\\midrule
+模型能否完成任务 & 结构化输出、工具选择、引用、语义与因果正确性；同一任务重复运行的稳定性\\
+框架是否可靠 & 重试、预算、错误回退、权限、版本和结果复核；检查失败任务而非只看成功演示\\
+本地是否可行 & 实测首token时延、总耗时、吞吐、显存、并发和模型加载；COD资源约束另行取得\\
+是否经济 & 使用量、模型质量引起的返工、GPU与运维、API及数据/安全费用；进入Phase 3三年TCO\\\bottomrule
+\end{tabularx}
+
+\smallnote{接口兼容不保证质量相同；本地LLM若仍调用外部OCR、Embedding、重排或远程运维，数据流仍需完整核查。}
+\clearpage
+\section{治理复核：隐私、可解释性/MRM与外包}
+\subsection{先区分法律层级与服务范围}
+本节依据截至2026年9月9日的公开原文及知识库监管复核记录，不替代MSIM内部审查。复核覆盖来源版本、条文、适用条件与二次引文；尚未取得具体法律实体、COD边界、实际数据流及内部政策版本，故不作上线批准结论。
+
+\begin{table}[H]\small\caption{Phase 1应采用的规则层级与边界}
+\noindent\begin{tabularx}{\linewidth}{@{}P{32mm}Y P{40mm}@{}}\toprule
+材料 & 可用于本项目的判断 & 不应直接推导\\\midrule
+个人信息保护法、数据安全法、网络安全法 & 处理依据、数据分类与安全保护、适用的评估和日志要求 & 公开材料可以任意训练；本地模型不涉及数据义务\\
+证监会IT及网络信息安全规章 & 机构责任、系统重要性、外包、供应商和安全管理 & 所有API都被禁止，或采购即完成合规\\
+生成式AI暂行办法 & 第2条区分向公众提供服务与未向公众提供的内部研发/应用；第17条有条件触发 & 所有内部工具均需备案，或所有本地工具均可免审查\\
+AMAC 2026团体标准 & 为评测、部署和权限提供技术参考；采用依据需确认 & 等同全国统一强制法律；资料性附录即某公司生产实现\\
+Fed 2026 MRM指引 & 作为银行模型治理比较材料；须保留定义与范围 & 直接等于MSIM内部政策，或LLM可不受自身治理\\\bottomrule
+\end{tabularx}
+\end{table}
+\source{\src{REG-001}\src{REG-002}\src{REG-003}\src{REG-005}\src{REG-007}\src{REG-008}\src{REG-009}\src{REG-010}\src{REG-012}\src{REG-013}\src{REG-014}。}
+
+\subsection{隐私与数据：核对完整处理链}
+个人信息保护法第13条规定多种处理依据；第21条要求委托处理约定与监督；公开个人信息仍受第27条范围限制。对符合第55条情形的处理活动，应事前进行影响评估，并按第56条保存相关评估与处理记录至少三年。不能把它概括成“所有Prompt全文保留三年”。\src{REG-002}
+
+网络数据安全管理条例第9、12条分别涉及安全保护，以及提供或委托处理个人信息、重要数据的合同监督和处理记录。数据安全法还覆盖个人信息之外的数据。2025年修正、2026年生效的网络安全法中，相关网络日志要求位于第23条，其对象也不等于所有模型对话原文。\src{REG-004}\src{REG-013}\src{REG-014}
+
+\begin{takeaway}
+应先画出\textbf{语料获取 → 解析 → Embedding/检索 → 推理 → 工具 → 日志与导出}的数据流，逐步记录使用权、分类、权限、保存与删除。投研保密数据和法律定义的“重要数据”不能不加判断地互换称呼。
+\end{takeaway}
+\clearpage
+
+\subsection{可解释性与MRM：评价可检查的证据}
+个人信息保护法第24条针对特定自动化决策情形规定透明、公平及相关说明/拒绝权，不能推广为所有摘要工具必须公开内部推理链。对本研究更可操作的是检查来源支持、计算可复现、工具调用理由与最终输出正确性；\textbf{模型能给出解释，不表示解释忠实或答案正确}。\src{REG-002}
+
+Fed于2026年4月17日发布SR 26-2，替代SR 11-7和SR 21-8。配套指引面向银行组织，脚注3明确将generative/agentic AI排除在该文件模型定义/范围之外，同时要求机构通过自身风险治理决定对未覆盖工具的控制。它既不是直接对本项目LLM生效的清单，也不能据此推出“LLM无需MRM”。\src{REG-007}\src{REG-008}
+
+AMAC的T/AMAC 0004-2026于2026年4月3日发布实施，属于团体标准。是否由成员约定、内部制度或其他依据采用，仍需核实。其9.1、9.2、11.2等条款涉及场景评测、部署与权限；11.3(e)使用“宜”。附录B明确为资料性，不能将建议或示例改写成全部机构的统一法定义务。\src{REG-009}\src{REG-010}\src{REG-012}
+
+\begin{table}[H]\small\caption{可转为下一阶段验证的治理对象（本报告建议）}
+\noindent\begin{tabularx}{\linewidth}{@{}P{26mm}Y P{45mm}@{}}\toprule
+对象 & 复核问题 & 需要留下的证据\\\midrule
+用例与影响 & 草稿、研究信号、客户建议或交易控制？错误会影响谁？ & 业务用途、用户、权限、人工环节和风险分级\\
+资料与引用 & 引用是否真的支持结论？是否使用了无权限或超出时点的材料？ & 文档/页码/时间戳、检索结果及拒答样本\\
+代码与量化 & 能运行之外，是否因果正确、语义一致、没有前视？ & 固定数据、因子版本、数值测试、完整回测及失败记录\\
+模型与框架变更 & 替换模型、Prompt、索引或工具后，哪些指标变化？ & 版本差异、回归评测、回退方式及业务接受标准\\
+独立质疑 & 谁复核标签和输出，如何裁决分歧？ & 与开发分离的抽查、问题登记和处理结果\\\bottomrule
+\end{tabularx}
+\end{table}
+
+标准附录B.2提供RAG参考：文档解析与结构化、关键词/向量融合、文档页码与时间戳引用，以及忠实度、引用准确率和检索召回率。这可以帮助定义评价集，但具体Embedding、重排、切片、融合权重与业务质量门槛仍需自行确定。\src{REG-010}（PDF第26–27页）
+
+行业可解释性研究文章只能作为研究观点。此前监管复核已发现其中部分海外政策二次引文过时；本报告以现行官方原文与条款范围为依据，不把研究作者的治理建议写成已生效要求。\src{REG-011}
+\clearpage
+
+\subsection{外包与出境：根据服务角色核查}
+《证券基金经营机构信息技术管理办法》第43条保留机构自身责任及重要系统控制，并包含法定例外；不能将重要系统的运维及日常安全管理交由外部独立实施的边界，需结合系统定义和服务职责理解。第44–45条涉及供应商审查、相应报送、协议与替换安排，第63条定义重要信息系统。该规则不能概括为全面禁止云或API。\src{REG-003}
+
+《证券期货业网络和信息安全管理办法》补充机构网络、投资者信息与信息技术服务相关责任。模型下载、API推理、外部实施、远程运维和数据供应是不同角色，应逐项记录，不将模型厂商名称直接填为技术外包商。\src{REG-005}
+
+跨境规定需要结合关键信息基础设施运营者、重要数据、个人信息人数及具体场景判断。某项出境机制豁免并不消除全部处理义务；API不必然出境，本地部署也可能经日志、Embedding或境外运维形成数据流。机构累计数据量尚未计算。\src{REG-006}
+
+\begin{table}[H]\small\caption{进入实施前的内部事实与负责人：均尚未取得确认}
+\noindent\begin{tabularx}{\linewidth}{@{}P{30mm}Y P{31mm}@{}}\toprule
+事实 & 所需材料或决定 & 对接职能\\\midrule
+实体与用途 & MSIM具体法律实体、用户、是否面向公众、是否触及客户/交易 & 业务、合规\\
+COD环境 & GPU/显存、存储、网络、可用软件、支持人员和运维位置 & IT、信息安全\\
+内部MRM & 生效政策名称/版本、登记和分级、验证及变更流程 & MRM、业务\\
+数据与隐私 & 来源许可、分类、团队隔离、保留删除、影响评估和审计安排 & 数据负责人、隐私、合规\\
+外包与服务 & 系统重要性、供应商权限、分包、日志位置、合同及退出预案 & IT、采购、外包、合规\\
+标准与备案 & 团体标准采用依据、具体服务与模型备案解释 & 合规、IT\\\bottomrule
+\end{tabularx}
+\end{table}
+
+个人信息合规审计与影响评估是不同机制：前者不能替代符合条件时的事前评估；机构级门槛也不能用PoC样本量代替。若内容走向外部发布，还需重新核对AI标识、传播与金融业务规则，内部问答结论不能直接沿用。\src{REG-015}\src{REG-016}
+
+\begin{boundary}
+本轮完成的是\textbf{公开文献复核}，不是内部合规审计、供应商准入或标准符合性认证。对标准引用的全部技术标准也未逐项做符合性验证；架构和渠道确定后，再按适用范围定点检查。
+\end{boundary}
+\clearpage
+
+\section{进入Phase 2：从行业证据形成可验证任务}
+\subsection{保留四个方向，先选一个小型闭环}
+根据project plan，下一阶段需比较5–8个开放模型，并在本地GPU上部署一个模型执行金融NLP样本任务。本报告建议先采用\textbf{公开或合成语料、只读工具和固定评价集}，把四方向作为候选池；不同时建设四个生产应用，也不预先承诺哪一方案有ROI。
+
+\begin{table}[H]\small\caption{四方向的最小可验证任务与评价（研究者建议，未执行）}
+\noindent\begin{tabularx}{\linewidth}{@{}P{23mm}Y P{49mm}@{}}\toprule
+方向 & 可交付的最小原型 & 核心质量指标\\\midrule
+投研推理 & 给定截止日、多篇材料，输出驱动因素、证据和反证 & 事实/数字正确率，引用支持率，遗漏及人工复核用时\\
+受控查询 & 固定只读数据库，问题转SQL并生成结果解释 & 结果等价率、口径正确率、越权拦截、不可答识别\\
+知识与合规 & 固定授权资料的问答或内部材料检查 & 检索召回、引用定位；按类别精确率/召回率及严重漏检\\
+LLM辅助量化 & 固定数据与回测器，生成一个可执行、语义明确的信号并保存全部尝试 & 代码通过率、时间因果、语义一致性；样本外质量、成本及稳定性\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{建议的阶段验收材料}
+\begin{enumerate}
+\item \textbf{先固定任务与环境。} 获取COD限制和内部用例边界，确定样本、人工标签、可用工具、模型许可及失败判定。金融NLP任务应能在实习时间内完成独立复核。
+\item \textbf{模型与框架分别比较。} 对5–8个候选模型记录规模、中文/金融任务表现、速度、微调需求及社区支持；本地GPU原型使用同一任务、Prompt和数据，并记录精度/量化、显存、时延、吞吐与全部失败。
+\item \textbf{LLM量化增加时间因果核验。} 采用数据可用时点、冻结因子、独立测试窗和合理交易成本；记录搜索预算及失败候选，不能只展示最佳回测。可参考AlphaQT-Bench检查设计，但不声称已经复现其基准。\src{EXT-AB}
+\item \textbf{把质量与成本带入Phase 3。} 三年TCO同时计入本地设备、机房/电力、维护与人员，以及API使用、数据/安全和返工成本。业务收益以同类任务时间和错误变化衡量，不直接套用厂商或基金的宣传指标。
+\end{enumerate}
+
+\begin{takeaway}[供mentor讨论的建议]
+若优先保证实习闭环，可从\textbf{带引用的文本信号提取，或受控数据查询}中选择一个本地原型，再接固定评价器。量化因子演化框架可作为扩展研究；其自由代码执行和反复搜索增加验证成本，应在基础评价可靠后推进。
+\end{takeaway}
+\clearpage
+
+\appendix
+\section{来源目录与复核入口}
+本目录仅列本报告实际使用的材料，来源ID与知识库保持一致。\texttt{EXT-}编号为外部论文/代码对照，非基金公司新增样本。页码采用原始PDF物理页；网页及仓库以标题、章节或固定提交定位。发布日期不明确时保留原状态。
+
+公司效果为原作者报告值，未在本项目独立运行验证。报告中工作流图由研究者依据材料抽象重绘，新增设计要求已注明；全部原始文件保持基线版本。来源哈希及本地路径、论文与代码快照在\texttt{data/source-manifest.json}列出。
+
+\input{references}
+\end{document}
