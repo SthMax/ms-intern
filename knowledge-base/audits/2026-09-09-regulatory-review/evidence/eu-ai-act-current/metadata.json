@@ -1,0 +1,17 @@
+{
+  "source_id": "eu-ai-act-current",
+  "title": "eu-ai-act-current",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+  "retrieved_at": "2026-09-08T17:09:00.970230+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "5b7df5ca46d4e555131638dd47929820526ea1c436fadc24679297d07298dfb8",
+  "byte_count": 1103983,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 401512,
+  "extracted_text_sha256": "d2a4272f48e4474e091e9f2a6535c9728de86e7a0b4ba770d78e4649afd6a8d6"
+}

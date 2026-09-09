@@ -8,6 +8,7 @@ effective_or_status: "2018-01-01"
 accessed: 2026-09-06
 official_url: https://www.cnipa.gov.cn/art/2019/7/29/art_104_67809.html
 reviewed_by: Codex
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -62,3 +63,6 @@ This note classifies the source; it does not determine MSIM's obligations.
 
 CNIPA's official reproduction and relevant articles inspected.
 Comprehensive status/adoption review and human check remain pending.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。

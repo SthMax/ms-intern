@@ -1,0 +1,246 @@
+{
+  "repository": "EFundAI/SLAG",
+  "commit": "02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8",
+  "retrieved_at": "2026-09-08T17:16:56.064613+00:00",
+  "files": [
+    {
+      "path": "README.md",
+      "git_blob_sha": "37cc5382e8e9fca42a4dc0bf34767f411d12088a",
+      "sha256": "95b2e2f3ae2c8e100f163972d70aa4c69841e5bd4b2841d1a33ff7405172813d",
+      "bytes": 4588,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/README.md"
+    },
+    {
+      "path": "__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/__init__.py"
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha": "3552abcfeb84ecf8b0e513f3e1773d7537e15a08",
+      "sha256": "fd5699ed9e6b12255e7d535abb928305b6b8c751b34bbef83637e87d5b93c734",
+      "bytes": 3009,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/requirements.txt"
+    },
+    {
+      "path": "src/__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/__init__.py"
+    },
+    {
+      "path": "src/chains/cypher_generation_chain.py",
+      "git_blob_sha": "c333d316d21247793cb5d3518e39d2abad651f43",
+      "sha256": "d92fd51bfa1a3b070c48616e4b65658b4b74ec7e6efa842afadf4b5bba269fd9",
+      "bytes": 5689,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/cypher_generation_chain.py"
+    },
+    {
+      "path": "src/chains/cypher_preprocess_chain.py",
+      "git_blob_sha": "c026b787cc332c3665735c83fb34f44406368ca7",
+      "sha256": "3ed6443674b892b1032831954868611b8c311e76aad81a1f1b28dc28ac9cae60",
+      "bytes": 3313,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/cypher_preprocess_chain.py"
+    },
+    {
+      "path": "src/chains/cypher_query_chain.py",
+      "git_blob_sha": "88b66898eda184f0cb746fc26c4a7470c95cff3d",
+      "sha256": "cafa1dea1dca5bfe540018048c9860da4b42a4962c4948fdc11ecd26097e7f93",
+      "bytes": 2739,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/cypher_query_chain.py"
+    },
+    {
+      "path": "src/chains/entity_link_chain.py",
+      "git_blob_sha": "cd09cf3201c217e52b99fbe6beed868665248b6f",
+      "sha256": "5c9ee46f1aabd992ff334ae7486ac343b8181bee37f725cdb6397f7e60794ff1",
+      "bytes": 12844,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/entity_link_chain.py"
+    },
+    {
+      "path": "src/chains/ner_llm_chain.py",
+      "git_blob_sha": "adfc31cb2ea4079f8a8b6812ef822f5d68a7ec32",
+      "sha256": "f53f71a0ffc1af250eab4675d65718d1c07c2a568efc83476489e4709d6dafe2",
+      "bytes": 4688,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/ner_llm_chain.py"
+    },
+    {
+      "path": "src/chains/node_expansion_chain.py",
+      "git_blob_sha": "bcc79d80333b71d287012537f0f2b364e8f5d882",
+      "sha256": "9d6cb72b791d2aa741339d360fc23fb47205b67b8acf142b2960d8b4edcee005",
+      "bytes": 7778,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/node_expansion_chain.py"
+    },
+    {
+      "path": "src/chains/reason_chain.py",
+      "git_blob_sha": "09429a00f9545a81803a0cf3955c41265f407d08",
+      "sha256": "28be63cca32996a34be971933b73f28fc4e692a52fd9fe3fe7eec063396f539c",
+      "bytes": 4782,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/reason_chain.py"
+    },
+    {
+      "path": "src/chains/slag_chain.py",
+      "git_blob_sha": "c8069c5e56d1d77867d9ad85d159b27fa77fefe3",
+      "sha256": "5538b24283ea80bd9e8a939b8264480534f2efd250ca06d1260e3454288c1d63",
+      "bytes": 6958,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/chains/slag_chain.py"
+    },
+    {
+      "path": "src/config.py",
+      "git_blob_sha": "f983accffa5bef0dfc157b67cff00748ce4bea59",
+      "sha256": "efac8a500a42ae8ff03b19e70b5b2842fcd2ab88cde116020c01742851e98448",
+      "bytes": 1093,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/config.py"
+    },
+    {
+      "path": "src/eval/__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/eval/__init__.py"
+    },
+    {
+      "path": "src/eval/hotpotqa_evaluation.py",
+      "git_blob_sha": "8414c27afe5a11ca750f6292f28252cd380a740c",
+      "sha256": "60d1bd019ebd05c291cf408c03a1b0dfc64d597758cf3c5a5251e76274feb41b",
+      "bytes": 4299,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/eval/hotpotqa_evaluation.py"
+    },
+    {
+      "path": "src/eval/musique_evaluation.py",
+      "git_blob_sha": "61ce9da553d82c8061c0d7685a3ed944be999c20",
+      "sha256": "644cf33422ee86e690977a30cae7d72f7a25477c5e0f28e0fce8900d9f22e566",
+      "bytes": 3899,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/eval/musique_evaluation.py"
+    },
+    {
+      "path": "src/eval/twowikimultihopqa_evaluation.py",
+      "git_blob_sha": "1a20422ed7cd9f946b1369e034a454081b44ea8a",
+      "sha256": "8c45df378830ffd1382c95e6b05968df9abf63542f647765fc740dff52ea06b6",
+      "bytes": 8547,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/eval/twowikimultihopqa_evaluation.py"
+    },
+    {
+      "path": "src/prompt_template.py",
+      "git_blob_sha": "859b6f7299f15fcf5e99f699698a16a4829b017f",
+      "sha256": "b215040790fa28b464a3945c07ebb65d0c72449f6710c09b778786badc280ecf",
+      "bytes": 8980,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/prompt_template.py"
+    },
+    {
+      "path": "src/rag_solutions/__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/rag_solutions/__init__.py"
+    },
+    {
+      "path": "src/rag_solutions/base.py",
+      "git_blob_sha": "f0d87b4f0573b6f5de70daf29ce6a0a247e0a4d4",
+      "sha256": "d738106c83de4ac1c9d28b66f627dd59657fd76d04a15470be1fa788d72be86c",
+      "bytes": 1610,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/rag_solutions/base.py"
+    },
+    {
+      "path": "src/rag_solutions/colbertv2.py",
+      "git_blob_sha": "228789a21746740b8c453362d02d8bc4c45ee5f3",
+      "sha256": "ff445d5c362fd3bc35cc00ce412f94ea3995c769db1af80959a1713f44785274",
+      "bytes": 4962,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/rag_solutions/colbertv2.py"
+    },
+    {
+      "path": "src/rag_solutions/hybrid_rag.py",
+      "git_blob_sha": "6f2b507b0f19f98e25a80cb167d0840455c9ef56",
+      "sha256": "d0354d8863ed9c67ac3e2107060e657ab4f9fca51fcf1af0987dcb2eac5f5e15",
+      "bytes": 3089,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/rag_solutions/hybrid_rag.py"
+    },
+    {
+      "path": "src/rag_solutions/naive_rag.py",
+      "git_blob_sha": "bd60146c88261dcfffe17dcb7ae4db5f09e6b831",
+      "sha256": "e64747a550fc8fbcdc95ecbae87e3f3366990271a4d31cc214414f53f70ba835",
+      "bytes": 1881,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/rag_solutions/naive_rag.py"
+    },
+    {
+      "path": "src/rag_solutions/prompt.py",
+      "git_blob_sha": "e4ef4c3f3fcf390f372602bc09d5d1bed550262a",
+      "sha256": "964800287ea4a34c3172e87e5b323957590d88350eaa9f8b139db7f7bc2ad364",
+      "bytes": 4835,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/rag_solutions/prompt.py"
+    },
+    {
+      "path": "src/rag_solutions/slag.py",
+      "git_blob_sha": "1c563020c87f406322081c81a9248bd283e7de9d",
+      "sha256": "4fca7014e96c21ca7dffde94241aaf7e2cc4931bfbfc9d67c03ceee015eaf423",
+      "bytes": 4968,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/rag_solutions/slag.py"
+    },
+    {
+      "path": "src/run_eval_2wikimultihopqa.py",
+      "git_blob_sha": "4f733c2ae89b7b8cf065c7d150962e6c9989443f",
+      "sha256": "5372a7e2438f0e409f32687d8f9f262fedaacacafb147434b7103d5208724d04",
+      "bytes": 4192,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/run_eval_2wikimultihopqa.py"
+    },
+    {
+      "path": "src/run_eval_hotpotqa.py",
+      "git_blob_sha": "cab34e07f658fd525bbc5c8b850d9b1209301447",
+      "sha256": "7eacb91c238e01bd0506be4e0c27f0dffa87b241a61bcabab5a3ef6e14015ea5",
+      "bytes": 4066,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/run_eval_hotpotqa.py"
+    },
+    {
+      "path": "src/run_eval_musique.py",
+      "git_blob_sha": "5df2e207989edeef3e02650d4f8306836ffd5cac",
+      "sha256": "9ca029a9b0a2dc900ec3911bdcec73c0af11664706d09fa1f65b4ea23528dda4",
+      "bytes": 4052,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/run_eval_musique.py"
+    },
+    {
+      "path": "src/run_slag.py",
+      "git_blob_sha": "a3857b459500e153bbf9b30cd6c1b3c2d868908d",
+      "sha256": "3c214bfbe1822cae753557f1fde2eba5589d3b899075c57aa525ce1cbc6aa2c2",
+      "bytes": 4625,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/run_slag.py"
+    },
+    {
+      "path": "src/utils/reranker.py",
+      "git_blob_sha": "c29b5e057084153916a1dfdb615e81dce494e4b0",
+      "sha256": "0a8a48e93a83719fecaa26c68d0ad2fe6f399c8afdf0319c6ead440850342785",
+      "bytes": 1643,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/utils/reranker.py"
+    },
+    {
+      "path": "src/utils/tools.py",
+      "git_blob_sha": "63354b84bd9670a234dfbb031824062663d06387",
+      "sha256": "c0f9f716c8772032991f7a2cc155be0997279bbbcf66e8b1bf2f1c2347db0992",
+      "bytes": 10428,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/utils/tools.py"
+    },
+    {
+      "path": "src/utils/utils.py",
+      "git_blob_sha": "a837e37e821c1a2ee754ca93dd58ecb5c2202742",
+      "sha256": "8f0c5520118bad7dc5e349e6c014b192e5a70ad97f8e1a17c72ba93ca1cfcb0f",
+      "bytes": 4588,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/utils/utils.py"
+    },
+    {
+      "path": "src/vectorize_kg.py",
+      "git_blob_sha": "e32f1ee8b77cd2eb429f922f20e625945605e09d",
+      "sha256": "096a31a962fc72103d12491d785c169b0f8bccdc261a15bf8e4e66cced253776",
+      "bytes": 1757,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/vectorize_kg.py"
+    },
+    {
+      "path": "src/vectorize_rag.py",
+      "git_blob_sha": "be998d417408ab7aed0f83504a327dcbb253408c",
+      "sha256": "3979161385014107f52b01c3fa2013b3491d9f90118f2b2f0647e761fa611f8f",
+      "bytes": 102,
+      "url": "https://raw.githubusercontent.com/EFundAI/SLAG/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8/src/vectorize_rag.py"
+    }
+  ],
+  "excluded": "Large binaries/datasets, credentials and generated outputs omitted; code not installed or executed; dataset use restrictions must be checked separately."
+}

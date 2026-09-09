@@ -1,12 +1,14 @@
 # Regulatory and Model Risk Management Evidence Map
 
+> 2026-09-09 已执行：[监管与研究复核结果](review-results-2026-09-09.md)，含12份既有材料、4份新增法规、9项研究引文核验、EU正式修法日期链及内部待确认项。[复核方案](review-plan-2026-09-09.md)保留执行安排。
+
 > 本页为研究者编制的索引和摘要，不是法规原文。各 REG 证据笔记已分别链接原始文件和原语言提取文本；完整目录见[原始来源档案](../sources/README.md)。英文分析不代替中文法规原文。
 
 **Phase 1 — Weeks 1–2.** Research batch dated **6 September 2026**.
 COD means the infrastructure used in MSIM; MRM means model risk management.
 
-Twelve official law, regulatory, standard, MRM, and research sources have now
-been inspected at the cited locations. These are not twelve binding AI rules.
+Sixteen official law, regulatory, standard, MRM, and research sources have now
+been inspected at the cited locations. These are not sixteen binding AI rules.
 Read [the thematic synthesis](synthesis-2026-09-06.md) with the source notes.
 
 ## Source-to-theme matrix
@@ -25,10 +27,15 @@ Read [the thematic synthesis](synthesis-2026-09-06.md) with the source notes.
 | LLM-specific sector specification | [REG-010](REG-010-amac-llm-application-standard.md) | Group standard; cover/date checked | 9.1, 9.2, 11.2, 11.3(e), Annex B.2 | Deployment options, evaluation, data isolation, explainability recommendations | Preserve “应/宜” distinctions and check adoption/basis of filing clause |
 | Explainability research | [REG-011](REG-011-amac-explainability-research.md) | Industry research issue dated 2026-04-01 | PDF pp. 1, 12 | Governance discussion | Recommendations and foreign-law summaries are not binding rules |
 | Standard classification | [REG-012](REG-012-standardization-law.md) | PRC Standardization Law, 2017 revision | Articles 2, 18, 45 | Group-standard adoption route | Member agreements/incorporation/internal adoption need checking |
+| Network security / current numbering | [REG-013](REG-013-cybersecurity-law-2025-amendment.md) | PRC Cybersecurity Law, 2025 amendment effective 2026-01-01 | Articles 2, 20, 23, 27, 33, 39, 42 | General network safeguards and classification; amendment date | COD system/MLPS/CII classification remains unknown |
+| Data-security baseline | [REG-014](REG-014-data-security-law.md) | PRC Data Security Law, effective 2021-09-01 | Articles 2–3, 21, 27, 29–32, 36 | Broader-than-personal data lifecycle controls | Important-data status and actual flows require evidence |
+| Personal-information auditing | [REG-015](REG-015-personal-information-compliance-audit.md) | CAC Order 18, effective 2025-05-01 | Articles 3–6 and annex 6, 9, 23 | Periodic audit; over 10 million subjects: at least every two years | Processor-level threshold, not PoC row count; not a model validation |
+| AI-content labels | [REG-016](REG-016-ai-generated-content-labelling.md) | Joint normative document, effective 2025-09-01 | Articles 2, 4–6, 9–12; GB 45438 status | Provider/platform/publisher roles and labelling | Internal vs public distribution requires separate determination |
 
-Source-content verification is complete for the passages used. A comprehensive
-amendment/repeal search and institution-specific application are still in progress.
-Human review remains pending for all notes.
+Targeted official-source amendment/repeal checks and review of presentation-relevant
+passages were performed on 2026-09-09; this is not an exhaustive legal clearance.
+REG-011 contains outdated US-policy discussion and needs the corrections in the
+review results. Institution-specific application and human review remain pending.
 
 ## Questions for authorized internal owners
 
@@ -41,9 +48,11 @@ Human review remains pending for all notes.
 | COD infrastructure | What outbound connections, shared services, support access, and data boundaries exist? | REG-003/005/006/010 | Phase 2 input |
 | Legal/compliance | Which version/status and applicability conclusions can be confirmed? | Entire source matrix | Open |
 
-## Follow-up corpus
+## Remaining scoped checks
 
-Check the current Cybersecurity Law and Data Security Law, personal-information
-compliance-audit measures, AI-content labelling instruments, and relevant sector
-standards referenced by the AMAC document. They have not been synthesized here
-as if already verified. Keep the three assigned themes central.
+The Cybersecurity Law, Data Security Law, personal-information audit measures and
+AI-content labelling rules have now been added as REG-013–016. GB 45438-2025's
+current mandatory-standard status was verified; detailed format compliance and
+other standards referenced by AMAC remain scoped follow-ups after the pilot and
+architecture are chosen. Sales/suitability rules for a customer-facing service are
+outside this internal-research pilot review.

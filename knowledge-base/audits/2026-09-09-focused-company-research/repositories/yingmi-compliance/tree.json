@@ -1,0 +1,70 @@
+{
+  "sha": "040df66202f6075cdeadb450e502c7a19c83dabf",
+  "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/trees/040df66202f6075cdeadb450e502c7a19c83dabf",
+  "tree": [
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12e83879428d12e408ba9f667fd265eb7b07ad54",
+      "size": 1093,
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/blobs/12e83879428d12e408ba9f667fd265eb7b07ad54"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df70e751a38ebde5b93c50c16aa2306602c6a68a",
+      "size": 2933,
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/blobs/df70e751a38ebde5b93c50c16aa2306602c6a68a"
+    },
+    {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a52dceee019f20912ffc17041a26e9e0b6dbcd1f",
+      "size": 1798,
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/blobs/a52dceee019f20912ffc17041a26e9e0b6dbcd1f"
+    },
+    {
+      "path": "SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9afa5ab13986120399f5ae739be1048154f211f7",
+      "size": 6267,
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/blobs/9afa5ab13986120399f5ae739be1048154f211f7"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c5881dd25dcd33114016752a4c1f1ad6a215466",
+      "size": 20,
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/blobs/1c5881dd25dcd33114016752a4c1f1ad6a215466"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3158ea3c17952f48e4c9480d37a8acd38325dbcf",
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/trees/3158ea3c17952f48e4c9480d37a8acd38325dbcf"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "scripts/compliance_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09f937e50e8769c966bcc441db92b5eaaf970bc2",
+      "size": 6627,
+      "url": "https://api.github.com/repos/yingmi-dev/content-compliance-skill/git/blobs/09f937e50e8769c966bcc441db92b5eaaf970bc2"
+    }
+  ],
+  "truncated": false
+}

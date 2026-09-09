@@ -1,0 +1,92 @@
+[
+  {
+    "source_id": "REG-013",
+    "http_status": 200,
+    "bytes": 62480,
+    "error": null
+  },
+  {
+    "source_id": "REG-014",
+    "http_status": 200,
+    "bytes": 32994,
+    "error": null
+  },
+  {
+    "source_id": "REG-015",
+    "http_status": 200,
+    "bytes": 52812,
+    "error": null
+  },
+  {
+    "source_id": "REG-016",
+    "http_status": 200,
+    "bytes": 23354,
+    "error": null
+  },
+  {
+    "source_id": "cybersecurity-amendment",
+    "http_status": 200,
+    "bytes": 23374,
+    "error": null
+  },
+  {
+    "source_id": "csrc-it-status-text",
+    "http_status": 200,
+    "bytes": 81704,
+    "error": null
+  },
+  {
+    "source_id": "csrc-network-security-status",
+    "http_status": 200,
+    "bytes": 71708,
+    "error": null
+  },
+  {
+    "source_id": "amac-standard-notice",
+    "http_status": 200,
+    "bytes": 319214,
+    "error": null
+  },
+  {
+    "source_id": "amac-standard-current",
+    "http_status": 200,
+    "bytes": 1762265,
+    "error": null
+  },
+  {
+    "source_id": "amac-research-current",
+    "http_status": 200,
+    "bytes": 500756,
+    "error": null
+  },
+  {
+    "source_id": "eo14148-rescission",
+    "http_status": 200,
+    "bytes": 309943,
+    "error": null
+  },
+  {
+    "source_id": "senate-ai-moratorium",
+    "http_status": null,
+    "bytes": null,
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "source_id": "algorithm-recommendation-rules",
+    "http_status": 200,
+    "bytes": 31231,
+    "error": null
+  },
+  {
+    "source_id": "deep-synthesis-rules",
+    "http_status": 200,
+    "bytes": 29675,
+    "error": null
+  },
+  {
+    "source_id": "hk-genai-guidelines",
+    "http_status": 200,
+    "bytes": 1458473,
+    "error": null
+  }
+]

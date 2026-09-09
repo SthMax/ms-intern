@@ -1,0 +1,18 @@
+{
+  "source_id": "singapore-genai-framework",
+  "title": "singapore-genai-framework",
+  "url": "https://aiverifyfoundation.sg/wp-content/uploads/2024/06/Model-AI-Governance-Framework-for-Generative-AI-19-June-2024.pdf",
+  "retrieved_at": "2026-09-08T17:11:29.616520+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://aiverifyfoundation.sg/wp-content/uploads/2024/06/Model-AI-Governance-Framework-for-Generative-AI-19-June-2024.pdf",
+  "content_type": "application/pdf",
+  "sha256": "24656605edf3186e4a10aac59d1ff7fb712e7524368a14cf5f165e664dd31490",
+  "byte_count": 3740177,
+  "raw_file": "source.pdf",
+  "page_count": 36,
+  "text_file": "original.md",
+  "extraction_method": "pypdf page-by-page; no OCR or translation",
+  "extracted_characters": 60314,
+  "extracted_text_sha256": "456b5b56b419f541e7850716345547b27fafb2a214a1c119ee434b509407a527"
+}

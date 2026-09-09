@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-09",
+  "status": "superseded_by_user_2026_and_decoupled_scope",
+  "old_source_bytes_pass": true,
+  "changes": [],
+  "note": "Historical source retrieval preserved; old ChatGLM2/FinGPT/AlphaFin route withdrawn, not a completed PoC. Current verification is in ../2026-09-09-2026-llm-quant/verification.json."
+}

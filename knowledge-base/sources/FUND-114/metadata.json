@@ -1,0 +1,23 @@
+{
+  "source_id": "FUND-114",
+  "title": "MENTOR supplementary materials",
+  "issuer": "MENTOR authors (E Fund Management, Tsinghua University and University of Manchester); Zhejiang University Press",
+  "source_type": "Author supplementary methods and prompts",
+  "url": "https://jzus.zju.edu.cn/downloadesm.php?filepath=.%2Fdownload%2FESM%2FFITEE%2FESM2500608.pdf&filetype=pdf",
+  "final_url": "https://jzus.zju.edu.cn/downloadesm.php?filepath=.%2Fdownload%2FESM%2FFITEE%2FESM2500608.pdf&filetype=pdf",
+  "retrieved_at": "2026-09-08T17:17:05.697106+00:00",
+  "sha256": "4f8ac6e40251bcd5bbeaf7f49cd5bcf52f5631127e631d13a8122e2a5c70d560",
+  "byte_count": 99220,
+  "raw_file": "source.pdf",
+  "text_file": "original.md",
+  "text_language": "English",
+  "published": "2025, volume 26(10); exact online date to verify",
+  "archive_status": "publisher_pdf_and_extraction",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "collection_role": "main",
+  "verification_scope": "Publisher paper and official supplement; E Fund coauthor affiliation inspected on paper page 1. Algorithm, prompt templates and evaluation reviewed; no implementation code or public full licensed dataset located; research prototype, not evidence of EFundGPT production use.",
+  "text_kind": "full_original_language_extraction",
+  "reading_sha256": "969e974f377d2abb33672d383dcca539d795de51b7b9416fbffe1ff10452346e",
+  "reproduction_executed": false
+}

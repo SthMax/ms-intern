@@ -1,0 +1,23 @@
+{
+  "url": "https://cdn.efunds.com.cn/eda/h5/itcenter/pd/ai-skills-doc/help.pdf",
+  "final_url": "https://cdn.efunds.com.cn/eda/h5/itcenter/pd/ai-skills-doc/help.pdf",
+  "retrieved_at": "2026-09-08T17:20:14.939403+00:00",
+  "sha256": "0e414cc2571765bc40546f43b5e421d4268039a0e54546467fcf32f414b909e4",
+  "bytes": 4886574,
+  "source_id": "FUND-116",
+  "title": "指数直通车 AI Skills 帮助文档",
+  "issuer": "E Fund / official efunds.com.cn CDN",
+  "source_type": "Official product guide",
+  "published": "Undated guide; retrieved 2026-09-09 Asia/Shanghai",
+  "raw_file": "source.pdf",
+  "text_file": "original.md",
+  "text_language": "Chinese",
+  "text_kind": "full_original_language_extraction",
+  "collection_role": "main",
+  "archive_status": "original_pdf_and_extraction",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official installation, API-key instructions and illustrated outputs; guide does not prove current GitHub package completeness or backend openness.",
+  "reproduction_executed": false,
+  "reading_sha256": "65f9287059a4deafa358104df5ba6f27f5285dd941e53743891c546e6c1cb03e"
+}

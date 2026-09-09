@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CN121961741A - 用于生成投资组合调整信息的数据处理方法、系统和设备 
+        - Google Patents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="canonical" href="https://patents.google.com/patent/CN121961741A/zh">
+    <meta name="description" content="
+     本发明提供了一种用于生成投资组合调整信息的数据处理方法、系统和设备，属于数据处理技术领域。该方法包括：内存计算引擎从历史数据库加载各投资组合的初始持仓数据以初始化内存数据集，数据捕获模块实时捕获交易事件形成交易事件流并输入消息中间件，交消息中间件依据组合标识对交易事件路由分发，使相同组合标识的交易事件分发至同一处理单元，处理单元在内存计算环境中接收交易事件，基于顺序标识确定处理顺序，并按组合标识获取待更新的持仓数据，基于交易数据对持仓数据执行更新以得到实时持仓数据；根据实时持仓数据生成投资组合的调整信息。通过本发明，提高持仓数据更新的及时性与一致性，进而提升调整信息生成的实时性。 
+     
+   
+   ">
+    <meta name="DC.type" content="patent">
+    <meta name="DC.title" content="用于生成投资组合调整信息的数据处理方法、系统和设备 
+       ">
+    <meta name="DC.date" content="2026-04-01" scheme="dateSubmitted">
+    <meta name="DC.description" content="
+     本发明提供了一种用于生成投资组合调整信息的数据处理方法、系统和设备，属于数据处理技术领域。该方法包括：内存计算引擎从历史数据库加载各投资组合的初始持仓数据以初始化内存数据集，数据捕获模块实时捕获交易事件形成交易事件流并输入消息中间件，交消息中间件依据组合标识对交易事件路由分发，使相同组合标识的交易事件分发至同一处理单元，处理单元在内存计算环境中接收交易事件，基于顺序标识确定处理顺序，并按组合标识获取待更新的持仓数据，基于交易数据对持仓数据执行更新以得到实时持仓数据；根据实时持仓数据生成投资组合的调整信息。通过本发明，提高持仓数据更新的及时性与一致性，进而提升调整信息生成的实时性。 
+     
+   
+   ">
+    <meta name="citation_patent_application_number" content="CN:202610417429.3A">
+    <meta name="citation_patent_publication_number" content="CN:121961741:A">
+    <meta name="DC.date" content="2026-05-01">
+    <meta name="DC.contributor" content="周建军" scheme="inventor">
+    <meta name="DC.contributor" content="袁旭嵩" scheme="inventor">
+    <meta name="DC.contributor" content="林真" scheme="inventor">
+    <meta name="DC.contributor" content="赵越" scheme="inventor">
+    <meta name="DC.contributor" content="刁言歌" scheme="inventor">
+    <meta name="DC.contributor" content="廖菠" scheme="inventor">
+    <meta name="DC.contributor" content="China Universal Fund Management Co ltd" scheme="assignee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700">
+
+    <style>
+      
+      #gb { top: 15px; left: auto; right: 0; width: auto; min-width: 135px !important; }   
+      body { transition: none; }
+    </style>
+    <script></script>
+
+    <script>
+      window.version = 'patent-search.search_20260819_RC00';
+
+      function sendFeedback() {
+        userfeedback.api.startFeedback({
+          'productId': '713680',
+          'bucket': 'patent-search-web',
+          'productVersion': window.version,
+        });
+      }
+
+      window.experiments = {};
+      window.experiments.patentCountries = "ae,ag,al,am,ao,ap,ar,at,au,aw,az,ba,bb,bd,be,bf,bg,bh,bj,bn,bo,br,bw,bx,by,bz,ca,cf,cg,ch,ci,cl,cm,cn,co,cr,cs,cu,cy,cz,dd,de,dj,dk,dm,do,dz,ea,ec,ee,eg,em,ep,es,fi,fr,ga,gb,gc,gd,ge,gh,gm,gn,gq,gr,gt,gw,hk,hn,hr,hu,ib,id,ie,il,in,ir,is,it,jo,jp,ke,kg,kh,km,kn,kp,kr,kw,kz,la,lc,li,lk,lr,ls,lt,lu,lv,ly,ma,mc,md,me,mg,mk,ml,mn,mo,mr,mt,mw,mx,my,mz,na,ne,ng,ni,nl,no,nz,oa,om,pa,pe,pg,ph,pl,pt,py,qa,ro,rs,ru,rw,sa,sc,sd,se,sg,si,sk,sl,sm,sn,st,su,sv,sy,sz,td,tg,th,tj,tm,tn,tr,tt,tw,tz,ua,ug,us,uy,uz,vc,ve,vn,wo,yu,za,zm,zw";
+      
+      
+      window.experiments.keywordWizard = true;
+      
+      
+      
+      window.experiments.definitions = true;
+      window.experiments.plogs = true;
+
+      window.Polymer = {
+        dom: 'shady',
+        lazyRegister: true,
+      };
+    </script>
+
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/search-app-vulcanized.html">
+  </head>
+  <body unresolved>
+    
+    
+    <script></script>
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/search-app-vulcanized.js"></script>
+    <search-app>
+      
+      
+
+      <article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <h1 itemprop="pageTitle">CN121961741A - 用于生成投资组合调整信息的数据处理方法、系统和设备 
+        - Google Patents</h1>
+  <span itemprop="title">用于生成投资组合调整信息的数据处理方法、系统和设备 
+       </span>
+
+  <meta itemprop="type" content="patent">
+  
+  <h2>Info</h2>
+
+  <dl>
+    <dt>Publication number</dt>
+    <dd itemprop="publicationNumber">CN121961741A</dd>
+    <meta itemprop="numberWithoutCodes" content="121961741">
+    <meta itemprop="kindCode" content="A">
+    <meta itemprop="publicationDescription" content="Unexaminded application">
+    <span>CN121961741A</span>
+    <span>CN202610417429.3A</span>
+    <span>CN202610417429A</span>
+    <span>CN121961741A</span>
+    <span>CN 121961741 A</span>
+    <span>CN121961741 A</span>
+    <span>CN 121961741A</span>
+    <span>  </span>
+    <span> </span>
+    <span> </span>
+    <span>CN 202610417429 A</span>
+    <span>CN202610417429 A</span>
+    <span>CN 202610417429A</span>
+    <span>CN 121961741 A</span>
+    <span>CN121961741 A</span>
+    <span>CN 121961741A</span>
+
+    <dt>Authority</dt>
+    <dd itemprop="countryCode">CN</dd>
+    <dd itemprop="countryName">China</dd>
+
+    <dt>Prior art keywords</dt>
+    <dd itemprop="priorArtKeywords" repeat>data</dd>
+    <dd itemprop="priorArtKeywords" repeat>transaction</dd>
+    <dd itemprop="priorArtKeywords" repeat>portfolio</dd>
+    <dd itemprop="priorArtKeywords" repeat>adjustment information</dd>
+    <dd itemprop="priorArtKeywords" repeat>real</dd>
+
+    <dt>Prior art date</dt>
+    <dd><time itemprop="priorArtDate" datetime="2026-04-01">2026-04-01</time></dd>
+
+    <dt>Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)</dt>
+    <dd itemprop="legalStatusIfi" itemscope>
+      <span itemprop="status">Pending</span>
+    </dd>
+  </dl>
+
+  <dt>Application number</dt>
+  <dd itemprop="applicationNumber">CN202610417429.3A</dd>
+
+  <dt>Other languages</dt>
+  <dd itemprop="otherLanguages" itemscope repeat>
+    <a href="/patent/CN121961741A/en">
+      <span itemprop="name">English</span> (<span itemprop="code">en</span>)
+    </a>
+  </dd>
+
+  
+
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>周建军</dd>
+  <dd itemprop="inventor" repeat>袁旭嵩</dd>
+  <dd itemprop="inventor" repeat>林真</dd>
+  <dd itemprop="inventor" repeat>赵越</dd>
+  <dd itemprop="inventor" repeat>刁言歌</dd>
+  <dd itemprop="inventor" repeat>廖菠</dd>
+
+  <dt>Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    China Universal Fund Management Co ltd
+  </dd>
+
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>China Universal Fund Management Co ltd</dd>
+
+  <dt>Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)</dt>
+  <dd><time itemprop="priorityDate" datetime="2026-04-01">2026-04-01</time></dd>
+
+  <dt>Filing date</dt>
+  <dd><time itemprop="filingDate" datetime="2026-04-01">2026-04-01</time></dd>
+
+  <dt>Publication date</dt>
+  <dd><time itemprop="publicationDate" datetime="2026-05-01">2026-05-01</time></dd>
+
+  
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-04-01">2026-04-01</time>
+    <span itemprop="title">Application filed by China Universal Fund Management Co ltd</span>
+    <span itemprop="type">filed</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    <span itemprop="assigneeSearch">China Universal Fund Management Co ltd</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-04-01">2026-04-01</time>
+    <span itemprop="title">Priority to CN202610417429.3A</span>
+    <span itemprop="type">priority</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/CN121961741A/zh</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-05-01">2026-05-01</time>
+    <span itemprop="title">Publication of CN121961741A</span>
+    <span itemprop="type">publication</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/CN121961741A/zh</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date">Status</time>
+    <span itemprop="title">Pending</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    <span itemprop="current" content="true" bool>Current</span>
+    
+    
+    
+  </dd>
+
+  <h2>Links</h2>
+  <ul>
+    
+
+    <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="espacenetLink">
+        <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=CN&amp;NR=121961741A&amp;KC=A&amp;FT=D" itemprop="url" target="_blank"><span itemprop="text">Espacenet</span></a>
+      </li>
+      
+
+    
+
+    <li itemprop="links" itemscope repeat>
+      <meta itemprop="id" content="globalDossierLink">
+      <a href="https://globaldossier.uspto.gov/result/application/CN/202610417429/1" itemprop="url" target="_blank"><span itemprop="text">Global Dossier</span></a>
+    </li>
+
+    
+
+      
+
+      
+
+      
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="stackexchangeLink">
+        <a href="https://patents.stackexchange.com/questions/tagged/CN121961741A" itemprop="url"><span itemprop="text">Discuss</span></a>
+      </li>
+  </ul>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Landscapes</h2>
+    <ul>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Financial Or Insurance-Related Operations Such As Payment And Settlement</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+    </ul>
+  </section>
+
+
+  <section itemprop="abstract" itemscope>
+    <h2>Abstract</h2>
+    
+    <div itemprop="content" html><abstract mxw-id="PA777989728" lang="ZH" load-source="patent-office">
+    <div num="0001" class="abstract">本发明提供了一种用于生成投资组合调整信息的数据处理方法、系统和设备，属于数据处理技术领域。该方法包括：内存计算引擎从历史数据库加载各投资组合的初始持仓数据以初始化内存数据集，数据捕获模块实时捕获交易事件形成交易事件流并输入消息中间件，交消息中间件依据组合标识对交易事件路由分发，使相同组合标识的交易事件分发至同一处理单元，处理单元在内存计算环境中接收交易事件，基于顺序标识确定处理顺序，并按组合标识获取待更新的持仓数据，基于交易数据对持仓数据执行更新以得到实时持仓数据；根据实时持仓数据生成投资组合的调整信息。通过本发明，提高持仓数据更新的及时性与一致性，进而提升调整信息生成的实时性。</div>
+    </abstract>
+  </div>
+  </section>
+
+  <section itemprop="description" itemscope>
+    <h2>Description</h2>
+    
+    <div itemprop="content" html><div mxw-id="PDES528421324" lang="ZH" load-source="patent-office" class="description">
+    <invention-title lang="ZH" id="title1">用于生成投资组合调整信息的数据处理方法、系统和设备</invention-title>
+    <technical-field>
+      <div id="p0001" class="description-paragraph">技术领域</div>
+      <div id="p0002" num="0001" class="description-paragraph">本发明涉及数据处理技术领域，尤其涉及一种用于生成投资组合调整信息的数据处理方法、系统和设备。</div>
+    </technical-field>
+    <background-art>
+      <div id="p0003" class="description-paragraph">背景技术</div>
+      <div id="p0004" num="0002" class="description-paragraph">随着资产管理行业的专业化发展，投资组合管理对持仓数据的实时性、决策的及时性以及系统处理能力提出了更高要求。发明人研究发现，现有组合管理系统多采用批量计算或周期性任务调度方式生成持仓数据，即先将交易数据落库后再通过离线作业汇总计算持仓结果。由于交易数据到持仓数据的生成链路依赖数据库读写与批处理任务，该类方式通常存在分钟级甚至更长的滞后，难以满足高频交易对秒级响应的需求。</div>
+      <div id="p0005" num="0003" class="description-paragraph">发明人进一步研究发现，在数据处理层面，传统方案往往采用数据库存储、离线计算和结果查询的分离架构，交易数据同步通常基于定时抽取或接口轮询，难以实现对交易数据源的全量、连续变更捕获，导致交易数据、持仓数据在时序一致性方面存在偏差。此外，持仓计算结果多以磁盘存储为主，计算链路受 I/O 瓶颈限制，即使引入消息队列以提升数据传输速度，仍常因缺少与变更数据捕获机制协同的数据接入方式、缺少按组合维度的有序增量更新机制，而难以在并发环境下保证同一组合的事件处理顺序与状态一致性，进而影响实时持仓数据的准确性与生成效率，进而影响投资组合调整信息输出的实时性。</div>
+      <div id="p0006" num="0004" class="description-paragraph">综上所述，如何提升投资组合调整信息生成实时性，满足高频交易对时效的需求，成为本领域亟需解决的技术问题。</div>
+    </background-art>
+    <disclosure>
+      <div id="p0007" class="description-paragraph">发明内容</div>
+      <div id="p0008" num="0005" class="description-paragraph">本发明的目的是提供一种用于生成投资组合调整信息的数据处理方法、系统和设备，用于解决现有技术中的上述技术问题。</div>
+      <div id="p0009" num="0006" class="description-paragraph">一方面，为实现上述目的，本发明提供了一种用于生成投资组合调整信息的数据处理方法、系统和设备。</div>
+      <div id="p0010" num="0007" class="description-paragraph">该用于生成投资组合调整信息的数据处理方法包括：内存计算引擎从历史数据库加载各投资组合的初始持仓数据，以初始化内存数据集，其中，内存数据集包括以投资组合的组合标识为索引的持仓数据，内存计算引擎包括多个处理单元，每个组合标识对应的持仓数据由同一个处理单元进行处理；数据捕获模块对接交易系统数据库，实时捕获交易事件形成交易事件流，并输入消息中间件，其中，交易事件包括交易数据、组合标识和顺序标识；消息中间件依据交易事件中的组合标识对交易事件进行路由分发，使具有相同组合标识的交易事件被分发至与组合标识对应的同一处理单元；处理单元在内存计算环境中接收交易事件，并基于交易事件中的顺序标识确定交易事件的处理顺序，基于交易事件中的组合标识在内存数据集中获取待更新的持仓数据，按照处理顺序，基于交易事件中的交易数据对待更新的持仓数据执行更新，得到组合标识对应的实时持仓数据；以及根据实时持仓数据生成投资组合的调整信息。</div>
+      <div id="p0011" num="0008" class="description-paragraph">进一步地，数据捕获模块对接交易系统数据库，实时捕获交易事件形成交易事件流的步骤包括：数据捕获模块通过变更数据捕获组件对交易系统数据库进行表级变更捕获，实时捕获新增、更新和删除三类交易数据，并根据交易数据构建交易事件，其中，交易数据包括委托指令、成交记录和资金变动数据。</div>
+      <div id="p0012" num="0009" class="description-paragraph">进一步地，交易事件还包括业务类型标识，消息中间件包括按业务类型隔离的消息主题，业务类型包括委托类型、成交类型和资金类型；数据捕获模块将交易事件流输入消息中间件的步骤包括：按照业务类型标识将交易事件写入对应的消息主题；消息中间件还用于通过流量管控机制，使成交类型的交易事件相对于委托类型和资金类型的交易事件被优先路由分发至处理单元。</div>
+      <div id="p0013" num="0010" class="description-paragraph">进一步地，内存计算引擎按照组合标识对持仓数据分区存储，每个投资组合维护独立的持仓计算上下文；顺序标识包括时间戳，处理单元按照处理顺序，基于交易事件中的交易数据对待更新的持仓数据执行更新的步骤包括：处理单元按照第一预设频率采用事件溯源模式，将交易事件按时间戳进行排序叠加至待更新的持仓数据，得到实时持仓数据。</div>
+      <div id="p0014" num="0011" class="description-paragraph">进一步地，根据实时持仓数据生成投资组合的调整信息的步骤包括：对接外部数据接口，获取多维影响数据；将各维影响数据按照预定的特征处理规则处理得到特征数据；将实时持仓数据和特征数据输入至预设的多目标优化模型，以生成候选调整方案，其中，多目标优化模型包括多个优化目标和若干约束条件；以及从候选调整方案中确定调整信息。</div>
+      <div id="p0015" num="0012" class="description-paragraph">进一步地，对接外部数据接口，获取多维影响数据的步骤包括：对接资金管理系统的数据接口，按照第二预设频率获取投资组合的资金流入流出数据；对接行情网关的数据接口，按照第三预设频率获取投资组合中投资产品的趋势指标数据；对接第三方风险预警系统的数据接口，当风险事件触发后，在预设时限内接收风险事件数据。</div>
+      <div id="p0016" num="0013" class="description-paragraph">进一步地，候选调整方案包括投资组合中各组成资产的权重数据，以预设迭代周期重复生成调整信息，在从候选调整方案中确定调整信息的步骤之后，方法还包括：根据当前权重数据和上一周期的权重数据计算权重偏差；当权重偏差达到预设偏差阈值时，将调整信息推送至交易系统。</div>
+      <div id="p0017" num="0014" class="description-paragraph">另一方面，为实现上述目的，本发明提供了一种用于生成投资组合调整信息的数据处理系统。</div>
+      <div id="p0018" num="0015" class="description-paragraph">该用于生成投资组合调整信息的数据处理系统包括数据处理层、决策层和应用服务层，其中，数据处理层包括内存计算引擎、数据捕获模块和消息中间件：内存计算引擎用于从历史数据库加载各投资组合的初始持仓数据，以初始化内存数据集，其中，内存数据集包括以投资组合的组合标识为索引的持仓数据，内存计算引擎包括多个处理单元，每个组合标识对应的持仓数据由同一个处理单元进行处理；数据捕获模块用于对接交易系统数据库，实时捕获交易事件形成交易事件流，并输入消息中间件，其中，交易事件包括交易数据、组合标识和顺序标识；消息中间件用于依据交易事件中的组合标识对交易事件进行路由分发，使具有相同组合标识的交易事件被分发至与组合标识对应的同一处理单元；处理单元用于在内存计算环境中接收交易事件，并基于交易事件中的顺序标识确定交易事件的处理顺序，基于交易事件中的组合标识在内存数据集中获取待更新的持仓数据，按照处理顺序，基于交易事件中的交易数据对待更新的持仓数据执行更新，得到组合标识对应的实时持仓数据，决策层用于根据实时持仓数据生成投资组合的调整信息；应用服务层用于输出调整信息。</div>
+      <div id="p0019" num="0016" class="description-paragraph">另一方面，为实现上述目的，本发明还提供一种计算机设备，包括存储器、处理器以及存储在存储器上并可在处理器上运行的计算机程序，该处理器执行计算机程序时实现上述方法的步骤。</div>
+      <div id="p0020" num="0017" class="description-paragraph">另一方面，为实现上述目的，本发明还提供计算机可读存储介质，其上存储有计算机程序，该计算机程序被处理器执行时实现上述方法的步骤。</div>
+      <div id="p0021" num="0018" class="description-paragraph">本发明提供的用于生成投资组合调整信息的数据处理方法、系统和设备，先由内存计算引擎从历史数据库加载初始持仓数据并初始化以内存数据集保存的持仓数据；再由数据捕获模块实时捕获交易系统数据库中的交易事件形成包含交易数据、组合标识和顺序标识的交易事件流并输入消息中间件；消息中间件依据组合标识对交易事件路由分发，使相同组合标识的交易事件进入同一处理单元；处理单元在内存计算环境中按顺序标识确定处理顺序，并按组合标识从内存数据集中定位待更新持仓数据，基于交易数据对持仓数据执行更新以得到实时持仓数据；最后根据实时持仓数据生成投资组合的调整信息。通过本发明，采用初始持仓内存化、交易事件实时捕获、按组合标识路由到固定处理单元以及按顺序标识有序更新的数据流式处理机制，使得持仓更新不再依赖周期性批处理与磁盘I/O路径，且同一组合的更新过程具备顺序一致性，从而提升交易变更到实时持仓生成的及时性与稳定性，并为后续输出调整信息提供更及时的持仓数据基础。</div>
+    </disclosure>
+    <description-of-drawings>
+      <div id="p0022" class="description-paragraph">附图说明</div>
+      <div id="p0023" num="0019" class="description-paragraph">通过阅读下文优选实施方式的详细描述，各种其他的优点和益处对于本领域普通技术人员将变得清楚明了。附图仅用于示出优选实施方式的目的，而并不认为是对本发明的限制。而且在整个附图中，用相同的参考符号表示相同的部件。在附图中：</div>
+      <div id="p0024" num="0020" class="description-paragraph">图1为本发明实施例一提供的用于生成投资组合调整信息的数据处理方法的流程图；</div>
+      <div id="p0025" class="description-paragraph">图2为本发明实施例二提供的用于生成投资组合调整信息的数据处理系统的框图；</div>
+      <div id="p0026" class="description-paragraph">图3为本发明实施例三提供的计算机设备的硬件结构图。</div>
+    </description-of-drawings>
+    <mode-for-invention>
+      <div id="p0027" class="description-paragraph">具体实施方式</div>
+      <div id="p0028" num="0021" class="description-paragraph">为了使本发明的目的、技术方案及优点更加清楚明白，以下结合附图及实施例，对本发明进行进一步详细说明。应当理解，此处所描述的具体实施例仅用以解释本发明，并不用于限定本发明。基于本发明中的实施例，本领域普通技术人员在没有做出创造性劳动前提下所获得的所有其他实施例，都属于本发明保护的范围。</div>
+      <div id="p0029" num="0022" class="description-paragraph">实施例一</div>
+      <div id="p0030" class="description-paragraph">本发明实施例提供了一种用于生成投资组合调整信息的数据处理方法，通过该方法，能够在交易数据持续变更的情况下，基于内存计算实现投资组合持仓数据的实时更新，并在此基础上生成投资组合调整信息。具体地，图1为本发明实施例一提供的用于生成投资组合调整信息的数据处理方法的流程图，如图1所示，该方法包括如下步骤S101至步骤S105。</div>
+      <div id="p0031" num="0023" class="description-paragraph">步骤S101：内存计算引擎从历史数据库加载各投资组合的初始持仓数据，以初始化内存数据集。</div>
+      <div id="p0032" num="0024" class="description-paragraph">历史数据库用于存储各投资组合在预设时点的初始持仓数据，其中，预设时点可以为交易日开始时刻、日初时刻或上一次结算时刻。在每日预设初始化时刻将至少一个投资组合的日初持仓基础数据从历史数据库加载至内存数据集，以形成以组合标识为索引的持仓数据。持仓数据包括但不限于：组合标识、资产标识（如证券代码）、持仓数量/份额、成本、可用余额、冻结数量等字段。</div>
+      <div id="p0033" num="0025" class="description-paragraph">内存数据集用于在内存计算环境中保存持仓数据，且以组合标识作为索引键（Key），以对应组合的持仓明细作为索引值（Value），从而支持后续按组合标识快速定位待更新的持仓数据。</div>
+      <div id="p0034" num="0026" class="description-paragraph">内存计算引擎包括多个处理单元，每个组合标识对应的持仓数据由同一个处理单元进行处理，一个处理单元可以处理若干组合标识对应的持仓数据。处理单元为内存计算引擎内部的并行处理实体，包括线程、协程、Actor实例或分区执行器等。本实施例中对组合标识和某一处理单元建立绑定关系，也即同一组合标识对应的持仓数据由同一处理单元处理，不同组合标识由不同处理单元并行处理，从而保证同一组合的持仓更新顺序一致，且有效避免了并发写冲突。</div>
+      <div id="p0035" num="0027" class="description-paragraph">步骤S102：数据捕获模块对接交易系统数据库，实时捕获交易事件形成交易事件流，并输入消息中间件。</div>
+      <div id="p0036" num="0028" class="description-paragraph">交易系统数据库用于持续记录交易相关数据的变更，例如委托指令写入、成交记录更新、资金变动更新等。数据捕获模块对接该交易系统数据库，以实时方式捕获与投资组合相关的数据变更。捕获到的数据变更被组织为交易事件，多个交易事件按发生先后形成交易事件流。每个交易事件包括交易数据、组合标识和顺序标识。其中，交易数据用于描述本次变更的业务内容，可包括委托、成交、资金变动中的至少一种数据字段；组合标识用于指明该交易事件归属的投资组合；顺序标识用于表征交易事件在同一组合内的先后顺序，例如单调递增序号、时间戳、日志位点序号等。</div>
+      <div id="p0037" num="0029" class="description-paragraph">数据捕获模块将交易事件流写入消息中间件，使其作为后续路由分发的输入数据源。消息中间件可为消息队列或流式消息系统，用于承载交易事件流的缓存、转发与分发。</div>
+      <div id="p0038" num="0030" class="description-paragraph">步骤S103：消息中间件依据交易事件中的组合标识对交易事件进行路由分发，使具有相同组合标识的交易事件被分发至与组合标识对应的同一处理单元。</div>
+      <div id="p0039" num="0031" class="description-paragraph">消息中间件对交易事件流中的每条交易事件进行解析，读取其中的组合标识，并据此执行路由分发。路由分发的目标是将同一组合标识的交易事件进入同一处理单元，从而保证该组合的持仓更新由同一处理单元串行处理，避免同一组合被多个处理单元并发更新造成的锁竞争、更新乱序或数据不一致。</div>
+      <div id="p0040" num="0032" class="description-paragraph">可选地，消息中间件与处理单元之间可通过消费者组、分区订阅或消息拉取消费机制建立连接；但无论采用推送或拉取方式，均应满足相同组合标识对应同一处理单元的分发约束。</div>
+      <div id="p0041" num="0033" class="description-paragraph">步骤S104：处理单元在内存计算环境中接收交易事件，并按顺序标识确定处理顺序后更新持仓数据。</div>
+      <div id="p0042" num="0034" class="description-paragraph">具体而言，处理单元基于顺序标识确定交易事件的处理顺序；基于组合标识在内存数据集中获取待更新的持仓数据；按照处理顺序，基于交易数据对待更新的持仓数据执行更新，得到组合标识对应的实时持仓数据。</div>
+      <div id="p0043" num="0035" class="description-paragraph">处理单元首先从消息中间件接收分发到本处理单元的交易事件，形成该处理单元的待处理事件队列，然后读取每条交易事件的顺序标识，并据此确定同一组合内交易事件的处理顺序，例如，当顺序标识为时间戳或递增序号时，可按其升序排列后依次处理，以避免乱序到达导致的持仓更新错误。</div>
+      <div id="p0044" num="0036" class="description-paragraph">处理单元读取交易事件中的组合标识，以该组合标识作为索引键，从内存数据集中定位该组合对应的待更新的持仓数据。随后，处理单元基于交易事件中的交易数据对待更新的持仓数据执行增量更新，得到实时持仓数据。</div>
+      <div id="p0045" num="0037" class="description-paragraph">例如，当交易数据为成交记录时，可根据成交方向与成交数量对对应资产的持仓数量进行加减；当交易数据为资金变动数据时，可对组合可用资金余额进行调整；当交易数据为委托指令数据时，可对冻结数量、可用数量等字段进行相应变更。更新完成后，得到的实时持仓数据仍保存在内存数据集中，并可作为后续生成投资组合调整信息的输入数据。</div>
+      <div id="p0046" num="0038" class="description-paragraph">步骤S105：根据实时持仓数据生成投资组合的调整信息。</div>
+      <div id="p0047" num="0039" class="description-paragraph">实时持仓数据反映投资组合当前时刻的持仓状态，作为生成调整信息的基础数据。调整信息包括但不限于需调整的资产标识、调整方向（增持/减持）、目标权重或目标数量、建议执行优先级等字段。在一种实施例中，将实时持仓数据输入预设的调整策略或模型以输出调整信息，在另一种实施例中，也可由规则引擎基于实时持仓数据触发合规约束检查后输出调整信息。无论采用何种生成方式，均属于根据实时持仓数据生成调整信息的范围。</div>
+      <div id="p0048" num="0040" class="description-paragraph">在该实施例提供的用于生成投资组合调整信息的数据处理方法中，先由内存计算引擎从历史数据库加载初始持仓数据并初始化以内存数据集保存的持仓数据；再由数据捕获模块实时捕获交易系统数据库中的交易事件形成包含交易数据、组合标识和顺序标识的交易事件流并输入消息中间件；消息中间件依据组合标识对交易事件路由分发，使相同组合标识的交易事件进入同一处理单元；处理单元在内存计算环境中按顺序标识确定处理顺序，并按组合标识从内存数据集中定位待更新持仓数据，基于交易数据对持仓数据执行更新以得到实时持仓数据；最后根据实时持仓数据生成投资组合的调整信息。采用该实施例提供的用于生成投资组合调整信息的数据处理方法，通过初始持仓内存化、交易事件实时捕获、按组合标识路由到固定处理单元以及按顺序标识有序更新的数据流式处理机制，使得持仓更新不再依赖周期性批处理与磁盘I/O路径，且同一组合的更新过程具备顺序一致性，从而提升交易变更到实时持仓生成的及时性与稳定性，并为后续输出调整信息提供更及时的持仓数据基础。</div>
+      <div id="p0049" num="0041" class="description-paragraph">可选地，在一种实施例中，数据捕获模块对接交易系统数据库，实时捕获交易事件形成交易事件流的步骤包括：数据捕获模块通过变更数据捕获组件对交易系统数据库进行表级变更捕获，实时捕获新增、更新和删除三类交易数据，并根据交易数据构建交易事件，其中，交易数据包括委托指令、成交记录和资金变动数据。</div>
+      <div id="p0050" num="0042" class="description-paragraph">具体而言，部署Flink CDC组件，对接交易系统数据库，配置以数据库表为对象配置捕获规则，对被监测表的增删改变更进行捕获，实时捕获新增、更新、删除三类交易事件，包括委托指令、成交记录、资金变动等数据，从而形成结构化的交易数据变更记录，捕获延迟小于等于100ms。构建交易事件时，将捕获到的交易数据与其所属组合标识、顺序标识进行封装，输出为可由消息中间件承载的事件格式。</div>
+      <div id="p0051" num="0043" class="description-paragraph">采用实施例提供的用于生成投资组合调整信息的数据处理方法，通过对交易系统数据库进行表级变更捕获并覆盖新增、更新、删除三类变更，使交易事件流对交易变更的反映更完整、更实时，从而降低因捕获不完整或滞后导致的实时持仓不一致风险，进一步提升实时持仓数据的准确性与时效性。</div>
+      <div id="p0052" num="0044" class="description-paragraph">可选地，在一种实施例中，交易事件还包括业务类型标识；消息中间件包括按业务类型隔离的消息主题，业务类型包括委托类型、成交类型和资金类型；数据捕获模块将交易事件流输入消息中间件时，按照业务类型标识将交易事件写入对应的消息主题；消息中间件还可通过流量管控机制，使成交类型交易事件相对于委托类型和资金类型交易事件被优先路由分发至处理单元。</div>
+      <div id="p0053" num="0045" class="description-paragraph">具体而言，消息中间件采用Kafka消息传输模块，创建3类按业务类型隔离的专用Topic，委托Topic、成交Topic和资金Topic，用于承载每一类别消息的逻辑通道，按业务类型隔离实现不同类别事件分开承载与调度。Kafka消息传输模块接收数据捕获模块输出的交易事件，采用分区存储实现物理隔离，通过流量管控机制保障成交数据优先传输，包括优先级队列、限流与配额、调度权重等，用于使成交类事件在高峰期仍能优先被处理单元消费，峰值吞吐量可达到≥1000条/秒。</div>
+      <div id="p0054" num="0046" class="description-paragraph">采用实施例提供的用于生成投资组合调整信息的数据处理方法，通过将交易事件按业务类型写入不同消息主题并对成交类型事件优先分发，可在交易高峰或事件拥塞时优先保障对持仓影响更直接的事件被及时处理，从而进一步降低实时持仓生成的端到端时延，提高关键持仓更新的及时性。</div>
+      <div id="p0055" num="0047" class="description-paragraph">可选地，在一种实施例中，内存计算引擎按照组合标识对持仓数据进行分区存储，每个投资组合维护独立的持仓计算上下文；顺序标识包括时间戳，处理单元按照处理顺序，基于交易事件中的交易数据对待更新的持仓数据执行更新的步骤包括：处理单元按照第一预设频率采用事件溯源模式，将交易事件按时间戳进行排序叠加至待更新的持仓数据，得到实时持仓数据。</div>
+      <div id="p0056" num="0048" class="description-paragraph">具体而言，内存计算引擎基于分布式内存框架实现，维护日初持仓基础数据集，例如每日凌晨 2 点从历史数据库加载至内存，接收Kafka消息后执行实时聚合计算，其中，按组合标识分区存储数据，每个投资组合对应维护独立的持仓计算上下文，其中，持仓计算上下文为处理单元为特定组合维护的运行态数据结构与处理状态，包括该投资组合在内存数据集中对应的持仓数据引用、待处理交易事件缓存和队列、以及用于更新计算的必要中间状态。</div>
+      <div id="p0057" num="0049" class="description-paragraph">处理单元按照预定的频率，采用事件溯源模式，将交易事件按时间戳排序，逐条叠加到初始持仓或当前持仓状态上，从而得到最新的实时持仓数据，可选地，持仓数据包括会计口径、监管口径、估值口径三类数据，处理单元的核心计算逻辑通过单线程流水线技术，也即在单一执行线程内按队列顺序依次处理交易事件，避免同一组合的持仓更新出现多线程并发写入导致内存锁竞争。</div>
+      <div id="p0058" num="0050" class="description-paragraph">采用实施例提供的用于生成投资组合调整信息的数据处理方法，通过对持仓数据按组合标识分区、为每个组合维护独立持仓计算上下文，并引入按时间戳排序叠加的事件溯源更新方式，可强化同一组合内更新顺序的一致性与可追溯性，降低乱序与并发导致的持仓偏差概率，从而提升实时持仓数据的正确性与稳定性。</div>
+      <div id="p0059" num="0051" class="description-paragraph">可选地，第一预设频率为500ms/次，使得处理单元以特定节奏对交易事件进行批次排序、叠加和更新处理，以在吞吐与延迟之间取得平衡。通过单线程流水线方式减少锁竞争与上下文切换开销，并以合适的频率组织事件处理节奏，可在保证同一组合更新顺序一致的同时进一步降低计算抖动，提高实时持仓更新的确定性与可预测性。</div>
+      <div id="p0060" num="0052" class="description-paragraph">可选地，在一种实施例中，根据实时持仓数据生成投资组合的调整信息的步骤包括：对接外部数据接口，获取多维影响数据；将各维影响数据按照预定的特征处理规则处理得到特征数据；将实时持仓数据与特征数据输入至预设的多目标优化模型以生成候选调整方案，其中多目标优化模型包括多个优化目标和若干约束条件；从候选调整方案中确定调整信息。</div>
+      <div id="p0061" num="0053" class="description-paragraph">具体而言，多维影响数据可用于表征影响组合调整决策的外部信息输入，包括量化数据或非量化数据，分别通过预设的特征处理规则，将每一维影响数据转换为可被模型使用的统一特征表达，例如特征处理规则包括标准化、编码、或归一化等处理规则。进一步可选地，通过特征工程模块对多维影响数据按照特征处理规则进行标准化处理，其中，针对数值型的数据，如波动率和资金余额等，采用归一化处理；对于分类特征，例如风险等级等，采用独热编码转换。</div>
+      <div id="p0062" num="0054" class="description-paragraph">预设多目标优化模型，其中的待优化目标可包括收益目标、风险目标或成本目标等，约束条件可包括仓位约束、金额约束和久期约束等，用户可设置约束条件，通过多目标优化模型，以优化待优化目标为目的，在满足约束条件的前提下，根据实时持仓数据与特征数据计算出候选调整方案，候选调整方案可包括多个备选方案，每个方案至少包含对组合内资产调整后的目标状态描述，从候选调整方案中确定调整信息包括择优选择或按规则选取。</div>
+      <div id="p0063" num="0055" class="description-paragraph">采用实施例提供的用于生成投资组合调整信息的数据处理方法，在实时持仓数据基础上进一步引入外部影响数据并通过特征化与多目标优化输出候选方案，使调整信息的生成不仅基于最新持仓状态，还可综合外部因素与约束条件，从而提高调整建议的适配性与可用性，并避免仅凭静态或滞后持仓生成调整建议带来的偏差。</div>
+      <div id="p0064" num="0056" class="description-paragraph">可选地，在一种实施例中，对接外部数据接口，获取多维影响数据的步骤包括：对接资金管理系统的数据接口，按照第二预设频率获取投资组合的资金流入流出数据；对接行情网关的数据接口，按照第三预设频率获取投资组合中投资产品的趋势指标数据；对接第三方风险预警系统的数据接口，当风险事件触发后，在预设时限内接收风险事件数据。</div>
+      <div id="p0065" num="0057" class="description-paragraph">具体而言，多维影响数据包括资金数据、市场数据以及风险事件数据。其中，通过对接资金管理系统的数据接口，每 30 秒拉取一次投资组合的资金流入流出数据，包括可用资金余额、赎回申请金额。通过对接行情网关的数据接口，以更新频率≤1秒，实时获取投资组合中的股票、债券等产品的价格、波动率、成交量等趋势指标数据。通过对接第三方风险预警系统的数据接口，按影响等级接收宏观经济、行业政策、个股风险等风险事件数据，风险事件数据用于表征宏观、行业或个体风险触发的事件信息，事件触发后10秒内完成数据接入。</div>
+      <div id="p0066" num="0058" class="description-paragraph">采用实施例提供的用于生成投资组合调整信息的数据处理方法，通过按频率更新资金与行情信息，并在风险触发后于限定时间内接入风险事件数据，可使特征数据更贴近实时市场与风险变化，从而使基于实时持仓生成的调整信息具备更强的时效响应能力，尤其在风险事件发生时能够更快形成调整建议。</div>
+      <div id="p0067" num="0059" class="description-paragraph">可选地，在一种实施例中，候选调整方案包括投资组合中各组成资产的权重数据；以预设迭代周期重复生成调整信息，在从候选调整方案中确定调整信息的步骤之后，该实施例的方法还包括：根据当前权重数据和上一周期的权重数据计算权重偏差；当权重偏差达到预设偏差阈值时，将调整信息推送至交易系统。</div>
+      <div id="p0068" num="0060" class="description-paragraph">具体而言，在候选调整方案中，包括投资组合中各组成资产的权重数据，用于描述各资产在投资组合中的目标占比。在此基础上，以预设迭代周期重复生成调整信息时，每一个周期内确定调整信息后，计算与前一个周期的权重偏差，通过该权重偏差度量相邻迭代周期的调整变化幅度，其中，权重偏差可以通过两次权重差值与前一次权重的比值来计算，仅当权重偏差达到阈值才将调整信息推送至交易系统，可避免微小波动导致频繁推送与频繁交易。例如，当权重偏差大于等于3% 时推送调整信息至交易系统。</div>
+      <div id="p0069" num="0061" class="description-paragraph">采用实施例提供的用于生成投资组合调整信息的数据处理方法，通过迭代周期机制持续更新调整信息，同时引入权重偏差阈值控制推送时机，可在保证调整建议随持仓与外部因素变化而更新的同时，降低因频繁小幅变动造成的无效推送与执行噪声，提高调整信息输出到交易系统的稳定性与可执行性。</div>
+      <div id="p0070" num="0062" class="description-paragraph">可选地，在一种实施例中，在根据实时持仓数据生成投资组合的调整信息的步骤之前，该方法还包括：将实时持仓数据同步至缓存系统，其中缓存系统以组合标识为键、以实时持仓数据为值进行存储；以及查询缓存系统得到实时持仓数据。</div>
+      <div id="p0071" num="0063" class="description-paragraph">具体而言，设置缓存系统，用于为外部查询或上层服务提供低延迟读取能力，其中，以组合标识为键可支持按组合快速定位实时持仓数据。查询缓存系统得到实时持仓数据作为生成调整信息前的读取方式，使调整模块可直接从缓存读取所需实时持仓数据。例如，将多口径持仓数据同步至Redis缓存，设置组合标识为key，持仓数据为value，过期时间设置为24小时，支持毫秒级查询响应。</div>
+      <div id="p0072" num="0064" class="description-paragraph">采用实施例提供的用于生成投资组合调整信息的数据处理方法，通过将实时持仓数据同步到缓存系统并支持查询读取，可降低上层模块对内存计算引擎的直接访问压力，提升实时持仓数据的访问响应速度，进而使生成调整信息的整体链路更加稳定、低延迟。</div>
+      <div id="p0073" num="0065" class="description-paragraph">实施例二</div>
+      <div id="p0074" class="description-paragraph">对应于上述实施例一，本发明实施例二提供了一种用于生成投资组合调整信息的数据处理系统，相应地技术特征细节和对应的技术效果可参考上述实施例一，在该实施例中不再赘述。图2为本发明实施例二提供的用于生成投资组合调整信息的数据处理系统的框图，如图2所示，该系统包括数据处理层10、决策层20和应用服务层30，其中，所述数据处理层10包括内存计算引擎11、数据捕获模块12和消息中间件13。</div>
+      <div id="p0075" num="0066" class="description-paragraph">其中，所述内存计算引擎11用于从历史数据库加载各投资组合的初始持仓数据，以初始化内存数据集，其中，所述内存数据集包括以所述投资组合的组合标识为索引的持仓数据，所述内存计算引擎11包括多个处理单元，每个所述组合标识对应的持仓数据由同一个所述处理单元进行处理；所述数据捕获模块12用于对接交易系统数据库，实时捕获交易事件形成交易事件流，并输入所述消息中间件13，其中，所述交易事件包括交易数据、组合标识和顺序标识；所述消息中间件13用于依据所述交易事件中的组合标识对所述交易事件进行路由分发，使具有相同组合标识的交易事件被分发至与所述组合标识对应的同一处理单元；所述处理单元用于在内存计算环境中接收所述交易事件，并基于所述交易事件中的顺序标识确定交易事件的处理顺序，基于所述交易事件中的组合标识在所述内存数据集中获取待更新的持仓数据，按照所述处理顺序，基于所述交易事件中的交易数据对所述待更新的持仓数据执行更新，得到所述组合标识对应的实时持仓数据，所述决策层20用于根据所述实时持仓数据生成所述投资组合的调整信息；所述应用服务层30用于输出调整信息。</div>
+      <div id="p0076" num="0067" class="description-paragraph">可选地，在一种实施例中，所述数据捕获模块12还用于通过变更数据捕获组件对所述交易系统数据库进行表级变更捕获，实时捕获新增、更新和删除三类交易数据，并根据所述交易数据构建交易事件，其中，所述交易数据包括委托指令、成交记录和资金变动数据。</div>
+      <div id="p0077" num="0068" class="description-paragraph">可选地，在一种实施例中，所述交易事件还包括业务类型标识，所述消息中间件13包括按业务类型隔离的消息主题，所述业务类型包括委托类型、成交类型和资金类型；所述数据捕获模块12在将所述交易事件流输入所述消息中间件13时，按照所述业务类型标识将交易事件写入对应的消息主题；所述消息中间件13还用于通过流量管控机制，使所述成交类型的交易事件相对于所述委托类型和所述资金类型的交易事件被优先路由分发至所述处理单元。</div>
+      <div id="p0078" num="0069" class="description-paragraph">可选地，在一种实施例中，所述内存计算引擎11还用于按照所述组合标识对所述持仓数据分区存储，每个所述投资组合维护独立的持仓计算上下文；所述顺序标识包括时间戳，所述处理单元还用于按照第一预设频率采用事件溯源模式，将所述交易事件按所述时间戳进行排序叠加至所述待更新的持仓数据，得到所述实时持仓数据。</div>
+      <div id="p0079" num="0070" class="description-paragraph">可选地，在一种实施例中，所述决策层20包括：多因素数据接入模块，用于对接外部数据接口，获取多维影响数据；特征工程模块，用于将各维影响数据按照预定的特征处理规则处理得到特征数据；多目标优化算法模块，用于将所述实时持仓数据和所述特征数据输入至预设的多目标优化模型，以生成候选调整方案，并从所述候选调整方案中确定所述调整信息，其中，所述多目标优化模型包括多个优化目标和若干约束条件。</div>
+      <div id="p0080" num="0071" class="description-paragraph">可选地，在一种实施例中，多因素数据接入模块对接外部数据接口，获取多维影响数据时，具体执行的步骤包括：对接资金管理系统的数据接口，按照第二预设频率获取所述投资组合的资金流入流出数据；对接行情网关的数据接口，按照第三预设频率获取所述投资组合中投资产品的趋势指标数据；对接第三方风险预警系统的数据接口，当风险事件触发后，在预设时限内接收风险事件数据。</div>
+      <div id="p0081" num="0072" class="description-paragraph">可选地，在一种实施例中，所述候选调整方案包括所述投资组合中各组成资产的权重数据，以预设迭代周期重复生成所述调整信息，所述决策层20还包括实时迭代模块，用于根据当前权重数据和上一周期的权重数据计算权重偏差，所述应用服务层还用于当所述权重偏差达到预设偏差阈值时，将所述调整信息推送至交易系统。</div>
+      <div id="p0082" num="0073" class="description-paragraph">所述数据处理层10还包括缓存同步模块，用于将所述实时持仓数据同步至缓存系统，其中，所述缓存系统以所述组合标识为键、以所述实时持仓数据为值进行存储，所述处理单元还用于查询所述缓存系统得到所述实时持仓数据。</div>
+      <div id="p0083" num="0074" class="description-paragraph">实施例三</div>
+      <div id="p0084" class="description-paragraph">本实施例还提供一种计算机设备，如可以执行程序的智能手机、平板电脑、笔记本电脑、台式计算机、机架式服务器、刀片式服务器、塔式服务器或机柜式服务器（包括独立的服务器，或者多个服务器所组成的服务器集群）等。如图3所示，本实施例的计算机设备01至少包括但不限于：可通过系统总线相互通信连接的存储器012、处理器011，如图3所示。需要指出的是，图3仅示出了具有组件存储器012和处理器011的计算机设备01，但是应理解的是，并不要求实施所有示出的组件，可以替代的实施更多或者更少的组件。</div>
+      <div id="p0085" num="0075" class="description-paragraph">本实施例中，存储器012（即可读存储介质）包括闪存、硬盘、多媒体卡、卡型存储器（例如，SD或DX存储器等）、随机访问存储器（RAM）、静态随机访问存储器（SRAM）、只读存储器（ROM）、电可擦除可编程只读存储器（EEPROM）、可编程只读存储器（PROM）、磁性存储器、磁盘、光盘等。在一些实施例中，存储器012可以是计算机设备01的内部存储单元，例如该计算机设备01的硬盘或内存。在另一些实施例中，存储器012也可以是计算机设备01的外部存储设备，例如该计算机设备01上配备的插接式硬盘，智能存储卡（Smart Media Card, SMC），安全数字（Secure Digital, SD）卡，闪存卡（Flash Card）等。当然，存储器012还可以既包括计算机设备01的内部存储单元也包括其外部存储设备。本实施例中，存储器012通常用于存储安装于计算机设备01的操作系统和各类引用软件，例如实施例二的用于生成投资组合调整信息的数据处理系统的程序代码等。此外，存储器012还可以用于暂时地存储已经输出或者将要输出的各类数据。</div>
+      <div id="p0086" num="0076" class="description-paragraph">处理器011在一些实施例中可以是中央处理器（Central Processing Unit，CPU）、控制器、微控制器、微处理器、或其他数据处理芯片。该处理器011通常用于控制计算机设备01的总体操作。本实施例中，处理器011用于运行存储器012中存储的程序代码或者处理数据，例如用于生成投资组合调整信息的数据处理方法等。</div>
+      <div id="p0087" num="0077" class="description-paragraph">实施例四</div>
+      <div id="p0088" class="description-paragraph">本实施例还提供一种计算机可读存储介质，如闪存、硬盘、多媒体卡、卡型存储器（例如，SD或DX存储器等）、随机访问存储器（RAM）、静态随机访问存储器（SRAM）、只读存储器（ROM）、电可擦除可编程只读存储器（EEPROM）、可编程只读存储器（PROM）、磁性存储器、磁盘、光盘、服务器、App引用商城等等，其上存储有计算机程序，程序被处理器执行时实现相应功能。本实施例的计算机可读存储介质用于存储用于生成投资组合调整信息的数据处理系统，被处理器执行时实现实施例一的用于生成投资组合调整信息的数据处理方法。</div>
+      <div id="p0089" num="0078" class="description-paragraph">需要说明的是，在本文中，术语“包括”、“包含”或者其任何其他变体意在涵盖非排他性的包含，从而使得包括一系列要素的过程、方法、物品或者装置不仅包括那些要素，而且还包括没有明确列出的其他要素，或者是还包括为这种过程、方法、物品或者装置所固有的要素。在没有更多限制的情况下，由语句“包括一个……”限定的要素，并不排除在包括该要素的过程、方法、物品或者装置中还存在另外的相同要素。</div>
+      <div id="p0090" num="0079" class="description-paragraph">上述本发明实施例序号仅仅为了描述，不代表实施例的优劣。</div>
+      <div id="p0091" num="0080" class="description-paragraph">通过以上的实施方式的描述，本领域的技术人员可以清楚地了解到上述实施例方法可借助软件加必需的通用硬件平台的方式来实现，当然也可以通过硬件，但很多情况下前者是更佳的实施方式。</div>
+      <div id="p0092" num="0081" class="description-paragraph">以上仅为本发明的优选实施例，并非因此限制本发明的专利范围，凡是利用本发明说明书及附图内容所作的等效结构或等效流程变换，或直接或间接运用在其他相关的技术领域，均同理包括在本发明的专利保护范围内。</div>
+    </mode-for-invention>
+  </div>
+  </div>
+  </section>
+
+  <section itemprop="claims" itemscope>
+    <h2>Claims (<span itemprop="count">10</span>)</h2>
+    
+    <div itemprop="content" html><div mxw-id="PCLM522860454" lang="ZH" load-source="patent-office" class="claims">
+    <div class="claim"> <div id="zh-cl0001" num="0001" class="claim">
+      <div class="claim-text">1.一种用于生成投资组合调整信息的数据处理方法，其特征在于，包括：</div>
+      <div class="claim-text">内存计算引擎从历史数据库加载各投资组合的初始持仓数据，以初始化内存数据集，其中，所述内存数据集包括以所述投资组合的组合标识为索引的持仓数据，所述内存计算引擎包括多个处理单元，每个所述组合标识对应的持仓数据由同一个所述处理单元进行处理；</div>
+      <div class="claim-text">数据捕获模块对接交易系统数据库，实时捕获交易事件形成交易事件流，并输入消息中间件，其中，所述交易事件包括交易数据、组合标识和顺序标识；</div>
+      <div class="claim-text">所述消息中间件依据所述交易事件中的组合标识对所述交易事件进行路由分发，使具有相同组合标识的交易事件被分发至与所述组合标识对应的同一处理单元；</div>
+      <div class="claim-text">所述处理单元在内存计算环境中接收所述交易事件，并基于所述交易事件中的顺序标识确定交易事件的处理顺序，基于所述交易事件中的组合标识在所述内存数据集中获取待更新的持仓数据，按照所述处理顺序，基于所述交易事件中的交易数据对所述待更新的持仓数据执行更新，得到所述组合标识对应的实时持仓数据；以及</div>
+      <div class="claim-text">根据所述实时持仓数据生成所述投资组合的调整信息。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0002" num="0002" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">2.根据权利要求1所述的用于生成投资组合调整信息的数据处理方法，其特征在于，数据捕获模块对接交易系统数据库，实时捕获交易事件形成交易事件流的步骤包括：</div>
+      <div class="claim-text">所述数据捕获模块通过变更数据捕获组件对所述交易系统数据库进行表级变更捕获，实时捕获新增、更新和删除三类交易数据，并根据所述交易数据构建交易事件，其中，所述交易数据包括委托指令、成交记录和资金变动数据。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0003" num="0003" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">3.根据权利要求1所述的用于生成投资组合调整信息的数据处理方法，其特征在于，</div>
+      <div class="claim-text">所述交易事件还包括业务类型标识，所述消息中间件包括按业务类型隔离的消息主题，所述业务类型包括委托类型、成交类型和资金类型；</div>
+      <div class="claim-text">所述数据捕获模块将所述交易事件流输入所述消息中间件的步骤包括：按照所述业务类型标识将交易事件写入对应的消息主题；</div>
+      <div class="claim-text">所述消息中间件还用于通过流量管控机制，使所述成交类型的交易事件相对于所述委托类型和所述资金类型的交易事件被优先路由分发至所述处理单元。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0004" num="0004" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">4.根据权利要求1所述的用于生成投资组合调整信息的数据处理方法，其特征在于，</div>
+      <div class="claim-text">所述内存计算引擎按照所述组合标识对所述持仓数据分区存储，每个所述投资组合维护独立的持仓计算上下文；</div>
+      <div class="claim-text">所述顺序标识包括时间戳，所述处理单元按照所述处理顺序，基于所述交易事件中的交易数据对所述待更新的持仓数据执行更新的步骤包括：</div>
+      <div class="claim-text">所述处理单元按照第一预设频率采用事件溯源模式，将所述交易事件按所述时间戳进行排序叠加至所述待更新的持仓数据，得到所述实时持仓数据。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0005" num="0005" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">5.根据权利要求1所述的用于生成投资组合调整信息的数据处理方法，其特征在于，根据所述实时持仓数据生成所述投资组合的调整信息的步骤包括：</div>
+      <div class="claim-text">对接外部数据接口，获取多维影响数据；</div>
+      <div class="claim-text">将各维影响数据按照预定的特征处理规则处理得到特征数据；</div>
+      <div class="claim-text">将所述实时持仓数据和所述特征数据输入至预设的多目标优化模型，以生成候选调整方案，其中，所述多目标优化模型包括多个优化目标和若干约束条件；以及</div>
+      <div class="claim-text">从所述候选调整方案中确定所述调整信息。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0006" num="0006" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0005"> </claim-ref>
+      </div>
+      <div class="claim-text">6.根据权利要求5所述的用于生成投资组合调整信息的数据处理方法，其特征在于，对接外部数据接口，获取多维影响数据的步骤包括：</div>
+      <div class="claim-text">对接资金管理系统的数据接口，按照第二预设频率获取所述投资组合的资金流入流出数据；</div>
+      <div class="claim-text">对接行情网关的数据接口，按照第三预设频率获取所述投资组合中投资产品的趋势指标数据；</div>
+      <div class="claim-text">对接第三方风险预警系统的数据接口，当风险事件触发后，在预设时限内接收风险事件数据。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0007" num="0007" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0005"> </claim-ref>
+      </div>
+      <div class="claim-text">7.根据权利要求5所述的用于生成投资组合调整信息的数据处理方法，其特征在于，所述候选调整方案包括所述投资组合中各组成资产的权重数据，以预设迭代周期重复生成所述调整信息，在从所述候选调整方案中确定所述调整信息的步骤之后，所述方法还包括：</div>
+      <div class="claim-text">根据当前权重数据和上一周期的权重数据计算权重偏差；</div>
+      <div class="claim-text">当所述权重偏差达到预设偏差阈值时，将所述调整信息推送至交易系统。</div>
+    </div>
+    </div> <div class="claim"> <div id="zh-cl0008" num="0008" class="claim">
+      <div class="claim-text">8.一种用于生成投资组合调整信息的数据处理系统，其特征在于，包括数据处理层、决策层和应用服务层，其中，所述数据处理层包括内存计算引擎、数据捕获模块和消息中间件：</div>
+      <div class="claim-text">所述内存计算引擎用于从历史数据库加载各投资组合的初始持仓数据，以初始化内存数据集，其中，所述内存数据集包括以所述投资组合的组合标识为索引的持仓数据，所述内存计算引擎包括多个处理单元，每个所述组合标识对应的持仓数据由同一个所述处理单元进行处理；</div>
+      <div class="claim-text">所述数据捕获模块用于对接交易系统数据库，实时捕获交易事件形成交易事件流，并输入所述消息中间件，其中，所述交易事件包括交易数据、组合标识和顺序标识；</div>
+      <div class="claim-text">所述消息中间件用于依据所述交易事件中的组合标识对所述交易事件进行路由分发，使具有相同组合标识的交易事件被分发至与所述组合标识对应的同一处理单元；</div>
+      <div class="claim-text">所述处理单元用于在内存计算环境中接收所述交易事件，并基于所述交易事件中的顺序标识确定交易事件的处理顺序，基于所述交易事件中的组合标识在所述内存数据集中获取待更新的持仓数据，按照所述处理顺序，基于所述交易事件中的交易数据对所述待更新的持仓数据执行更新，得到所述组合标识对应的实时持仓数据，</div>
+      <div class="claim-text">所述决策层用于根据所述实时持仓数据生成所述投资组合的调整信息；</div>
+      <div class="claim-text">所述应用服务层用于输出调整信息。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0009" num="0009" class="claim">
+      <div class="claim-text">9.一种计算机设备，包括存储器、处理器以及存储在存储器上并可在处理器上运行的计算机程序，其特征在于，所述处理器执行所述计算机程序时实现权利要求1至7任一项所述方法的步骤。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0010" num="0010" class="claim">
+      <div class="claim-text">10.一种计算机可读存储介质，其上存储有计算机程序，其特征在于：所述计算机程序被处理器执行时实现权利要求1至7任一项所述方法的步骤。</div>
+    </div>
+  </div> </div>
+  </div>
+  </section>
+
+  <section itemprop="application" itemscope>
+
+    <section itemprop="metadata" itemscope>
+      <span itemprop="applicationNumber">CN202610417429.3A</span>
+      <span itemprop="priorityDate">2026-04-01</span>
+      <span itemprop="filingDate">2026-04-01</span>
+      <span itemprop="title">用于生成投资组合调整信息的数据处理方法、系统和设备 
+       </span>
+      <span itemprop="ifiStatus">Pending</span>
+      
+      <a href="/patent/CN121961741A/zh">
+        <span itemprop="representativePublication">CN121961741A</span>
+        (<span itemprop="primaryLanguage">zh</span>)
+      </a>
+    </section>
+
+    <h2>Priority Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="priorityApps" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202610417429.3A</span>
+            
+            <a href="/patent/CN121961741A/zh">
+              <span itemprop="representativePublication">CN121961741A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2026-04-01</td>
+          <td itemprop="filingDate">2026-04-01</td>
+          <td itemprop="title">用于生成投资组合调整信息的数据处理方法、系统和设备 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Applications Claiming Priority (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202610417429.3A</span>
+            <a href="/patent/CN121961741A/zh">
+              <span itemprop="representativePublication">CN121961741A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2026-04-01</td>
+          <td itemprop="filingDate">2026-04-01</td>
+          <td itemprop="title">用于生成投资组合调整信息的数据处理方法、系统和设备 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Publications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication Number</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="pubs" itemscope repeat>
+          <td>
+            <span itemprop="publicationNumber">CN121961741A</span>
+            
+            <span itemprop="thisPatent">true</span>
+            <a href="/patent/CN121961741A/zh">
+              CN121961741A
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2026-05-01</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section itemprop="family" itemscope>
+    <h1>Family</h1>
+    <h2>ID=99569595</h2>
+
+    <h2>Family Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Title</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="applications" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202610417429.3A</span>
+            <span itemprop="ifiStatus">Pending</span>
+            
+            <a href="/patent/CN121961741A/zh">
+              <span itemprop="representativePublication">CN121961741A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2026-04-01</td>
+          <td itemprop="filingDate">2026-04-01</td>
+          <td itemprop="title">用于生成投资组合调整信息的数据处理方法、系统和设备 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Country Status (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">CN</span>
+            (<span itemprop="num">1</span>)
+            <meta itemprop="thisCountry" content="true">
+          </td>
+          <td>
+            <a href="/patent/CN121961741A/zh">
+              <span itemprop="representativePublication">CN121961741A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    
+
+    
+
+    <ul>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2026</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2026-04-01</span>
+            <span itemprop="countryCode">CN</span>
+            <span itemprop="applicationNumber">CN202610417429.3A</span>
+            <a href="/patent/CN121961741A/zh"><span itemprop="documentId">patent/CN121961741A/zh</span></a>
+            <span itemprop="legalStatusCat">active</span>
+            <span itemprop="legalStatus">Pending</span>
+            <span itemprop="thisApp" content="true" bool></span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    </section>
+
+  
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Similar Documents</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication</th>
+          <th>Publication Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20230418811A1/en">
+                <span itemprop="publicationNumber">US20230418811A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-12-28">2023-12-28</time>
+            
+            
+          </td>
+          <td itemprop="title">Transaction processing method and apparatus, computing device, and storage medium 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR101616967B1/ko">
+                <span itemprop="publicationNumber">KR101616967B1</span>
+                (<span itemprop="primaryLanguage">ko</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2016-05-12">2016-05-12</time>
+            
+            
+          </td>
+          <td itemprop="title">다수의 처리 명령어를 실시간으로 취급하고 처리하는 것과 관련된 개선 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20220350736A1/en">
+                <span itemprop="publicationNumber">US20220350736A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-11-03">2022-11-03</time>
+            
+            
+          </td>
+          <td itemprop="title">Object Storage Change-Events 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN114385760A/zh">
+                <span itemprop="publicationNumber">CN114385760A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-04-22">2022-04-22</time>
+            
+            
+          </td>
+          <td itemprop="title">增量数据实时同步的方法、装置、计算机设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN102937964B/zh">
+                <span itemprop="publicationNumber">CN102937964B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-02-11">2015-02-11</time>
+            
+            
+          </td>
+          <td itemprop="title">基于分布式系统的智能数据服务方法 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US9158768B2/en">
+                <span itemprop="publicationNumber">US9158768B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-10-13">2015-10-13</time>
+            
+            
+          </td>
+          <td itemprop="title">System and methods to configure a query language using an operator dictionary 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN111680017B/zh">
+                <span itemprop="publicationNumber">CN111680017B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2026-04-03">2026-04-03</time>
+            
+            
+          </td>
+          <td itemprop="title">一种数据同步的方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US11789922B1/en">
+                <span itemprop="publicationNumber">US11789922B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-10-17">2023-10-17</time>
+            
+            
+          </td>
+          <td itemprop="title">Admitting for performance ordered operations of atomic transactions across a distributed database 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN116089414A/zh">
+                <span itemprop="publicationNumber">CN116089414A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-05-09">2023-05-09</time>
+            
+            
+          </td>
+          <td itemprop="title">基于海量数据场景的时序数据库写入性能优化方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN104765840A/zh">
+                <span itemprop="publicationNumber">CN104765840A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-07-08">2015-07-08</time>
+            
+            
+          </td>
+          <td itemprop="title">一种大数据分布式存储的方法和装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20260099444A1/en">
+                <span itemprop="publicationNumber">US20260099444A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2026-04-09">2026-04-09</time>
+            
+            
+          </td>
+          <td itemprop="title">Data hierarchical storage 
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN105138676B/zh">
+                <span itemprop="publicationNumber">CN105138676B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2017-11-24">2017-11-24</time>
+            
+            
+          </td>
+          <td itemprop="title">基于高级语言并发聚合计算的分库分表merge查询方法 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN104794190A/zh">
+                <span itemprop="publicationNumber">CN104794190A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-07-22">2015-07-22</time>
+            
+            
+          </td>
+          <td itemprop="title">一种大数据有效存储的方法和装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN104750855A/zh">
+                <span itemprop="publicationNumber">CN104750855A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-07-01">2015-07-01</time>
+            
+            
+          </td>
+          <td itemprop="title">一种大数据存储优化方法和装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/JP2023546818A/ja">
+                <span itemprop="publicationNumber">JP2023546818A</span>
+                (<span itemprop="primaryLanguage">ja</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-11-08">2023-11-08</time>
+            
+            
+          </td>
+          <td itemprop="title">データベースシステムのトランザクション処理方法、装置、電子機器、及びコンピュータプログラム 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN113901018A/zh">
+                <span itemprop="publicationNumber">CN113901018A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-01-07">2022-01-07</time>
+            
+            
+          </td>
+          <td itemprop="title">一种待迁移文件识别方法、装置、计算机设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN120067223A/zh">
+                <span itemprop="publicationNumber">CN120067223A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2025-05-30">2025-05-30</time>
+            
+            
+          </td>
+          <td itemprop="title">一种跨引擎数据的处理方法、装置和计算机设备 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN115292414A/zh">
+                <span itemprop="publicationNumber">CN115292414A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-11-04">2022-11-04</time>
+            
+            
+          </td>
+          <td itemprop="title">一种业务数据同步到数仓的方法 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN103310008A/zh">
+                <span itemprop="publicationNumber">CN103310008A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2013-09-18">2013-09-18</time>
+            
+            
+          </td>
+          <td itemprop="title">一种云控制服务器及其文件索引方法 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN117033322A/zh">
+                <span itemprop="publicationNumber">CN117033322A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-11-10">2023-11-10</time>
+            
+            
+          </td>
+          <td itemprop="title">一种流批一体的大数据存储方法、系统、电子设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN120832337A/zh">
+                <span itemprop="publicationNumber">CN120832337A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2025-10-24">2025-10-24</time>
+            
+            
+          </td>
+          <td itemprop="title">文件智能合并方法、装置、电子设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20240265022A1/en">
+                <span itemprop="publicationNumber">US20240265022A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-08-08">2024-08-08</time>
+            
+            
+          </td>
+          <td itemprop="title">Data query request processing method, electronic device, and storage medium 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN119782363A/zh">
+                <span itemprop="publicationNumber">CN119782363A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2025-04-08">2025-04-08</time>
+            
+            
+          </td>
+          <td itemprop="title">基于异步物化视图的实时数仓构建方法、查询方法及系统 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN116383308A/zh">
+                <span itemprop="publicationNumber">CN116383308A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-07-04">2023-07-04</time>
+            
+            
+          </td>
+          <td itemprop="title">一种具备全链路反压特性的数据同步方法及系统 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN113641780A/zh">
+                <span itemprop="publicationNumber">CN113641780A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-11-12">2021-11-12</time>
+            
+            
+          </td>
+          <td itemprop="title">搜索方法、系统、设备、存储介质和计算机程序产品 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Legal Events</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Code</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2026-05-01">2026-05-01</time></td>
+          <td itemprop="code">PB01</td>
+          <td itemprop="title">Publication</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2026-05-01">2026-05-01</time></td>
+          <td itemprop="code">PB01</td>
+          <td itemprop="title">Publication</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2026-05-22">2026-05-22</time></td>
+          <td itemprop="code">SE01</td>
+          <td itemprop="title">Entry into force of request for substantive examination</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
+
+    </search-app>
+    
+    <script></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script type="text/javascript">
+      if (window.help && window.help.service) {
+        helpApi = window.help.service.Lazy.create(0, {apiKey: 'AIzaSyDTEI_0tLX4varJ7bwK8aT-eOI5qr3BmyI', locale: 'en-US'});
+        window.requestedSurveys = new Set();
+        window.requestSurvey = function(triggerId) {
+          if (window.requestedSurveys.has(triggerId)) {
+            return;
+          }
+          window.requestedSurveys.add(triggerId);
+          helpApi.requestSurvey({
+            triggerId: triggerId,
+            enableTestingMode: false,
+            callback: (requestSurveyCallbackParam) => {
+              if (!requestSurveyCallbackParam.surveyData) {
+                return;
+              }
+              helpApi.presentSurvey({
+                productData: {
+                  productVersion: window.version,
+                  customData: {
+                    "experiments": "",
+                  },
+                },
+                surveyData: requestSurveyCallbackParam.surveyData,
+                colorScheme: 1,
+                customZIndex: 10000,
+              });
+            }
+          });
+        };
+
+        window.requestSurvey('YXTwAsvoW0kedxbuTdH0RArc9VhT');
+      }
+    </script>
+    <script src="/sw/null_loader.js"></script>
+  </body>
+</html>

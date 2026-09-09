@@ -1,0 +1,1187 @@
+[
+  {
+    "path": ".gitattributes",
+    "type": "blob",
+    "sha": "8f3effb69daa3704fa676b518d1b96a8d89f4717"
+  },
+  {
+    "path": ".gitignore",
+    "type": "blob",
+    "sha": "8e10f77156eac3978837d30fb5be04af51db3e25"
+  },
+  {
+    "path": "README.md",
+    "type": "blob",
+    "sha": "0c2a33c738658e56556375b60ed14d30bcc0daf5"
+  },
+  {
+    "path": "README_EN.md",
+    "type": "blob",
+    "sha": "86ff02bafcd5800c9fcb15c353cd5c22861eee6f"
+  },
+  {
+    "path": "configs/.env.example",
+    "type": "blob",
+    "sha": "3393bcd20dd1400f2a2d640c9055befa5cbe1753"
+  },
+  {
+    "path": "configs/backtest.yaml",
+    "type": "blob",
+    "sha": "43aa63b233415b4abf55eb3f0e7c819b498d4336"
+  },
+  {
+    "path": "configs/experiment.yaml",
+    "type": "blob",
+    "sha": "88df4271b6121f0bff6eb9ce97fa9d8a4756406e"
+  },
+  {
+    "path": "docs/Makefile",
+    "type": "blob",
+    "sha": "ed88099027f775942fa65dce2314f1ae9675cb36"
+  },
+  {
+    "path": "docs/PROJECT_STRUCTURE.md",
+    "type": "blob",
+    "sha": "4af103872a149037a19b126bf9df705a3f572717"
+  },
+  {
+    "path": "docs/_static/excess_return.png",
+    "type": "blob",
+    "sha": "595d3c218e07e64285f2f6f81f07547370f9f222"
+  },
+  {
+    "path": "docs/_static/figure3.png",
+    "type": "blob",
+    "sha": "bdf3bfcd0a0597ef04625959fb94f9dfb425ffa7"
+  },
+  {
+    "path": "docs/_static/overview.jpg",
+    "type": "blob",
+    "sha": "2ec7a4eebf470e2b0bc52c37860819a4b9420aad"
+  },
+  {
+    "path": "docs/_static/workflow.png",
+    "type": "blob",
+    "sha": "f212c236ace27a6a0e337b4bbed28ca76facc9f8"
+  },
+  {
+    "path": "docs/conf.py",
+    "type": "blob",
+    "sha": "a0ecda7fe316985b72041ad0815b2017098181b3"
+  },
+  {
+    "path": "docs/experiment_guide.md",
+    "type": "blob",
+    "sha": "1dc01c40235e79e1e1f125bd8bf1378139e063ae"
+  },
+  {
+    "path": "docs/experiment_hyperparameters.md",
+    "type": "blob",
+    "sha": "dd39ca598fe5470f4e888d730bc9170eb07a625d"
+  },
+  {
+    "path": "docs/images/WeChat.jpg",
+    "type": "blob",
+    "sha": "042f6ba4503844e12294fc9f8442a39ece4c6d09"
+  },
+  {
+    "path": "docs/images/case_study.png",
+    "type": "blob",
+    "sha": "fefb88732e1ed41e82d3d46c833f3b02428fc1b0"
+  },
+  {
+    "path": "docs/images/demo.mp4",
+    "type": "blob",
+    "sha": "13054f4ee42469b81d03bd0737517d941813c0b9"
+  },
+  {
+    "path": "docs/images/figure3.png",
+    "type": "blob",
+    "sha": "451ba368522540aa7fc785a884c51054144aeaf2"
+  },
+  {
+    "path": "docs/images/figure4.png",
+    "type": "blob",
+    "sha": "27033d2039dec309f6fa1efd72c5273e90f515df"
+  },
+  {
+    "path": "docs/images/figure5.png",
+    "type": "blob",
+    "sha": "9da3de9a3d1a9e82afcc80c98abc30723af031e3"
+  },
+  {
+    "path": "docs/images/overview.jpg",
+    "type": "blob",
+    "sha": "2ec7a4eebf470e2b0bc52c37860819a4b9420aad"
+  },
+  {
+    "path": "\"docs/images/\\344\\270\\273\\345\\256\\236\\351\\252\\214.png\"",
+    "type": "blob",
+    "sha": "c52b386d24b28d39ffbf7f7cf646ea0140a4a757"
+  },
+  {
+    "path": "docs/index.rst",
+    "type": "blob",
+    "sha": "6f38990ea8085943ce05b2d81e8f46731e507cd5"
+  },
+  {
+    "path": "docs/make.bat",
+    "type": "blob",
+    "sha": "207019d590db693553a581ff3c0e3cf87b6d4181"
+  },
+  {
+    "path": "docs/requirements.txt",
+    "type": "blob",
+    "sha": "df024d6573b93bc3b1650b7af693d742cf966c24"
+  },
+  {
+    "path": "docs/user_guide.md",
+    "type": "blob",
+    "sha": "99aed115f65db2bb4240425928508c1784810ca9"
+  },
+  {
+    "path": "frontend-v2/.gitignore",
+    "type": "blob",
+    "sha": "3014859a344dd51049fa43862907f152fb69493d"
+  },
+  {
+    "path": "frontend-v2/QUICKSTART.md",
+    "type": "blob",
+    "sha": "f53782ad160d6e58a442fa0e1757a8b83bdf24d5"
+  },
+  {
+    "path": "frontend-v2/README.md",
+    "type": "blob",
+    "sha": "ee9210f315f610d6f13db940e145280f4d979e24"
+  },
+  {
+    "path": "frontend-v2/backend/app.py",
+    "type": "blob",
+    "sha": "9d02325154f3e92e3a7aa4922845fdfcc7085aae"
+  },
+  {
+    "path": "frontend-v2/backend/requirements.txt",
+    "type": "blob",
+    "sha": "ecbf154d7f3e128ca4a6bde657cc0ea952bee784"
+  },
+  {
+    "path": "frontend-v2/index.html",
+    "type": "blob",
+    "sha": "27e455c8e2e9606ceb4414fe6691f989943e7d5f"
+  },
+  {
+    "path": "frontend-v2/package-lock.json",
+    "type": "blob",
+    "sha": "71201bd0567d90ebf47352069e1e4586e1fba5e2"
+  },
+  {
+    "path": "frontend-v2/package.json",
+    "type": "blob",
+    "sha": "4f9b80e50ed29498cf7192436d9cff5b26eb40ea"
+  },
+  {
+    "path": "frontend-v2/postcss.config.js",
+    "type": "blob",
+    "sha": "2e7af2b7f1a6f391da1631d93968a9d487ba977d"
+  },
+  {
+    "path": "frontend-v2/src/App.tsx",
+    "type": "blob",
+    "sha": "ab831dd6f6c0faca9006e98f8f9250604a2d894f"
+  },
+  {
+    "path": "frontend-v2/src/components/ChatInput.tsx",
+    "type": "blob",
+    "sha": "9bddcab0335f8112dc9f66578ea9f84f582b4b03"
+  },
+  {
+    "path": "frontend-v2/src/components/ExecutionPanel.tsx",
+    "type": "blob",
+    "sha": "3b36bbdce507afa396d0fac8d8bcbe7400cbae39"
+  },
+  {
+    "path": "frontend-v2/src/components/FactorList.tsx",
+    "type": "blob",
+    "sha": "2bfaebb12b8c1ad7b0a2976aab7537c924f320d9"
+  },
+  {
+    "path": "frontend-v2/src/components/FactorStatsRow.tsx",
+    "type": "blob",
+    "sha": "c323a2d2c513a2c08662c1b2f1e3b17937499dc7"
+  },
+  {
+    "path": "frontend-v2/src/components/InputPanel.tsx",
+    "type": "blob",
+    "sha": "a4d43ce2bac5147d94754811292223ceb12229da"
+  },
+  {
+    "path": "frontend-v2/src/components/LiveCharts.tsx",
+    "type": "blob",
+    "sha": "2b0de180e77f2f2a81a84d9843da5739998efcc2"
+  },
+  {
+    "path": "frontend-v2/src/components/MetricsPanel.tsx",
+    "type": "blob",
+    "sha": "6b443699077d93c75d4c55f45ed11116f070c9f0"
+  },
+  {
+    "path": "frontend-v2/src/components/ParticleBackground.tsx",
+    "type": "blob",
+    "sha": "749e5c611b889db818d0824cd2e91a7edb325393"
+  },
+  {
+    "path": "frontend-v2/src/components/ProgressSidebar.tsx",
+    "type": "blob",
+    "sha": "a7ca73ee50e78b507299067336137a936c04cbb3"
+  },
+  {
+    "path": "frontend-v2/src/components/ResultVisualization.tsx",
+    "type": "blob",
+    "sha": "33da0e180bf9d4f85f4b5471036a30e0c3dab489"
+  },
+  {
+    "path": "frontend-v2/src/components/layout/Layout.tsx",
+    "type": "blob",
+    "sha": "ebd91a1032aea657fd4f98447ace7381f73e1431"
+  },
+  {
+    "path": "frontend-v2/src/components/ui/Badge.tsx",
+    "type": "blob",
+    "sha": "934ac02308414f5d9e300e16959b820ec7160278"
+  },
+  {
+    "path": "frontend-v2/src/components/ui/Button.tsx",
+    "type": "blob",
+    "sha": "87c790d9af23ba6d7526614d2e5513300a70f326"
+  },
+  {
+    "path": "frontend-v2/src/components/ui/Card.tsx",
+    "type": "blob",
+    "sha": "39acc143c216f34521642eee6b0013f7a7c33346"
+  },
+  {
+    "path": "frontend-v2/src/components/ui/HoverCard.tsx",
+    "type": "blob",
+    "sha": "edbbcd70254922be88e30b2703c10588fab7b324"
+  },
+  {
+    "path": "frontend-v2/src/components/ui/Progress.tsx",
+    "type": "blob",
+    "sha": "e275909d48c85d7e3cc90ba472a74f54040c839e"
+  },
+  {
+    "path": "frontend-v2/src/components/ui/Textarea.tsx",
+    "type": "blob",
+    "sha": "b937e55bd44a973ebd87dcca3f610be2af760388"
+  },
+  {
+    "path": "frontend-v2/src/context/TaskContext.tsx",
+    "type": "blob",
+    "sha": "992188a9e0fad89d8c9e23337ab6cee37d440e5a"
+  },
+  {
+    "path": "frontend-v2/src/index.css",
+    "type": "blob",
+    "sha": "52b9ca3af6144826c63c5a68f2c17f4ff3f35654"
+  },
+  {
+    "path": "frontend-v2/src/main.tsx",
+    "type": "blob",
+    "sha": "d0aea34de3b01ecd571b1135a81299584307e1f5"
+  },
+  {
+    "path": "frontend-v2/src/pages/BacktestPage.tsx",
+    "type": "blob",
+    "sha": "e4b93a742c78a0aabbb2ecae982cb69aea350408"
+  },
+  {
+    "path": "frontend-v2/src/pages/FactorLibraryPage.tsx",
+    "type": "blob",
+    "sha": "beec0216d566e165e51bb83310f5edf5150ae7f2"
+  },
+  {
+    "path": "frontend-v2/src/pages/HomePage.tsx",
+    "type": "blob",
+    "sha": "6569458b51b80f5d4d7c3b511fe5d5eddce4328f"
+  },
+  {
+    "path": "frontend-v2/src/pages/MiningDashboardPage.tsx",
+    "type": "blob",
+    "sha": "df05b2061bcfa42cb262785aca522932d82358c0"
+  },
+  {
+    "path": "frontend-v2/src/pages/SettingsPage.tsx",
+    "type": "blob",
+    "sha": "113783d74eebd548cba3821721af8de37806b2c6"
+  },
+  {
+    "path": "frontend-v2/src/services/api.ts",
+    "type": "blob",
+    "sha": "0d62996c12af48c73a69d72fccd707bca52e5fa2"
+  },
+  {
+    "path": "frontend-v2/src/types/index.ts",
+    "type": "blob",
+    "sha": "116fffad2f42bb0ba369ed0b53ae55e5895ce444"
+  },
+  {
+    "path": "frontend-v2/src/utils/index.ts",
+    "type": "blob",
+    "sha": "be7245fb4a62241debd72c00878659d64b03e6db"
+  },
+  {
+    "path": "frontend-v2/src/utils/miningDirections.ts",
+    "type": "blob",
+    "sha": "2f08d4872db75202037ae97737fc2b390c65bcd2"
+  },
+  {
+    "path": "frontend-v2/start.sh",
+    "type": "blob",
+    "sha": "eda5b66a3b33d1992701fc4d407aec54d7fcfaa0"
+  },
+  {
+    "path": "frontend-v2/tailwind.config.js",
+    "type": "blob",
+    "sha": "145f97cbb6f9ecbe81ea9f108e8505c04c1f4eaa"
+  },
+  {
+    "path": "frontend-v2/tsconfig.json",
+    "type": "blob",
+    "sha": "fb8f048809cb6d6e51a252d1371991539a1b2c78"
+  },
+  {
+    "path": "frontend-v2/tsconfig.node.json",
+    "type": "blob",
+    "sha": "42872c59f5b01c9155864572bc2fbd5833a7406c"
+  },
+  {
+    "path": "frontend-v2/vite.config.ts",
+    "type": "blob",
+    "sha": "cc22a55ef45ad5007b8811721f5cc1c442387e77"
+  },
+  {
+    "path": "launcher.py",
+    "type": "blob",
+    "sha": "73dd15f34ee7de97b51237a3b655f600cd1511cc"
+  },
+  {
+    "path": "pyproject.toml",
+    "type": "blob",
+    "sha": "b87da2f3277dad11d03110f6b2dc4dc800a41c45"
+  },
+  {
+    "path": "quantaalpha/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/app/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/app/benchmark/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/app/benchmark/factor/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/app/benchmark/factor/analysis.py",
+    "type": "blob",
+    "sha": "8a4db5fff4ac65373dcad5496aef675af6cb0ab9"
+  },
+  {
+    "path": "quantaalpha/app/benchmark/factor/eval.py",
+    "type": "blob",
+    "sha": "38f268e6694621a5e69211dd40b53c6b69084a53"
+  },
+  {
+    "path": "quantaalpha/app/benchmark/model/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/app/benchmark/model/eval.py",
+    "type": "blob",
+    "sha": "066a6ecff6a56d89259c540345280254fefd3dcb"
+  },
+  {
+    "path": "quantaalpha/app/utils/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/app/utils/health_check.py",
+    "type": "blob",
+    "sha": "b6ec8cfee7906d07cdb9ad34dad54ea21e0b8739"
+  },
+  {
+    "path": "quantaalpha/app/utils/info.py",
+    "type": "blob",
+    "sha": "ee8e12a84cb45c3b4fb180c663332680a2c05341"
+  },
+  {
+    "path": "quantaalpha/backtest/README.md",
+    "type": "blob",
+    "sha": "3ad4176eee489903d240401f76633585e91d127f"
+  },
+  {
+    "path": "quantaalpha/backtest/__init__.py",
+    "type": "blob",
+    "sha": "59e756a28e51d016727ea345a4d0f92059cf60be"
+  },
+  {
+    "path": "quantaalpha/backtest/custom_factor_calculator.py",
+    "type": "blob",
+    "sha": "184dabddc99434cf94c269fef70be8797a5d2d69"
+  },
+  {
+    "path": "quantaalpha/backtest/factor_calculator.py",
+    "type": "blob",
+    "sha": "02da764a3668703c9fc64a4a004da1677c3c76ec"
+  },
+  {
+    "path": "quantaalpha/backtest/factor_loader.py",
+    "type": "blob",
+    "sha": "9b835aec544809c04219b5f048dfcf40d0a64e2c"
+  },
+  {
+    "path": "quantaalpha/backtest/run_backtest.py",
+    "type": "blob",
+    "sha": "5bc5b0fa13896f261c91b4032ddef3f1a12a3839"
+  },
+  {
+    "path": "quantaalpha/backtest/runner.py",
+    "type": "blob",
+    "sha": "598bedeeabca53b9f3af337af4c40372b814634a"
+  },
+  {
+    "path": "quantaalpha/cli.py",
+    "type": "blob",
+    "sha": "d242bbfc7738f59c2137c8bd2ec6ecf89045a98a"
+  },
+  {
+    "path": "quantaalpha/coder/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/__init__.py",
+    "type": "blob",
+    "sha": "6ddaf3856e6764949e2b0226bebb3b141c560ee7"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/config.py",
+    "type": "blob",
+    "sha": "02d83aef28a11da829ce8b5ce11005059820f6c3"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/evaluators.py",
+    "type": "blob",
+    "sha": "ede567ff01e076bfcc0021e394d6a92d821d4aa2"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/evolvable_subjects.py",
+    "type": "blob",
+    "sha": "91c1bf9560bf6105f684fae3b7a4f8d98c14cf74"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/evolving_agent.py",
+    "type": "blob",
+    "sha": "c9c64bd2cd3372f622464cf2ec9575618da06a64"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/evolving_strategy.py",
+    "type": "blob",
+    "sha": "ee33864681542e8170510d2af5bec498a3b5bcd2"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/knowledge_management.py",
+    "type": "blob",
+    "sha": "e305cc0e9f68ac219705e621b730ce43bbd08330"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/prompts.yaml",
+    "type": "blob",
+    "sha": "78f4b62770b0a0f7bfc8ff0e02af6e46f38cd614"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/scheduler.py",
+    "type": "blob",
+    "sha": "bf0dfad5f3763caded4f1b3a4523a35021473948"
+  },
+  {
+    "path": "quantaalpha/coder/costeer/task.py",
+    "type": "blob",
+    "sha": "3d25b525de2bf0986cf4cba3379a64e53f489d3d"
+  },
+  {
+    "path": "quantaalpha/coder/knowledge/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/coder/knowledge/graph.py",
+    "type": "blob",
+    "sha": "b5d02b7bbfc1c2d52b3d65a1035861db538cc5e5"
+  },
+  {
+    "path": "quantaalpha/coder/knowledge/vector_base.py",
+    "type": "blob",
+    "sha": "352fb7936fb19ba553e251bdd6950bb3ce0072ce"
+  },
+  {
+    "path": "quantaalpha/components/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/components/benchmark/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/components/benchmark/conf.py",
+    "type": "blob",
+    "sha": "6b7cdc74ef73705bef1bd13d3e68d1939ab52024"
+  },
+  {
+    "path": "quantaalpha/components/benchmark/eval_method.py",
+    "type": "blob",
+    "sha": "2bf6de50055d8b4fb190c3bc3b94ba70063108f4"
+  },
+  {
+    "path": "quantaalpha/components/benchmark/example.json",
+    "type": "blob",
+    "sha": "742927da2b5fa51279d5f804b4e6ea44586f4e8b"
+  },
+  {
+    "path": "quantaalpha/components/proposal/__init__.py",
+    "type": "blob",
+    "sha": "903fb30d7d0d8e20312b73e198829d641f0cd001"
+  },
+  {
+    "path": "quantaalpha/components/proposal/prompts.yaml",
+    "type": "blob",
+    "sha": "e1ff750f5feebb5214010d2df7cb2722a0b90881"
+  },
+  {
+    "path": "quantaalpha/components/runner/__init__.py",
+    "type": "blob",
+    "sha": "5234595e867097139c0e2bbe61244d0506b664a2"
+  },
+  {
+    "path": "quantaalpha/contrib/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/contrib/model/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/__init__.py",
+    "type": "blob",
+    "sha": "93f5ce6df9ee7c810e2204f362f9ed6c0d6a7da1"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/eval.py",
+    "type": "blob",
+    "sha": "2ce73d128391c2cfca27e0101fa052aee80eddcc"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/gt_code/A-DGN.py",
+    "type": "blob",
+    "sha": "5c65bf12fa226be03b5cd9d63a35fcc60e15711e"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/gt_code/dirgnn.py",
+    "type": "blob",
+    "sha": "d22cb8987b8fe45454303b1c3012ea91f4ad545e"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/gt_code/gpsconv.py",
+    "type": "blob",
+    "sha": "305b30e303d3f131b53a3535d0540b63c30e7d70"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/gt_code/linkx.py",
+    "type": "blob",
+    "sha": "fc71e86de8385fbd4d8cb6f8abdf97ae9160296d"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/gt_code/pmlp.py",
+    "type": "blob",
+    "sha": "3dadd76d7db592a4f2a56f3490b879436fbb8f0d"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/gt_code/visnet.py",
+    "type": "blob",
+    "sha": "67cff2089d11d3e5dc783b5e59215f245a83040d"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/benchmark/model_dict.json",
+    "type": "blob",
+    "sha": "a15edfffea4c1840ac33356d467bfa11a8069f1b"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/eva_utils.py",
+    "type": "blob",
+    "sha": "23dc2d5a1b01c422966d5b20f1027daf1050ebd4"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/evaluators.py",
+    "type": "blob",
+    "sha": "c09a40d984c9016d262ccfb2a2943dbd33c0ac9e"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/evolving_strategy.py",
+    "type": "blob",
+    "sha": "3f5ba9bba948b900aa95edf3bf5eaf661884713c"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/gt_code.py",
+    "type": "blob",
+    "sha": "988273a3e9f50d804cc01c4786cabdf14761393b"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/model.py",
+    "type": "blob",
+    "sha": "2fe50d1a3a00ed4193a41c622353d990d2da751a"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/model_execute_template_v1.txt",
+    "type": "blob",
+    "sha": "46e3236767b775dd858700e972a83ca292ce14aa"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/model_execute_template_v2.txt",
+    "type": "blob",
+    "sha": "78962c2a0f9a52e12f528585e8a1b095f396bc2d"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/one_shot/__init__.py",
+    "type": "blob",
+    "sha": "ed99c62f03a76f6e5dfc0b13ceae7e9b26841217"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/one_shot/prompt.yaml",
+    "type": "blob",
+    "sha": "d97746313c58edf2c6ccd5c541297408f6d91b69"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/prompts.yaml",
+    "type": "blob",
+    "sha": "d3393305ae9a6bc7f0d634914d6ddd0672b4c525"
+  },
+  {
+    "path": "quantaalpha/contrib/model/coder/task_loader.py",
+    "type": "blob",
+    "sha": "aeaece7048a161401ea101553c419ab3ec630d11"
+  },
+  {
+    "path": "quantaalpha/contrib/model/experiment.py",
+    "type": "blob",
+    "sha": "b884720b5e65999126b7b1a62f135e5fddefd584"
+  },
+  {
+    "path": "quantaalpha/contrib/model/prompts.yaml",
+    "type": "blob",
+    "sha": "71878e7455189332ec4c784c52fd9e70f70d90bb"
+  },
+  {
+    "path": "quantaalpha/contrib/model/proposal.py",
+    "type": "blob",
+    "sha": "0bf7f85ac7464bc32e8ff307cd90bc14e1cb3b48"
+  },
+  {
+    "path": "quantaalpha/contrib/model/qlib_coder.py",
+    "type": "blob",
+    "sha": "ba737a219563043bc60e57e33d536893441020b6"
+  },
+  {
+    "path": "quantaalpha/contrib/model/runner.py",
+    "type": "blob",
+    "sha": "399e939116c1140c403bae856fe2cebceecd5004"
+  },
+  {
+    "path": "quantaalpha/core/__init__.py",
+    "type": "blob",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc"
+  },
+  {
+    "path": "quantaalpha/core/conf.py",
+    "type": "blob",
+    "sha": "6ba42fd6da019828cfd0b07335e6365806b657a1"
+  },
+  {
+    "path": "quantaalpha/core/developer.py",
+    "type": "blob",
+    "sha": "dd9f0ca460712e1c8378446aee5b68c3ca8182d2"
+  },
+  {
+    "path": "quantaalpha/core/evaluation.py",
+    "type": "blob",
+    "sha": "39fed68b301e0509a5cb90d19022f9520ba001cf"
+  },
+  {
+    "path": "quantaalpha/core/evolving_agent.py",
+    "type": "blob",
+    "sha": "c207ae91d6de43a8772bb57d4f0cd14eec3b3a06"
+  },
+  {
+    "path": "quantaalpha/core/evolving_framework.py",
+    "type": "blob",
+    "sha": "1bdf36a1b1f308105bfea6781f9d2c1533912e4f"
+  },
+  {
+    "path": "quantaalpha/core/exception.py",
+    "type": "blob",
+    "sha": "2167ab9dc8b7baee3fea1bd508758fa710eb0461"
+  },
+  {
+    "path": "quantaalpha/core/experiment.py",
+    "type": "blob",
+    "sha": "eb1508a1f8ee2cc1ff765572f3ab094740564393"
+  },
+  {
+    "path": "quantaalpha/core/knowledge_base.py",
+    "type": "blob",
+    "sha": "d0eb48f245bee3cec03cb650c44a1204db68f705"
+  },
+  {
+    "path": "quantaalpha/core/prompts.py",
+    "type": "blob",
+    "sha": "bce20f174a3d8e610c39a028627443d8d911fe10"
+  },
+  {
+    "path": "quantaalpha/core/proposal.py",
+    "type": "blob",
+    "sha": "7e5fd9660762c912ff9e49bf45855f02ad65fab5"
+  },
+  {
+    "path": "quantaalpha/core/scenario.py",
+    "type": "blob",
+    "sha": "319c5533003c5e840022fdbb64930ff6d453369d"
+  },
+  {
+    "path": "quantaalpha/core/template.py",
+    "type": "blob",
+    "sha": "39a748bab665e544d91a0dd5e9c5073a6feccc2a"
+  },
+  {
+    "path": "quantaalpha/core/utils.py",
+    "type": "blob",
+    "sha": "b24006de4713ba57632ce92ba414beafba9cc3f7"
+  },
+  {
+    "path": "quantaalpha/docker/Dockerfile",
+    "type": "blob",
+    "sha": "461d4a7d93b1dbae1d72e9f44aa24d04e308595d"
+  },
+  {
+    "path": "quantaalpha/docker/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/factors/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/factors/coder/__init__.py",
+    "type": "blob",
+    "sha": "e5264246aa656ffdc940faf42bd192e32c8017b3"
+  },
+  {
+    "path": "quantaalpha/factors/coder/config.py",
+    "type": "blob",
+    "sha": "b5281d19ea0011ad32f59316ddc0a9580c978b5a"
+  },
+  {
+    "path": "quantaalpha/factors/coder/eva_utils.py",
+    "type": "blob",
+    "sha": "68cda1b94d7ec674cef5a4614e6dfb59af9a0ecb"
+  },
+  {
+    "path": "quantaalpha/factors/coder/evaluators.py",
+    "type": "blob",
+    "sha": "743dddb6322c88bc65a403fa341743d753960ff0"
+  },
+  {
+    "path": "quantaalpha/factors/coder/evolving_strategy.py",
+    "type": "blob",
+    "sha": "b8bd6814de0dd41051e931891c2045ed551362e1"
+  },
+  {
+    "path": "quantaalpha/factors/coder/expr_parser.py",
+    "type": "blob",
+    "sha": "52fd4afb98ad8e9fd1d8a43169b5c65b85e01d60"
+  },
+  {
+    "path": "quantaalpha/factors/coder/factor.py",
+    "type": "blob",
+    "sha": "ab559aa6d69decc53555ad172f008ebeaf50d745"
+  },
+  {
+    "path": "quantaalpha/factors/coder/factor_ast.py",
+    "type": "blob",
+    "sha": "d50bc33ac0f1d3c3f27abadae5010592d5095873"
+  },
+  {
+    "path": "quantaalpha/factors/coder/function_lib.py",
+    "type": "blob",
+    "sha": "8ad579fc850678ddf768e886cd67b492801c25fb"
+  },
+  {
+    "path": "quantaalpha/factors/coder/prompts.yaml",
+    "type": "blob",
+    "sha": "d5bc8b9c9f13acf1b9f3d13996dda12612e84f20"
+  },
+  {
+    "path": "quantaalpha/factors/coder/qa_prompts.yaml",
+    "type": "blob",
+    "sha": "02d3ffb2ee945a30e2eabec291b93d930f3f54c0"
+  },
+  {
+    "path": "quantaalpha/factors/coder/template.jinjia2",
+    "type": "blob",
+    "sha": "eb535a1011a4b3f87e18bd919b8d2cf417594d1b"
+  },
+  {
+    "path": "quantaalpha/factors/coder/test.py",
+    "type": "blob",
+    "sha": "8af46539070a7f79ac06f06da563fecdbb551286"
+  },
+  {
+    "path": "quantaalpha/factors/data_template/README.md",
+    "type": "blob",
+    "sha": "0abc563ec6197e64ac5bb229330caa70d39933e5"
+  },
+  {
+    "path": "quantaalpha/factors/data_template/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/factors/data_template/generate.py",
+    "type": "blob",
+    "sha": "9f95e502ee38a819320f2e487c02b1a55510eef2"
+  },
+  {
+    "path": "quantaalpha/factors/experiment.py",
+    "type": "blob",
+    "sha": "6c2f3d043420680658847034807e5e9fc35b4092"
+  },
+  {
+    "path": "quantaalpha/factors/factor_template/conf_baseline.yaml",
+    "type": "blob",
+    "sha": "c267ef87cb570a18543d5b3a3b094fcb7cc044ef"
+  },
+  {
+    "path": "quantaalpha/factors/factor_template/conf_combined_factors.yaml",
+    "type": "blob",
+    "sha": "6c51a40694843f0164b824704c20100602289188"
+  },
+  {
+    "path": "quantaalpha/factors/feedback.py",
+    "type": "blob",
+    "sha": "a2a1aea35b108805fc969db1a2a91793763d0b44"
+  },
+  {
+    "path": "quantaalpha/factors/library.py",
+    "type": "blob",
+    "sha": "f0c840539ad142a973f6233e5367d26692e25ecd"
+  },
+  {
+    "path": "quantaalpha/factors/loader/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/factors/loader/json_loader.py",
+    "type": "blob",
+    "sha": "4079d9519e79fedea5c73c5e2d778dff6dd980e4"
+  },
+  {
+    "path": "quantaalpha/factors/loader/pdf_loader.py",
+    "type": "blob",
+    "sha": "bbf3d1050978bde8abc5d439c0409a25e4f00a63"
+  },
+  {
+    "path": "quantaalpha/factors/loader/prompts.yaml",
+    "type": "blob",
+    "sha": "94cc969835a6c5a7f4d6d3cb3d42a47417c0e694"
+  },
+  {
+    "path": "quantaalpha/factors/prompts/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/factors/prompts/experiment.yaml",
+    "type": "blob",
+    "sha": "da5e13f11504d732ae32318fdb581eff0cecb2c0"
+  },
+  {
+    "path": "quantaalpha/factors/prompts/prompts.yaml",
+    "type": "blob",
+    "sha": "71878e7455189332ec4c784c52fd9e70f70d90bb"
+  },
+  {
+    "path": "quantaalpha/factors/prompts/proposal.yaml",
+    "type": "blob",
+    "sha": "f98bde6b7b56905c2471fc79b64afaccb3d4021e"
+  },
+  {
+    "path": "quantaalpha/factors/proposal.py",
+    "type": "blob",
+    "sha": "cd6e478f6fc0ac08e53cd20d2048fd69f841c4c3"
+  },
+  {
+    "path": "quantaalpha/factors/qlib_coder.py",
+    "type": "blob",
+    "sha": "04e8f488833b059ece84fd9334a2b9eb227efa2e"
+  },
+  {
+    "path": "quantaalpha/factors/qlib_experiment_init.py",
+    "type": "blob",
+    "sha": "6e52b1a33e0504a9b3193dd1f02e31ffe730c2dd"
+  },
+  {
+    "path": "quantaalpha/factors/qlib_utils.py",
+    "type": "blob",
+    "sha": "b42d71dd4aeef4b416c4c2ff1d036968b142339d"
+  },
+  {
+    "path": "quantaalpha/factors/regulator/__init__.py",
+    "type": "blob",
+    "sha": "52ba02835361f3fc98262ed4e7b5abd063f865d4"
+  },
+  {
+    "path": "quantaalpha/factors/regulator/consistency_checker.py",
+    "type": "blob",
+    "sha": "2f3e53528379e07823a3f03ef513813d5ff36f09"
+  },
+  {
+    "path": "quantaalpha/factors/regulator/consistency_prompts.yaml",
+    "type": "blob",
+    "sha": "20f67eafbb601f9cf6bc12d72265993e3b79aa5d"
+  },
+  {
+    "path": "quantaalpha/factors/regulator/factor_regulator.py",
+    "type": "blob",
+    "sha": "527275d701704582fb533081596e3f100706fdae"
+  },
+  {
+    "path": "quantaalpha/factors/runner.py",
+    "type": "blob",
+    "sha": "1b2d76151e07c4f805d6cbbd7c47dd0ad22543f0"
+  },
+  {
+    "path": "quantaalpha/factors/workspace.py",
+    "type": "blob",
+    "sha": "9f5a084de8a0b68bf7a6e337afc54b7a205c6fea"
+  },
+  {
+    "path": "quantaalpha/llm/__init__.py",
+    "type": "blob",
+    "sha": "0ca5f17d6243b8aa4e05697092b722efaf112aaa"
+  },
+  {
+    "path": "quantaalpha/llm/client.py",
+    "type": "blob",
+    "sha": "09de4664ef0a7c0df8b76e33cda6812f2840a2ca"
+  },
+  {
+    "path": "quantaalpha/llm/config.py",
+    "type": "blob",
+    "sha": "a6efd50a84504dc41a0dcb2c5818d4ded81d6d9b"
+  },
+  {
+    "path": "quantaalpha/log/__init__.py",
+    "type": "blob",
+    "sha": "cd79ee8e7f3abe439ca6a1d512bd5d6c6c1eeed3"
+  },
+  {
+    "path": "quantaalpha/log/time.py",
+    "type": "blob",
+    "sha": "906a9e1d58ef1b8dbb2c3472a1e191fafc0f2763"
+  },
+  {
+    "path": "quantaalpha/pipeline/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/pipeline/base.py",
+    "type": "blob",
+    "sha": "ad9f7553804777ee0b82943849015e4447359de6"
+  },
+  {
+    "path": "quantaalpha/pipeline/evolution/__init__.py",
+    "type": "blob",
+    "sha": "1543d9e209b8d8b764830708324b3b2e96c78a83"
+  },
+  {
+    "path": "quantaalpha/pipeline/evolution/controller.py",
+    "type": "blob",
+    "sha": "bf80251087a02e84449a4ac465ac77f145a91d1b"
+  },
+  {
+    "path": "quantaalpha/pipeline/evolution/crossover.py",
+    "type": "blob",
+    "sha": "36497736ca22f5164b8ef5e59eeb435ccdc8162c"
+  },
+  {
+    "path": "quantaalpha/pipeline/evolution/mutation.py",
+    "type": "blob",
+    "sha": "73b0ba690e68d44234c933ebffd05028ce6269f0"
+  },
+  {
+    "path": "quantaalpha/pipeline/evolution/trajectory.py",
+    "type": "blob",
+    "sha": "39df63dba694c10388a5ff8c1271173dafbb6c19"
+  },
+  {
+    "path": "quantaalpha/pipeline/factor_backtest.py",
+    "type": "blob",
+    "sha": "875368adff5ee5040a2d4efc9748ae971fba4e04"
+  },
+  {
+    "path": "quantaalpha/pipeline/factor_from_report.py",
+    "type": "blob",
+    "sha": "b26408090e5c6798fe4b8478489b1b9bab0e721d"
+  },
+  {
+    "path": "quantaalpha/pipeline/factor_mining.py",
+    "type": "blob",
+    "sha": "522c7074b2629b75aa395a5a9e577b78e874bef3"
+  },
+  {
+    "path": "quantaalpha/pipeline/loop.py",
+    "type": "blob",
+    "sha": "5447cdbed57f8498637a231844c250584a07b5b3"
+  },
+  {
+    "path": "quantaalpha/pipeline/planning.py",
+    "type": "blob",
+    "sha": "92357ae8f8f6dc02aba248513777f16a7bd48ed9"
+  },
+  {
+    "path": "quantaalpha/pipeline/prompts/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/pipeline/prompts/evolution_prompts.yaml",
+    "type": "blob",
+    "sha": "bc87a59c5d086875d9067f3a2607fcf6557d22e2"
+  },
+  {
+    "path": "quantaalpha/pipeline/prompts/planning_prompts.yaml",
+    "type": "blob",
+    "sha": "87547b041b15090402f5279a0399a531c46c4af0"
+  },
+  {
+    "path": "quantaalpha/pipeline/settings.py",
+    "type": "blob",
+    "sha": "c6d560afc1e499fd140962c4e6909ff7e1625d2c"
+  },
+  {
+    "path": "quantaalpha/utils/__init__.py",
+    "type": "blob",
+    "sha": "629f97ef5579b506fde7d0762ccd5b027f1214f3"
+  },
+  {
+    "path": "quantaalpha/utils/agent/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/utils/agent/ret.py",
+    "type": "blob",
+    "sha": "ff50e16c10b1e9196371d2a284a2d6d0c878bb84"
+  },
+  {
+    "path": "quantaalpha/utils/agent/tpl.py",
+    "type": "blob",
+    "sha": "8475642a460309d91d4a21391750ef66c1fa1721"
+  },
+  {
+    "path": "quantaalpha/utils/agent/tpl.yaml",
+    "type": "blob",
+    "sha": "2b41013a0c120ae0beb0463c8e7f4ee87660ed95"
+  },
+  {
+    "path": "quantaalpha/utils/document_reader/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/utils/document_reader/document_reader.py",
+    "type": "blob",
+    "sha": "9ec6f1a11ac08fe3297ecf49325d1f3cf7140bca"
+  },
+  {
+    "path": "quantaalpha/utils/env.py",
+    "type": "blob",
+    "sha": "b8930b473bb27d873dd6d5e39fbb34c051169e76"
+  },
+  {
+    "path": "quantaalpha/utils/loader/__init__.py",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "quantaalpha/utils/loader/experiment_loader.py",
+    "type": "blob",
+    "sha": "d6884e1845f7ae958df217dc28764f4b32ba2233"
+  },
+  {
+    "path": "quantaalpha/utils/loader/task_loader.py",
+    "type": "blob",
+    "sha": "c2d7ac7500c92a0c512e6338f202e9303e3839a8"
+  },
+  {
+    "path": "quantaalpha/utils/workflow.py",
+    "type": "blob",
+    "sha": "e9111f0cf8fd96abad96684b2cdb013830f2383c"
+  },
+  {
+    "path": "requirements.txt",
+    "type": "blob",
+    "sha": "cd06cca74f9cc12ef187a3d3899a6ea1c771b5c6"
+  },
+  {
+    "path": "requirements/docs.txt",
+    "type": "blob",
+    "sha": "8092dd68d82da6c0cafcaca95d90efacaf99c35c"
+  },
+  {
+    "path": "requirements/lint.txt",
+    "type": "blob",
+    "sha": "03ed708950608897fa32bf122abe20ef92bd3e70"
+  },
+  {
+    "path": "requirements/package.txt",
+    "type": "blob",
+    "sha": "2ec4324b7e66befc5309caaad8e5b4c82d8f9615"
+  },
+  {
+    "path": "requirements/test.txt",
+    "type": "blob",
+    "sha": "4b4fbc0b866cf3f96fe9103784272fc711f828a3"
+  },
+  {
+    "path": "run.sh",
+    "type": "blob",
+    "sha": "833829aee463d6ce31a6ddd04d4d98f9070c2b1c"
+  }
+]

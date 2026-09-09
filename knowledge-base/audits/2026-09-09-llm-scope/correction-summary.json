@@ -1,0 +1,23 @@
+{
+  "excluded_from_report": [
+    "FUND-120",
+    "FUND-121",
+    "FUND-226",
+    "FUND-318",
+    "FUND-319"
+  ],
+  "restored_company": "工银瑞信",
+  "score_counts": {
+    "1": 0,
+    "2": 2,
+    "3": 17,
+    "4": 2,
+    "5": 0
+  },
+  "source_counts": {
+    "main": 107,
+    "redirect": 4,
+    "supporting": 9
+  },
+  "registered_sources": 120
+}

@@ -8,6 +8,7 @@ effective_or_status: "2019-06-01 (original commencement)"
 accessed: 2026-09-06
 official_url: https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml
 reviewed_by: Codex
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -143,3 +144,6 @@ Article 3 service definition with the actual architecture.
 
 Original consolidated text and cited provisions inspected. Latest-status sweep
 and internal applicability confirmation remain open; human check pending.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。

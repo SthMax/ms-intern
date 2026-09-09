@@ -1,4 +1,7 @@
 ---
+
+> 范围纠正：撤回此前用传统ML专利将资料分数升到4的判断；FundGPT相关资料维持原3分。两项量化专利转辅助，不计LLM案例。
+
 company_id: COMP-013
 evidence_state: verified-primary
 accessed: 2026-09-06

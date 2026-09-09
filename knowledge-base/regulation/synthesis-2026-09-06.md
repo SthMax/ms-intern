@@ -1,5 +1,7 @@
 # Initial Regulatory / MRM Synthesis — 6 September 2026
 
+> 2026-09-09复核更新：请优先阅读[逐条复核结果](review-results-2026-09-09.md)。本页是9月6日研究底稿；新增REG-013–016已补齐网络安全、数据安全、个人信息审计和AI标识。REG-011美国政策有过时引文，EU相关适用日期也已修订，不应沿用旧研究的当前状态描述。
+
 > 本页为研究者分析，不是来源原文或官方翻译。请通过下方 REG 笔记查阅原语言条文和本地原始文件；完整目录见[原始来源档案](../sources/README.md)。
 
 This synthesis organizes inspected provisions under the three assigned themes.
@@ -44,8 +46,11 @@ SR 26-2 replaces SR 11-7; the older letter should not be presented as the curren
 unqualified public US MRM authority.
 [REG-007](REG-007-fed-sr-26-2-replacement.md)
 
-The AMAC explainability paper is industry research and predates both April
-updates. Its foreign-law discussion has not been independently validated here.
+The AMAC explainability paper is industry research. The September 9 citation
+review found that its US discussion uses rescinded EO 14110 and does not report
+the removal of the proposed ten-year state AI moratorium. Its EU discussion also
+needs the subsequent formal amendment and staged application dates. Use the
+dated review results rather than the paper as a current-law summary.
 [REG-011](REG-011-amac-explainability-research.md)
 
 **Research implication:** define which evidence makes a proposed output useful,
@@ -86,8 +91,8 @@ than a blanket exemption from Chinese regulation.
 
 ## Next verification priorities
 
-1. Complete targeted amendment/repeal searches and capture status evidence.
-2. Review the current Cybersecurity Law/Data Security Law and relevant audit,
-   labelling and sector-standard instruments.
-3. Confirm internal MRM coverage for LLMs and the AMAC adoption/filing questions.
-4. Review every material source passage manually before presentation release.
+1. Targeted public-source status checks and core law/audit/labelling review were
+   completed on September 9; see the linked matrix and retrieval record.
+2. Confirm internal MRM coverage, COD facts, data categories and AMAC adoption/filing.
+3. Once the pilot is chosen, inspect the applicable technical standards in detail.
+4. Human-check the material presentation claims and their source passages before release.

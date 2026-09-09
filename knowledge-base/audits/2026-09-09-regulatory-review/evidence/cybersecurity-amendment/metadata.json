@@ -1,0 +1,17 @@
+{
+  "source_id": "cybersecurity-amendment",
+  "title": "cybersecurity-amendment",
+  "url": "https://www.cac.gov.cn/2025-10/29/c_1763461514768457.htm",
+  "retrieved_at": "2026-09-08T17:07:17.617531+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.cac.gov.cn/2025-10/29/c_1763461514768457.htm",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "3316672123bd2208083ae2bde12342c698e34166c164c71ba4b62f01243f7d9e",
+  "byte_count": 23374,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 3432,
+  "extracted_text_sha256": "4606f94224a996040cedbcde178f2b02e3b1fdaafcaee6fd4918e840eb351608"
+}

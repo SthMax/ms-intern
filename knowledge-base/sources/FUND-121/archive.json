@@ -1,0 +1,241 @@
+{
+  "source_id": "FUND-121",
+  "repository": "EFundAI/label-horizon-paradox",
+  "commit": "81c8098acdab2b0008a10f88c7e47321207ad509",
+  "retrieved_at": "2026-09-08T18:00:06.464878+00:00",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "bd3271c26c9070d0e494739dabe74ebd2c0c7ba4",
+      "sha256": "67f92d42729b87eff275a1c2cf983231337e8cf28c1270fbb1923c026a31c1b0",
+      "bytes": 1070,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "2f116c8c884cb04d1914e0e10e09091160ada450",
+      "sha256": "55094299f536ff0770706b7ec807a58be0155f6678bf14faa07ab607b5f6ede0",
+      "bytes": 13186,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/README.md"
+    },
+    {
+      "path": "docs/architecture.md",
+      "git_blob_sha": "af4da349f55f835dd80a9cd2d9e3ab37b94297e3",
+      "sha256": "9329776ae01d2916448e4cc3cc355179b5104a35aff78f8dae00b85abc1ec857",
+      "bytes": 5656,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/docs/architecture.md"
+    },
+    {
+      "path": "docs/backtest.md",
+      "git_blob_sha": "47cba0bc688b1941f126c754b1811842f9c7657a",
+      "sha256": "99d64a2d9c63a10b244ff593d1682de6de0134f815731bc96e68a8b49a2e2142",
+      "bytes": 14091,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/docs/backtest.md"
+    },
+    {
+      "path": "docs/blo.md",
+      "git_blob_sha": "b257b1d2f4998005c9d503f890dafc6d7421a742",
+      "sha256": "3f91ccbd0f78d2bdd8d0ef320ed09cda74857a1680c77ea460f91f11c31bd388",
+      "bytes": 10420,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/docs/blo.md"
+    },
+    {
+      "path": "docs/data.md",
+      "git_blob_sha": "8dfc09f2f6eebbda2e1d7f006b7247c5ab2c56ac",
+      "sha256": "151a8e13d883ae6723c94de2c95f38856805c65b36057ab08b3cac28bbfea0e7",
+      "bytes": 6386,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/docs/data.md"
+    },
+    {
+      "path": "docs/search.md",
+      "git_blob_sha": "6dd543de46f7ad4ed08e48b7b6e992c811d5d778",
+      "sha256": "1c2e7115037c95222ab275261e838f2af3754ebe9ca3d1de06030da4bd4a380c",
+      "bytes": 6498,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/docs/search.md"
+    },
+    {
+      "path": "engine/__init__.py",
+      "git_blob_sha": "e45c813e0f3de4357140411c913b6806ed23d995",
+      "sha256": "5e3484d70d75327cea9d55ab9f03b2a6dd1126e2dc04a9de92d798922226076b",
+      "bytes": 710,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/__init__.py"
+    },
+    {
+      "path": "engine/base/__init__.py",
+      "git_blob_sha": "c07fb0672fa7363068c68656f7f1f6008f236640",
+      "sha256": "9b66d0dfcc82fb000f656acd9ae150f13308e85eed817d2422db14a3538cb8fa",
+      "bytes": 516,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/base/__init__.py"
+    },
+    {
+      "path": "engine/base/account.py",
+      "git_blob_sha": "278b96db88edde569dffc7592fe1f634553cd5ec",
+      "sha256": "5f212db707d8564edc7cffb1de3e4938523d871d514d635fc95fcd800bd60c39",
+      "bytes": 12073,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/base/account.py"
+    },
+    {
+      "path": "engine/base/constraints.py",
+      "git_blob_sha": "fca2e260bf7c38b27a10cca090e9938403ccdf72",
+      "sha256": "3d2c5191a0e22a7cd0639b27bb3a32d2ef00db08e0a4cf3ba0259fc79e45d9ef",
+      "bytes": 5885,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/base/constraints.py"
+    },
+    {
+      "path": "engine/base/costs.py",
+      "git_blob_sha": "648b41fa2850237420557e3160e6a97b9d33e89b",
+      "sha256": "6c290f4df35f339d011e67366db5df2c2fd957249d65cd5a9818d517e1b53215",
+      "bytes": 2106,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/base/costs.py"
+    },
+    {
+      "path": "engine/base/execution.py",
+      "git_blob_sha": "13c3ada25d10c8ef9fc3ad907ee42732fe2efe94",
+      "sha256": "c235b2f715cc9ecd498d27cfd38f94e6c4168ebdd6e64b3628fccca3a400e17e",
+      "bytes": 3512,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/base/execution.py"
+    },
+    {
+      "path": "engine/base/timeline.py",
+      "git_blob_sha": "86db1feff898ffebd977a5f86f795379addba518",
+      "sha256": "9f419cf2c85b6b1c382f8b4098f7cd651d887c8c712c323481a456df5054da32",
+      "bytes": 2355,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/base/timeline.py"
+    },
+    {
+      "path": "engine/ladder_backtest.py",
+      "git_blob_sha": "4e77a3e55453ac8ff1f4336946de5b1a712973db",
+      "sha256": "a1223b82287931018c8ca21ca1c7594e2112c11bde637876a5c41683df57120e",
+      "bytes": 6304,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/ladder_backtest.py"
+    },
+    {
+      "path": "engine/optim_backtest.py",
+      "git_blob_sha": "8438bf18c8e9a21f960e3b66566f927e573586cd",
+      "sha256": "62115a30d4cb8b742db71a5c2d8d2965045da6e5e699507c5d74451c1b6d775e",
+      "bytes": 12149,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/optim_backtest.py"
+    },
+    {
+      "path": "engine/optimizer.py",
+      "git_blob_sha": "f60dd253d2e2405e64277b0f791c3d231cd948c9",
+      "sha256": "1db53ddbc76855feda6dc9b270e8e828ee426193a19ef9158bb133802d2d75c7",
+      "bytes": 6826,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/engine/optimizer.py"
+    },
+    {
+      "path": "factors_calculate/__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/factors_calculate/__init__.py"
+    },
+    {
+      "path": "factors_calculate/alpha158.py",
+      "git_blob_sha": "850a34e18d348b573d600e7ce47a2d3361768e7c",
+      "sha256": "2d852c2cf4e76e47040a01fe733aad4871473549f11a0a6f525ad2c8ed855670",
+      "bytes": 1916,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/factors_calculate/alpha158.py"
+    },
+    {
+      "path": "factors_calculate/alpha158_db.py",
+      "git_blob_sha": "dec3cd05a4320fb2034391048fe741eff88a6c42",
+      "sha256": "d144f0126a60f53f1b7b02af5f4fdbba5cbad65a22f4c45ef95f01593b9e6791",
+      "bytes": 19530,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/factors_calculate/alpha158_db.py"
+    },
+    {
+      "path": "performance/__init__.py",
+      "git_blob_sha": "8452831017caee711d40ba1634da5c698a97a5b1",
+      "sha256": "a90f09c837672209a349a82b10503a55cbe04ac22eb3151a90975725775f378f",
+      "bytes": 83,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/performance/__init__.py"
+    },
+    {
+      "path": "performance/metrics.py",
+      "git_blob_sha": "d3951bff88e1471c30e0ef6db087fa2588e8c377",
+      "sha256": "33ff923b8f9f0a1bd95da236ff84151e70542b1cb598a709c0987a61eff2cf3d",
+      "bytes": 3848,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/performance/metrics.py"
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha": "9242427554c115efa1073416f9af15db18bebf2c",
+      "sha256": "5e1be6891019fe344831823f72d15bb111b90c63e173f9707b87a51b71b05120",
+      "bytes": 194,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/requirements.txt"
+    },
+    {
+      "path": "scripts/build_backtest_data.py",
+      "git_blob_sha": "c5f7b2dfdf8f66389ef19995321c464e358a621f",
+      "sha256": "28dda6ce8ae2d609115e205c575698053e0e1290c609cd0123aa19877372aad3",
+      "bytes": 7059,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/scripts/build_backtest_data.py"
+    },
+    {
+      "path": "scripts/build_factors.py",
+      "git_blob_sha": "f39d6872892055125d5fb54954c0a3aed969f4a6",
+      "sha256": "e17af7a2db865b55609183cbea2f3b9f3d15ac4503c0e67f8df28bd080ca417e",
+      "bytes": 5338,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/scripts/build_factors.py"
+    },
+    {
+      "path": "scripts/cache_factors_processed.py",
+      "git_blob_sha": "bfd9f138ec52f9d06414ef7103734a8fe3f702f9",
+      "sha256": "b634c140f58eccd8e1c19bc8eec253c97358332f97f6b68d1cad6a6ce24e9f80",
+      "bytes": 6368,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/scripts/cache_factors_processed.py"
+    },
+    {
+      "path": "scripts/run_backtest.py",
+      "git_blob_sha": "0a891d7f13943fdb6e075febecbc44c55a9ba3b0",
+      "sha256": "4cad3069de858278ebc8b1b63e89af9cf8fc7cdb31535689e61704e2bbb00d5c",
+      "bytes": 12963,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/scripts/run_backtest.py"
+    },
+    {
+      "path": "scripts/run_blo.py",
+      "git_blob_sha": "535bef40cb9282588d1b4f08f25ec9ee0dbc7320",
+      "sha256": "4df8be2a386d633d259bf69376a3c2f8eea9fd44857daa9a971222d46fd8c374",
+      "bytes": 14531,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/scripts/run_blo.py"
+    },
+    {
+      "path": "scripts/run_search.py",
+      "git_blob_sha": "40829bf3d93f120615c2406c3d3cc162c214308a",
+      "sha256": "e09755386a943519f4c0bac90278e4f682c17b4999cab810d1253bbaa979f77b",
+      "bytes": 7580,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/scripts/run_search.py"
+    },
+    {
+      "path": "src/blo_trainer.py",
+      "git_blob_sha": "817b251d980d8989d84799b46b7a094e61c0a0ac",
+      "sha256": "677727e712daef34daca13afbd0f5fba7aea48b8013cbda7d6734471561c10cb",
+      "bytes": 12508,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/src/blo_trainer.py"
+    },
+    {
+      "path": "src/config.py",
+      "git_blob_sha": "fe50dcdaba5d059520383711873f3d8c5482bfe2",
+      "sha256": "23e42126f1ca6835bd39090b6f790112c1606ae77deb219d807d46b916200bb2",
+      "bytes": 1835,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/src/config.py"
+    },
+    {
+      "path": "src/data_utils.py",
+      "git_blob_sha": "0a26c8742e1f3b632ca73a4d269115ba388c9f35",
+      "sha256": "6cf71b5a6569e1e8b084d53dcffbf1efd9763f1bc2cc193b92ac7ad317089184",
+      "bytes": 12243,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/src/data_utils.py"
+    },
+    {
+      "path": "src/model.py",
+      "git_blob_sha": "f9d73b02055cfa4b5b244b4ec0cc49e67dc84ac9",
+      "sha256": "8e43147fcbff366b16b2300ec5dd312fb4c4f621bd97419aa601f333c86dc77f",
+      "bytes": 5834,
+      "url": "https://github.com/EFundAI/label-horizon-paradox/blob/81c8098acdab2b0008a10f88c7e47321207ad509/src/model.py"
+    }
+  ],
+  "method": "Public Git repository, no checkout; selected bytes from git show. GitHub REST API returned rate-limit response.",
+  "selection": "Selected implementation, docs and license, not full mirror; no market data/credentials or runtime execution."
+}

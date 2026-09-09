@@ -1,0 +1,18 @@
+{
+  "source_id": "amac-standard-current",
+  "title": "amac-standard-current",
+  "url": "https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf",
+  "retrieved_at": "2026-09-08T17:07:17.775735+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf",
+  "content_type": "application/pdf",
+  "sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+  "byte_count": 1762265,
+  "raw_file": "source.pdf",
+  "page_count": 30,
+  "text_file": "original.md",
+  "extraction_method": "pypdf page-by-page; no OCR or translation",
+  "extracted_characters": 26796,
+  "extracted_text_sha256": "f42211bc569f90b9090325295eb474800e27b933ecb8e33d0032c31262e1208f"
+}

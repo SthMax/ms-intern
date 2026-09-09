@@ -1,0 +1,78 @@
+{
+  "repository": "AlphaFin-proj/AlphaFin",
+  "commit": "068d93eade3957f09279f88c91e743b3ad7a1c24",
+  "retrieved_at": "2026-09-08T19:54:33.990532+00:00",
+  "files": [
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "git_blob_sha": "24ddefe3f2ea32026c22b913ae8e6f74777eb2e5",
+      "sha256": "d982b57e7612ea84a4c2f97035b05a144ab7cfc90aafa1434337b91b50ab8f54",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "git_blob_sha": "7065655cdb0a44086b9f48c57171ef41ea3e9827",
+      "sha256": "0bd59da2ea31f884843c8718d5adf7f16111571031175c9cb111cc9455efb739",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/README.md"
+    },
+    {
+      "path": "requirements.txt",
+      "type": "blob",
+      "git_blob_sha": "e8ec4673e9f54ada85c3688c063e0076d57eefc5",
+      "sha256": "7b522f337e2ea4e8a93c39a32fa44dc77e52ed528340754828827f362fdba420",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/requirements.txt"
+    },
+    {
+      "path": "scripts/stage1_trend_prediction.sh",
+      "type": "blob",
+      "git_blob_sha": "4ebc96fe4f5c527feaa637c826e9f29ea4a610b1",
+      "sha256": "efbc9355e5cbb9a3b0cd9ddf25ce439ba0c3531a93cc9cb58ab08d7f6d00d9ee",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/scripts/stage1_trend_prediction.sh"
+    },
+    {
+      "path": "scripts/stage2_financial_qa.sh",
+      "type": "blob",
+      "git_blob_sha": "52548756ac50260c19b83ccf097b2e5269650ac1",
+      "sha256": "f13c95ee8c139216173bd13b7faa85f06db8887edbf0b59d0240bb565611f668",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/scripts/stage2_financial_qa.sh"
+    },
+    {
+      "path": "src/stage1_trend_prediction/dataprocess_stockgpt.py",
+      "type": "blob",
+      "git_blob_sha": "ef90ae7321027d9e848bdf2ceb89b7d75ec74ec8",
+      "sha256": "646ac9cd79f4427ddb3d1eaa2ae1ec0c70c33d67cf9c80608c91305388113048",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/src/stage1_trend_prediction/dataprocess_stockgpt.py"
+    },
+    {
+      "path": "src/stage1_trend_prediction/stockgpt_inf.py",
+      "type": "blob",
+      "git_blob_sha": "6fb2c976841838537c96160e49e7faba6da1d39e",
+      "sha256": "5bd1e6395d16da42686bead83235e5ace1d6fde89515fa782a03d23895de719f",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/src/stage1_trend_prediction/stockgpt_inf.py"
+    },
+    {
+      "path": "src/stage1_trend_prediction/test_strategy.py",
+      "type": "blob",
+      "git_blob_sha": "3eb8be133b138f42602ad7ca4cc11f5be5014733",
+      "sha256": "b81a07f25f2fbda2688996fc7d57f35b530d202e8f8d434a5f9b11c8ec395486",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/src/stage1_trend_prediction/test_strategy.py"
+    },
+    {
+      "path": "src/stage1_trend_prediction/utils.py",
+      "type": "blob",
+      "git_blob_sha": "45ddc10e483e908c88e254f4be97b86c79839fbb",
+      "sha256": "320fdad2596d08cb5e74886f54b9665a5b77aa0735343c3d4d1448a3b01e3272",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/src/stage1_trend_prediction/utils.py"
+    },
+    {
+      "path": "src/stage2_financial_qa/webui/run.py",
+      "type": "blob",
+      "git_blob_sha": "a72d5ad4d30f88176aab7d455a848b331dbe2166",
+      "sha256": "de018c531c77838dd9a0c9117d4a2dddd7ccded50c1de593e43c053cf27aaad7",
+      "url": "https://github.com/AlphaFin-proj/AlphaFin/blob/068d93eade3957f09279f88c91e743b3ad7a1c24/src/stage2_financial_qa/webui/run.py"
+    }
+  ],
+  "limits": "Selected docs/source/notebooks only; no model weights, market data, prebuilt pickle/FAISS indices, installs or execution."
+}

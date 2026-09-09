@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-09",
+  "passed": true,
+  "checks": [
+    {
+      "name": "source identity and uniqueness",
+      "passed": true,
+      "detail": {
+        "index": 115,
+        "register": 115
+      }
+    },
+    {
+      "name": "counts",
+      "passed": true,
+      "detail": {
+        "roles": {
+          "main": 107,
+          "redirect": 4,
+          "supporting": 4
+        },
+        "evidence_states": {
+          "verified-primary": 82,
+          "candidate": 31,
+          "unresolved": 2
+        }
+      }
+    },
+    {
+      "name": "indexed paths",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "previous source bytes unchanged",
+      "passed": true,
+      "detail": {
+        "files": 324,
+        "changes": []
+      }
+    },
+    {
+      "name": "selected repository bytes and Git blobs",
+      "passed": true,
+      "detail": {
+        "files": 77,
+        "failures": []
+      }
+    },
+    {
+      "name": "Python syntax only",
+      "passed": true,
+      "detail": {
+        "files": 51,
+        "errors": []
+      }
+    },
+    {
+      "name": "new source metadata hashes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "company scores unchanged",
+      "passed": true,
+      "detail": {
+        "1": 0,
+        "2": 2,
+        "3": 17,
+        "4": 2,
+        "5": 0
+      }
+    },
+    {
+      "name": "research/integration local links",
+      "passed": true,
+      "detail": {
+        "checked": 742,
+        "missing": []
+      }
+    },
+    {
+      "name": "tracked diff whitespace",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Archival, static syntax and integration validation; not a runtime backtest, financial-data-rights approval or independently reproduced performance."
+}

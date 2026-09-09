@@ -1,6 +1,16 @@
 # Knowledge Base
 
-> 2026-09-08 阅读集已清理：[默认阅读索引](reading-index.json)列出93个主阅读记录；4个辅助记录见[辅助目录](reference/README.md)，4个旧来源入口仅保留来源链。全文检索优先按索引的reading_path执行，避免重新摄入原始网页侧栏或历史审计备份。详见[清理前后审查](audits/2026-09-08-relevance-cleanup/README.md)。
+> 当前范围：**2026年基金公司LLM量化三方向**，API方案可用，本地部署加分；部署层与Agent层分开评估。见[最新案例矩阵](companies/quant-research-2026-09-09.md)。
+
+> 本地LLM目标的研究结果：[任务、代码、部署依赖与评价方案](models/local-llm-poc-evidence-2026-09-09.md)。尚未进入实际GPU部署。
+
+> 当前报告聚焦**LLM及LLM参与的量化流程**，见[范围纠正与入选表](companies/llm-report-scope-2026-09-09.md)。历史广义AI分数不可直接作为LLM排名。
+
+> 新增[非易方达案例与报告平衡建议](companies/case-diversity-2026-09-09.md)：已考虑mentor和量化部门读者，报告正文尚未开始撰写。
+
+> 新增[量化重点研究](companies/quant-research-2026-09-09.md)：标签期限优化、自动因子研发、新闻事件轮动及组合约束。
+
+> 2026-09-09 已整合[重点公司技术研究](companies/focused-research-2026-09-09.md)与[监管／研究复核](regulation/review-results-2026-09-09.md)：[默认阅读索引](reading-index.json)列出112个主阅读记录、9个辅助记录、4个来源链索引。全文检索按reading_path执行；原先清理范围与结果见[清理审查](audits/2026-09-08-relevance-cleanup/README.md)。
 
 > 2026-09-08 微信入库完成：4篇相关研究文章现均已入库，华泰柏瑞由用户保存的5页PDF补齐；3条无关推荐继续排除。见[文章目录](sources/wechat-articles/README.md)及[华泰柏瑞核对报告](audits/2026-09-08-huatai-pdf/README.md)。
 

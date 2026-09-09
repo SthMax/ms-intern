@@ -1,4 +1,7 @@
 ---
+
+> 范围纠正：久期回归FUND-226为非LLM辅助；规模异动归因FUND-227确有LLM参与，可继续补核，未升为已确认4分。
+
 company_id: COMP-009
 evidence_state: verified-primary
 accessed: 2026-09-06

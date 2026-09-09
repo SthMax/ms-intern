@@ -9,6 +9,7 @@ accessed: 2026-09-06
 official_url: https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf
 retrieved_pdf_sha256: aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a
 reviewed_by: Codex
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -257,3 +258,8 @@ PDF downloaded from AMAC and relevant sections extracted; printed page 12
 (PDF page 18) also visually checked. PDF pages = printed pages + 6 for numbered
 body pages. Cover/announcement use 0004; running headers use 004. Preserve the
 official cover identifier. Human check and adoption-status confirmation pending.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。
+
+本次重取PDF与库内原件SHA-256完全一致。附录B为资料性，B.2在物理PDF第26–27页，Prompt示例在第27页页首；可作为通用PoC参考，不能归成某基金公司已披露工作流。备案条款9.1.1(d)和团标实际采用仍需内部确认。

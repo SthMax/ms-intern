@@ -1,0 +1,335 @@
+{
+  "sha": "81c8098acdab2b0008a10f88c7e47321207ad509",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87f048aa53b2234d2b88583ea016ee115a7f8759",
+      "size": 384
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd3271c26c9070d0e494739dabe74ebd2c0c7ba4",
+      "size": 1070
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f116c8c884cb04d1914e0e10e09091160ada450",
+      "size": 13186
+    },
+    {
+      "path": "data/a_share_data/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "data/a_share_data_processed/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "data_fetch/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "data_fetch/cache.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3c8cfd3583cbb6f28bfbc44659c176760cea20a",
+      "size": 1903
+    },
+    {
+      "path": "data_fetch/calendar_db.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39e48fd04da97c9f0e91dd3df6e9824f16845c12",
+      "size": 3418
+    },
+    {
+      "path": "data_fetch/connection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "431f01cbe193abec851b0f753a22f39ac3dbf7d9",
+      "size": 2892
+    },
+    {
+      "path": "data_fetch/index_members_db.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "541d4721df34be702ea9f42cbd8f47581d9abba4",
+      "size": 4185
+    },
+    {
+      "path": "data_fetch/marketdata_db.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33338013594e6c1da886b0fa7f5538b1e24a9e03",
+      "size": 14127
+    },
+    {
+      "path": "docs/architecture.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af4da349f55f835dd80a9cd2d9e3ab37b94297e3",
+      "size": 5656
+    },
+    {
+      "path": "docs/backtest.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47cba0bc688b1941f126c754b1811842f9c7657a",
+      "size": 14091
+    },
+    {
+      "path": "docs/blo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b257b1d2f4998005c9d503f890dafc6d7421a742",
+      "size": 10420
+    },
+    {
+      "path": "docs/data.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dfc09f2f6eebbda2e1d7f006b7247c5ab2c56ac",
+      "size": 6386
+    },
+    {
+      "path": "docs/search.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dd543de46f7ad4ed08e48b7b6e992c811d5d778",
+      "size": 6498
+    },
+    {
+      "path": "engine/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e45c813e0f3de4357140411c913b6806ed23d995",
+      "size": 710
+    },
+    {
+      "path": "engine/base/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c07fb0672fa7363068c68656f7f1f6008f236640",
+      "size": 516
+    },
+    {
+      "path": "engine/base/account.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "278b96db88edde569dffc7592fe1f634553cd5ec",
+      "size": 12073
+    },
+    {
+      "path": "engine/base/constraints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fca2e260bf7c38b27a10cca090e9938403ccdf72",
+      "size": 5885
+    },
+    {
+      "path": "engine/base/costs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "648b41fa2850237420557e3160e6a97b9d33e89b",
+      "size": 2106
+    },
+    {
+      "path": "engine/base/execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13c3ada25d10c8ef9fc3ad907ee42732fe2efe94",
+      "size": 3512
+    },
+    {
+      "path": "engine/base/timeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86db1feff898ffebd977a5f86f795379addba518",
+      "size": 2355
+    },
+    {
+      "path": "engine/ladder_backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e77a3e55453ac8ff1f4336946de5b1a712973db",
+      "size": 6304
+    },
+    {
+      "path": "engine/optim_backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8438bf18c8e9a21f960e3b66566f927e573586cd",
+      "size": 12149
+    },
+    {
+      "path": "engine/optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f60dd253d2e2405e64277b0f791c3d231cd948c9",
+      "size": 6826
+    },
+    {
+      "path": "factors_calculate/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "factors_calculate/alpha158.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "850a34e18d348b573d600e7ce47a2d3361768e7c",
+      "size": 1916
+    },
+    {
+      "path": "factors_calculate/alpha158_db.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dec3cd05a4320fb2034391048fe741eff88a6c42",
+      "size": 19530
+    },
+    {
+      "path": "performance/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8452831017caee711d40ba1634da5c698a97a5b1",
+      "size": 83
+    },
+    {
+      "path": "performance/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3951bff88e1471c30e0ef6db087fa2588e8c377",
+      "size": 3848
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9242427554c115efa1073416f9af15db18bebf2c",
+      "size": 194
+    },
+    {
+      "path": "results/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "results/alphas/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "results/backtest/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "results/blo/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "results/models/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "scripts/build_backtest_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5f7b2dfdf8f66389ef19995321c464e358a621f",
+      "size": 7059
+    },
+    {
+      "path": "scripts/build_factors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f39d6872892055125d5fb54954c0a3aed969f4a6",
+      "size": 5338
+    },
+    {
+      "path": "scripts/cache_factors_processed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfd9f138ec52f9d06414ef7103734a8fe3f702f9",
+      "size": 6368
+    },
+    {
+      "path": "scripts/run_backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a891d7f13943fdb6e075febecbc44c55a9ba3b0",
+      "size": 12963
+    },
+    {
+      "path": "scripts/run_blo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "535bef40cb9282588d1b4f08f25ec9ee0dbc7320",
+      "size": 14531
+    },
+    {
+      "path": "scripts/run_search.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40829bf3d93f120615c2406c3d3cc162c214308a",
+      "size": 7580
+    },
+    {
+      "path": "src/blo_trainer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "817b251d980d8989d84799b46b7a094e61c0a0ac",
+      "size": 12508
+    },
+    {
+      "path": "src/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe50dcdaba5d059520383711873f3d8c5482bfe2",
+      "size": 1835
+    },
+    {
+      "path": "src/data_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a26c8742e1f3b632ca73a4d269115ba388c9f35",
+      "size": 12243
+    },
+    {
+      "path": "src/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9d73b02055cfa4b5b244b4ec0cc49e67dc84ac9",
+      "size": 5834
+    }
+  ],
+  "truncated": false
+}

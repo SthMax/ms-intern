@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-09",
+  "passed": true,
+  "checks": [
+    {
+      "name": "register/index identities",
+      "passed": true,
+      "detail": {
+        "index": 112,
+        "register": 112
+      }
+    },
+    {
+      "name": "roles",
+      "passed": true,
+      "detail": {
+        "main": 104,
+        "redirect": 4,
+        "supporting": 4
+      }
+    },
+    {
+      "name": "all indexed files exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "only E Fund score record changes",
+      "passed": true,
+      "detail": [
+        "易方达"
+      ]
+    },
+    {
+      "name": "score evidence hashes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "historical raw/extracted/metadata byte preservation",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "downloaded repository files match hashes/tree",
+      "passed": true,
+      "detail": {
+        "files": 105,
+        "failures": []
+      }
+    },
+    {
+      "name": "Python AST syntax (not runtime)",
+      "passed": true,
+      "detail": {
+        "files": 74,
+        "failures": []
+      }
+    },
+    {
+      "name": "new company source metadata hashes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "current research/integration local links",
+      "passed": true,
+      "detail": {
+        "checked": 800,
+        "missing": []
+      }
+    },
+    {
+      "name": "tracked diff whitespace",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "limits": "File/syntax/integration checks; not a full runtime reproduction, legal approval, or independently verified investment performance."
+}

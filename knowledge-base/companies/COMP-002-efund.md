@@ -1,4 +1,10 @@
 ---
+
+> 用户明确LLM范围后：Label Horizon论文/代码只作传统ML背景，不再作为报告量化主案例；保留MENTOR及LLM因子研究方向。
+
+> 2026-09-09量化补查：新增[Label Horizon论文](../sources/FUND-120/original.md)、[官方研究demo](../sources/FUND-121/original.md)、[Alpha mining综述](../sources/FUND-122/original.md)。[量化审查](quant-research-2026-09-09.md)区分原论文、日频demo和实际回测输出，整体评分暂维持4。
+
+> 2026-09-09新增技术证据：[MENTOR论文](../sources/FUND-113/original.md)、[Prompt补充材料](../sources/FUND-114/original.md)、[官方客户端及研究代码审查](focused-research-2026-09-09.md)。资料评分更新为4；公开研究原型、外部API客户端与下文内部生产平台分开认定。
 company_id: COMP-002
 evidence_state: verified-primary
 accessed: 2026-09-06

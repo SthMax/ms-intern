@@ -1,0 +1,22 @@
+{
+  "source_id": "FUND-324",
+  "title": "Anything Can Be Language Now: My Thoughts on the Future of Features Research",
+  "issuer": "Two Sigma; Ben Wellington, Head of Complex Feature Engines",
+  "source_type": "Original asset-manager practitioner article",
+  "published": "2026-07-09",
+  "url": "https://www.twosigma.com/articles/anything-can-be-language-now-my-thoughts-on-the-future-of-features-research/",
+  "retrieved_at": "2026-09-08T20:16:38.179368+00:00",
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "sha256": "805f0fcc89a0700d91b3889e7440ad6d30ecd55808fc7598add2b307c0497854",
+  "reading_sha256": "126b3fd79f126ceaf0ff7999b4b4bf5355a5836cdca54ddad586aa1598538238",
+  "text_language": "English",
+  "text_kind": "article_body_extraction",
+  "collection_role": "main",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "LLM-generated text as feature research input and feature discovery process; no complete prompts/code/evaluation. Background perspective, not a reproducible quant strategy.",
+  "region_role": "Overseas comparison",
+  "report_year_eligibility": "2026 publication verified; project origin/performance sample dates separate",
+  "reproduction_executed": false
+}

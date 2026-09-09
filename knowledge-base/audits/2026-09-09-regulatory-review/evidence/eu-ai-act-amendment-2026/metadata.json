@@ -1,0 +1,17 @@
+{
+  "source_id": "eu-ai-act-amendment-2026",
+  "title": "eu-ai-act-amendment-2026",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32026R1744",
+  "retrieved_at": "2026-09-08T17:11:29.616298+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32026R1744",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "1e154837cebbd2edea50de140f22bc58a2ff53283816ee4485cc4416c6127a64",
+  "byte_count": 609346,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 156076,
+  "extracted_text_sha256": "7db686641cb513e5de72dbc269d951de38944fef3fd1c123b38f4611d7bc9c08"
+}

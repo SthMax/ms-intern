@@ -1,5 +1,7 @@
 # Local GPU Proof-of-Concept Plan
 
+> 2026-09-09新增[本地LLM任务与可复现证据](local-llm-poc-evidence-2026-09-09.md)：用于Phase 2选题，不表示已经部署或测量。用户强调先在本地运行LLM，再利用其能力完成实际任务。
+
 **Phase 2 — Weeks 3–5.** Required by [the final project plan](../../PROJECT_PLAN.md).
 Status: plan template; no workstation, deployment, or measurements recorded.
 

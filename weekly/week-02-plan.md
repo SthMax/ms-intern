@@ -98,11 +98,11 @@ regulatory instrument or legal requirement has already been verified.
 |---|---|---|
 | Minimum company count | Still missing in final brief | Collect and verify candidates; report actual count; seek mentor number without inventing it |
 | “Top tier” / asset-size measure | User requested size-first research; working cohort is reported top-20 non-money public AUM at 2026 Q2, ETF feeders excluded | Preserve secondary ranking provenance and separate official company AUM; cohort choice is not the mentor's missing minimum |
-| AI versus LLM scope | Brief explicitly uses AI/LLM | Include concrete initiatives in either category and label the technology class |
+| AI versus LLM scope | User now prioritizes 2026 fund-manager LLM cases in factor generation/iteration, text-derived quant signals and research agents calling data/code/backtests | Local deployment is a preference, not a case prerequisite; API-based frameworks qualify. Keep model serving separate from agent/framework assessment; no traditional-ML substitution or old-model tutorial expansion |
 | MRM meaning | Confirmed: model risk management | Research relevant sources; identify applicable internal document/owner separately |
 | COD meaning | Confirmed: infrastructure used in MSIM | Carry actual hardware/network/security questions into Phase 2 |
 | Internal policy availability | Not supplied in repository | Continue public-source review and list internal applicability questions without reproducing restricted text |
-| Presentation time/language/format | Not supplied | Prepare an adjustable outline and English working narrative with exact original Chinese source titles |
+| Presentation audience/time/language/format | Mentor and quant-department colleagues confirmed; time/language/format not yet specified | Prioritize technical workflow, evidence limits and implications for a decoupled local-LLM feasibility study |
 | Research cut-off | Working proposal: 10 Sep, 17:00 | Log source dates and any subsequent material corrections |
 | Model language proficiency and “fund outcomes” | Wording needs later operational detail | Carry to Phases 2/3; neither prevents Phase 1 research |
 

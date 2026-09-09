@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 听云前端监控（编译时由 vite tingyun-inject 插件注入，配置见 scripts/tingyun-snippet.html） -->
+  <!-- 听云前端监控（编译时由 vite tingyun-inject 插件注入，请勿在各 entry html 中重复编写） -->
+<!-- 运行时环境判断（与 src/views/aiSkills/Index.vue 保持一致）：isDev 由编译期注入，isTest 按域名判断，isProd = !isDev && !isTest -->
+<script type="text/javascript" charset="utf-8" src="./tingyun.js"></script>
+<script type="text/javascript" charset="utf-8">
+  !(function () {
+    // isDev 由 vite tingyun-inject 插件在编译时替换为实际布尔值（dev=true, build=false），等价于 import.meta.env.DEV
+    var isDev = false;
+    var isTest = location.hostname.includes('etf-net-sc2');
+    var isProd = !isDev && !isTest;
+
+    let config = {}
+    if (isProd) {
+      config = {
+        dsn: '4d86e7529a0f4220ac367ba86dc05dd1|pedlnAWR7Sg|XQt5dROCrDU@eapm.efunds.com.cn:8588',
+        domain: 'eapm.efunds.com.cn:8588',
+        token: '4d86e7529a0f4220ac367ba86dc05dd1',
+        key: 'pedlnAWR7Sg',
+        id: 'XQt5dROCrDU',
+        common : {
+          "protocolDomainConfig" : {
+            "http" : "https://eapm.efunds.com.cn:8588",
+            "https" : "https://eapm.efunds.com.cn:8588",
+            "other" : "https://eapm.efunds.com.cn:8588"
+          }
+        }
+      }
+    } else {
+      config = {
+        dsn: '147077fa1ef7424aa695039d45057b9b|C1B2rcnhXuE|L9B90BQDUJQ@10.97.62.49:8588',
+        domain: '10.97.62.49:8588',
+        token: '147077fa1ef7424aa695039d45057b9b',
+        key: 'C1B2rcnhXuE',
+        id: 'L9B90BQDUJQ',
+        common : {
+          "protocolDomainConfig" : {
+            "http" : "https://10.97.62.49:20443",
+            "https" : "https://10.97.62.49:20443",
+            "other" : "https://10.97.62.49:20443" }
+        }
+      }
+    }
+    window.TINGYUN &&
+    window.TINGYUN.init &&
+    window.TINGYUN.init({
+      ...config,
+      plugins: ['TingyunPluginEnc'],
+      "breadcrumbs": {
+        "consoleEnabled": false   // 关闭 console 劫持
+      },
+      ajax: { recordAll: { urlParams: true, reqHeaders: true, reqBody: true, resHeaders: true, resBody: true } },
+      "operation": { "rageClickEnabled": false },
+      requestTracing: { propagators: ['tingyun'] },
+      replay: { sampleRate: 1.0 },
+      enc: {
+        enabled: true,
+        mode: 'gm',
+        pubKey:
+          '04F7700136569F4439EF802B1CE2C1A636EE84AE5B09B784C66BB97837E2B34AB3EF029D9A1CD96C1780D1976B9CB4C4C5A6C190B1DA70E9D2C0A28F455BE3E87B',
+      },
+    });
+  })(); /*TY_AGENT_END*/
+</script>
+  <title>ETF.com.cn</title>
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+  </style>
+  <script type="module" crossorigin src="./js/index-83f7d0761788761281765.js"></script>
+  <link rel="modulepreload" crossorigin href="./js/setRem-4e7f11541788761281765.js">
+  <link rel="modulepreload" crossorigin href="./js/dayjs.min-326298bd1788761281765.js">
+  <link rel="stylesheet" href="./css/setRem-1323effe.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  
+  <script type="text/javascript" charset="utf-8" src="https://cdn.efunds.com.cn/etf-net-web/js/sensorsdata.min.js"></script>
+  <script type="text/javascript" charset='UTF-8' src="https://cdn.efunds.com.cn/etf-net-web/js/shencestat.js"></script>
+</body>
+
+</html>

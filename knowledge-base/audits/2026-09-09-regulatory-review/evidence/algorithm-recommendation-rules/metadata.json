@@ -1,0 +1,17 @@
+{
+  "source_id": "algorithm-recommendation-rules",
+  "title": "algorithm-recommendation-rules",
+  "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+  "retrieved_at": "2026-09-08T17:07:20.277983+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "89aa514b53377b1cda3742f74addddbbc9f44bb2927c9eaf65793f55ce19eda9",
+  "byte_count": 31231,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 4961,
+  "extracted_text_sha256": "be01008a4e8ab95cdc6c75dcab8195808e9290ec5e4a21ad769086ae95636a69"
+}

@@ -9,6 +9,7 @@ accessed: 2026-09-06
 official_url: https://www.csrc.gov.cn/csrc/c101953/c7202800/7202800/files/%E9%99%84%E4%BB%B61%EF%BC%9A%E8%AF%81%E5%88%B8%E6%9C%9F%E8%B4%A7%E4%B8%9A%E7%BD%91%E7%BB%9C%E5%92%8C%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf
 reviewed_by: Codex
 retrieved_pdf_sha256: 7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -161,3 +162,8 @@ security boundary.
 Official order and attached PDF retrieved. Listed provisions inspected; the
 22-page PDF uses matching printed/PDF page numbers. Current-status sweep,
 detailed entity applicability, and human check remain open.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。
+
+证监会法规库本次明确显示令218现行有效；其第75条废止旧《证券期货业信息安全保障管理办法》。旧官方网页可访问不代表旧法仍有效。

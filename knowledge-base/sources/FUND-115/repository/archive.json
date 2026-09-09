@@ -1,0 +1,169 @@
+{
+  "repository": "EFundAI/index-hub-skills",
+  "commit": "1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
+  "retrieved_at": "2026-09-08T17:16:51.569667+00:00",
+  "files": [
+    {
+      "path": "Index-Hub/etf-fund-query/INSTALL.md",
+      "git_blob_sha": "171daa6cc5a9e5cbca10f0c04949c22daadbe0e1",
+      "sha256": "7a4bea75ee9499db72c91852d55f368a8b215bfc6960b8d61dd1b9296aa38e58",
+      "bytes": 4118,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/etf-fund-query/INSTALL.md"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/SKILL.md",
+      "git_blob_sha": "5be63c0075f48db391eeae9218a9ddcd5a4096bd",
+      "sha256": "1d816da3137c069220baa62a6bdadf0632035311b1f58abfa88de078ccf644da",
+      "bytes": 19864,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/etf-fund-query/SKILL.md"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/guardrails.py",
+      "git_blob_sha": "09d827c2cdb6527964e00cdd4deb6d0db69629e9",
+      "sha256": "721ebae9e65ac699766baf37a2ac552d82a8dc901d9d561acac5f6794c9b879e",
+      "bytes": 7142,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/etf-fund-query/guardrails.py"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/install-spec.sh",
+      "git_blob_sha": "b4bd37b7a7f063e51d0134df6aaca64909288dbd",
+      "sha256": "99b734e1666fd9f5e2a050279dc820af7b7036fcd7677882c2afb9147b8be283",
+      "bytes": 229,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/etf-fund-query/install-spec.sh"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/install.sh",
+      "git_blob_sha": "8670038071ac76e3aad5641e3a681f23e13a6f22",
+      "sha256": "5c8c3ce79b86746cc79b1466d8cf712a1ab8675b8376a8662d7bb071be98eeb0",
+      "bytes": 9238,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/etf-fund-query/install.sh"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/references/catalog-etf.md",
+      "git_blob_sha": "be5fd8c0f1b670fb79c076e72fffaabb5035083f",
+      "sha256": "535ff50b181b6cf8eaa7e8726a8620be8ffdef4479b458d90dacd08068bdc5ca",
+      "bytes": 23633,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/etf-fund-query/references/catalog-etf.md"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/scripts/api_client.py",
+      "git_blob_sha": "2fb97e5e0676ee0621ae7d9861a2fef475d6453f",
+      "sha256": "f0dde04dd3108551eab5cc1b91015d0d7905dcd5d5e1e7287b3387263a4f035d",
+      "bytes": 13063,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/etf-fund-query/scripts/api_client.py"
+    },
+    {
+      "path": "Index-Hub/index-query/INSTALL.md",
+      "git_blob_sha": "99612a27b406cbdba05703b6019ad976e9d4c968",
+      "sha256": "231a9c8b27a8cb1c27b247fd2e5394ca88a2efacf848d8c92a58eabbdb5a89c4",
+      "bytes": 4113,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/INSTALL.md"
+    },
+    {
+      "path": "Index-Hub/index-query/SKILL.md",
+      "git_blob_sha": "1fc9893e9b0be447ae1d87ad8555a4dd797692d5",
+      "sha256": "40b31da56a4bedf037e2aecbd9d1f5ce6b37964e83be9d312a2008e41bfe3df6",
+      "bytes": 19496,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/SKILL.md"
+    },
+    {
+      "path": "Index-Hub/index-query/config.py",
+      "git_blob_sha": "d4fe809668192358ea2ffd2e5a0756294744077c",
+      "sha256": "36133a9f5dac2aa9aff59cddf487bc634cf39b1de3dc415cf9124c2733218bc9",
+      "bytes": 1178,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/config.py"
+    },
+    {
+      "path": "Index-Hub/index-query/guardrails.py",
+      "git_blob_sha": "09d827c2cdb6527964e00cdd4deb6d0db69629e9",
+      "sha256": "721ebae9e65ac699766baf37a2ac552d82a8dc901d9d561acac5f6794c9b879e",
+      "bytes": 7142,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/guardrails.py"
+    },
+    {
+      "path": "Index-Hub/index-query/install-spec.sh",
+      "git_blob_sha": "ab586968e99dcae8be2597470fec834535b82b75",
+      "sha256": "30c75c86f585176b8496b845ef25522c43ac6e30799bbe19ab84c37f267097a4",
+      "bytes": 238,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/install-spec.sh"
+    },
+    {
+      "path": "Index-Hub/index-query/install.sh",
+      "git_blob_sha": "8670038071ac76e3aad5641e3a681f23e13a6f22",
+      "sha256": "5c8c3ce79b86746cc79b1466d8cf712a1ab8675b8376a8662d7bb071be98eeb0",
+      "bytes": 9238,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/install.sh"
+    },
+    {
+      "path": "Index-Hub/index-query/references/catalog-index.md",
+      "git_blob_sha": "c5602aadc8de3414dfe206a570a042197aba9968",
+      "sha256": "8027ab6e7b939c16411f44f366c9b5427f0eb6fdb6429595eefefaca1e64a884",
+      "bytes": 18116,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/references/catalog-index.md"
+    },
+    {
+      "path": "Index-Hub/index-query/scripts/api_client.py",
+      "git_blob_sha": "82b80fb3a697cb98a960eeac793d7b6bad86d607",
+      "sha256": "46656e3c8a551343cbe95ae22a992f7271b202dc993c6835665099eaf2a54c40",
+      "bytes": 13064,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/index-query/scripts/api_client.py"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/INSTALL.md",
+      "git_blob_sha": "7112b57d891953f7621ee38e7827efd59eead6a9",
+      "sha256": "4412f06e8cc5f5b89539755ba1b352fc8cb1d3c7d79e9bcc0d3c2e6345533468",
+      "bytes": 4144,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/open-fund-query/INSTALL.md"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/SKILL.md",
+      "git_blob_sha": "69c2c13d11befe7ea89a7081be955f1eb73b03e5",
+      "sha256": "8692ffb81f5989da580ea7f9be6bccd93ee2f6e579ade77c049e00639bb3e5e2",
+      "bytes": 18022,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/open-fund-query/SKILL.md"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/guardrails.py",
+      "git_blob_sha": "09d827c2cdb6527964e00cdd4deb6d0db69629e9",
+      "sha256": "721ebae9e65ac699766baf37a2ac552d82a8dc901d9d561acac5f6794c9b879e",
+      "bytes": 7142,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/open-fund-query/guardrails.py"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/install-spec.sh",
+      "git_blob_sha": "0b197cf84dcfed863560a1881fadc463a8e1e10d",
+      "sha256": "7faeac38c041e566d6c1605cc7c85770c1732715181c576d954501c1fbe2d91a",
+      "bytes": 230,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/open-fund-query/install-spec.sh"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/install.sh",
+      "git_blob_sha": "8670038071ac76e3aad5641e3a681f23e13a6f22",
+      "sha256": "5c8c3ce79b86746cc79b1466d8cf712a1ab8675b8376a8662d7bb071be98eeb0",
+      "bytes": 9238,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/open-fund-query/install.sh"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/references/catalog-oef.md",
+      "git_blob_sha": "16faf5484d43e48e024b7b278d9cf5b81b34a37b",
+      "sha256": "809b27f229a9717d7f89eb76c629e7d97968ffe6da5c4090248ec10d7e918416",
+      "bytes": 20488,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/open-fund-query/references/catalog-oef.md"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/scripts/api_client.py",
+      "git_blob_sha": "1c9855db3d98fbdc360017a6d9b1349a1cc2eca2",
+      "sha256": "40c7d9c09e32987aba2911b9f551d9311081799125556ea33917184ff6715b97",
+      "bytes": 12927,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/Index-Hub/open-fund-query/scripts/api_client.py"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "568523d7a5cd6466f9e2b4ef7712f1df9b333229",
+      "sha256": "150f8e59b2ee050d39ae2ff801a45608dd44bc5ffae07de6ae6f9ee28cb5f089",
+      "bytes": 8627,
+      "url": "https://raw.githubusercontent.com/EFundAI/index-hub-skills/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4/README.md"
+    }
+  ],
+  "excluded": "Large binaries/datasets, credentials and generated outputs omitted; code not installed or executed; dataset use restrictions must be checked separately."
+}

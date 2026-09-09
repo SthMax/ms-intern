@@ -1,0 +1,17 @@
+{
+  "source_id": "amac-standard-notice",
+  "title": "amac-standard-notice",
+  "url": "https://www.amac.org.cn/xwfb/xhyw/202604/t20260403_27458.html",
+  "retrieved_at": "2026-09-08T17:07:17.709981+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.amac.org.cn/xwfb/xhyw/202604/t20260403_27458.html",
+  "content_type": "text/html",
+  "sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+  "byte_count": 319214,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 6946,
+  "extracted_text_sha256": "c8b67c5a42d423e9c14d0210cb2b6f021940b12e9870436ce23caa9d0f647fdb"
+}

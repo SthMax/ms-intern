@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-09",
+  "passed": true,
+  "checks": [
+    {
+      "name": "register/index",
+      "passed": true,
+      "detail": 119
+    },
+    {
+      "name": "roles",
+      "passed": true,
+      "detail": {
+        "main": 111,
+        "redirect": 4,
+        "supporting": 4
+      }
+    },
+    {
+      "name": "old source bytes",
+      "passed": true,
+      "detail": {
+        "files": 332,
+        "changes": []
+      }
+    },
+    {
+      "name": "only ICBC score record changed",
+      "passed": true,
+      "detail": [
+        "工银瑞信"
+      ]
+    },
+    {
+      "name": "scores",
+      "passed": true,
+      "detail": {
+        "1": 0,
+        "2": 2,
+        "3": 16,
+        "4": 3,
+        "5": 0
+      }
+    },
+    {
+      "name": "score source hashes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "FUND-226 hashes",
+      "passed": true,
+      "detail": "candidate"
+    },
+    {
+      "name": "FUND-227 hashes",
+      "passed": true,
+      "detail": "candidate"
+    },
+    {
+      "name": "FUND-318 hashes",
+      "passed": true,
+      "detail": "verified-primary"
+    },
+    {
+      "name": "FUND-319 hashes",
+      "passed": true,
+      "detail": "verified-primary"
+    },
+    {
+      "name": "local links",
+      "passed": true,
+      "detail": {
+        "count": 821,
+        "missing": []
+      }
+    },
+    {
+      "name": "diff whitespace",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Archival and integration checks only; not production/patent-status/effectiveness validation."
+}

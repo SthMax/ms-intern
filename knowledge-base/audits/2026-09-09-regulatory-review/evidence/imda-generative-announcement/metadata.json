@@ -1,0 +1,17 @@
+{
+  "source_id": "imda-generative-announcement",
+  "title": "imda-generative-announcement",
+  "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2024/gen-ai-and-digital-foss-ai-governance-playbook",
+  "retrieved_at": "2026-09-08T17:09:00.970564+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2024/gen-ai-and-digital-foss-ai-governance-playbook",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "9724fcab54b090ed18aec255a584c879323a92121022bb1708acbef08d96bd5b",
+  "byte_count": 129981,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 2663,
+  "extracted_text_sha256": "b57540b4e34dff244f0edc513da8b5b862b65a9ac10c242082d260202c69365e"
+}

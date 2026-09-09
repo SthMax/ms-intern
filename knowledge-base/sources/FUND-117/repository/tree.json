@@ -1,0 +1,616 @@
+{
+  "sha": "02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8",
+  "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/02f3c5fba288f4a99f3d930e4a13a7e4c81eb6d8",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7030c1227219955c7459be5247b4cba94387fce9",
+      "size": 937,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/7030c1227219955c7459be5247b4cba94387fce9"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37cc5382e8e9fca42a4dc0bf34767f411d12088a",
+      "size": 4588,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/37cc5382e8e9fca42a4dc0bf34767f411d12088a"
+    },
+    {
+      "path": "__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "220ca75feba1c74323ef725443b988d37d482f9b",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/220ca75feba1c74323ef725443b988d37d482f9b"
+    },
+    {
+      "path": "data/2wikimultihopqa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ffa65497beb94ebe0d28b873907c654e022688fc",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/ffa65497beb94ebe0d28b873907c654e022688fc"
+    },
+    {
+      "path": "data/2wikimultihopqa/2wikimultihopqa.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c87b01db53166b2b85b82d8773c6ed685bab2c16",
+      "size": 6505789,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/c87b01db53166b2b85b82d8773c6ed685bab2c16"
+    },
+    {
+      "path": "data/2wikimultihopqa/2wikimultihopqa_1000_colbertv2_corpus.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a395789666280292ed8868507e698271b3e794ec",
+      "size": 2771330,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/a395789666280292ed8868507e698271b3e794ec"
+    },
+    {
+      "path": "data/2wikimultihopqa/2wikimultihopqa_corpus.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2e236375a97ee41d27287b9efb3ef9036d1e072",
+      "size": 3083943,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/d2e236375a97ee41d27287b9efb3ef9036d1e072"
+    },
+    {
+      "path": "data/2wikimultihopqa/gold_with_3_distractors_context_cot_qa_codex.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9068e131e376257c60da4e2d63f0fb821bcc9ff0",
+      "size": 54121,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/9068e131e376257c60da4e2d63f0fb821bcc9ff0"
+    },
+    {
+      "path": "data/hotpotqa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8464b642178057004176e2b94cbe808d0609ef16",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/8464b642178057004176e2b94cbe808d0609ef16"
+    },
+    {
+      "path": "data/hotpotqa/gold_with_3_distractors_context_cot_qa_codex.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e210cd03b2a8d498418f645b644b844c16e99ff0",
+      "size": 84134,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/e210cd03b2a8d498418f645b644b844c16e99ff0"
+    },
+    {
+      "path": "data/hotpotqa/hotpotqa.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "885594857a412c98260802cb81df550a0b63db85",
+      "size": 8130985,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/885594857a412c98260802cb81df550a0b63db85"
+    },
+    {
+      "path": "data/hotpotqa/hotpotqa_1000_colbertv2_corpus.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30612d57a3c935533e31e28cc479fb11abbd8ae8",
+      "size": 5316665,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/30612d57a3c935533e31e28cc479fb11abbd8ae8"
+    },
+    {
+      "path": "data/hotpotqa/hotpotqa_corpus.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "174adf8e813adfed3114283d65cb78091f1dcdc0",
+      "size": 5911617,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/174adf8e813adfed3114283d65cb78091f1dcdc0"
+    },
+    {
+      "path": "data/mhkg.dump",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c38fab54b35a92be6810b22eb37ffad47efb366",
+      "size": 84232120,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/2c38fab54b35a92be6810b22eb37ffad47efb366"
+    },
+    {
+      "path": "data/musique",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11b8e0f57e1c824f8c44631c3bc6d544dfc13512",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/11b8e0f57e1c824f8c44631c3bc6d544dfc13512"
+    },
+    {
+      "path": "data/musique/gold_with_3_distractors_context_cot_qa_codex.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a21e975ea9e314414c0fcc7570d259eae516510",
+      "size": 58275,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/5a21e975ea9e314414c0fcc7570d259eae516510"
+    },
+    {
+      "path": "data/musique/musique.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc0fcba05225d0975f0437deb3814418bf570942",
+      "size": 12543629,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/fc0fcba05225d0975f0437deb3814418bf570942"
+    },
+    {
+      "path": "data/musique/musique_1000_colbertv2_corpus.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cad7a68ce469785c75bcb88ba7c683d69a5229f",
+      "size": 5978562,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/1cad7a68ce469785c75bcb88ba7c683d69a5229f"
+    },
+    {
+      "path": "data/musique/musique_corpus.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01ebb7c8a513e64350768acb5679d8c4ebfde241",
+      "size": 6239261,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/01ebb7c8a513e64350768acb5679d8c4ebfde241"
+    },
+    {
+      "path": "demonstrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bcdf049e8e7a8494273bb99e8b635f817588cae5",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/bcdf049e8e7a8494273bb99e8b635f817588cae5"
+    },
+    {
+      "path": "demonstrations/ner_examples.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87acec6aa13125b0b929d2528f5865734b1b0e94",
+      "size": 1748,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/87acec6aa13125b0b929d2528f5865734b1b0e94"
+    },
+    {
+      "path": "demonstrations/reason_examples.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "abbc52f59a3d4b2e4cf52bd31bf898b20abde97e",
+      "size": 6922,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/abbc52f59a3d4b2e4cf52bd31bf898b20abde97e"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "477ab4a344e84218e7b2f605f4a0e54fff275e0e",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/477ab4a344e84218e7b2f605f4a0e54fff275e0e"
+    },
+    {
+      "path": "images/overview.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2aac43855d537a0708959748f96bfc87e7ce74d",
+      "size": 128970,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/a2aac43855d537a0708959748f96bfc87e7ce74d"
+    },
+    {
+      "path": "outputs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "834341b1f3bc8ebe3c4491b771387a43e6390241",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/834341b1f3bc8ebe3c4491b771387a43e6390241"
+    },
+    {
+      "path": "outputs/2wikimultihopqa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5aa41ba57e461fb8685debeaa2cd7649a3247e10",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/5aa41ba57e461fb8685debeaa2cd7649a3247e10"
+    },
+    {
+      "path": "outputs/2wikimultihopqa/2wikimultihopqa_hybrid_rag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "118eec4de4924a7d63e2f0619276aade49675a6b",
+      "size": 5843827,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/118eec4de4924a7d63e2f0619276aade49675a6b"
+    },
+    {
+      "path": "outputs/2wikimultihopqa/2wikimultihopqa_naive_rag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2171d8adb6facc105f515aff24a161b7eb9089b0",
+      "size": 4128072,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/2171d8adb6facc105f515aff24a161b7eb9089b0"
+    },
+    {
+      "path": "outputs/2wikimultihopqa/2wikimultihopqa_slag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "563ce3adb74e6ba91967cf9a6d6d9cb10d7b1c2c",
+      "size": 4950063,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/563ce3adb74e6ba91967cf9a6d6d9cb10d7b1c2c"
+    },
+    {
+      "path": "outputs/2wikimultihopqa/2wikimultihopqa_with_newquery_dataset.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "262a62920608a70ecd5cbf27a92851bced1fb98c",
+      "size": 8865300,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/262a62920608a70ecd5cbf27a92851bced1fb98c"
+    },
+    {
+      "path": "outputs/hotpotqa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57c96bb02307407e10df34d1fecd263ada8a55bf",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/57c96bb02307407e10df34d1fecd263ada8a55bf"
+    },
+    {
+      "path": "outputs/hotpotqa/hotpotqa_hybrid_rag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76e8780cf0d8fbba0749586225736301dcae70c8",
+      "size": 6377281,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/76e8780cf0d8fbba0749586225736301dcae70c8"
+    },
+    {
+      "path": "outputs/hotpotqa/hotpotqa_naive_rag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85c7004f7422fd86d1acbfe174a692cf95682a6b",
+      "size": 3934336,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/85c7004f7422fd86d1acbfe174a692cf95682a6b"
+    },
+    {
+      "path": "outputs/hotpotqa/hotpotqa_slag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3c1038c3627bcc6c5339f229680dd245be8153e",
+      "size": 4461430,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/b3c1038c3627bcc6c5339f229680dd245be8153e"
+    },
+    {
+      "path": "outputs/hotpotqa/hotpotqa_with_newquery_dataset.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5b1e97cd9fdb5d0517cc9b0ac3fed899a130f338",
+      "size": 11112331,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/5b1e97cd9fdb5d0517cc9b0ac3fed899a130f338"
+    },
+    {
+      "path": "outputs/musique",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1b68d4cf379ab6fb3fc06bfd2d2c66a1f85c3f7",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/b1b68d4cf379ab6fb3fc06bfd2d2c66a1f85c3f7"
+    },
+    {
+      "path": "outputs/musique/musique_hybrid_rag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c82d9d4b5f07a8f1971a9b8a8bacd53cb4fc82cc",
+      "size": 6527724,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/c82d9d4b5f07a8f1971a9b8a8bacd53cb4fc82cc"
+    },
+    {
+      "path": "outputs/musique/musique_naive_rag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb35d632d0d000f2126ddbad18795830505855ff",
+      "size": 4272030,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/fb35d632d0d000f2126ddbad18795830505855ff"
+    },
+    {
+      "path": "outputs/musique/musique_slag[colbertv2]_backup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b043a30d62319363caecabb7c73e841ba8cdd872",
+      "size": 4797937,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/b043a30d62319363caecabb7c73e841ba8cdd872"
+    },
+    {
+      "path": "outputs/musique/musique_with_newquery_dataset.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "81c605dd73be54e137c1b2537366d8820e208f93",
+      "size": 17385646,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/81c605dd73be54e137c1b2537366d8820e208f93"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3552abcfeb84ecf8b0e513f3e1773d7537e15a08",
+      "size": 3009,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/3552abcfeb84ecf8b0e513f3e1773d7537e15a08"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4427a553f502650dfa5753a60d94f8c751d3202d",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/4427a553f502650dfa5753a60d94f8c751d3202d"
+    },
+    {
+      "path": "src/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/chains",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ddc428f388d621805bf2e1486ea837b54214cf3",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/7ddc428f388d621805bf2e1486ea837b54214cf3"
+    },
+    {
+      "path": "src/chains/cypher_generation_chain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c333d316d21247793cb5d3518e39d2abad651f43",
+      "size": 5689,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/c333d316d21247793cb5d3518e39d2abad651f43"
+    },
+    {
+      "path": "src/chains/cypher_preprocess_chain.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c026b787cc332c3665735c83fb34f44406368ca7",
+      "size": 3313,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/c026b787cc332c3665735c83fb34f44406368ca7"
+    },
+    {
+      "path": "src/chains/cypher_query_chain.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "88b66898eda184f0cb746fc26c4a7470c95cff3d",
+      "size": 2739,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/88b66898eda184f0cb746fc26c4a7470c95cff3d"
+    },
+    {
+      "path": "src/chains/entity_link_chain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd09cf3201c217e52b99fbe6beed868665248b6f",
+      "size": 12844,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/cd09cf3201c217e52b99fbe6beed868665248b6f"
+    },
+    {
+      "path": "src/chains/ner_llm_chain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adfc31cb2ea4079f8a8b6812ef822f5d68a7ec32",
+      "size": 4688,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/adfc31cb2ea4079f8a8b6812ef822f5d68a7ec32"
+    },
+    {
+      "path": "src/chains/node_expansion_chain.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "bcc79d80333b71d287012537f0f2b364e8f5d882",
+      "size": 7778,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/bcc79d80333b71d287012537f0f2b364e8f5d882"
+    },
+    {
+      "path": "src/chains/reason_chain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09429a00f9545a81803a0cf3955c41265f407d08",
+      "size": 4782,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/09429a00f9545a81803a0cf3955c41265f407d08"
+    },
+    {
+      "path": "src/chains/slag_chain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8069c5e56d1d77867d9ad85d159b27fa77fefe3",
+      "size": 6958,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/c8069c5e56d1d77867d9ad85d159b27fa77fefe3"
+    },
+    {
+      "path": "src/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f983accffa5bef0dfc157b67cff00748ce4bea59",
+      "size": 1093,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/f983accffa5bef0dfc157b67cff00748ce4bea59"
+    },
+    {
+      "path": "src/eval",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ffa7308fb42270a745c12cf2467af4d9ad4a5f14",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/ffa7308fb42270a745c12cf2467af4d9ad4a5f14"
+    },
+    {
+      "path": "src/eval/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/eval/hotpotqa_evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8414c27afe5a11ca750f6292f28252cd380a740c",
+      "size": 4299,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/8414c27afe5a11ca750f6292f28252cd380a740c"
+    },
+    {
+      "path": "src/eval/musique_evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ce9da553d82c8061c0d7685a3ed944be999c20",
+      "size": 3899,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/61ce9da553d82c8061c0d7685a3ed944be999c20"
+    },
+    {
+      "path": "src/eval/twowikimultihopqa_evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a20422ed7cd9f946b1369e034a454081b44ea8a",
+      "size": 8547,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/1a20422ed7cd9f946b1369e034a454081b44ea8a"
+    },
+    {
+      "path": "src/prompt_template.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "859b6f7299f15fcf5e99f699698a16a4829b017f",
+      "size": 8980,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/859b6f7299f15fcf5e99f699698a16a4829b017f"
+    },
+    {
+      "path": "src/rag_solutions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d964262947b1ecfd1cd28bbb3522216cc1edbef2",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/d964262947b1ecfd1cd28bbb3522216cc1edbef2"
+    },
+    {
+      "path": "src/rag_solutions/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/rag_solutions/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0d87b4f0573b6f5de70daf29ce6a0a247e0a4d4",
+      "size": 1610,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/f0d87b4f0573b6f5de70daf29ce6a0a247e0a4d4"
+    },
+    {
+      "path": "src/rag_solutions/colbertv2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "228789a21746740b8c453362d02d8bc4c45ee5f3",
+      "size": 4962,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/228789a21746740b8c453362d02d8bc4c45ee5f3"
+    },
+    {
+      "path": "src/rag_solutions/hybrid_rag.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f2b507b0f19f98e25a80cb167d0840455c9ef56",
+      "size": 3089,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/6f2b507b0f19f98e25a80cb167d0840455c9ef56"
+    },
+    {
+      "path": "src/rag_solutions/naive_rag.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd60146c88261dcfffe17dcb7ae4db5f09e6b831",
+      "size": 1881,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/bd60146c88261dcfffe17dcb7ae4db5f09e6b831"
+    },
+    {
+      "path": "src/rag_solutions/prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4ef4c3f3fcf390f372602bc09d5d1bed550262a",
+      "size": 4835,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/e4ef4c3f3fcf390f372602bc09d5d1bed550262a"
+    },
+    {
+      "path": "src/rag_solutions/slag.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c563020c87f406322081c81a9248bd283e7de9d",
+      "size": 4968,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/1c563020c87f406322081c81a9248bd283e7de9d"
+    },
+    {
+      "path": "src/run_eval_2wikimultihopqa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f733c2ae89b7b8cf065c7d150962e6c9989443f",
+      "size": 4192,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/4f733c2ae89b7b8cf065c7d150962e6c9989443f"
+    },
+    {
+      "path": "src/run_eval_hotpotqa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cab34e07f658fd525bbc5c8b850d9b1209301447",
+      "size": 4066,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/cab34e07f658fd525bbc5c8b850d9b1209301447"
+    },
+    {
+      "path": "src/run_eval_musique.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5df2e207989edeef3e02650d4f8306836ffd5cac",
+      "size": 4052,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/5df2e207989edeef3e02650d4f8306836ffd5cac"
+    },
+    {
+      "path": "src/run_slag.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3857b459500e153bbf9b30cd6c1b3c2d868908d",
+      "size": 4625,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/a3857b459500e153bbf9b30cd6c1b3c2d868908d"
+    },
+    {
+      "path": "src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a81281acbc6b8e3550dd8b75e0d59f6e54db36c7",
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/trees/a81281acbc6b8e3550dd8b75e0d59f6e54db36c7"
+    },
+    {
+      "path": "src/utils/reranker.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c29b5e057084153916a1dfdb615e81dce494e4b0",
+      "size": 1643,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/c29b5e057084153916a1dfdb615e81dce494e4b0"
+    },
+    {
+      "path": "src/utils/tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63354b84bd9670a234dfbb031824062663d06387",
+      "size": 10428,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/63354b84bd9670a234dfbb031824062663d06387"
+    },
+    {
+      "path": "src/utils/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a837e37e821c1a2ee754ca93dd58ecb5c2202742",
+      "size": 4588,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/a837e37e821c1a2ee754ca93dd58ecb5c2202742"
+    },
+    {
+      "path": "src/vectorize_kg.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e32f1ee8b77cd2eb429f922f20e625945605e09d",
+      "size": 1757,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/e32f1ee8b77cd2eb429f922f20e625945605e09d"
+    },
+    {
+      "path": "src/vectorize_rag.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be998d417408ab7aed0f83504a327dcbb253408c",
+      "size": 102,
+      "url": "https://api.github.com/repos/EFundAI/SLAG/git/blobs/be998d417408ab7aed0f83504a327dcbb253408c"
+    }
+  ],
+  "truncated": false
+}

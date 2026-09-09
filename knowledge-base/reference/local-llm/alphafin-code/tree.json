@@ -1,0 +1,137 @@
+[
+  {
+    "path": ".gitignore",
+    "type": "blob",
+    "git_blob_sha": "68bc17f9ff2104a9d7b6777058bb4c343ca72609"
+  },
+  {
+    "path": "LICENSE",
+    "type": "blob",
+    "git_blob_sha": "24ddefe3f2ea32026c22b913ae8e6f74777eb2e5"
+  },
+  {
+    "path": "README.md",
+    "type": "blob",
+    "git_blob_sha": "7065655cdb0a44086b9f48c57171ef41ea3e9827"
+  },
+  {
+    "path": "assets/case.png",
+    "type": "blob",
+    "git_blob_sha": "7c1f123dad589fb277d54c581e83705fa3fa796d"
+  },
+  {
+    "path": "assets/case_travel.png",
+    "type": "blob",
+    "git_blob_sha": "082c794ef6afd524a6c4c3fb8dd16e836b957a6f"
+  },
+  {
+    "path": "assets/datasource.png",
+    "type": "blob",
+    "git_blob_sha": "3d16004af1fd962f077acdcdeb50540f2ab480dc"
+  },
+  {
+    "path": "assets/long-short-test.png",
+    "type": "blob",
+    "git_blob_sha": "4c98566665530c627ded81ba868629f860539d41"
+  },
+  {
+    "path": "assets/readme_logo.png",
+    "type": "blob",
+    "git_blob_sha": "d410e90cbbafe0505c6455fb621122ffa1549cb5"
+  },
+  {
+    "path": "outputs/mldl_prediction.xlsx",
+    "type": "blob",
+    "git_blob_sha": "d2f51a694eba4b5ff27ce2643b7e5877659a0182"
+  },
+  {
+    "path": "requirements.txt",
+    "type": "blob",
+    "git_blob_sha": "e8ec4673e9f54ada85c3688c063e0076d57eefc5"
+  },
+  {
+    "path": "scripts/stage1_trend_prediction.sh",
+    "type": "blob",
+    "git_blob_sha": "4ebc96fe4f5c527feaa637c826e9f29ea4a610b1"
+  },
+  {
+    "path": "scripts/stage2_financial_qa.sh",
+    "type": "blob",
+    "git_blob_sha": "52548756ac50260c19b83ccf097b2e5269650ac1"
+  },
+  {
+    "path": "src/data/database_sample/news/news.json",
+    "type": "blob",
+    "git_blob_sha": "23dea67d88285fb3c18398bba680664cdb3b3c29"
+  },
+  {
+    "path": "src/data/database_sample/news/news_index.faiss",
+    "type": "blob",
+    "git_blob_sha": "827d2604d79a48e52f5c59d459d8e1a41028645e"
+  },
+  {
+    "path": "src/data/database_sample/news/news_index.pkl",
+    "type": "blob",
+    "git_blob_sha": "d1d885b94f54571afb38838d4ec0e4635a2bbf6d"
+  },
+  {
+    "path": "src/data/database_sample/prices/prices.json",
+    "type": "blob",
+    "git_blob_sha": "73f9ed21afbfd420a8b6555e93ac030ba4fb1af2"
+  },
+  {
+    "path": "src/data/database_sample/prices/prices_index.faiss",
+    "type": "blob",
+    "git_blob_sha": "cfcda6e450a2d3da96d0e0c98635c93443557aed"
+  },
+  {
+    "path": "src/data/database_sample/prices/prices_index.pkl",
+    "type": "blob",
+    "git_blob_sha": "c3ce898dbebc04d6bf7857a455ac2c7f88382ed3"
+  },
+  {
+    "path": "src/data/database_sample/reports/reports.json",
+    "type": "blob",
+    "git_blob_sha": "48ae8f4ba02abc4a7b633a648be92140beae8909"
+  },
+  {
+    "path": "src/data/database_sample/reports/reports_index.faiss",
+    "type": "blob",
+    "git_blob_sha": "4f2c6f0b406e57785e14ecdf9c7682e1161276c0"
+  },
+  {
+    "path": "src/data/database_sample/reports/reports_index.pkl",
+    "type": "blob",
+    "git_blob_sha": "5a1a6dab7475dcabaff59d5f8f661234f63bea7c"
+  },
+  {
+    "path": "src/data/stage1_testdata.json",
+    "type": "blob",
+    "git_blob_sha": "cc422c2821c39eebc475531afa82e4666208e49a"
+  },
+  {
+    "path": "src/stage1_trend_prediction/dataprocess_stockgpt.py",
+    "type": "blob",
+    "git_blob_sha": "ef90ae7321027d9e848bdf2ceb89b7d75ec74ec8"
+  },
+  {
+    "path": "src/stage1_trend_prediction/stockgpt_inf.py",
+    "type": "blob",
+    "git_blob_sha": "6fb2c976841838537c96160e49e7faba6da1d39e"
+  },
+  {
+    "path": "src/stage1_trend_prediction/test_strategy.py",
+    "type": "blob",
+    "git_blob_sha": "3eb8be133b138f42602ad7ca4cc11f5be5014733"
+  },
+  {
+    "path": "src/stage1_trend_prediction/utils.py",
+    "type": "blob",
+    "git_blob_sha": "45ddc10e483e908c88e254f4be97b86c79839fbb"
+  },
+  {
+    "path": "src/stage2_financial_qa/webui/run.py",
+    "type": "blob",
+    "git_blob_sha": "a72d5ad4d30f88176aab7d455a848b331dbe2166"
+  }
+]

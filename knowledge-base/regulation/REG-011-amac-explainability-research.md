@@ -8,6 +8,7 @@ effective_or_status: "Not applicable"
 accessed: 2026-09-06
 official_url: https://www.amac.org.cn/hyyj/sy/202604/P020260408624258724685.pdf
 reviewed_by: Codex
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -99,3 +100,8 @@ later sources.
 Original 16-page PDF retrieved; relevant introduction/conclusion pages read.
 This note does not validate the paper's entire comparative-law analysis.
 Human check pending.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。
+
+**使用更正**：PDF第5页将EO14110作为当前依据，但该行政命令已于2025-01-20撤销；同页众院10年州AI禁令未说明2025-07-01参院剔除后续。EU AI Act已有2026年正式修法及新的分期适用日期。第10页脚注22卷期应为15(2)，且不可把解释性/性能关系图当作普适实证定律。详见复核结果第2节；原始论文不改写。

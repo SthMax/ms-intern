@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CN121937219A - 基金久期计算方法、装置、计算机设备和可读存储介质 
+        - Google Patents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="canonical" href="https://patents.google.com/patent/CN121937219A/zh">
+    <meta name="description" content="
+     本发明提供了一种基金久期计算方法、装置、计算机设备和可读存储介质，属于数据处理技术领域。该方法包括：获取基金净值时间序列及债券指数的指数价格和指数久期数据；初始化包含基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区的内存数据区，按基金标识分片加载净值数据并缓存基金增长率序列，缓存债券指数增长率序列；建立线程池并行执行基金久期计算任务，构建自变量矩阵与因变量向量，按样本时间序号生成指数衰减权重，在回归系数满足非负及和约束条件下对带权目标函数优化求解获得回归系数向量，并结合指数久期数据计算基金久期，输出基金久期及回归系数向量。通过本发明，能够提升久期估算结果的计算时效。 
+     
+   
+   ">
+    <meta name="DC.type" content="patent">
+    <meta name="DC.title" content="基金久期计算方法、装置、计算机设备和可读存储介质 
+       ">
+    <meta name="DC.date" content="2026-03-31" scheme="dateSubmitted">
+    <meta name="DC.description" content="
+     本发明提供了一种基金久期计算方法、装置、计算机设备和可读存储介质，属于数据处理技术领域。该方法包括：获取基金净值时间序列及债券指数的指数价格和指数久期数据；初始化包含基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区的内存数据区，按基金标识分片加载净值数据并缓存基金增长率序列，缓存债券指数增长率序列；建立线程池并行执行基金久期计算任务，构建自变量矩阵与因变量向量，按样本时间序号生成指数衰减权重，在回归系数满足非负及和约束条件下对带权目标函数优化求解获得回归系数向量，并结合指数久期数据计算基金久期，输出基金久期及回归系数向量。通过本发明，能够提升久期估算结果的计算时效。 
+     
+   
+   ">
+    <meta name="citation_patent_application_number" content="CN:202610405576.9A">
+    <meta name="citation_patent_publication_number" content="CN:121937219:A">
+    <meta name="DC.date" content="2026-04-28">
+    <meta name="DC.contributor" content="周建军" scheme="inventor">
+    <meta name="DC.contributor" content="陶寅闓" scheme="inventor">
+    <meta name="DC.contributor" content="王尤栋" scheme="inventor">
+    <meta name="DC.contributor" content="朱倩文" scheme="inventor">
+    <meta name="DC.contributor" content="顾一辉" scheme="inventor">
+    <meta name="DC.contributor" content="何秋琴" scheme="inventor">
+    <meta name="DC.contributor" content="China Universal Fund Management Co ltd" scheme="assignee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700">
+
+    <style>
+      
+      #gb { top: 15px; left: auto; right: 0; width: auto; min-width: 135px !important; }   
+      body { transition: none; }
+    </style>
+    <script></script>
+
+    <script>
+      window.version = 'patent-search.search_20260819_RC00';
+
+      function sendFeedback() {
+        userfeedback.api.startFeedback({
+          'productId': '713680',
+          'bucket': 'patent-search-web',
+          'productVersion': window.version,
+        });
+      }
+
+      window.experiments = {};
+      window.experiments.patentCountries = "ae,ag,al,am,ao,ap,ar,at,au,aw,az,ba,bb,bd,be,bf,bg,bh,bj,bn,bo,br,bw,bx,by,bz,ca,cf,cg,ch,ci,cl,cm,cn,co,cr,cs,cu,cy,cz,dd,de,dj,dk,dm,do,dz,ea,ec,ee,eg,em,ep,es,fi,fr,ga,gb,gc,gd,ge,gh,gm,gn,gq,gr,gt,gw,hk,hn,hr,hu,ib,id,ie,il,in,ir,is,it,jo,jp,ke,kg,kh,km,kn,kp,kr,kw,kz,la,lc,li,lk,lr,ls,lt,lu,lv,ly,ma,mc,md,me,mg,mk,ml,mn,mo,mr,mt,mw,mx,my,mz,na,ne,ng,ni,nl,no,nz,oa,om,pa,pe,pg,ph,pl,pt,py,qa,ro,rs,ru,rw,sa,sc,sd,se,sg,si,sk,sl,sm,sn,st,su,sv,sy,sz,td,tg,th,tj,tm,tn,tr,tt,tw,tz,ua,ug,us,uy,uz,vc,ve,vn,wo,yu,za,zm,zw";
+      
+      
+      window.experiments.keywordWizard = true;
+      
+      
+      
+      window.experiments.definitions = true;
+      window.experiments.plogs = true;
+
+      window.Polymer = {
+        dom: 'shady',
+        lazyRegister: true,
+      };
+    </script>
+
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/search-app-vulcanized.html">
+  </head>
+  <body unresolved>
+    
+    
+    <script></script>
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/search-app-vulcanized.js"></script>
+    <search-app>
+      
+      
+
+      <article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <h1 itemprop="pageTitle">CN121937219A - 基金久期计算方法、装置、计算机设备和可读存储介质 
+        - Google Patents</h1>
+  <span itemprop="title">基金久期计算方法、装置、计算机设备和可读存储介质 
+       </span>
+
+  <meta itemprop="type" content="patent">
+  
+  <h2>Info</h2>
+
+  <dl>
+    <dt>Publication number</dt>
+    <dd itemprop="publicationNumber">CN121937219A</dd>
+    <meta itemprop="numberWithoutCodes" content="121937219">
+    <meta itemprop="kindCode" content="A">
+    <meta itemprop="publicationDescription" content="Unexaminded application">
+    <span>CN121937219A</span>
+    <span>CN202610405576.9A</span>
+    <span>CN202610405576A</span>
+    <span>CN121937219A</span>
+    <span>CN 121937219 A</span>
+    <span>CN121937219 A</span>
+    <span>CN 121937219A</span>
+    <span>  </span>
+    <span> </span>
+    <span> </span>
+    <span>CN 202610405576 A</span>
+    <span>CN202610405576 A</span>
+    <span>CN 202610405576A</span>
+    <span>CN 121937219 A</span>
+    <span>CN121937219 A</span>
+    <span>CN 121937219A</span>
+
+    <dt>Authority</dt>
+    <dd itemprop="countryCode">CN</dd>
+    <dd itemprop="countryName">China</dd>
+
+    <dt>Prior art keywords</dt>
+    <dd itemprop="priorArtKeywords" repeat>fund</dd>
+    <dd itemprop="priorArtKeywords" repeat>index</dd>
+    <dd itemprop="priorArtKeywords" repeat>data</dd>
+    <dd itemprop="priorArtKeywords" repeat>growth rate</dd>
+    <dd itemprop="priorArtKeywords" repeat>long</dd>
+
+    <dt>Prior art date</dt>
+    <dd><time itemprop="priorArtDate" datetime="2026-03-31">2026-03-31</time></dd>
+
+    <dt>Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)</dt>
+    <dd itemprop="legalStatusIfi" itemscope>
+      <span itemprop="status">Pending</span>
+    </dd>
+  </dl>
+
+  <dt>Application number</dt>
+  <dd itemprop="applicationNumber">CN202610405576.9A</dd>
+
+  <dt>Other languages</dt>
+  <dd itemprop="otherLanguages" itemscope repeat>
+    <a href="/patent/CN121937219A/en">
+      <span itemprop="name">English</span> (<span itemprop="code">en</span>)
+    </a>
+  </dd>
+
+  
+
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>周建军</dd>
+  <dd itemprop="inventor" repeat>陶寅闓</dd>
+  <dd itemprop="inventor" repeat>王尤栋</dd>
+  <dd itemprop="inventor" repeat>朱倩文</dd>
+  <dd itemprop="inventor" repeat>顾一辉</dd>
+  <dd itemprop="inventor" repeat>何秋琴</dd>
+
+  <dt>Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    China Universal Fund Management Co ltd
+  </dd>
+
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>China Universal Fund Management Co ltd</dd>
+
+  <dt>Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)</dt>
+  <dd><time itemprop="priorityDate" datetime="2026-03-31">2026-03-31</time></dd>
+
+  <dt>Filing date</dt>
+  <dd><time itemprop="filingDate" datetime="2026-03-31">2026-03-31</time></dd>
+
+  <dt>Publication date</dt>
+  <dd><time itemprop="publicationDate" datetime="2026-04-28">2026-04-28</time></dd>
+
+  
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-03-31">2026-03-31</time>
+    <span itemprop="title">Application filed by China Universal Fund Management Co ltd</span>
+    <span itemprop="type">filed</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    <span itemprop="assigneeSearch">China Universal Fund Management Co ltd</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-03-31">2026-03-31</time>
+    <span itemprop="title">Priority to CN202610405576.9A</span>
+    <span itemprop="type">priority</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/CN121937219A/zh</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-04-28">2026-04-28</time>
+    <span itemprop="title">Publication of CN121937219A</span>
+    <span itemprop="type">publication</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/CN121937219A/zh</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date">Status</time>
+    <span itemprop="title">Pending</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    <span itemprop="current" content="true" bool>Current</span>
+    
+    
+    
+  </dd>
+
+  <h2>Links</h2>
+  <ul>
+    
+
+    <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="espacenetLink">
+        <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=CN&amp;NR=121937219A&amp;KC=A&amp;FT=D" itemprop="url" target="_blank"><span itemprop="text">Espacenet</span></a>
+      </li>
+      
+
+    
+
+    <li itemprop="links" itemscope repeat>
+      <meta itemprop="id" content="globalDossierLink">
+      <a href="https://globaldossier.uspto.gov/result/application/CN/202610405576/1" itemprop="url" target="_blank"><span itemprop="text">Global Dossier</span></a>
+    </li>
+
+    
+
+      
+
+      
+
+      
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="stackexchangeLink">
+        <a href="https://patents.stackexchange.com/questions/tagged/CN121937219A" itemprop="url"><span itemprop="text">Discuss</span></a>
+      </li>
+  </ul>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Landscapes</h2>
+    <ul>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Financial Or Insurance-Related Operations Such As Payment And Settlement</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+    </ul>
+  </section>
+
+
+  <section itemprop="abstract" itemscope>
+    <h2>Abstract</h2>
+    
+    <div itemprop="content" html><abstract mxw-id="PA777651307" lang="ZH" load-source="patent-office">
+    <div num="0001" class="abstract">本发明提供了一种基金久期计算方法、装置、计算机设备和可读存储介质，属于数据处理技术领域。该方法包括：获取基金净值时间序列及债券指数的指数价格和指数久期数据；初始化包含基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区的内存数据区，按基金标识分片加载净值数据并缓存基金增长率序列，缓存债券指数增长率序列；建立线程池并行执行基金久期计算任务，构建自变量矩阵与因变量向量，按样本时间序号生成指数衰减权重，在回归系数满足非负及和约束条件下对带权目标函数优化求解获得回归系数向量，并结合指数久期数据计算基金久期，输出基金久期及回归系数向量。通过本发明，能够提升久期估算结果的计算时效。</div>
+    </abstract>
+  </div>
+  </section>
+
+  <section itemprop="description" itemscope>
+    <h2>Description</h2>
+    
+    <div itemprop="content" html><div mxw-id="PDES528046128" lang="ZH" load-source="patent-office" class="description">
+    <invention-title lang="ZH" id="title1">基金久期计算方法、装置、计算机设备和可读存储介质</invention-title>
+    <technical-field>
+      <div id="p0001" class="description-paragraph">技术领域</div>
+      <div id="p0002" num="0001" class="description-paragraph">本发明涉及数据处理技术领域，尤其涉及一种基金久期计算方法、装置、计算机设备和可读存储介质。</div>
+    </technical-field>
+    <background-art>
+      <div id="p0003" class="description-paragraph">背景技术</div>
+      <div id="p0004" num="0002" class="description-paragraph">久期是衡量债券价格对利率变动敏感度的重要指标之一，在债券型基金等资产组合的风险评估与监测中被广泛使用。现有的基金久期计算方式通常依赖基金持仓明细与债券现金流折现等计算过程，需要对组合中每一只债券的现金流进行处理并完成折现汇总。对于包含多只债券且持仓动态变化的基金组合，该类计算往往涉及大规模明细数据的频繁读取、现金流展开与多轮数值运算，计算复杂度高、耗时长。</div>
+      <div id="p0005" num="0003" class="description-paragraph">另一方面，在仅基于基金净值时间序列进行估算的场景下，通常需要对基金净值与一个或多个债券指数的历史变化关系进行建模并据此推算基金久期。该类建模计算需要在预设历史窗口内生成基金及债券指数的增长率序列，构建回归自变量矩阵与因变量向量，并在约束条件下完成参数求解，再结合债券指数久期完成基金久期的加权计算。当待处理基金数量较大时，容易出现计算吞吐低、整体耗时过长的问题，由于计算过程中重复访问数据库，也造成数据读取与计算资源的占用，进一步降低处理效率，影响久期估算结果的及时产出。</div>
+      <div id="p0006" num="0004" class="description-paragraph">因此，在面向大规模基金产品的久期计算时，如何提升久期估算结果的计算时效，成为本领域亟需解决的技术问题。</div>
+    </background-art>
+    <disclosure>
+      <div id="p0007" class="description-paragraph">发明内容</div>
+      <div id="p0008" num="0005" class="description-paragraph">本发明的目的是提供一种基金久期计算方法、装置、计算机设备和可读存储介质，用于解决现有技术中的上述技术问题。</div>
+      <div id="p0009" num="0006" class="description-paragraph">一方面，为实现上述目的，本发明提供了一种基金久期计算方法。</div>
+      <div id="p0010" num="0007" class="description-paragraph">该基金久期计算方法包括：获取待处理基金产品集合对应的基金净值时间序列数据，以及至少一个债券指数对应的指数价格时间序列数据和指数久期数据；初始化内存数据区，其中，内存数据区包括基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区；按基金标识分片将对应的基金净值时间序列数据加载至基金数据区；将指数价格时间序列数据和指数久期数据加载至共享指数数据区；在预设历史交易日窗口内，根据基金净值时间序列数据计算得到基金增长率序列，并按基金标识分片将对应的基金增长率序列写入基金特征缓存区；在预设历史交易日窗口内，根据指数价格时间序列数据计算得到债券指数增长率序列并写入指数特征缓存区；建立线程池与任务队列，将各基金产品对应的基金久期计算任务提交至线程池并行执行，其中，基金久期计算任务包括：读取内存数据区的数据，根据债券指数增长率序列构建自变量矩阵；根据基金增长率序列构建因变量向量；根据样本点的时间序号生成指数衰减权重向量；在回归系数向量满足非负约束及和约束的条件下，根据权重向量对自变量矩阵与因变量向量的残差项施加权重，通过对带权目标函数进行优化求解以获得回归系数向量，根据指数久期数据与回归系数向量计算基金久期；输出各基金产品对应的基金久期与回归系数向量。</div>
+      <div id="p0011" num="0008" class="description-paragraph">进一步地，在日度更新场景下，当获取到新增交易日数据时，仅增量计算新增交易日对应的基金增长率与债券指数增长率，并更新基金特征缓存区与指数特征缓存区中对应的滑动窗口数据。</div>
+      <div id="p0012" num="0009" class="description-paragraph">进一步地，输出各基金产品对应的基金久期与回归系数向量的步骤包括：将基金久期与回归系数向量写入数据库进行存储；在日度更新场景下，通过对带权目标函数进行优化求解以获得回归系数向量时，从数据库读取上一交易日存储的回归系数向量作为本次优化求解的初始解。</div>
+      <div id="p0013" num="0010" class="description-paragraph">进一步地，非负约束包括回归系数向量各元素均大于或等于0；和约束包括回归系数向量各元素之和等于1；对带权目标函数进行优化求解时，对回归系数向量各元素设置取值范围为[0,1]的边界约束。</div>
+      <div id="p0014" num="0011" class="description-paragraph">进一步地，在构建自变量矩阵与因变量向量之前，该方法还包括：将基金增长率序列与债券指数增长率序列按照交易日进行对齐；根据对齐后的共同交易日集合选取样本点，以构建自变量矩阵与因变量向量。</div>
+      <div id="p0015" num="0012" class="description-paragraph">进一步地，采用以下公式根据基金净值时间序列数据计算基金增长率序列：<span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日对应的基金增长率；采用以下公式根据指数价格时间序列数据计算债券指数增长率序列：<span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日对应的债券指数增长率。</div>
+      <div id="p0016" num="0013" class="description-paragraph">进一步地，根据指数久期数据与回归系数向量计算基金久期的步骤包括：读取与预设历史交易日窗口末端交易日对应的各债券指数久期值，形成指数久期向量D=[D<sub>1</sub>，…，D<sub>M</sub>]；按照加权求和方式计算基金久期：<span class="patent-image-not-available"></span>，其中，<span class="patent-image-not-available"></span>为回归系数向量的第i个元素。</div>
+      <div id="p0017" num="0014" class="description-paragraph">另一方面，为实现上述目的，本发明提供了一种基金久期计算装置。</div>
+      <div id="p0018" num="0015" class="description-paragraph">该基金久期计算装置包括：获取模块，用于获取待处理基金产品集合对应的基金净值时间序列数据，以及至少一个债券指数对应的指数价格时间序列数据和指数久期数据；初始化模块，用于初始化内存数据区，其中，内存数据区包括基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区；第一加载模块，用于按基金标识分片将对应的基金净值时间序列数据加载至基金数据区；第二加载模块，用于将指数价格时间序列数据和指数久期数据加载至共享指数数据区；第三加载模块，用于在预设历史交易日窗口内，根据基金净值时间序列数据计算得到基金增长率序列，并按基金标识分片将对应的基金增长率序列写入基金特征缓存区；第四加载模块，用于在预设历史交易日窗口内，根据指数价格时间序列数据计算得到债券指数增长率序列并写入指数特征缓存区；处理模块，用于建立线程池与任务队列，将各基金产品对应的基金久期计算任务提交至线程池并行执行，其中，基金久期计算任务包括：读取内存数据区的数据，根据债券指数增长率序列构建自变量矩阵；根据基金增长率序列构建因变量向量；根据样本点的时间序号生成指数衰减权重向量；在回归系数向量满足非负约束及和约束的条件下，根据权重向量对自变量矩阵与因变量向量的残差项施加权重，通过对带权目标函数进行优化求解以获得回归系数向量，根据指数久期数据与回归系数向量计算基金久期；输出模块，用于输出各基金产品对应的基金久期与回归系数向量。</div>
+      <div id="p0019" num="0016" class="description-paragraph">另一方面，为实现上述目的，本发明还提供一种计算机设备，包括存储器、处理器以及存储在存储器上并可在处理器上运行的计算机程序，该处理器执行计算机程序时实现上述方法的步骤。</div>
+      <div id="p0020" num="0017" class="description-paragraph">另一方面，为实现上述目的，本发明还提供计算机可读存储介质，其上存储有计算机程序，该计算机程序被处理器执行时实现上述方法的步骤。</div>
+      <div id="p0021" num="0018" class="description-paragraph">本发明提供的基金久期计算方法、装置、计算机设备和可读存储介质，先获取基金净值时间序列数据以及债券指数的指数价格时间序列数据和指数久期数据，并初始化包含基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区的内存数据区；随后按基金标识分片加载基金净值时间序列数据、加载指数价格时间序列数据与指数久期数据，并在预设历史交易日窗口内分别计算基金增长率序列与债券指数增长率序列写入对应缓存区；进而建立线程池与任务队列，将各基金的基金久期计算任务并行执行，在任务中构建自变量矩阵与因变量向量、生成指数衰减权重向量，并在回归系数向量满足非负约束及和约束的条件下，对带权目标函数进行优化求解得到回归系数向量，最后基于指数久期数据与回归系数向量计算基金久期并输出结果。通过本发明，将指数数据在共享指数数据区复用、将基金数据按基金标识分片并缓存增长率特征，配合线程池并行执行多基金计算任务，能够降低重复数据读取与计算开销，提升多基金批量计算的处理效率；同时，通过指数衰减权重与带约束的带权优化求解获得回归系数向量，使基金久期计算能够更侧重近期样本并保持系数的归一化与非负性，从而提升久期估计的稳定性与可用性。</div>
+    </disclosure>
+    <description-of-drawings>
+      <div id="p0022" class="description-paragraph">附图说明</div>
+      <div id="p0023" num="0019" class="description-paragraph">通过阅读下文优选实施方式的详细描述，各种其他的优点和益处对于本领域普通技术人员将变得清楚明了。附图仅用于示出优选实施方式的目的，而并不认为是对本发明的限制。而且在整个附图中，用相同的参考符号表示相同的部件。在附图中：</div>
+      <div id="p0024" num="0020" class="description-paragraph">图1为本发明实施例一提供的基金久期计算方法的流程图；</div>
+      <div id="p0025" class="description-paragraph">图2为本发明实施例二提供的基金久期计算装置的框图；</div>
+      <div id="p0026" class="description-paragraph">图3为本发明实施例三提供的计算机设备的硬件结构图。</div>
+    </description-of-drawings>
+    <mode-for-invention>
+      <div id="p0027" class="description-paragraph">具体实施方式</div>
+      <div id="p0028" num="0021" class="description-paragraph">为了使本发明的目的、技术方案及优点更加清楚明白，以下结合附图及实施例，对本发明进行进一步详细说明。应当理解，此处所描述的具体实施例仅用以解释本发明，并不用于限定本发明。基于本发明中的实施例，本领域普通技术人员在没有做出创造性劳动前提下所获得的所有其他实施例，都属于本发明保护的范围。</div>
+      <div id="p0029" num="0022" class="description-paragraph">实施例一</div>
+      <div id="p0030" class="description-paragraph">本发明实施例提供了一种基金久期计算方法，通过该方法，能够在多基金并发计算场景下，提升多基金批量计算的处理效率。具体地，图1为本发明实施例一提供的基金久期计算方法的流程图，如图1所示，该实施例提供的基金久期计算方法包括如下步骤S101至S108。</div>
+      <div id="p0031" num="0023" class="description-paragraph">步骤S101：获取待处理基金产品集合对应的基金净值时间序列数据，以及至少一个债券指数对应的指数价格时间序列数据和指数久期数据。</div>
+      <div id="p0032" num="0024" class="description-paragraph">其中，基金净值时间序列数据包括按交易日排列的、包括交易日和基金净值的数据记录。指数价格时间序列数据包括按交易日排列的、交易日和指数价格的数据记录；指数久期数据包括与交易日关联的指数久期值，或与指数标识、交易日关联的指数久期值序列。可选地，基金产品集合可由基金标识列表表征，每一基金标识唯一对应一只基金产品。</div>
+      <div id="p0033" num="0025" class="description-paragraph">步骤S102：初始化内存数据区。</div>
+      <div id="p0034" num="0026" class="description-paragraph">其中，内存数据区包括基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区。</div>
+      <div id="p0035" num="0027" class="description-paragraph">其中，共享指数数据区用于存放被多个基金久期计算任务复用的指数相关数据；基金数据区用于按基金标识分片存放各基金的净值数据；基金特征缓存区用于按基金标识分片缓存各基金的增长率序列；指数特征缓存区用于缓存债券指数增长率序列。可选地，内存数据区可实现为进程内内存结构、内存映射结构或内存缓存组件，以减少对外部存储的重复读写。</div>
+      <div id="p0036" num="0028" class="description-paragraph">步骤S103：按基金标识分片将对应的基金净值时间序列数据加载至基金数据区。</div>
+      <div id="p0037" num="0029" class="description-paragraph">其中，为不同基金标识维护相互隔离的数据槽位或分片容器，使得针对某一基金执行的计算任务能够定位并读取该基金分片内的数据。</div>
+      <div id="p0038" num="0030" class="description-paragraph">步骤S104：将指数价格时间序列数据和指数久期数据加载至共享指数数据区。</div>
+      <div id="p0039" num="0031" class="description-paragraph">其中，指数价格时间序列数据与指数久期数据可按指数标识分别存储，供后续构建自变量矩阵以及久期向量时读取。</div>
+      <div id="p0040" num="0032" class="description-paragraph">步骤S105：在预设历史交易日窗口内，根据基金净值时间序列数据计算得到基金增长率序列，并按基金标识分片将对应的基金增长率序列写入基金特征缓存区。</div>
+      <div id="p0041" num="0033" class="description-paragraph">其中，预设历史交易日窗口用于限定样本点范围，例如可为最近N个交易日，可选地，设置为最近35个交易日，基金增长率序列用于表征基金净值在相邻交易日之间的变化比例。可选地，当基金净值存在缺失交易日时，可仅在有效相邻交易日对上计算增长率，并将缺失交易日对应的样本点在后续对齐步骤中剔除或忽略。</div>
+      <div id="p0042" num="0034" class="description-paragraph">步骤S106：在预设历史交易日窗口内，根据指数价格时间序列数据计算得到债券指数增长率序列并写入指数特征缓存区。</div>
+      <div id="p0043" num="0035" class="description-paragraph">其中，当存在多个债券指数时，指数特征缓存区可存储与各指数标识关联的增长率序列。同一交易日下的不同指数增长率可用于后续构建自变量矩阵的一行样本。</div>
+      <div id="p0044" num="0036" class="description-paragraph">步骤S107：建立线程池与任务队列，将各基金产品对应的基金久期计算任务提交至线程池并行执行。</div>
+      <div id="p0045" num="0037" class="description-paragraph">其中，创建线程池，并发处理多个基金。每个基金独立计算，结果通过回调函数存储。基金久期计算任务包括以下子过程：</div>
+      <div id="p0046" class="description-paragraph">读取指数特征缓存区中的债券指数增长率序列，根据债券指数增长率序列构建自变量矩阵A。其中，自变量矩阵A的行用于表征样本点（也即交易日）序列，列用于表征债券指数维度，当存在M个债券指数且选取N个样本点时，自变量矩阵A可为N×M。</div>
+      <div id="p0047" num="0038" class="description-paragraph">读取基金特征缓存区中该基金分片对应的基金增长率序列，根据基金增长率序列构建因变量向量b。其中，因变量向量b与自变量矩阵A在样本点维度上对应，即每一元素对应同一交易日样本点的基金增长率。</div>
+      <div id="p0048" num="0039" class="description-paragraph">根据样本点的时间序号生成指数衰减权重向量w。其中，时间序号可按样本点从旧到新或从新到旧编号；指数衰减权重用于对不同时间样本点赋予不同权重，使得近期样本点对目标函数的贡献更大。可选地，指数衰减权重可满足随样本点越接近窗口末端交易日而权重越大。</div>
+      <div id="p0049" num="0040" class="description-paragraph">在回归系数向量满足非负约束及和约束的条件下，根据权重向量对自变量矩阵与因变量向量的残差项施加权重，通过对带权目标函数进行优化求解以获得回归系数向量x。其中，带权目标函数可用于刻画基金增长率与债券指数增长率的拟合误差；残差项可表示为(b<span class="patent-image-not-available"></span>Ax)；在目标函数中引入权重向量w，使不同样本点的残差按权重参与累计，从而形成带权拟合。其中，非负约束用于限定回归系数向量各元素不为负；和约束用于限定回归系数向量各元素之和为预设和值，例如为1，以使回归系数向量满足归一化组合权重含义。可选地，可采用带等式约束与边界约束的数值优化算法实现对带权目标函数的求解。</div>
+      <div id="p0050" num="0041" class="description-paragraph">根据指数久期数据与回归系数向量计算基金久期。其中，可从共享指数数据区读取与预设历史交易日窗口末端交易日对应的各债券指数久期值，形成指数久期向量D，并按照回归系数向量对指数久期向量进行加权，以得到基金久期。</div>
+      <div id="p0051" num="0042" class="description-paragraph">可选地，线性回归模型为：</div>
+      <div id="p0052" class="description-paragraph">
+        <span class="patent-image-not-available"></span>
+      </div>
+      <div id="p0053" num="0043" class="description-paragraph">其中，求解回归系数x，b<sub>i</sub>为因变量向量的第i个元素，A<sub>i</sub>为变量矩阵的第i个元素，w<sub>i</sub>为权重向量的第i个元素，n为样本总量。其中，指数衰减权重，衰减因子为0.8。</div>
+      <div id="p0054" num="0044" class="description-paragraph">权重向量的计算公式为：<span class="patent-image-not-available"></span>，其中k从1到30，赋予近期数据更高权重。</div>
+      <div id="p0055" num="0045" class="description-paragraph">步骤S108：输出各基金产品对应的基金久期与回归系数向量。</div>
+      <div id="p0056" num="0046" class="description-paragraph">其中，可将结果写入结果缓冲、返回至调用方或经由接口返回给上层业务模块等。</div>
+      <div id="p0057" num="0047" class="description-paragraph">在该实施例提供的基金久期计算方法中，先获取基金净值时间序列数据以及债券指数的指数价格时间序列数据和指数久期数据，并初始化包含基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区的内存数据区；随后按基金标识分片加载基金净值时间序列数据、加载指数价格时间序列数据与指数久期数据，并在预设历史交易日窗口内分别计算基金增长率序列与债券指数增长率序列写入对应缓存区；进而建立线程池与任务队列，将各基金的基金久期计算任务并行执行，在任务中构建自变量矩阵与因变量向量、生成指数衰减权重向量，并在回归系数向量满足非负约束及和约束的条件下，对带权目标函数进行优化求解得到回归系数向量，最后基于指数久期数据与回归系数向量计算基金久期并输出结果。</div>
+      <div id="p0058" num="0048" class="description-paragraph">采用该实施例提供的基金久期计算方法，提供了一种自动化基金久期算法，减少人工干预，通过将指数数据在共享指数数据区复用、将基金数据按基金标识分片并缓存增长率特征，配合线程池并行执行多基金计算任务，能够降低重复数据读取与计算开销，提升多基金批量计算的处理效率；同时，通过指数衰减权重与带约束的带权优化求解获得回归系数向量，使基金久期计算能够更侧重近期样本并保持系数的归一化与非负性，从而提高久期估算准确性、稳定性与可用性。</div>
+      <div id="p0059" num="0049" class="description-paragraph">可选地，在一种实施例中，在日度更新场景下，当获取到新增交易日数据时，仅增量计算新增交易日对应的基金增长率与债券指数增长率，并更新基金特征缓存区与指数特征缓存区中对应的滑动窗口数据。</div>
+      <div id="p0060" num="0050" class="description-paragraph">具体而言，每日收盘后或每日固定时间点新增一条交易日净值与指数价格数据，滑动窗口数据为预设历史交易日窗口覆盖的最近N个样本点集合。当新增交易日t的数据到达时，可仅基于交易日t与其相邻前一交易日t-1的数据计算新增的增长率样本点，并将窗口内最旧的样本点移出缓存区，实现从而保持缓存区内样本点数量与预设历史交易日窗口一致。</div>
+      <div id="p0061" num="0051" class="description-paragraph">采用该实施例提供的基金久期计算方法，通过对新增交易日数据执行增量增长率计算并维护滑动窗口缓存，避免对窗口内全部历史数据重复计算，使得在日度滚动更新时能够进一步降低计算量与更新时间开销，从而提升久期结果的更新实时性。</div>
+      <div id="p0062" num="0052" class="description-paragraph">可选地，在一种实施例中，输出各基金产品对应的基金久期与回归系数向量的步骤包括：将基金久期与回归系数向量写入数据库进行存储；在日度更新场景下，通过对带权目标函数进行优化求解以获得回归系数向量时，从数据库读取上一交易日存储的回归系数向量作为本次优化求解的初始解。</div>
+      <div id="p0063" num="0053" class="description-paragraph">具体而言，以基金标识、交易日为索引字段存储基金久期与回归系数向量，在日度更新场景下，通过对带权目标函数进行优化求解以获得回归系数向量时，将上一交易日的回归系数向量作为优化算法的初始迭代点，以减少从随机初值或固定初值开始导致的迭代次数。</div>
+      <div id="p0064" num="0054" class="description-paragraph">采用该实施例提供的基金久期计算方法，通过数据库持久化保存历史回归系数向量，并在下一交易日优化求解时进行初始解复用，使优化过程更易收敛并减少迭代计算开销，从而在连续日度更新的场景下进一步提升整体计算效率与稳定性。</div>
+      <div id="p0065" num="0055" class="description-paragraph">可选地，在一种实施例中，非负约束包括回归系数向量各元素均大于或等于0；和约束包括回归系数向量各元素之和等于1；对带权目标函数进行优化求解时，对回归系数向量各元素设置取值范围为[0,1]的边界约束。</div>
+      <div id="p0066" num="0056" class="description-paragraph">具体而言，非负约束与[0,1]边界约束共同限制回归系数向量各元素不取负值且不超过1；和约束使回归系数向量满足归一化条件，使其能够作为指数久期加权计算时的权重向量使用。在求解时可采用满足等式约束与边界约束的优化方式，将各元素之和等于1的条件作为等式约束项处理，将各元素属于[0,1]作为边界约束项处理。</div>
+      <div id="p0067" num="0057" class="description-paragraph">采用该实施例提供的基金久期计算方法，通过对回归系数向量施加非负、归一化及边界约束，使回归系数向量具备可解释的组合权重含义，避免出现系数为负或系数和偏离预设和值导致的异常加权，从而提升久期计算结果的可用性与数值稳定性。</div>
+      <div id="p0068" num="0058" class="description-paragraph">可选地，在一种实施例中，在构建自变量矩阵与因变量向量之前，该方法还包括：将基金增长率序列与债券指数增长率序列按照交易日进行对齐；并根据对齐后的共同交易日集合选取样本点，以构建自变量矩阵与因变量向量。</div>
+      <div id="p0069" num="0059" class="description-paragraph">具体而言，以交易日作为主键，对基金增长率序列与各债券指数增长率序列进行关联匹配，仅保留双方均存在数据的交易日，得到共同交易日集合，也即对齐后得到的交易日交集。可选地，当基金因停牌、净值缺失或指数数据缺失导致某些交易日无法形成增长率样本点时，可通过对齐过程自动剔除该部分交易日，从而保证自变量矩阵与因变量向量在样本点维度一致。</div>
+      <div id="p0070" num="0060" class="description-paragraph">采用该实施例提供的基金久期计算方法，通过对基金增长率序列与债券指数增长率序列进行交易日对齐并基于共同交易日集合构建样本点，避免因时间轴不一致引起的矩阵、向量错位，从而提升带权拟合与回归系数求解的正确性与鲁棒性，进而提升基金久期计算结果的可靠性。</div>
+      <div id="p0071" num="0061" class="description-paragraph">可选地，在一种实施例中，采用以下公式根据基金净值时间序列数据计算基金增长率序列：<span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日对应的基金增长率；采用以下公式根据所述指数价格时间序列数据计算债券指数增长率序列：<span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日对应的债券指数增长率。</div>
+      <div id="p0072" num="0062" class="description-paragraph">采用该实施例提供的基金久期计算方法，通过以相邻交易日比值方式形成增长率样本点，使基金增长率序列与指数增长率序列具备一致的量纲与可比性，从而为自变量矩阵与因变量向量的构建提供统一的特征基础，提升带权拟合过程的有效性与结果可解释性。</div>
+      <div id="p0073" num="0063" class="description-paragraph">可选地，在一种实施例中，根据指数久期数据与回归系数向量计算基金久期的步骤包括：读取与预设历史交易日窗口末端交易日对应的各债券指数久期值，形成指数久期向量D=[D<sub>1</sub>，…，D<sub>M</sub>]；按照加权求和方式计算所述基金久期<span class="patent-image-not-available"></span>：<span class="patent-image-not-available"></span>，其中，<span class="patent-image-not-available"></span>为所述回归系数向量的第i个元素。</div>
+      <div id="p0074" num="0064" class="description-paragraph">采用该实施例提供的基金久期计算方法，通过在窗口末端交易日读取指数久期值形成久期向量，并利用回归系数向量进行加权求和得到基金久期，使基金久期能够与回归系数求解所依据的增长率拟合关系保持一致，从而提升久期输出结果与拟合关系的一致性与可复现性。</div>
+      <div id="p0075" num="0065" class="description-paragraph">实施例二</div>
+      <div id="p0076" class="description-paragraph">对应于上述实施例一，本发明实施例二提供了一种基金久期计算装置，相应地技术特征细节和对应的技术效果可参考上述实施例一，在该实施例中不再赘述。图2为本发明实施例二提供的基金久期计算装置的框图，如图2所示，该装置包括：获取模块201、初始化模块202、第一加载模块203、第二加载模块204、第三加载模块205、第四加载模块206、处理模块207和输出模块208。</div>
+      <div id="p0077" num="0066" class="description-paragraph">其中，获取模块201用于获取待处理基金产品集合对应的基金净值时间序列数据，以及至少一个债券指数对应的指数价格时间序列数据和指数久期数据；初始化模块202用于初始化内存数据区，其中，所述内存数据区包括基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区；第一加载模块203用于按基金标识分片将对应的所述基金净值时间序列数据加载至所述基金数据区；第二加载模块204用于将所述指数价格时间序列数据和指数久期数据加载至所述共享指数数据区；第三加载模块205用于在预设历史交易日窗口内，根据所述基金净值时间序列数据计算得到基金增长率序列，并按所述基金标识分片将对应的基金增长率序列写入所述基金特征缓存区；第四加载模块206用于在预设历史交易日窗口内，根据所述指数价格时间序列数据计算得到债券指数增长率序列并写入所述指数特征缓存区；处理模块207用于建立线程池与任务队列，将各基金产品对应的基金久期计算任务提交至所述线程池并行执行，其中，所述基金久期计算任务包括：读取所述内存数据区的数据，根据所述债券指数增长率序列构建自变量矩阵；根据所述基金增长率序列构建因变量向量；根据样本点的时间序号生成指数衰减权重向量；在回归系数向量满足非负约束及和约束的条件下，根据所述权重向量对所述自变量矩阵与所述因变量向量的残差项施加权重，通过对带权目标函数进行优化求解以获得回归系数向量，根据所述指数久期数据与所述回归系数向量计算基金久期；输出模块208用于输出各基金产品对应的所述基金久期与所述回归系数向量。</div>
+      <div id="p0078" num="0067" class="description-paragraph">可选地，在一种实施例中，当获取到新增交易日数据时，仅增量计算所述新增交易日对应的基金增长率与债券指数增长率，并更新所述基金特征缓存区与所述指数特征缓存区中对应的滑动窗口数据。</div>
+      <div id="p0079" num="0068" class="description-paragraph">可选地，在一种实施例中，输出模块还用于将所述基金久期与回归系数向量写入数据库进行存储，其中，在日度更新场景下，通过对带权目标函数进行优化求解以获得回归系数向量时，从所述数据库读取上一交易日存储的回归系数向量作为本次优化求解的初始解。</div>
+      <div id="p0080" num="0069" class="description-paragraph">可选地，在一种实施例中，所述非负约束包括回归系数向量各元素均大于或等于0；所述和约束包括回归系数向量各元素之和等于1；对所述带权目标函数进行优化求解时，对所述回归系数向量各元素设置取值范围为[0,1]的边界约束。</div>
+      <div id="p0081" num="0070" class="description-paragraph">可选地，在一种实施例中，在构建所述自变量矩阵与所述因变量向量之前，所述装置还包括：对齐模块，用于将所述基金增长率序列与所述债券指数增长率序列按照交易日进行对齐，其中，根据对齐后的共同交易日集合选取样本点，以构建所述自变量矩阵与所述因变量向量。</div>
+      <div id="p0082" num="0071" class="description-paragraph">可选地，在一种实施例中，采用以下公式根据所述基金净值时间序列数据计算基金增长率序列：<span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日对应的基金增长率；采用以下公式根据所述指数价格时间序列数据计算债券指数增长率序列：<span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日对应的债券指数增长率。</div>
+      <div id="p0083" num="0072" class="description-paragraph">可选地，在一种实施例中，根据所述指数久期数据与所述回归系数向量计算基金久期的步骤包括：读取与所述预设历史交易日窗口末端交易日对应的各债券指数久期值，形成指数久期向量D=[D<sub>1</sub>，…，D<sub>M</sub>]；按照加权求和方式计算所述基金久期：<span class="patent-image-not-available"></span>，其中，<span class="patent-image-not-available"></span>为所述回归系数向量的第i个元素。</div>
+      <div id="p0084" num="0073" class="description-paragraph">实施例三</div>
+      <div id="p0085" class="description-paragraph">本实施例还提供一种计算机设备，如可以执行程序的智能手机、平板电脑、笔记本电脑、台式计算机、机架式服务器、刀片式服务器、塔式服务器或机柜式服务器（包括独立的服务器，或者多个服务器所组成的服务器集群）等。如图3所示，本实施例的计算机设备01至少包括但不限于：可通过系统总线相互通信连接的存储器012、处理器011，如图3所示。需要指出的是，图3仅示出了具有组件存储器012和处理器011的计算机设备01，但是应理解的是，并不要求实施所有示出的组件，可以替代的实施更多或者更少的组件。</div>
+      <div id="p0086" num="0074" class="description-paragraph">本实施例中，存储器012（即可读存储介质）包括闪存、硬盘、多媒体卡、卡型存储器（例如，SD或DX存储器等）、随机访问存储器（RAM）、静态随机访问存储器（SRAM）、只读存储器（ROM）、电可擦除可编程只读存储器（EEPROM）、可编程只读存储器（PROM）、磁性存储器、磁盘、光盘等。在一些实施例中，存储器012可以是计算机设备01的内部存储单元，例如该计算机设备01的硬盘或内存。在另一些实施例中，存储器012也可以是计算机设备01的外部存储设备，例如该计算机设备01上配备的插接式硬盘，智能存储卡（Smart Media Card, SMC），安全数字（Secure Digital, SD）卡，闪存卡（Flash Card）等。当然，存储器012还可以既包括计算机设备01的内部存储单元也包括其外部存储设备。本实施例中，存储器012通常用于存储安装于计算机设备01的操作系统和各类引用软件，例如实施例二的基金久期计算装置的程序代码等。此外，存储器012还可以用于暂时地存储已经输出或者将要输出的各类数据。</div>
+      <div id="p0087" num="0075" class="description-paragraph">处理器011在一些实施例中可以是中央处理器（Central Processing Unit，CPU）、控制器、微控制器、微处理器、或其他数据处理芯片。该处理器011通常用于控制计算机设备01的总体操作。本实施例中，处理器011用于运行存储器012中存储的程序代码或者处理数据，例如基金久期计算方法等。</div>
+      <div id="p0088" num="0076" class="description-paragraph">实施例四</div>
+      <div id="p0089" class="description-paragraph">本实施例还提供一种计算机可读存储介质，如闪存、硬盘、多媒体卡、卡型存储器（例如，SD或DX存储器等）、随机访问存储器（RAM）、静态随机访问存储器（SRAM）、只读存储器（ROM）、电可擦除可编程只读存储器（EEPROM）、可编程只读存储器（PROM）、磁性存储器、磁盘、光盘、服务器、App引用商城等等，其上存储有计算机程序，程序被处理器执行时实现相应功能。本实施例的计算机可读存储介质用于存储基金久期计算装置，被处理器执行时实现实施例一的基金久期计算方法。</div>
+      <div id="p0090" num="0077" class="description-paragraph">需要说明的是，在本文中，术语“包括”、“包含”或者其任何其他变体意在涵盖非排他性的包含，从而使得包括一系列要素的过程、方法、物品或者装置不仅包括那些要素，而且还包括没有明确列出的其他要素，或者是还包括为这种过程、方法、物品或者装置所固有的要素。在没有更多限制的情况下，由语句“包括一个……”限定的要素，并不排除在包括该要素的过程、方法、物品或者装置中还存在另外的相同要素。</div>
+      <div id="p0091" num="0078" class="description-paragraph">上述本发明实施例序号仅仅为了描述，不代表实施例的优劣。</div>
+      <div id="p0092" num="0079" class="description-paragraph">通过以上的实施方式的描述，本领域的技术人员可以清楚地了解到上述实施例方法可借助软件加必需的通用硬件平台的方式来实现，当然也可以通过硬件，但很多情况下前者是更佳的实施方式。</div>
+      <div id="p0093" num="0080" class="description-paragraph">以上仅为本发明的优选实施例，并非因此限制本发明的专利范围，凡是利用本发明说明书及附图内容所作的等效结构或等效流程变换，或直接或间接运用在其他相关的技术领域，均同理包括在本发明的专利保护范围内。</div>
+    </mode-for-invention>
+  </div>
+  </div>
+  </section>
+
+  <section itemprop="claims" itemscope>
+    <h2>Claims (<span itemprop="count">10</span>)</h2>
+    
+    <div itemprop="content" html><div mxw-id="PCLM522498388" lang="ZH" load-source="patent-office" class="claims">
+    <div class="claim"> <div id="zh-cl0001" num="0001" class="claim">
+      <div class="claim-text">1.一种基金久期计算方法，其特征在于，包括：</div>
+      <div class="claim-text">获取待处理基金产品集合对应的基金净值时间序列数据，以及至少一个债券指数对应的指数价格时间序列数据和指数久期数据；</div>
+      <div class="claim-text">初始化内存数据区，其中，所述内存数据区包括基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区；</div>
+      <div class="claim-text">按基金标识分片将对应的所述基金净值时间序列数据加载至所述基金数据区；</div>
+      <div class="claim-text">将所述指数价格时间序列数据和指数久期数据加载至所述共享指数数据区；</div>
+      <div class="claim-text">在预设历史交易日窗口内，根据所述基金净值时间序列数据计算得到基金增长率序列，并按所述基金标识分片将对应的基金增长率序列写入所述基金特征缓存区；</div>
+      <div class="claim-text">在预设历史交易日窗口内，根据所述指数价格时间序列数据计算得到债券指数增长率序列并写入所述指数特征缓存区；</div>
+      <div class="claim-text">建立线程池与任务队列，将各基金产品对应的基金久期计算任务提交至所述线程池并行执行，其中，所述基金久期计算任务包括：读取所述内存数据区的数据，根据所述债券指数增长率序列构建自变量矩阵；根据所述基金增长率序列构建因变量向量；根据样本点的时间序号生成指数衰减权重向量；在回归系数向量满足非负约束及和约束的条件下，根据所述权重向量对所述自变量矩阵与所述因变量向量的残差项施加权重，通过对带权目标函数进行优化求解以获得回归系数向量，根据所述指数久期数据与所述回归系数向量计算基金久期；</div>
+      <div class="claim-text">输出各基金产品对应的所述基金久期与所述回归系数向量。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0002" num="0002" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">2.根据权利要求1所述的基金久期计算方法，其特征在于，在日度更新场景下，当获取到新增交易日数据时，仅增量计算所述新增交易日对应的基金增长率与债券指数增长率，并更新所述基金特征缓存区与所述指数特征缓存区中对应的滑动窗口数据。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0003" num="0003" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">3.根据权利要求1所述的基金久期计算方法，其特征在于，所述输出各基金产品对应的基金久期与回归系数向量的步骤包括：</div>
+      <div class="claim-text">将所述基金久期与回归系数向量写入数据库进行存储；</div>
+      <div class="claim-text">在日度更新场景下，通过对带权目标函数进行优化求解以获得回归系数向量时，从所述数据库读取上一交易日存储的回归系数向量作为本次优化求解的初始解。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0004" num="0004" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">4.根据权利要求1所述的基金久期计算方法，其特征在于，</div>
+      <div class="claim-text">所述非负约束包括回归系数向量各元素均大于或等于0；</div>
+      <div class="claim-text">所述和约束包括回归系数向量各元素之和等于1；</div>
+      <div class="claim-text">对所述带权目标函数进行优化求解时，对所述回归系数向量各元素设置取值范围为[0,1]的边界约束。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0005" num="0005" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">5.根据权利要求1所述的基金久期计算方法，其特征在于，在构建所述自变量矩阵与所述因变量向量之前，所述方法还包括：</div>
+      <div class="claim-text">将所述基金增长率序列与所述债券指数增长率序列按照交易日进行对齐；</div>
+      <div class="claim-text">根据对齐后的共同交易日集合选取样本点，以构建所述自变量矩阵与所述因变量向量。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0006" num="0006" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">6.根据权利要求1所述的基金久期计算方法，其特征在于，</div>
+      <div class="claim-text">采用以下公式根据所述基金净值时间序列数据计算基金增长率序列：</div>
+      <div class="claim-text"> <span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的基金净值，<span class="patent-image-not-available"></span>为当前交易日对应的基金增长率；</div>
+      <div class="claim-text">采用以下公式根据所述指数价格时间序列数据计算债券指数增长率序列：</div>
+      <div class="claim-text"> <span class="patent-image-not-available"></span>-1，其中，<span class="patent-image-not-available"></span>为当前交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日相邻的前一个交易日对应的指数价格，<span class="patent-image-not-available"></span>为当前交易日对应的债券指数增长率。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0007" num="0007" class="claim">
+      <div class="claim-text">
+        <claim-ref idref="zh-cl0001"> </claim-ref>
+      </div>
+      <div class="claim-text">7.根据权利要求1所述的基金久期计算方法，其特征在于，根据所述指数久期数据与所述回归系数向量计算基金久期的步骤包括：</div>
+      <div class="claim-text">读取与所述预设历史交易日窗口末端交易日对应的各债券指数久期值，形成指数久期向量D=[D<sub>1</sub>，…，D<sub>M</sub>]；</div>
+      <div class="claim-text">按照加权求和方式计算所述基金久期：<span class="patent-image-not-available"></span>，其中，<span class="patent-image-not-available"></span>为所述回归系数向量的第i个元素。</div>
+    </div>
+    </div> <div class="claim"> <div id="zh-cl0008" num="0008" class="claim">
+      <div class="claim-text">8.一种基金久期计算装置，其特征在于，包括：</div>
+      <div class="claim-text">获取模块，用于获取待处理基金产品集合对应的基金净值时间序列数据，以及至少一个债券指数对应的指数价格时间序列数据和指数久期数据；</div>
+      <div class="claim-text">初始化模块，用于初始化内存数据区，其中，所述内存数据区包括基金数据区、共享指数数据区、基金特征缓存区和指数特征缓存区；</div>
+      <div class="claim-text">第一加载模块，用于按基金标识分片将对应的所述基金净值时间序列数据加载至所述基金数据区；</div>
+      <div class="claim-text">第二加载模块，用于将所述指数价格时间序列数据和指数久期数据加载至所述共享指数数据区；</div>
+      <div class="claim-text">第三加载模块，用于在预设历史交易日窗口内，根据所述基金净值时间序列数据计算得到基金增长率序列，并按所述基金标识分片将对应的基金增长率序列写入所述基金特征缓存区；</div>
+      <div class="claim-text">第四加载模块，用于在预设历史交易日窗口内，根据所述指数价格时间序列数据计算得到债券指数增长率序列并写入所述指数特征缓存区；</div>
+      <div class="claim-text">处理模块，用于建立线程池与任务队列，将各基金产品对应的基金久期计算任务提交至所述线程池并行执行，其中，所述基金久期计算任务包括：读取所述内存数据区的数据，根据所述债券指数增长率序列构建自变量矩阵；根据所述基金增长率序列构建因变量向量；根据样本点的时间序号生成指数衰减权重向量；在回归系数向量满足非负约束及和约束的条件下，根据所述权重向量对所述自变量矩阵与所述因变量向量的残差项施加权重，通过对带权目标函数进行优化求解以获得回归系数向量，根据所述指数久期数据与所述回归系数向量计算基金久期；</div>
+      <div class="claim-text">输出模块，用于输出各基金产品对应的所述基金久期与所述回归系数向量。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0009" num="0009" class="claim">
+      <div class="claim-text">9.一种计算机设备，包括存储器、处理器以及存储在存储器上并可在处理器上运行的计算机程序，其特征在于，所述处理器执行所述计算机程序时实现权利要求1至7任一项所述方法的步骤。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="zh-cl0010" num="0010" class="claim">
+      <div class="claim-text">10.一种计算机可读存储介质，其上存储有计算机程序，其特征在于：所述计算机程序被处理器执行时实现权利要求1至7任一项所述方法的步骤。</div>
+    </div>
+  </div> </div>
+  </div>
+  </section>
+
+  <section itemprop="application" itemscope>
+
+    <section itemprop="metadata" itemscope>
+      <span itemprop="applicationNumber">CN202610405576.9A</span>
+      <span itemprop="priorityDate">2026-03-31</span>
+      <span itemprop="filingDate">2026-03-31</span>
+      <span itemprop="title">基金久期计算方法、装置、计算机设备和可读存储介质 
+       </span>
+      <span itemprop="ifiStatus">Pending</span>
+      
+      <a href="/patent/CN121937219A/zh">
+        <span itemprop="representativePublication">CN121937219A</span>
+        (<span itemprop="primaryLanguage">zh</span>)
+      </a>
+    </section>
+
+    <h2>Priority Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="priorityApps" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202610405576.9A</span>
+            
+            <a href="/patent/CN121937219A/zh">
+              <span itemprop="representativePublication">CN121937219A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2026-03-31</td>
+          <td itemprop="filingDate">2026-03-31</td>
+          <td itemprop="title">基金久期计算方法、装置、计算机设备和可读存储介质 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Applications Claiming Priority (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202610405576.9A</span>
+            <a href="/patent/CN121937219A/zh">
+              <span itemprop="representativePublication">CN121937219A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2026-03-31</td>
+          <td itemprop="filingDate">2026-03-31</td>
+          <td itemprop="title">基金久期计算方法、装置、计算机设备和可读存储介质 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Publications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication Number</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="pubs" itemscope repeat>
+          <td>
+            <span itemprop="publicationNumber">CN121937219A</span>
+            
+            <span itemprop="thisPatent">true</span>
+            <a href="/patent/CN121937219A/zh">
+              CN121937219A
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2026-04-28</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section itemprop="family" itemscope>
+    <h1>Family</h1>
+    <h2>ID=99528124</h2>
+
+    <h2>Family Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Title</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="applications" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202610405576.9A</span>
+            <span itemprop="ifiStatus">Pending</span>
+            
+            <a href="/patent/CN121937219A/zh">
+              <span itemprop="representativePublication">CN121937219A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2026-03-31</td>
+          <td itemprop="filingDate">2026-03-31</td>
+          <td itemprop="title">基金久期计算方法、装置、计算机设备和可读存储介质 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Country Status (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">CN</span>
+            (<span itemprop="num">1</span>)
+            <meta itemprop="thisCountry" content="true">
+          </td>
+          <td>
+            <a href="/patent/CN121937219A/zh">
+              <span itemprop="representativePublication">CN121937219A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    
+
+    
+
+    <ul>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2026</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2026-03-31</span>
+            <span itemprop="countryCode">CN</span>
+            <span itemprop="applicationNumber">CN202610405576.9A</span>
+            <a href="/patent/CN121937219A/zh"><span itemprop="documentId">patent/CN121937219A/zh</span></a>
+            <span itemprop="legalStatusCat">active</span>
+            <span itemprop="legalStatus">Pending</span>
+            <span itemprop="thisApp" content="true" bool></span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    </section>
+
+  
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Similar Documents</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication</th>
+          <th>Publication Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN110704730B/zh">
+                <span itemprop="publicationNumber">CN110704730B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-07-02">2024-07-02</time>
+            
+            
+          </td>
+          <td itemprop="title">基于大数据的产品数据推送方法、系统及计算机设备 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN109685583B/zh">
+                <span itemprop="publicationNumber">CN109685583B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-12-25">2020-12-25</time>
+            
+            
+          </td>
+          <td itemprop="title">一种基于大数据的供应链需求预测方法 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN113706252B/zh">
+                <span itemprop="publicationNumber">CN113706252B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-05-03">2024-05-03</time>
+            
+            
+          </td>
+          <td itemprop="title">产品推荐方法、装置、电子设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN113222057A/zh">
+                <span itemprop="publicationNumber">CN113222057A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-08-06">2021-08-06</time>
+            
+            
+          </td>
+          <td itemprop="title">数据预测模型训练、数据预测方法、装置、设备及介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN115409419A/zh">
+                <span itemprop="publicationNumber">CN115409419A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-11-29">2022-11-29</time>
+            
+            
+          </td>
+          <td itemprop="title">业务数据的价值评估方法、装置、电子设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN113283936A/zh">
+                <span itemprop="publicationNumber">CN113283936A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-08-20">2021-08-20</time>
+            
+            
+          </td>
+          <td itemprop="title">一种销量预测方法、销量预测装置及电子设备 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN116800831B/zh">
+                <span itemprop="publicationNumber">CN116800831B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-07-30">2024-07-30</time>
+            
+            
+          </td>
+          <td itemprop="title">一种业务数据推送方法、装置、存储介质及处理器 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN112508308A/zh">
+                <span itemprop="publicationNumber">CN112508308A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-03-16">2021-03-16</time>
+            
+            
+          </td>
+          <td itemprop="title">一种数据处理方法、装置、设备及可读存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/WO2022109002A1/en">
+                <span itemprop="publicationNumber">WO2022109002A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-05-27">2022-05-27</time>
+            
+            
+          </td>
+          <td itemprop="title">Systems and methods for confidence interval transaction settlement range predictions 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN112308639B/zh">
+                <span itemprop="publicationNumber">CN112308639B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-07-04">2023-07-04</time>
+            
+            
+          </td>
+          <td itemprop="title">目标事件的时效预计方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN113537762A/zh">
+                <span itemprop="publicationNumber">CN113537762A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-10-22">2021-10-22</time>
+            
+            
+          </td>
+          <td itemprop="title">一种债券交易的事中风险控制方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN110322339B/zh">
+                <span itemprop="publicationNumber">CN110322339B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-06-30">2023-06-30</time>
+            
+            
+          </td>
+          <td itemprop="title">虚拟资源管理方法、装置、计算机系统及可读存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN118246954A/zh">
+                <span itemprop="publicationNumber">CN118246954A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-06-25">2024-06-25</time>
+            
+            
+          </td>
+          <td itemprop="title">一种豆粕期货价格预测方法、装置及终端设备 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US11556945B1/en">
+                <span itemprop="publicationNumber">US11556945B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-01-17">2023-01-17</time>
+            
+            
+          </td>
+          <td itemprop="title">Scalable product influence prediction using feature smoothing 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN117492809A/zh">
+                <span itemprop="publicationNumber">CN117492809A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-02-02">2024-02-02</time>
+            
+            
+          </td>
+          <td itemprop="title">一种计算机软件造价评估方法、计算机设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN111522862A/zh">
+                <span itemprop="publicationNumber">CN111522862A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-08-11">2020-08-11</time>
+            
+            
+          </td>
+          <td itemprop="title">基于机器学习的预测分类方法、装置和计算机设备 
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN110704488A/zh">
+                <span itemprop="publicationNumber">CN110704488A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-01-17">2020-01-17</time>
+            
+            
+          </td>
+          <td itemprop="title">用于管理数据的方法及相应的系统、计算机设备和介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN121258680A/zh">
+                <span itemprop="publicationNumber">CN121258680A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2026-01-02">2026-01-02</time>
+            
+            
+          </td>
+          <td itemprop="title">基于多视角特征提取的深度强化学习股票组合管理系统 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN117331983B/zh">
+                <span itemprop="publicationNumber">CN117331983B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-11-26">2024-11-26</time>
+            
+            
+          </td>
+          <td itemprop="title">贷款逾期数据的查找方法、装置、设备以及介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN112749720A/zh">
+                <span itemprop="publicationNumber">CN112749720A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-05-04">2021-05-04</time>
+            
+            
+          </td>
+          <td itemprop="title">产品成交总额的预测方法、系统、电子设备和存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN108765168A/zh">
+                <span itemprop="publicationNumber">CN108765168A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2018-11-06">2018-11-06</time>
+            
+            
+          </td>
+          <td itemprop="title">天气指数保险计算方法、电子装置及计算机可读存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN113342879B/zh">
+                <span itemprop="publicationNumber">CN113342879B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-09-05">2023-09-05</time>
+            
+            
+          </td>
+          <td itemprop="title">基于三次样条函数的样本券数据显示方法、装置、设备 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN116188178A/zh">
+                <span itemprop="publicationNumber">CN116188178A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-05-30">2023-05-30</time>
+            
+            
+          </td>
+          <td itemprop="title">资源信息处理方法、装置、设备、存储介质和产品 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN117196827A/zh">
+                <span itemprop="publicationNumber">CN117196827A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-12-08">2023-12-08</time>
+            
+            
+          </td>
+          <td itemprop="title">房贷早偿率预测方法、装置、设备及存储介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN116611925A/zh">
+                <span itemprop="publicationNumber">CN116611925A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-08-18">2023-08-18</time>
+            
+            
+          </td>
+          <td itemprop="title">提供资源关联处理业务中资源处理参考信息的方法和装置 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Legal Events</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Code</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2026-04-28">2026-04-28</time></td>
+          <td itemprop="code">PB01</td>
+          <td itemprop="title">Publication</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2026-04-28">2026-04-28</time></td>
+          <td itemprop="code">PB01</td>
+          <td itemprop="title">Publication</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2026-05-15">2026-05-15</time></td>
+          <td itemprop="code">SE01</td>
+          <td itemprop="title">Entry into force of request for substantive examination</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
+
+    </search-app>
+    
+    <script></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script type="text/javascript">
+      if (window.help && window.help.service) {
+        helpApi = window.help.service.Lazy.create(0, {apiKey: 'AIzaSyDTEI_0tLX4varJ7bwK8aT-eOI5qr3BmyI', locale: 'en-US'});
+        window.requestedSurveys = new Set();
+        window.requestSurvey = function(triggerId) {
+          if (window.requestedSurveys.has(triggerId)) {
+            return;
+          }
+          window.requestedSurveys.add(triggerId);
+          helpApi.requestSurvey({
+            triggerId: triggerId,
+            enableTestingMode: false,
+            callback: (requestSurveyCallbackParam) => {
+              if (!requestSurveyCallbackParam.surveyData) {
+                return;
+              }
+              helpApi.presentSurvey({
+                productData: {
+                  productVersion: window.version,
+                  customData: {
+                    "experiments": "",
+                  },
+                },
+                surveyData: requestSurveyCallbackParam.surveyData,
+                colorScheme: 1,
+                customZIndex: 10000,
+              });
+            }
+          });
+        };
+
+        window.requestSurvey('YXTwAsvoW0kedxbuTdH0RArc9VhT');
+      }
+    </script>
+    <script src="/sw/null_loader.js"></script>
+  </body>
+</html>

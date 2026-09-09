@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=""> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <title>搜索</title>
+    <meta name="keywords" content="盈米,盈米基金,且慢,养老投顾,基金投顾"/>
+    <meta name="description" content="珠海盈米基金销售有限公司是证监会批准的，国内首批基金投顾试点、首批入选个人养老金基金销售机构名录的独立基金销售机构。盈米基金旗下且慢，是专注于个人理财的基金投顾平台，提供简单、省心的个人理财解决方案。"/>
+
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" media="screen" href="/assets/css/bootstrap.min.css?v=1.0.3"/>
+    <link rel="stylesheet" media="screen" href="/assets/libs/font-awesome/css/font-awesome.min.css?v=1.0.3"/>
+    <link rel="stylesheet" media="screen" href="/assets/libs/fastadmin-layer/dist/theme/default/layer.css?v=1.0.3"/>
+    <!-- <link rel="stylesheet" media="screen" href="/assets/addons/cms/css/swiper.min.css?v=1.0.3"> -->
+            <link rel="stylesheet" media="screen" href="/assets/addons/cms/css/swiper.style.css?v=1.0.3">
+      
+    <link rel="stylesheet" media="screen" href="/assets/addons/cms/css/share.min.css?v=1.0.3">
+    <link rel="stylesheet" media="screen" href="/assets/addons/cms/css/iconfont.css?v=1.0.3">
+    <link rel="stylesheet" media="screen" href="/assets/addons/cms/css/common.css?v=1.0.3"/>
+
+    <!--[if lt IE 9]>
+    <script src="/libs/html5shiv.js"></script>
+    <script src="/libs/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/assets/libs/jquery/dist/jquery.min.js?v=1.0.3"></script>
+    <script type="text/javascript" src="/assets/js/sensorsdata.min.js?v=1.0.3"></script>
+</head>
+<style>
+    /* .big-event-gray {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+      filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+      -webkit-filter: grayscale(1);
+    } */
+  </style>
+<body class="group-page skin-white">
+
+<header class="header" role="banner">
+    <!-- S 导航 -->
+    <nav class="navbar navbar-default navbar-white navbar-fixed-top index-header default" role="navigation" aria-label="主导航">
+        <div class="main-content">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle sidebar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="https://cdn-website.yingmi.cn/officialwww/uploads/20220524/1e4688f721d774a75c6bc840bb821582.png" style="width:100%;" alt=""></a>
+            </div>
+
+            <div class="index-right fr" id="navbar-collapse">
+                <div class="df">
+                    <div class="index-right-mid">
+                        <div class="desc"> 客服电话：020-89629066 &nbsp;&nbsp; 服务时间：9:00 - 18:00（工作日）<span class="language"></span></div>
+                        <ul class="nav navbar-nav index-right-nav" data-current="0">
+                            <!--如果你需要自定义NAV,可使用channellist标签来完成,这里只设置了2级,如果显示无限级,请使用cms:nav标签-->
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="">
+                                <a href="/" > <div class="a-in">首页</div> </a>
+                                <ul class="hidden h-dropdown-menu dn" role="menu">
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="">
+                                <a href="/fengniao" > <div class="a-in">蜂鸟</div> </a>
+                                <ul class="hidden h-dropdown-menu dn" role="menu">
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="">
+                                <a href="https://qieman.com/" > <div class="a-in">且慢</div> </a>
+                                <ul class="hidden h-dropdown-menu dn" role="menu">
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="dropdown">
+                                <a href="/qiming"  data-toggle="dropdown" > <div class="a-in">啟明</div> </a>
+                                <ul class=" h-dropdown-menu dn" role="menu">
+                                                                        <li><a href="/qiming">理财团队</a></li>
+                                                                        <li><a href="/jinrongjigou">金融机构</a></li>
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="dropdown">
+                                <a href="/page/institute"  data-toggle="dropdown" > <div class="a-in">支持体系</div> </a>
+                                <ul class=" h-dropdown-menu dn" role="menu">
+                                                                        <li><a href="/page/institute">盈米研究院</a></li>
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="">
+                                <a href="http://ai.yingmi.com" > <div class="a-in">盈米AI开放平台</div> </a>
+                                <ul class="hidden h-dropdown-menu dn" role="menu">
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="dropdown">
+                                <a href="/channel/news"  data-toggle="dropdown" > <div class="a-in">新闻中心</div> </a>
+                                <ul class=" h-dropdown-menu dn" role="menu">
+                                                                        <li><a href="/channel/gongsizixun_6">公司资讯</a></li>
+                                                                        <li><a href="/channel/tougudongcha_5">投顾洞察</a></li>
+                                                                        <li><a href="/channel/meitijujiao_4">媒体聚焦</a></li>
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="dropdown">
+                                <a href="/page/about_us"  data-toggle="dropdown" > <div class="a-in">关于盈米</div> </a>
+                                <ul class=" h-dropdown-menu dn" role="menu">
+                                                                        <li><a href="/page/about_us#company">公司介绍</a></li>
+                                                                        <li><a href="/page/about_us#mission">使命与愿景</a></li>
+                                                                        <li><a href="/page/about_us#course">发展历程</a></li>
+                                                                        <li><a href="/page/about_us#honor">荣誉奖项</a></li>
+                                                                        <li><a href="/page/about_us#shareholders">主要股东</a></li>
+                                                                        <li><a href="/page/about_us#disclosure">信息披露</a></li>
+                                                                        <li><a href="/page/about_us#qualification">公司资质</a></li>
+                                                                    </ul>
+                            </li>
+                                                        <!--判断是否有子级或高亮当前栏目-->
+                            <li class="dropdown">
+                                <a href="/page/join_us"  data-toggle="dropdown" > <div class="a-in">加入我们</div> </a>
+                                <ul class=" h-dropdown-menu dn" role="menu">
+                                                                        <li><a href="/page/join_us#develop">人才发展</a></li>
+                                                                        <li><a href="https://yingmi.zhiye.com/">招贤纳士</a></li>
+                                                                        <li><a href="/page/join_us#address">办公地点</a></li>
+                                                                    </ul>
+                            </li>
+                                    
+                            <!--如果需要无限级请使用cms:nav标签-->
+                            
+                            <li>
+                                <div class="search" onclick="show_search()"><img class="h-search" src="/assets/addons/cms/img/h-search.png" alt=""></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- E 导航 -->
+
+</header>
+<div class="for-search-out fb dn">
+    <div class="df fb in-center">
+        <div id="for_search" >
+            <div class="for_search_in">
+                <div class="t-search-div"><img class="t-search" src="/assets/addons/cms/img/t-search.png" alt=""></div>
+                <input class="t-input" border="0" placeholder="请输入关键词进行搜索" type="text" autofocus="autofocus">
+                <img class="t-x" onclick="layer_closeAll()" src="/assets/addons/cms/img/t-x.png" alt="">
+            </div>
+            <div class="for_search_bottom_out">
+                <div class="for_search_bottom">
+                    <div class="for_search_bottom_in">
+                        <div class="hot">
+                            热门搜索
+                        </div>
+                        <ul class="t-result">
+                            <li onclick="goToSerach('蜂鸟')">蜂鸟</li>
+                            <li onclick="goToSerach('且慢')">且慢</li>
+                            <li onclick="goToSerach('啟明')">啟明</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="h-background default"></div>
+<main class="main-content"  role="main">
+    
+
+<div class="body-container search-container">
+    <div class="dfc">
+        <div class="dfc search-input-out">
+          <img src="/assets/addons/cms/img/tabbar/search.png" alt="" class="search-img">  
+          <input type="text" class="search-input" value="">
+          <div class="s-button" onclick="search_for_search()">搜  索</div>
+        </div>
+    </div>
+    <div class="dfc">
+        <div class="search-item">
+            <div class="result">包含“”的内容搜索结果</div>
+            <div class="s-line"></div>
+            <!-- https://cdn-website.yingmi.cn/officialwww/uploads/20220118/29d438624a36c8d35a393c3c251dca6f.png -->
+                        <a href="/archives/835">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">06</div>
+                        <div class="i-l-2">2026.05</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">肖雯：AI赋能投顾业务新未来</div>
+                        <div class="i-r-2">AI的演进范式与商业价值重塑</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/829">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">29</div>
+                        <div class="i-l-2">2026.04</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">琴澳金融代表团莅临盈米基金调研交流</div>
+                        <div class="i-r-2">携手共进，交流创造价值。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/823">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">29</div>
+                        <div class="i-l-2">2026.04</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">权威认证！且慢APP通过证券期货业安全认证，筑牢买方投顾安全防线</div>
+                        <div class="i-r-2">未来，且慢将以更高的标准打磨信息安全体系，持续筑牢买方投顾服务防护底座.</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/817">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">09</div>
+                        <div class="i-l-2">2026.04</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">【AI速递】盈米基金MCP服务入选工信部AI产业创新场景应用案例</div>
+                        <div class="i-r-2">未来，盈米基金将继续加大AI技术研发投入，持续优化MCP、Skill、Agent等工具生态，为行业提供更专业、更便捷的AI能力和AI投顾基础设施。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/811">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">09</div>
+                        <div class="i-l-2">2026.04</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">媒体报道｜盈米MCP服务入选工信部“AI产业创新场景应用案例”</div>
+                        <div class="i-r-2">此次入选，标志着盈米基金在AI与财富管理的深度融合和创新实践获得了权威认可，也为财富管理行业的AI技术落地提供了可借鉴的范本。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/799">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">27</div>
+                        <div class="i-l-2">2026.03</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">【AI速递】盈米基金上线内容合规审查Skill，筑牢AI时代金融内容的合规防线</div>
+                        <div class="i-r-2">盈米基金正式发布“内容合规审查 Skill (技能，content-compliance-skill)”，并已全面上线 Github 与 Gitee等开源平台，龙虾（OpenClaw）等AI智能体可一键接入、开箱即用。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/793">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">27</div>
+                        <div class="i-l-2">2026.03</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">【AI速递】“投顾龙虾”来了！机构加速布局</div>
+                        <div class="i-r-2">随着OpenClaw的快速走红，第三方销售机构及财富管理机构对AI智能体的探索进入新阶段。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/787">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">12</div>
+                        <div class="i-l-2">2026.02</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">【AI速递】从“财富管理+AI”到“AI原生”，且慢开启智能投顾2.0</div>
+                        <div class="i-r-2">且慢完成了“AI小顾”全新升级，正式从“财富管理+AI”的1.0工具应用阶段，升级为“AI原生”2.0智能服务模式。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/775">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">13</div>
+                        <div class="i-l-2">2026.01</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">【AI速递】盈米 AI 再获殊荣，连续 7 年蝉联毕马威中国金融科技双 50 榜单</div>
+                        <div class="i-r-2">盈米基金始终坚持 “科技驱动财富管理创新”，在金融科技应用前沿不断突破。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                         <a href="/archives/769">
+                <div class="s-item df">
+                    <div class="i-l dfc">
+                        <div class="i-l-1">30</div>
+                        <div class="i-l-2">2025.12</div>
+                    </div>
+                    <div class="i-r df">
+                        <div class="i-r-1">【AI速递】盈米基金且慢 MCP 被权威报告收录，引领 AI 金融服务新范式</div>
+                        <div class="i-r-2">加速金融 AI 应用落地，推动业务创新。</div>
+                    </div>
+                </div>
+                <div class="s-line"></div>
+             </a>
+                     </div>
+    </div>
+    <div class="paginate dfc">
+        <ul class="pagination"><li><a href="/search?words=&amp;page=1"><</a></li> <li><a href="/search?words=&amp;page=1">1</a></li><li class="active"><span>2</span></li><li><a href="/search?words=&amp;page=3">3</a></li><li><a href="/search?words=&amp;page=4">4</a></li><li><a href="/search?words=&amp;page=5">5</a></li><li><a href="/search?words=&amp;page=6">6</a></li><li><a href="/search?words=&amp;page=7">7</a></li><li><a href="/search?words=&amp;page=8">8</a></li><li class="disabled"><span>...</span></li><li><a href="/search?words=&amp;page=22">22</a></li><li><a href="/search?words=&amp;page=23">23</a></li> <li><a href="/search?words=&amp;page=3">></a></li></ul>    </div>
+
+</div>
+<script>
+    $(".search-input").keyup(function(event){
+    if(event.keyCode ==13){
+        search_for_search()
+    }
+  });
+    function search_for_search(){
+        var search = $(".search-input").val()
+        if(search){
+            goToSerach(search)
+        }else{
+            layer.msg('请输入您要搜索的内容！');
+        }
+    }
+</script>
+</main>
+<footer class="default"  role="contentinfo">
+    <div id="footer">
+        <div class="footer-container df">
+            <div>
+                <div class="first">
+                    <img class="f-img" src="https://cdn-website.yingmi.cn/officialwww/uploads/20220524/1e4688f721d774a75c6bc840bb821582.png" alt="">
+                </div>
+                <div class="address tc">
+                地址：广州市海珠区阅江中路688号<br>
+                保利国际广场北塔33楼、8楼<br>
+                邮编：510308
+                </div>
+                <div>
+                    <a  target="_blank">
+                        <img class="f-icon  f-icon-wechat" src="/assets/addons/cms/img/weixin.png" alt="">            
+                    </a>
+                    <a href="https://weibo.com/yingmicaifu"  target="_blank">
+                        <img class="f-icon" src="/assets/addons/cms/img/weibo.png" alt="">
+                    </a>
+                    <!-- S 分享 -->
+                    <div class="social-share text-center bottom-share" data-initialized="true" data-mode="prepend" >            
+                      <div class="bottom-share-in">
+                        <!-- <a href="javascript:" class="social-share-icon icon-wechat"></a>   -->
+                        <!-- <a href="#" class="social-share-icon icon-weibo" target="_blank"></a> -->
+                      </div>                                        
+                    </div>
+                </div>
+            </div>
+            <div class="f-link">
+                <div class="first">信息披露</div>
+                <div class="tc">
+                    <a href="/page/disclosure?cat=42"><div>公司公告</div></a>
+                    <a href="/page/disclosure?cat=40"><div>临时公告</div></a>
+                    <a href="/page/down_table?id=list"><div>表格下载</div></a>
+                    <a href="https://gs.amac.org.cn/amac-infodisc/res/pof/person/personList.html?userId=1903291909100890"><div>从业人员公示</div></a>
+                    <!-- <a href=""><div>合规资质</div></a> -->
+                </div>
+            </div>
+            <div>
+                <div class="first">核心业务</div>
+                <div class="tc">
+                    <a href="/fengniao"><div>蜂鸟</div></a>
+                    <a href="https://qieman.com/"><div>且慢</div></a>
+                    <a href="/qiming"><div>啟明</div></a>
+                </div>
+            </div>
+            <div>
+                <div class="first">加入我们</div>
+                <div class="tc">
+                    <a href="/page/join_us#develop"><div>人才发展</div></a>
+                    <a href="/page/join_us#recruitment"><div>招贤纳士</div></a>
+                    <a href="/page/join_us#address"><div>办公地点</div></a>
+                </div>
+            </div>
+            <div>
+                <div class="first">联系方式</div>
+                <div class="tc">
+                    <div>客服热线：020-89629066</div>
+                    <div>工作时间：周一至周五 9:00 - 11:30 ；13:30 - 18:00</div>
+                    <!-- <div>媒体合作：dengjiajing@yingmi.cn</div> -->
+                    <div>品牌合作：branding@yingmi.cn </div>
+                </div>
+            </div>
+            <div>
+                <div class="first">友情链接</div>
+                <div class="tc">
+                    <a href="http://www.csrc.gov.cn"><div>中国证券监督管理委员会</div></a>
+                    <a href="https://www.amac.org.cn"><div>中国证券投资基金业协会</div></a>
+                    <a href="http://www.csrc.gov.cn/guangdong/"><div>中国证监会广东监管局</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mid df">
+            <div class="df tc footer-mid-in">
+                <!-- <a href=""><div>版权声明</div></a> 
+                <div class="right-line"></div> -->
+                <a href="/disclosure/6/141"><div>免责声明</div></a>
+                <div class="right-line"></div>
+                <a href="/archives/137.html"><div>隐私声明</div></a>
+                <!-- <div class="right-line"></div>
+                <a href=""><div>联系我们</div></a> -->
+            </div>
+        </div>
+        <div class="footer-bottom df">
+            <div class="tc">
+                <div>珠海盈米基金销售有限公司   版权所有 All Rights Reserved.</div>
+                <div>
+                     <a href="https://beian.miit.gov.cn/">ICP 备案登记证编号：粤ICP备 <span id="beian">15062379</span> 号</a>  
+                     <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010502001526">粤公网安备 44010502001526 号</a>  本网站支持 IPv6</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="floatbtn">
+    <!-- S 浮动按钮 -->
+
+    <!--     <a  >
+        <i class="iconfont icon-wxapp"></i>
+        <div class="floatbtn-wrapper">
+            <div class="qrcode"><img src="/assets/addons/cms/img/qrcode.png"></div>
+            <p>微信小程序</p>
+            <p>微信扫一扫体验</p>
+        </div>
+    </a>
+        <a class="hover" href="/index/cms.archives/post.html" target="_blank">
+        <i class="iconfont icon-pencil"></i>
+        <em>立即<br>投稿</em>
+    </a>
+    
+    <div class="floatbtn-item floatbtn-share">
+        <i class="iconfont icon-share"></i>
+        <div class="floatbtn-wrapper" style="height:50px;top:0">
+            <div class="social-share" data-initialized="true" data-mode="prepend">
+                <a href="#" class="social-share-icon icon-weibo" target="_blank"></a>
+                <a href="#" class="social-share-icon icon-qq" target="_blank"></a>
+                <a href="#" class="social-share-icon icon-qzone" target="_blank"></a>
+                <a href="#" class="social-share-icon icon-wechat"></a>
+            </div>
+        </div>
+    </div>
+
+        <a  >
+        <i class="iconfont icon-qrcode"></i>
+        <div class="floatbtn-wrapper">
+            <div class="qrcode"><img src="/assets/addons/cms/img/qrcode.png"></div>
+            <p>微信公众账号</p>
+            <p>微信扫一扫加关注</p>
+        </div>
+    </a>
+     -->
+
+    <a id="back-to-top" class="hover"  >
+       <img class="back-to-top" src="https://cdn-website.yingmi.cn/officialwww/uploads/20220125/861394f9c4e314afe30bda2b73b3dbd6.png" alt="">
+       <img class="back-to-top two" src="https://cdn-website.yingmi.cn/officialwww/uploads/20220125/df9b52d3501eafd7b10c3356fc33708d.png" alt="">
+   
+    </a>
+    <!-- E 浮动按钮 -->
+</div>
+
+
+
+<script type="text/javascript" src="/assets/libs/bootstrap/dist/js/bootstrap.min.js?v=1.0.3"></script>
+<script type="text/javascript" src="/assets/libs/fastadmin-layer/dist/layer.js?v=1.0.3"></script>
+<script type="text/javascript" src="/assets/libs/art-template/dist/template-native.js?v=1.0.3"></script>
+<script type="text/javascript" src="/assets/addons/cms/js/jquery.autocomplete.js?v=1.0.3"></script>
+
+    <script type="text/javascript" src="/assets/addons/cms/js/swiper2.min.js?v=1.0.3"></script>
+
+<script type="text/javascript" src="/assets/addons/cms/js/share.min.js?v=1.0.3"></script>
+<script type="text/javascript" src="/assets/addons/cms/js/cms.js?v=1.0.3"></script>
+
+
+<script type="text/javascript" src="/assets/addons/cms/js/common.js?v=1.0.3"></script>
+
+</body>
+</html>

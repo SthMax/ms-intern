@@ -1,0 +1,23 @@
+{
+  "source_id": "FUND-113",
+  "title": "MENTOR: a multi-agent framework for event and narrative trend prediction with optimized reasoning",
+  "issuer": "MENTOR authors (E Fund Management, Tsinghua University and University of Manchester); Zhejiang University Press",
+  "source_type": "Peer-reviewed coauthored research paper",
+  "url": "https://www.fitee.zjujournals.com/rc-pub/front/front-article/download/135063239/lowqualitypdf/MENTOR: a multi-agent framework for event and narrative trend prediction with optimized reasoning.pdf",
+  "final_url": "https://www.fitee.zjujournals.com/rc-pub/front/front-article/download/135063239/lowqualitypdf/MENTOR:%20a%20multi-agent%20framework%20for%20event%20and%20narrative%20trend%20prediction%20with%20optimized%20reasoning.pdf",
+  "retrieved_at": "2026-09-08T17:17:05.317494+00:00",
+  "sha256": "4e6049e67a385b2b93b7c6cdbd8a7e8cb86614196f17b9d50c6141a3825609d0",
+  "byte_count": 892923,
+  "raw_file": "source.pdf",
+  "text_file": "original.md",
+  "text_language": "English",
+  "published": "2025, volume 26(10); exact online date to verify",
+  "archive_status": "publisher_pdf_and_extraction",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "collection_role": "main",
+  "verification_scope": "Publisher paper and official supplement; E Fund coauthor affiliation inspected on paper page 1. Algorithm, prompt templates and evaluation reviewed; no implementation code or public full licensed dataset located; research prototype, not evidence of EFundGPT production use.",
+  "text_kind": "full_original_language_extraction",
+  "reading_sha256": "8fc5bd502b80791d77b76acd3fc5b523edddce2c332942be4c537fea48a9aaa2",
+  "reproduction_executed": false
+}

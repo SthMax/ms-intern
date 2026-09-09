@@ -1,0 +1,17 @@
+{
+  "source_id": "csrc-network-security-status",
+  "title": "csrc-network-security-status",
+  "url": "https://neris.csrc.gov.cn/falvfagui/rdqsHeader/mainbody?navbarId=3&secFutrsLawId=7b2fd48915564f939041a34bf3555939",
+  "retrieved_at": "2026-09-08T17:07:17.676200+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://neris.csrc.gov.cn/falvfagui/rdqsHeader/mainbody?navbarId=3&secFutrsLawId=7b2fd48915564f939041a34bf3555939",
+  "content_type": "text/html;charset=UTF-8",
+  "sha256": "5bfbbf2695486969914d6aebc18e47aba1c2171383072dae5e5178fb1a2a0791",
+  "byte_count": 71708,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 2762,
+  "extracted_text_sha256": "4f10eb600e160a36cd70d642bc90479364e843faa23948ffb5d4318fc7eee410"
+}

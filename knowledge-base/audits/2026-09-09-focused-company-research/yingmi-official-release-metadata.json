@@ -1,0 +1,10 @@
+{
+  "url": "https://www.yingmi-inc.com/archives/799",
+  "final_url": "https://www.chnfund.com/article/AR8e4e17e8-252c-d5d6-2eb7-3a20162a0343",
+  "retrieved_at": "2026-09-08T17:20:15.394420+00:00",
+  "sha256": "5ca8c70d9f35fd98da8cdd0ce172977d7d3a31f1f5f4726d36296461410b13b5",
+  "bytes": 28068,
+  "text_file": "yingmi-official-release.md",
+  "reading_sha256": "b0cecd88c47975bdbf497626f3e907c84957c06d6e30364d1d9e738c997c5f05",
+  "extraction": "Defuddle CLI from preserved official HTML; no translation"
+}

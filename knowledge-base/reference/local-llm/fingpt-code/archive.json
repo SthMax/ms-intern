@@ -1,0 +1,64 @@
+{
+  "repository": "AI4Finance-Foundation/FinGPT",
+  "commit": "781a7c020da977092f2f2c4916024a412c5e3801",
+  "retrieved_at": "2026-09-08T19:54:35.611010+00:00",
+  "files": [
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "git_blob_sha": "b5ccfe3e48d1ee785a0eafa503a909ebdc52074b",
+      "sha256": "2a3183a35138275582698c16b07e9b33992d822434bb4c7728673c6204bb1848",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "git_blob_sha": "fc5fc28e9c5e2cb62ec0ebda34fd2b4cf5b0d81b",
+      "sha256": "d6bccbf6ce223a6cfa96e7c7c45ee5ccedbca425c48e87b5cb1c24a679327b5e",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/README.md"
+    },
+    {
+      "path": "SETUP.md",
+      "type": "blob",
+      "git_blob_sha": "8601de3c3b552d39dfaa3217485e248f763b891f",
+      "sha256": "bf5ef8f36e0aa8f4b8b1594b69e612c0139632a3d7ff2a2a18ef51b821380bd1",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/SETUP.md"
+    },
+    {
+      "path": "fingpt/FinGPT_Benchmark/demo.ipynb",
+      "type": "blob",
+      "git_blob_sha": "0be40064ffd53f836bd7e8de8fce9908e2ae8f79",
+      "sha256": "de4901ea943d59fa516d20bb124dfeb39a79b8a7bc26e0c80823ef8d1d0f7675",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/fingpt/FinGPT_Benchmark/demo.ipynb"
+    },
+    {
+      "path": "fingpt/FinGPT_Sentiment_Analysis_v3/benchmark/benchmarks.ipynb",
+      "type": "blob",
+      "git_blob_sha": "42202a5af31189f4fbf859e207384737c5d78d33",
+      "sha256": "e3ed91e8b2ade1def79a83d4c3d5dbd12b2b87ffd9824c0ccc81f8ffa92ab027",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/fingpt/FinGPT_Sentiment_Analysis_v3/benchmark/benchmarks.ipynb"
+    },
+    {
+      "path": "fingpt/FinGPT_Sentiment_Analysis_v3/benchmark/benchmarks_llama2_13b.ipynb",
+      "type": "blob",
+      "git_blob_sha": "b701aab453120dd577d8dc9c28d472794f185630",
+      "sha256": "9022e2cbe5e4a407785033b5927a57a0c669b6daee879a25120b0f3b1595e29f",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/fingpt/FinGPT_Sentiment_Analysis_v3/benchmark/benchmarks_llama2_13b.ipynb"
+    },
+    {
+      "path": "requirements.txt",
+      "type": "blob",
+      "git_blob_sha": "a44cc961e989f1413b0e89d8cb24ad69f75fab13",
+      "sha256": "676a55ce6d84759cf2889f360e62e20e977a5fa59c19c653dd29fb9c372f9b3d",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/requirements.txt"
+    },
+    {
+      "path": "fingpt/FinGPT_Benchmark/utils.py",
+      "type": "blob",
+      "git_blob_sha": "e0f5b9826673475f97d9ae2da8385fa3ce274ac0",
+      "sha256": "1d748c7dcdf7db7e5e9953e3c35c0ce31d38b84997653e907ce280aa1d1f5552",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT/blob/781a7c020da977092f2f2c4916024a412c5e3801/fingpt/FinGPT_Benchmark/utils.py"
+    }
+  ],
+  "limits": "Selected docs/source/notebooks only; no model weights, market data, prebuilt pickle/FAISS indices, installs or execution."
+}

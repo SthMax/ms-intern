@@ -1,0 +1,20 @@
+{
+  "source_id": "FUND-320",
+  "title": "一种基于知识图谱的智能问答系统优化方法及装置（CN120804142A）",
+  "issuer": "鹏华基金管理有限公司（公布说明书镜像所列申请人）",
+  "url": "https://patents.google.com/patent/CN120804142A/zh",
+  "published": "2025-10-17",
+  "retrieved_at": "2026-09-08T19:02:59.729777+00:00",
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "sha256": "382bc12a83c9b71b070bd8c7b1dff0c50886ba541bee29265674f95298bb8ab8",
+  "reading_sha256": "a47c129802a7b9f374c4e0089f8c4b2904486469368d5946387e8cdf65fabc2f",
+  "text_language": "Chinese",
+  "text_kind": "patent_description_excerpt",
+  "collection_role": "main",
+  "evidence_state": "candidate",
+  "human_check_status": "pending",
+  "verification_scope": "Explicit LLM role in S50; schema-constrained graph query generation, checking/retry and execution described. Original PDF, figures, production use and exact finance example unverified.",
+  "llm_report_eligibility": "candidate_explicit_llm_role",
+  "reproduction_executed": false
+}

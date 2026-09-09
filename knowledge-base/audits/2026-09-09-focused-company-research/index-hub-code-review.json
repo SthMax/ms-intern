@@ -1,0 +1,159 @@
+{
+  "repository": "EFundAI/index-hub-skills",
+  "commit": "1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
+  "method": "Static required-file inventory and pure local guardrail function calls using synthetic strings; no installation, no credential lookup, no data/API calls",
+  "results": [
+    {
+      "skill": "index-query",
+      "missing_required_files": [],
+      "guardrail_smoke_tests": [
+        {
+          "case": "neutral",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        },
+        {
+          "case": "missing",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        },
+        {
+          "case": "advice",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "promise",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "sentinel",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "dummy_secret",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "education",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        }
+      ],
+      "guardrails_sha256": "721ebae9e65ac699766baf37a2ac552d82a8dc901d9d561acac5f6794c9b879e"
+    },
+    {
+      "skill": "etf-fund-query",
+      "missing_required_files": [
+        "config.py"
+      ],
+      "guardrail_smoke_tests": [
+        {
+          "case": "neutral",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        },
+        {
+          "case": "missing",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        },
+        {
+          "case": "advice",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "promise",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "sentinel",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "dummy_secret",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "education",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        }
+      ],
+      "guardrails_sha256": "721ebae9e65ac699766baf37a2ac552d82a8dc901d9d561acac5f6794c9b879e"
+    },
+    {
+      "skill": "open-fund-query",
+      "missing_required_files": [
+        "config.py"
+      ],
+      "guardrail_smoke_tests": [
+        {
+          "case": "neutral",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        },
+        {
+          "case": "missing",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        },
+        {
+          "case": "advice",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "promise",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "sentinel",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "dummy_secret",
+          "expected_accept": false,
+          "actual_accept": false,
+          "pass": true
+        },
+        {
+          "case": "education",
+          "expected_accept": true,
+          "actual_accept": true,
+          "pass": true
+        }
+      ],
+      "guardrails_sha256": "721ebae9e65ac699766baf37a2ac552d82a8dc901d9d561acac5f6794c9b879e"
+    }
+  ],
+  "limitations": "Smoke cases do not prove robust compliance, financial correctness, prompt-injection resistance, or live service availability."
+}

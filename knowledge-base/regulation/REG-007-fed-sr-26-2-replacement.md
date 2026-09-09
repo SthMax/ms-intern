@@ -7,6 +7,7 @@ accessed: 2026-09-06
 official_url: https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm
 reviewed_by: Codex
 review_method: Original Federal Reserve letter opened
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -57,3 +58,6 @@ policy. The attachment's generative-AI scope qualification is essential; see
 
 Replacement verified directly; internal Morgan Stanley adoption and MSIM entity
 applicability are not established. Human check pending.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。

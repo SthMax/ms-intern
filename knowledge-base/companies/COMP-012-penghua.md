@@ -1,4 +1,8 @@
 ---
+
+> 新增严格LLM候选：[FUND-320知识图谱问答方案](../sources/FUND-320/original.md)，S50明确由LLM结合schema与示例生成图查询并校验重试；原PDF和投产对应待核，尚未提分。
+
+> 2026-09-09定向补查：深交所2024年度结项公告列出FRDC022024123《大模型企业超级助手》，但尚未取得结项报告；评分仍为3。检索路径见[重点研究](focused-research-2026-09-09.md)。
 company_id: COMP-012
 evidence_state: verified-primary
 accessed: 2026-09-06

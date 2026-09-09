@@ -1,0 +1,14 @@
+{
+  "registered_source_ids": 125,
+  "roles": {
+    "main": 112,
+    "redirect": 4,
+    "supporting": 9
+  },
+  "new_sources": [
+    "FUND-215",
+    "FUND-323",
+    "FUND-324"
+  ],
+  "scope": "2026, three agreed LLM quant themes; fund cases first, API accepted, local optional; original cohort unchanged"
+}

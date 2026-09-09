@@ -1,0 +1,269 @@
+{
+  "sha": "1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
+  "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0af75d650bc70211182f4dfebab979f57103fc",
+      "size": 267,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/6b0af75d650bc70211182f4dfebab979f57103fc"
+    },
+    {
+      "path": "Index-Hub",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e08af5bd5cdc7c3e0a796e16cd9c4bd5907d81b",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/8e08af5bd5cdc7c3e0a796e16cd9c4bd5907d81b"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c72ee333c062274127b295155459630dd53305b",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/5c72ee333c062274127b295155459630dd53305b"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/INSTALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "171daa6cc5a9e5cbca10f0c04949c22daadbe0e1",
+      "size": 4118,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/171daa6cc5a9e5cbca10f0c04949c22daadbe0e1"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5be63c0075f48db391eeae9218a9ddcd5a4096bd",
+      "size": 19864,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/5be63c0075f48db391eeae9218a9ddcd5a4096bd"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/guardrails.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09d827c2cdb6527964e00cdd4deb6d0db69629e9",
+      "size": 7142,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/09d827c2cdb6527964e00cdd4deb6d0db69629e9"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/install-spec.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4bd37b7a7f063e51d0134df6aaca64909288dbd",
+      "size": 229,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/b4bd37b7a7f063e51d0134df6aaca64909288dbd"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/install.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8670038071ac76e3aad5641e3a681f23e13a6f22",
+      "size": 9238,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/8670038071ac76e3aad5641e3a681f23e13a6f22"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc20e447d39d60674faad0bb5dda3a212d8532fe",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/bc20e447d39d60674faad0bb5dda3a212d8532fe"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/references/catalog-etf.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be5fd8c0f1b670fb79c076e72fffaabb5035083f",
+      "size": 23633,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/be5fd8c0f1b670fb79c076e72fffaabb5035083f"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9faf4914c6db49220b71746ca8df46aa39a50fbe",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/9faf4914c6db49220b71746ca8df46aa39a50fbe"
+    },
+    {
+      "path": "Index-Hub/etf-fund-query/scripts/api_client.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2fb97e5e0676ee0621ae7d9861a2fef475d6453f",
+      "size": 13063,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/2fb97e5e0676ee0621ae7d9861a2fef475d6453f"
+    },
+    {
+      "path": "Index-Hub/index-query",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff6b906b646782099f810a6b19c6e1651a85c268",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/ff6b906b646782099f810a6b19c6e1651a85c268"
+    },
+    {
+      "path": "Index-Hub/index-query/INSTALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99612a27b406cbdba05703b6019ad976e9d4c968",
+      "size": 4113,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/99612a27b406cbdba05703b6019ad976e9d4c968"
+    },
+    {
+      "path": "Index-Hub/index-query/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fc9893e9b0be447ae1d87ad8555a4dd797692d5",
+      "size": 19496,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/1fc9893e9b0be447ae1d87ad8555a4dd797692d5"
+    },
+    {
+      "path": "Index-Hub/index-query/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4fe809668192358ea2ffd2e5a0756294744077c",
+      "size": 1178,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/d4fe809668192358ea2ffd2e5a0756294744077c"
+    },
+    {
+      "path": "Index-Hub/index-query/guardrails.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09d827c2cdb6527964e00cdd4deb6d0db69629e9",
+      "size": 7142,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/09d827c2cdb6527964e00cdd4deb6d0db69629e9"
+    },
+    {
+      "path": "Index-Hub/index-query/install-spec.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab586968e99dcae8be2597470fec834535b82b75",
+      "size": 238,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/ab586968e99dcae8be2597470fec834535b82b75"
+    },
+    {
+      "path": "Index-Hub/index-query/install.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8670038071ac76e3aad5641e3a681f23e13a6f22",
+      "size": 9238,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/8670038071ac76e3aad5641e3a681f23e13a6f22"
+    },
+    {
+      "path": "Index-Hub/index-query/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02d3e132409ad6028d6ec5c0dff6e8f87d217de7",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/02d3e132409ad6028d6ec5c0dff6e8f87d217de7"
+    },
+    {
+      "path": "Index-Hub/index-query/references/catalog-index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5602aadc8de3414dfe206a570a042197aba9968",
+      "size": 18116,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/c5602aadc8de3414dfe206a570a042197aba9968"
+    },
+    {
+      "path": "Index-Hub/index-query/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c3609b1af556605e4241072c0833e8ab2b742b92",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/c3609b1af556605e4241072c0833e8ab2b742b92"
+    },
+    {
+      "path": "Index-Hub/index-query/scripts/api_client.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "82b80fb3a697cb98a960eeac793d7b6bad86d607",
+      "size": 13064,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/82b80fb3a697cb98a960eeac793d7b6bad86d607"
+    },
+    {
+      "path": "Index-Hub/open-fund-query",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6348772bc949b40bed64d671e2b97146eb6d7736",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/6348772bc949b40bed64d671e2b97146eb6d7736"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/INSTALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7112b57d891953f7621ee38e7827efd59eead6a9",
+      "size": 4144,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/7112b57d891953f7621ee38e7827efd59eead6a9"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69c2c13d11befe7ea89a7081be955f1eb73b03e5",
+      "size": 18022,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/69c2c13d11befe7ea89a7081be955f1eb73b03e5"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/guardrails.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09d827c2cdb6527964e00cdd4deb6d0db69629e9",
+      "size": 7142,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/09d827c2cdb6527964e00cdd4deb6d0db69629e9"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/install-spec.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b197cf84dcfed863560a1881fadc463a8e1e10d",
+      "size": 230,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/0b197cf84dcfed863560a1881fadc463a8e1e10d"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/install.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8670038071ac76e3aad5641e3a681f23e13a6f22",
+      "size": 9238,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/8670038071ac76e3aad5641e3a681f23e13a6f22"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3e55ac4826bf3c63b1a9279f5b85a4227996f72",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/a3e55ac4826bf3c63b1a9279f5b85a4227996f72"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/references/catalog-oef.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16faf5484d43e48e024b7b278d9cf5b81b34a37b",
+      "size": 20488,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/16faf5484d43e48e024b7b278d9cf5b81b34a37b"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "387a5f5b47795ffd26eb0112099946fe0d066ad1",
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/trees/387a5f5b47795ffd26eb0112099946fe0d066ad1"
+    },
+    {
+      "path": "Index-Hub/open-fund-query/scripts/api_client.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1c9855db3d98fbdc360017a6d9b1349a1cc2eca2",
+      "size": 12927,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/1c9855db3d98fbdc360017a6d9b1349a1cc2eca2"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "568523d7a5cd6466f9e2b4ef7712f1df9b333229",
+      "size": 8627,
+      "url": "https://api.github.com/repos/EFundAI/index-hub-skills/git/blobs/568523d7a5cd6466f9e2b4ef7712f1df9b333229"
+    }
+  ],
+  "truncated": false
+}

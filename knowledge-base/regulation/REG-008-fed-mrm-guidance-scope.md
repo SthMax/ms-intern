@@ -7,6 +7,7 @@ accessed: 2026-09-06
 official_url: https://www.federalreserve.gov/frrs/guidance/supervisory-guidance-on-model-risk-management.htm
 reviewed_by: Codex
 review_method: Official full guidance; sections I–VII and footnote 3 inspected
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -167,3 +168,6 @@ owner which controls cover the proposed LLM use.
 
 Read with [the superseding letter](REG-007-fed-sr-26-2-replacement.md).
 Human check pending, particularly footnote 3.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。

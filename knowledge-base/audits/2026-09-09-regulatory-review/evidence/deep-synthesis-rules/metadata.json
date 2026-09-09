@@ -1,0 +1,17 @@
+{
+  "source_id": "deep-synthesis-rules",
+  "title": "deep-synthesis-rules",
+  "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm",
+  "retrieved_at": "2026-09-08T17:07:20.278283+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "92e2f7b5478f9b32247276c456df0adaafa149f8f9dd8bbc6068f89e9952c0e0",
+  "byte_count": 29675,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 4260,
+  "extracted_text_sha256": "70cb595b56625c8eba43c384dc0b42d00679bca6c3fca0fb30fa48f82842a8ee"
+}

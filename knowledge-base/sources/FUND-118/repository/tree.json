@@ -1,0 +1,47 @@
+{
+  "sha": "24cc7095ca400cb2d1ef115e6aa477fd55b69300",
+  "url": "https://api.github.com/repos/EFundAI/FinCoT/git/trees/24cc7095ca400cb2d1ef115e6aa477fd55b69300",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "size": 66,
+      "url": "https://api.github.com/repos/EFundAI/FinCoT/git/blobs/dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a678fb008b88d4b62aef945930520fa2bfb421e",
+      "size": 3465,
+      "url": "https://api.github.com/repos/EFundAI/FinCoT/git/blobs/9a678fb008b88d4b62aef945930520fa2bfb421e"
+    },
+    {
+      "path": "mtms_dev_financeiq.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d78d54080ca9510170b5274d7203398c98f487f",
+      "size": 5291653,
+      "url": "https://api.github.com/repos/EFundAI/FinCoT/git/blobs/6d78d54080ca9510170b5274d7203398c98f487f"
+    },
+    {
+      "path": "mtms_dev_fineval.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68bd59ab2eed9799e4e8980f0e19d74ef7a49e73",
+      "size": 894909,
+      "url": "https://api.github.com/repos/EFundAI/FinCoT/git/blobs/68bd59ab2eed9799e4e8980f0e19d74ef7a49e73"
+    },
+    {
+      "path": "pipeline.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cec6a8ea2866f18cb79b58999b2ed7da55185d59",
+      "size": 106028,
+      "url": "https://api.github.com/repos/EFundAI/FinCoT/git/blobs/cec6a8ea2866f18cb79b58999b2ed7da55185d59"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,211 @@
+{
+  "review_date": "2026-09-09",
+  "checks": [
+    {
+      "check": "REG-013 source.html hash",
+      "passed": true
+    },
+    {
+      "check": "REG-013 original.md hash",
+      "passed": true
+    },
+    {
+      "check": "REG-013 end article and no navigation",
+      "passed": true
+    },
+    {
+      "check": "REG-014 source.html hash",
+      "passed": true
+    },
+    {
+      "check": "REG-014 original.md hash",
+      "passed": true
+    },
+    {
+      "check": "REG-014 end article and no navigation",
+      "passed": true
+    },
+    {
+      "check": "REG-015 source.html hash",
+      "passed": true
+    },
+    {
+      "check": "REG-015 original.md hash",
+      "passed": true
+    },
+    {
+      "check": "REG-015 end article and no navigation",
+      "passed": true
+    },
+    {
+      "check": "REG-016 source.html hash",
+      "passed": true
+    },
+    {
+      "check": "REG-016 original.md hash",
+      "passed": true
+    },
+    {
+      "check": "REG-016 end article and no navigation",
+      "passed": true
+    },
+    {
+      "check": "REG-010 fresh original equals archived original",
+      "passed": true
+    },
+    {
+      "check": "REG-011 fresh original equals archived original",
+      "passed": true
+    }
+  ],
+  "existing_regulatory_source_files": [
+    {
+      "path": "knowledge-base/sources/REG-001/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-001/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-001/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-002/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-002/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-002/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-003/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-003/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-003/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-004/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-004/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-004/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-005/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-005/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-005/source.pdf",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-006/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-006/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-006/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-007/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-007/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-007/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-008/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-008/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-008/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-009/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-009/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-009/source.html",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-010/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-010/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-010/source.pdf",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-011/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-011/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-011/source.pdf",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-012/original.md",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-012/metadata.json",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "knowledge-base/sources/REG-012/source.html",
+      "unchanged_from_HEAD": true
+    }
+  ],
+  "markdown_files_link_checked": 22,
+  "failures": [],
+  "passed": true,
+  "note": "Hash/link/content preservation verification, not legal applicability clearance; visual review records in README."
+}

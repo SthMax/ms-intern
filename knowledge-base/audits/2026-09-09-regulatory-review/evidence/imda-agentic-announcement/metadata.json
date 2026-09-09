@@ -1,0 +1,17 @@
+{
+  "source_id": "imda-agentic-announcement",
+  "title": "imda-agentic-announcement",
+  "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/new-model-ai-governance-framework-for-agentic-ai",
+  "retrieved_at": "2026-09-08T17:09:01.638938+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/new-model-ai-governance-framework-for-agentic-ai",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "1b36266ec1bf8dee80b5c1ca8242e8b5eb39c7c71a7ae4b2a9316cc84286f6a3",
+  "byte_count": 134017,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 2694,
+  "extracted_text_sha256": "2550b24c5340cbdcac7502edae6e137fdf76b6c1b47f90539c2c7372557a34d4"
+}

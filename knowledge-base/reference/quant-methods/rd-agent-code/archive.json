@@ -1,0 +1,318 @@
+{
+  "source_id": "rd-agent-code",
+  "repository": "microsoft/RD-Agent",
+  "commit": "32b3d395e73d9db5eee3fe9063d69aec0fdc83bd",
+  "retrieved_at": "2026-09-08T18:00:06.923202+00:00",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "c3c476fb09bf88fb13d7c17284fcd32be24ba467",
+      "sha256": "9c1229cbf2812fde846619b4e48bfe19aea3a7af0f2fd824c72cf40ac8e2cb4a",
+      "bytes": 40380,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/README.md"
+    },
+    {
+      "path": "docs/installation_and_configuration.rst",
+      "git_blob_sha": "dd367018c70dcddcf23506e5b0ca1371c880d5a3",
+      "sha256": "001bc519cc278819ca7dc8a983df58175d1547d23628d287001a2b7335478835",
+      "bytes": 25637,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/docs/installation_and_configuration.rst"
+    },
+    {
+      "path": "docs/scens/quant_agent_fin.rst",
+      "git_blob_sha": "02982d8d62ed0ed5020f2da010e2bb7069854fd8",
+      "sha256": "4e7716b8171f866af7b09fa7a67ac36bc315535650a7abe8a8bd4731b5670bbc",
+      "bytes": 5216,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/docs/scens/quant_agent_fin.rst"
+    },
+    {
+      "path": "pyproject.toml",
+      "git_blob_sha": "f252a93e23dcffd829ebae6ed3aefe84c425adbd",
+      "sha256": "31dbbd085013e357c0255668bb2138a46995c68270fd78bb769892fe2dceb91e",
+      "bytes": 2637,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/pyproject.toml"
+    },
+    {
+      "path": "rdagent/app/qlib_rd_loop/conf.py",
+      "git_blob_sha": "13dade7c9ac1157ce508f432ef2c0110082ebaf1",
+      "sha256": "1a5f1fb42456694b759acc78f5e301b2ff8227fc1e190dc4cdf65855e5bf31c3",
+      "bytes": 6166,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/app/qlib_rd_loop/conf.py"
+    },
+    {
+      "path": "rdagent/app/qlib_rd_loop/factor.py",
+      "git_blob_sha": "7f7736a41bb4cb208a2454ba124a8e7a0044f438",
+      "sha256": "819bbdab43888682735766ad3842b0e15b83d9286af59b5e96072da75e5db2d0",
+      "bytes": 1999,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/app/qlib_rd_loop/factor.py"
+    },
+    {
+      "path": "rdagent/app/qlib_rd_loop/factor_from_report.py",
+      "git_blob_sha": "0759f1f7e7be03158fcc50c6f2eeafceec3b0b64",
+      "sha256": "ee74ac7e9a53adb1cccaf3e457925b9afcece43f1c801a95ff3010b9462e82ce",
+      "bytes": 6894,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/app/qlib_rd_loop/factor_from_report.py"
+    },
+    {
+      "path": "rdagent/app/qlib_rd_loop/model.py",
+      "git_blob_sha": "d821f249a9676f82e8613dd3ce00909c65edda9a",
+      "sha256": "4b4674381d4f68f4d1f76c77859647744119c3496f75b8f348f09cfc5d77bcbf",
+      "bytes": 1350,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/app/qlib_rd_loop/model.py"
+    },
+    {
+      "path": "rdagent/app/qlib_rd_loop/prompts.yaml",
+      "git_blob_sha": "129c2c098bbdd4c23a8e90b6e0cffdc3faa78964",
+      "sha256": "962a77f019bbcc53eb58abf9aff7b289747f5403f44fb6207d17bba4f810ca2c",
+      "bytes": 612,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/app/qlib_rd_loop/prompts.yaml"
+    },
+    {
+      "path": "rdagent/app/qlib_rd_loop/quant.py",
+      "git_blob_sha": "e26972ef686f7d0010997ebb5fd667f3c328523f",
+      "sha256": "f3e4d2f2bb74b12578860386ec96fc0d0c6f628105109a4d0db7091f254dbb2a",
+      "bytes": 6856,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/app/qlib_rd_loop/quant.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/developer/factor_coder.py",
+      "git_blob_sha": "04ee81c5b34494fdf800a857e45651059be814fe",
+      "sha256": "b72a79f37f50b881ded0705a2c2f4f8ad616bca3280cd91eb3766dc134c8c790",
+      "bytes": 99,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/developer/factor_coder.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/developer/factor_runner.py",
+      "git_blob_sha": "c6b58d35ba7afa116f1d98db797a05977f9e388b",
+      "sha256": "d2c5864c27332b45a4eda6ad06e1706a84bfc9b3482b7ca45b34290615584988",
+      "bytes": 9802,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/developer/factor_runner.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/developer/feedback.py",
+      "git_blob_sha": "58fcfbd98e7729ecc9dfe356cc683a1455b0a19b",
+      "sha256": "ec2fce044709e083119820d7cb2c1609df8ff429103cabe34ced640cc093bb68",
+      "bytes": 8005,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/developer/feedback.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/developer/model_coder.py",
+      "git_blob_sha": "0f3055877e9d7692092e078a7471f40bc9df4d95",
+      "sha256": "bb68269d9cf42ff040e1feed24daaddfdc4b8b83417ddcc7882a2b16ead3d587",
+      "bytes": 95,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/developer/model_coder.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/developer/model_runner.py",
+      "git_blob_sha": "7f90942052047b5b7d8cad8559af044722ff43f4",
+      "sha256": "b67b5f1ad4c863b3b85d1a162d51559315578d1db43ec17d118041f593af4316",
+      "bytes": 5765,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/developer/model_runner.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/developer/utils.py",
+      "git_blob_sha": "cd4abef3b43b772ab6b088ae1c0f82e956875ef9",
+      "sha256": "d3c14540b30027f2a30c40ff630ae96bbf89575e76ef59e6b90e76ef15a6e692",
+      "bytes": 7135,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/developer/utils.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_data_template/README.md",
+      "git_blob_sha": "d03534de9c16727a856c5c7227440d271d66c48d",
+      "sha256": "f3dda5a6626ee121acd70f404c31a4769100c288188ae803bc57d9dff0a4d53d",
+      "bytes": 862,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_data_template/README.md"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_data_template/generate.py",
+      "git_blob_sha": "f05aee5b026d21d197d81d824847e0397a3fb577",
+      "sha256": "696803163e0d789dc4575f3783a41cb99c78e81f4755f1cb6db1cf4c1aafa4a0",
+      "bytes": 737,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_data_template/generate.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_experiment.py",
+      "git_blob_sha": "3fecf60ef23de457ea3ee7b03beadf407b22f95b",
+      "sha256": "451bc9a4b01c73f5d8d30d071c0e54f27f87d001898dbed853e7264b5332af79",
+      "bytes": 3884,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_experiment.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_from_report_experiment.py",
+      "git_blob_sha": "64dd2b0abb6883449d8800fe4b48e9cb3e5040eb",
+      "sha256": "20630a5e41b7fedea21396b57fa578c08dc31e37db7ad48142b5254515fec2a1",
+      "bytes": 483,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_from_report_experiment.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_template/README.md",
+      "git_blob_sha": "64e4312c9103eab6e2b1b2e4162eba97f6271618",
+      "sha256": "12bd081f0e7868611e81027127f04c7d5178fccd625f7521f61b77523a5347d4",
+      "bytes": 719,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_template/README.md"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_template/conf_baseline.yaml",
+      "git_blob_sha": "4583dc3e5560da168744dd85095d51ea962f1c5c",
+      "sha256": "b6253e3d9c7512f7066088ae27f5440e4a95cb409292ab9529ecb68847ea8385",
+      "bytes": 3365,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_template/conf_baseline.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_template/conf_combined_factors.yaml",
+      "git_blob_sha": "df5356946372af2244e26d71f2257ad7b36f208d",
+      "sha256": "0701d5f07df62e448ba603b32152630543fc1312dc11790097a6977c69311c70",
+      "bytes": 3139,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_template/conf_combined_factors.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_template/conf_combined_factors_sota_model.yaml",
+      "git_blob_sha": "f47941e0e43060d823f65757fd0f745ed3f455f2",
+      "sha256": "134f5beedcb811d6b4f935f12f119a3d55cc9f4124a2eb7581da98142b3db228",
+      "bytes": 3853,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_template/conf_combined_factors_sota_model.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/factor_template/read_exp_res.py",
+      "git_blob_sha": "7d0a8080944ae6a8fbc8e903a77b601f6129ce27",
+      "sha256": "f0fa6416136f02d7e163d9523cb376c5f42fd8e4d5699485304f2d5614034b70",
+      "bytes": 1869,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/factor_template/read_exp_res.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/model_experiment.py",
+      "git_blob_sha": "76c9d8b73d9aee3e754387dd0e18051c335574a3",
+      "sha256": "113cdd606a43aeac39ccc46e8938025fa21fac92ef523b1a4f2180395695d098",
+      "bytes": 3288,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/model_experiment.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/model_template/README.md",
+      "git_blob_sha": "3a6284a6e7e24fb0a351413a9ba32f3a851dcd04",
+      "sha256": "64869a04ae0c988b43008873a33f3178b5166956823a17d6a0a443d1670d1e29",
+      "bytes": 697,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/model_template/README.md"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/model_template/conf_baseline_factors_model.yaml",
+      "git_blob_sha": "ef6cb0a9561ca195a425a212063109687376810e",
+      "sha256": "bd3e9338789f8bf4fd72e6f38032fd6a642799d0b38dc83a0ea6f043eff4248c",
+      "bytes": 3718,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/model_template/conf_baseline_factors_model.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/model_template/conf_sota_factors_model.yaml",
+      "git_blob_sha": "f47941e0e43060d823f65757fd0f745ed3f455f2",
+      "sha256": "134f5beedcb811d6b4f935f12f119a3d55cc9f4124a2eb7581da98142b3db228",
+      "bytes": 3853,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/model_template/conf_sota_factors_model.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/model_template/read_exp_res.py",
+      "git_blob_sha": "7d0a8080944ae6a8fbc8e903a77b601f6129ce27",
+      "sha256": "f0fa6416136f02d7e163d9523cb376c5f42fd8e4d5699485304f2d5614034b70",
+      "bytes": 1869,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/model_template/read_exp_res.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/prompts.yaml",
+      "git_blob_sha": "ae173a77b264c75240152614ba2590ddfdfbe9ee",
+      "sha256": "6325f0366075ffc0519a983ac0049c5bf30714479932a7b4d9ba5651ae86d004",
+      "bytes": 16026,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/prompts.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/quant_experiment.py",
+      "git_blob_sha": "63e56d3330c9c0267d7961e84bd20c16f34ff34f",
+      "sha256": "f8aeeec7185d117a31289677e7ffac7dd1c7c4717b28b274be8b1023d36449ea",
+      "bytes": 8361,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/quant_experiment.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/utils.py",
+      "git_blob_sha": "f07eed8578cf5ae2219ea68925594df72bf867e6",
+      "sha256": "7021a4ea59b42eed7f399a9eda05eadb4c93d796de89e85d681c6b240b322063",
+      "bytes": 6108,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/utils.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/experiment/workspace.py",
+      "git_blob_sha": "d6427af73e2e793cb592d9afebf894e38bda057e",
+      "sha256": "c58ba7a5e2cdc08d105a6dd7f0cdea0309b9d69d83d01219a942b9a37b6ea289",
+      "bytes": 2572,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/experiment/workspace.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/factor_experiment_loader/json_loader.py",
+      "git_blob_sha": "a6558e2cb07ffd8a0a5659c7446d734eec4e7cf2",
+      "sha256": "0f0ef3bfcaf8e7a739d7eb58fe03b99d0c9949a527a5a38e2dc5b6fb9e491ff6",
+      "bytes": 2513,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/factor_experiment_loader/json_loader.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/factor_experiment_loader/pdf_loader.py",
+      "git_blob_sha": "1f25f2283e44a5eb57d156b472a01408693cf75f",
+      "sha256": "53df3522130751dde6a30f7cccb4223a5c6edc8a1a8ab52f96217cf898f24c7c",
+      "bytes": 21999,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/factor_experiment_loader/pdf_loader.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/factor_experiment_loader/prompts.yaml",
+      "git_blob_sha": "2c49a14b789823fe5862a843a752e7aab27ec79a",
+      "sha256": "c17fd202fac3fa8c47b1850f6d350207db01ee258a2cc3e1bab46a3ec83f77c4",
+      "bytes": 12891,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/factor_experiment_loader/prompts.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/prompts.yaml",
+      "git_blob_sha": "b1a147af3654bd6cb12f1c84ec705b798662acce",
+      "sha256": "f8a213cb35c6677a9a4a38ccbdfb4b05fe4798090da83764b8fafe0f1dc98a1c",
+      "bytes": 18718,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/prompts.yaml"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/proposal/bandit.py",
+      "git_blob_sha": "f5584974fcde2f449e1039c6bc01253bfcc0e110",
+      "sha256": "5ae609b00426bb10f80e5ecd2398ffbe3c0d001af94d35871f9354f9d6d95536",
+      "bytes": 3528,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/proposal/bandit.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/proposal/factor_proposal.py",
+      "git_blob_sha": "5ce9b70de02a2a40e46b8028799c2cf0a3b8290f",
+      "sha256": "8da980804f48a7850a978f481d5731523d5604971b2f21f2e363ae766c005c51",
+      "bytes": 5824,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/proposal/factor_proposal.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/proposal/model_proposal.py",
+      "git_blob_sha": "6bd417ad0bb32e6cc9d6ca973d038d36da39442c",
+      "sha256": "d46809da65abd529a80e56c6d6ce7dc56805b441605f8456d2d809c36ea20f3a",
+      "bytes": 8508,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/proposal/model_proposal.py"
+    },
+    {
+      "path": "rdagent/scenarios/qlib/proposal/quant_proposal.py",
+      "git_blob_sha": "b61ce4c0ee74a61154d5a08797aa16412801b2fe",
+      "sha256": "b533aca2f3afa398f3b2227fd3e54803fe6f591d06f669bcfc0a1a78eb983927",
+      "bytes": 8572,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/rdagent/scenarios/qlib/proposal/quant_proposal.py"
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha": "f853ede5a1ce80a5b8b1305e5dcadcce88f50308",
+      "sha256": "4794918cb9063eca9f93bedc9f686d9c6fa66b424831967c257676fb67f9ec33",
+      "bytes": 1305,
+      "url": "https://github.com/microsoft/RD-Agent/blob/32b3d395e73d9db5eee3fe9063d69aec0fdc83bd/requirements.txt"
+    }
+  ],
+  "method": "Public Git repository, no checkout; selected bytes from git show. GitHub REST API returned rate-limit response.",
+  "selection": "Selected implementation, docs and license, not full mirror; no market data/credentials or runtime execution."
+}

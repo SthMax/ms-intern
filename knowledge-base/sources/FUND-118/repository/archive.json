@@ -1,0 +1,22 @@
+{
+  "repository": "EFundAI/FinCoT",
+  "commit": "24cc7095ca400cb2d1ef115e6aa477fd55b69300",
+  "retrieved_at": "2026-09-08T17:16:57.567120+00:00",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+      "bytes": 66,
+      "url": "https://raw.githubusercontent.com/EFundAI/FinCoT/24cc7095ca400cb2d1ef115e6aa477fd55b69300/.gitattributes"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "9a678fb008b88d4b62aef945930520fa2bfb421e",
+      "sha256": "3ec9fed3b55d75a2bb8a01b96544e136a63c06f94fd11879bf46dfdb6831c03b",
+      "bytes": 3465,
+      "url": "https://raw.githubusercontent.com/EFundAI/FinCoT/24cc7095ca400cb2d1ef115e6aa477fd55b69300/README.md"
+    }
+  ],
+  "excluded": "Large binaries/datasets, credentials and generated outputs omitted; code not installed or executed; dataset use restrictions must be checked separately."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "source_id": "eu-ai-act-current",
+    "http_status": 200,
+    "bytes": 1103983,
+    "error": null
+  },
+  {
+    "source_id": "ai-label-standard-status",
+    "http_status": 200,
+    "bytes": 84675,
+    "error": null
+  },
+  {
+    "source_id": "explainability-survey",
+    "http_status": 200,
+    "bytes": 1436618,
+    "error": null
+  },
+  {
+    "source_id": "imda-generative-announcement",
+    "http_status": 200,
+    "bytes": 129981,
+    "error": null
+  },
+  {
+    "source_id": "imda-agentic-announcement",
+    "http_status": 200,
+    "bytes": 134017,
+    "error": null
+  }
+]

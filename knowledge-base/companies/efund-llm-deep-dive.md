@@ -1,4 +1,6 @@
 ---
+
+> 2026-09-09新增技术证据：[MENTOR论文](../sources/FUND-113/original.md)、[Prompt补充材料](../sources/FUND-114/original.md)、[官方客户端及研究代码审查](focused-research-2026-09-09.md)。资料评分更新为4；公开研究原型、外部API客户端与下文内部生产平台分开认定。
 company_id: COMP-002
 research_cutoff: 2026-09-06
 accessed: 2026-09-06

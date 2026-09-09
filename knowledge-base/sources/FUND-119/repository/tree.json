@@ -1,0 +1,807 @@
+{
+  "sha": "4744a772fda59ef886c525cf3d4b4ac3c992710f",
+  "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/4744a772fda59ef886c525cf3d4b4ac3c992710f",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a53464c09a8b80fd7203af565804caf10b74d8b",
+      "size": 83,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/0a53464c09a8b80fd7203af565804caf10b74d8b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17282f234493796d8cafb2aaf49aea5f60c969c8",
+      "size": 23,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/17282f234493796d8cafb2aaf49aea5f60c969c8"
+    },
+    {
+      "path": "NLPCC_tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d639674bfd3164065d6235a9bc896da1c0641a63",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/d639674bfd3164065d6235a9bc896da1c0641a63"
+    },
+    {
+      "path": "NLPCC_tasks/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f69bf28a8f4dd8f951cfea0b92e1003ef3be7b2",
+      "size": 75,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/8f69bf28a8f4dd8f951cfea0b92e1003ef3be7b2"
+    },
+    {
+      "path": "NLPCC_tasks/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "304f4cd029864c7132ca6daa2fa77bc385b52d6c",
+      "size": 290,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/304f4cd029864c7132ca6daa2fa77bc385b52d6c"
+    },
+    {
+      "path": "NLPCC_tasks/README-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c715c7a92ed3e0242b7a130ed7f49dcfc84520c9",
+      "size": 10217,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/c715c7a92ed3e0242b7a130ed7f49dcfc84520c9"
+    },
+    {
+      "path": "NLPCC_tasks/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "387c9bc13ec379c5ec58b779586b7fa31c018a30",
+      "size": 10122,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/387c9bc13ec379c5ec58b779586b7fa31c018a30"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54f6e18b0f4b559325aa1010e2fb7932b861b782",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/54f6e18b0f4b559325aa1010e2fb7932b861b782"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "baf7f907384fcf084580ea2b525ed95d978a435a",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/baf7f907384fcf084580ea2b525ed95d978a435a"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/agents/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/agents/advanced_agents.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "865ea434630c3e7ff453733201642566d705282d",
+      "size": 26342,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/865ea434630c3e7ff453733201642566d705282d"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/agents/fund_info.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11b9221907d5280b878b6ee165d8ad10340cf43b",
+      "size": 9574,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/11b9221907d5280b878b6ee165d8ad10340cf43b"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/agents/trading_strategy_prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eb7176110167027d4003209e6668a4e4224b1e3",
+      "size": 11920,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/7eb7176110167027d4003209e6668a4e4224b1e3"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "552a70b811c94690f3b830c5ec9e123b43998f64",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/552a70b811c94690f3b830c5ec9e123b43998f64"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/client/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/client/platform_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3248b6d0a6461f24b8c92085c0de0e11068e9a11",
+      "size": 6015,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/3248b6d0a6461f24b8c92085c0de0e11068e9a11"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/demo_backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee07b9023b3b1228393816fa010a64082ab190ed",
+      "size": 6969,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/ee07b9023b3b1228393816fa010a64082ab190ed"
+    },
+    {
+      "path": "NLPCC_tasks/agent_platform/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b084568d2811179978741ceb927929df56c1492c",
+      "size": 1498,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/b084568d2811179978741ceb927929df56c1492c"
+    },
+    {
+      "path": "NLPCC_tasks/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6c3e5aac24160986670551214fc5381c89b3bb2",
+      "size": 1365,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/b6c3e5aac24160986670551214fc5381c89b3bb2"
+    },
+    {
+      "path": "NLPCC_tasks/dataset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9f765e148de92ce5efd0a48485377dfc112b432",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/a9f765e148de92ce5efd0a48485377dfc112b432"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "343999ede503e4f5d7251677c596e466cdc59e86",
+      "size": 4502,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/343999ede503e4f5d7251677c596e466cdc59e86"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/dataloader_eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f603d9f6a778591b9f47bf433a3c745d5813e415",
+      "size": 16994,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/f603d9f6a778591b9f47bf433a3c745d5813e415"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40a6c027197593c353e185cc3e32feaf972f1575",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/40a6c027197593c353e185cc3e32feaf972f1575"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/2025_12_news_demo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff6619f1e1486d470a7c35ecd77ad4d03ced3c0a",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/ff6619f1e1486d470a7c35ecd77ad4d03ced3c0a"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/2025_12_news_demo/caixin_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adff8e1b78accf2fe73dac0393c636d80da8c489",
+      "size": 129,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/adff8e1b78accf2fe73dac0393c636d80da8c489"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/2025_12_news_demo/sina_finance_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f4b1c86bcc44d215d6d2f3af96130e73b25b494",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/8f4b1c86bcc44d215d6d2f3af96130e73b25b494"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/2025_12_news_demo/tencent_stock_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "387dee2b125b3a80c68d6f3c6862409210c07782",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/387dee2b125b3a80c68d6f3c6862409210c07782"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/2025_12_news_demo/tiantian_fund_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74102ed0334d31861a8db5292f37ecab2a905f61",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/74102ed0334d31861a8db5292f37ecab2a905f61"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/convert_encoding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874a9dbe10630f180cceec4636ecb3796a052293",
+      "size": 2198,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/874a9dbe10630f180cceec4636ecb3796a052293"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/export_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef8db561f7a3c700e09b47cb796aab21697dcf1d",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/ef8db561f7a3c700e09b47cb796aab21697dcf1d"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/export_data/caixin_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "419131bce3ba7081c5ee865da426ba3a1e5d136f",
+      "size": 133,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/419131bce3ba7081c5ee865da426ba3a1e5d136f"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/export_data/sina_finance_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fefb58ebecd2ed757a70aac0f865bf85e440c6eb",
+      "size": 134,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/fefb58ebecd2ed757a70aac0f865bf85e440c6eb"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/export_data/tencent_stock_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6d6d3af4ed94bead716216b3927e22af9c4ff3b",
+      "size": 134,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/f6d6d3af4ed94bead716216b3927e22af9c4ff3b"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/export_data/tiantian_fund_daily_dedup.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "301b2f610c30419e2385811894e796338f6ac3fd",
+      "size": 133,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/301b2f610c30419e2385811894e796338f6ac3fd"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/news_data/get_csv_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc683aaf3f6cea683d2bf86fb59dc747dacb4735",
+      "size": 1683,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/bc683aaf3f6cea683d2bf86fb59dc747dacb4735"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4650d5db9e878b9e24054fecfd50fbe8a52e5771",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/4650d5db9e878b9e24054fecfd50fbe8a52e5771"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/change_csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2895996e75b1e07438fd9bd33837234af21d562",
+      "size": 817,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/b2895996e75b1e07438fd9bd33837234af21d562"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f81369dbfede6437a52e7d30cc4b0d1490ea1c24",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/f81369dbfede6437a52e7d30cc4b0d1490ea1c24"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000012.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4aca690d76d8fae3ab5dca74f6fcdf73312511a",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/f4aca690d76d8fae3ab5dca74f6fcdf73312511a"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000300.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "999bb08ba08c5e6b85925070362a7ce745c736ec",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/999bb08ba08c5e6b85925070362a7ce745c736ec"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000688.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "952313a0fddcc6f0f40c05cc84cb1c5319ca5802",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/952313a0fddcc6f0f40c05cc84cb1c5319ca5802"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000819.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae89b8e9c8edc2040c1d031e8572814bc6ebf6e6",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/ae89b8e9c8edc2040c1d031e8572814bc6ebf6e6"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000905.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffc0f37a426ecb84bd77b681fb6a78e34c550cd3",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/ffc0f37a426ecb84bd77b681fb6a78e34c550cd3"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000928.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a47c51f6f579298ec1ca91cb74cb79be2fd3b7d",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/5a47c51f6f579298ec1ca91cb74cb79be2fd3b7d"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000932.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e955f7f45fde5ed42f468df7a66197f6d7b5fb3",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/1e955f7f45fde5ed42f468df7a66197f6d7b5fb3"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/000941.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9079c009f0de7ed5debadd80f8eafd25d2d5ed29",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/9079c009f0de7ed5debadd80f8eafd25d2d5ed29"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/159819.SZ.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ca2ba870039e5464535721bf5052837b0071f14",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/0ca2ba870039e5464535721bf5052837b0071f14"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/159852.SZ.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de0201b6c65dd41d1f917527bc257f021572335b",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/de0201b6c65dd41d1f917527bc257f021572335b"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/159870.SZ.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65e03e1d67bda77fd7a72d374965b2c29c981c07",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/65e03e1d67bda77fd7a72d374965b2c29c981c07"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/159992.SZ.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e7fe6c6c294fd7242c6676acea43edd749ed8c8",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/1e7fe6c6c294fd7242c6676acea43edd749ed8c8"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/159995.SZ.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da4e173a9346c68b0423d67d64fb785a1c67070a",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/da4e173a9346c68b0423d67d64fb785a1c67070a"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/399006.SZ.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c0bdf71a19d862ba756267cd0ae0e336e6205d",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/c4c0bdf71a19d862ba756267cd0ae0e336e6205d"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/399971.SZ.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66fab848af0e291549006008534852baaac30741",
+      "size": 130,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/66fab848af0e291549006008534852baaac30741"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512010.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3939f1f6790a233e17241d0f0fc201e4d1c08c2",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/f3939f1f6790a233e17241d0f0fc201e4d1c08c2"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512070.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8a677fe9c1abcec9bdbe985a88518f8fc2c98b1",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/f8a677fe9c1abcec9bdbe985a88518f8fc2c98b1"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512170.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "856ef2883be64c0a04d2739e35d1579097a3b06d",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/856ef2883be64c0a04d2739e35d1579097a3b06d"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512200.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bfd88f1507cb63921d952645c6aeeacb71c5ee5",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/7bfd88f1507cb63921d952645c6aeeacb71c5ee5"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512400.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b1ef84566827e2e5409c65a5d84cc9c1895edec",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/8b1ef84566827e2e5409c65a5d84cc9c1895edec"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512690.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb4d273a671ae8b0485c90c6d2136ccf07aac9c7",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/bb4d273a671ae8b0485c90c6d2136ccf07aac9c7"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512800.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08f78268264e144956ab7f0945a72ab5ef556395",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/08f78268264e144956ab7f0945a72ab5ef556395"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/512880.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aa4c1bd0cf1f2291a88bdd5a6998cb2cd7512b3",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/2aa4c1bd0cf1f2291a88bdd5a6998cb2cd7512b3"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/515170.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15c51fad1c6f7989eaf072e1c7b6f130b008056f",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/15c51fad1c6f7989eaf072e1c7b6f130b008056f"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/515220.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69d3bf735f4a70f4bb12aa03b3782e6aa1f35aed",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/69d3bf735f4a70f4bb12aa03b3782e6aa1f35aed"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/515880.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e109a6386a86f1eca33f4b193a1311cd5b5b358a",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/e109a6386a86f1eca33f4b193a1311cd5b5b358a"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/export_data/518880.SH.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f1cdfd48c18e2acea6e46aaab323d7e5f6be95f",
+      "size": 131,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/0f1cdfd48c18e2acea6e46aaab323d7e5f6be95f"
+    },
+    {
+      "path": "NLPCC_tasks/dataset/price_data/price_normalizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fa0f7b6228db97f69bd2fa6fb2ed613935edce0",
+      "size": 2106,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/2fa0f7b6228db97f69bd2fa6fb2ed613935edce0"
+    },
+    {
+      "path": "NLPCC_tasks/logs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd9060f616c4c95b31c01c1d9b3be153da5fb2cb",
+      "size": 1824,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/bd9060f616c4c95b31c01c1d9b3be153da5fb2cb"
+    },
+    {
+      "path": "NLPCC_tasks/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78d3d5b6f582be9d0436e10faaed899da31be3e6",
+      "size": 298,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/78d3d5b6f582be9d0436e10faaed899da31be3e6"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b42397985224a0842e0ad6eb90098303fb95cd2b",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/b42397985224a0842e0ad6eb90098303fb95cd2b"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42159d944155c7d88dc06e70070ef6c6458fa813",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/42159d944155c7d88dc06e70070ef6c6458fa813"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c4aa4448e93efaa4930a45d8c97cabaac4f8d90",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/8c4aa4448e93efaa4930a45d8c97cabaac4f8d90"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/api/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/api/agents.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2bfbd7b0ad6235526f2dbf887424eaed075470b",
+      "size": 3482,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/a2bfbd7b0ad6235526f2dbf887424eaed075470b"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/api/backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09432133c5b071332e580355fd033b351963ded7",
+      "size": 21731,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/09432133c5b071332e580355fd033b351963ded7"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/api/funds.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "866a5927f3bf2d0f9c20c6a6fa782ca5dcfb08de",
+      "size": 259,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/866a5927f3bf2d0f9c20c6a6fa782ca5dcfb08de"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/api/live.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb43b78a2f8d4f426995bfb2409b58780de8339",
+      "size": 2603,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/cfb43b78a2f8d4f426995bfb2409b58780de8339"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/api/reporting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22fe9653cf19886074e2d19c7a55568c0123a8a0",
+      "size": 1134,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/22fe9653cf19886074e2d19c7a55568c0123a8a0"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "835848e8db24c72d876be262678ca3cf80bfae34",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/835848e8db24c72d876be262678ca3cf80bfae34"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/core/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/core/backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bd0769c94cc9cd3400467c96ecda71b2f9fed9f",
+      "size": 25405,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/7bd0769c94cc9cd3400467c96ecda71b2f9fed9f"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/core/data_loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9447865188462b2a4d5dd594052bf40a64e1689c",
+      "size": 18688,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/9447865188462b2a4d5dd594052bf40a64e1689c"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/core/fund_info.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d2aa4cd4d699542da876a220df6c11a0c229011",
+      "size": 9459,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/1d2aa4cd4d699542da876a220df6c11a0c229011"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/core/user_management.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a65dc9b03706e255e3e465c29584b1a1f844294",
+      "size": 2468,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/6a65dc9b03706e255e3e465c29584b1a1f844294"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b171761ce1ce73f04bdba63859d7ed87928e5010",
+      "size": 4804,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/b171761ce1ce73f04bdba63859d7ed87928e5010"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ed41c60b9af8dd9a345ae75d00da049b0e8b174",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/3ed41c60b9af8dd9a345ae75d00da049b0e8b174"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/models/agent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ad0d518415f716129339aa6b828849e2f191d03",
+      "size": 169,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/9ad0d518415f716129339aa6b828849e2f191d03"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/app/models/backtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "404f68ba32da8dab0af22a32c6ddc6c0e4f472ff",
+      "size": 2392,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/404f68ba32da8dab0af22a32c6ddc6c0e4f472ff"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/logging_config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c62f408f4fcea272e24dde103a2cc716299d358",
+      "size": 984,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/3c62f408f4fcea272e24dde103a2cc716299d358"
+    },
+    {
+      "path": "NLPCC_tasks/server_platform/users.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f1b469d0f75d19952448d1b4ba06efdb7b21094",
+      "size": 549,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/7f1b469d0f75d19952448d1b4ba06efdb7b21094"
+    },
+    {
+      "path": "NLPCC_tasks/start_server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e5f80465351a8af4d63b7da064fdf136df3683a",
+      "size": 3471,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/6e5f80465351a8af4d63b7da064fdf136df3683a"
+    },
+    {
+      "path": "README-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "508a0b3b41a4985584fefe4e43713a8667624c96",
+      "size": 6734,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/508a0b3b41a4985584fefe4e43713a8667624c96"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ddcff948dc3abbdf8374cc71ee1ec391685dafe",
+      "size": 7945,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/5ddcff948dc3abbdf8374cc71ee1ec391685dafe"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9c7a47aba75792f5f6248ae3394b3d0fb1ddd8c",
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/trees/a9c7a47aba75792f5f6248ae3394b3d0fb1ddd8c"
+    },
+    {
+      "path": "images/E_Fund_Management_Logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8f242c4dc8455edde01173a6eb908ea39a80d9e",
+      "size": 38554,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/a8f242c4dc8455edde01173a6eb908ea39a80d9e"
+    },
+    {
+      "path": "images/WUHAN-UNIVERSITY-Logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac1aa4af17367760382f861891e4a697073ecad4",
+      "size": 326493,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/ac1aa4af17367760382f861891e4a697073ecad4"
+    },
+    {
+      "path": "images/hong-kong-polytechnic-university-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb115e4cbe0677b407ebd3bc55478b89c08a785",
+      "size": 32354,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/0cb115e4cbe0677b407ebd3bc55478b89c08a785"
+    },
+    {
+      "path": "images/hong-kong-university-of-science-and-technology-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9844ee728b98b9c34e44aabdce50829da8424ba",
+      "size": 10489,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/d9844ee728b98b9c34e44aabdce50829da8424ba"
+    },
+    {
+      "path": "images/peking-university-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72868c3cb994aebb147a3d4053443c72bfc4f449",
+      "size": 39338,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/72868c3cb994aebb147a3d4053443c72bfc4f449"
+    },
+    {
+      "path": "images/tsinghua-university-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d38a0135f84749c6c421934202c52bf529e83950",
+      "size": 73617,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/d38a0135f84749c6c421934202c52bf529e83950"
+    },
+    {
+      "path": "index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e36b7af511d0d91cf4290a6f7843c2b52d6fcb2",
+      "size": 21568,
+      "url": "https://api.github.com/repos/splash-li/NLPCC2026-Shared-Task-4/git/blobs/2e36b7af511d0d91cf4290a6f7843c2b52d6fcb2"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "csrc-it-status-text",
+  "title": "csrc-it-status-text",
+  "url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
+  "retrieved_at": "2026-09-08T17:07:17.651504+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
+  "content_type": "text/html",
+  "sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+  "byte_count": 81704,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 10113,
+  "extracted_text_sha256": "d0f753799cb34552a1419eaec772d9f0c81c44ae2a46c501087486b170ae2666"
+}

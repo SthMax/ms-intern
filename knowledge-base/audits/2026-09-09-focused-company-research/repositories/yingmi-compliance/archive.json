@@ -1,0 +1,57 @@
+{
+  "repository": "yingmi-dev/content-compliance-skill",
+  "commit": "040df66202f6075cdeadb450e502c7a19c83dabf",
+  "retrieved_at": "2026-09-08T17:17:04.551739+00:00",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "git_blob_sha": "12e83879428d12e408ba9f667fd265eb7b07ad54",
+      "sha256": "205515d6df80f2809978eecf402cc61ff3ff4f58ac2f1e296bf32164f4425aff",
+      "bytes": 1093,
+      "url": "https://raw.githubusercontent.com/yingmi-dev/content-compliance-skill/040df66202f6075cdeadb450e502c7a19c83dabf/LICENSE.txt"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "df70e751a38ebde5b93c50c16aa2306602c6a68a",
+      "sha256": "739890ffdd8260ba08bcaf41db4eaf91f65978b09aee5155ac8375c9b620bcc5",
+      "bytes": 2933,
+      "url": "https://raw.githubusercontent.com/yingmi-dev/content-compliance-skill/040df66202f6075cdeadb450e502c7a19c83dabf/README.md"
+    },
+    {
+      "path": "SECURITY.md",
+      "git_blob_sha": "a52dceee019f20912ffc17041a26e9e0b6dbcd1f",
+      "sha256": "e9f0ef2c51d76131111cb1d00f54cefd07dc92e9cae50c78644b505952624964",
+      "bytes": 1798,
+      "url": "https://raw.githubusercontent.com/yingmi-dev/content-compliance-skill/040df66202f6075cdeadb450e502c7a19c83dabf/SECURITY.md"
+    },
+    {
+      "path": "SKILL.md",
+      "git_blob_sha": "9afa5ab13986120399f5ae739be1048154f211f7",
+      "sha256": "1e427a07f1dd24cab75b6a901f587bd3c7b345d28e9329cc200465a98a291da6",
+      "bytes": 6267,
+      "url": "https://raw.githubusercontent.com/yingmi-dev/content-compliance-skill/040df66202f6075cdeadb450e502c7a19c83dabf/SKILL.md"
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha": "1c5881dd25dcd33114016752a4c1f1ad6a215466",
+      "sha256": "8db4e3df40a2c9099d2a3ea7747e907a1c25d3a7be4eb8c67f9c9a0cd36d5ebf",
+      "bytes": 20,
+      "url": "https://raw.githubusercontent.com/yingmi-dev/content-compliance-skill/040df66202f6075cdeadb450e502c7a19c83dabf/requirements.txt"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "url": "https://raw.githubusercontent.com/yingmi-dev/content-compliance-skill/040df66202f6075cdeadb450e502c7a19c83dabf/scripts/__init__.py"
+    },
+    {
+      "path": "scripts/compliance_api.py",
+      "git_blob_sha": "09f937e50e8769c966bcc441db92b5eaaf970bc2",
+      "sha256": "84a4a3ec3ee6b3b915ff95acad2cf063025e374ded7b599ab6a0304a5b1f24f1",
+      "bytes": 6627,
+      "url": "https://raw.githubusercontent.com/yingmi-dev/content-compliance-skill/040df66202f6075cdeadb450e502c7a19c83dabf/scripts/compliance_api.py"
+    }
+  ],
+  "excluded": "Large binaries/datasets, credentials and generated outputs omitted; code not installed or executed; dataset use restrictions must be checked separately."
+}

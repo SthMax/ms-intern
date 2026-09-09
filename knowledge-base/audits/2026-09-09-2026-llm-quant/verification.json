@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-09",
+  "passed": true,
+  "checks": [
+    {
+      "name": "source IDs",
+      "passed": true,
+      "detail": 125
+    },
+    {
+      "name": "reading roles",
+      "passed": true,
+      "detail": {
+        "main": 112,
+        "redirect": 4,
+        "supporting": 9
+      }
+    },
+    {
+      "name": "old source bytes",
+      "passed": true,
+      "detail": {
+        "files": 355,
+        "changes": []
+      }
+    },
+    {
+      "name": "FUND-215 original and reading hashes",
+      "passed": true,
+      "detail": "2026-04-30"
+    },
+    {
+      "name": "FUND-323 original and reading hashes",
+      "passed": true,
+      "detail": "2026-02-11"
+    },
+    {
+      "name": "FUND-324 original and reading hashes",
+      "passed": true,
+      "detail": "2026-07-09"
+    },
+    {
+      "name": "QuantaAlpha pinned bytes",
+      "passed": true,
+      "detail": {
+        "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+        "files": 30,
+        "failures": []
+      }
+    },
+    {
+      "name": "static Python syntax (no execution)",
+      "passed": true,
+      "detail": {
+        "files": 20,
+        "errors": []
+      }
+    },
+    {
+      "name": "quantaalpha PDF/reading hashes",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "name": "cogalpha PDF/reading hashes",
+      "passed": true,
+      "detail": 35
+    },
+    {
+      "name": "current local links",
+      "passed": true,
+      "detail": {
+        "checked": 805,
+        "missing": []
+      }
+    },
+    {
+      "name": "historical scores/cohort preserved",
+      "passed": true,
+      "detail": {
+        "1": 0,
+        "2": 2,
+        "3": 17,
+        "4": 2,
+        "5": 0
+      }
+    },
+    {
+      "name": "tracked whitespace",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "2026 selection/archival checks only. No LLM/API/runtime/backtest/deployment executed."
+}

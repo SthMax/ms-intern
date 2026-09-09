@@ -1,0 +1,18 @@
+{
+  "source_id": "explainability-survey",
+  "title": "explainability-survey",
+  "url": "https://arxiv.org/pdf/2309.01029",
+  "retrieved_at": "2026-09-08T17:09:00.970527+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://arxiv.org/pdf/2309.01029",
+  "content_type": "application/pdf",
+  "sha256": "537d46abf01e63151306f8ff849edfb26c2b6a2d5e3fc51405923c20181148d0",
+  "byte_count": 1436618,
+  "raw_file": "source.pdf",
+  "page_count": 38,
+  "text_file": "original.md",
+  "extraction_method": "pypdf page-by-page; no OCR or translation",
+  "extracted_characters": 160685,
+  "extracted_text_sha256": "d7c02ad2ad74efe3f49dcb745dda50533551b51af08a9be82c88180fa0dbd7a6"
+}

@@ -8,6 +8,7 @@ effective_or_status: "2025-01-01"
 accessed: 2026-09-06
 official_url: https://www.cac.gov.cn/2024-09/30/c_1729384452307680.htm
 reviewed_by: Codex
+public_source_reviewed: 2026-09-09
 human_check_status: pending
 ---
 
@@ -101,3 +102,6 @@ because a desk considers material commercially sensitive.
 Official promulgation paragraph and cited provisions inspected. Article 19's
 application to a particular internal arrangement and a comprehensive current-status
 sweep remain open. Human check pending.
+## 2026-09-09 公开来源复核
+
+本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。

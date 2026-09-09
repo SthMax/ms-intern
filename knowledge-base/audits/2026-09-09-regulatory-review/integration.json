@@ -1,0 +1,71 @@
+{
+  "source_register_new_rows": [
+    "| REG-013 | Regulation / governance | NPC Standing Committee; CAC official reproduction | 中华人民共和国网络安全法（2025年修正） | PRC law | 2025-10-28 | 2026-01-01 amendment commencement; institution-specific applicability pending | [Original](https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm) | 2026-09-09 | Articles 2, 20, 23, 27, 33, 39, 42 | Current network-security baseline and amended article numbering | verified-primary | [Note](regulation/REG-013-cybersecurity-law-2025-amendment.md); [原语言存档](sources/REG-013/original.md) · [获取记录](sources/REG-013/metadata.json); public-source review 2026-09-09; human check pending |",
+    "| REG-014 | Regulation / governance | NPC Standing Committee; CAC official reproduction | 中华人民共和国数据安全法 | PRC law | 2021-06-10 | 2021-09-01; institution-specific applicability pending | [Original](https://www.cac.gov.cn/2021-06/11/c_1624994566919140.htm) | 2026-09-09 | Articles 2–3, 21, 27, 29–32, 36, 55 | Data lifecycle security, classification and important-data scope | verified-primary | [Note](regulation/REG-014-data-security-law.md); [原语言存档](sources/REG-014/original.md) · [获取记录](sources/REG-014/metadata.json); public-source review 2026-09-09; human check pending |",
+    "| REG-015 | Regulation / governance | CAC | 个人信息保护合规审计管理办法 | Departmental rule; Order 18 | 2025-02-12 | 2025-05-01; institution-specific applicability pending | [Original](https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm) | 2026-09-09 | Articles 2–6, 20; attached audit guidelines | Periodic personal-information compliance audits and qualified frequency threshold | verified-primary | [Note](regulation/REG-015-personal-information-compliance-audit.md); [原语言存档](sources/REG-015/original.md) · [获取记录](sources/REG-015/metadata.json); public-source review 2026-09-09; human check pending |",
+    "| REG-016 | Regulation / governance | CAC, MIIT, MPS, NRTA | 人工智能生成合成内容标识办法 | Joint administrative normative document | 2025-03-07 | 2025-09-01; institution-specific applicability pending | [Original](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) | 2026-09-09 | Articles 2, 4–6, 9–12, 14 | Labelling roles, public distribution and related mandatory-standard status | verified-primary | [Note](regulation/REG-016-ai-generated-content-labelling.md); [原语言存档](sources/REG-016/original.md) · [获取记录](sources/REG-016/metadata.json); public-source review 2026-09-09; human check pending |"
+  ],
+  "sources_readme_new_rows": [
+    "| REG-013 | 中华人民共和国网络安全法（2025年修正） | Chinese | 主阅读 | [阅读入口](REG-013/original.md) · [原始文件](REG-013/source.html) · [元数据](REG-013/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |",
+    "| REG-014 | 中华人民共和国数据安全法 | Chinese | 主阅读 | [阅读入口](REG-014/original.md) · [原始文件](REG-014/source.html) · [元数据](REG-014/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |",
+    "| REG-015 | 个人信息保护合规审计管理办法 | Chinese | 主阅读 | [阅读入口](REG-015/original.md) · [原始文件](REG-015/source.html) · [元数据](REG-015/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |",
+    "| REG-016 | 人工智能生成合成内容标识办法 | Chinese | 主阅读 | [阅读入口](REG-016/original.md) · [原始文件](REG-016/source.html) · [元数据](REG-016/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |"
+  ],
+  "reading_index_new_records": [
+    {
+      "source_id": "REG-013",
+      "title": "中华人民共和国网络安全法（2025年修正）",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/REG-013/original.md",
+      "metadata_path": "sources/REG-013/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "full_original_language_extraction",
+      "available_text": true
+    },
+    {
+      "source_id": "REG-014",
+      "title": "中华人民共和国数据安全法",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/REG-014/original.md",
+      "metadata_path": "sources/REG-014/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "full_original_language_extraction",
+      "available_text": true
+    },
+    {
+      "source_id": "REG-015",
+      "title": "个人信息保护合规审计管理办法",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/REG-015/original.md",
+      "metadata_path": "sources/REG-015/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "full_original_language_extraction",
+      "available_text": true
+    },
+    {
+      "source_id": "REG-016",
+      "title": "人工智能生成合成内容标识办法",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/REG-016/original.md",
+      "metadata_path": "sources/REG-016/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "full_original_language_extraction",
+      "available_text": true
+    }
+  ],
+  "existing_record_annotations": {
+    "REG-005": "2026-09-09 CSRC regulatory database explicitly shows current valid; Order 218 Article 75 repeals old information-security rule.",
+    "REG-009": "Official announcement successfully retrieved again on 2026-09-09.",
+    "REG-010": "Refetched official PDF is byte-identical; Annex B.2 at physical PDF 26–27 is informative, not one-company implementation.",
+    "REG-011": "2026-09-09 substantive citation review: US EO14110 rescinded 2025-01-20; House ten-year state AI moratorium stripped in Senate 2025-07-01; EU 2026/1744 formal amendment and staged applicability verified; research only."
+  },
+  "notes": [
+    "Do not overwrite company-workstream additions; recompute overall counts from actual merged register.",
+    "This subtask contributes +4 total/+4 main/+4 verified-primary/+4 governance records; existing 12 evidence_state unchanged.",
+    "Add review-results-2026-09-09.md link to governance retrieval context; historical REG original.md/source.* untouched."
+  ]
+}

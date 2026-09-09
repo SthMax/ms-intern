@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-09",
+  "passed": true,
+  "checks": [
+    {
+      "name": "source identifiers",
+      "passed": true,
+      "detail": 120
+    },
+    {
+      "name": "reading roles",
+      "passed": true,
+      "detail": {
+        "main": 107,
+        "redirect": 4,
+        "supporting": 9
+      }
+    },
+    {
+      "name": "non-LLM exclusions",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "ICBC upgrade withdrawn",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "legacy counts restored",
+      "passed": true,
+      "detail": {
+        "1": 0,
+        "2": 2,
+        "3": 17,
+        "4": 2,
+        "5": 0
+      }
+    },
+    {
+      "name": "old originals unchanged",
+      "passed": true,
+      "detail": {
+        "files": 227,
+        "changes": []
+      }
+    },
+    {
+      "name": "legacy evidence hashes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "new candidate hash and status",
+      "passed": true,
+      "detail": "candidate"
+    },
+    {
+      "name": "current links",
+      "passed": true,
+      "detail": {
+        "checked": 823,
+        "missing": []
+      }
+    },
+    {
+      "name": "tracked diff whitespace",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Scope correction and archive/index integrity; not new production or runtime certification."
+}

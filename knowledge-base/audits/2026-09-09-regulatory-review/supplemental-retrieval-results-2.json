@@ -1,0 +1,14 @@
+[
+  {
+    "source_id": "eu-ai-act-amendment-2026",
+    "http_status": 200,
+    "bytes": 609346,
+    "error": null
+  },
+  {
+    "source_id": "singapore-genai-framework",
+    "http_status": 200,
+    "bytes": 3740177,
+    "error": null
+  }
+]

@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="force-rendering" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="author" content="&#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;">
+    <meta name="keywords" content="&#x76C8;&#x7C73;&#x57FA;&#x91D1;&#x4E0A;&#x7EBF;&#x5185;&#x5BB9;&#x5408;&#x89C4;&#x5BA1;&#x67E5;Skill&#xFF0C;&#x7B51;&#x7262;AI&#x65F6;&#x4EE3;&#x91D1;&#x878D;&#x5185;&#x5BB9;&#x7684;&#x5408;&#x89C4;&#x9632;&#x7EBF;">
+    <meta name="description" content="&#x6700;&#x8FD1;&#xFF0C;&#x4EE5; OpenClaw &#x4E3A;&#x4EE3;&#x8868;&#x7684;AI&#x667A;&#x80FD;&#x4F53;&#x6B63;&#x4EE5;&#x524D;&#x6240;&#x672A;&#x6709;&#x7684;&#x901F;&#x5EA6;&#x6380;&#x8D77;&#x5404;&#x884C;&#x5404;&#x4E1A;&#x7684;&#x751F;&#x4EA7;&#x529B;&#x9769;&#x547D;&#xFF0C;&#x5176;&#x901A;&#x8FC7;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x81EA;&#x4E3B;&#x6267;&#x884C;&#x590D;&#x6742;&#x4EFB;&#x52A1;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5DF2;&#x6210;&#x4E3A;&#x91D1;&#x878D;&#x673A;&#x6784;&#x63A2;&#x7D22;&#x6570;&#x667A;&#x5316;&#x8F6C;&#x578B;&#x7684;&#x91CD;&#x8981;&#x65B9;&#x5411;&#x3002;&#x5F53;AI&#x5FEB;&#x901F;&#x751F;&#x6210;&#x7684;&#x5185;&#x5BB9;&#x9047;&#x4E0A;&#x4E25;&#x82DB;&#x7684;&#x76D1;&#x7BA1;&#x7EA2;&#x7EBF;&#xFF0C;&#x8FD9;&#x79CD;&#x201C;AI &#x6D2A;&#x6D41;&#x201D;&#x4E0E;&#x201C;&#x5408;&#x89C4;&#x8FB9;&#x754C;&#x201D;&#x7684;&#x78B0;&#x649E;&#xFF0C;&#x6210;&#x4E3A;&#x884C;&#x4E1A;&#x4E9F;&#x5F85;&#x89E3;&#x51B3;&#x7684;&#x65B0;&#x8BFE;&#x9898;&#x3002;">
+    <title>&#x76C8;&#x7C73;&#x57FA;&#x91D1;&#x4E0A;&#x7EBF;&#x5185;&#x5BB9;&#x5408;&#x89C4;&#x5BA1;&#x67E5;Skill&#xFF0C;&#x7B51;&#x7262;AI&#x65F6;&#x4EE3;&#x91D1;&#x878D;&#x5185;&#x5BB9;&#x7684;&#x5408;&#x89C4;&#x9632;&#x7EBF; &#x4E2D;&#x56FD;&#x57FA;&#x91D1;&#x62A5;</title>
+    <link href="/lib/element-ui/index.css" rel="stylesheet" />
+    <link href="/css/v4/layout.min.css?v=P3HD1GKBxiP6iedtYNWjE_oN1wBTr7L9ZLqiJ7B8ZhA" rel="stylesheet" />
+    <link href="/css/gray.min.css" rel="stylesheet" />
+    <link href="//cdn.chnfund.com/s/iconfont/font_5114877_odik0oqmiq.css" rel="stylesheet" />
+
+
+    <script type="text/javascript">
+        window.$cf = { cdn: 'https://cdn.chnfund.com' }
+    </script>
+    <script src="/lib/core-js/3.38.1/core-js.min.js?v=hjcPNNioB449BRZzXqlLrcK3dS0TXIEuGe79zpna4i0"></script>
+    <script src="/lib/jquery/dist/jquery.min.js?0.1&amp;v=_JqT3SQfawRcv_BIHPThkBvs0OEvtFFmqPF_lYI_Cxo"></script>
+    <!-- Import Vue 2 -->
+    <script src="/lib/vue/vue.min.js?v=PB1LDFSejenUqbr7EqtwtqGsdH0HKTuYxbJbZjKZmv0"></script>
+    <script src="/lib/element-ui/index.js?v=idPFXo-gPxd7HMOCSu3nyUss5BQ_ajD1TruW4g60K8I"></script>
+    <script src="/lib/axios/axios.min.js?v=nec3W3r9OG4DeHKjWvWqWOCJmGz-nl4seDl2Uo77Xy8"></script>
+    <script src="/lib/moment/moment.min.js?v=hFxSSWnt1bOvmqbYcY0p_pLo2-JblVIUqOBkoFqaUCc"></script>
+    <script src="/lib/moment/zh-cn.js?v=UxOFMqrXxXGvEM9rF6Z4VS6ann71AU0lD5evjcYa5uE"></script>
+    <script src="/js/pages/common.min.js?v=9-K3ydfm08E2HjjLxkpH6N3wvD_qTWvhkn6Haa_vUJM"></script>
+    <script>
+        window.AliyunCaptchaConfig = {
+            // 必填，验证码示例所属地区，支持中国内地（cn）、新加坡（sgp）
+            region: "cn",
+            // 必填，身份标。开通阿里云验证码2.0后，您可以在控制台概览页面的实例基本信息卡片区域，获取身份标
+            prefix: "rjdt1i",
+        };
+    </script>
+    <!--2.集成主JS-->
+    <script type="text/javascript" src="https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js"></script>
+
+    
+    <link href="/css/v4/pages/article-detail.min.css?v=n7iyWtZbrCDSDFO2cUzdy9zXnnFZOQzXii6qk-cU6M0" rel="stylesheet" />
+
+
+    <!--[if lte IE 9 ]> <link href="/css/v4/lte-ie9.min.css" rel="stylesheet" /> <![endif]-->
+    <!--[if IE 7 ]> <link href="/css/v2/pages/ie7.min.css" rel="stylesheet" /> <![endif]-->
+    
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?35849f3b9042e6cb270e09a0d9350982";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    
+</head>
+<body class="article-detail-body">
+    
+
+    
+<div class="header">    
+    <div class="top-wrapper">
+        <div class="top clearfix">
+            <div class="right">
+                <form class="search" method="get" action="/search/index" target="_blank">
+                    <input class="query" name="query" placeholder="请输入查询关键字"
+                           maxlength="30"
+                           autocomplete="off" />
+                    <button type="submit" log-action="点击搜索" class="imgWrapper"><img src="/image/common/search.png" /></button>
+                </form>
+                <ul>
+                    <li class="qrcode">
+                        <p>官方微信</p>
+                        <img class="qrcode-img" src="/image/qrcode/wx-cf-200x200.png" alt="官方微信" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方APP</p>
+                        <img class="qrcode-img" src="/image/qrcode/chnfund-app.png" alt="官方APP" />
+                    </li>
+                    <li class="qrcode">
+                        <p>官方视频号</p>
+                        <img class="qrcode-img" src="/image/qrcode/wxsph.jpg" alt="官方视频号" />
+                    </li>
+                    <li><a log-action="点击" log-content="电子报" href="/epaper">电子报</a></li>
+                    <li class="login-item-wrapper"><a log-action="点击" 
+                           log-content="登录" 
+                           id="btnLogin"
+                           href="javascript:void 0">登录</a>
+                        <i id="vipIcon" class="iconfont icon-VIP"></i>
+                        <a log-action="点击" 
+                           log-content="退出登录" 
+                           id="btnLogout"
+                           title="退出"
+                           style="display:none"
+                           href="javascript:void 0"><span>|</span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loginDialog" v-cloak>
+    <el-dialog title="登录" :visible.sync="visible" 
+        width="400px"         
+        :close-on-click-modal="false"
+        v-loading="submitting">
+
+        <img src="/image/logo.png" class="logo" />
+
+        <el-form :model="form" :rules="rules" ref="form" 
+            label-width="80px"
+            label-position="top">
+
+            <el-form-item prop="phone">
+                <el-input v-model="form.phone" placeholder="请输入手机号" maxlength="11" autocompleted />
+            </el-form-item>
+
+            <el-form-item prop="code" class="form-item-code">
+                <el-input v-model="form.code" placeholder="验证码" 
+                    class="sms-code"
+                    maxlength="6"
+                ></el-input>
+                <el-button type="primary"
+                           id="captcha-button"
+                           v-on:click="preSendCode"
+                           :disabled="countdown > 0 || submittingCaptcha" 
+                           class="btn-send-sms-code" 
+                           style="width:100%">
+                    {{ countdown > 0 ? countdown + 's' : '获取验证码' }}
+                </el-button>
+            </el-form-item>
+
+            <el-button type="primary" @click="submit" class="btn-login" :disabled="sendButtonDisabled">登录</el-button>
+        </el-form>
+    </el-dialog>
+</div>
+
+    <div class="logo">
+        <a href="/" class="imgWrapper">
+            <img src="/image/logo.png" />
+        </a>
+    </div>
+
+    <div class="slogan">
+        <div class="cn">
+            <p>洞察金融市场</p>
+            <p class="china-value">传播中国价值</p>
+        </div>
+        <p class="en">Global Perspective, China Value</p>
+    </div>
+
+        <div class="nav">
+            <section>
+                <div><a log-action="点击导航" log-content="首页" href="/">首页</a></div>
+                <div><a log-action="点击导航" log-content="资管" href="/financial">资管</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公募" href="/fund">公募</a></div>
+                <div><a log-action="点击导航" log-content="环球" href="/global">环球</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="闪讯" href="/sx">闪讯</a></div>
+                <div><a log-action="点击导航" log-content="电子报" href="/epaper">电子报</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="私募" href="/sm">私募</a></div>
+                <div><a log-action="点击导航" log-content="大湾区" href="/greater-bay-area">大湾区</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="券商" href="/security">券商</a></div>
+                <div><a log-action="点击导航" log-content="论坛" href="/forum">论坛</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="银行" href="/bank">银行</a></div>
+                <div><a log-action="点击导航" log-content="视频" href="/video">视频</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="市场" href="/market">市场</a></div>
+                <div><a log-action="点击导航" log-content="访谈" href="/interview">访谈</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="公司" href="/company">公司</a></div>
+                <div><a log-action="点击导航" log-content="投教" href="/investment-education">投教</a></div>
+            </section>
+            <section>
+                <div><a log-action="点击导航" log-content="IPO" href="/ipo">IPO</a></div>
+                <div><a log-action="点击导航" log-content="Invest Insight" href="/ins">Invest Insight</a></div>
+            </section>
+        </div>
+</div>
+
+<script src="/js/v4/nav.min.js?v=AzFu_hRLnrubqZVGrrPVM4L1qytdsEYv8a_t7TRxP-Q"></script>
+
+    
+
+<div class="content-body">
+    <!-- 文章详情左栏 -->
+    <div class="left">
+        <h1 class="article-title">
+            &#x76C8;&#x7C73;&#x57FA;&#x91D1;&#x4E0A;&#x7EBF;&#x5185;&#x5BB9;&#x5408;&#x89C4;&#x5BA1;&#x67E5;Skill&#xFF0C;&#x7B51;&#x7262;AI&#x65F6;&#x4EE3;&#x91D1;&#x878D;&#x5185;&#x5BB9;&#x7684;&#x5408;&#x89C4;&#x9632;&#x7EBF;
+        </h1>
+        <div class="article-base-info">
+            <span class="publish-time">2026-03-19 10:45</span>
+            <div class="share">
+                <div class="wechat-share imgWrapper">
+                    <img src="/image/common/wechat.png" alt="微信分享" />
+                    <div id="qrcode"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p>最近，以 OpenClaw 为代表的AI智能体正以前所未有的速度掀起各行各业的生产力革命，其通过自然语言自主执行复杂任务的特性，已成为金融机构探索数智化转型的重要方向。当AI快速生成的内容遇上严苛的监管红线，这种“AI 洪流”与“合规边界”的碰撞，成为行业亟待解决的新课题。</p><p>在财富管理行业，当 AI 智能体（Agent）不断深入业务领域，金融内容产出的速度正呈几何倍数增长。如何在享受AI技术红利的同时，确保每一行的输出都严守监管红线？</p><p>3月17日，盈米基金正式发布“内容合规审查 Skill (技能，content-compliance-skill)”，并已全面上线&nbsp;Github&nbsp;与 Gitee等开源平台，龙虾（OpenClaw）等AI智能体可一键接入、开箱即用。</p><p>该 Skill 旨在通过智能化的预审反馈系统，协助创作者在内容成稿阶段就完成精准的合规自检，为金融机构在 AI 时代的高效展业保驾护航。</p><p><strong>从“合规关卡”，到“创作导航”</strong></p><p>在传统的金融服务业务流程中，合规审核往往被视为流程的最后一道关卡。这种“先生产、后打回”的模式在面对海量金融营销物料时，容易造成业务响应滞后。尤其是在接入 OpenClaw 等AI智能体工具后，极速生成的文案和图片，若不经过严格的合规约束，将给金融机构带来监管风险。</p><p>盈米基金此次推出的内容合规审查 Skill，其核心逻辑在于将“合规预审能力前置”。为AI提供一个一键安装、开箱即用的“智能导航仪”，让业务人员在创作过程中就能获得专业的合规意见反馈。通过这种即时的反馈和交互机制，帮助内容创作者将低级合规错误过滤在初稿阶段，也让合规官的精力集中在更复杂的专业研判上。</p><p><strong>100+&nbsp;专业审查规则、80000+ 审核案例库，为AI构建深层语境识别能力</strong></p><p>在盈米基金内容合规审查 Skill 的背后，是盈米深耕行业十年的合规积淀。该系统内置了涵盖预期收益率宣传、保本保收益、风险提示、极限词、误导性宣传、以及集中营销时间限制等公募基金销售、基金投顾宣传推介高频违规风险在内的100+条专业审查规则。</p><p><strong>相比于传统的关键词过滤，该 Skill 具备更深层次的金融语境理解能力。</strong>依托盈米基金 80,000&nbsp;+个沉淀审核案例库，系统引入了 ACE (Agentic Context Engineering，智能体上下文工程)&nbsp;技术架构。</p><p>该架构将系统上下文视为动态进化的“剧本”，通过多智能体协同，在没有人工标准答案的无监督环境下，也能利用真实环境的执行报错和反馈沉淀规则，实现无需权重更新的自适应进化，打造一个“越用越聪明”的企业级专属合规知识库。</p><p>它不仅能快速、精准地捕捉违规词汇，更能识别语义中的暗示性收益承诺，并根据产品风险等级自动匹配精准的免责声明<strong>，确保内容输出始终符合公募基金及基金投顾宣传推介的最新监管要求。</strong></p><p><strong>Skill实测，如何赋能内容创作者高效完成合规自检</strong></p><p>在盈米基金的实测场景中，当一名业务人员尝试通过 AI 智能体助手发布一篇关于光伏行业基金大盘点的推文时，盈米内容合规审查 Skill 对其进行全量扫描，并精准揪出了隐藏在正文中的&nbsp;4 处违规风险。</p><p>系统不仅指出<strong>“光伏，有可能是今年最先达到20%收益率的基金”</strong>涉嫌违规的预期收益率与误导性表述，还捕捉到了<strong>“现在买入本金亏损的概率也是比较小的”</strong>这一隐性保本暗示，甚至连<strong>“性价比是最高的”</strong>这类高危极限词也无所遁形。</p><p>除此之外，它不仅能发现问题，还能自主协调解决问题。在输出合规诊断的同时，<strong>系统为每一处违规点都给出了极具实操性的修改建议（例如：建议将极限词调整为“具备较好的性价比”）。</strong></p><p>面对这些风险提示，业务人员只需在对话框中向AI 智能体助手简单回复一句“需要帮你修改并生成合规版本吗？ -&gt; 需要”。AI 智能体便立刻启动自动重写程序，直接生成一份全新文档。系统对修改版进行再次复审后，最终给出了风险为0的审核结果。</p><p><strong>从接收初稿、精准报错、提供修改对策，到最终一键输出合规版本，全过程高效流畅。</strong></p><p>这种高效的反馈闭环，让创作者能够在内容创作的工作流中即可完成合规修正，真正落实了“合规左移”的理念，赋能创作者在提交终审前独立完成高效的自我修正，将极大地降低业务团队与合规部门之间的沟通和流程成本。</p><p><img src="https://cdn.chnfund.com/upload/article/default/image/202603/19/6390951385219336436748683.png" style="width:100%;height:auto"/>（图｜龙虾调用盈米内容合规审查 Skill后对违规示例进行合规自检）</p>
+        </div>
+
+
+        
+    <!-- 相关文章 -->
+    <div class="relate-articles">
+        <h2><span>相关推荐</span></h2>
+        <div class="article-list">
+                <a class="item" href="/article/AR59453b4d-07d8-3177-0f41-3a238dbcebf2" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x6DF1;&#x5E02;&#x6838;&#x5FC3;&#x6307;&#x6570;&#x534A;&#x5E74;&#x62A5;&#x900F;&#x89C6;&#xFF1A;&#x201C;&#x5411;&#x65B0;&#x201D;&#x805A;&#x80FD;&#xFF0C;&#x201C;&#x5411;&#x4F18;&#x201D;&#x63D0;&#x8D28;" src="https://cdn.chnfund.com/upload/media/picture/2025/03/03/7E41B8344FC84854A5C98803CF63DEED.jpeg"></img>
+                    </div>
+                    <p class="title">&#x6DF1;&#x5E02;&#x6838;&#x5FC3;&#x6307;&#x6570;&#x534A;&#x5E74;&#x62A5;&#x900F;&#x89C6;&#xFF1A;&#x201C;&#x5411;&#x65B0;&#x201D;&#x805A;&#x80FD;&#xFF0C;&#x201C;&#x5411;&#x4F18;&#x201D;&#x63D0;&#x8D28;</p>
+                </a>
+                <a class="item" href="/article/AR81cb60cb-5df6-8ade-4607-3a238cf67307" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x65B0;&#x6750;&#x6599;&#x7AD9;&#x4E0A;&#x65F6;&#x4EE3;&#x98CE;&#x53E3;&#xFF0C;&#x6052;&#x8D8A;&#x65B0;&#x6750;&#x6599;&#x7CBE;&#x9009;&#x6DF7;&#x5408;&#x5373;&#x5C06;&#x9996;&#x53D1;" src="https://cdn.chnfund.com/upload/article/paper/d3597488.png"></img>
+                    </div>
+                    <p class="title">&#x65B0;&#x6750;&#x6599;&#x7AD9;&#x4E0A;&#x65F6;&#x4EE3;&#x98CE;&#x53E3;&#xFF0C;&#x6052;&#x8D8A;&#x65B0;&#x6750;&#x6599;&#x7CBE;&#x9009;&#x6DF7;&#x5408;&#x5373;&#x5C06;&#x9996;&#x53D1;</p>
+                </a>
+                <a class="item" href="/article/AR85e02f51-6e8b-dbfd-ad76-3a238cf4e29c" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x4F4E;&#x5229;&#x7387;&#x4E0E;&#x9AD8;&#x6CE2;&#x52A8;&#x201C;&#x53CC;&#x538B;&#x201D;&#x4E0B;&#xFF0C;&#x7EA2;&#x5229;&#x4F4E;&#x6CE2;100ETF&#x666F;&#x987A;&#xFF08;515100&#xFF09;&#x914D;&#x7F6E;&#x4EF7;&#x503C;&#x51F8;&#x663E;" src="https://cdn.chnfund.com/upload/article/paper/d1dbdc57.jpg"></img>
+                    </div>
+                    <p class="title">&#x4F4E;&#x5229;&#x7387;&#x4E0E;&#x9AD8;&#x6CE2;&#x52A8;&#x201C;&#x53CC;&#x538B;&#x201D;&#x4E0B;&#xFF0C;&#x7EA2;&#x5229;&#x4F4E;&#x6CE2;100ETF&#x666F;&#x987A;&#xFF08;515100&#xFF09;&#x914D;&#x7F6E;&#x4EF7;&#x503C;&#x51F8;&#x663E;</p>
+                </a>
+                <a class="item" href="/article/AR724bab2b-122a-d22b-99f2-3a238cf394e9" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x6C38;&#x8D62;&#x57FA;&#x91D1;&#x7684;&#x6295;&#x7814;&#x8FDB;&#x5316;&#x8BBA;&#xFF1A;&#x4E00;&#x573A;&#x4ECE;&#x4EA7;&#x54C1;&#x5230;&#x5E73;&#x53F0;&#x7684;&#x6218;&#x7565;&#x8DC3;&#x8FC1;" src="https://cdn.chnfund.com/upload/article/paper/86b9d364.jpg"></img>
+                    </div>
+                    <p class="title">&#x6C38;&#x8D62;&#x57FA;&#x91D1;&#x7684;&#x6295;&#x7814;&#x8FDB;&#x5316;&#x8BBA;&#xFF1A;&#x4E00;&#x573A;&#x4ECE;&#x4EA7;&#x54C1;&#x5230;&#x5E73;&#x53F0;&#x7684;&#x6218;&#x7565;&#x8DC3;&#x8FC1;</p>
+                </a>
+                <a class="item" href="/article/AR493eff7f-7962-98d7-2571-3a238be50b67" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x515A;&#x5EFA;&#x5F15;&#x9886;&#x3001;&#x6587;&#x5316;&#x94F8;&#x9B42;&#x3001;&#x7EAA;&#x5F8B;&#x4FDD;&#x969C;&#xFF0C;&#x63A8;&#x52A8;&#x4E2D;&#x94F6;&#x57FA;&#x91D1;&#x9AD8;&#x8D28;&#x91CF;&#x53D1;&#x5C55;&#x884C;&#x7A33;&#x81F4;&#x8FDC;" src="https://cdn.chnfund.com/upload/article/paper/8fdcc47f.jpg"></img>
+                    </div>
+                    <p class="title">&#x515A;&#x5EFA;&#x5F15;&#x9886;&#x3001;&#x6587;&#x5316;&#x94F8;&#x9B42;&#x3001;&#x7EAA;&#x5F8B;&#x4FDD;&#x969C;&#xFF0C;&#x63A8;&#x52A8;&#x4E2D;&#x94F6;&#x57FA;&#x91D1;&#x9AD8;&#x8D28;&#x91CF;&#x53D1;&#x5C55;&#x884C;&#x7A33;&#x81F4;&#x8FDC;</p>
+                </a>
+                <a class="item" href="/article/ARddaac2ef-54f8-35db-4f97-3a237ecb4c1a" target="_blank">
+                    <div class="imgWrapper">
+                      <img alt="&#x9996;&#x6279;8&#x53EA;&#x521B;&#x4E1A;&#x677F;&#x7B97;&#x529B;&#x57FA;&#x7840;&#x8BBE;&#x65BD;ETF&#x4ECA;&#x65E5;&#x5F00;&#x552E;&#xFF0C;&#x521B;&#x4E1A;&#x677F;&#x7B97;&#x529B;ETF&#x5929;&#x5F18;&#x5BA3;&#x544A;&#x7ED3;&#x675F;&#x52DF;&#x96C6;" src="https://cdn.chnfund.com/upload/article/paper/1f0df16a.jpg"></img>
+                    </div>
+                    <p class="title">&#x9996;&#x6279;8&#x53EA;&#x521B;&#x4E1A;&#x677F;&#x7B97;&#x529B;&#x57FA;&#x7840;&#x8BBE;&#x65BD;ETF&#x4ECA;&#x65E5;&#x5F00;&#x552E;&#xFF0C;&#x521B;&#x4E1A;&#x677F;&#x7B97;&#x529B;ETF&#x5929;&#x5F18;&#x5BA3;&#x544A;&#x7ED3;&#x675F;&#x52DF;&#x96C6;</p>
+                </a>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 二维码 -->
+    <div class="right">
+                <a   class="imgWrapper">
+                    <img alt="APP" src="https://cdn.chnfund.com/upload/cfa/image/202511/03/20251103171139_4961.jpg"></img>
+                </a>
+    </div>
+</div>
+
+
+
+        <div class="footer">
+    <div class="box bottom-box clearfix">
+        <div class="bottom-item bottom-item-logo">
+            <a href="/" class="imgWrapper"><img src="/image/logo2.png" alt="中国基金报" /></a>
+        </div>
+
+        <div class="bottom-item bottom-item-nav">
+            <h4><a href="/"><span class="footer-llink-text">首页</span></a></h4>
+            <ul>
+                <li><a target="_blank" href="/about"><span class="footer-llink-text">关于我们</span></a></li>
+                <li><a target="_blank" href="/addus"><span class="footer-llink-text">加入我们</span></a></li>
+                <li><a target="_blank" href="/contactus"><span class="footer-llink-text">联系我们</span></a></li>
+                <li><a target="_blank" href="/copyright"><span class="footer-llink-text">版权声明</span></a></li>
+            </ul>
+        </div>
+        <div class="bottom-item bottom-item-cooperation">
+            <h4>合作伙伴</h4>
+            <div class="link-box">
+                <a log-action="点击合作伙伴" log-content="紫荆杂志社" href="https://zijing.com.cn/" target="_blank">紫荆杂志社</a>|
+                <a log-action="点击合作伙伴" log-content="凤凰网" href="http://www.ifeng.com/" target="_blank">凤凰网</a>|
+                <a log-action="点击合作伙伴" log-content="东方财富网" href="http://www.eastmoney.com/" target="_blank">东方财富网</a>|
+                <a log-action="点击合作伙伴" log-content="金融界" href="http://www.jrj.com.cn/" target="_blank">金融界</a>|
+                <a log-action="点击合作伙伴" log-content="中新经纬" href="http://www.jwview.com/" target="_blank">中新经纬</a>|
+                <a log-action="点击合作伙伴" log-content="每日经济新闻" href="http://www.nbd.com.cn/" target="_blank">每日经济新闻</a>|
+                <a log-action="点击合作伙伴" log-content="21世纪网" href="http://www.21jingji.com/" target="_blank">21世纪网</a>|
+                <a log-action="点击合作伙伴" log-content="财经网" href="http://www.caijing.com.cn/" target="_blank">财经网</a>|
+                <a log-action="点击合作伙伴" log-content="和讯网" href="http://www.hexun.com/" target="_blank">和讯网</a>|
+                <a log-action="点击合作伙伴" log-content="搜狐" href="http://www.sohu.com/" target="_blank">搜狐</a>|
+                <a log-action="点击合作伙伴" log-content="中金在线" href="http://www.cnfol.com/" target="_blank">中金在线</a>|
+                <a log-action="点击合作伙伴" log-content="一财网" href="http://www.yicai.com/" target="_blank">一财网</a>
+            </div>
+        </div>
+    </div>
+    <div class="box copyright">
+        <p>
+            Copyright © 2026 《中国基金报》社有限公司版权所有，未经许可不得转载使用，违者必究。
+        </p>
+        <section>
+            <section>
+                网站备案号： <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备14037591号</a>
+            </section>     
+            <section>网络视听许可证：1908317号</section>
+            <section>互联网新闻信息服务许可证：10120200011 </section>
+        </section>
+        <section>
+            <section>违法和不良信息举报电话：(0755) 83501616</section>
+            <section>邮箱：xingdapeng@chnfund.com</section>
+        </section>
+    </div>
+</div>
+
+    <input type="hidden" value="&#x76C8;&#x7C73;&#x57FA;&#x91D1;&#x4E0A;&#x7EBF;&#x5185;&#x5BB9;&#x5408;&#x89C4;&#x5BA1;&#x67E5;Skill&#xFF0C;&#x7B51;&#x7262;AI&#x65F6;&#x4EE3;&#x91D1;&#x878D;&#x5185;&#x5BB9;&#x7684;&#x5408;&#x89C4;&#x9632;&#x7EBF;" id="wxShareTitle" />
+    <input type="hidden" value="&#x6700;&#x8FD1;&#xFF0C;&#x4EE5; OpenClaw &#x4E3A;&#x4EE3;&#x8868;&#x7684;AI&#x667A;&#x80FD;&#x4F53;&#x6B63;&#x4EE5;&#x524D;&#x6240;&#x672A;&#x6709;&#x7684;&#x901F;&#x5EA6;&#x6380;&#x8D77;&#x5404;&#x884C;&#x5404;&#x4E1A;&#x7684;&#x751F;&#x4EA7;&#x529B;&#x9769;&#x547D;&#xFF0C;&#x5176;&#x901A;&#x8FC7;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x81EA;&#x4E3B;&#x6267;&#x884C;&#x590D;&#x6742;&#x4EFB;&#x52A1;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5DF2;&#x6210;&#x4E3A;&#x91D1;&#x878D;&#x673A;&#x6784;&#x63A2;&#x7D22;&#x6570;&#x667A;&#x5316;&#x8F6C;&#x578B;&#x7684;&#x91CD;&#x8981;&#x65B9;&#x5411;&#x3002;&#x5F53;AI&#x5FEB;&#x901F;&#x751F;&#x6210;&#x7684;&#x5185;&#x5BB9;&#x9047;&#x4E0A;&#x4E25;&#x82DB;&#x7684;&#x76D1;&#x7BA1;&#x7EA2;&#x7EBF;&#xFF0C;&#x8FD9;&#x79CD;&#x201C;AI &#x6D2A;&#x6D41;&#x201D;&#x4E0E;&#x201C;&#x5408;&#x89C4;&#x8FB9;&#x754C;&#x201D;&#x7684;&#x78B0;&#x649E;&#xFF0C;&#x6210;&#x4E3A;&#x884C;&#x4E1A;&#x4E9F;&#x5F85;&#x89E3;&#x51B3;&#x7684;&#x65B0;&#x8BFE;&#x9898;&#x3002;" id="wxShareDesc" />
+    <input type="hidden" id="wxShareUrl" />
+    <input type="hidden" id="wxShareImg" />
+
+    <!--[if IE 7]>
+    <script src="/js/pages/ie7_pseudo.min.js"></script>
+    <![endif]-->
+
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="/lib/wxextsignature.js?v=qywUW3BbDrfXM8meOjqbmoFlRhsfiHqQ8cspJ9pCmXY"></script>
+
+
+    <script src="/js/v4/log.min.js?v=QOIf51HEEYLlZ6cuZenMmY0Er7WF7pfkpqd01rPqbtc"></script>
+    <script>
+        initTrace('https://gw.chnfund.com/log-api/api/logs/single-log');
+    </script>
+
+    <script src="/js/v4/user.min.js?v=ZjF4Fyin_kunpXmbEElIU5NLAcaSY7ELdp3OCr6-em0"></script>
+    
+    <script src="/lib/qrcode/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), window.location.href);
+    </script>
+
+
+        <script>
+            var properties = {
+                pageName: '详情页',
+                title: "\u76C8\u7C73\u57FA\u91D1\u4E0A\u7EBF\u5185\u5BB9\u5408\u89C4\u5BA1\u67E5Skill\uFF0C\u7B51\u7262AI\u65F6\u4EE3\u91D1\u878D\u5185\u5BB9\u7684\u5408\u89C4\u9632\u7EBF",
+                targetId: "AR8e4e17e8-252c-d5d6-2eb7-3a20162a0343",
+                targetType: "news",
+            }
+
+            logPageView(properties);
+            bindClickLog({ pageName: '详情页' });
+        </script>
+
+    
+</body>
+</html>

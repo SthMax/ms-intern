@@ -1,0 +1,18 @@
+{
+  "source_id": "amac-research-current",
+  "title": "amac-research-current",
+  "url": "https://www.amac.org.cn/hyyj/sy/202604/P020260408624258724685.pdf",
+  "retrieved_at": "2026-09-08T17:07:18.231248+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.amac.org.cn/hyyj/sy/202604/P020260408624258724685.pdf",
+  "content_type": "application/pdf",
+  "sha256": "04fb7e9d742334c85ba6355b016864b252189f96854c36465dc6ddfbe263e770",
+  "byte_count": 500756,
+  "raw_file": "source.pdf",
+  "page_count": 16,
+  "text_file": "original.md",
+  "extraction_method": "pypdf page-by-page; no OCR or translation",
+  "extracted_characters": 12622,
+  "extracted_text_sha256": "8fd6ce00747f054518f173a9104d48b116e08a614493c7852c9907384ac49303"
+}

@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CN114676932A - 基于类别不平衡机器学习框架的债券违约预测方法和装置 
+        - Google Patents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="canonical" href="https://patents.google.com/patent/CN114676932A/zh">
+    <meta name="description" content="
+     本公开提供了一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品，所述方法包括：获取发债主体的相关数据；对获取的所述发债主体的相关数据进行预处理；从发债主体的相关数据中选择对模型训练贡献度最高的特征；使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型；部署所述最优模型，并使用所述最优模型进行债券违约预测。本公开通过选择对模型训练贡献度最高的特征并使用Self Paced Ensemble方法来训练预测模型，实现更加准确的债券违约预测。 
+     
+   
+   ">
+    <meta name="DC.type" content="patent">
+    <meta name="DC.title" content="基于类别不平衡机器学习框架的债券违约预测方法和装置 
+       ">
+    <meta name="DC.date" content="2022-04-18" scheme="dateSubmitted">
+    <meta name="DC.description" content="
+     本公开提供了一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品，所述方法包括：获取发债主体的相关数据；对获取的所述发债主体的相关数据进行预处理；从发债主体的相关数据中选择对模型训练贡献度最高的特征；使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型；部署所述最优模型，并使用所述最优模型进行债券违约预测。本公开通过选择对模型训练贡献度最高的特征并使用Self Paced Ensemble方法来训练预测模型，实现更加准确的债券违约预测。 
+     
+   
+   ">
+    <meta name="citation_patent_application_number" content="CN:202210407035.1A">
+    <meta name="citation_pdf_url" content="https://patentimages.storage.googleapis.com/0e/81/be/e48ac495a1211e/CN114676932A.pdf">
+    <meta name="citation_patent_publication_number" content="CN:114676932:A">
+    <meta name="DC.date" content="2022-06-28">
+    <meta name="DC.contributor" content="李孜" scheme="inventor">
+    <meta name="DC.contributor" content="杨帆" scheme="inventor">
+    <meta name="DC.contributor" content="吴皓" scheme="inventor">
+    <meta name="DC.contributor" content="孙彦杰" scheme="inventor">
+    <meta name="DC.contributor" content="Icbc Credit Suisse Fund Management Co ltd" scheme="assignee">
+    <meta name="DC.relation" content="CN:108846521:A" scheme="references">
+    <meta name="DC.relation" content="CN:111340236:A" scheme="references">
+    <meta name="DC.relation" content="CN:111524015:A" scheme="references">
+    <meta name="DC.relation" content="CN:112767172:A" scheme="references">
+    <meta name="citation_reference" content="ZHINING LIU等: &#34;“Self-paced Ensemble for Highly Imbalanced Massive Data Classification”&#34;, 《2020 IEEE 36TH INTERNATIONAL CONFERENCE ON DATA ENGINEERING(ICDE)》" scheme="references">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700">
+
+    <style>
+      
+      #gb { top: 15px; left: auto; right: 0; width: auto; min-width: 135px !important; }   
+      body { transition: none; }
+    </style>
+    <script></script>
+
+    <script>
+      window.version = 'patent-search.search_20260819_RC00';
+
+      function sendFeedback() {
+        userfeedback.api.startFeedback({
+          'productId': '713680',
+          'bucket': 'patent-search-web',
+          'productVersion': window.version,
+        });
+      }
+
+      window.experiments = {};
+      window.experiments.patentCountries = "ae,ag,al,am,ao,ap,ar,at,au,aw,az,ba,bb,bd,be,bf,bg,bh,bj,bn,bo,br,bw,bx,by,bz,ca,cf,cg,ch,ci,cl,cm,cn,co,cr,cs,cu,cy,cz,dd,de,dj,dk,dm,do,dz,ea,ec,ee,eg,em,ep,es,fi,fr,ga,gb,gc,gd,ge,gh,gm,gn,gq,gr,gt,gw,hk,hn,hr,hu,ib,id,ie,il,in,ir,is,it,jo,jp,ke,kg,kh,km,kn,kp,kr,kw,kz,la,lc,li,lk,lr,ls,lt,lu,lv,ly,ma,mc,md,me,mg,mk,ml,mn,mo,mr,mt,mw,mx,my,mz,na,ne,ng,ni,nl,no,nz,oa,om,pa,pe,pg,ph,pl,pt,py,qa,ro,rs,ru,rw,sa,sc,sd,se,sg,si,sk,sl,sm,sn,st,su,sv,sy,sz,td,tg,th,tj,tm,tn,tr,tt,tw,tz,ua,ug,us,uy,uz,vc,ve,vn,wo,yu,za,zm,zw";
+      
+      
+      window.experiments.keywordWizard = true;
+      
+      
+      
+      window.experiments.definitions = true;
+      window.experiments.plogs = true;
+
+      window.Polymer = {
+        dom: 'shady',
+        lazyRegister: true,
+      };
+    </script>
+
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/search-app-vulcanized.html">
+  </head>
+  <body unresolved>
+    
+    
+    <script></script>
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20260819_RC00/scs/compiled_dir/search-app-vulcanized.js"></script>
+    <search-app>
+      
+      
+
+      <article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <h1 itemprop="pageTitle">CN114676932A - 基于类别不平衡机器学习框架的债券违约预测方法和装置 
+        - Google Patents</h1>
+  <span itemprop="title">基于类别不平衡机器学习框架的债券违约预测方法和装置 
+       </span>
+
+  <meta itemprop="type" content="patent">
+  <a href="https://patentimages.storage.googleapis.com/0e/81/be/e48ac495a1211e/CN114676932A.pdf" itemprop="pdfLink">Download PDF</a>
+  <h2>Info</h2>
+
+  <dl>
+    <dt>Publication number</dt>
+    <dd itemprop="publicationNumber">CN114676932A</dd>
+    <meta itemprop="numberWithoutCodes" content="114676932">
+    <meta itemprop="kindCode" content="A">
+    <meta itemprop="publicationDescription" content="Unexaminded application">
+    <span>CN114676932A</span>
+    <span>CN202210407035.1A</span>
+    <span>CN202210407035A</span>
+    <span>CN114676932A</span>
+    <span>CN 114676932 A</span>
+    <span>CN114676932 A</span>
+    <span>CN 114676932A</span>
+    <span>  </span>
+    <span> </span>
+    <span> </span>
+    <span>CN 202210407035 A</span>
+    <span>CN202210407035 A</span>
+    <span>CN 202210407035A</span>
+    <span>CN 114676932 A</span>
+    <span>CN114676932 A</span>
+    <span>CN 114676932A</span>
+
+    <dt>Authority</dt>
+    <dd itemprop="countryCode">CN</dd>
+    <dd itemprop="countryName">China</dd>
+
+    <dt>Prior art keywords</dt>
+    <dd itemprop="priorArtKeywords" repeat>bond</dd>
+    <dd itemprop="priorArtKeywords" repeat>data</dd>
+    <dd itemprop="priorArtKeywords" repeat>training</dd>
+    <dd itemprop="priorArtKeywords" repeat>model</dd>
+    <dd itemprop="priorArtKeywords" repeat>default</dd>
+
+    <dt>Prior art date</dt>
+    <dd><time itemprop="priorArtDate" datetime="2022-04-18">2022-04-18</time></dd>
+
+    <dt>Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)</dt>
+    <dd itemprop="legalStatusIfi" itemscope>
+      <span itemprop="status">Pending</span>
+    </dd>
+  </dl>
+
+  <dt>Application number</dt>
+  <dd itemprop="applicationNumber">CN202210407035.1A</dd>
+
+  <dt>Other languages</dt>
+  <dd itemprop="otherLanguages" itemscope repeat>
+    <a href="/patent/CN114676932A/en">
+      <span itemprop="name">English</span> (<span itemprop="code">en</span>)
+    </a>
+  </dd>
+
+  
+
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>李孜</dd>
+  <dd itemprop="inventor" repeat>杨帆</dd>
+  <dd itemprop="inventor" repeat>吴皓</dd>
+  <dd itemprop="inventor" repeat>孙彦杰</dd>
+
+  <dt>Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    Icbc Credit Suisse Fund Management Co ltd
+  </dd>
+
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>Icbc Credit Suisse Fund Management Co ltd</dd>
+
+  <dt>Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)</dt>
+  <dd><time itemprop="priorityDate" datetime="2022-04-18">2022-04-18</time></dd>
+
+  <dt>Filing date</dt>
+  <dd><time itemprop="filingDate" datetime="2022-04-18">2022-04-18</time></dd>
+
+  <dt>Publication date</dt>
+  <dd><time itemprop="publicationDate" datetime="2022-06-28">2022-06-28</time></dd>
+
+  
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2022-04-18">2022-04-18</time>
+    <span itemprop="title">Application filed by Icbc Credit Suisse Fund Management Co ltd</span>
+    <span itemprop="type">filed</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    <span itemprop="assigneeSearch">Icbc Credit Suisse Fund Management Co ltd</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2022-04-18">2022-04-18</time>
+    <span itemprop="title">Priority to CN202210407035.1A</span>
+    <span itemprop="type">priority</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/CN114676932A/zh</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2022-06-28">2022-06-28</time>
+    <span itemprop="title">Publication of CN114676932A</span>
+    <span itemprop="type">publication</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/CN114676932A/zh</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date">Status</time>
+    <span itemprop="title">Pending</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    <span itemprop="current" content="true" bool>Current</span>
+    
+    
+    
+  </dd>
+
+  <h2>Links</h2>
+  <ul>
+    
+
+    <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="espacenetLink">
+        <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=CN&amp;NR=114676932A&amp;KC=A&amp;FT=D" itemprop="url" target="_blank"><span itemprop="text">Espacenet</span></a>
+      </li>
+      
+
+    
+
+    <li itemprop="links" itemscope repeat>
+      <meta itemprop="id" content="globalDossierLink">
+      <a href="https://globaldossier.uspto.gov/result/application/CN/202210407035/1" itemprop="url" target="_blank"><span itemprop="text">Global Dossier</span></a>
+    </li>
+
+    
+
+      
+
+      
+
+      
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="stackexchangeLink">
+        <a href="https://patents.stackexchange.com/questions/tagged/CN114676932A" itemprop="url"><span itemprop="text">Discuss</span></a>
+      </li>
+  </ul>
+
+  
+
+  <section>
+    <h2>Images</h2>
+    <ul>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/ee/9c/82/da6f7bcff60254/HDA0003601838200000011.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/69/2f/83/f11f19caea82bf/HDA0003601838200000011.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/44/60/84/67262d4477f337/HDA0003601838200000021.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/0a/03/ca/c78c78fc9e8113/HDA0003601838200000021.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/21/4e/22/33e073e241e375/HDA0003601838200000022.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/34/7d/1a/7e2c6e655825c0/HDA0003601838200000022.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="300">
+            <meta itemprop="label" content="default prediction apparatus">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="809">
+              <meta itemprop="top" content="901">
+              <meta itemprop="right" content="879">
+              <meta itemprop="bottom" content="934">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="301">
+            <meta itemprop="label" content="data acquisition module">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="808">
+              <meta itemprop="top" content="39">
+              <meta itemprop="right" content="873">
+              <meta itemprop="bottom" content="71">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="302">
+            <meta itemprop="label" content="data preprocessing module">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="807">
+              <meta itemprop="top" content="214">
+              <meta itemprop="right" content="877">
+              <meta itemprop="bottom" content="245">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="303">
+            <meta itemprop="label" content="feature selection module">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="807">
+              <meta itemprop="top" content="388">
+              <meta itemprop="right" content="877">
+              <meta itemprop="bottom" content="421">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="304">
+            <meta itemprop="label" content="model training module">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="807">
+              <meta itemprop="top" content="563">
+              <meta itemprop="right" content="878">
+              <meta itemprop="bottom" content="596">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="305">
+            <meta itemprop="label" content="default prediction module">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="807">
+              <meta itemprop="top" content="736">
+              <meta itemprop="right" content="877">
+              <meta itemprop="bottom" content="767">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/36/fa/be/fc34097858d143/HDA0003601838200000031.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/8b/ee/a1/c890eca816f2ea/HDA0003601838200000031.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="400">
+            <meta itemprop="label" content="electronic device">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="475">
+              <meta itemprop="top" content="7">
+              <meta itemprop="right" content="516">
+              <meta itemprop="bottom" content="27">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="401">
+            <meta itemprop="label" content="processor">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="221">
+              <meta itemprop="top" content="76">
+              <meta itemprop="right" content="259">
+              <meta itemprop="bottom" content="96">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="402">
+            <meta itemprop="label" content="ROM">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="557">
+              <meta itemprop="top" content="76">
+              <meta itemprop="right" content="599">
+              <meta itemprop="bottom" content="96">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="403">
+            <meta itemprop="label" content="RAM">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="887">
+              <meta itemprop="top" content="76">
+              <meta itemprop="right" content="930">
+              <meta itemprop="bottom" content="96">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="404">
+            <meta itemprop="label" content="bus">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="942">
+              <meta itemprop="top" content="216">
+              <meta itemprop="right" content="985">
+              <meta itemprop="bottom" content="235">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="405">
+            <meta itemprop="label" content="interface">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="951">
+              <meta itemprop="top" content="349">
+              <meta itemprop="right" content="994">
+              <meta itemprop="bottom" content="368">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="406">
+            <meta itemprop="label" content="input section">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="183">
+              <meta itemprop="top" content="579">
+              <meta itemprop="right" content="226">
+              <meta itemprop="bottom" content="599">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="407">
+            <meta itemprop="label" content="output section">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="353">
+              <meta itemprop="top" content="579">
+              <meta itemprop="right" content="396">
+              <meta itemprop="bottom" content="598">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="408">
+            <meta itemprop="label" content="storage section">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="524">
+              <meta itemprop="top" content="579">
+              <meta itemprop="right" content="566">
+              <meta itemprop="bottom" content="598">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="409">
+            <meta itemprop="label" content="communication section">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="705">
+              <meta itemprop="top" content="579">
+              <meta itemprop="right" content="749">
+              <meta itemprop="bottom" content="598">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="410">
+            <meta itemprop="label" content="drive">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="887">
+              <meta itemprop="top" content="579">
+              <meta itemprop="right" content="930">
+              <meta itemprop="bottom" content="599">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="411">
+            <meta itemprop="label" content="removable medium">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="888">
+              <meta itemprop="top" content="621">
+              <meta itemprop="right" content="928">
+              <meta itemprop="bottom" content="641">
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Classifications</h2>
+    <ul>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G</span>&mdash;<span itemprop="Description">PHYSICS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06</span>&mdash;<span itemprop="Description">COMPUTING OR CALCULATING; COUNTING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q</span>&mdash;<span itemprop="Description">INFORMATION AND COMMUNICATION TECHNOLOGY [ICT] SPECIALLY ADAPTED FOR ADMINISTRATIVE, COMMERCIAL, FINANCIAL, MANAGERIAL OR SUPERVISORY PURPOSES; SYSTEMS OR METHODS SPECIALLY ADAPTED FOR ADMINISTRATIVE, COMMERCIAL, FINANCIAL, MANAGERIAL OR SUPERVISORY PURPOSES, NOT OTHERWISE PROVIDED FOR</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q10/00</span>&mdash;<span itemprop="Description">Administration; Management</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q10/04</span>&mdash;<span itemprop="Description">Forecasting or optimisation specially adapted for administrative or management purposes, e.g. linear programming or &#34;cutting stock problem&#34;</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="FirstCode" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G</span>&mdash;<span itemprop="Description">PHYSICS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06</span>&mdash;<span itemprop="Description">COMPUTING OR CALCULATING; COUNTING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06F</span>&mdash;<span itemprop="Description">ELECTRIC DIGITAL DATA PROCESSING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06F18/00</span>&mdash;<span itemprop="Description">Pattern recognition</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06F18/20</span>&mdash;<span itemprop="Description">Analysing</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06F18/24</span>&mdash;<span itemprop="Description">Classification techniques</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06F18/243</span>&mdash;<span itemprop="Description">Classification techniques relating to the number of classes</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06F18/2433</span>&mdash;<span itemprop="Description">Single-class perspective, e.g. one-against-all classification; Novelty detection; Outlier detection</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G</span>&mdash;<span itemprop="Description">PHYSICS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06</span>&mdash;<span itemprop="Description">COMPUTING OR CALCULATING; COUNTING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06N</span>&mdash;<span itemprop="Description">COMPUTING ARRANGEMENTS BASED ON SPECIFIC COMPUTATIONAL MODELS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06N20/00</span>&mdash;<span itemprop="Description">Machine learning</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06N20/20</span>&mdash;<span itemprop="Description">Ensemble learning</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G</span>&mdash;<span itemprop="Description">PHYSICS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06</span>&mdash;<span itemprop="Description">COMPUTING OR CALCULATING; COUNTING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06N</span>&mdash;<span itemprop="Description">COMPUTING ARRANGEMENTS BASED ON SPECIFIC COMPUTATIONAL MODELS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06N5/00</span>&mdash;<span itemprop="Description">Computing arrangements using knowledge-based models</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06N5/01</span>&mdash;<span itemprop="Description">Dynamic search techniques; Heuristics; Dynamic trees; Branch-and-bound</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G</span>&mdash;<span itemprop="Description">PHYSICS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06</span>&mdash;<span itemprop="Description">COMPUTING OR CALCULATING; COUNTING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q</span>&mdash;<span itemprop="Description">INFORMATION AND COMMUNICATION TECHNOLOGY [ICT] SPECIALLY ADAPTED FOR ADMINISTRATIVE, COMMERCIAL, FINANCIAL, MANAGERIAL OR SUPERVISORY PURPOSES; SYSTEMS OR METHODS SPECIALLY ADAPTED FOR ADMINISTRATIVE, COMMERCIAL, FINANCIAL, MANAGERIAL OR SUPERVISORY PURPOSES, NOT OTHERWISE PROVIDED FOR</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q10/00</span>&mdash;<span itemprop="Description">Administration; Management</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q10/06</span>&mdash;<span itemprop="Description">Resources, workflows, human or project management; Enterprise or organisation planning; Enterprise or organisation modelling</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q10/063</span>&mdash;<span itemprop="Description">Operations research, analysis or management</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q10/0635</span>&mdash;<span itemprop="Description">Risk analysis of enterprise or organisation activities</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G</span>&mdash;<span itemprop="Description">PHYSICS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06</span>&mdash;<span itemprop="Description">COMPUTING OR CALCULATING; COUNTING</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q</span>&mdash;<span itemprop="Description">INFORMATION AND COMMUNICATION TECHNOLOGY [ICT] SPECIALLY ADAPTED FOR ADMINISTRATIVE, COMMERCIAL, FINANCIAL, MANAGERIAL OR SUPERVISORY PURPOSES; SYSTEMS OR METHODS SPECIALLY ADAPTED FOR ADMINISTRATIVE, COMMERCIAL, FINANCIAL, MANAGERIAL OR SUPERVISORY PURPOSES, NOT OTHERWISE PROVIDED FOR</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q40/00</span>&mdash;<span itemprop="Description">Finance; Insurance; Tax strategies; Processing of corporate or income taxes</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">G06Q40/03</span>&mdash;<span itemprop="Description">Credit; Loans; Processing thereof</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Landscapes</h2>
+    <ul>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Engineering &amp; Computer Science</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Business, Economics &amp; Management</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Theoretical Computer Science</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Physics &amp; Mathematics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Human Resources &amp; Organizations</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">General Physics &amp; Mathematics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Economics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Strategic Management</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Data Mining &amp; Analysis</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Marketing</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">General Business, Economics &amp; Management</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Entrepreneurship &amp; Innovation</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">General Engineering &amp; Computer Science</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Artificial Intelligence</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Software Systems</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Development Economics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Evolutionary Computation</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Computer Vision &amp; Pattern Recognition</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Game Theory and Decision Science</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Mathematical Physics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Tourism &amp; Hospitality</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Quality &amp; Reliability</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Computing Systems</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Operations Research</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Accounting &amp; Taxation</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Finance</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Bioinformatics &amp; Cheminformatics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Medical Informatics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Evolutionary Biology</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Technology Law</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Bioinformatics &amp; Computational Biology</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Life Sciences &amp; Earth Sciences</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Computational Linguistics</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Educational Administration</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Management, Administration, Business Operations System, And Electronic Commerce</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+    </ul>
+  </section>
+
+
+  <section itemprop="abstract" itemscope>
+    <h2>Abstract</h2>
+    
+    <div itemprop="content" html><abstract mxw-id="PA505249521" lang="ZH" load-source="patent-office">
+    <div num="0001" class="abstract">本公开提供了一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品，所述方法包括：获取发债主体的相关数据；对获取的所述发债主体的相关数据进行预处理；从发债主体的相关数据中选择对模型训练贡献度最高的特征；使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型；部署所述最优模型，并使用所述最优模型进行债券违约预测。本公开通过选择对模型训练贡献度最高的特征并使用Self Paced Ensemble方法来训练预测模型，实现更加准确的债券违约预测。</div>
+    </abstract>
+  </div>
+  </section>
+
+  <section itemprop="description" itemscope>
+    <h2>Description</h2>
+    
+    <div itemprop="content" html><div mxw-id="PDES333687447" lang="ZH" load-source="patent-office" class="description">
+    <invention-title lang="ZH" id="title1">基于类别不平衡机器学习框架的债券违约预测方法和装置</invention-title>
+    <technical-field>
+      <div id="p0001" class="description-paragraph">技术领域</div>
+      <div id="p0002" num="n0001" class="description-paragraph">本发明涉及金融科技技术领域，尤其涉及一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品。</div>
+    </technical-field>
+    <background-art>
+      <div id="p0003" class="description-paragraph">背景技术</div>
+      <div id="p0004" num="n0002" class="description-paragraph"> </div>
+      <div id="p0005" num="n0003" class="description-paragraph">伴随着我国债券市场的高速发展，债券市场的信用风险也在不断累积，债券违约事件发生频率逐年增多，已经步入常态化。2014年“11超日债”未按期付息是公认的首次信用债违约事件，违约债券数量和金额从2014年的6只13.40亿元，增长到2020年的155只1757.72亿元。违约发债主体也从小微企业向大中型企业、国企、上市公司扩散。高评级违约主体也在增多，2020年首次违约主体AA级占首次违约主体27.59％，已经超过BBB及以下等级的占比17.20％。违约主体的地域分布从东南沿海地区到了中西部地区，所在行业也囊括了多领域控股、石油与天然气的炼制和销售、综合类行业、建筑与工程、食品加工与肉类、房地产开发等。</div>
+      <div id="p0006" num="n0004" class="description-paragraph">固定收益类资产占资产管理行业投资标的很大一部分比例，债券违约会造成持有人的本金或利息遭到损失，并且违约发债主体的所有债券中债估值飙升，从而影响产品净值，引发部分委托人的赎回。委托人赎回产品会让产品管理者卖出流动性好的资产，但先赎回的投资者能得到资产变现的现金，后赎回的投资者只能承担低流动性资产带来的损失，这种不公平会加速投资者的赎回，增加资管产品的流动性压力，引发产品净值进一步下跌。为了预防这种情况发生，有必要对债券违约进行预测，提前避开有可能“暴雷”的债券。</div>
+      <div id="p0007" num="n0005" class="description-paragraph">业界已经研发出了一些基于机器学习的债券违约预测方法，这些方法通常利用发债主体的财务、征信、信用评级、公司公告等数据，经过数据清洗和特征工程后，训练机器学习模型并找到最优参数。但是，上述方法存在数据类别严重不平衡的问题，违约债券发债主体占全部信用债发债主体的比例很低，只有大约1％的发债主体有过债券违约，这造成了训练机器学习模型的数据类别不平衡，使得模型训练时会产生对多类样本的倾向性，影响预测效果。</div>
+    </background-art>
+    <disclosure>
+      <div id="p0008" class="description-paragraph">发明内容</div>
+      <div id="p0009" num="n0006" class="description-paragraph">鉴于上述训练机器学习模型的数据类别不平衡带来的债券违约预测效果不佳的问题，本公开提供了一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品，通过选择对模型训练贡献度最高的特征并使用Self Paced Ensemble方法来训练预测模型，实现更加准确的债券违约预测。</div>
+      <div id="p0010" num="n0007" class="description-paragraph">本公开的第一个方面提供了一种基于类别不平衡机器学习框架的债券违约预测方法，所述预测方法包括：</div>
+      <div id="p0011" num="n0008" class="description-paragraph">从发债主体的相关数据中选择对模型训练贡献度最高的特征，所述相关数据包括发债主体的年度财务报表数据和违约情况数据；</div>
+      <div id="p0012" num="n0009" class="description-paragraph">使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型；</div>
+      <div id="p0013" num="n0010" class="description-paragraph">部署所述最优模型，并使用所述最优模型进行债券违约预测。</div>
+      <div id="p0014" num="n0011" class="description-paragraph">根据本公开的实施例，在所述从发债主体的相关数据中选择对模型训练贡献度最高的特征之前，所述方法还包括：</div>
+      <div id="p0015" num="n0012" class="description-paragraph">获取发债主体的相关数据；</div>
+      <div id="p0016" num="n0013" class="description-paragraph">对获取的所述发债主体的相关数据进行预处理。</div>
+      <div id="p0017" num="n0014" class="description-paragraph">根据本公开的实施例，所述获取发债主体的相关数据，具体包括：</div>
+      <div id="p0018" num="n0015" class="description-paragraph">从数据库中获取发债主体的资产负债表、利润表、现金流量表、财务指标、债券违约报表、债券分类板块、债券概念板块、中债登收益率曲线，筛选出全部信用债发债主体，从中剔除城投债，并获取所述信用债发债主体的年度财务报表数据，判断信用债发债主体是否违约，对信用债发债主体是否违约进行标记，同时设置所属发债主体的首次违约标签。</div>
+      <div id="p0019" num="n0016" class="description-paragraph">根据本公开的实施例，所述对获取的所述发债主体的相关数据进行预处理，包括：</div>
+      <div id="p0020" num="n0017" class="description-paragraph">统计所述发债主体的相关数据的特征的缺失率、去除所述发债主体的相关数据的特征的异常值、对所述发债主体的相关数据的特征进行分箱处理。</div>
+      <div id="p0021" num="n0018" class="description-paragraph">根据本公开的实施例，所述从发债主体的相关数据中选择对模型训练贡献度最高的特征，具体包括：</div>
+      <div id="p0022" num="n0019" class="description-paragraph">计算所述发债主体的相关数据的特征的单变量相关性、多变量相关性、IV值、信息熵和基尼系数，结合业务经验，从中选择对模型训练贡献度最高的特征。</div>
+      <div id="p0023" num="n0020" class="description-paragraph">根据本公开的实施例，所述构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型，具体包括：</div>
+      <div id="p0024" num="n0021" class="description-paragraph">确定集成学习框架中的基分类器；</div>
+      <div id="p0025" num="n0022" class="description-paragraph">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集；</div>
+      <div id="p0026" num="n0023" class="description-paragraph">基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练；</div>
+      <div id="p0027" num="n0024" class="description-paragraph">选择最优模型。</div>
+      <div id="p0028" num="n0025" class="description-paragraph">根据本公开的实施例，所述确定集成学习框架中的基分类器，具体包括：具体包括：将LightGBM二分类分类器确定为集成学习框架中的基分类器，所述LightGBM二分类分类器包含了多棵决策树。</div>
+      <div id="p0029" num="n0026" class="description-paragraph">根据本公开的实施例，所述将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+      <div id="p0030" num="n0027" class="description-paragraph">根据本公开的实施例，所述使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：</div>
+      <div id="p0031" num="n0028" class="description-paragraph">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集随机划分为5份，每一次选取其中的4份作为训练集，剩余的1份作为测试集，重复上述选取步骤五次，每次选取的训练集是不同的。</div>
+      <div id="p0032" num="n0029" class="description-paragraph">根据本公开的实施例，所述基于所述训练集和测试集并使用Self PacedEnsemble集成学习方法来进行模型训练，具体包括：</div>
+      <div id="p0033" num="n0030" class="description-paragraph">1)初始化训练集D中的少数样本P和多数样本N；</div>
+      <div id="p0034" num="n0031" class="description-paragraph">2)使用所述多数样本N中随机欠采样的子集N<sub>0</sub>和所述少数样本 P训练第1个基分类器f<sub>0</sub>，N<sub>0</sub>和P的数量一致，即|N<sub>0</sub>’|＝|P|；</div>
+      <div id="p0035" num="n0032" class="description-paragraph">3)将到目前为止所有基分类器的和作为集成模型F<sub>i</sub>，即：</div>
+      <div id="p0036" num="n0033" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/94/9c/ea/8add278b5e4d3e/BDA0003601838190000041.png"><img he="98" wi="470" file="BDA0003601838190000041.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="1880" height="392" alt="Figure BDA0003601838190000041" class="patent-full-image" src="https://patentimages.storage.googleapis.com/94/9c/ea/8add278b5e4d3e/BDA0003601838190000041.png"/></a></div>
+      </div>
+      <div id="p0037" num="n0034" class="description-paragraph">其中，i表示已经训练的基分类器的总数，其最大值为n；</div>
+      <div id="p0038" num="n0035" class="description-paragraph">4)将所述多数样本N根据分类硬度分箱成k组B<sub>1</sub>，B<sub>2</sub>，…，B<sub>k</sub>，对于给定的模型F(·)和(x，y)，样本分类硬度H<sub>X</sub>＝H(x，y，F)，其中，H 为分类硬度函数，k为分箱数量；</div>
+      <div id="p0039" num="n0036" class="description-paragraph">5)计算每个分箱的平均分类硬度，第1个分箱的平均硬度为</div>
+      <div id="p0040" num="n0037" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/6c/dd/55/930c303f4004f4/BDA0003601838190000042.png"><img he="71" wi="982" file="BDA0003601838190000042.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="3928" height="284" alt="Figure BDA0003601838190000042" class="patent-full-image" src="https://patentimages.storage.googleapis.com/6c/dd/55/930c303f4004f4/BDA0003601838190000042.png"/></a></div>
+      </div>
+      <div id="p0041" num="n0038" class="description-paragraph">6)更新自步因子<div class="patent-image"><a href="https://patentimages.storage.googleapis.com/1b/fb/ed/9e37e118bb966f/BDA0003601838190000043.png"><img he="102" wi="308" file="BDA0003601838190000043.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="yes" width="1232" height="408" alt="Figure BDA0003601838190000043" class="patent-full-image" src="https://patentimages.storage.googleapis.com/1b/fb/ed/9e37e118bb966f/BDA0003601838190000043.png"/></a></div> </div>
+      <div id="p0042" num="n0039" class="description-paragraph">7)根据分类硬度和自步因子计算每个分箱的采样权重p<sub>1</sub>，其中：</div>
+      <div id="p0043" num="n0040" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/45/c5/35/6a90e8d34e734a/BDA0003601838190000044.png"><img he="107" wi="533" file="BDA0003601838190000044.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="2132" height="428" alt="Figure BDA0003601838190000044" class="patent-full-image" src="https://patentimages.storage.googleapis.com/45/c5/35/6a90e8d34e734a/BDA0003601838190000044.png"/></a></div>
+      </div>
+      <div id="p0044" num="n0041" class="description-paragraph">8)基于采样权重p<sub>1</sub>对分箱后的所述多数样本N进行欠采样，样本量和所述少数样本P一致，第1分箱的样本量为：</div>
+      <div id="p0045" num="n0042" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/53/07/2d/bb94b364006dcc/BDA0003601838190000051.png"><img he="85" wi="235" file="BDA0003601838190000051.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="940" height="340" alt="Figure BDA0003601838190000051" class="patent-full-image" src="https://patentimages.storage.googleapis.com/53/07/2d/bb94b364006dcc/BDA0003601838190000051.png"/></a></div>
+      </div>
+      <div id="p0046" num="n0043" class="description-paragraph">9)在新的欠采样样本集上训练基分类器f<sub>i</sub>；</div>
+      <div id="p0047" num="n0044" class="description-paragraph">10)返回上述步骤3)继续新的迭代，直到步骤3)中完成了n 轮迭代；</div>
+      <div id="p0048" num="n0045" class="description-paragraph">11)在n轮迭代完成后，将所有基分类器整合为集成分类器。</div>
+      <div id="p0049" num="n0046" class="description-paragraph">根据本公开的实施例，所述选择最优模型具体包括：</div>
+      <div id="p0050" num="n0047" class="description-paragraph">将每个超参数设定好候选值，组合成超参数矩阵，使用Grid Search在所述划分的训练集上进行5次模型训练，观测模型在测试集上的指标，根据5次模型训练的结果评估模型质量，并选择最优模型。</div>
+      <div id="p0051" num="n0048" class="description-paragraph">根据本公开的实施例，所述评估模型质量所使用的评估指标包括准确率、精确率、召回率、F1或ROC-AUC。</div>
+      <div id="p0052" num="n0049" class="description-paragraph">根据本公开的实施例，所述超参数包括Self Paced Ensemble分类器的超参数和LightGBM基分类器的超参数，其中：</div>
+      <div id="p0053" num="n0050" class="description-paragraph">所述Self Paced Ensemble分类器的超参数包括：基分类器数量、分箱数量、分类硬度函数；</div>
+      <div id="p0054" num="n0051" class="description-paragraph">所述LightGBM基分类器的超参数包括：叶子数量、叶子最小数据量、最大深度、决策树数量、学习率、决策树类型、L1正则化系数、L2正则化系数。</div>
+      <div id="p0055" num="n0052" class="description-paragraph">根据本公开的实施例，所述部署所述最优模型，具体包括：将训练好的所述最优模型用Python fastapi封装为HTTP服务，部署到生产环境服务器中。</div>
+      <div id="p0056" num="n0053" class="description-paragraph">根据本公开的实施例，所述使用所述最优模型进行债券违约预测，具体包括：</div>
+      <div id="p0057" num="n0054" class="description-paragraph">定期产生用于模型预测的预测数据，将加工好的所述预测数据转化为JSON格式，发送到封装为HTTP服务的所述最优模型中进行债券违约预测，预测完毕后取回预测结果，并将所述预测结果推送到下游应用系统中进行展示。</div>
+      <div id="p0058" num="n0055" class="description-paragraph">本公开的第二个方面提供了一种基于类别不平衡机器学习框架的债券违约预测装置，所述预测装置包括特征选择模块、模型训练模块和违约预测模块，其中：</div>
+      <div id="p0059" num="n0056" class="description-paragraph">所述特征选择模块，用于从发债主体的相关数据中选择对模型训练贡献度最高的特征，所述相关数据包括发债主体的年度财务报表数据和违约情况数据；</div>
+      <div id="p0060" num="n0057" class="description-paragraph">所述模型训练模块，用于使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型；</div>
+      <div id="p0061" num="n0058" class="description-paragraph">所述违约预测模块，用于部署所述最优模型，并使用所述最优模型进行债券违约预测。</div>
+      <div id="p0062" num="n0059" class="description-paragraph">根据本公开的实施例，所述装置还包括数据获取模块和数据预处理模块，其中：</div>
+      <div id="p0063" num="n0060" class="description-paragraph">所述数据获取模块，用于获取发债主体的相关数据；</div>
+      <div id="p0064" num="n0061" class="description-paragraph">所述数据预处理模块，用于对获取的所述发债主体的相关数据进行预处理。</div>
+      <div id="p0065" num="n0062" class="description-paragraph">根据本公开的实施例，所述获取发债主体的相关数据，具体包括：</div>
+      <div id="p0066" num="n0063" class="description-paragraph">从数据库中获取发债主体的资产负债表、利润表、现金流量表、财务指标、债券违约报表、债券分类板块、债券概念板块、中债登收益率曲线，筛选出全部信用债发债主体，从中剔除城投债，并获取所述信用债发债主体的年度财务报表数据，判断信用债发债主体是否违约，对信用债发债主体是否违约进行标记，同时设置所属发债主体的首次违约标签。</div>
+      <div id="p0067" num="n0064" class="description-paragraph">根据本公开的实施例，所述对获取的所述发债主体的相关数据进行预处理，包括：</div>
+      <div id="p0068" num="n0065" class="description-paragraph">统计所述发债主体的相关数据的特征的缺失率、去除所述发债主体的相关数据的特征的异常值、对所述发债主体的相关数据的特征进行分箱处理。</div>
+      <div id="p0069" num="n0066" class="description-paragraph">根据本公开的实施例，所述从发债主体的相关数据中选择对模型训练贡献度最高的特征，具体包括：</div>
+      <div id="p0070" num="n0067" class="description-paragraph">计算所述发债主体的相关数据的特征的单变量相关性、多变量相关性、IV值、信息熵和基尼系数，结合业务经验，从中选择对模型训练贡献度最高的特征。</div>
+      <div id="p0071" num="n0068" class="description-paragraph">根据本公开的实施例，所述构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型，具体包括：</div>
+      <div id="p0072" num="n0069" class="description-paragraph">确定集成学习框架中的基分类器；</div>
+      <div id="p0073" num="n0070" class="description-paragraph">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集；</div>
+      <div id="p0074" num="n0071" class="description-paragraph">基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练；</div>
+      <div id="p0075" num="n0072" class="description-paragraph">选择最优模型。</div>
+      <div id="p0076" num="n0073" class="description-paragraph">根据本公开的实施例，所述确定集成学习框架中的基分类器，具体包括：具体包括：将LightGBM二分类分类器确定为集成学习框架中的基分类器，所述LightGBM二分类分类器包含了多棵决策树。</div>
+      <div id="p0077" num="n0074" class="description-paragraph">根据本公开的实施例，所述将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+      <div id="p0078" num="n0075" class="description-paragraph">根据本公开的实施例，所述使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：</div>
+      <div id="p0079" num="n0076" class="description-paragraph">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集随机划分为5份，每一次选取其中的4份作为训练集，剩余的1份作为测试集，重复上述选取步骤五次，每次选取的训练集是不同的。</div>
+      <div id="p0080" num="n0077" class="description-paragraph">根据本公开的实施例，所述基于所述训练集和测试集并使用Self PacedEnsemble集成学习方法来进行模型训练，具体包括：</div>
+      <div id="p0081" num="n0078" class="description-paragraph">1)初始化训练集D中的少数样本P和多数样本N；</div>
+      <div id="p0082" num="n0079" class="description-paragraph">2)使用所述多数样本N中随机欠采样的子集N<sub>0</sub>和所述少数样本 P训练第1个基分类器f<sub>0</sub>，N<sub>0</sub>和P的数量一致，即|N<sub>0</sub>’|＝|P|；</div>
+      <div id="p0083" num="n0080" class="description-paragraph">3)将到目前为止所有基分类器的和作为集成模型Fi，即：</div>
+      <div id="p0084" num="n0081" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/61/63/23/7561552b9c7551/BDA0003601838190000081.png"><img he="98" wi="470" file="BDA0003601838190000081.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="1880" height="392" alt="Figure BDA0003601838190000081" class="patent-full-image" src="https://patentimages.storage.googleapis.com/61/63/23/7561552b9c7551/BDA0003601838190000081.png"/></a></div>
+      </div>
+      <div id="p0085" num="n0082" class="description-paragraph">其中，i表示已经训练的基分类器的总数，其最大值为n；</div>
+      <div id="p0086" num="n0083" class="description-paragraph">4)将所述多数样本N根据分类硬度分箱成k组B<sub>1</sub>，B<sub>2</sub>，…，B<sub>k</sub>，对于给定的模型F(·)和(x，y)，样本分类硬度H<sub>X</sub>＝H(x，y，F)，其中，H 为分类硬度函数，k为分箱数量；</div>
+      <div id="p0087" num="n0084" class="description-paragraph">5)计算每个分箱的平均分类硬度，第1个分箱的平均硬度为</div>
+      <div id="p0088" num="n0085" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/c5/1e/98/c39d2b834c5a05/BDA0003601838190000082.png"><img he="71" wi="982" file="BDA0003601838190000082.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="3928" height="284" alt="Figure BDA0003601838190000082" class="patent-full-image" src="https://patentimages.storage.googleapis.com/c5/1e/98/c39d2b834c5a05/BDA0003601838190000082.png"/></a></div>
+      </div>
+      <div id="p0089" num="n0086" class="description-paragraph">6)更新自步因子<div class="patent-image"><a href="https://patentimages.storage.googleapis.com/44/d1/ca/05b156aff6e8a1/BDA0003601838190000083.png"><img he="102" wi="308" file="BDA0003601838190000083.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="yes" width="1232" height="408" alt="Figure BDA0003601838190000083" class="patent-full-image" src="https://patentimages.storage.googleapis.com/44/d1/ca/05b156aff6e8a1/BDA0003601838190000083.png"/></a></div> </div>
+      <div id="p0090" num="n0087" class="description-paragraph">7)根据分类硬度和自步因子计算每个分箱的采样权重p<sub>1</sub>，其中：</div>
+      <div id="p0091" num="n0088" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/3e/d2/0d/b31f03c99258e8/BDA0003601838190000084.png"><img he="108" wi="533" file="BDA0003601838190000084.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="2132" height="432" alt="Figure BDA0003601838190000084" class="patent-full-image" src="https://patentimages.storage.googleapis.com/3e/d2/0d/b31f03c99258e8/BDA0003601838190000084.png"/></a></div>
+      </div>
+      <div id="p0092" num="n0089" class="description-paragraph">8)基于采样权重p<sub>1</sub>对分箱后的所述多数样本N进行欠采样，样本量和所述少数样本P一致，第1分箱的样本量为：</div>
+      <div id="p0093" num="n0090" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/7a/be/a5/f504573bbc75d6/BDA0003601838190000085.png"><img he="86" wi="235" file="BDA0003601838190000085.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="940" height="344" alt="Figure BDA0003601838190000085" class="patent-full-image" src="https://patentimages.storage.googleapis.com/7a/be/a5/f504573bbc75d6/BDA0003601838190000085.png"/></a></div>
+      </div>
+      <div id="p0094" num="n0091" class="description-paragraph">9)在新的欠采样样本集上训练基分类器f<sub>i</sub>；</div>
+      <div id="p0095" num="n0092" class="description-paragraph">10)返回上述步骤3)继续新的迭代，直到步骤3)中完成了n 轮迭代；</div>
+      <div id="p0096" num="n0093" class="description-paragraph">11)在n轮迭代完成后，将所有基分类器整合为集成分类器。</div>
+      <div id="p0097" num="n0094" class="description-paragraph">根据本公开的实施例，所述选择最优模型具体包括：</div>
+      <div id="p0098" num="n0095" class="description-paragraph">将每个超参数设定好候选值，组合成超参数矩阵，使用Grid Search在所述划分的训练集上进行5次模型训练，观测模型在测试集上的指标，根据5次模型训练的结果评估模型质量，并选择最优模型。</div>
+      <div id="p0099" num="n0096" class="description-paragraph">根据本公开的实施例，所述评估模型质量所使用的评估指标包括准确率、精确率、召回率、F1或ROC-AUC。</div>
+      <div id="p0100" num="n0097" class="description-paragraph">根据本公开的实施例，所述超参数包括Self Paced Ensemble分类器的超参数和LightGBM基分类器的超参数，其中：</div>
+      <div id="p0101" num="n0098" class="description-paragraph">所述Self Paced Ensemble分类器的超参数包括：基分类器数量、分箱数量、分类硬度函数；</div>
+      <div id="p0102" num="n0099" class="description-paragraph">所述LightGBM基分类器的超参数包括：叶子数量、叶子最小数据量、最大深度、决策树数量、学习率、决策树类型、L1正则化系数、L2正则化系数。</div>
+      <div id="p0103" num="n0100" class="description-paragraph">根据本公开的实施例，所述部署所述最优模型，具体包括：将训练好的所述最优模型用Python fastapi封装为HTTP服务，部署到生产环境服务器中。</div>
+      <div id="p0104" num="n0101" class="description-paragraph">根据本公开的实施例，所述使用所述最优模型进行债券违约预测，具体包括：</div>
+      <div id="p0105" num="n0102" class="description-paragraph">定期产生用于模型预测的预测数据，将加工好的所述预测数据转化为JSON格式，发送到封装为HTTP服务的所述最优模型中进行债券违约预测，预测完毕后取回预测结果，并将所述预测结果推送到下游应用系统中进行展示。</div>
+      <div id="p0106" num="n0103" class="description-paragraph">本公开的第三方面提供了一种电子设备，包括：一个或多个处理器；存储器，用于存储一个或多个程序，其中，当所述一个或多个程序被所述一个或多个处理器执行时，使得一个或多个处理器执行上述一种基于类别不平衡机器学习框架的债券违约预测方法。</div>
+      <div id="p0107" num="n0104" class="description-paragraph">本公开的第四方面还提供了一种计算机可读存储介质，其上存储有可执行指令，该指令被处理器执行时使处理器执行上述一种基于类别不平衡机器学习框架的债券违约预测方法。</div>
+      <div id="p0108" num="n0105" class="description-paragraph">本公开的第五方面还提供了一种计算机程序产品，包括计算机程序，该计算机程序被处理器执行时实现上述一种基于类别不平衡机器学习框架的债券违约预测方法。</div>
+      <div id="p0109" num="n0106" class="description-paragraph">与现有技术相比，本公开提供的一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品，能够使用Self Paced Ensemble方法来训练预测模型，使用欠采样和Boosting集成的方法串行训练模型，训练过程中每一轮迭代的欠采样会选取一些对当前集成模型贡献最大的训练样本，而非简单的随机采样，实现更加准确的债券违约预测，发现更多有潜在风险的发债主体，及早规避因信用风险带来的损失。</div>
+    </disclosure>
+    <description-of-drawings>
+      <div id="p0110" class="description-paragraph">附图说明</div>
+      <div id="p0111" num="n0107" class="description-paragraph">通过以下参照附图对本公开实施例的描述，本公开的上述内容以及其他目的、特征和优点将更为清楚，在附图中：</div>
+      <div id="p0112" num="n0108" class="description-paragraph">图1示意性示出了根据本公开实施例的一种基于类别不平衡机器学习框架的债券违约预测方法的流程图；</div>
+      <div id="p0113" num="n0109" class="description-paragraph">图2示意性示出了根据本公开实施例的使用训练集和测试集进行模型训练并选择最优模型的流程图；</div>
+      <div id="p0114" num="n0110" class="description-paragraph">图3示意性示出了根据本公开实施例的一种基于类别不平衡机器学习框架的债券违约预测装置的结构框图；</div>
+      <div id="p0115" num="n0111" class="description-paragraph">图4示意性示出了实现本公开实施例的一种基于类别不平衡机器学习框架的债券违约预测方法的电子设备的方框图。</div>
+    </description-of-drawings>
+    <mode-for-invention>
+      <div id="p0116" class="description-paragraph">具体实施方式</div>
+      <div id="p0117" num="n0112" class="description-paragraph">以下，将参照附图来描述本公开的实施例。但是应该理解，这些描述只是示例性的，而并非要限制本公开的范围。在下面的详细描述中，为便于解释，阐述了许多具体的细节以提供对本公开实施例的全面理解。然而，明显地，一个或多个实施例在没有这些具体细节的情况下也可以被实施。此外，在以下说明中，省略了对公知结构和技术的描述，以避免不必要地混淆本公开的概念。</div>
+      <div id="p0118" num="n0113" class="description-paragraph">在此使用的术语仅仅是为了描述具体实施例，而并非意在限制本公开。在此使用的术语“包括”、“包含”等表明了所述特征、步骤、操作和/或部件的存在，但是并不排除存在或添加一个或多个其他特征、步骤、操作或部件。</div>
+      <div id="p0119" num="n0114" class="description-paragraph">在此使用的所有术语(包括技术和科学术语)具有本领域技术人员通常所理解的含义，除非另外定义。应注意，这里使用的术语应解释为具有与本说明书的上下文相一致的含义，而不应以理想化或过于刻板的方式来解释。</div>
+      <div id="p0120" num="n0115" class="description-paragraph">在使用类似于“A、B和C等中至少一个”这样的表述的情况下，一般来说应该按照本领域技术人员通常理解该表述的含义来予以解释(例如，“具有A、B和C中至少一个的系统”应包括但不限于单独具有A、单独具有B、单独具有C、具有A和B、具有A和C、具有 B和C、和/或具有A、B、C的系统等)。</div>
+      <div id="p0121" num="n0116" class="description-paragraph">与现有技术相比，本公开提供了一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品，所述的一种基于类别不平衡机器学习框架的债券违约预测方法包括：获取发债主体的相关数据；对获取的所述发债主体的相关数据进行预处理；从发债主体的相关数据中选择对模型训练贡献度最高的特征；使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法(也称为自步集成学习方法)来进行模型训练，并选择最优模型；部署所述最优模型，并使用所述最优模型进行债券违约预测。</div>
+      <div id="p0122" num="n0117" class="description-paragraph">本公开的方案能够使用Self Paced Ensemble方法来训练预测模型，使用欠采样和Boosting集成的方法串行训练模型，训练过程中每一轮迭代的欠采样会选取一些对当前集成模型贡献最大的训练样本，而非简单的随机采样，实现更加准确的债券违约预测，发现更多有潜在风险的发债主体，及早规避因信用风险带来的损失。</div>
+      <div id="p0123" num="n0118" class="description-paragraph">以下将通过图1-图4对本公开实施例的一种基于类别不平衡机器学习框架的债券违约预测方法、装置、设备、介质和产品进行详细描述。</div>
+      <div id="p0124" num="n0119" class="description-paragraph">图1示意性示出了根据本公开实施例的一种基于类别不平衡机器学习框架的债券违约预测方法的流程图。</div>
+      <div id="p0125" num="n0120" class="description-paragraph">如图1所示，该实施例提供了一种基于类别不平衡机器学习框架的债券违约预测方法，所述方法包括操作S101-操作S105，具体如下：</div>
+      <div id="p0126" num="n0121" class="description-paragraph">在操作S101中，获取发债主体的相关数据，所述相关数据包括发债主体的年度财务报表数据和违约情况数据。</div>
+      <div id="p0127" num="n0122" class="description-paragraph">所述获取发债主体的相关数据，具体包括：从数据库中获取发债主体的相关数据。</div>
+      <div id="p0128" num="n0123" class="description-paragraph">所述从数据库中获取发债主体的相关数据，具体包括：</div>
+      <div id="p0129" num="n0124" class="description-paragraph">从数据库中获取发债主体的资产负债表、利润表、现金流量表、财务指标、债券违约报表、债券分类板块、债券概念板块、中债登收益率曲线，筛选出全部信用债发债主体，从中剔除城投债，并获取所述信用债发债主体的年度财务报表数据，判断信用债发债主体是否违约，对信用债发债主体是否违约进行标记，同时设置所述发债主体的首次违约标签。</div>
+      <div id="p0130" num="n0125" class="description-paragraph">所述数据库可以是Wind数据库。</div>
+      <div id="p0131" num="n0126" class="description-paragraph">在操作S102中，对获取的所述发债主体的相关数据进行预处理。</div>
+      <div id="p0132" num="n0127" class="description-paragraph">所述对获取的所述发债主体的相关数据进行预处理，包括：统计所述发债主体的相关数据的特征的缺失率、去除所述发债主体的相关数据的特征的异常值、对所述发债主体的相关数据的特征进行分箱处理。</div>
+      <div id="p0133" num="n0128" class="description-paragraph">在操作S103中，从所述发债主体的相关数据中选择对模型训练贡献度最高的特征。</div>
+      <div id="p0134" num="n0129" class="description-paragraph">所述从所述发债主体的相关数据中选择对模型训练贡献度最高的特征，具体包括：计算所述发债主体的相关数据的特征的单变量相关性、多变量相关性、IV值、信息熵和基尼系数，结合业务经验，从中选择对模型训练贡献度最高的特征。</div>
+      <div id="p0135" num="n0130" class="description-paragraph">在操作S104中，使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用SelfPaced Ensemble集成学习方法来进行模型训练，并选择最优模型。</div>
+      <div id="p0136" num="n0131" class="description-paragraph">其中，所述发债主体的所述年度财务报表数据是违约预测年份之前两年的数据，例如要预测2020年违约的主体，选用2018年的年度财务报表数据。</div>
+      <div id="p0137" num="n0132" class="description-paragraph">如图2所示，所述使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用SelfPaced Ensemble方法来进行模型训练，选择最优模型，具体包括：</div>
+      <div id="p0138" num="n0133" class="description-paragraph">在操作S1041中，确定集成学习框架中的基分类器。</div>
+      <div id="p0139" num="n0134" class="description-paragraph">所述确定集成学习框架中的基分类器，具体包括：将LightGBM 二分类分类器确定为集成学习框架中的基分类器，所述LightGBM二分类分类器包含了多棵决策树。</div>
+      <div id="p0140" num="n0135" class="description-paragraph">所述LightGBM是梯度提升决策树算法的一种高效实现，该算法是将决策树用Boosting的方法集成，迭代训练得到最优的模型。</div>
+      <div id="p0141" num="n0136" class="description-paragraph">在操作S1042中，将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+      <div id="p0142" num="n0137" class="description-paragraph">为了找到最优的模型超参数组合，需要将数据集划分一部分作为测试集，其余的作为调整超参数时的训练集。</div>
+      <div id="p0143" num="n0138" class="description-paragraph">所述将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+      <div id="p0144" num="n0139" class="description-paragraph">所述使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集随机划分为5份，每一次选取其中的4份作为训练集，剩余的1份作为测试集，重复上述选取步骤五次，每次选取的训练集是不同的。</div>
+      <div id="p0145" num="n0140" class="description-paragraph">在操作S1043中，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练。</div>
+      <div id="p0146" num="n0141" class="description-paragraph">所述基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，具体包括：</div>
+      <div id="p0147" num="n0142" class="description-paragraph">1)初始化训练集D中的少数样本P和多数样本N；</div>
+      <div id="p0148" num="n0143" class="description-paragraph">2)使用所述多数样本N中随机欠采样的子集N0和所述少数样本 P训练第1个基分类器f<sub>0</sub>，N<sub>0</sub>和P的数量一致，即|N<sub>0</sub>’|＝|P|；</div>
+      <div id="p0149" num="n0144" class="description-paragraph">3)将到目前为止所有基分类器的和作为集成模型F<sub>i</sub>，即：</div>
+      <div id="p0150" num="n0145" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/ca/98/73/8528301808acd2/BDA0003601838190000141.png"><img he="98" wi="470" file="BDA0003601838190000141.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="1880" height="392" alt="Figure BDA0003601838190000141" class="patent-full-image" src="https://patentimages.storage.googleapis.com/ca/98/73/8528301808acd2/BDA0003601838190000141.png"/></a></div>
+      </div>
+      <div id="p0151" num="n0146" class="description-paragraph">其中，i表示已经训练的基分类器的总数，其最大值为n；</div>
+      <div id="p0152" num="n0147" class="description-paragraph">4)将所述多数样本N根据分类硬度分箱成k组B<sub>1</sub>，B<sub>2</sub>，…，B<sub>k</sub>，对于给定的模型F(·)和(x，y)，样本分类硬度H<sub>X</sub>＝H(x，y，F)，其中，H 为分类硬度函数，k为分箱数量；</div>
+      <div id="p0153" num="n0148" class="description-paragraph">5)计算每个分箱的平均分类硬度，第1个分箱的平均硬度为</div>
+      <div id="p0154" num="n0149" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/9a/24/0e/5dfea0b6e1697f/BDA0003601838190000142.png"><img he="71" wi="982" file="BDA0003601838190000142.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="3928" height="284" alt="Figure BDA0003601838190000142" class="patent-full-image" src="https://patentimages.storage.googleapis.com/9a/24/0e/5dfea0b6e1697f/BDA0003601838190000142.png"/></a></div>
+      </div>
+      <div id="p0155" num="n0150" class="description-paragraph">6)更新自步因子<div class="patent-image"><a href="https://patentimages.storage.googleapis.com/d9/86/35/75180266427cbc/BDA0003601838190000143.png"><img he="102" wi="309" file="BDA0003601838190000143.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="yes" width="1236" height="408" alt="Figure BDA0003601838190000143" class="patent-full-image" src="https://patentimages.storage.googleapis.com/d9/86/35/75180266427cbc/BDA0003601838190000143.png"/></a></div> </div>
+      <div id="p0156" num="n0151" class="description-paragraph">7)根据分类硬度和自步因子计算每个分箱的采样权重p<sub>1</sub>，其中：</div>
+      <div id="p0157" num="n0152" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/8f/a5/7e/21e3b6e2d77b6c/BDA0003601838190000144.png"><img he="108" wi="533" file="BDA0003601838190000144.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="2132" height="432" alt="Figure BDA0003601838190000144" class="patent-full-image" src="https://patentimages.storage.googleapis.com/8f/a5/7e/21e3b6e2d77b6c/BDA0003601838190000144.png"/></a></div>
+      </div>
+      <div id="p0158" num="n0153" class="description-paragraph">8)基于采样权重p<sub>1</sub>对分箱后的所述多数样本N进行欠采样，样本量和所述少数样本P一致，第1分箱的样本量为：</div>
+      <div id="p0159" num="n0154" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/b1/d4/ae/3e2fd6439b6d9e/BDA0003601838190000145.png"><img he="86" wi="235" file="BDA0003601838190000145.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="940" height="344" alt="Figure BDA0003601838190000145" class="patent-full-image" src="https://patentimages.storage.googleapis.com/b1/d4/ae/3e2fd6439b6d9e/BDA0003601838190000145.png"/></a></div>
+      </div>
+      <div id="p0160" num="n0155" class="description-paragraph">9)在新的欠采样样本集上训练基分类器f<sub>i</sub>；</div>
+      <div id="p0161" num="n0156" class="description-paragraph">10)返回上述步骤3)继续新的迭代，直到步骤3)中完成了n 轮迭代；</div>
+      <div id="p0162" num="n0157" class="description-paragraph">11)在n轮迭代完成后，将所有基分类器整合为集成分类器。</div>
+      <div id="p0163" num="n0158" class="description-paragraph">在操作S1044中，选择最优模型。</div>
+      <div id="p0164" num="n0159" class="description-paragraph">所述选择最优模型具体包括：将每个超参数设定好候选值，组合成超参数矩阵，使用Grid Search在所述划分的训练集上进行5次模型训练，观测模型在测试集上的指标，根据5次模型训练的结果评估模型质量，并选择最优模型。</div>
+      <div id="p0165" num="n0160" class="description-paragraph">所述评估模型质量所使用的评估指标包括准确率、精确率、召回率、F1或ROC-AUC。</div>
+      <div id="p0166" num="n0161" class="description-paragraph">所述超参数包括Self Paced Ensemble分类器的超参数和LightGBM基分类器的超参数。</div>
+      <div id="p0167" num="n0162" class="description-paragraph">所述Self Paced Ensemble分类器的超参数包括：基分类器数量、分箱数量、分类硬度函数。</div>
+      <div id="p0168" num="n0163" class="description-paragraph">所述LightGBM基分类器的超参数包括：叶子数量、叶子最小数据量、最大深度、决策树数量、学习率、决策树类型、L1正则化系数、L2正则化系数。</div>
+      <div id="p0169" num="n0164" class="description-paragraph">在操作S105中，部署所述最优模型，并使用所述最优模型进行债券违约预测。</div>
+      <div id="p0170" num="n0165" class="description-paragraph">所述部署所述最优模型，具体包括：将训练好的所述最优模型用 Python fastapi封装为HTTP服务，部署到生产环境服务器中。</div>
+      <div id="p0171" num="n0166" class="description-paragraph">所述使用所述最优模型进行债券违约预测，具体包括：定期产生用于模型预测的预测数据，将加工好的所述预测数据转化为JSON格式，发送到封装为HTTP服务的所述最优模型中进行债券违约预测，预测完毕后取回预测结果，并将所述预测结果推送到下游应用系统中进行展示。</div>
+      <div id="p0172" num="n0167" class="description-paragraph">所述定期产生用于模型预测的预测数据，具体包括：将特征提取与特征工程的部分开发成数据库的存储过程，定期产生用于模型预测的预测数据。</div>
+      <div id="p0173" num="n0168" class="description-paragraph">借助于本实施例提供的一种基于类别不平衡机器学习框架的债券违约预测方法，能够使用Self Paced Ensemble方法来训练预测模型，使用欠采样和Boosting集成的方法串行训练模型，训练过程中每一轮迭代的欠采样会选取一些对当前集成模型贡献最大的训练样本，而非简单的随机采样，实现更加准确的债券违约预测，发现更多有潜在风险的发债主体，及早规避因信用风险带来的损失。</div>
+      <div id="p0174" num="n0169" class="description-paragraph">基于上述图1所示的一种基于类别不平衡机器学习框架的债券违约预测方法，本公开还提供了一种基于类别不平衡机器学习框架的债券违约预测装置。以下将结合图3对该装置进行详细描述。</div>
+      <div id="p0175" num="n0170" class="description-paragraph">图3示意性示出了根据本公开实施例的一种基于类别不平衡机器学习框架的债券违约预测装置的结构框图。</div>
+      <div id="p0176" num="n0171" class="description-paragraph">如图3所示，该实施例提供了一种基于类别不平衡机器学习框架的债券违约预测装置300，所述装置300包括数据获取模块301、数据预处理模块302、特征选择模块303、模型训练模块304和违约预测模块305。</div>
+      <div id="p0177" num="n0172" class="description-paragraph">所述数据获取模块301，用于获取发债主体的相关数据，所述相关数据包括发债主体的年度财务报表数据和违约情况数据。</div>
+      <div id="p0178" num="n0173" class="description-paragraph">所述获取发债主体的相关数据，具体包括：从数据库中获取发债主体的相关数据。</div>
+      <div id="p0179" num="n0174" class="description-paragraph">所述从数据库中获取发债主体的相关数据，具体包括：</div>
+      <div id="p0180" num="n0175" class="description-paragraph">从数据库中获取发债主体的资产负债表、利润表、现金流量表、财务指标、债券违约报表、债券分类板块、债券概念板块、中债登收益率曲线，筛选出全部信用债发债主体，从中剔除城投债，并获取所述信用债发债主体的年度财务报表数据，判断信用债发债主体是否违约，对信用债发债主体是否违约进行标记，同时设置所述发债主体的首次违约标签。</div>
+      <div id="p0181" num="n0176" class="description-paragraph">所述数据库可以是Wind数据库。</div>
+      <div id="p0182" num="n0177" class="description-paragraph">所述数据预处理模块302，用于对获取的所述发债主体的相关数据进行预处理。</div>
+      <div id="p0183" num="n0178" class="description-paragraph">所述对获取的所述发债主体的相关数据进行预处理，包括：统计所述发债主体的相关数据的特征的缺失率、去除所述发债主体的相关数据的特征的异常值、对所述发债主体的相关数据的特征进行分箱处理。</div>
+      <div id="p0184" num="n0179" class="description-paragraph">所述特征选择模块303，用于从所述发债主体的相关数据中选择对模型训练贡献度最高的特征。</div>
+      <div id="p0185" num="n0180" class="description-paragraph">所述从所述发债主体的相关数据中选择对模型训练贡献度最高的特征，具体包括：计算所述发债主体的相关数据的特征的单变量相关性、多变量相关性、IV值、信息熵和基尼系数，结合业务经验，从中选择对模型训练贡献度最高的特征。</div>
+      <div id="p0186" num="n0181" class="description-paragraph">所述模型训练模块304，用于使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型。</div>
+      <div id="p0187" num="n0182" class="description-paragraph">其中，所述发债主体的所述年度财务报表数据是违约预测年份之前两年的数据，例如要预测2020年违约的主体，选用2018年的年度财务报表数据。</div>
+      <div id="p0188" num="n0183" class="description-paragraph">所述使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self PacedEnsemble方法来进行模型训练，选择最优模型，具体包括：</div>
+      <div id="p0189" num="n0184" class="description-paragraph">(1)确定集成学习框架中的基分类器。</div>
+      <div id="p0190" num="n0185" class="description-paragraph">所述确定集成学习框架中的基分类器，具体包括：将LightGBM 二分类分类器确定为集成学习框架中的基分类器，所述LightGBM二分类分类器包含了多棵决策树。</div>
+      <div id="p0191" num="n0186" class="description-paragraph">所述LightGBM是梯度提升决策树算法的一种高效实现，该算法是将决策树用Boosting的方法集成，迭代训练得到最优的模型。</div>
+      <div id="p0192" num="n0187" class="description-paragraph">(2)将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+      <div id="p0193" num="n0188" class="description-paragraph">为了找到最优的模型超参数组合，需要将数据集划分一部分作为测试集，其余的作为调整超参数时的训练集。</div>
+      <div id="p0194" num="n0189" class="description-paragraph">所述将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+      <div id="p0195" num="n0190" class="description-paragraph">所述使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集随机划分为5份，每一次选取其中的4份作为训练集，剩余的1份作为测试集，重复上述选取步骤五次，每次选取的训练集是不同的。</div>
+      <div id="p0196" num="n0191" class="description-paragraph">(3)基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练。</div>
+      <div id="p0197" num="n0192" class="description-paragraph">所述基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，具体包括：</div>
+      <div id="p0198" num="n0193" class="description-paragraph">1)初始化训练集D中的少数样本P和多数样本N；</div>
+      <div id="p0199" num="n0194" class="description-paragraph">2)使用所述多数样本N中随机欠采样的子集N<sub>0</sub>和所述少数样本 P训练第1个基分类器f<sub>0</sub>，N<sub>0</sub>和P的数量一致，即|N<sub>0</sub>’|＝|P|；</div>
+      <div id="p0200" num="n0195" class="description-paragraph">3)将到目前为止所有基分类器的和作为集成模型F<sub>i</sub>，即：</div>
+      <div id="p0201" num="n0196" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/c0/3a/c9/e2581798ef67c8/BDA0003601838190000181.png"><img he="98" wi="470" file="BDA0003601838190000181.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="1880" height="392" alt="Figure BDA0003601838190000181" class="patent-full-image" src="https://patentimages.storage.googleapis.com/c0/3a/c9/e2581798ef67c8/BDA0003601838190000181.png"/></a></div>
+      </div>
+      <div id="p0202" num="n0197" class="description-paragraph">其中，i表示已经训练的基分类器的总数，其最大值为n；</div>
+      <div id="p0203" num="n0198" class="description-paragraph">4)将所述多数样本N根据分类硬度分箱成k组B<sub>1</sub>，B<sub>2</sub>，…，B<sub>k</sub>，对于给定的模型F(·)和(x，y)，样本分类硬度H<sub>X</sub>＝H(x，y，F)，其中，H 为分类硬度函数，k为分箱数量；</div>
+      <div id="p0204" num="n0199" class="description-paragraph">5)计算每个分箱的平均分类硬度，第1个分箱的平均硬度为</div>
+      <div id="p0205" num="n0200" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/7e/92/42/a721300a8b3bf3/BDA0003601838190000182.png"><img he="72" wi="982" file="BDA0003601838190000182.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="3928" height="288" alt="Figure BDA0003601838190000182" class="patent-full-image" src="https://patentimages.storage.googleapis.com/7e/92/42/a721300a8b3bf3/BDA0003601838190000182.png"/></a></div>
+      </div>
+      <div id="p0206" num="n0201" class="description-paragraph">6)更新自步因子<div class="patent-image"><a href="https://patentimages.storage.googleapis.com/20/1e/75/82433327711fa1/BDA0003601838190000183.png"><img he="110" wi="308" file="BDA0003601838190000183.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="yes" width="1232" height="440" alt="Figure BDA0003601838190000183" class="patent-full-image" src="https://patentimages.storage.googleapis.com/20/1e/75/82433327711fa1/BDA0003601838190000183.png"/></a></div> </div>
+      <div id="p0207" num="n0202" class="description-paragraph">7)根据分类硬度和自步因子计算每个分箱的采样权重p<sub>1</sub>，其中：</div>
+      <div id="p0208" num="n0203" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/28/c4/37/72335a5a1d1ac4/BDA0003601838190000184.png"><img he="107" wi="533" file="BDA0003601838190000184.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="2132" height="428" alt="Figure BDA0003601838190000184" class="patent-full-image" src="https://patentimages.storage.googleapis.com/28/c4/37/72335a5a1d1ac4/BDA0003601838190000184.png"/></a></div>
+      </div>
+      <div id="p0209" num="n0204" class="description-paragraph">8)基于采样权重p<sub>1</sub>对分箱后的所述多数样本N进行欠采样，样本量和所述少数样本P一致，第1分箱的样本量为：</div>
+      <div id="p0210" num="n0205" class="description-paragraph">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/db/3e/f4/9ac92c61abd0be/BDA0003601838190000185.png"><img he="85" wi="235" file="BDA0003601838190000185.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="940" height="340" alt="Figure BDA0003601838190000185" class="patent-full-image" src="https://patentimages.storage.googleapis.com/db/3e/f4/9ac92c61abd0be/BDA0003601838190000185.png"/></a></div>
+      </div>
+      <div id="p0211" num="n0206" class="description-paragraph">9)在新的欠采样样本集上训练基分类器f<sub>i</sub>；</div>
+      <div id="p0212" num="n0207" class="description-paragraph">10)返回上述步骤3)继续新的迭代，直到步骤3)中完成了n 轮迭代；</div>
+      <div id="p0213" num="n0208" class="description-paragraph">11)在n轮迭代完成后，将所有基分类器整合为集成分类器。</div>
+      <div id="p0214" num="n0209" class="description-paragraph">(4)选择最优模型。</div>
+      <div id="p0215" num="n0210" class="description-paragraph">所述选择最优模型具体包括：将每个超参数设定好候选值，组合成超参数矩阵，使用Grid Search在所述划分的训练集上进行5次模型训练，观测模型在测试集上的指标，根据5次模型训练的结果评估模型质量，并选择最优模型。</div>
+      <div id="p0216" num="n0211" class="description-paragraph">所述评估模型质量所使用的评估指标包括准确率、精确率、召回率、F1或ROC-AUC。</div>
+      <div id="p0217" num="n0212" class="description-paragraph">所述超参数包括Self Paced Ensemble分类器的超参数和 LightGBM基分类器的超参数。</div>
+      <div id="p0218" num="n0213" class="description-paragraph">所述Self Paced Ensemble分类器的超参数包括：基分类器数量、分箱数量、分类硬度函数。</div>
+      <div id="p0219" num="n0214" class="description-paragraph">所述LightGBM基分类器的超参数包括：叶子数量、叶子最小数据量、最大深度、决策树数量、学习率、决策树类型、L1正则化系数、L2正则化系数。</div>
+      <div id="p0220" num="n0215" class="description-paragraph">所述违约预测模块305，用于部署所述最优模型，并使用所述最优模型进行债券违约预测。</div>
+      <div id="p0221" num="n0216" class="description-paragraph">所述部署所述最优模型，具体包括：将训练好的所述最优模型用 Python fastapi封装为HTTP服务，部署到生产环境服务器中。</div>
+      <div id="p0222" num="n0217" class="description-paragraph">所述使用所述最优模型进行债券违约预测，具体包括：定期产生用于模型预测的预测数据，将加工好的所述预测数据转化为JSON格式，发送到封装为HTTP服务的所述最优模型中进行债券违约预测，预测完毕后取回预测结果，并将所述预测结果推送到下游应用系统中进行展示。</div>
+      <div id="p0223" num="n0218" class="description-paragraph">所述定期产生用于模型预测的预测数据，具体包括：将特征提取与特征工程的部分开发成数据库的存储过程，定期产生用于模型预测的预测数据。</div>
+      <div id="p0224" num="n0219" class="description-paragraph">借助于本实施例提供的一种基于类别不平衡机器学习框架的债券违约预测装置，能够使用Self Paced Ensemble方法来训练预测模型，使用欠采样和Boosting集成的方法串行训练模型，训练过程中每一轮迭代的欠采样会选取一些对当前集成模型贡献最大的训练样本，而非简单的随机采样，实现更加准确的债券违约预测，发现更多有潜在风险的发债主体，及早规避因信用风险带来的损失。</div>
+      <div id="p0225" num="n0220" class="description-paragraph">图4示意性示出了根据本公开实施例的适于实现一种基于类别不平衡机器学习框架的债券违约预测方法的电子设备的方框图。</div>
+      <div id="p0226" num="n0221" class="description-paragraph">如图4所示，根据本公开实施例的电子设备400包括处理器401，其可以根据存储在只读存储器(ROM)402中的程序或者从存储部分 408加载到随机访问存储器(RAM)403中的程序而执行各种适当的动作和处理。处理器401例如可以包括通用微处理器(例如CPU)、指令集处理器和/或相关芯片组和/或专用微处理器(例如，专用集成电路(ASIC))等等。处理器401还可以包括用于缓存用途的板载存储器。处理器401可以包括用于执行根据本公开实施例的方法流程的不同动作的单一处理单元或者是多个处理单元。</div>
+      <div id="p0227" num="n0222" class="description-paragraph">在RAM 403中，存储有电子设备400操作所需的各种程序和数据。处理器401、ROM402以及RAM 403通过总线404彼此相连。处理器 401通过执行ROM 402和/或RAM 403中的程序来执行根据本公开实施例的方法流程的各种操作。需要注意，所述程序也可以存储在除ROM 402和RAM 403以外的一个或多个存储器中。处理器401也可以通过执行存储在所述一个或多个存储器中的程序来执行根据本公开实施例的方法流程的各种操作。</div>
+      <div id="p0228" num="n0223" class="description-paragraph">根据本公开的实施例，电子设备400还可以包括输入/输出(I/O) 接口405，输入/输出(I/O)接口405也连接至总线404。电子设备 400还可以包括连接至I/O接口405的以下部件中的一项或多项：包括键盘、鼠标等的输入部分406；包括诸如阴极射线管(CRT)、液晶显示器(LCD)等以及扬声器等的输出部分407；包括硬盘等的存储部分408；以及包括诸如LAN卡、调制解调器等的网络接口卡的通信部分409。通信部分409经由诸如因特网的网络执行通信处理。驱动器410也根据需要连接至I/O接口405。可拆卸介质411，诸如磁盘、光盘、磁光盘、半导体存储器等等，根据需要安装在驱动器410 上，以便于从其上读出的计算机程序根据需要被安装入存储部分408。</div>
+      <div id="p0229" num="n0224" class="description-paragraph">本公开还提供了一种计算机可读存储介质，该计算机可读存储介质可以是上述实施例中描述的设备/装置/系统中所包含的；也可以是单独存在，而未装配入该设备/装置/系统中。上述计算机可读存储介质承载有一个或者多个程序，当上述一个或者多个程序被执行时，实现根据本公开实施例的方法。</div>
+      <div id="p0230" num="n0225" class="description-paragraph">根据本公开的实施例，计算机可读存储介质可以是非易失性的计算机可读存储介质，例如可以包括但不限于：便携式计算机磁盘、硬盘、随机访问存储器(RAM)、只读存储器(ROM)、可擦式可编程只读存储器(EPROM或闪存)、便携式紧凑磁盘只读存储器(CD-ROM)、光存储器件、磁存储器件、或者上述的任意合适的组合。在本公开中，计算机可读存储介质可以是任何包含或存储程序的有形介质，该程序可以被指令执行系统、装置或者器件使用或者与其结合使用。例如，根据本公开的实施例，计算机可读存储介质可以包括上文描述的ROM 402和/或RAM 403和/或ROM 402和RAM 403以外的一个或多个存储器。</div>
+      <div id="p0231" num="n0226" class="description-paragraph">本公开的实施例还包括一种计算机程序产品，其包括计算机程序，该计算机程序包含用于执行流程图所示的方法的程序代码。当计算机程序产品在计算机系统中运行时，该程序代码用于使计算机系统实现本公开实施例所提供的物品推荐方法。</div>
+      <div id="p0232" num="n0227" class="description-paragraph">在该计算机程序被处理器401执行时执行本公开实施例的系统/ 装置中限定的上述功能。根据本公开的实施例，上文描述的系统、装置、模块、单元等可以通过计算机程序模块来实现。</div>
+      <div id="p0233" num="n0228" class="description-paragraph">在一种实施例中，该计算机程序可以依托于光存储器件、磁存储器件等有形存储介质。在另一种实施例中，该计算机程序也可以在网络介质上以信号的形式进行传输、分发，并通过通信部分409被下载和安装，和/或从可拆卸介质411被安装。该计算机程序包含的程序代码可以用任何适当的网络介质传输，包括但不限于：无线、有线等等，或者上述的任意合适的组合。</div>
+      <div id="p0234" num="n0229" class="description-paragraph">在这样的实施例中，该计算机程序可以通过通信部分409从网络上被下载和安装，和/或从可拆卸介质411被安装。在该计算机程序被处理器401执行时，执行本公开实施例的系统中限定的上述功能。根据本公开的实施例，上文描述的系统、设备、装置、模块、单元等可以通过计算机程序模块来实现。</div>
+      <div id="p0235" num="n0230" class="description-paragraph">根据本公开的实施例，可以以一种或多种程序设计语言的任意组合来编写用于执行本公开实施例提供的计算机程序的程序代码，具体地，可以利用高级过程和/或面向对象的编程语言、和/或汇编/机器语言来实施这些计算程序。程序设计语言包括但不限于诸如Java， C++，python，“C”语言或类似的程序设计语言。程序代码可以完全地在用户计算设备上执行、部分地在用户设备上执行、部分在远程计算设备上执行、或者完全在远程计算设备或服务器上执行。在涉及远程计算设备的情形中，远程计算设备可以通过任意种类的网络，包括局域网(LAN)或广域网(WAN)，连接到用户计算设备，或者，可以连接到外部计算设备(例如利用因特网服务提供商来通过因特网连接)。</div>
+      <div id="p0236" num="n0231" class="description-paragraph">附图中的流程图和框图，图示了按照本公开各种实施例的系统、方法和计算机程序产品的可能实现的体系架构、功能和操作。在这点上，流程图或框图中的每个方框可以代表一个模块、程序段、或代码的一部分，上述模块、程序段、或代码的一部分包含一个或多个用于实现规定的逻辑功能的可执行指令。电应当注意，在有些作为替换的实现中，方框中所标注的功能也可以以不同于附图中所标注的顺序发生。例如，两个接连地表示的方框实际上可以基本并行地执行，它们有时也可以按相反的顺序执行，这依所涉及的功能而定。也要注意的是，框图或流程图中的每个方框、以及框图或流程图中的方框的组合，可以用执行规定的功能或操作的专用的基于硬件的系统来实现，或者可以用专用硬件与计算机指令的组合来实现。</div>
+      <div id="p0237" num="n0232" class="description-paragraph">本领域技术人员可以理解，本公开的各个实施例和/或权利要求中记载的特征可以进行多种组合或/或结合，即使这样的组合或结合没有明确记载于本公开中。特别地，在不脱离本公开精神和教导的情况下，本公开的各个实施例和/或权利要求中记载的特征可以进行多种组合和/或结合。所有这些组合和/或结合均落入本公开的范围。</div>
+      <div id="p0238" num="n0233" class="description-paragraph">以上对本公开的实施例进行了描述。但是，这些实施例仅仅是为了说明的目的，而并非为了限制本公开的范围。尽管在以上分别描述了各实施例，但是这并不意味着各个实施例中的措施不能有利地结合使用。本公开的范围由所附权利要求及其等同物限定。不脱离本公开的范围，本领域技术人员可以做出多种替代和修改，这些替代和修改都应落在本公开的范围之内。</div>
+    </mode-for-invention>
+  </div>
+  </div>
+  </section>
+
+  <section itemprop="claims" itemscope>
+    <h2>Claims (<span itemprop="count">33</span>)</h2>
+    
+    <div itemprop="content" html><div mxw-id="PCLM329151404" lang="ZH" load-source="patent-office" class="claims">
+    <div class="claim"> <div id="cl0001" num="0001" class="claim">
+      <div class="claim-text">1.一种基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述预测方法包括：</div>
+      <div class="claim-text">从发债主体的相关数据中选择对模型训练贡献度最高的特征，所述相关数据包括发债主体的年度财务报表数据和违约情况数据；</div>
+      <div class="claim-text">使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型；</div>
+      <div class="claim-text">部署所述最优模型，并使用所述最优模型进行债券违约预测。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0002" num="0002" class="claim">
+      <div class="claim-text">2.根据权利要求1所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，在所述从发债主体的相关数据中选择对模型训练贡献度最高的特征之前，所述方法还包括：</div>
+      <div class="claim-text">获取发债主体的相关数据；</div>
+      <div class="claim-text">对获取的所述发债主体的相关数据进行预处理。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0003" num="0003" class="claim">
+      <div class="claim-text">3.根据权利要求2所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述获取发债主体的相关数据，具体包括：</div>
+      <div class="claim-text">从数据库中获取发债主体的资产负债表、利润表、现金流量表、财务指标、债券违约报表、债券分类板块、债券概念板块、中债登收益率曲线，筛选出全部信用债发债主体，从中剔除城投债，并获取所述信用债发债主体的年度财务报表数据，判断信用债发债主体是否违约，对信用债发债主体是否违约进行标记，同时设置所属发债主体的首次违约标签。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0004" num="0004" class="claim">
+      <div class="claim-text">4.根据权利要求2所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述对获取的所述发债主体的相关数据进行预处理，包括：</div>
+      <div class="claim-text">统计所述发债主体的相关数据的特征的缺失率、去除所述发债主体的相关数据的特征的异常值、对所述发债主体的相关数据的特征进行分箱处理。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0005" num="0005" class="claim">
+      <div class="claim-text">5.根据权利要求1所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述从发债主体的相关数据中选择对模型训练贡献度最高的特征，具体包括：</div>
+      <div class="claim-text">计算所述发债主体的相关数据的特征的单变量相关性、多变量相关性、IV值、信息熵和基尼系数，结合业务经验，从中选择对模型训练贡献度最高的特征。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0006" num="0006" class="claim">
+      <div class="claim-text">6.根据权利要求1所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型，具体包括：</div>
+      <div class="claim-text">确定集成学习框架中的基分类器；</div>
+      <div class="claim-text">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集；</div>
+      <div class="claim-text">基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练；</div>
+      <div class="claim-text">选择最优模型。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0007" num="0007" class="claim">
+      <div class="claim-text">7.根据权利要求6所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述确定集成学习框架中的基分类器，具体包括：具体包括：将LightGBM二分类分类器确定为集成学习框架中的基分类器，所述LightGBM二分类分类器包含了多棵决策树。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0008" num="0008" class="claim">
+      <div class="claim-text">8.根据权利要求6所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0009" num="0009" class="claim">
+      <div class="claim-text">9.根据权利要求8所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：</div>
+      <div class="claim-text">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集随机划分为5份，每一次选取其中的4份作为训练集，剩余的1份作为测试集，重复上述选取步骤五次，每次选取的训练集是不同的。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0010" num="0010" class="claim">
+      <div class="claim-text">10.根据权利要求6-9中的任一项所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，具体包括：</div>
+      <div class="claim-text">1)初始化训练集D中的少数样本P和多数样本N；</div>
+      <div class="claim-text">2)使用所述多数样本N中随机欠采样的子集N<sub>0</sub>和所述少数样本P训练第1个基分类器f<sub>0</sub>，N<sub>0</sub>和P的数量一致，即|N<sub>0</sub>’|＝|P|；</div>
+      <div class="claim-text">3)将到目前为止所有基分类器的和作为集成模型Fi，即：</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/56/30/bd/1ca8483a976a0f/FDA0003601838180000031.png"><img id="icf0001" he="99" wi="470" file="FDA0003601838180000031.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="1880" height="396" alt="Figure FDA0003601838180000031" class="patent-full-image" src="https://patentimages.storage.googleapis.com/56/30/bd/1ca8483a976a0f/FDA0003601838180000031.png"/></a></div>
+      </div>
+      <div class="claim-text">其中，i表示已经训练的基分类器的总数，其最大值为n；</div>
+      <div class="claim-text">4)将所述多数样本N根据分类硬度分箱成k组B<sub>1</sub>，B<sub>2</sub>，…，B<sub>k</sub>，对于给定的模型F(·)和(x，y)，样本分类硬度H<sub>X</sub>＝H(x，y，F)，其中，H为分类硬度函数，k为分箱数量；</div>
+      <div class="claim-text">5)计算每个分箱的平均分类硬度，第1个分箱的平均硬度为</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/d0/41/3b/7c37d1cddf704f/FDA0003601838180000032.png"><img id="icf0002" he="71" wi="982" file="FDA0003601838180000032.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="3928" height="284" alt="Figure FDA0003601838180000032" class="patent-full-image" src="https://patentimages.storage.googleapis.com/d0/41/3b/7c37d1cddf704f/FDA0003601838180000032.png"/></a></div>
+      </div>
+      <div class="claim-text">6)更新自步因子<div class="patent-image"><a href="https://patentimages.storage.googleapis.com/59/d8/09/6efcb93f426e30/FDA0003601838180000033.png"><img id="icf0003" he="102" wi="308" file="FDA0003601838180000033.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="yes" width="1232" height="408" alt="Figure FDA0003601838180000033" class="patent-full-image" src="https://patentimages.storage.googleapis.com/59/d8/09/6efcb93f426e30/FDA0003601838180000033.png"/></a></div> </div>
+      <div class="claim-text">7)根据分类硬度和自步因子计算每个分箱的采样权重p<sub>1</sub>，其中：</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/3b/9d/7a/193b37945d3eed/FDA0003601838180000034.png"><img id="icf0004" he="107" wi="533" file="FDA0003601838180000034.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="2132" height="428" alt="Figure FDA0003601838180000034" class="patent-full-image" src="https://patentimages.storage.googleapis.com/3b/9d/7a/193b37945d3eed/FDA0003601838180000034.png"/></a></div>
+      </div>
+      <div class="claim-text">8)基于采样权重p<sub>1</sub>对分箱后的所述多数样本N进行欠采样，样本量和所述少数样本P一致，第1分箱的样本量为：</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/1e/78/e9/8e52d4df570689/FDA0003601838180000035.png"><img id="icf0005" he="85" wi="235" file="FDA0003601838180000035.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="940" height="340" alt="Figure FDA0003601838180000035" class="patent-full-image" src="https://patentimages.storage.googleapis.com/1e/78/e9/8e52d4df570689/FDA0003601838180000035.png"/></a></div>
+      </div>
+      <div class="claim-text">9)在新的欠采样样本集上训练基分类器f<sub>i</sub>；</div>
+      <div class="claim-text">10)返回上述步骤3)继续新的迭代，直到步骤3)中完成了n轮迭代；</div>
+      <div class="claim-text">11)在n轮迭代完成后，将所有基分类器整合为集成分类器。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0011" num="0011" class="claim">
+      <div class="claim-text">11.根据权利要求6-9中任一项所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述选择最优模型具体包括：</div>
+      <div class="claim-text">将每个超参数设定好候选值，组合成超参数矩阵，使用GridSearch在所述划分的训练集上进行5次模型训练，观测模型在测试集上的指标，根据5次模型训练的结果评估模型质量，并选择最优模型。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0012" num="0012" class="claim">
+      <div class="claim-text">12.根据权利要求11所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述评估模型质量所使用的评估指标包括准确率、精确率、召回率、F1或ROC-AUC。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0013" num="0013" class="claim">
+      <div class="claim-text">13.根据权利要求11所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述超参数包括Self Paced Ensemble分类器的超参数和LightGBM基分类器的超参数，其中：</div>
+      <div class="claim-text">所述Self Paced Ensemble分类器的超参数包括：基分类器数量、分箱数量、分类硬度函数；</div>
+      <div class="claim-text">所述LightGBM基分类器的超参数包括：叶子数量、叶子最小数据量、最大深度、决策树数量、学习率、决策树类型、L1正则化系数、L2正则化系数。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0014" num="0014" class="claim">
+      <div class="claim-text">14.根据权利要求1所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述部署所述最优模型，具体包括：将训练好的所述最优模型用Python fastapi封装为HTTP服务，部署到生产环境服务器中。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0015" num="0015" class="claim">
+      <div class="claim-text">15.根据权利要求1或14所述的基于类别不平衡机器学习框架的债券违约预测方法，其特征在于，所述使用所述最优模型进行债券违约预测，具体包括：</div>
+      <div class="claim-text">定期产生用于模型预测的预测数据，将加工好的所述预测数据转化为JSON格式，发送到封装为HTTP服务的所述最优模型中进行债券违约预测，预测完毕后取回预测结果，并将所述预测结果推送到下游应用系统中进行展示。</div>
+    </div>
+    </div> <div class="claim"> <div id="cl0016" num="0016" class="claim">
+      <div class="claim-text">16.一种基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述预测装置包括特征选择模块、模型训练模块和违约预测模块，其中：</div>
+      <div class="claim-text">所述特征选择模块，用于从发债主体的相关数据中选择对模型训练贡献度最高的特征，所述相关数据包括发债主体的年度财务报表数据和违约情况数据；</div>
+      <div class="claim-text">所述模型训练模块，用于使用选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签，构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型；</div>
+      <div class="claim-text">所述违约预测模块，用于部署所述最优模型，并使用所述最优模型进行债券违约预测。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0017" num="0017" class="claim">
+      <div class="claim-text">17.根据权利要求16所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述装置还包括数据获取模块和数据预处理模块，其中：</div>
+      <div class="claim-text">所述数据获取模块，用于获取发债主体的相关数据；</div>
+      <div class="claim-text">所述数据预处理模块，用于对获取的所述发债主体的相关数据进行预处理。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0018" num="0018" class="claim">
+      <div class="claim-text">18.根据权利要求17所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述获取发债主体的相关数据，具体包括：</div>
+      <div class="claim-text">从数据库中获取发债主体的资产负债表、利润表、现金流量表、财务指标、债券违约报表、债券分类板块、债券概念板块、中债登收益率曲线，筛选出全部信用债发债主体，从中剔除城投债，并获取所述信用债发债主体的年度财务报表数据，判断信用债发债主体是否违约，对信用债发债主体是否违约进行标记，同时设置所属发债主体的首次违约标签。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0019" num="0019" class="claim">
+      <div class="claim-text">19.根据权利要求17所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述对获取的所述发债主体的相关数据进行预处理，包括：</div>
+      <div class="claim-text">统计所述发债主体的相关数据的特征的缺失率、去除所述发债主体的相关数据的特征的异常值、对所述发债主体的相关数据的特征进行分箱处理。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0020" num="0020" class="claim">
+      <div class="claim-text">20.根据权利要求16所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述从发债主体的相关数据中选择对模型训练贡献度最高的特征，具体包括：</div>
+      <div class="claim-text">计算所述发债主体的相关数据的特征的单变量相关性、多变量相关性、IV值、信息熵和基尼系数，结合业务经验，从中选择对模型训练贡献度最高的特征。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0021" num="0021" class="claim">
+      <div class="claim-text">21.根据权利要求16所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述构造训练集和测试集，基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，并选择最优模型，具体包括：</div>
+      <div class="claim-text">确定集成学习框架中的基分类器；</div>
+      <div class="claim-text">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集；</div>
+      <div class="claim-text">基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练；</div>
+      <div class="claim-text">选择最优模型。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0022" num="0022" class="claim">
+      <div class="claim-text">22.根据权利要求21所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述确定集成学习框架中的基分类器，具体包括：具体包括：将LightGBM二分类分类器确定为集成学习框架中的基分类器，所述LightGBM二分类分类器包含了多棵决策树。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0023" num="0023" class="claim">
+      <div class="claim-text">23.根据权利要求21所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0024" num="0024" class="claim">
+      <div class="claim-text">24.根据权利要求23所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述使用5折交叉验证法将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集划分为训练集和测试集，具体包括：</div>
+      <div class="claim-text">将包含所述选择的所述发债主体的所述年度财务报表数据的特征和所述发债主体的首次违约标签的数据集随机划分为5份，每一次选取其中的4份作为训练集，剩余的1份作为测试集，重复上述选取步骤五次，每次选取的训练集是不同的。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0025" num="0025" class="claim">
+      <div class="claim-text">25.根据权利要求21-24中的任一项所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述基于所述训练集和测试集并使用Self Paced Ensemble集成学习方法来进行模型训练，具体包括：</div>
+      <div class="claim-text">1)初始化训练集D中的少数样本P和多数样本N；</div>
+      <div class="claim-text">2)使用所述多数样本N中随机欠采样的子集N<sub>0</sub>和所述少数样本P训练第1个基分类器f<sub>0</sub>，N<sub>0</sub>和P的数量一致，即|N<sub>0</sub>’|＝|P|；</div>
+      <div class="claim-text">3)将到目前为止所有基分类器的和作为集成模型F<sub>i</sub>，即：</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/b2/83/d3/0de3a3f664d41f/FDA0003601838180000071.png"><img id="icf0006" he="99" wi="470" file="FDA0003601838180000071.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="1880" height="396" alt="Figure FDA0003601838180000071" class="patent-full-image" src="https://patentimages.storage.googleapis.com/b2/83/d3/0de3a3f664d41f/FDA0003601838180000071.png"/></a></div>
+      </div>
+      <div class="claim-text">其中，i表示已经训练的基分类器的总数，其最大值为n；</div>
+      <div class="claim-text">4)将所述多数样本N根据分类硬度分箱成k组B<sub>1</sub>，B<sub>2</sub>，…，B<sub>k</sub>，对于给定的模型F(·)和(x，y)，样本分类硬度H<sub>X</sub>＝H(x，y，F)，其中，H为分类硬度函数，k为分箱数量；</div>
+      <div class="claim-text">5)计算每个分箱的平均分类硬度，第1个分箱的平均硬度为</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/5a/9c/8e/e2afbdf151bbe9/FDA0003601838180000072.png"><img id="icf0007" he="71" wi="982" file="FDA0003601838180000072.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="3928" height="284" alt="Figure FDA0003601838180000072" class="patent-full-image" src="https://patentimages.storage.googleapis.com/5a/9c/8e/e2afbdf151bbe9/FDA0003601838180000072.png"/></a></div>
+      </div>
+      <div class="claim-text">6)更新自步因子<div class="patent-image"><a href="https://patentimages.storage.googleapis.com/1f/06/ba/44b10ba3d4af6b/FDA0003601838180000073.png"><img id="icf0008" he="102" wi="308" file="FDA0003601838180000073.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="yes" width="1232" height="408" alt="Figure FDA0003601838180000073" class="patent-full-image" src="https://patentimages.storage.googleapis.com/1f/06/ba/44b10ba3d4af6b/FDA0003601838180000073.png"/></a></div> </div>
+      <div class="claim-text">7)根据分类硬度和自步因子计算每个分箱的采样权重p<sub>1</sub>，其中：</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/95/57/b6/591b05136efb5d/FDA0003601838180000074.png"><img id="icf0009" he="107" wi="533" file="FDA0003601838180000074.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="2132" height="428" alt="Figure FDA0003601838180000074" class="patent-full-image" src="https://patentimages.storage.googleapis.com/95/57/b6/591b05136efb5d/FDA0003601838180000074.png"/></a></div>
+      </div>
+      <div class="claim-text">8)基于采样权重p<sub>1</sub>对分箱后的所述多数样本N进行欠采样，样本量和所述少数样本P一致，第1分箱的样本量为：</div>
+      <div class="claim-text">
+        <div class="patent-image"><a href="https://patentimages.storage.googleapis.com/b6/7a/ec/95b122c381ec2f/FDA0003601838180000075.png"><img id="icf0010" he="85" wi="235" file="FDA0003601838180000075.GIF" img-content="drawing" img-format="gif" orientation="portrait" inline="no" width="940" height="340" alt="Figure FDA0003601838180000075" class="patent-full-image" src="https://patentimages.storage.googleapis.com/b6/7a/ec/95b122c381ec2f/FDA0003601838180000075.png"/></a></div>
+      </div>
+      <div class="claim-text">9)在新的欠采样样本集上训练基分类器f<sub>i</sub>；</div>
+      <div class="claim-text">10)返回上述步骤3)继续新的迭代，直到步骤3)中完成了n轮迭代；</div>
+      <div class="claim-text">11)在n轮迭代完成后，将所有基分类器整合为集成分类器。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0026" num="0026" class="claim">
+      <div class="claim-text">26.根据权利要求21-24中任一项所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述选择最优模型具体包括：</div>
+      <div class="claim-text">将每个超参数设定好候选值，组合成超参数矩阵，使用GridSearch在所述划分的训练集上进行5次模型训练，观测模型在测试集上的指标，根据5次模型训练的结果评估模型质量，并选择最优模型。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0027" num="0027" class="claim">
+      <div class="claim-text">27.根据权利要求26所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述评估模型质量所使用的评估指标包括准确率、精确率、召回率、F1或ROC-AUC。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0028" num="0028" class="claim">
+      <div class="claim-text">28.根据权利要求26所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述超参数包括Self Paced Ensemble分类器的超参数和LightGBM基分类器的超参数，其中：</div>
+      <div class="claim-text">所述Self Paced Ensemble分类器的超参数包括：基分类器数量、分箱数量、分类硬度函数；</div>
+      <div class="claim-text">所述LightGBM基分类器的超参数包括：叶子数量、叶子最小数据量、最大深度、决策树数量、学习率、决策树类型、L1正则化系数、L2正则化系数。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0029" num="0029" class="claim">
+      <div class="claim-text">29.根据权利要求16所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述部署所述最优模型，具体包括：将训练好的所述最优模型用Python fastapi封装为HTTP服务，部署到生产环境服务器中。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0030" num="0030" class="claim">
+      <div class="claim-text">30.根据权利要求16或29所述的基于类别不平衡机器学习框架的债券违约预测装置，其特征在于，所述使用所述最优模型进行债券违约预测，具体包括：</div>
+      <div class="claim-text">定期产生用于模型预测的预测数据，将加工好的所述预测数据转化为JSON格式，发送到封装为HTTP服务的所述最优模型中进行债券违约预测，预测完毕后取回预测结果，并将所述预测结果推送到下游应用系统中进行展示。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0031" num="0031" class="claim">
+      <div class="claim-text">31.一种电子设备，包括：</div>
+      <div class="claim-text">一个或多个处理器；</div>
+      <div class="claim-text">存储装置，用于存储一个或多个程序，</div>
+      <div class="claim-text">其中，当所述一个或多个程序被所述一个或多个处理器执行时，使得所述一个或多个处理器执行根据权利要求1-15中任一项所述的方法。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0032" num="0032" class="claim">
+      <div class="claim-text">32.一种计算机可读存储介质，其上存储有可执行指令，该指令被处理器执行时使处理器执行根据权利要求1-15中任一项所述的方法。</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="cl0033" num="0033" class="claim">
+      <div class="claim-text">33.一种计算机程序产品，包括计算机程序，所述计算机程序被处理器执行时实现根据权利要求1-15中任一项所述的方法。</div>
+    </div>
+  </div> </div>
+  </div>
+  </section>
+
+  <section itemprop="application" itemscope>
+
+    <section itemprop="metadata" itemscope>
+      <span itemprop="applicationNumber">CN202210407035.1A</span>
+      <span itemprop="priorityDate">2022-04-18</span>
+      <span itemprop="filingDate">2022-04-18</span>
+      <span itemprop="title">基于类别不平衡机器学习框架的债券违约预测方法和装置 
+       </span>
+      <span itemprop="ifiStatus">Pending</span>
+      
+      <a href="/patent/CN114676932A/zh">
+        <span itemprop="representativePublication">CN114676932A</span>
+        (<span itemprop="primaryLanguage">zh</span>)
+      </a>
+    </section>
+
+    <h2>Priority Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="priorityApps" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202210407035.1A</span>
+            
+            <a href="/patent/CN114676932A/zh">
+              <span itemprop="representativePublication">CN114676932A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2022-04-18</td>
+          <td itemprop="filingDate">2022-04-18</td>
+          <td itemprop="title">基于类别不平衡机器学习框架的债券违约预测方法和装置 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Applications Claiming Priority (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202210407035.1A</span>
+            <a href="/patent/CN114676932A/zh">
+              <span itemprop="representativePublication">CN114676932A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2022-04-18</td>
+          <td itemprop="filingDate">2022-04-18</td>
+          <td itemprop="title">基于类别不平衡机器学习框架的债券违约预测方法和装置 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Publications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication Number</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="pubs" itemscope repeat>
+          <td>
+            <span itemprop="publicationNumber">CN114676932A</span>
+            
+            <span itemprop="thisPatent">true</span>
+            <a href="/patent/CN114676932A/zh">
+              CN114676932A
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2022-06-28</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section itemprop="family" itemscope>
+    <h1>Family</h1>
+    <h2>ID=82078455</h2>
+
+    <h2>Family Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Title</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="applications" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">CN202210407035.1A</span>
+            <span itemprop="ifiStatus">Pending</span>
+            
+            <a href="/patent/CN114676932A/zh">
+              <span itemprop="representativePublication">CN114676932A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2022-04-18</td>
+          <td itemprop="filingDate">2022-04-18</td>
+          <td itemprop="title">基于类别不平衡机器学习框架的债券违约预测方法和装置 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Country Status (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">CN</span>
+            (<span itemprop="num">1</span>)
+            <meta itemprop="thisCountry" content="true">
+          </td>
+          <td>
+            <a href="/patent/CN114676932A/zh">
+              <span itemprop="representativePublication">CN114676932A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Cited By (4)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN115907972A/zh">
+              <span itemprop="publicationNumber">CN115907972A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2023-01-16</td>
+          <td itemprop="publicationDate">2023-04-04</td>
+          <td><span itemprop="assigneeOriginal">齐鲁工业大学(山东省科学院)</span></td>
+          <td itemprop="title">基于双重自步学习的不平衡征信数据风险评估方法及系统 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN116306958A/zh">
+              <span itemprop="publicationNumber">CN116306958A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2022-09-13</td>
+          <td itemprop="publicationDate">2023-06-23</td>
+          <td><span itemprop="assigneeOriginal">中债金科信息技术有限公司</span></td>
+          <td itemprop="title">违约风险预测模型训练方法、违约风险预测方法及设备 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN116304941A/zh">
+              <span itemprop="publicationNumber">CN116304941A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2023-03-09</td>
+          <td itemprop="publicationDate">2023-06-23</td>
+          <td><span itemprop="assigneeOriginal">上海海洋大学</span></td>
+          <td itemprop="title">一种基于多模型组合的海洋数据质量控制方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN117763356A/zh">
+              <span itemprop="publicationNumber">CN117763356A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2023-12-26</td>
+          <td itemprop="publicationDate">2024-03-26</td>
+          <td><span itemprop="assigneeOriginal">中国地质科学院地质力学研究所</span></td>
+          <td itemprop="title">一种基于LightGBM算法的地震相快速识别方法 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    <h2>Citations (4)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN108846521A/zh">
+              <span itemprop="publicationNumber">CN108846521A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2018-06-22</td>
+          <td itemprop="publicationDate">2018-11-20</td>
+          <td>
+            <span itemprop="assigneeOriginal">西安电子科技大学</span>
+          </td>
+          <td itemprop="title">基于Xgboost的盾构施工不良地质类型预测方法 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN111340236A/zh">
+              <span itemprop="publicationNumber">CN111340236A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2020-03-03</td>
+          <td itemprop="publicationDate">2020-06-26</td>
+          <td>
+            <span itemprop="assigneeOriginal">中债金融估值中心有限公司</span>
+          </td>
+          <td itemprop="title">一种基于债券估值数据与集成机器学习的债券违约预测方法 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN111524015A/zh">
+              <span itemprop="publicationNumber">CN111524015A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2020-04-10</td>
+          <td itemprop="publicationDate">2020-08-11</td>
+          <td>
+            <span itemprop="assigneeOriginal">易方达基金管理有限公司</span>
+          </td>
+          <td itemprop="title">训练预测模型的方法、装置、计算机设备及可读存储介质 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN112767172A/zh">
+              <span itemprop="publicationNumber">CN112767172A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2021-01-22</td>
+          <td itemprop="publicationDate">2021-05-07</td>
+          <td>
+            <span itemprop="assigneeOriginal">上海析鲸信息科技有限公司</span>
+          </td>
+          <td itemprop="title">一种基于机器学习模型算法的债券违约预警识别技术 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    <ul>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2022</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2022-04-18</span>
+            <span itemprop="countryCode">CN</span>
+            <span itemprop="applicationNumber">CN202210407035.1A</span>
+            <a href="/patent/CN114676932A/zh"><span itemprop="documentId">patent/CN114676932A/zh</span></a>
+            <span itemprop="legalStatusCat">active</span>
+            <span itemprop="legalStatus">Pending</span>
+            <span itemprop="thisApp" content="true" bool></span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    </section>
+
+  <section>
+    <h2>Patent Citations (4)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/CN108846521A/zh">
+              <span itemprop="publicationNumber">CN108846521A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2018-06-22</td>
+          <td itemprop="publicationDate">2018-11-20</td>
+          <td><span itemprop="assigneeOriginal">西安电子科技大学</span></td>
+          <td itemprop="title">基于Xgboost的盾构施工不良地质类型预测方法 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/CN111340236A/zh">
+              <span itemprop="publicationNumber">CN111340236A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2020-03-03</td>
+          <td itemprop="publicationDate">2020-06-26</td>
+          <td><span itemprop="assigneeOriginal">中债金融估值中心有限公司</span></td>
+          <td itemprop="title">一种基于债券估值数据与集成机器学习的债券违约预测方法 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/CN111524015A/zh">
+              <span itemprop="publicationNumber">CN111524015A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2020-04-10</td>
+          <td itemprop="publicationDate">2020-08-11</td>
+          <td><span itemprop="assigneeOriginal">易方达基金管理有限公司</span></td>
+          <td itemprop="title">训练预测模型的方法、装置、计算机设备及可读存储介质 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/CN112767172A/zh">
+              <span itemprop="publicationNumber">CN112767172A</span>
+              (<span itemprop="primaryLanguage">zh</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2021-01-22</td>
+          <td itemprop="publicationDate">2021-05-07</td>
+          <td><span itemprop="assigneeOriginal">上海析鲸信息科技有限公司</span></td>
+          <td itemprop="title">一种基于机器学习模型算法的债券违约预警识别技术 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Non-Patent Citations (1)</h2>
+    <table>
+      <caption>* Cited by examiner, † Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="detailedNonPatentLiterature" itemscope repeat>
+          <td>
+            <span itemprop="title">ZHINING LIU等: "<a href='http://scholar.google.com/scholar?q=""Self-paced+Ensemble+for+Highly+Imbalanced+Massive+Data+Classification""'>"Self-paced Ensemble for Highly Imbalanced Massive Data Classification"</a>", 《2020 IEEE 36TH INTERNATIONAL CONFERENCE ON DATA ENGINEERING(ICDE)》</span>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <h2>Cited By (5)</h2>
+  <table>
+    <caption>* Cited by examiner, † Cited by third party</caption>
+    <thead>
+      <tr>
+        <th>Publication number</th>
+        <th>Priority date</th>
+        <th>Publication date</th>
+        <th>Assignee</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN116306958A/zh">
+            <span itemprop="publicationNumber">CN116306958A</span>
+            (<span itemprop="primaryLanguage">zh</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2022-09-13</td>
+        <td itemprop="publicationDate">2023-06-23</td>
+        <td><span itemprop="assigneeOriginal">中债金科信息技术有限公司</span></td>
+        <td itemprop="title">违约风险预测模型训练方法、违约风险预测方法及设备 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN115907972A/zh">
+            <span itemprop="publicationNumber">CN115907972A</span>
+            (<span itemprop="primaryLanguage">zh</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2023-01-16</td>
+        <td itemprop="publicationDate">2023-04-04</td>
+        <td><span itemprop="assigneeOriginal">齐鲁工业大学(山东省科学院)</span></td>
+        <td itemprop="title">基于双重自步学习的不平衡征信数据风险评估方法及系统 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN115907972B/zh">
+            <span itemprop="publicationNumber">CN115907972B</span>
+            (<span itemprop="primaryLanguage">zh</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2023-01-16</td>
+        <td itemprop="publicationDate">2023-09-12</td>
+        <td><span itemprop="assigneeOriginal">齐鲁工业大学(山东省科学院)</span></td>
+        <td itemprop="title">基于双重自步学习的不平衡征信数据风险评估方法及系统 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN116304941A/zh">
+            <span itemprop="publicationNumber">CN116304941A</span>
+            (<span itemprop="primaryLanguage">zh</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2023-03-09</td>
+        <td itemprop="publicationDate">2023-06-23</td>
+        <td><span itemprop="assigneeOriginal">上海海洋大学</span></td>
+        <td itemprop="title">一种基于多模型组合的海洋数据质量控制方法及装置 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN117763356A/zh">
+            <span itemprop="publicationNumber">CN117763356A</span>
+            (<span itemprop="primaryLanguage">zh</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2023-12-26</td>
+        <td itemprop="publicationDate">2024-03-26</td>
+        <td><span itemprop="assigneeOriginal">中国地质科学院地质力学研究所</span></td>
+        <td itemprop="title">一种基于LightGBM算法的地震相快速识别方法 
+       </td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+
+  <section>
+    <h2>Similar Documents</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication</th>
+          <th>Publication Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN110400022B/zh">
+                <span itemprop="publicationNumber">CN110400022B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-03-04">2022-03-04</time>
+            
+            
+          </td>
+          <td itemprop="title">自助柜员机现金用量预测方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="16774918628286902742">
+              <a href="/scholar/16774918628286902742"><span itemprop="scholarAuthors">Girma et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2007">2007</time>
+            
+          </td>
+          <td itemprop="title">Evaluating the foreign ownership wage premium using a difference-in-differences matching approach</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN107545422B/zh">
+                <span itemprop="publicationNumber">CN107545422B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-10-10">2023-10-10</time>
+            
+            
+          </td>
+          <td itemprop="title">一种套现检测方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN112434862B/zh">
+                <span itemprop="publicationNumber">CN112434862B</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2024-03-12">2024-03-12</time>
+            
+            
+          </td>
+          <td itemprop="title">上市企业财务困境预测方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="9946995006845236870">
+              <a href="/scholar/9946995006845236870"><span itemprop="scholarAuthors">Gil-Alana et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2014">2014</time>
+            
+          </td>
+          <td itemprop="title">On the persistence and volatility in European, American and Asian stocks bull and bear markets</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="3549533513425003797">
+              <a href="/scholar/3549533513425003797"><span itemprop="scholarAuthors">Pasiouras et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2007">2007</time>
+            
+          </td>
+          <td itemprop="title">Multicriteria decision support methodologies for auditing decisions: the case of qualified audit reports in the UK</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN112700324A/zh">
+                <span itemprop="publicationNumber">CN112700324A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-04-23">2021-04-23</time>
+            
+            
+          </td>
+          <td itemprop="title">基于CatBoost与受限玻尔兹曼机结合的用户借贷违约预测方法 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="8319766582575265583">
+              <a href="/scholar/8319766582575265583"><span itemprop="scholarAuthors">Gregoire et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2006">2006</time>
+            
+          </td>
+          <td itemprop="title">Cost efficiency of microfinance institutions in Peru: A stochastic frontier approach</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="14755205855767132238">
+              <a href="/scholar/14755205855767132238"><span itemprop="scholarAuthors">Mostafa</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2020">2020</time>
+            
+          </td>
+          <td itemprop="title">Impacts of inflation and exchange rate on foreign direct investment in Bangladesh</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20170221075A1/en">
+                <span itemprop="publicationNumber">US20170221075A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2017-08-03">2017-08-03</time>
+            
+            
+          </td>
+          <td itemprop="title">Fraud inspection framework 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="17969958306238563887">
+              <a href="/scholar/17969958306238563887"><span itemprop="scholarAuthors">Korhonen et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2014">2014</time>
+            
+          </td>
+          <td itemprop="title">Factors driving investment in planted forests: a comparison between OECD and non-OECD countries</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="18077199395380733144">
+              <a href="/scholar/18077199395380733144"><span itemprop="scholarAuthors">Balcilar et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2015">2015</time>
+            
+          </td>
+          <td itemprop="title">South African stock returns predictability using domestic and global economic policy uncertainty: Evidence from a nonparametric causality-in-quantiles approach</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN112634048A/zh">
+                <span itemprop="publicationNumber">CN112634048A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-04-09">2021-04-09</time>
+            
+            
+          </td>
+          <td itemprop="title">一种反洗钱模型的训练方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN111626855A/zh">
+                <span itemprop="publicationNumber">CN111626855A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-09-04">2020-09-04</time>
+            
+            
+          </td>
+          <td itemprop="title">债券信用利差预测方法及系统 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="5062414533792741611">
+              <a href="/scholar/5062414533792741611"><span itemprop="scholarAuthors">Gu et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2024">2024</time>
+            
+          </td>
+          <td itemprop="title">Evaluating the impact of COVID-19 on capesize and panamax sectors: the method of empirical mode decomposition</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="8065906598776495357">
+              <a href="/scholar/8065906598776495357"><span itemprop="scholarAuthors">Gresnigt et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2016">2016</time>
+            
+          </td>
+          <td itemprop="title">Specification testing in hawkes models</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN111612626A/zh">
+                <span itemprop="publicationNumber">CN111612626A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-09-01">2020-09-01</time>
+            
+            
+          </td>
+          <td itemprop="title">一种债券评估数据预处理方法和装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN114707883A/zh">
+                <span itemprop="publicationNumber">CN114707883A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-07-05">2022-07-05</time>
+            
+            
+          </td>
+          <td itemprop="title">基于时序特征的债券违约预测方法、装置、设备和介质 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN119338512A/zh">
+                <span itemprop="publicationNumber">CN119338512A</span>
+                (<span itemprop="primaryLanguage">zh</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2025-01-21">2025-01-21</time>
+            
+            
+          </td>
+          <td itemprop="title">一种针对两融交易型客户的流失测算方法及装置 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="8653361720398112980">
+              <a href="/scholar/8653361720398112980"><span itemprop="scholarAuthors">Brumma et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2014">2014</time>
+            
+          </td>
+          <td itemprop="title">Modeling downturn LGD in a Basel framework</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="12942475666011148888">
+              <a href="/scholar/12942475666011148888"><span itemprop="scholarAuthors">Niknya et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2014">2014</time>
+            
+          </td>
+          <td itemprop="title">Financial distress prediction of Tehran Stock Exchange companies using support vector machine</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20200265521A1/en">
+                <span itemprop="publicationNumber">US20200265521A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-08-20">2020-08-20</time>
+            
+            
+          </td>
+          <td itemprop="title">Multimedia risk summarizer 
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="14345460763851071436">
+              <a href="/scholar/14345460763851071436"><span itemprop="scholarAuthors">Terzi et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2012">2012</time>
+            
+          </td>
+          <td itemprop="title">Comparison of financial distress prediction models: Evidence from turkey</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="12230876733378077732">
+              <a href="/scholar/12230876733378077732"><span itemprop="scholarAuthors">Dani et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2025">2025</time>
+            
+          </td>
+          <td itemprop="title">Time Series Modeling with Intervention Analysis to Evaluate of COVID-19 Impact on the Stock Markets in Indonesia and Global</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="3604556963260489704">
+              <a href="/scholar/3604556963260489704"><span itemprop="scholarAuthors">Nguyen et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2022">2022</time>
+            
+          </td>
+          <td itemprop="title">A model for detecting accounting frauds by using machine learning</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Legal Events</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Code</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2022-06-28">2022-06-28</time></td>
+          <td itemprop="code">PB01</td>
+          <td itemprop="title">Publication</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2022-06-28">2022-06-28</time></td>
+          <td itemprop="code">PB01</td>
+          <td itemprop="title">Publication</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2022-07-15">2022-07-15</time></td>
+          <td itemprop="code">SE01</td>
+          <td itemprop="title">Entry into force of request for substantive examination</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2022-07-15">2022-07-15</time></td>
+          <td itemprop="code">SE01</td>
+          <td itemprop="title">Entry into force of request for substantive examination</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2022-08-26">2022-08-26</time></td>
+          <td itemprop="code">CB03</td>
+          <td itemprop="title">Change of inventor or designer information</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Inventor after</strong>:
+              <span itemprop="value">Wu Hao</span>
+            </p>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Inventor after</strong>:
+              <span itemprop="value">Yang Fan</span>
+            </p>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Inventor after</strong>:
+              <span itemprop="value">Sun Yanjie</span>
+            </p>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Inventor before</strong>:
+              <span itemprop="value">Li Zi</span>
+            </p>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Inventor before</strong>:
+              <span itemprop="value">Yang Fan</span>
+            </p>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Inventor before</strong>:
+              <span itemprop="value">Wu Hao</span>
+            </p>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Inventor before</strong>:
+              <span itemprop="value">Sun Yanjie</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2022-08-26">2022-08-26</time></td>
+          <td itemprop="code">CB03</td>
+          <td itemprop="title">Change of inventor or designer information</td>
+          <td>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2023-11-28">2023-11-28</time></td>
+          <td itemprop="code">RJ01</td>
+          <td itemprop="title">Rejection of invention patent application after publication</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Application publication date</strong>:
+              <span itemprop="value">20220628</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2023-11-28">2023-11-28</time></td>
+          <td itemprop="code">RJ01</td>
+          <td itemprop="title">Rejection of invention patent application after publication</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
+
+    </search-app>
+    
+    <script></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script type="text/javascript">
+      if (window.help && window.help.service) {
+        helpApi = window.help.service.Lazy.create(0, {apiKey: 'AIzaSyDTEI_0tLX4varJ7bwK8aT-eOI5qr3BmyI', locale: 'en-US'});
+        window.requestedSurveys = new Set();
+        window.requestSurvey = function(triggerId) {
+          if (window.requestedSurveys.has(triggerId)) {
+            return;
+          }
+          window.requestedSurveys.add(triggerId);
+          helpApi.requestSurvey({
+            triggerId: triggerId,
+            enableTestingMode: false,
+            callback: (requestSurveyCallbackParam) => {
+              if (!requestSurveyCallbackParam.surveyData) {
+                return;
+              }
+              helpApi.presentSurvey({
+                productData: {
+                  productVersion: window.version,
+                  customData: {
+                    "experiments": "",
+                  },
+                },
+                surveyData: requestSurveyCallbackParam.surveyData,
+                colorScheme: 1,
+                customZIndex: 10000,
+              });
+            }
+          });
+        };
+
+        window.requestSurvey('YXTwAsvoW0kedxbuTdH0RArc9VhT');
+      }
+    </script>
+    <script src="/sw/null_loader.js"></script>
+  </body>
+</html>

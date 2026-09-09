@@ -1,0 +1,18 @@
+{
+  "source_id": "hk-genai-guidelines",
+  "title": "hk-genai-guidelines",
+  "url": "https://www.digitalpolicy.gov.hk/tc/our_work/data_governance/policies_standards/ethical_ai_framework/doc/HK_Generative_AI_Technical_and_Application_Guideline_tc.pdf",
+  "retrieved_at": "2026-09-08T17:07:20.543476+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.digitalpolicy.gov.hk/tc/our_work/data_governance/policies_standards/ethical_ai_framework/doc/HK_Generative_AI_Technical_and_Application_Guideline_tc.pdf",
+  "content_type": "application/pdf",
+  "sha256": "6991c37b3c436bc9ec21e94d67a6e4361e0c6af6c49da42d5fbafa10522adb1a",
+  "byte_count": 1458473,
+  "raw_file": "source.pdf",
+  "page_count": 39,
+  "text_file": "original.md",
+  "extraction_method": "pypdf page-by-page; no OCR or translation",
+  "extracted_characters": 39117,
+  "extracted_text_sha256": "1539a29f488e0c44bf89436cdb840f481789e7e3ed7868e1724b2258e54a7c67"
+}

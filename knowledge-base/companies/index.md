@@ -1,5 +1,18 @@
 # Onshore Fund Manager AI/LLM Landscape
 
+> 最新筛选限定2026年公开披露的三类LLM量化工作流，见[当前矩阵](quant-research-2026-09-09.md)。历史AI/LLM底表不直接作本轮分数；API与本地模型均可。
+
+> 新增样本外补充：中信建投基金私有化平台FUND-321、联博基金技术部建设研究FUND-322；原21家排名与分数不变。见[本地LLM证据](../models/local-llm-poc-evidence-2026-09-09.md)。
+
+> 用户已明确报告聚焦LLM：[当前入选范围](llm-report-scope-2026-09-09.md)。撤回工银传统ML带来的4分上调；Label Horizon、久期回归和MCTS/LightGBM仅作背景。
+
+
+> 2026-09-09量化专项：[方向、论文／代码及复现问题](quant-research-2026-09-09.md)。新增FUND-120–122，保留原有公司评分和实施案例计数。
+
+> 2026-09-09重点研究完成：[易方达论文与公开代码、南方及候选公司](focused-research-2026-09-09.md)。易方达资料评分由3升4；公司及生产案例数量不变。
+
+> 2026-09-09 新增：[按用户1–5分标准的21家工作流资料评分](evidence-scores-2026-09-09.md)。评分与原有来源证据等级分开记录。
+
 > 来源阅读已按主阅读、辅助和来源链索引分组，见[默认阅读索引](../reading-index.json)。表中的来源ID仍保留出处，不代表独立实施案例。
 
 <!-- original-language-provenance:start -->

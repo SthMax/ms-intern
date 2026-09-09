@@ -1,0 +1,17 @@
+{
+  "source_id": "ai-label-standard-status",
+  "title": "ai-label-standard-status",
+  "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=301E0388CB75788DE06397BE0A0AE1B4",
+  "retrieved_at": "2026-09-08T17:09:00.970609+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=301E0388CB75788DE06397BE0A0AE1B4",
+  "content_type": "text/html;charset=UTF-8",
+  "sha256": "1b37ac30095667141be0cdfe0e7b7bb92228b1119efa566d14fda3ddc7b274b7",
+  "byte_count": 84675,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 2247,
+  "extracted_text_sha256": "1fe795c0832b62b18f87bcafdd06a364bf91d85021459512e665ca78021f9ee4"
+}

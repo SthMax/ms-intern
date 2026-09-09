@@ -1,6 +1,6 @@
 # 原始来源与研究阅读入口
 
-2026-09-08 已按A/B/C/D清单清理。**101个稳定来源ID：93个主阅读记录、4个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
+2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。**125个稳定来源ID：112个主阅读记录、9个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
 
 默认检索按[reading-index.json](../reading-index.json)中的`collection_role=main`及`reading_path`取文本。需要身份、历史或供应商背景时再读[辅助目录](../reference/README.md)。不要把原始HTML/PDF、历史审计、图片元数据或来源链索引递归当作新文章。
 
@@ -106,6 +106,31 @@
 | REG-011 | 基金行业生成式人工智能可解释性治理探讨 | Chinese | 主阅读 | [阅读入口](REG-011/original.md) · [原始文件](REG-011/source.pdf) · [元数据](REG-011/metadata.json) | 原登记来源类型和核验范围保留；人工核验待完成 |
 | REG-012 | 中华人民共和国标准化法（2017年修订） | Chinese | 主阅读 | [阅读入口](REG-012/original.md) · [原始文件](REG-012/source.html) · [元数据](REG-012/metadata.json) | 原登记来源类型和核验范围保留；人工核验待完成 |
 
+| FUND-113 | MENTOR: a multi-agent framework for event and narrative trend prediction with optimized reasoning | English | 主阅读 | [阅读入口](FUND-113/original.md) · [原始文件](FUND-113/source.pdf) · [元数据](FUND-113/metadata.json) | 研究／客户端资料；非生产系统复现；具体范围见技术审查 |
+| FUND-114 | MENTOR supplementary materials | English | 主阅读 | [阅读入口](FUND-114/original.md) · [原始文件](FUND-114/source.pdf) · [元数据](FUND-114/metadata.json) | 研究／客户端资料；非生产系统复现；具体范围见技术审查 |
+| FUND-115 | 指数直通车 Index-Hub Skills：官方查询客户端与接口文档 | Chinese / English | 主阅读 | [阅读入口](FUND-115/original.md) · [原始文件](FUND-115/repository/files/README.md) · [元数据](FUND-115/metadata.json) | 研究／客户端资料；非生产系统复现；具体范围见技术审查 |
+| FUND-116 | 指数直通车 AI Skills 帮助文档 | Chinese | 主阅读 | [阅读入口](FUND-116/original.md) · [原始文件](FUND-116/source.pdf) · [元数据](FUND-116/metadata.json) | 研究／客户端资料；非生产系统复现；具体范围见技术审查 |
+| FUND-117 | SLAG: Enhancing LLMs for Expert Question Answering by Synergizing with Knowledge Graphs | Chinese / English | 主阅读 | [阅读入口](FUND-117/original.md) · [原始文件](FUND-117/repository/files/README.md) · [元数据](FUND-117/metadata.json) | 研究／客户端资料；非生产系统复现；具体范围见技术审查 |
+| FUND-118 | FinCoT / Financial Fast Reasoning Distillation: public reasoning datasets | Chinese / English | 主阅读 | [阅读入口](FUND-118/original.md) · [原始文件](FUND-118/repository/files/README.md) · [元数据](FUND-118/metadata.json) | 研究／客户端资料；非生产系统复现；具体范围见技术审查 |
+| FUND-119 | NLPCC 2026 Shared Task 4: Investment Agent Starter | Chinese / English | 主阅读 | [阅读入口](FUND-119/original.md) · [原始文件](FUND-119/repository/files/README-CN.md) · [元数据](FUND-119/metadata.json) | 研究／客户端资料；非生产系统复现；具体范围见技术审查 |
+| REG-013 | 中华人民共和国网络安全法（2025年修正） | Chinese | 主阅读 | [阅读入口](REG-013/original.md) · [原始文件](REG-013/source.html) · [元数据](REG-013/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |
+| REG-014 | 中华人民共和国数据安全法 | Chinese | 主阅读 | [阅读入口](REG-014/original.md) · [原始文件](REG-014/source.html) · [元数据](REG-014/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |
+| REG-015 | 个人信息保护合规审计管理办法 | Chinese | 主阅读 | [阅读入口](REG-015/original.md) · [原始文件](REG-015/source.html) · [元数据](REG-015/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |
+| REG-016 | 人工智能生成合成内容标识办法 | Chinese | 主阅读 | [阅读入口](REG-016/original.md) · [原始文件](REG-016/source.html) · [元数据](REG-016/metadata.json) | 公开条文与定向版本复核2026-09-09；机构适用性与人工核验待完成 |
+
+| FUND-122 | A survey on large language model-based alpha mining | English | 主阅读 | [阅读入口](FUND-122/original.md) · [原始文件](FUND-122/source.pdf) · [元数据](FUND-122/metadata.json) | 量化研究／方法；具体实现与评价边界见量化审查 |
+
+| FUND-227 | 基于大模型的指标异动归因分析方法、系统、设备和介质（CN121958380A） | Chinese | 主阅读 | [阅读入口](FUND-227/original.md) · [原始文件](FUND-227/source.html) · [元数据](FUND-227/metadata.json) | 技术申请披露；镜像缺图，待补原件；不证明投产 |
+
+| FUND-320 | 一种基于知识图谱的智能问答系统优化方法及装置（CN120804142A） | Chinese | 主阅读 | [阅读入口](FUND-320/original.md) · [HTML](FUND-320/source.html) · [元数据](FUND-320/metadata.json) | 明确LLM生成图查询；原PDF与投产对应待核 |
+
+| FUND-321 | 基于数字金融的公募基金全场景智能财富管理平台 | Chinese | 主阅读 | [阅读入口](FUND-321/original.md) · [PDF](FUND-321/source.pdf) · [元数据](FUND-321/metadata.json) | 原21家样本外补充；不自动认定4分或单卡可复现 |
+| FUND-322 | 基金行业人工智能大模型应用及建设探索 | Chinese | 主阅读 | [阅读入口](FUND-322/original.md) · [PDF](FUND-322/source.pdf) · [元数据](FUND-322/metadata.json) | 原21家样本外补充；不自动认定4分或单卡可复现 |
+
+| FUND-215 | 智启金融新范式，博时前瞻布局企业级“龙虾”生态，赋能资管全链条 | Chinese | 主阅读 | [正文](FUND-215/original.md) · [HTML](FUND-215/source.html) · [元数据](FUND-215/metadata.json) | 2026披露；China；未独立复现 |
+| FUND-323 | A Trend Following Deep Dive: AlphaTrend and Agentic Research Workflows | English | 主阅读 | [正文](FUND-323/original.md) · [HTML](FUND-323/source.html) · [元数据](FUND-323/metadata.json) | 2026披露；Overseas comparison；未独立复现 |
+| FUND-324 | Anything Can Be Language Now: My Thoughts on the Future of Features Research | English | 主阅读 | [正文](FUND-324/original.md) · [HTML](FUND-324/source.html) · [元数据](FUND-324/metadata.json) | 2026披露；Overseas comparison；未独立复现 |
+
 ## 辅助记录
 
 | ID | 标题 | 原语言 | 当前分类 | 阅读／原件／元数据 | 证据边界 |
@@ -114,6 +139,12 @@
 | FUND-255 | 强强联手！景顺长城量化团队携手清华大学研究碳中和 | Chinese | 辅助 | [阅读入口](../reference/FUND-255.md) · [原始文件](FUND-255/source.html) · [元数据](FUND-255/metadata.json) | 辅助材料，未用于新增LLM实施计数；原有证据边界保留 |
 | FUND-357 | 钱拓科技 · FDE金融AI服务商 | Chinese | 辅助 | [阅读入口](../reference/FUND-357.md) · [原始文件](FUND-357/source.html) · [元数据](FUND-357/metadata.json) | 辅助材料，未用于新增LLM实施计数；原有证据边界保留 |
 | FUND-405 | 国泰基金管理有限公司旗下部分基金2025年年度报告提示性公告 | Chinese | 辅助；节选 | [阅读入口](FUND-405/original.md) · [原始文件](FUND-405/source.pdf) · [元数据](FUND-405/metadata.json) | 辅助材料，未用于新增LLM实施计数；原有证据边界保留 |
+
+| FUND-120 | The Label Horizon Paradox: Rethinking Supervision Targets in Financial Forecasting | English | 辅助；非LLM | [阅读入口](FUND-120/original.md) · [原始文件](FUND-120/source.pdf) · [元数据](FUND-120/metadata.json) | 量化研究／方法；具体实现与评价边界见量化审查  不纳入LLM报告主案例与评分 |
+| FUND-121 | The Label Horizon Paradox — Open-Source Demo | English | 辅助；非LLM | [阅读入口](FUND-121/original.md) · [原始文件](FUND-121/files/README.md) · [元数据](FUND-121/metadata.json) | 量化研究／方法；具体实现与评价边界见量化审查  不纳入LLM报告主案例与评分 |
+| FUND-318 | 因子挖掘方法、装置、设备、存储介质和程序产品（CN116562377A） | Chinese | 辅助；非LLM | [阅读入口](FUND-318/original.md) · [原始文件](FUND-318/source.pdf) · [元数据](FUND-318/metadata.json) | 技术申请披露；PDF已核；不证明投产  不纳入LLM报告主案例与评分 |
+| FUND-319 | 基于类别不平衡机器学习框架的债券违约预测方法和装置（CN114676932A） | Chinese | 辅助；非LLM | [阅读入口](FUND-319/original.md) · [原始文件](FUND-319/source.pdf) · [元数据](FUND-319/metadata.json) | 技术申请披露；PDF已核；不证明投产  不纳入LLM报告主案例与评分 |
+| FUND-226 | 基金久期计算方法、装置、计算机设备和可读存储介质（CN121937219A） | Chinese | 辅助；非LLM | [阅读入口](FUND-226/original.md) · [原始文件](FUND-226/source.html) · [元数据](FUND-226/metadata.json) | 技术申请披露；镜像缺图，待补原件；不证明投产  不纳入LLM报告主案例与评分 |
 
 ## 来源链索引（不重复阅读）
 

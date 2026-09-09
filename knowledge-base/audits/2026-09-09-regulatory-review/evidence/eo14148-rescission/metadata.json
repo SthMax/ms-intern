@@ -1,0 +1,17 @@
+{
+  "source_id": "eo14148-rescission",
+  "title": "eo14148-rescission",
+  "url": "https://www.whitehouse.gov/presidential-actions/2025/01/initial-rescissions-of-harmful-executive-orders-and-actions/",
+  "retrieved_at": "2026-09-08T17:07:18.257084+00:00",
+  "human_check_status": "pending",
+  "http_status": 200,
+  "final_url": "https://www.whitehouse.gov/presidential-actions/2025/01/initial-rescissions-of-harmful-executive-orders-and-actions/",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "5d0cddb40403db2c9ae9e996eb5358d7b301c467d0910e13b8925583e18294b4",
+  "byte_count": 309943,
+  "raw_file": "source.html",
+  "text_file": "original.md",
+  "extraction_method": "Python HTMLParser; scripts/styles removed; full visible text with navigation retained",
+  "extracted_characters": 17974,
+  "extracted_text_sha256": "fa1135015b3c32aa45a03f2a80e80defc6fbcc2484dfa5edb2a02486a974b0f4"
+}

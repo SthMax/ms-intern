@@ -1,0 +1,639 @@
+{
+  "date": "2026-09-09",
+  "scope": "21 existing dossiers, strongest single documented workflow per company; AI/LLM both included with boundaries; not company capability or investment performance rating",
+  "user_rubric": {
+    "5": "完整可复制的工作流，有详细的技术细节，有代码，成果以及展望",
+    "4": "完整可复制的工作流，有详细的技术细节，没有代码",
+    "3": "不完整的工作流，有部分技术细节，有大概的场景和使用情况",
+    "2": "不完整的工作流，没有技术细节，有大概的场景和使用情况",
+    "1": "只有大概的介绍，其它啥都没有"
+  },
+  "operational_interpretation": "4 means a bounded same-type workflow can be reconstructed from the document without inventing its core processing/control chain; it does not mean vendor production configuration or outcomes were reproduced. Generic capability names/LLM brand labels alone do not count as implementation detail. Focused public-code and publisher research completed for selected managers; exact boundaries and missing components recorded in focused-research-2026-09-09.md.",
+  "counts": {
+    "1": 0,
+    "2": 2,
+    "3": 17,
+    "4": 2,
+    "5": 0
+  },
+  "records": [
+    {
+      "company_id": "COMP-002",
+      "company": "易方达",
+      "score": 4,
+      "workflow": "MENTOR weekly event→industry ranking→teacher feedback workflow; separate Index-Hub API client and SLAG research implementation",
+      "technical_details": "Published Algorithm 1, exact teacher/student prompts, metric definitions and ablations; public client routing/catalog/guardrails and graph-QA code inspected separately.",
+      "score_reason_and_gap": "3→4 based on MENTOR paper plus supplement enabling a same-type prototype. No MENTOR implementation located; licensed full data not public. Separate code releases are 5-point candidates within client/public-benchmark scope, not proof of a fully reproducible production fund workflow.",
+      "provenance": "一手材料较丰富，部分细节为媒体报道",
+      "code_status": "Verified public company/research code exists: FUND-115/117/119. FUND-118 is data documentation, not training code. No end-to-end reproduction performed.",
+      "dossier": "companies/COMP-002-efund.md",
+      "sources": [
+        {
+          "source_id": "FUND-004",
+          "reading_path": "sources/FUND-004/original.md",
+          "locator": "PDF pp. 2–3, 5–8; printed pp. 1–2, 4–7",
+          "reading_sha256": "2ae639f69ffb152f7566d507fe5daefc43f8c72e6b8c09429de7a4367c72162e"
+        },
+        {
+          "source_id": "FUND-101",
+          "reading_path": "sources/FUND-101/original.md",
+          "locator": "PDF pp. 3–4 / printed pp. 2–3; 二、解决方案 / 三、实践成效",
+          "reading_sha256": "bbee67dc14dcb7d598b09839294596c5320d203b1bee638fa592b88b2d88762e"
+        },
+        {
+          "source_id": "FUND-102",
+          "reading_path": "sources/FUND-102/original.md",
+          "locator": "PDF/printed p. 8, 三（二）; [dated listing](https://www.amac.org.cn/hydj/djdt/)",
+          "reading_sha256": "2abc2c80637d59d6da371206093037c741b3d0e61cdfdf13800bcef8c51d7a75"
+        },
+        {
+          "source_id": "FUND-103",
+          "reading_path": "sources/FUND-103/original.md",
+          "locator": "第六，全链路的智能服务基座; HTML commented 日期 field",
+          "reading_sha256": "f8f95dc27fd9c41c07ea48edf811fb00714b29efcb9ab6d54b40e8e3712764fc"
+        },
+        {
+          "source_id": "FUND-109",
+          "reading_path": "sources/FUND-109/original.md",
+          "locator": "Sections 01–05; setup steps; risk notice",
+          "reading_sha256": "c5783bfc6fb4465e3c3241b88f74ba13c5f9f5a336da47aa8b8f7cb263502a89"
+        },
+        {
+          "source_id": "FUND-113",
+          "reading_path": "sources/FUND-113/original.md",
+          "locator": "See focused technical review and source metadata",
+          "reading_sha256": "8fc5bd502b80791d77b76acd3fc5b523edddce2c332942be4c537fea48a9aaa2"
+        },
+        {
+          "source_id": "FUND-114",
+          "reading_path": "sources/FUND-114/original.md",
+          "locator": "See focused technical review and source metadata",
+          "reading_sha256": "969e974f377d2abb33672d383dcca539d795de51b7b9416fbffe1ff10452346e"
+        },
+        {
+          "source_id": "FUND-115",
+          "reading_path": "sources/FUND-115/original.md",
+          "locator": "See focused technical review and source metadata",
+          "reading_sha256": "e55a8624030134493416ddfeb7c6d8569ad3911e4903d62bae499cb0fafd6f47"
+        },
+        {
+          "source_id": "FUND-116",
+          "reading_path": "sources/FUND-116/original.md",
+          "locator": "See focused technical review and source metadata",
+          "reading_sha256": "65f9287059a4deafa358104df5ba6f27f5285dd941e53743891c546e6c1cb03e"
+        },
+        {
+          "source_id": "FUND-117",
+          "reading_path": "sources/FUND-117/original.md",
+          "locator": "See focused technical review and source metadata",
+          "reading_sha256": "c870df17398991c83112415d2d6427f41df219d36c814d8f7b04d77360bb099c"
+        },
+        {
+          "source_id": "FUND-118",
+          "reading_path": "sources/FUND-118/original.md",
+          "locator": "See focused technical review and source metadata",
+          "reading_sha256": "3db35fcb58c9d5828e306795d2694c974a294a44710b8bf6a76cb4e713c1224d"
+        },
+        {
+          "source_id": "FUND-119",
+          "reading_path": "sources/FUND-119/original.md",
+          "locator": "See focused technical review and source metadata",
+          "reading_sha256": "5531dd25a3fb547ecdcba99f985cc4b6b7b2e31ca9cdd97640b8ec4605215938"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false,
+      "previous_score": 3,
+      "focused_review": "companies/focused-research-2026-09-09.md"
+    },
+    {
+      "company_id": "COMP-001",
+      "company": "华夏",
+      "score": 3,
+      "workflow": "飞翼固收投研、组合优化、交易要素识别与执行接口；另有LLM采购",
+      "technical_details": "因子/优化/解析流程、QTrade/iDeal/X-BOND接口；LLM安全网关供应商公告",
+      "score_reason_and_gap": "主要是广义AI/量化平台；LLM应用部分仍有展望，采购记录不能补足LLM运行工作流。",
+      "provenance": "公司案例及采购公告",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-001-chinaamc.md",
+      "sources": [
+        {
+          "source_id": "FUND-402",
+          "reading_path": "sources/FUND-402/original.md",
+          "locator": "PDF pp. 2–8; methods, outcomes, outlook",
+          "reading_sha256": "217561bca8659bf94b5e2730236fe3e40edcf4dc2dff9bd0d1e08e8276903bcd"
+        },
+        {
+          "source_id": "FUND-001",
+          "reading_path": "sources/FUND-001/original.md",
+          "locator": "PDF p. 1, 大模型安全网关 row; publication page dated 2025-12-31",
+          "reading_sha256": "d0259f504e5da680dd690f1c03c1c4953613b8ee1569f3ea3f5e292d7a2b4d8b"
+        },
+        {
+          "source_id": "FUND-002",
+          "reading_path": "sources/FUND-002/original.md",
+          "locator": "Page title and date",
+          "reading_sha256": "9742bebf84bf79191053068004b94dcf7705c2273853da2f58ebef87a522bc71"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-004",
+      "company": "广发",
+      "score": 2,
+      "workflow": "智能理财助理：基金/账户查询、持仓诊断、产品问答",
+      "technical_details": "协议提到DeepSeek、Qwen和检索增强，但未展开实现",
+      "score_reason_and_gap": "有明确服务范围与使用限制；只有模型名称和功能概念，没有数据处理、检索编排或技术接口说明。",
+      "provenance": "官方服务协议，实施细节少",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-004-gf-fund.md",
+      "sources": [
+        {
+          "source_id": "FUND-009",
+          "reading_path": "sources/FUND-009/original.md",
+          "locator": "PDF pp. 1–2 and 15–16; clauses I.1, II.1, X.4",
+          "reading_sha256": "a02d5f0504a2510728873a2317b187596a973b04259c939eb9ac736fb958658d"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-003",
+      "company": "富国",
+      "score": 3,
+      "workflow": "本地模型处理研报、市场观点生成和RAG知识问答",
+      "technical_details": "Ray、ClickHouse、SpringCloud；本地LLM、Prompt摘要、向量检索与来源引用",
+      "score_reason_and_gap": "可借鉴局部技术链，但模型、切分/召回/排序配置、Prompt样例和完整输入输出规格不齐。",
+      "provenance": "一手公司案例",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-003-fullgoal.md",
+      "sources": [
+        {
+          "source_id": "FUND-007",
+          "reading_path": "sources/FUND-007/original.md",
+          "locator": "PDF pp. 3, 5, 8–10; printed pp. 2, 4, 7–9",
+          "reading_sha256": "46bf1a02cb1abdcfff494e54a55b64f832244c90f289185ff9595d6b0d29cb6c"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-007",
+      "company": "南方",
+      "score": 4,
+      "workflow": "小喃同学：受控NL2SQL查询与结果解释",
+      "technical_details": "表描述/字段注释→选表Agent→SQL生成→权限字段过滤→语法/执行计划检查及分页→查询→解释；另有API/RAG/Python沙箱与分级权限",
+      "score_reason_and_gap": "4分仅针对该查询子流程的文档级可复制性；可以用样表和可替换LLM重建原型。生产模型、真实业务接口和效果复现实验仍缺，不能把整个交易系统视为已复现。",
+      "provenance": "一手公司案例；未取得公司项目代码",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-007-southern.md",
+      "sources": [
+        {
+          "source_id": "FUND-200",
+          "reading_path": "sources/FUND-200/original.md",
+          "locator": "Physical PDF pp. 4–8 and 10–11; Figures 1–2; II–IV",
+          "reading_sha256": "f5f2e581bfd709e5da61b21d725c8d7fab2cf102390a9e3d37f27e6a7e835ddd"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-009",
+      "company": "汇添富",
+      "score": 3,
+      "workflow": "智汇风险平台：托管邮件抽取、条款问答与规则溯源；现金宝AI服务",
+      "technical_details": "DeepSeek-R1/QianWen、FastAPI、Flink/Doris、规则审批和回归测试",
+      "score_reason_and_gap": "系统架构较详，但具体邮件字段/模板、Prompt、规则映射及LLM评价流程不完整；平台耗时指标不能替代LLM效果。",
+      "provenance": "一手案例/发行人资料；CIO细节有转载待核",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-009-china-universal.md",
+      "sources": [
+        {
+          "source_id": "FUND-220",
+          "reading_path": "sources/FUND-220/original.md",
+          "locator": "Physical PDF pp. 5–11; Figure 2 p. 7",
+          "reading_sha256": "d3b440089797e7676f0a0338f41afd514f0fcc335d1121a1ce040060ccecb325"
+        },
+        {
+          "source_id": "FUND-221",
+          "reading_path": "sources/FUND-221/original.md",
+          "locator": "Version 8.97/8.98 release notes; provider and company-description fields",
+          "reading_sha256": "541854c25fc88ac1a08a7a801611d694a5a1601fbb9c2aa730b98a989b512cff"
+        },
+        {
+          "source_id": "FUND-222",
+          "reading_path": "sources/FUND-222/original.md",
+          "locator": "II.1–2; issue attribution at end",
+          "reading_sha256": "90c048a3638b1bb35291d82a1455eacaa9cc09250b63ddaa0248f5ad11d877d7"
+        },
+        {
+          "source_id": "FUND-225",
+          "reading_path": "sources/FUND-225/original.md",
+          "locator": "Physical PDF pp. 41–42 / printed 40–41; Section III, Fund management business",
+          "reading_sha256": "094e1ce1bdf700697c7085d0fa3af071054351611eb8a8fa6bdcf181d1bfa57e"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-014",
+      "company": "景顺长城",
+      "score": 3,
+      "workflow": "研报/纪要处理、代码辅助、知识库与量化研究",
+      "technical_details": "媒体提到本地DeepSeek、OCR/Embedding/Rerank/语音及Skills/MCP",
+      "score_reason_and_gap": "技术栈和场景有线索，但缺公司技术原件、单条任务的处理顺序、参数/输入输出与验证材料。",
+      "provenance": "媒体/转载；实施一手证据待补",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-014-invesco-great-wall.md",
+      "sources": [
+        {
+          "source_id": "FUND-090",
+          "reading_path": "sources/FUND-090/original.md",
+          "locator": "多家公募完成DeepSeek-R1版本的私有化部署",
+          "reading_sha256": "94127922b6e5834538ec3f2688e5eb660f4db57c2c13921231b307b3c21bd437"
+        },
+        {
+          "source_id": "FUND-250",
+          "reading_path": "sources/FUND-250/original.md",
+          "locator": "Source line and final AI research-use paragraph",
+          "reading_sha256": "7a418f0f2dfdac5921a8ae47f507157f3d81ea3b569daac29d401a3d27f99845"
+        },
+        {
+          "source_id": "FUND-251",
+          "reading_path": "sources/FUND-251/original.md",
+          "locator": "Introduction ima paragraph; first section paragraph naming 景顺长城",
+          "reading_sha256": "d3d737c78445fb1973e8655dd4fd1bafb4bcb793a7f3747e7008ff4db7a3ed13"
+        },
+        {
+          "source_id": "FUND-254",
+          "reading_path": "sources/FUND-254/original.md",
+          "locator": "量化指数增强领域卷起AI技术; paragraph beginning 据悉，景顺长城量化团队",
+          "reading_sha256": "6ac1bb222aa79e59fb69495357784f7a6b8b8044599750f641ae2931af521b9c"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-011",
+      "company": "嘉实",
+      "score": 3,
+      "workflow": "ESG文本抽取、评分更新与负面新闻监测；超级嘉贝AI信息工具",
+      "technical_details": "数据源、清洗/质检、规则评分、股票月更/债券季更；AI/ML/NLP",
+      "score_reason_and_gap": "有数据工作流和治理细节，缺模型/抽取规则和实现配置；不能由这些材料确认基础LLM部署。",
+      "provenance": "公司报告；主要是广义AI/NLP",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-011-harvest.md",
+      "sources": [
+        {
+          "source_id": "FUND-304",
+          "reading_path": "sources/FUND-304/original.md",
+          "locator": "PDF pp. 27–30, 32; printed pp. 17–20, 22",
+          "reading_sha256": "9bcaa4f1152e4147c3d3ac1b5a9cf3ad1dae9c8728a42999a474bd55058bf291"
+        },
+        {
+          "source_id": "FUND-307",
+          "reading_path": "sources/FUND-307/original.md",
+          "locator": "超级工具上 paragraph; launch recap",
+          "reading_sha256": "b88c24dc042d5972608808ae7f7c9837d88c82467f29b94b1a4f5e29ad138167"
+        },
+        {
+          "source_id": "FUND-317",
+          "reading_path": "sources/FUND-317/original.md",
+          "locator": "观点二 / 观点三",
+          "reading_sha256": "1decb0bba8c3fb3bc8811ee1b22cc8835fcca50713f749ca85ed16213a4f51ec"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-008",
+      "company": "博时",
+      "score": 3,
+      "workflow": "DeepSeek投研观点抽取、研发辅助，BSBox企业智能体",
+      "technical_details": "Ascend与私有DeepSeek部署；LLM观点抽取；沙箱和审计的进一步报道",
+      "score_reason_and_gap": "场景/模型/硬件线索明确；缺具体Agent编排、Prompt/检索、接口契约及独立评价；BSBox控制细节还需公司原件。",
+      "provenance": "一手披露加媒体细节",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-008-bosera.md",
+      "sources": [
+        {
+          "source_id": "FUND-210",
+          "reading_path": "sources/FUND-210/original.md",
+          "locator": "Byline; opening deployment paragraph; AI驱动; 生态融合",
+          "reading_sha256": "561bd33c92135a163d32c77664e81007ae4586f2c9828311797457e89c0e9cbb"
+        },
+        {
+          "source_id": "FUND-211",
+          "reading_path": "sources/FUND-211/original.md",
+          "locator": "数字金融深度融合 paragraph",
+          "reading_sha256": "feb2ce4685bc835cdd2d1dfc8231c8f38f47eaed3fe0b6fd3fbda4a5661e5f0e"
+        },
+        {
+          "source_id": "FUND-214",
+          "reading_path": "sources/FUND-214/original.md",
+          "locator": "Final section, paragraphs 今年4月初 and 张东介绍",
+          "reading_sha256": "310ad37f0eb1bfe874cbf19220e7c905952911542d05ee4976a3d2fff1489c5b"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-012",
+      "company": "鹏华",
+      "score": 3,
+      "workflow": "投研资讯抽取与标签、营销物料审核、舆情识别预警",
+      "technical_details": "Prompt版本/评测中台、RAG切分/嵌入/检索、知识图谱、PSG网关；7类71规则",
+      "score_reason_and_gap": "接近4分，但71条规则、审核Prompt、模型/召回配置和最终复核流程未完整公开，不能靠规则数量复现审核。",
+      "provenance": "一手公司案例",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-012-penghua.md",
+      "sources": [
+        {
+          "source_id": "FUND-308",
+          "reading_path": "sources/FUND-308/original.md",
+          "locator": "PDF pp. 3–8; printed pp. 2–7",
+          "reading_sha256": "6f7bca9a5e7931de6f070de3cf06b8f9205221034a40f576e8dbf9b1df27f514"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-018",
+      "company": "招商",
+      "score": 3,
+      "workflow": "AI门户、投研摘要/会议纪要、客服与法规知识问答",
+      "technical_details": "DeepSeek-R1/QWQ-32B、本地模型编排；小招X与知识库；AI/OCR/RPA分工",
+      "score_reason_and_gap": "有模型、集成与流程构建线索；未给出单一工作流从数据到产出的完整细节，且现为媒体转载材料。",
+      "provenance": "媒体/转载；实施一手证据待补",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-018-china-merchants.md",
+      "sources": [
+        {
+          "source_id": "FUND-351",
+          "reading_path": "sources/FUND-351/original.md",
+          "locator": "AI模型矩阵初步发展成形; 拥抱科技化浪潮",
+          "reading_sha256": "5f29ba237c5b390f80e3dfae2437be0c673298718df6f39c246d40937eec476e"
+        },
+        {
+          "source_id": "FUND-350",
+          "reading_path": "sources/FUND-350/original.md",
+          "locator": "拥抱AI, named-company list",
+          "reading_sha256": "21fc2ec0d2558339cdcf3f210070f55363bc646dc6fa79c7bf9712788476330f"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-015",
+      "company": "国泰",
+      "score": 3,
+      "workflow": "组合平台中的文档RAG及交易要素NER",
+      "technical_details": "Atlas800/910B、MindSpore/CANN；DeepSeek RAG；正则→BERT→BiLSTM→CRF→校验",
+      "score_reason_and_gap": "技术栈和算法路线较详；缺实体/关系标注规范、训练/推理配置、检索配置和输入输出样例，暂不足4分。",
+      "provenance": "一手公司案例；NER与生成式RAG分开",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-015-guotai.md",
+      "sources": [
+        {
+          "source_id": "FUND-403",
+          "reading_path": "sources/FUND-403/original.md",
+          "locator": "PDF pp. 4–8, 10; Figure 3 p. 6",
+          "reading_sha256": "661c947f6334681aae545622466ff894d7d718b8ea220a9cf5d6193033ca60a2"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-019",
+      "company": "永赢",
+      "score": 2,
+      "workflow": "安全GPT邮件钓鱼识别与分级处置",
+      "technical_details": "提到意图理解、多模态检测和工具调度，未展开实现",
+      "score_reason_and_gap": "有具体使用场景及公司报告效果，但技术仍为能力描述；缺模型、附件/链接处理流程、判定阈值与处置规则。",
+      "provenance": "一手短案例，技术颗粒度有限",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-019-maxwealth.md",
+      "sources": [
+        {
+          "source_id": "FUND-352",
+          "reading_path": "sources/FUND-352/original.md",
+          "locator": "PDF pp. 1–2",
+          "reading_sha256": "e68d28eff8b85b50c766a4496f7e9e505b491c98a6915ad9b912060ada60155e"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-013",
+      "company": "工银瑞信",
+      "score": 3,
+      "workflow": "FundGPT文档对比、标书生成、会议转写及投研推荐",
+      "technical_details": "私有语言/多模态/语音/Embedding模型群；微调/聚类/Embedding；数据平台及合作方",
+      "score_reason_and_gap": "有模块与分工，缺单条业务的完整接口、输入输出、Prompt和验收规则；平台多年节约不能归到LLM。",
+      "provenance": "一手案例/供应商披露；部分细节为采访",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-013-icbc-credit-suisse.md",
+      "sources": [
+        {
+          "source_id": "FUND-312",
+          "reading_path": "sources/FUND-312/original.md",
+          "locator": "PDF pp. 7–12; printed pp. 6–11",
+          "reading_sha256": "248936d15251015f36c2f3f7336db1e8339a4328848ff254467d487986a878bb"
+        },
+        {
+          "source_id": "FUND-316",
+          "reading_path": "sources/FUND-316/original.md",
+          "locator": "PDF p. 49 / printed p. 38, 案例：联合工银瑞信打造FundGPT",
+          "reading_sha256": "20f41de406399bec6371389cea5c46527c51c2309bcffb0598cc95064d6af558"
+        },
+        {
+          "source_id": "FUND-314",
+          "reading_path": "sources/FUND-314/extractor-recovered.md",
+          "locator": "Sections III and V",
+          "reading_sha256": "c067503814d3342ddb60a5f06ad8992fd3fcdeb831fab3cf30b847d0ac9318ee"
+        },
+        {
+          "source_id": "FUND-315",
+          "reading_path": "sources/FUND-315/extractor-recovered.md",
+          "locator": "Section I.2, second item",
+          "reading_sha256": "10c9c3a31b7b6b1829460151668428691ae022fae34bad2d87129c3a5d5b53ec"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-010",
+      "company": "天弘",
+      "score": 3,
+      "workflow": "FinAgent盈利驱动分解、观点汇总、资讯/事件解释",
+      "technical_details": "Think、THAI GPU池化、弘思RAG、智搜、MCP工具及输入/输出护栏",
+      "score_reason_and_gap": "服务框架和用途清楚，但自研组件内部实现、Agent动作规格、数据/计算样例和评测协议不足。",
+      "provenance": "一手公司案例",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-010-tianhong.md",
+      "sources": [
+        {
+          "source_id": "FUND-300",
+          "reading_path": "sources/FUND-300/original.md",
+          "locator": "PDF pp. 4–11; printed pp. 3–10",
+          "reading_sha256": "0e0445fba23ea3583890faae2678522a398f4ebe81ab03fc0f68992f3db4814f"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-020",
+      "company": "中欧",
+      "score": 3,
+      "workflow": "投研要素表智能助手、信息检索与报告撰写",
+      "technical_details": "金融场景微调、分布式采集/API、多Agent采集→分析→汇总；100多个Skill",
+      "score_reason_and_gap": "有局部技术和工作步骤，缺要素表schema、Skill清单、微调/Prompt、质量校验及完整流程；约60%/50%仍是公司归属数据。",
+      "provenance": "媒体原刊/转载；不是公司技术报告",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-020-china-europe.md",
+      "sources": [
+        {
+          "source_id": "FUND-354",
+          "reading_path": "sources/FUND-354/original.md",
+          "locator": "Application overview; three technical subsections",
+          "reading_sha256": "6de9952f6400b05527612c214f62a78bfff3ef17db9c264f208a0c05ad464fb8"
+        },
+        {
+          "source_id": "FUND-356",
+          "reading_path": "sources/FUND-356/original.md",
+          "locator": "Opening provenance credit; 三化协同 section; data-source qualifiers",
+          "reading_sha256": "5a0b39f7d22f0121b0c33a7d7dbbbcc9fa09a61328b9271cdde7377cbbcb5250"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-016",
+      "company": "华安",
+      "score": 3,
+      "workflow": "灵思：债券报告、FOF尽调、传真录入和披露预检",
+      "technical_details": "本地Qwen/DeepSeek-R1加API、SFT；Faiss/Milvus/Neo4j、Whisper/FunASR/OCR",
+      "score_reason_and_gap": "组件多且架构详细，缺单条任务从数据到报告的输入输出模板、Prompt、路由及校验配置，暂不足完整复现。",
+      "provenance": "一手CCF公司案例",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-016-huaan.md",
+      "sources": [
+        {
+          "source_id": "FUND-150",
+          "reading_path": "sources/FUND-150/original.md",
+          "locator": "PDF pp. 23–28 / printed pp. 18–23; Figures 4-1 to 4-3",
+          "reading_sha256": "a46b98caa9d702c724f537d9844f5843164ef8cc45bf31f739fded7ff9e25a70"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-021",
+      "company": "华泰柏瑞",
+      "score": 3,
+      "workflow": "数据→研究→模型→组合→复盘；文本信号加工与风控辅助",
+      "technical_details": "五层架构、文本检索/摘要/实体识别、规则硬约束加人工风险决策",
+      "score_reason_and_gap": "有处理环节及部分技术，但无模型/接口/配置和样例；自主研究智能体是未来图景，不能拿来补齐现有流程。",
+      "provenance": "中国证券报原刊；叙述性媒体材料",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-021-huatai-pinebridge.md",
+      "sources": [
+        {
+          "source_id": "FUND-359",
+          "reading_path": "sources/FUND-359/original.md",
+          "locator": "PDF pp. 1–3: 全链路系统, 人机协同, 投研智能体, conclusion and risk notice",
+          "reading_sha256": "d2b8f99fa2abe7422f487fc4aad36a02724462ff79202587b803260311092a19"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-005",
+      "company": "兴证全球",
+      "score": 3,
+      "workflow": "千询/兴宝：询价、对手匹配、聊天转交易要素和指令",
+      "technical_details": "QTrade、LRU、Oracle Data Guard、Kafka；保留交易员/经理操作环节",
+      "score_reason_and_gap": "业务链条较完整，但模型、要素schema、Prompt与接口协议未展开；还不能仅按材料重建。",
+      "provenance": "一手公司案例",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-005-industrial-securities-global.md",
+      "sources": [
+        {
+          "source_id": "FUND-011",
+          "reading_path": "sources/FUND-011/original.md",
+          "locator": "PDF pp. 2–6, 8; printed pp. 1–5, 7",
+          "reading_sha256": "2993b958b85a6443bc2501c3adf2db21a00b00b2652bc3ab9fca45319c559855"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-017",
+      "company": "平安",
+      "score": 3,
+      "workflow": "AI青蚨：文档/纪要→知识库→检索→有引用的观点摘要→研究员复核",
+      "technical_details": "分段/去噪/实体、向量+关键词、query扩展、rerank、低温度及输入输出过滤",
+      "score_reason_and_gap": "流程描述较完整，但缺模型/Embedding/切分/融合配置、规则及实际样例，尚不能按文重建；实施证据以媒体报道为主。",
+      "provenance": "媒体报道；描述深度与来源可靠性分别判断",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-017-pingan.md",
+      "sources": [
+        {
+          "source_id": "FUND-160",
+          "reading_path": "sources/FUND-160/original.md",
+          "locator": "应势而生 / 稳健前行 sections",
+          "reading_sha256": "1c1cd5261e6a47c48117636a269ebc1928d7ac1fe07218c1fc02c0ba855c4d2e"
+        },
+        {
+          "source_id": "FUND-161",
+          "reading_path": "sources/FUND-161/original.md",
+          "locator": "AI正在重塑资管业的各个环节; 游自强 replies",
+          "reading_sha256": "f3df421c74c7a180c366679e6127b7ca15e906dbc57fa8890539264db48c3117"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    },
+    {
+      "company_id": "COMP-006",
+      "company": "大成",
+      "score": 3,
+      "workflow": "固收平台：交易语义要素识别、指令与清算衔接",
+      "technical_details": "千问2.5、NLP、Flink/SpringCloud/Vue、O32集成",
+      "score_reason_and_gap": "系统应用和部分组件明确，但LLM子流程、字段规范、模型参数/Prompt及独立效果缺失。",
+      "provenance": "一手公司案例；补充样本",
+      "code_status": "No verified company implementation code in reviewed archive; not an assertion that no code exists anywhere",
+      "dossier": "companies/COMP-006-dacheng.md",
+      "sources": [
+        {
+          "source_id": "FUND-013",
+          "reading_path": "sources/FUND-013/original.md",
+          "locator": "PDF pp. 9, 11–12; printed pp. 8, 10–11",
+          "reading_sha256": "b631faccfe034c376f225b149f751cbe85cc720726cd76fa3b1ab5dc51895b14"
+        }
+      ],
+      "assessment_date": "2026-09-09",
+      "reproduction_executed": false
+    }
+  ],
+  "revision": "Focused research update; initial archive-only snapshot preserved in audit before-state"
+}
