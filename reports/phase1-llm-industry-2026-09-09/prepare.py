@@ -10,10 +10,6 @@ def esc(s):
 def url(s):
     return str(s).replace('%',r'\%').replace('#',r'\#')
 
-cohort=json.loads((HERE/'data/cohort.json').read_text())
-fig=[r'\begin{tikzpicture}',r'\begin{axis}[xbar,width=15.8cm,height=13.8cm,xmin=0,xmax=19500,',r'ytick={1,...,20},yticklabels={'+','.join(esc(x['company']) for x in cohort)+r'},y dir=reverse,',r'ymin=0.25,ymax=20.75,bar width=9pt,axis x line*=bottom,axis y line*=left,y axis line style={draw=none},',r'xtick={0,5000,10000,15000},scaled x ticks=false,xticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep={,}},',r'xmajorgrids=true,grid style={linegray},tick style={draw=none},',r'xlabel={2026年二季度末非货公募规模（亿元人民币）},',r'tick label style={font=\small},label style={font=\small},',r'nodes near coords,point meta=x,nodes near coords style={font=\scriptsize,anchor=west,/pgf/number format/fixed,/pgf/number format/precision=0,/pgf/number format/1000 sep={,}}]',r'\addplot[fill=teal,draw=none] coordinates {'+' '.join(f"({x['aum_cny_100m']},{x['rank']})" for x in cohort)+r'};',r'\end{axis}',r'\end{tikzpicture}']
-(HERE/'figures/aum.tex').write_text('\n'.join(fig)+'\n')
-
 # Locators and date descriptions are report-specific annotations, separate from raw metadata.
 refs={
 'FUND-001':('2025-12-31；历史采购证据','采购公告；不证明验收或完整LLM部署'),
@@ -23,7 +19,7 @@ refs={
 'FUND-011':('2026年1月协会案例；PDF未注明日期','千询固收交易平台；NLP与基础LLM需区分'),
 'FUND-013':('2026年1月协会案例；PDF未注明日期','固收平台中的Qwen2.5交易要素提取'),
 'FUND-109':('2026-07-24','微信原刊；基金研选Skill产品说明'),
-'FUND-113':('2025，26(10)；历史技术补充','PDF第5–9、13–14页；MENTOR方法、实验与数据边界'),
+'FUND-113':('2025，26(10):1847–1861','PDF第8–11页及表3；方法与行业排序结果'),
 'FUND-114':('2025；MENTOR官方补充材料','PDF第1–5页，尤其第2–3页Prompt'),
 'FUND-115':('代码快照；不推断发布日期','固定提交1058e1b；公开查询客户端与配置缺口'),
 'FUND-116':('无日期帮助文档；2026-09-09归档','PDF第8–10页查询示例；非服务端代码'),
@@ -43,8 +39,8 @@ refs={
 'FUND-323':('2026-02-11','Man AHL；原文流程图与三组研究想法实验'),
 'FUND-324':('2026-07-09','Two Sigma；文本特征研究观点，缺少完整实现'),
 'FUND-352':('2026-07-01协会目录；PDF未注明日期','永赢安全GPT邮件反钓鱼；非投研量化系统'),
-'FUND-356':('2026-06-01','微信原刊；中欧Skills与投研协作披露'),
-'FUND-359':('2026-09-03','微信原刊、用户保存PDF；文本处理实践与Agent展望分开'),
+'FUND-356':('2026-06-01','中欧公众号转载中国基金报；Skills与投研协作'),
+'FUND-359':('2026-09-03','中国证券报原刊；文本处理实践与Agent展望分开'),
 'FUND-400':('2026-07-21','财联社；2026Q2非货公募规模，剔除ETF联接基金'),
 'FUND-403':('2026年1月协会案例；PDF未注明日期','国泰组合平台；DeepSeek与传统NER模块分开'),
 }
@@ -52,7 +48,10 @@ for i in range(1,17):
     sid=f'REG-{i:03d}'
     p=ROOT/'knowledge-base/sources'/sid/'metadata.json'
     if p.exists():
-        d=json.loads(p.read_text());refs[sid]=(d.get('published','见官方原文'),'具体条款及适用条件见报告第9节；法律状态核验记录见监管复核底稿')
+        d=json.loads(p.read_text())
+        date=d.get('published','见官方原文')
+        for a,b in [('Order dated','令文日期'),('CAC publication','网信办发布'),('CNIPA repost','国家知识产权局转载'),('Revision','修订'),('publication','发布'),('amendment','修订'),('signed','签署'),(';','；')]: date=date.replace(a,b)
+        refs[sid]=(date,'适用条件与精确条款见附录B')
 
 # Only publish references cited by the authored report.
 tex='\n'.join(p.read_text() for p in HERE.glob('*.tex') if p.name not in {'references.tex','landscape.tex'})
@@ -60,8 +59,14 @@ used=set(re.findall(r'\\src\{([^}]+)\}',tex))
 used.update(re.findall(r'\\refsource\{([^}]+)\}',tex))
 landscape_path=HERE/'landscape.tex'
 if landscape_path.exists(): used.update(re.findall(r'\\src\{([^}]+)\}',landscape_path.read_text()))
+order=[]
+for filename in ['main.tex','landscape.tex','governance-appendix.tex']:
+    for sid in re.findall(r'\\src\{([^}]+)\}', (HERE/filename).read_text()):
+        if sid not in order: order.append(sid)
+assert used == set(order), (used-set(order),set(order)-used)
+(HERE/'reference-labels.tex').write_text('\n'.join(r'\expandafter\def\csname refnum@'+sid+r'\endcsname{'+str(i+1)+'}' for i,sid in enumerate(order))+'\n')
 manifest=[]; entries=[]
-for sid in sorted(used):
+for sid in order:
     if sid in refs:
         folder=ROOT/'knowledge-base/sources'/sid
         m=json.loads((folder/'metadata.json').read_text())
@@ -78,16 +83,16 @@ for sid in sorted(used):
     elif sid=='EXT-QA':
         folder=ROOT/'knowledge-base/reference/2026-llm-quant/quantaalpha'
         title='QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining'
-        date='2026；归档PDF封面日期2026-05-19（arXiv v3）'
-        loc='23页论文；方法、实验及附录Prompt；作者团队包含高校与研究项目'
+        date='2026；论文封面日期2026-05-19（arXiv v3）'
+        loc='v3；表1--2、附录A--C及方法；作者团队含高校与研究项目'
         link='https://arxiv.org/abs/2602.07085v3'
         item=dict(id=sid,title=title,date_label=date,url=link,locator=loc,files=[dict(path=str((folder/'source.pdf').relative_to(ROOT)),sha256=hashlib.sha256((folder/'source.pdf').read_bytes()).hexdigest())])
     elif sid=='EXT-QC':
         folder=ROOT/'knowledge-base/reference/2026-llm-quant/quantaalpha-code'
         archive=json.loads((folder/'archive.json').read_text())
-        title='QuantaAlpha官方代码选取快照'
+        title='QuantaAlpha官方研究实现（固定版本）'
         date='固定提交 '+archive['commit'][:12]
-        loc='30个选取文件；完整清单及逐文件哈希见archive.json；未执行复现'
+        loc='方法实现；代码固定版本见原始链接；未执行复现'
         link='https://github.com/QuantaAlpha/QuantaAlpha/tree/'+archive['commit']
         item=dict(id=sid,title=title,date_label=date,url=link,locator=loc,archive_manifest=str((folder/'archive.json').relative_to(ROOT)),commit=archive['commit'],files=archive['files'])
     elif sid=='EXT-AB':
@@ -103,4 +108,4 @@ for sid in sorted(used):
     entries.append(r'\referenceentry{'+esc(sid)+'}{'+esc(title)+'}{'+esc(date)+'}{'+esc(loc)+'}{'+url(link)+'}')
 (HERE/'references.tex').write_text('\n\n'.join(entries)+'\n')
 (HERE/'data/source-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-print(f'Generated AUM chart and {len(manifest)} source references.')
+print(f'Generated {len(manifest)} source references.')

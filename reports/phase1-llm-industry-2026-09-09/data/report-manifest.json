@@ -18,5 +18,9 @@
   "original_dossiers_with_supplement": 21,
   "primary_ai_llm_original_cohort": 15,
   "primary_ai_llm_original_dossiers": 16,
-  "original_platform_workflow_records": 25
+  "original_platform_workflow_records": 25,
+  "previous_report_checkpoint": "39a2417",
+  "report_revision": "business-and-reader-focused rewrite",
+  "official_pdf_scoring": false,
+  "statistical_counts_scope": "Research baseline management data only; excluded from official PDF and not deployment counts"
 }

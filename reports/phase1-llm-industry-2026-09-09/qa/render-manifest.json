@@ -1,0 +1,15 @@
+{
+  "pdf_sha256": "a38023e7e97df5415f4d2af4c055509b6b34da0ec48a13bd58ab8f4d79a2034e",
+  "physical_pages": 24,
+  "pdfium": {
+    "directory": "qa/render-final",
+    "resolution_dpi": 115,
+    "antialias": true,
+    "quantize": false
+  },
+  "poppler": {
+    "directory": "qa/render-poppler-final",
+    "resolution_dpi": 110
+  },
+  "images_are_ignored_intermediates": true
+}

@@ -2,3 +2,4 @@ build/
 qa/*.png
 qa/*.txt
 __pycache__/
+qa/render-*/

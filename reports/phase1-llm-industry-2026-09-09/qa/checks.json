@@ -1,18 +1,254 @@
 {
-  "pdf_sha256": "fe1ccc71281700ddc8849e094e9889b7c9b5272dd7803b0b8efdc3bdf88d838b",
+  "pdf_sha256": "a38023e7e97df5415f4d2af4c055509b6b34da0ec48a13bd58ab8f4d79a2034e",
   "physical_pages": 24,
   "numbered_pages": 23,
-  "source_entries": 49,
-  "uri_links": 49,
-  "all_source_urls_present": true,
-  "all_manifest_hashes_match": true,
-  "chinese_text_searchable": true,
-  "all_chart_company_labels_present": true,
-  "figures": 9,
-  "numbered_tables": 15,
-  "overfull_or_missing_glyph_warnings": false,
-  "model_api_backtest_executed": false,
-  "all_pages_visually_reviewed": true,
-  "final_visual_renderer": "PDFium, cross-checked against Poppler and pdfplumber",
-  "duplicate_page_anchors": false
+  "source_entries": 46,
+  "hashed_files_verified": 117,
+  "external_urls_verified": 46,
+  "cohort_values_verified": 20,
+  "forbidden_process_phrases_absent": true,
+  "latex_critical_warnings_absent": true,
+  "page_text_bounds": [
+    {
+      "physical_page": 1,
+      "characters": 277,
+      "text_bbox": [
+        62.36,
+        127.56,
+        520.12,
+        779.49
+      ]
+    },
+    {
+      "physical_page": 2,
+      "characters": 1023,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.29,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 3,
+      "characters": 415,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.91,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 4,
+      "characters": 919,
+      "text_bbox": [
+        62.36,
+        28.14,
+        539.16,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 5,
+      "characters": 977,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.29,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 6,
+      "characters": 910,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.27,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 7,
+      "characters": 998,
+      "text_bbox": [
+        62.36,
+        28.14,
+        539.98,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 8,
+      "characters": 976,
+      "text_bbox": [
+        55.14,
+        28.14,
+        540.27,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 9,
+      "characters": 929,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 10,
+      "characters": 737,
+      "text_bbox": [
+        62.36,
+        28.14,
+        533.73,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 11,
+      "characters": 955,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 12,
+      "characters": 1000,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.26,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 13,
+      "characters": 872,
+      "text_bbox": [
+        55.14,
+        28.14,
+        540.28,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 14,
+      "characters": 1142,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.29,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 15,
+      "characters": 1017,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 16,
+      "characters": 944,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 17,
+      "characters": 983,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.27,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 18,
+      "characters": 969,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.27,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 19,
+      "characters": 1503,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.91,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 20,
+      "characters": 587,
+      "text_bbox": [
+        57.76,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 21,
+      "characters": 1353,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 22,
+      "characters": 1642,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 23,
+      "characters": 1417,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.91,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 24,
+      "characters": 691,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.91,
+        809.38
+      ]
+    }
+  ],
+  "visual_review": "See qa/review.md; this script does not assert visual correctness."
 }

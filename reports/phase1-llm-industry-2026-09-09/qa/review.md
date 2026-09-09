@@ -1,27 +1,29 @@
-# Report verification — 2026-09-09
+# 最终报告质量核验 — 2026-09-09
 
-Status: authored report and artifact checks complete; mentor/independent human approval remains pending.
+核验对象：重写后的《大语言模型如何进入基金投研工作》。最终PDF SHA-256为`a38023e7e97df5415f4d2af4c055509b6b34da0ec48a13bd58ab8f4d79a2034e`。
 
-## Project scope and evidence review
+## 内容与范围
 
-- Re-read the full mentor-confirmed `PROJECT_PLAN.md` before authoring. This artifact delivers the Phase 1 landscape and privacy/interpretability/outsourcing synthesis. It does not claim the Phase 2 deployment/model comparison or Phase 3 TCO/ROI work is complete.
-- Preserved the pre-report research in `e51e4c9b93bd03c17f869c2f10027fa8061f9eae`. Compared the final working changes with that baseline: report files are new; the only existing authored file changed is the Week 2 execution plan. Knowledge-base raw articles, PDFs, code snapshots and the confirmed project plan remain unchanged.
-- Reconciled source records (125), source states (88/35/2), reading roles (112/9/4), the 20-company AUM cohort plus Dacheng supplement, and mixed AI/LLM primary evidence counts. No source count or workflow count is presented as a production deployment count.
-- Checked the uniform AUM definition and 20 values against the frozen cohort. Bar labels round only for display; source data and company table preserve two decimals.
-- Kept E Fund MENTOR explicitly dated 2025. Kept 2026 research tasks, Man Group institutional research and QuantaAlpha external code separate from domestic production deployment claims.
-- Checked Southern's reported 40% daily-operation time reduction and Penghua's 1,266 documents / approximately 60,000 checks / 989 suggestions / 91% adoption against originals. Adoption is not accuracy; platform time savings are not isolated LLM gains or MSIM ROI.
-- Removed Danlan from the concise ICBC partner row because the row's selected source directly supports Hundsun Juyuan, ICBC Technology and Zhipu AI; additional historical partner evidence would need its own citation.
-- Preserved the regulatory review's legal-force and applicability boundaries, including conditional GenAI scope, important-system outsourcing, AMAC group-standard status and the 2026 Fed guidance scope. The report uses the archived official AMAC material and earlier same-day status review; its announcement timed out during the additional report-authoring access attempt. This is not an internal compliance approval.
+- 读完mentor确认的项目计划及独立评审v1，重新组织Phase 1行业研究。正式PDF取消内部评分、选材历史、作者工作对话及资料计数。
+- 四方向均有业务比较、使用证据或作者结果、失败风险和条件性建议；说明性示例显著标注，不伪装为公司实测。
+- 2026公司披露、2025 MENTOR研究、海外资管研究和外部开源框架分别归属；不以传统ML填充LLM案例。
+- 核对主案例关键数字和研究条件；细项见`evidence-checks.md`。公司自报和论文结果未独立复现。QuantaAlpha总体实验与附录案例分开使用，保留后者口径冲突和假设/表达式偏移。
+- 公司规模使用统一2026Q2非货公募口径，20家核心加大成补充。没有将公开材料数量推为部署率或公司能力排名。
+- 治理按任务、数据流和用途说明控制；法律、团体标准、海外监督参考及内部待确认责任分开。没有声称取得内部批准。
 
-## Artifact checks
+## PDF与来源核验
 
-- Built using the LaTeX compile skill with TeX Live 2026 / XeLaTeX / latexmk, then verified the standalone `build.sh` path.
-- Final output: **24 physical pages**, including cover; **23 numbered pages**, **9 figures**, **15 numbered tables**, **49 source entries**.
-- All 49 external source URLs embedded in the PDF match the report source manifest. Referenced local originals and all 30 selected QuantaAlpha code files match recorded SHA-256 hashes.
-- All source IDs resolve; no unresolved references, missing-glyph or overfull-box warnings in the final LaTeX log. Cover page anchors disabled to prevent duplicate page-1 destinations.
-- Replaced Fandol with explicitly embedded macOS Songti/Heiti fonts after finding the initial output failed CJK rendering/extraction with the available reader stack. Final Chinese text extracts correctly and is searchable.
-- Rendered all pages with Poppler and visually reviewed them. Fixed omitted AUM y-axis labels and title-bar contrast. The bundled Poppler renderer displayed inconsistent header/footers on some pages, so also rendered and inspected the entire final PDF with independent PDFium; headers, page numbers, body text and chart labels are present. Text coordinates were checked independently with pdfplumber.
-- Inspected every final page, with detailed checks of the dense company table, AUM chart, workflow figures, governance tables and reference pages. No clipping, collisions, missing labels or incomplete rows found in the final PDFium review.
-- Latest PDF SHA-256 and machine checks are in `checks.json`. Rendered page PNGs are local QA intermediates ignored by git.
+- PDF技能edit marker在首次作者编辑前成功执行一次。
+- 使用TeX Live 2026、XeLaTeX和latexmk编译，复用可复制中文的macOS宋体/黑体基础；没有回退Fandol。
+- 最终共24物理页、23编号页、1幅图、11个编号表格和46项来源。7个字体均有嵌入字体流。
+- 最终LaTeX日志没有未定义引用、缺字或Overfull告警。中文抽取可读，文本坐标全部位于页面内。
+- `verify.py`核对46项外链与来源目录一致、117个源文件/选取代码文件哈希一致、20个规模值一致；确认正式PDF没有FUND编号、评分或指定过程措辞。
+- 使用Poppler全页渲染，并用pdfplumber/PDFium的抗锯齿、非量化PNG交叉复核。逐页检查所有正文、图表和附录；对密集公司表、治理表、量化数字和引用加做放大阅读。
+- 初稿治理附录末行独占一页已修复，最终附录B完整置于页脚第20页。未发现文字裁切、图文重叠、缺行、缺字或不可读的小字。
+- 最后一次改动仅为参考文献日期中文化及公司表一处过程措辞，已重渲染全部24页并复核受影响页。旧25页渲染目录已删除，最终渲染身份见`render-manifest.json`；PNG和文本均为忽略提交的中间文件。
 
-No model/API call, factor generation, backtest, local model deployment, internal outreach or legal approval was performed as part of report authoring.
+## 独立审阅与版本
+
+独立mentor agent完整审阅重写初稿，要求定点修正截断逻辑、VAcc定义、转载身份、治理顺序与附录收尾；作者逐项落实并请求最终PDF复核。最终意见由评审者写入`editorial/mentor-review-v2.md`，作者落实记录在`editorial/revision-notes.md`。该审阅不代替真实导师现场反馈或机构审批。
+
+旧稿检查点`39a2417`保留。知识库原件、代码快照和`PROJECT_PLAN.md`未修改；此次提交仅包含报告、评审/QA配套文件及Week 2报告记录。

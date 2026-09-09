@@ -181,6 +181,12 @@ ranking was performed in this fund-focused pass.
 
 - Preserved the research baseline in commit `e51e4c9` before report authoring.
 - Re-read the mentor-confirmed project plan and produced a [Phase 1 report](../reports/phase1-llm-industry-2026-09-09/README.md) with LaTeX source, PDF, charts, company tables and a source manifest.
-- W2-04: report draft prepared in the format requested by the user; mentor review, rehearsal and live presentation remain outstanding. This does not certify completion of those activities.
+- W2-04: report rewritten around business tasks and reader needs after independent mentor-agent review; final PDF and revision records are in the report directory. Rehearsal, live presentation and feedback from the actual mentor remain outstanding.
 - W2-05: report translates all four themes into Phase 2 task/evaluation candidates and lists missing COD, internal-policy, data and cost inputs. No model deployment, benchmark or TCO calculation was performed.
 - W2-01/02/03 remain source-based research, with independent human review and the mentor's missing numeric company target still open. The report distinguishes 20 core managers plus one supplementary dossier, source quality, LLM relevance and workflow completeness.
+
+### 9 September 2026 — business-focused report rewrite
+
+- Preserved the prior report at `39a2417`; rewrote the official PDF around four workflows, concrete inputs/outputs, author-reported results and conditional next-step choices. Internal scores and selection history are excluded.
+- Independent mentor-agent v1 review prompted the rewrite; v2 review and the author response are retained in the report editorial folder. The final artifact has 24 physical pages and 46 source entries; full-page rendering, source links, source hashes and comparable AUM values were checked.
+- Phase 1 conclusions remain distinct from model deployment, backtest reproduction, TCO/ROI and internal approval; none of those later-stage outcomes is claimed. Knowledge-base originals and the confirmed project plan remain unchanged.
