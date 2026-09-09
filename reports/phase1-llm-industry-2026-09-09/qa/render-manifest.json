@@ -1,14 +1,13 @@
 {
-  "pdf_sha256": "a38023e7e97df5415f4d2af4c055509b6b34da0ec48a13bd58ab8f4d79a2034e",
-  "physical_pages": 24,
+  "pdf_sha256": "17da68bc608e241f588b7ab1284a346bdfbd257fc538f29458f1c1490daf3e33",
+  "physical_pages": 21,
   "pdfium": {
-    "directory": "qa/render-final",
-    "resolution_dpi": 115,
-    "antialias": true,
-    "quantize": false
+    "directory": "qa/render-narrative",
+    "resolution_dpi": 110,
+    "antialias": true
   },
   "poppler": {
-    "directory": "qa/render-poppler-final",
+    "directory": "qa/render-narrative-poppler",
     "resolution_dpi": 110
   },
   "images_are_ignored_intermediates": true

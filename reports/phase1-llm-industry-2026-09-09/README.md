@@ -1,18 +1,15 @@
-# 大语言模型如何进入基金投研工作
+# 基金公司LLM应用调研
 
-中文 Phase 1 行业研究，资料截止2026年9月9日，供导师与量化部门阅读。
+当前版本按用户确认的汇报口吻改写，资料截止2026年9月9日。
 
-- [正式PDF](report.pdf)：24个物理页，页脚编号1–23。
-- [LaTeX正文](main.tex)、[公司附表](landscape.tex)、[治理附录](governance-appendix.tex)。
-- [独立mentor复核](editorial/mentor-review-v2.md)、[修订落实记录](editorial/revision-notes.md)。
-- [核心事实抽查](qa/evidence-checks.md)、[最终QA记录](qa/review.md)、[机器校验结果](qa/checks.json)。
-- [来源与原件哈希](data/source-manifest.json)、[同口径规模数据](data/cohort.json)。
+- [PDF报告](report.pdf)：21个物理页，页脚编号1–20。
+- [LaTeX正文](main.tex)、[表A](landscape.tex)、[法规附录](governance-appendix.tex)。
+- [本次修改说明](editorial/narrative-revision.md)、[当前PDF检查记录](qa/review.md)。
+- [来源与原件哈希](data/source-manifest.json)、[同口径规模数据](data/cohort.json)、[机器校验结果](qa/checks.json)。
 
-报告围绕投研推理、受控数据查询、知识问答与合规审核、LLM辅助量化四方向，比较业务价值、数据条件、验证工作量和错误后果。国内案例以2026年披露为主；2025年MENTOR为方法补充，Man AHL与QuantaAlpha为外部研究对照。量化部分覆盖文本信号、因子生成与迭代、研究工具调用，并区分代码运行、假设检验和投资采用。
+报告从同业已经开展的应用出发，先用行业概览介绍表A，再依次讨论投研分析、数据查询、知识问答与合规审核、LLM辅助量化，最后结合监管文件说明本地探索需要确认的条件。表A汇总20家主要样本和大成补充案例，保留公司规模、实际应用、技术和合作信息；所有表格均按正式阅读需要重新表述。
 
-新版取消正式PDF中的评分、选材历史及研究管理计数。完整公司规模、场景与技术合作角色留在附录；方法限制和使用证据保留在相应结论旁。参考文献采用可点击的数字引用，覆盖46项原始来源。
-
-报告提出有条件的首项验证选择，没有执行模型/API、因子生成、回测或本地部署，也未给出TCO、ROI或内部批准。公司自报效果及论文结果均未由本项目独立复现。独立mentor agent的评审不代替真实导师反馈、现场汇报或内部审批。
+国内材料以2026年披露为主；2025年MENTOR作为方法补充，Man AHL和QuantaAlpha作为外部研究对照。公司自报效果与论文结果保留具体条件，说明性例子与实际披露分开。尚未开展模型/API实验、本地部署、回测复现或TCO/ROI测算。
 
 ## 编译与校验
 
@@ -22,25 +19,29 @@ macOS安装有XeLaTeX/latexmk的TeX Live或MacTeX后，从本目录运行：
 ./build.sh
 ```
 
-本次为TeX Live 2026。使用macOS宋体、黑体与TeX Gyre字体，7个字体均已嵌入PDF，中文可以搜索和复制。跨平台编译需在`preamble.tex`配置当地可用的中文字体；接收者阅读PDF无需安装字体。
+本次使用TeX Live 2026，以及macOS宋体、黑体和TeX Gyre字体。中文可搜索和复制，接收者阅读PDF无需另装字体。跨平台编译时需在`preamble.tex`指定当地可用的中文字体。
 
-重新生成来源目录、编号和哈希清单（只读知识库）：
+如需根据知识库重新生成来源目录、编号和哈希清单：
 
 ```bash
 python3 prepare.py
 ./build.sh
 ```
 
-使用已安装pypdf/pdfplumber的Python运行：
+使用已安装pypdf/pdfplumber的Python进行机器校验：
 
 ```bash
 python3 verify.py
 ```
 
-`verify.py`检查来源编号、外链、原件/代码哈希、规模值、过程措辞和关键LaTeX告警；它不能替代视觉或事实审查。最终全页渲染分别由Poppler与PDFium完成，渲染路径及PDF哈希见`qa/render-manifest.json`。PNG、文本和编译中间文件均不提交。
+来源目录包含46项实际引用，机器校验核对117个原件或代码文件哈希以及20家公司的规模值。当前PDF经过全页渲染检查；渲染版本和路径见`qa/render-manifest.json`。PNG、抽取文本和编译中间文件不提交。
 
-## 版本与过程附件
+## 历史版本与评审
 
-旧稿保留在Git检查点`39a2417`；研究基线为`e51e4c9`。此次重写只修改报告目录及Week 2报告记录，未修改知识库原件或`PROJECT_PLAN.md`。旧稿的独立评审保存在`editorial/mentor-review-v1.md`，新版评审与落实记录单独保存，不进入正式PDF。
+- `39a2417`：首次独立mentor评审前的旧稿。
+- `fc2cf1d`：按两轮独立评审完成的业务版报告。
+- `0b85429`：本次叙述方式讨论前的检查点。
 
-`data/report-manifest.json`保留研究基线的资料统计及此次作者版本说明；其中AI/LLM材料数量并非生产部署数量。最终PDF身份以`qa/checks.json`和v2评审末节的SHA-256为准。
+`editorial/mentor-review-v1.md`、`editorial/mentor-review-v2.md`和`editorial/revision-notes.md`是此前版本的历史评审与修改记录，未被改写，也不表示独立mentor代理已审阅本次版本。本次以用户认可的摘要和章节样稿为依据，修改记录另见`editorial/narrative-revision.md`。
+
+研究基线`e51e4c9`中的原始材料及确认的`PROJECT_PLAN.md`保持不变。`data/report-manifest.json`中的研究管理数量不是公司生产部署数量。当前PDF身份以`qa/checks.json`中的SHA-256为准。

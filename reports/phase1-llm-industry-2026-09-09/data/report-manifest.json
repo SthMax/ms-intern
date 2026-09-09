@@ -19,8 +19,11 @@
   "primary_ai_llm_original_cohort": 15,
   "primary_ai_llm_original_dossiers": 16,
   "original_platform_workflow_records": 25,
-  "previous_report_checkpoint": "39a2417",
-  "report_revision": "business-and-reader-focused rewrite",
+  "previous_report_checkpoint": "0b85429",
+  "report_revision": "authorial narrative with introductory overview of Table A",
   "official_pdf_scoring": false,
-  "statistical_counts_scope": "Research baseline management data only; excluded from official PDF and not deployment counts"
+  "statistical_counts_scope": "Research baseline management data only; excluded from official PDF and not deployment counts",
+  "physical_pages": 21,
+  "current_report_title": "基金公司LLM应用调研",
+  "historical_mentor_review_checkpoint": "fc2cf1d"
 }

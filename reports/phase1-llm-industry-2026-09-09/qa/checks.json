@@ -1,7 +1,7 @@
 {
-  "pdf_sha256": "a38023e7e97df5415f4d2af4c055509b6b34da0ec48a13bd58ab8f4d79a2034e",
-  "physical_pages": 24,
-  "numbered_pages": 23,
+  "pdf_sha256": "17da68bc608e241f588b7ab1284a346bdfbd257fc538f29458f1c1490daf3e33",
+  "physical_pages": 21,
+  "numbered_pages": 20,
   "source_entries": 46,
   "hashed_files_verified": 117,
   "external_urls_verified": 46,
@@ -11,17 +11,17 @@
   "page_text_bounds": [
     {
       "physical_page": 1,
-      "characters": 277,
+      "characters": 186,
       "text_bbox": [
         62.36,
-        127.56,
-        520.12,
+        139.89,
+        439.89,
         779.49
       ]
     },
     {
       "physical_page": 2,
-      "characters": 1023,
+      "characters": 882,
       "text_bbox": [
         62.36,
         28.14,
@@ -31,7 +31,7 @@
     },
     {
       "physical_page": 3,
-      "characters": 415,
+      "characters": 324,
       "text_bbox": [
         62.36,
         28.14,
@@ -41,27 +41,27 @@
     },
     {
       "physical_page": 4,
-      "characters": 919,
+      "characters": 1223,
       "text_bbox": [
         62.36,
         28.14,
-        539.16,
+        540.27,
         809.38
       ]
     },
     {
       "physical_page": 5,
-      "characters": 977,
+      "characters": 1465,
       "text_bbox": [
-        62.36,
+        55.14,
         28.14,
-        540.29,
+        540.26,
         809.38
       ]
     },
     {
       "physical_page": 6,
-      "characters": 910,
+      "characters": 1292,
       "text_bbox": [
         62.36,
         28.14,
@@ -71,57 +71,17 @@
     },
     {
       "physical_page": 7,
-      "characters": 998,
+      "characters": 846,
       "text_bbox": [
         62.36,
         28.14,
-        539.98,
+        540.28,
         809.38
       ]
     },
     {
       "physical_page": 8,
-      "characters": 976,
-      "text_bbox": [
-        55.14,
-        28.14,
-        540.27,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 9,
-      "characters": 929,
-      "text_bbox": [
-        62.36,
-        28.14,
-        532.92,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 10,
-      "characters": 737,
-      "text_bbox": [
-        62.36,
-        28.14,
-        533.73,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 11,
-      "characters": 955,
-      "text_bbox": [
-        62.36,
-        28.14,
-        532.92,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 12,
-      "characters": 1000,
+      "characters": 1283,
       "text_bbox": [
         62.36,
         28.14,
@@ -130,8 +90,68 @@
       ]
     },
     {
+      "physical_page": 9,
+      "characters": 1326,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.28,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 10,
+      "characters": 1038,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 11,
+      "characters": 1171,
+      "text_bbox": [
+        55.14,
+        28.14,
+        540.26,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 12,
+      "characters": 1233,
+      "text_bbox": [
+        55.14,
+        28.14,
+        540.49,
+        809.38
+      ]
+    },
+    {
       "physical_page": 13,
-      "characters": 872,
+      "characters": 1290,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.49,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 14,
+      "characters": 1204,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.28,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 15,
+      "characters": 901,
       "text_bbox": [
         55.14,
         28.14,
@@ -140,98 +160,48 @@
       ]
     },
     {
-      "physical_page": 14,
-      "characters": 1142,
-      "text_bbox": [
-        62.36,
-        28.14,
-        540.29,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 15,
-      "characters": 1017,
-      "text_bbox": [
-        62.36,
-        28.14,
-        532.92,
-        809.38
-      ]
-    },
-    {
       "physical_page": 16,
-      "characters": 944,
+      "characters": 1247,
       "text_bbox": [
         62.36,
         28.14,
-        532.92,
+        540.27,
         809.38
       ]
     },
     {
       "physical_page": 17,
-      "characters": 983,
+      "characters": 901,
       "text_bbox": [
-        62.36,
+        57.76,
         28.14,
-        540.27,
+        537.13,
         809.38
       ]
     },
     {
       "physical_page": 18,
-      "characters": 969,
+      "characters": 1364,
       "text_bbox": [
         62.36,
         28.14,
-        540.27,
+        540.26,
         809.38
       ]
     },
     {
       "physical_page": 19,
-      "characters": 1503,
+      "characters": 1505,
       "text_bbox": [
         62.36,
         28.14,
-        532.91,
+        532.92,
         809.38
       ]
     },
     {
       "physical_page": 20,
-      "characters": 587,
-      "text_bbox": [
-        57.76,
-        28.14,
-        532.92,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 21,
-      "characters": 1353,
-      "text_bbox": [
-        62.36,
-        28.14,
-        532.92,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 22,
-      "characters": 1642,
-      "text_bbox": [
-        62.36,
-        28.14,
-        532.92,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 23,
-      "characters": 1417,
+      "characters": 1430,
       "text_bbox": [
         62.36,
         28.14,
@@ -240,8 +210,8 @@
       ]
     },
     {
-      "physical_page": 24,
-      "characters": 691,
+      "physical_page": 21,
+      "characters": 760,
       "text_bbox": [
         62.36,
         28.14,
@@ -250,5 +220,11 @@
       ]
     }
   ],
-  "visual_review": "See qa/review.md; this script does not assert visual correctness."
+  "visual_review": "All 21 PDFium pages inspected; selected Poppler pages cross-checked. See qa/review.md.",
+  "table_a_named_destination": "table.9",
+  "table_a_link_present": true,
+  "overview_precedes_cases": true,
+  "embedded_fonts": 7,
+  "all_fonts_embedded": true,
+  "no_near_empty_body_pages": true
 }

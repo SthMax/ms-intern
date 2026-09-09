@@ -190,3 +190,9 @@ ranking was performed in this fund-focused pass.
 - Preserved the prior report at `39a2417`; rewrote the official PDF around four workflows, concrete inputs/outputs, author-reported results and conditional next-step choices. Internal scores and selection history are excluded.
 - Independent mentor-agent v1 review prompted the rewrite; v2 review and the author response are retained in the report editorial folder. The final artifact has 24 physical pages and 46 source entries; full-page rendering, source links, source hashes and comparable AUM values were checked.
 - Phase 1 conclusions remain distinct from model deployment, backtest reproduction, TCO/ROI and internal approval; none of those later-stage outcomes is claimed. Knowledge-base originals and the confirmed project plan remain unchanged.
+
+### 9 September 2026 — authorial narrative and Table A overview
+
+- Following the user's approval of an in-conversation sample, revised the full report into connected prose and added an opening overview of Table A before the four directions. Rewrote table cells as readable descriptions while preserving facts and source roles.
+- The report now has 21 physical pages. Company outcomes, quantitative results and regulatory conditions remain sourced; the work is still Phase 1 research. Current verification and narrative revision records are in the report directory.
+- Prior mentor-agent reviews remain historical records of the earlier version; no new independent mentor review, model deployment, backtest or internal approval is implied by this edit.
