@@ -1,0 +1,58 @@
+{
+  "baseline": "15b46fb",
+  "user_draft_sha256": "b7e184a175576d4a7459973cee3847cdfe63bb9d585c0c26a52281e8f4799f64",
+  "user_edits_preserved": "editorial/user-edits-2026-09-11.patch",
+  "source_identities_urls_and_archived_files_unchanged": true,
+  "source_count": 46,
+  "three_result_tables_values_unchanged": true,
+  "result_table_values": {
+    "mentor": [
+      "0.159",
+      "0.100",
+      "0.444",
+      "0.078",
+      "0.118",
+      "0.472",
+      "0.220",
+      "0.141",
+      "0.488",
+      "1",
+      "0.221",
+      "0.173",
+      "0.439"
+    ],
+    "man": [
+      "1.05",
+      "0.95",
+      "0.80",
+      "0.70",
+      "1.00",
+      "0.85"
+    ],
+    "qa": [
+      "0.0286",
+      "3.58",
+      "16.76",
+      "0.0347",
+      "1.11",
+      "13.89",
+      "0.0472",
+      "4.68",
+      "11.80"
+    ]
+  },
+  "governance_appendix_unchanged": true,
+  "presentation_files_unchanged": 8,
+  "author_first_person_and_user_comments_absent": true,
+  "pdf_sha256": "635023f131b08d258703c1177b577579f1b00726c350a675a7da364acb3b70a6",
+  "physical_pages": 21,
+  "embedded_fonts_verified": {
+    "/JRYMRO+TeXGyreHeros-Regular-Identity-H": true,
+    "/JGUKHG+STHeitiSC-Medium": true,
+    "/NGTUOI+STSongti-SC-Bold": true,
+    "/JHLEDX+TeXGyrePagella-Bold-Identity-H": true,
+    "/SHLWCH+STSongti-SC-Regular": true,
+    "/REENYM+TeXGyrePagella-Regular-Identity-H": true,
+    "/GSXJFF+LMMono10-Regular-Identity-H": true
+  }
+}

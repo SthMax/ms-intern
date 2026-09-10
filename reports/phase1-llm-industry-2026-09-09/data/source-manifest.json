@@ -76,12 +76,31 @@
     ]
   },
   {
+    "id": "FUND-115",
+    "title": "指数直通车 Index-Hub Skills：官方查询客户端与接口文档",
+    "issuer": "EFundAI / E Fund",
+    "date_label": "代码快照，版本见提交号",
+    "url": "https://github.com/EFundAI/index-hub-skills/tree/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
+    "locator": "固定提交1058e1b；查询客户端与接口文档",
+    "metadata_path": "knowledge-base/sources/FUND-115/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-115/repository/files/README.md",
+        "sha256": "150f8e59b2ee050d39ae2ff801a45608dd44bc5ffae07de6ae6f9ee28cb5f089"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-115/original.md",
+        "sha256": "e55a8624030134493416ddfeb7c6d8569ad3911e4903d62bae499cb0fafd6f47"
+      }
+    ]
+  },
+  {
     "id": "FUND-220",
     "title": "『基金行业金融科技获奖成果宣传活动』汇添富基金：智汇投资风险管理平台",
     "issuer": "China Universal; AMAC host",
     "date_label": "2026-01-27协会目录；PDF未注明修订日期",
     "url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf",
-    "locator": "PDF第5–11页，尤其第7页图2；LLM与规则平台边界",
+    "locator": "PDF第5–11页；风险邮件提取、条款问答与规则平台",
     "metadata_path": "knowledge-base/sources/FUND-220/metadata.json",
     "files": [
       {
@@ -348,63 +367,6 @@
     ]
   },
   {
-    "id": "REG-002",
-    "title": "中华人民共和国个人信息保护法",
-    "issuer": "NPC Standing Committee; official text republished by CAC",
-    "date_label": "2021-08-20",
-    "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
-    "locator": "适用条件与精确条款见附录B",
-    "metadata_path": "knowledge-base/sources/REG-002/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/REG-002/source.html",
-        "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff"
-      },
-      {
-        "path": "knowledge-base/sources/REG-002/original.md",
-        "sha256": "78f672dd2edfc62425de7197c71557efa86243578ef166246fb53ccdc2d84215"
-      }
-    ]
-  },
-  {
-    "id": "REG-001",
-    "title": "生成式人工智能服务管理暂行办法",
-    "issuer": "CAC and six departments",
-    "date_label": "2023-07-13； 签署 2023-07-10",
-    "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
-    "locator": "适用条件与精确条款见附录B",
-    "metadata_path": "knowledge-base/sources/REG-001/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/REG-001/source.html",
-        "sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b"
-      },
-      {
-        "path": "knowledge-base/sources/REG-001/original.md",
-        "sha256": "e9afae3af13de3984fb7660a8d62d2a40af987aea74e8d72d3b8aeda5806d3df"
-      }
-    ]
-  },
-  {
-    "id": "REG-003",
-    "title": "证券基金经营机构信息技术管理办法",
-    "issuer": "CSRC",
-    "date_label": "2018-12-19； 修订 2021-01-15",
-    "url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
-    "locator": "适用条件与精确条款见附录B",
-    "metadata_path": "knowledge-base/sources/REG-003/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/REG-003/source.html",
-        "sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964"
-      },
-      {
-        "path": "knowledge-base/sources/REG-003/original.md",
-        "sha256": "cb6037bdee858d932994f28ce8f74a04f3346847bc257d712626ef1c37468539"
-      }
-    ]
-  },
-  {
     "id": "FUND-400",
     "title": "公募非货规模最新座次出炉，万亿公募增至3家，中段座次重排",
     "issuer": "CLS; reporter 吴雨其",
@@ -429,7 +391,7 @@
     "issuer": "Maxwealth; AMAC host",
     "date_label": "2026-07-01协会目录；PDF未注明日期",
     "url": "https://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf",
-    "locator": "永赢安全GPT邮件反钓鱼；非投研量化系统",
+    "locator": "永赢安全GPT邮件反钓鱼应用",
     "metadata_path": "knowledge-base/sources/FUND-352/metadata.json",
     "files": [
       {
@@ -439,25 +401,6 @@
       {
         "path": "knowledge-base/sources/FUND-352/original.md",
         "sha256": "e68d28eff8b85b50c766a4496f7e9e505b491c98a6915ad9b912060ada60155e"
-      }
-    ]
-  },
-  {
-    "id": "FUND-316",
-    "title": "恒生电子2023可持续发展报告",
-    "issuer": "Hundsun Electronics",
-    "date_label": "2023报告期；历史合作证据",
-    "url": "https://static.cninfo.com.cn/finalpage/2024-03-25/1219392176.PDF",
-    "locator": "恒生电子可持续发展报告；FundGPT相关合作方",
-    "metadata_path": "knowledge-base/sources/FUND-316/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-316/source.pdf",
-        "sha256": "556f928d01185c073e791101dc324591f2ac23d840054ad499c76d44e774af39"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-316/original.md",
-        "sha256": "20f41de406399bec6371389cea5c46527c51c2309bcffb0598cc95064d6af558"
       }
     ]
   },
@@ -500,31 +443,12 @@
     ]
   },
   {
-    "id": "FUND-115",
-    "title": "指数直通车 Index-Hub Skills：官方查询客户端与接口文档",
-    "issuer": "EFundAI / E Fund",
-    "date_label": "代码快照；不推断发布日期",
-    "url": "https://github.com/EFundAI/index-hub-skills/tree/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
-    "locator": "固定提交1058e1b；公开查询客户端与配置缺口",
-    "metadata_path": "knowledge-base/sources/FUND-115/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-115/repository/files/README.md",
-        "sha256": "150f8e59b2ee050d39ae2ff801a45608dd44bc5ffae07de6ae6f9ee28cb5f089"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-115/original.md",
-        "sha256": "e55a8624030134493416ddfeb7c6d8569ad3911e4903d62bae499cb0fafd6f47"
-      }
-    ]
-  },
-  {
     "id": "FUND-116",
     "title": "指数直通车 AI Skills 帮助文档",
     "issuer": "E Fund / official efunds.com.cn CDN",
     "date_label": "无日期帮助文档；2026-09-09归档",
     "url": "https://cdn.efunds.com.cn/eda/h5/itcenter/pd/ai-skills-doc/help.pdf",
-    "locator": "PDF第8–10页查询示例；非服务端代码",
+    "locator": "PDF第8–10页查询示例与接口使用说明",
     "metadata_path": "knowledge-base/sources/FUND-116/metadata.json",
     "files": [
       {
@@ -543,7 +467,7 @@
     "issuer": "中国基金报 reporter 闫军",
     "date_label": "2026-08-20",
     "url": "https://www.chnfund.com/article/AR99eb77fa-e926-d40e-abb2-3a232d36f0d0",
-    "locator": "中国基金报20家调研；媒体/公司归属陈述，不替代技术原件",
+    "locator": "中国基金报20家基金公司AI应用调研",
     "metadata_path": "knowledge-base/sources/FUND-251/metadata.json",
     "files": [
       {
@@ -562,7 +486,7 @@
     "issuer": "中国证券报微信公众号",
     "date_label": "2026-09-03",
     "url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
-    "locator": "中国证券报原刊；文本处理实践与Agent展望分开",
+    "locator": "中国证券报原刊；文本处理与量化研究发展方向",
     "metadata_path": "knowledge-base/sources/FUND-359/metadata.json",
     "files": [
       {
@@ -642,6 +566,25 @@
     ]
   },
   {
+    "id": "REG-001",
+    "title": "生成式人工智能服务管理暂行办法",
+    "issuer": "CAC and six departments",
+    "date_label": "2023-07-13； 签署 2023-07-10",
+    "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+    "locator": "适用条件与精确条款见附录B",
+    "metadata_path": "knowledge-base/sources/REG-001/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/REG-001/source.html",
+        "sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b"
+      },
+      {
+        "path": "knowledge-base/sources/REG-001/original.md",
+        "sha256": "e9afae3af13de3984fb7660a8d62d2a40af987aea74e8d72d3b8aeda5806d3df"
+      }
+    ]
+  },
+  {
     "id": "REG-005",
     "title": "证券期货业网络和信息安全管理办法",
     "issuer": "CSRC",
@@ -657,6 +600,25 @@
       {
         "path": "knowledge-base/sources/REG-005/original.md",
         "sha256": "de8d1056de3101a7e0fd024d979bd674400f86e1404e9fcd1c992a85c8656d88"
+      }
+    ]
+  },
+  {
+    "id": "REG-002",
+    "title": "中华人民共和国个人信息保护法",
+    "issuer": "NPC Standing Committee; official text republished by CAC",
+    "date_label": "2021-08-20",
+    "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+    "locator": "适用条件与精确条款见附录B",
+    "metadata_path": "knowledge-base/sources/REG-002/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/REG-002/source.html",
+        "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff"
+      },
+      {
+        "path": "knowledge-base/sources/REG-002/original.md",
+        "sha256": "78f672dd2edfc62425de7197c71557efa86243578ef166246fb53ccdc2d84215"
       }
     ]
   },
@@ -733,6 +695,25 @@
       {
         "path": "knowledge-base/sources/REG-006/original.md",
         "sha256": "8f8761162ad54b230eb74197a4e2982a40cd04e034637222985f8449101e9831"
+      }
+    ]
+  },
+  {
+    "id": "REG-003",
+    "title": "证券基金经营机构信息技术管理办法",
+    "issuer": "CSRC",
+    "date_label": "2018-12-19； 修订 2021-01-15",
+    "url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
+    "locator": "适用条件与精确条款见附录B",
+    "metadata_path": "knowledge-base/sources/REG-003/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/REG-003/source.html",
+        "sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964"
+      },
+      {
+        "path": "knowledge-base/sources/REG-003/original.md",
+        "sha256": "cb6037bdee858d932994f28ce8f74a04f3346847bc257d712626ef1c37468539"
       }
     ]
   },
@@ -818,7 +799,7 @@
     "issuer": "AMAC-hosted E Fund project case",
     "date_label": "2026年1月协会案例；PDF未注明修订日期",
     "url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337819827722.pdf",
-    "locator": "指数业务一体化平台；平台指标与LLM效果须分开",
+    "locator": "指数业务一体化平台与模型应用",
     "metadata_path": "knowledge-base/sources/FUND-004/metadata.json",
     "files": [
       {
@@ -837,7 +818,7 @@
     "issuer": "ChinaAMC",
     "date_label": "2025-12-31；历史采购证据",
     "url": "https://www.chinaamc.com/upload/resources/file/2025/12/31/442744.pdf",
-    "locator": "采购公告；不证明验收或完整LLM部署",
+    "locator": "大模型安全网关采购结果公告",
     "metadata_path": "knowledge-base/sources/FUND-001/metadata.json",
     "files": [
       {
@@ -856,7 +837,7 @@
     "issuer": "GF Fund",
     "date_label": "协议未注明发布日期",
     "url": "https://cdnwww.gffunds.com.cn/gfjjnew/jjgg/lsgg/202603/W020260327646002876113.pdf",
-    "locator": "大模型技术名称与服务协议；不据URL月份认定发布日期",
+    "locator": "智能理财助理服务协议与所用模型",
     "metadata_path": "knowledge-base/sources/FUND-009/metadata.json",
     "files": [
       {
@@ -875,7 +856,7 @@
     "issuer": "Harvest",
     "date_label": "2025报告期；发布日期未独立确认",
     "url": "https://www.jsfund.cn/ueditor/jsp/upload/file/20260331/1774939300245008932.pdf",
-    "locator": "嘉实可持续投资报告；AI/NLP不自动等于LLM",
+    "locator": "嘉实可持续投资报告；ESG数据与AI/NLP应用",
     "metadata_path": "knowledge-base/sources/FUND-304/metadata.json",
     "files": [
       {
@@ -894,7 +875,7 @@
     "issuer": "Guotai; AMAC host",
     "date_label": "2026年1月协会案例；PDF未注明日期",
     "url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337808791393.pdf",
-    "locator": "国泰组合平台；DeepSeek与传统NER模块分开",
+    "locator": "国泰组合平台；DeepSeek与文本处理模块",
     "metadata_path": "knowledge-base/sources/FUND-403/metadata.json",
     "files": [
       {
@@ -927,6 +908,25 @@
     ]
   },
   {
+    "id": "FUND-316",
+    "title": "恒生电子2023可持续发展报告",
+    "issuer": "Hundsun Electronics",
+    "date_label": "2023报告期；历史合作证据",
+    "url": "https://static.cninfo.com.cn/finalpage/2024-03-25/1219392176.PDF",
+    "locator": "恒生电子可持续发展报告；FundGPT相关合作方",
+    "metadata_path": "knowledge-base/sources/FUND-316/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-316/source.pdf",
+        "sha256": "556f928d01185c073e791101dc324591f2ac23d840054ad499c76d44e774af39"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-316/original.md",
+        "sha256": "20f41de406399bec6371389cea5c46527c51c2309bcffb0598cc95064d6af558"
+      }
+    ]
+  },
+  {
     "id": "FUND-150",
     "title": "2025 CCF企业数字化发展推荐案例集 — 华安基金管理有限公司——华安“灵思”AI智能创新平台",
     "issuer": "China Computer Federation; Hua An-submitted case",
@@ -951,7 +951,7 @@
     "issuer": "AMAC-hosted Industrial Securities Global project case",
     "date_label": "2026年1月协会案例；PDF未注明日期",
     "url": "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf",
-    "locator": "千询固收交易平台；NLP与基础LLM需区分",
+    "locator": "千询固收交易平台与文本处理",
     "metadata_path": "knowledge-base/sources/FUND-011/metadata.json",
     "files": [
       {

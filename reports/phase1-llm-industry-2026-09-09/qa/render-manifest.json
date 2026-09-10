@@ -1,22 +1,26 @@
 {
-  "pdf_sha256": "203ddcba4c80d2bdb061df4f63bb4e19fa6b5e7f8a2479db40f174792f90c29c",
-  "physical_pages": 22,
+  "pdf_sha256": "635023f131b08d258703c1177b577579f1b00726c350a675a7da364acb3b70a6",
+  "physical_pages": 21,
   "pdfium": {
-    "directory": "qa/render-llm-role",
+    "directory": "qa/render-assertive",
     "resolution_dpi": 110,
     "antialias": true,
-    "scope": "All 22 physical pages"
+    "scope": "All 21 physical pages; final phrase changed only physical page 5"
   },
   "poppler": {
-    "directory": "qa/render-llm-role-poppler",
+    "directory": "qa/render-assertive-poppler",
     "resolution_dpi": 110,
     "physical_pages": [
+      2,
+      5,
       10,
-      15,
-      17
+      13,
+      14,
+      16
     ],
-    "scope": "Current PDF: model output fields and workflow, company table, governance table"
+    "scope": "Current PDF: abstract, edited company cases, quant workflow, recommendations, company table and governance table"
   },
   "images_are_ignored_intermediates": true,
-  "revision_baseline": "3509381"
+  "revision_baseline": "15b46fb",
+  "direct_editing_baseline": "User-edited main.tex saved in editorial/user-edits-2026-09-11.patch"
 }

@@ -19,15 +19,16 @@
   "primary_ai_llm_original_cohort": 15,
   "primary_ai_llm_original_dossiers": 16,
   "original_platform_workflow_records": 25,
-  "previous_report_checkpoint": "3509381",
-  "report_revision": "explicit LLM inputs, tasks, outputs and downstream use; formal third-person prose",
+  "previous_report_checkpoint": "15b46fb",
+  "report_revision": "paragraph revision based on user edits; explicit findings, LLM contribution, business outcomes and recommendations",
   "official_pdf_scoring": false,
   "statistical_counts_scope": "Research baseline management data only; excluded from official PDF and not deployment counts",
-  "physical_pages": 22,
+  "physical_pages": 21,
   "current_report_title": "基金公司LLM应用调研",
   "historical_mentor_review_checkpoint": "fc2cf1d",
-  "revision_date": "2026-09-10",
+  "revision_date": "2026-09-11",
   "results_appendix": "quant-evidence.tex (Appendix C)",
   "presentation_updated_in_this_revision": false,
-  "writing_reference_note": "editorial/llm-role-revision.md"
+  "writing_reference_note": "editorial/assertive-revision.md",
+  "user_edits_archive": "editorial/user-edits-2026-09-11.patch"
 }

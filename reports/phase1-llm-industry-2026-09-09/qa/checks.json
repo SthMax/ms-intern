@@ -1,7 +1,7 @@
 {
-  "pdf_sha256": "203ddcba4c80d2bdb061df4f63bb4e19fa6b5e7f8a2479db40f174792f90c29c",
-  "physical_pages": 22,
-  "numbered_pages": 21,
+  "pdf_sha256": "635023f131b08d258703c1177b577579f1b00726c350a675a7da364acb3b70a6",
+  "physical_pages": 21,
+  "numbered_pages": 20,
   "source_entries": 46,
   "hashed_files_verified": 117,
   "external_urls_verified": 46,
@@ -21,47 +21,47 @@
     },
     {
       "physical_page": 2,
-      "characters": 779,
+      "characters": 992,
       "text_bbox": [
         62.36,
         28.14,
-        540.27,
+        540.5,
         809.38
       ]
     },
     {
       "physical_page": 3,
-      "characters": 359,
+      "characters": 243,
       "text_bbox": [
         62.36,
         28.14,
-        538.94,
+        532.91,
         809.38
       ]
     },
     {
       "physical_page": 4,
-      "characters": 1180,
+      "characters": 874,
       "text_bbox": [
         62.36,
         28.14,
-        539.79,
+        540.26,
         809.38
       ]
     },
     {
       "physical_page": 5,
-      "characters": 1399,
+      "characters": 1229,
       "text_bbox": [
         55.14,
         28.14,
-        540.27,
+        540.29,
         809.38
       ]
     },
     {
       "physical_page": 6,
-      "characters": 1030,
+      "characters": 948,
       "text_bbox": [
         62.36,
         28.14,
@@ -71,67 +71,67 @@
     },
     {
       "physical_page": 7,
-      "characters": 1289,
+      "characters": 1310,
       "text_bbox": [
         62.36,
         28.14,
-        540.29,
+        540.24,
         809.38
       ]
     },
     {
       "physical_page": 8,
-      "characters": 1162,
+      "characters": 1226,
       "text_bbox": [
         62.36,
         28.14,
-        540.29,
+        540.28,
         809.38
       ]
     },
     {
       "physical_page": 9,
-      "characters": 1197,
+      "characters": 1095,
       "text_bbox": [
         62.36,
         28.14,
-        532.92,
+        540.27,
         809.38
       ]
     },
     {
       "physical_page": 10,
-      "characters": 1074,
+      "characters": 1065,
       "text_bbox": [
         62.36,
         28.14,
-        540.48,
+        540.26,
         809.38
       ]
     },
     {
       "physical_page": 11,
-      "characters": 1249,
+      "characters": 1308,
       "text_bbox": [
         62.36,
         28.14,
-        532.92,
+        535.15,
         809.38
       ]
     },
     {
       "physical_page": 12,
-      "characters": 1323,
+      "characters": 1132,
       "text_bbox": [
         62.36,
         28.14,
-        532.92,
+        540.27,
         809.38
       ]
     },
     {
       "physical_page": 13,
-      "characters": 773,
+      "characters": 1006,
       "text_bbox": [
         62.36,
         28.14,
@@ -141,27 +141,17 @@
     },
     {
       "physical_page": 14,
-      "characters": 650,
+      "characters": 1347,
       "text_bbox": [
         62.36,
         28.14,
-        539.8,
+        537.6,
         809.38
       ]
     },
     {
       "physical_page": 15,
-      "characters": 1352,
-      "text_bbox": [
-        62.36,
-        28.14,
-        536.19,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 16,
-      "characters": 996,
+      "characters": 636,
       "text_bbox": [
         57.76,
         28.14,
@@ -170,18 +160,18 @@
       ]
     },
     {
-      "physical_page": 17,
-      "characters": 1329,
+      "physical_page": 16,
+      "characters": 1315,
       "text_bbox": [
         62.36,
         28.14,
-        532.92,
+        532.91,
         809.38
       ]
     },
     {
-      "physical_page": 18,
-      "characters": 1066,
+      "physical_page": 17,
+      "characters": 1078,
       "text_bbox": [
         62.36,
         28.14,
@@ -190,8 +180,18 @@
       ]
     },
     {
+      "physical_page": 18,
+      "characters": 1254,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.28,
+        809.38
+      ]
+    },
+    {
       "physical_page": 19,
-      "characters": 1056,
+      "characters": 1596,
       "text_bbox": [
         62.36,
         28.14,
@@ -201,17 +201,7 @@
     },
     {
       "physical_page": 20,
-      "characters": 1564,
-      "text_bbox": [
-        62.36,
-        28.14,
-        532.92,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 21,
-      "characters": 1375,
+      "characters": 1297,
       "text_bbox": [
         62.36,
         28.14,
@@ -220,8 +210,8 @@
       ]
     },
     {
-      "physical_page": 22,
-      "characters": 760,
+      "physical_page": 21,
+      "characters": 746,
       "text_bbox": [
         62.36,
         28.14,
