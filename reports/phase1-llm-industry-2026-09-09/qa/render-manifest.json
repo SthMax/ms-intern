@@ -1,14 +1,23 @@
 {
-  "pdf_sha256": "17da68bc608e241f588b7ab1284a346bdfbd257fc538f29458f1c1490daf3e33",
+  "pdf_sha256": "1f7eb69135fe45b287de7039322ec2ff344a21648fd2ad2a42360e48b79ae215",
   "physical_pages": 21,
   "pdfium": {
-    "directory": "qa/render-narrative",
+    "directory": "qa/render-tone",
     "resolution_dpi": 110,
     "antialias": true
   },
   "poppler": {
     "directory": "qa/render-narrative-poppler",
-    "resolution_dpi": 110
+    "resolution_dpi": 110,
+    "scope": "Prior 94c1b25 baseline only; current wording pass rendered with PDFium"
   },
-  "images_are_ignored_intermediates": true
+  "images_are_ignored_intermediates": true,
+  "wording_review_baseline": "94c1b25",
+  "changed_physical_pages": [
+    6,
+    9,
+    12,
+    13,
+    15
+  ]
 }

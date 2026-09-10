@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "17da68bc608e241f588b7ab1284a346bdfbd257fc538f29458f1c1490daf3e33",
+  "pdf_sha256": "1f7eb69135fe45b287de7039322ec2ff344a21648fd2ad2a42360e48b79ae215",
   "physical_pages": 21,
   "numbered_pages": 20,
   "source_entries": 46,
@@ -91,7 +91,7 @@
     },
     {
       "physical_page": 9,
-      "characters": 1326,
+      "characters": 1325,
       "text_bbox": [
         62.36,
         28.14,
@@ -121,17 +121,17 @@
     },
     {
       "physical_page": 12,
-      "characters": 1233,
+      "characters": 1232,
       "text_bbox": [
         55.14,
         28.14,
-        540.49,
+        540.3,
         809.38
       ]
     },
     {
       "physical_page": 13,
-      "characters": 1290,
+      "characters": 1296,
       "text_bbox": [
         62.36,
         28.14,
@@ -151,7 +151,7 @@
     },
     {
       "physical_page": 15,
-      "characters": 901,
+      "characters": 906,
       "text_bbox": [
         55.14,
         28.14,
@@ -220,11 +220,15 @@
       ]
     }
   ],
-  "visual_review": "All 21 PDFium pages inspected; selected Poppler pages cross-checked. See qa/review.md.",
-  "table_a_named_destination": "table.9",
-  "table_a_link_present": true,
-  "overview_precedes_cases": true,
-  "embedded_fonts": 7,
-  "all_fonts_embedded": true,
-  "no_near_empty_body_pages": true
+  "visual_review": "See qa/review.md; this script does not assert visual correctness.",
+  "wording_edits": 8,
+  "wording_baseline": "94c1b25",
+  "numbers_and_source_sequence_unchanged": true,
+  "changed_physical_pages": [
+    6,
+    9,
+    12,
+    13,
+    15
+  ]
 }
