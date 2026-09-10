@@ -1,0 +1,58 @@
+{
+  "baseline": "3509381",
+  "three_result_table_numeric_values_unchanged": true,
+  "table_values": {
+    "mentor": [
+      "0.159",
+      "0.100",
+      "0.444",
+      "0.078",
+      "0.118",
+      "0.472",
+      "0.220",
+      "0.141",
+      "0.488",
+      "1",
+      "0.221",
+      "0.173",
+      "0.439"
+    ],
+    "man": [
+      "1.05",
+      "0.95",
+      "0.80",
+      "0.70",
+      "1.00",
+      "0.85"
+    ],
+    "qa": [
+      "0.0286",
+      "3.58",
+      "16.76",
+      "0.0347",
+      "1.11",
+      "13.89",
+      "0.0472",
+      "4.68",
+      "11.80"
+    ]
+  },
+  "presentation_files_unchanged": 8,
+  "author_first_person_absent": true,
+  "checked_tex_files": [
+    "main.tex",
+    "landscape.tex",
+    "quant-evidence.tex",
+    "governance-appendix.tex"
+  ],
+  "pdf_sha256": "203ddcba4c80d2bdb061df4f63bb4e19fa6b5e7f8a2479db40f174792f90c29c",
+  "embedded_fonts_verified": {
+    "/JRYMRO+TeXGyreHeros-Regular-Identity-H": true,
+    "/JGUKHG+STHeitiSC-Medium": true,
+    "/NGTUOI+STSongti-SC-Bold": true,
+    "/JHLEDX+TeXGyrePagella-Bold-Identity-H": true,
+    "/SHLWCH+STSongti-SC-Regular": true,
+    "/REENYM+TeXGyrePagella-Regular-Identity-H": true,
+    "/GSXJFF+LMMono10-Regular-Identity-H": true
+  }
+}

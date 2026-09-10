@@ -1,23 +1,22 @@
 {
-  "pdf_sha256": "1f7eb69135fe45b287de7039322ec2ff344a21648fd2ad2a42360e48b79ae215",
-  "physical_pages": 21,
+  "pdf_sha256": "203ddcba4c80d2bdb061df4f63bb4e19fa6b5e7f8a2479db40f174792f90c29c",
+  "physical_pages": 22,
   "pdfium": {
-    "directory": "qa/render-tone",
+    "directory": "qa/render-llm-role",
     "resolution_dpi": 110,
-    "antialias": true
+    "antialias": true,
+    "scope": "All 22 physical pages"
   },
   "poppler": {
-    "directory": "qa/render-narrative-poppler",
+    "directory": "qa/render-llm-role-poppler",
     "resolution_dpi": 110,
-    "scope": "Prior 94c1b25 baseline only; current wording pass rendered with PDFium"
+    "physical_pages": [
+      10,
+      15,
+      17
+    ],
+    "scope": "Current PDF: model output fields and workflow, company table, governance table"
   },
   "images_are_ignored_intermediates": true,
-  "wording_review_baseline": "94c1b25",
-  "changed_physical_pages": [
-    6,
-    9,
-    12,
-    13,
-    15
-  ]
+  "revision_baseline": "3509381"
 }

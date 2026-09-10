@@ -76,152 +76,6 @@
     ]
   },
   {
-    "id": "FUND-251",
-    "title": "公募基金AI部署走到哪一步了？20家头部公募AI部署全景调研",
-    "issuer": "中国基金报 reporter 闫军",
-    "date_label": "2026-08-20",
-    "url": "https://www.chnfund.com/article/AR99eb77fa-e926-d40e-abb2-3a232d36f0d0",
-    "locator": "中国基金报20家调研；媒体/公司归属陈述，不替代技术原件",
-    "metadata_path": "knowledge-base/sources/FUND-251/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-251/source.html",
-        "sha256": "9bfeeee38c22143dc1723e77a727b0f0e603a65b2f175a3f6273e3b6f04550b3"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-251/original.md",
-        "sha256": "d3d737c78445fb1973e8655dd4fd1bafb4bcb793a7f3747e7008ff4db7a3ed13"
-      }
-    ]
-  },
-  {
-    "id": "FUND-359",
-    "title": "华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河",
-    "issuer": "中国证券报微信公众号",
-    "date_label": "2026-09-03",
-    "url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
-    "locator": "中国证券报原刊；文本处理实践与Agent展望分开",
-    "metadata_path": "knowledge-base/sources/FUND-359/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-359/source.pdf",
-        "sha256": "6e81dcca364e8f9d6993c11212b8f97c057702c49ac267ff9d05e254e54cfa0e"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-359/original.md",
-        "sha256": "d2b8f99fa2abe7422f487fc4aad36a02724462ff79202587b803260311092a19"
-      }
-    ]
-  },
-  {
-    "id": "FUND-323",
-    "title": "A Trend Following Deep Dive: AlphaTrend and Agentic Research Workflows",
-    "issuer": "Man Group / Man AHL; Martin Luk, Tarek Abou Zeid, Otto van Hemert",
-    "date_label": "2026-02-11",
-    "url": "https://www.man.com/insights/alphatrend-agentic-research-workflows",
-    "locator": "Man AHL；原文流程图与三组研究想法实验",
-    "metadata_path": "knowledge-base/sources/FUND-323/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-323/source.html",
-        "sha256": "12235416b9b1307ec5ac522b2e3a65a2722280e648d3674b9ce87ef10c0c27ba"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-323/original.md",
-        "sha256": "2d59af0b3a52292c1fd5689e14fa6958feed645d14d09a722db718497e1c8c29"
-      }
-    ]
-  },
-  {
-    "id": "EXT-QA",
-    "title": "QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining",
-    "date_label": "2026；论文封面日期2026-05-19（arXiv v3）",
-    "url": "https://arxiv.org/abs/2602.07085v3",
-    "locator": "v3；表1--2、附录A--C及方法；作者团队含高校与研究项目",
-    "files": [
-      {
-        "path": "knowledge-base/reference/2026-llm-quant/quantaalpha/source.pdf",
-        "sha256": "75e9c2ef5e8bb7fed78d27409e8252208e8fdacf6d10e1495dbc5b8767481848"
-      }
-    ]
-  },
-  {
-    "id": "REG-002",
-    "title": "中华人民共和国个人信息保护法",
-    "issuer": "NPC Standing Committee; official text republished by CAC",
-    "date_label": "2021-08-20",
-    "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
-    "locator": "适用条件与精确条款见附录B",
-    "metadata_path": "knowledge-base/sources/REG-002/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/REG-002/source.html",
-        "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff"
-      },
-      {
-        "path": "knowledge-base/sources/REG-002/original.md",
-        "sha256": "78f672dd2edfc62425de7197c71557efa86243578ef166246fb53ccdc2d84215"
-      }
-    ]
-  },
-  {
-    "id": "REG-001",
-    "title": "生成式人工智能服务管理暂行办法",
-    "issuer": "CAC and six departments",
-    "date_label": "2023-07-13； 签署 2023-07-10",
-    "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
-    "locator": "适用条件与精确条款见附录B",
-    "metadata_path": "knowledge-base/sources/REG-001/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/REG-001/source.html",
-        "sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b"
-      },
-      {
-        "path": "knowledge-base/sources/REG-001/original.md",
-        "sha256": "e9afae3af13de3984fb7660a8d62d2a40af987aea74e8d72d3b8aeda5806d3df"
-      }
-    ]
-  },
-  {
-    "id": "REG-003",
-    "title": "证券基金经营机构信息技术管理办法",
-    "issuer": "CSRC",
-    "date_label": "2018-12-19； 修订 2021-01-15",
-    "url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
-    "locator": "适用条件与精确条款见附录B",
-    "metadata_path": "knowledge-base/sources/REG-003/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/REG-003/source.html",
-        "sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964"
-      },
-      {
-        "path": "knowledge-base/sources/REG-003/original.md",
-        "sha256": "cb6037bdee858d932994f28ce8f74a04f3346847bc257d712626ef1c37468539"
-      }
-    ]
-  },
-  {
-    "id": "FUND-400",
-    "title": "公募非货规模最新座次出炉，万亿公募增至3家，中段座次重排",
-    "issuer": "CLS; reporter 吴雨其",
-    "date_label": "2026-07-21",
-    "url": "https://www.cls.cn/detail/2432695",
-    "locator": "财联社；2026Q2非货公募规模，剔除ETF联接基金",
-    "metadata_path": "knowledge-base/sources/FUND-400/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-400/source.html",
-        "sha256": "4f199fba192466935154553676feb967e7717836ba09f6eb9e97dfcbacb092aa"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-400/original.md",
-        "sha256": "f5b4e260047c902e8e608ed77826e199f4bfdec67058a911f3ce57c5c1b6fa0b"
-      }
-    ]
-  },
-  {
     "id": "FUND-220",
     "title": "『基金行业金融科技获奖成果宣传活动』汇添富基金：智汇投资风险管理平台",
     "issuer": "China Universal; AMAC host",
@@ -241,169 +95,15 @@
     ]
   },
   {
-    "id": "FUND-352",
-    "title": "AI筑牢邮件安全防线 永赢基金以大模型守护金融数字资产",
-    "issuer": "Maxwealth; AMAC host",
-    "date_label": "2026-07-01协会目录；PDF未注明日期",
-    "url": "https://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf",
-    "locator": "永赢安全GPT邮件反钓鱼；非投研量化系统",
-    "metadata_path": "knowledge-base/sources/FUND-352/metadata.json",
+    "id": "EXT-QA",
+    "title": "QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining",
+    "date_label": "2026；论文封面日期2026-05-19（arXiv v3）",
+    "url": "https://arxiv.org/abs/2602.07085v3",
+    "locator": "v3；表1--2、附录A--C及方法；作者团队含高校与研究项目",
     "files": [
       {
-        "path": "knowledge-base/sources/FUND-352/source.pdf",
-        "sha256": "c184fd73f3016f793020cdd19d8f704e6fe539f34f88ae7cfa993d0d58348406"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-352/original.md",
-        "sha256": "e68d28eff8b85b50c766a4496f7e9e505b491c98a6915ad9b912060ada60155e"
-      }
-    ]
-  },
-  {
-    "id": "FUND-215",
-    "title": "智启金融新范式，博时前瞻布局企业级“龙虾”生态，赋能资管全链条",
-    "issuer": "新浪基金；博时公司归属陈述",
-    "date_label": "2026-04-30",
-    "url": "https://finance.sina.com.cn/money/fund/jjh/2026-04-30/doc-inhwfyep1330822.shtml",
-    "locator": "博时BSBox报道；工具与运行环境",
-    "metadata_path": "knowledge-base/sources/FUND-215/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-215/source.html",
-        "sha256": "e921917e47b40b5f39e35fc9988c6970a46462fc01ade305f3af26e146ee9f8f"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-215/original.md",
-        "sha256": "a00aad4c8bde4c79f9d6da89fe538a8d965a3d20c9779eb09fb751b02e41f2ab"
-      }
-    ]
-  },
-  {
-    "id": "FUND-356",
-    "title": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
-    "issuer": "中欧基金",
-    "date_label": "2026-06-01",
-    "url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
-    "locator": "中欧公众号转载中国基金报；Skills与投研协作",
-    "metadata_path": "knowledge-base/sources/FUND-356/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-356/original.md",
-        "sha256": "5a0b39f7d22f0121b0c33a7d7dbbbcc9fa09a61328b9271cdde7377cbbcb5250"
-      }
-    ]
-  },
-  {
-    "id": "FUND-115",
-    "title": "指数直通车 Index-Hub Skills：官方查询客户端与接口文档",
-    "issuer": "EFundAI / E Fund",
-    "date_label": "代码快照；不推断发布日期",
-    "url": "https://github.com/EFundAI/index-hub-skills/tree/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
-    "locator": "固定提交1058e1b；公开查询客户端与配置缺口",
-    "metadata_path": "knowledge-base/sources/FUND-115/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-115/repository/files/README.md",
-        "sha256": "150f8e59b2ee050d39ae2ff801a45608dd44bc5ffae07de6ae6f9ee28cb5f089"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-115/original.md",
-        "sha256": "e55a8624030134493416ddfeb7c6d8569ad3911e4903d62bae499cb0fafd6f47"
-      }
-    ]
-  },
-  {
-    "id": "FUND-113",
-    "title": "MENTOR: a multi-agent framework for event and narrative trend prediction with optimized reasoning",
-    "issuer": "MENTOR authors (E Fund Management, Tsinghua University and University of Manchester); Zhejiang University Press",
-    "date_label": "2025，26(10):1847–1861",
-    "url": "https://doi.org/10.1631/FITEE.2500608",
-    "locator": "PDF第8–11页及表3；方法与行业排序结果",
-    "metadata_path": "knowledge-base/sources/FUND-113/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-113/source.pdf",
-        "sha256": "4e6049e67a385b2b93b7c6cdbd8a7e8cb86614196f17b9d50c6141a3825609d0"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-113/original.md",
-        "sha256": "8fc5bd502b80791d77b76acd3fc5b523edddce2c332942be4c537fea48a9aaa2"
-      }
-    ]
-  },
-  {
-    "id": "FUND-119",
-    "title": "NLPCC 2026 Shared Task 4: Investment Agent Starter",
-    "issuer": "Task organizers including E Fund and universities",
-    "date_label": "NLPCC 2026共享任务；仓库快照",
-    "url": "https://github.com/splash-li/NLPCC2026-Shared-Task-4/tree/4744a772fda59ef886c525cf3d4b4ac3c992710f",
-    "locator": "固定提交4744a77；研究基线、Prompt、数据及回测客户端",
-    "metadata_path": "knowledge-base/sources/FUND-119/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-119/repository/files/README-CN.md",
-        "sha256": "4ca9e2b75dd527daeebd40e5edd42d274ae658ef2e864e76c32f4b406cdef0eb"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-119/original.md",
-        "sha256": "5531dd25a3fb547ecdcba99f985cc4b6b7b2e31ca9cdd97640b8ec4605215938"
-      }
-    ]
-  },
-  {
-    "id": "FUND-316",
-    "title": "恒生电子2023可持续发展报告",
-    "issuer": "Hundsun Electronics",
-    "date_label": "2023报告期；历史合作证据",
-    "url": "https://static.cninfo.com.cn/finalpage/2024-03-25/1219392176.PDF",
-    "locator": "恒生电子可持续发展报告；FundGPT相关合作方",
-    "metadata_path": "knowledge-base/sources/FUND-316/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-316/source.pdf",
-        "sha256": "556f928d01185c073e791101dc324591f2ac23d840054ad499c76d44e774af39"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-316/original.md",
-        "sha256": "20f41de406399bec6371389cea5c46527c51c2309bcffb0598cc95064d6af558"
-      }
-    ]
-  },
-  {
-    "id": "FUND-114",
-    "title": "MENTOR supplementary materials",
-    "issuer": "MENTOR authors (E Fund Management, Tsinghua University and University of Manchester); Zhejiang University Press",
-    "date_label": "2025；MENTOR官方补充材料",
-    "url": "https://jzus.zju.edu.cn/downloadesm.php?filepath=.%2Fdownload%2FESM%2FFITEE%2FESM2500608.pdf&filetype=pdf",
-    "locator": "PDF第1–5页，尤其第2–3页Prompt",
-    "metadata_path": "knowledge-base/sources/FUND-114/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-114/source.pdf",
-        "sha256": "4f8ac6e40251bcd5bbeaf7f49cd5bcf52f5631127e631d13a8122e2a5c70d560"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-114/original.md",
-        "sha256": "969e974f377d2abb33672d383dcca539d795de51b7b9416fbffe1ff10452346e"
-      }
-    ]
-  },
-  {
-    "id": "FUND-116",
-    "title": "指数直通车 AI Skills 帮助文档",
-    "issuer": "E Fund / official efunds.com.cn CDN",
-    "date_label": "无日期帮助文档；2026-09-09归档",
-    "url": "https://cdn.efunds.com.cn/eda/h5/itcenter/pd/ai-skills-doc/help.pdf",
-    "locator": "PDF第8–10页查询示例；非服务端代码",
-    "metadata_path": "knowledge-base/sources/FUND-116/metadata.json",
-    "files": [
-      {
-        "path": "knowledge-base/sources/FUND-116/source.pdf",
-        "sha256": "0e414cc2571765bc40546f43b5e421d4268039a0e54546467fcf32f414b909e4"
-      },
-      {
-        "path": "knowledge-base/sources/FUND-116/original.md",
-        "sha256": "65f9287059a4deafa358104df5ba6f27f5285dd941e53743891c546e6c1cb03e"
+        "path": "knowledge-base/reference/2026-llm-quant/quantaalpha/source.pdf",
+        "sha256": "75e9c2ef5e8bb7fed78d27409e8252208e8fdacf6d10e1495dbc5b8767481848"
       }
     ]
   },
@@ -412,7 +112,7 @@
     "title": "QuantaAlpha官方研究实现（固定版本）",
     "date_label": "固定提交 b7ceb27b1001",
     "url": "https://github.com/QuantaAlpha/QuantaAlpha/tree/b7ceb27b1001261d7a95b209a963664ae1f8ab23",
-    "locator": "方法实现；代码固定版本见原始链接；未执行复现",
+    "locator": "规划、演化与一致性提示词及对应调用代码；固定版本，未执行复现",
     "archive_manifest": "knowledge-base/reference/2026-llm-quant/quantaalpha-code/archive.json",
     "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
     "files": [
@@ -625,6 +325,306 @@
         "sha256": "f67c6084dd1ad5ca7795d3b719b8ca177aa5859c88547fed053eb6dca7afdf7a",
         "bytes": 4379,
         "url": "https://github.com/QuantaAlpha/QuantaAlpha/blob/b7ceb27b1001261d7a95b209a963664ae1f8ab23/run.sh"
+      }
+    ]
+  },
+  {
+    "id": "FUND-323",
+    "title": "A Trend Following Deep Dive: AlphaTrend and Agentic Research Workflows",
+    "issuer": "Man Group / Man AHL; Martin Luk, Tarek Abou Zeid, Otto van Hemert",
+    "date_label": "2026-02-11",
+    "url": "https://www.man.com/insights/alphatrend-agentic-research-workflows",
+    "locator": "Man AHL；原文流程图与三组研究想法实验",
+    "metadata_path": "knowledge-base/sources/FUND-323/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-323/source.html",
+        "sha256": "12235416b9b1307ec5ac522b2e3a65a2722280e648d3674b9ce87ef10c0c27ba"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-323/original.md",
+        "sha256": "2d59af0b3a52292c1fd5689e14fa6958feed645d14d09a722db718497e1c8c29"
+      }
+    ]
+  },
+  {
+    "id": "REG-002",
+    "title": "中华人民共和国个人信息保护法",
+    "issuer": "NPC Standing Committee; official text republished by CAC",
+    "date_label": "2021-08-20",
+    "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+    "locator": "适用条件与精确条款见附录B",
+    "metadata_path": "knowledge-base/sources/REG-002/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/REG-002/source.html",
+        "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff"
+      },
+      {
+        "path": "knowledge-base/sources/REG-002/original.md",
+        "sha256": "78f672dd2edfc62425de7197c71557efa86243578ef166246fb53ccdc2d84215"
+      }
+    ]
+  },
+  {
+    "id": "REG-001",
+    "title": "生成式人工智能服务管理暂行办法",
+    "issuer": "CAC and six departments",
+    "date_label": "2023-07-13； 签署 2023-07-10",
+    "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+    "locator": "适用条件与精确条款见附录B",
+    "metadata_path": "knowledge-base/sources/REG-001/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/REG-001/source.html",
+        "sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b"
+      },
+      {
+        "path": "knowledge-base/sources/REG-001/original.md",
+        "sha256": "e9afae3af13de3984fb7660a8d62d2a40af987aea74e8d72d3b8aeda5806d3df"
+      }
+    ]
+  },
+  {
+    "id": "REG-003",
+    "title": "证券基金经营机构信息技术管理办法",
+    "issuer": "CSRC",
+    "date_label": "2018-12-19； 修订 2021-01-15",
+    "url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
+    "locator": "适用条件与精确条款见附录B",
+    "metadata_path": "knowledge-base/sources/REG-003/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/REG-003/source.html",
+        "sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964"
+      },
+      {
+        "path": "knowledge-base/sources/REG-003/original.md",
+        "sha256": "cb6037bdee858d932994f28ce8f74a04f3346847bc257d712626ef1c37468539"
+      }
+    ]
+  },
+  {
+    "id": "FUND-400",
+    "title": "公募非货规模最新座次出炉，万亿公募增至3家，中段座次重排",
+    "issuer": "CLS; reporter 吴雨其",
+    "date_label": "2026-07-21",
+    "url": "https://www.cls.cn/detail/2432695",
+    "locator": "财联社；2026Q2非货公募规模，剔除ETF联接基金",
+    "metadata_path": "knowledge-base/sources/FUND-400/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-400/source.html",
+        "sha256": "4f199fba192466935154553676feb967e7717836ba09f6eb9e97dfcbacb092aa"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-400/original.md",
+        "sha256": "f5b4e260047c902e8e608ed77826e199f4bfdec67058a911f3ce57c5c1b6fa0b"
+      }
+    ]
+  },
+  {
+    "id": "FUND-352",
+    "title": "AI筑牢邮件安全防线 永赢基金以大模型守护金融数字资产",
+    "issuer": "Maxwealth; AMAC host",
+    "date_label": "2026-07-01协会目录；PDF未注明日期",
+    "url": "https://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf",
+    "locator": "永赢安全GPT邮件反钓鱼；非投研量化系统",
+    "metadata_path": "knowledge-base/sources/FUND-352/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-352/source.pdf",
+        "sha256": "c184fd73f3016f793020cdd19d8f704e6fe539f34f88ae7cfa993d0d58348406"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-352/original.md",
+        "sha256": "e68d28eff8b85b50c766a4496f7e9e505b491c98a6915ad9b912060ada60155e"
+      }
+    ]
+  },
+  {
+    "id": "FUND-316",
+    "title": "恒生电子2023可持续发展报告",
+    "issuer": "Hundsun Electronics",
+    "date_label": "2023报告期；历史合作证据",
+    "url": "https://static.cninfo.com.cn/finalpage/2024-03-25/1219392176.PDF",
+    "locator": "恒生电子可持续发展报告；FundGPT相关合作方",
+    "metadata_path": "knowledge-base/sources/FUND-316/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-316/source.pdf",
+        "sha256": "556f928d01185c073e791101dc324591f2ac23d840054ad499c76d44e774af39"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-316/original.md",
+        "sha256": "20f41de406399bec6371389cea5c46527c51c2309bcffb0598cc95064d6af558"
+      }
+    ]
+  },
+  {
+    "id": "FUND-113",
+    "title": "MENTOR: a multi-agent framework for event and narrative trend prediction with optimized reasoning",
+    "issuer": "MENTOR authors (E Fund Management, Tsinghua University and University of Manchester); Zhejiang University Press",
+    "date_label": "2025，26(10):1847–1861",
+    "url": "https://doi.org/10.1631/FITEE.2500608",
+    "locator": "PDF第8–11页及表3；方法与行业排序结果",
+    "metadata_path": "knowledge-base/sources/FUND-113/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-113/source.pdf",
+        "sha256": "4e6049e67a385b2b93b7c6cdbd8a7e8cb86614196f17b9d50c6141a3825609d0"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-113/original.md",
+        "sha256": "8fc5bd502b80791d77b76acd3fc5b523edddce2c332942be4c537fea48a9aaa2"
+      }
+    ]
+  },
+  {
+    "id": "FUND-114",
+    "title": "MENTOR supplementary materials",
+    "issuer": "MENTOR authors (E Fund Management, Tsinghua University and University of Manchester); Zhejiang University Press",
+    "date_label": "2025；MENTOR官方补充材料",
+    "url": "https://jzus.zju.edu.cn/downloadesm.php?filepath=.%2Fdownload%2FESM%2FFITEE%2FESM2500608.pdf&filetype=pdf",
+    "locator": "PDF第1–5页，尤其第2–3页Prompt",
+    "metadata_path": "knowledge-base/sources/FUND-114/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-114/source.pdf",
+        "sha256": "4f8ac6e40251bcd5bbeaf7f49cd5bcf52f5631127e631d13a8122e2a5c70d560"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-114/original.md",
+        "sha256": "969e974f377d2abb33672d383dcca539d795de51b7b9416fbffe1ff10452346e"
+      }
+    ]
+  },
+  {
+    "id": "FUND-115",
+    "title": "指数直通车 Index-Hub Skills：官方查询客户端与接口文档",
+    "issuer": "EFundAI / E Fund",
+    "date_label": "代码快照；不推断发布日期",
+    "url": "https://github.com/EFundAI/index-hub-skills/tree/1058e1bfdaaf3dc1ee025ba2d2e19ea000657fd4",
+    "locator": "固定提交1058e1b；公开查询客户端与配置缺口",
+    "metadata_path": "knowledge-base/sources/FUND-115/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-115/repository/files/README.md",
+        "sha256": "150f8e59b2ee050d39ae2ff801a45608dd44bc5ffae07de6ae6f9ee28cb5f089"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-115/original.md",
+        "sha256": "e55a8624030134493416ddfeb7c6d8569ad3911e4903d62bae499cb0fafd6f47"
+      }
+    ]
+  },
+  {
+    "id": "FUND-116",
+    "title": "指数直通车 AI Skills 帮助文档",
+    "issuer": "E Fund / official efunds.com.cn CDN",
+    "date_label": "无日期帮助文档；2026-09-09归档",
+    "url": "https://cdn.efunds.com.cn/eda/h5/itcenter/pd/ai-skills-doc/help.pdf",
+    "locator": "PDF第8–10页查询示例；非服务端代码",
+    "metadata_path": "knowledge-base/sources/FUND-116/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-116/source.pdf",
+        "sha256": "0e414cc2571765bc40546f43b5e421d4268039a0e54546467fcf32f414b909e4"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-116/original.md",
+        "sha256": "65f9287059a4deafa358104df5ba6f27f5285dd941e53743891c546e6c1cb03e"
+      }
+    ]
+  },
+  {
+    "id": "FUND-251",
+    "title": "公募基金AI部署走到哪一步了？20家头部公募AI部署全景调研",
+    "issuer": "中国基金报 reporter 闫军",
+    "date_label": "2026-08-20",
+    "url": "https://www.chnfund.com/article/AR99eb77fa-e926-d40e-abb2-3a232d36f0d0",
+    "locator": "中国基金报20家调研；媒体/公司归属陈述，不替代技术原件",
+    "metadata_path": "knowledge-base/sources/FUND-251/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-251/source.html",
+        "sha256": "9bfeeee38c22143dc1723e77a727b0f0e603a65b2f175a3f6273e3b6f04550b3"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-251/original.md",
+        "sha256": "d3d737c78445fb1973e8655dd4fd1bafb4bcb793a7f3747e7008ff4db7a3ed13"
+      }
+    ]
+  },
+  {
+    "id": "FUND-359",
+    "title": "华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河",
+    "issuer": "中国证券报微信公众号",
+    "date_label": "2026-09-03",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5MzMwNjM0MA%3D%3D&idx=2&mid=2651361688&sn=465ee3d543763b18d8ee971802cc5fcb",
+    "locator": "中国证券报原刊；文本处理实践与Agent展望分开",
+    "metadata_path": "knowledge-base/sources/FUND-359/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-359/source.pdf",
+        "sha256": "6e81dcca364e8f9d6993c11212b8f97c057702c49ac267ff9d05e254e54cfa0e"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-359/original.md",
+        "sha256": "d2b8f99fa2abe7422f487fc4aad36a02724462ff79202587b803260311092a19"
+      }
+    ]
+  },
+  {
+    "id": "FUND-215",
+    "title": "智启金融新范式，博时前瞻布局企业级“龙虾”生态，赋能资管全链条",
+    "issuer": "新浪基金；博时公司归属陈述",
+    "date_label": "2026-04-30",
+    "url": "https://finance.sina.com.cn/money/fund/jjh/2026-04-30/doc-inhwfyep1330822.shtml",
+    "locator": "博时BSBox报道；工具与运行环境",
+    "metadata_path": "knowledge-base/sources/FUND-215/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-215/source.html",
+        "sha256": "e921917e47b40b5f39e35fc9988c6970a46462fc01ade305f3af26e146ee9f8f"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-215/original.md",
+        "sha256": "a00aad4c8bde4c79f9d6da89fe538a8d965a3d20c9779eb09fb751b02e41f2ab"
+      }
+    ]
+  },
+  {
+    "id": "FUND-356",
+    "title": "中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基",
+    "issuer": "中欧基金",
+    "date_label": "2026-06-01",
+    "url": "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+    "locator": "中欧公众号转载中国基金报；Skills与投研协作",
+    "metadata_path": "knowledge-base/sources/FUND-356/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-356/original.md",
+        "sha256": "5a0b39f7d22f0121b0c33a7d7dbbbcc9fa09a61328b9271cdde7377cbbcb5250"
+      }
+    ]
+  },
+  {
+    "id": "FUND-119",
+    "title": "NLPCC 2026 Shared Task 4: Investment Agent Starter",
+    "issuer": "Task organizers including E Fund and universities",
+    "date_label": "NLPCC 2026共享任务；仓库快照",
+    "url": "https://github.com/splash-li/NLPCC2026-Shared-Task-4/tree/4744a772fda59ef886c525cf3d4b4ac3c992710f",
+    "locator": "固定提交4744a77；研究基线、Prompt、数据及回测客户端",
+    "metadata_path": "knowledge-base/sources/FUND-119/metadata.json",
+    "files": [
+      {
+        "path": "knowledge-base/sources/FUND-119/repository/files/README-CN.md",
+        "sha256": "4ca9e2b75dd527daeebd40e5edd42d274ae658ef2e864e76c32f4b406cdef0eb"
+      },
+      {
+        "path": "knowledge-base/sources/FUND-119/original.md",
+        "sha256": "5531dd25a3fb547ecdcba99f985cc4b6b7b2e31ca9cdd97640b8ec4605215938"
       }
     ]
   },

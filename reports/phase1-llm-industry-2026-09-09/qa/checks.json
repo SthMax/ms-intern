@@ -1,7 +1,7 @@
 {
-  "pdf_sha256": "1f7eb69135fe45b287de7039322ec2ff344a21648fd2ad2a42360e48b79ae215",
-  "physical_pages": 21,
-  "numbered_pages": 20,
+  "pdf_sha256": "203ddcba4c80d2bdb061df4f63bb4e19fa6b5e7f8a2479db40f174792f90c29c",
+  "physical_pages": 22,
+  "numbered_pages": 21,
   "source_entries": 46,
   "hashed_files_verified": 117,
   "external_urls_verified": 46,
@@ -21,7 +21,47 @@
     },
     {
       "physical_page": 2,
-      "characters": 882,
+      "characters": 779,
+      "text_bbox": [
+        62.36,
+        28.14,
+        540.27,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 3,
+      "characters": 359,
+      "text_bbox": [
+        62.36,
+        28.14,
+        538.94,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 4,
+      "characters": 1180,
+      "text_bbox": [
+        62.36,
+        28.14,
+        539.79,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 5,
+      "characters": 1399,
+      "text_bbox": [
+        55.14,
+        28.14,
+        540.27,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 6,
+      "characters": 1030,
       "text_bbox": [
         62.36,
         28.14,
@@ -30,78 +70,28 @@
       ]
     },
     {
-      "physical_page": 3,
-      "characters": 324,
-      "text_bbox": [
-        62.36,
-        28.14,
-        532.91,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 4,
-      "characters": 1223,
-      "text_bbox": [
-        62.36,
-        28.14,
-        540.27,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 5,
-      "characters": 1465,
-      "text_bbox": [
-        55.14,
-        28.14,
-        540.26,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 6,
-      "characters": 1292,
-      "text_bbox": [
-        62.36,
-        28.14,
-        540.27,
-        809.38
-      ]
-    },
-    {
       "physical_page": 7,
-      "characters": 846,
+      "characters": 1289,
       "text_bbox": [
         62.36,
         28.14,
-        540.28,
+        540.29,
         809.38
       ]
     },
     {
       "physical_page": 8,
-      "characters": 1283,
+      "characters": 1162,
       "text_bbox": [
         62.36,
         28.14,
-        540.26,
+        540.29,
         809.38
       ]
     },
     {
       "physical_page": 9,
-      "characters": 1325,
-      "text_bbox": [
-        62.36,
-        28.14,
-        540.28,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 10,
-      "characters": 1038,
+      "characters": 1197,
       "text_bbox": [
         62.36,
         28.14,
@@ -110,58 +100,88 @@
       ]
     },
     {
-      "physical_page": 11,
-      "characters": 1171,
+      "physical_page": 10,
+      "characters": 1074,
       "text_bbox": [
-        55.14,
+        62.36,
         28.14,
-        540.26,
+        540.48,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 11,
+      "characters": 1249,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
         809.38
       ]
     },
     {
       "physical_page": 12,
-      "characters": 1232,
+      "characters": 1323,
       "text_bbox": [
-        55.14,
+        62.36,
         28.14,
-        540.3,
+        532.92,
         809.38
       ]
     },
     {
       "physical_page": 13,
-      "characters": 1296,
+      "characters": 773,
       "text_bbox": [
         62.36,
         28.14,
-        540.49,
+        532.92,
         809.38
       ]
     },
     {
       "physical_page": 14,
-      "characters": 1204,
+      "characters": 650,
       "text_bbox": [
         62.36,
         28.14,
-        540.28,
+        539.8,
         809.38
       ]
     },
     {
       "physical_page": 15,
-      "characters": 906,
+      "characters": 1352,
       "text_bbox": [
-        55.14,
+        62.36,
         28.14,
-        540.28,
+        536.19,
         809.38
       ]
     },
     {
       "physical_page": 16,
-      "characters": 1247,
+      "characters": 996,
+      "text_bbox": [
+        57.76,
+        28.14,
+        535.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 17,
+      "characters": 1329,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 18,
+      "characters": 1066,
       "text_bbox": [
         62.36,
         28.14,
@@ -170,28 +190,8 @@
       ]
     },
     {
-      "physical_page": 17,
-      "characters": 901,
-      "text_bbox": [
-        57.76,
-        28.14,
-        537.13,
-        809.38
-      ]
-    },
-    {
-      "physical_page": 18,
-      "characters": 1364,
-      "text_bbox": [
-        62.36,
-        28.14,
-        540.26,
-        809.38
-      ]
-    },
-    {
       "physical_page": 19,
-      "characters": 1505,
+      "characters": 1056,
       "text_bbox": [
         62.36,
         28.14,
@@ -201,7 +201,17 @@
     },
     {
       "physical_page": 20,
-      "characters": 1430,
+      "characters": 1564,
+      "text_bbox": [
+        62.36,
+        28.14,
+        532.92,
+        809.38
+      ]
+    },
+    {
+      "physical_page": 21,
+      "characters": 1375,
       "text_bbox": [
         62.36,
         28.14,
@@ -210,7 +220,7 @@
       ]
     },
     {
-      "physical_page": 21,
+      "physical_page": 22,
       "characters": 760,
       "text_bbox": [
         62.36,
@@ -220,15 +230,5 @@
       ]
     }
   ],
-  "visual_review": "See qa/review.md; this script does not assert visual correctness.",
-  "wording_edits": 8,
-  "wording_baseline": "94c1b25",
-  "numbers_and_source_sequence_unchanged": true,
-  "changed_physical_pages": [
-    6,
-    9,
-    12,
-    13,
-    15
-  ]
+  "visual_review": "See qa/review.md; this script does not assert visual correctness."
 }

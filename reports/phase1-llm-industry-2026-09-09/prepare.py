@@ -60,7 +60,7 @@ used.update(re.findall(r'\\refsource\{([^}]+)\}',tex))
 landscape_path=HERE/'landscape.tex'
 if landscape_path.exists(): used.update(re.findall(r'\\src\{([^}]+)\}',landscape_path.read_text()))
 order=[]
-for filename in ['main.tex','landscape.tex','governance-appendix.tex']:
+for filename in ['main.tex','landscape.tex','governance-appendix.tex','quant-evidence.tex']:
     for sid in re.findall(r'\\src\{([^}]+)\}', (HERE/filename).read_text()):
         if sid not in order: order.append(sid)
 assert used == set(order), (used-set(order),set(order)-used)
@@ -92,7 +92,7 @@ for sid in order:
         archive=json.loads((folder/'archive.json').read_text())
         title='QuantaAlpha官方研究实现（固定版本）'
         date='固定提交 '+archive['commit'][:12]
-        loc='方法实现；代码固定版本见原始链接；未执行复现'
+        loc='规划、演化与一致性提示词及对应调用代码；固定版本，未执行复现'
         link='https://github.com/QuantaAlpha/QuantaAlpha/tree/'+archive['commit']
         item=dict(id=sid,title=title,date_label=date,url=link,locator=loc,archive_manifest=str((folder/'archive.json').relative_to(ROOT)),commit=archive['commit'],files=archive['files'])
     elif sid=='EXT-AB':
