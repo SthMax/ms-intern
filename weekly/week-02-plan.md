@@ -196,3 +196,9 @@ ranking was performed in this fund-focused pass.
 - Following the user's approval of an in-conversation sample, revised the full report into connected prose and added an opening overview of Table A before the four directions. Rewrote table cells as readable descriptions while preserving facts and source roles.
 - The report now has 21 physical pages. Company outcomes, quantitative results and regulatory conditions remain sourced; the work is still Phase 1 research. Current verification and narrative revision records are in the report directory.
 - Prior mentor-agent reviews remain historical records of the earlier version; no new independent mentor review, model deployment, backtest or internal approval is implied by this edit.
+
+### 10 September 2026 — PowerPoint draft
+
+- Committed the approved eight wording changes in `98bab07`.
+- Prepared an editable [PowerPoint deck](../presentation/phase1-llm-industry-2026-09-10/README.md) from the report, with 18 main slides and six appendix slides. Speaker notes carry the Chinese talk track and source references.
+- The deck retains the four research directions and Phase 1 scope. Actual presentation, mentor feedback and Phase 2 implementation remain future work.
