@@ -44,7 +44,8 @@ and no verified external research findings.
   or personal data in this repository.
 - Internal MRM and other Morgan Stanley requirements require authorized internal
   evidence; public guidance cannot establish unpublished firm policy.
-- Git is local-only. Do not add a remote or publish without the user's instruction.
+- Git is backed up to the private [SthMax/ms-intern](https://github.com/SthMax/ms-intern)
+  repository. Keep the repository and its report/presentation artifacts private.
 
 ## Repository map
 
