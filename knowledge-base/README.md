@@ -1,5 +1,7 @@
 # Knowledge Base
 
+> 2026-09-11新增[DeepSeek-V4.1-Flash技术报告与中文分析](models/deepseek-v4.1-flash/README.md)，归入Phase 2模型技术资料。
+
 > 当前范围：**2026年基金公司LLM量化三方向**，API方案可用，本地部署加分；部署层与Agent层分开评估。见[最新案例矩阵](companies/quant-research-2026-09-09.md)。
 
 > 本地LLM目标的研究结果：[任务、代码、部署依赖与评价方案](models/local-llm-poc-evidence-2026-09-09.md)。尚未进入实际GPU部署。

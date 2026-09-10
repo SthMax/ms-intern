@@ -1,0 +1,24 @@
+{
+  "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+  "document_type": "technical_report",
+  "author_or_issuer_as_documented": "DeepSeek-AI",
+  "language": "en",
+  "acquisition": "user_supplied_local_file",
+  "original_location": "~/Downloads",
+  "original_filename": "DeepSeek_V41_Tech_Report.pdf",
+  "archived_on": "2026-09-11",
+  "pdf_path": "technical-report/DeepSeek_V41_Tech_Report.pdf",
+  "sha256": "ba68e2e40408125ae6d2f63a9a241b61c73910691c74ec1a2a7023c851eac08d",
+  "bytes": 1809802,
+  "pages": 51,
+  "pdf_creation_date": "D:20260910054949Z",
+  "cover_date": null,
+  "text_extraction": "pypdf, original language, page-by-page",
+  "provenance": "Received from the user; original download URL was not supplied. Technical-report title and DeepSeek-AI attribution read from the document.",
+  "verification": {
+    "copied_bytes_match_downloads": true,
+    "all_pages_text_readable": true,
+    "agent_check": "file identity, page count and hash",
+    "independent_claim_review": false
+  }
+}

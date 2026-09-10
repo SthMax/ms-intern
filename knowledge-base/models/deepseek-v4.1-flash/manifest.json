@@ -1,0 +1,54 @@
+{
+  "collection": "DeepSeek-V4.1-Flash",
+  "archived_on": "2026-09-11",
+  "documents": [
+    {
+      "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+      "document_type": "technical_report",
+      "author_or_issuer_as_documented": "DeepSeek-AI",
+      "language": "en",
+      "acquisition": "user_supplied_local_file",
+      "original_location": "~/Downloads",
+      "original_filename": "DeepSeek_V41_Tech_Report.pdf",
+      "archived_on": "2026-09-11",
+      "pdf_path": "technical-report/DeepSeek_V41_Tech_Report.pdf",
+      "sha256": "ba68e2e40408125ae6d2f63a9a241b61c73910691c74ec1a2a7023c851eac08d",
+      "bytes": 1809802,
+      "pages": 51,
+      "pdf_creation_date": "D:20260910054949Z",
+      "cover_date": null,
+      "text_extraction": "pypdf, original language, page-by-page",
+      "provenance": "Received from the user; original download URL was not supplied. Technical-report title and DeepSeek-AI attribution read from the document.",
+      "verification": {
+        "copied_bytes_match_downloads": true,
+        "all_pages_text_readable": true,
+        "agent_check": "file identity, page count and hash",
+        "independent_claim_review": false
+      }
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash：架构精读与KV Cache技术脉络",
+      "document_type": "non_official_reading_notes",
+      "author_or_issuer_as_documented": "ChatGPT-assisted reading notes supplied by the user",
+      "language": "zh",
+      "acquisition": "user_supplied_local_file",
+      "original_location": "~/Downloads",
+      "original_filename": "DeepSeek_V4_1_Flash_Architecture_and_KV_Cache_Guide_ZH.pdf",
+      "archived_on": "2026-09-11",
+      "pdf_path": "analysis/DeepSeek_V4_1_Flash_Architecture_and_KV_Cache_Guide_ZH.pdf",
+      "sha256": "919ee3a205a1fba320efb460c29d3e0c31971624ce20ba9b93c13b7476a3f61c",
+      "bytes": 1017495,
+      "pages": 39,
+      "pdf_creation_date": "D:20260910164243Z",
+      "cover_date": "2026-09-11",
+      "text_extraction": "pypdf, original language, page-by-page",
+      "provenance": "The cover explicitly identifies this as non-official Chinese technical reading notes based on the uploaded report.",
+      "verification": {
+        "copied_bytes_match_downloads": true,
+        "all_pages_text_readable": true,
+        "agent_check": "file identity, page count and hash",
+        "independent_claim_review": false
+      }
+    }
+  ]
+}

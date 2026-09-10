@@ -44,8 +44,18 @@ and no verified external research findings.
   or personal data in this repository.
 - Internal MRM and other Morgan Stanley requirements require authorized internal
   evidence; public guidance cannot establish unpublished firm policy.
-- Git is backed up to the private [SthMax/ms-intern](https://github.com/SthMax/ms-intern)
-  repository. Keep the repository and its report/presentation artifacts private.
+- Git is backed up to the public [SthMax/ms-intern](https://github.com/SthMax/ms-intern)
+  repository. Releases package finalized research reports, presentations and
+  selected model references for sharing.
+
+## Current deliverables
+
+The September 2026 delivery bundle contains:
+
+- [Industry research report](reports/phase1-llm-industry-2026-09-09/report.pdf)
+- [Presentation with speaker notes](presentation/phase1-llm-industry-2026-09-10/output/fund-llm-industry-2026-09-11-final.pptx)
+- [DeepSeek-V4.1-Flash technical report](knowledge-base/models/deepseek-v4.1-flash/technical-report/DeepSeek_V41_Tech_Report.pdf)
+- [DeepSeek architecture and KV Cache analysis, in Chinese](knowledge-base/models/deepseek-v4.1-flash/analysis/DeepSeek_V4_1_Flash_Architecture_and_KV_Cache_Guide_ZH.pdf)
 
 ## Repository map
 
